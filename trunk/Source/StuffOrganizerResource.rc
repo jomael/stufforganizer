@@ -1,0 +1,2 @@
+DB_INFO RCData "DBSQL\\productinfo.sql"
+DB_MAIN RCData "DBSQL\\main.sql"

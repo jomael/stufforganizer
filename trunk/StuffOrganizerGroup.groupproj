@@ -1,0 +1,120 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{297DE674-D4A6-492B-B387-5E1E2CA71511}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Source\StuffOrganizer.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Source\Test\StuffOrganizerTests.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Tools\DirLister\DirLister.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\TorrentOrganizer\Modules\unpack_7z\unpack_7z.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\TorrentOrganizer\Modules\unpack_rar\unpack_rar.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\TorrentOrganizer\Modules\unpack_zip\unpack_zip.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\TorrentOrganizer\Modules\allmovie\allmovie.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\TorrentOrganizer\Modules\port_hu\port_hu.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="StuffOrganizer">
+			<MSBuild Projects="Source\StuffOrganizer.dproj"/>
+		</Target>
+		<Target Name="StuffOrganizer:Clean">
+			<MSBuild Targets="Clean" Projects="Source\StuffOrganizer.dproj"/>
+		</Target>
+		<Target Name="StuffOrganizer:Make">
+			<MSBuild Targets="Make" Projects="Source\StuffOrganizer.dproj"/>
+		</Target>
+		<Target Name="StuffOrganizerTests">
+			<MSBuild Projects="Source\Test\StuffOrganizerTests.dproj"/>
+		</Target>
+		<Target Name="StuffOrganizerTests:Clean">
+			<MSBuild Targets="Clean" Projects="Source\Test\StuffOrganizerTests.dproj"/>
+		</Target>
+		<Target Name="StuffOrganizerTests:Make">
+			<MSBuild Targets="Make" Projects="Source\Test\StuffOrganizerTests.dproj"/>
+		</Target>
+		<Target Name="DirLister">
+			<MSBuild Projects="Tools\DirLister\DirLister.dproj"/>
+		</Target>
+		<Target Name="DirLister:Clean">
+			<MSBuild Targets="Clean" Projects="Tools\DirLister\DirLister.dproj"/>
+		</Target>
+		<Target Name="DirLister:Make">
+			<MSBuild Targets="Make" Projects="Tools\DirLister\DirLister.dproj"/>
+		</Target>
+		<Target Name="unpack_7z">
+			<MSBuild Projects="..\TorrentOrganizer\Modules\unpack_7z\unpack_7z.dproj"/>
+		</Target>
+		<Target Name="unpack_7z:Clean">
+			<MSBuild Targets="Clean" Projects="..\TorrentOrganizer\Modules\unpack_7z\unpack_7z.dproj"/>
+		</Target>
+		<Target Name="unpack_7z:Make">
+			<MSBuild Targets="Make" Projects="..\TorrentOrganizer\Modules\unpack_7z\unpack_7z.dproj"/>
+		</Target>
+		<Target Name="unpack_rar">
+			<MSBuild Projects="..\TorrentOrganizer\Modules\unpack_rar\unpack_rar.dproj"/>
+		</Target>
+		<Target Name="unpack_rar:Clean">
+			<MSBuild Targets="Clean" Projects="..\TorrentOrganizer\Modules\unpack_rar\unpack_rar.dproj"/>
+		</Target>
+		<Target Name="unpack_rar:Make">
+			<MSBuild Targets="Make" Projects="..\TorrentOrganizer\Modules\unpack_rar\unpack_rar.dproj"/>
+		</Target>
+		<Target Name="unpack_zip">
+			<MSBuild Projects="..\TorrentOrganizer\Modules\unpack_zip\unpack_zip.dproj"/>
+		</Target>
+		<Target Name="unpack_zip:Clean">
+			<MSBuild Targets="Clean" Projects="..\TorrentOrganizer\Modules\unpack_zip\unpack_zip.dproj"/>
+		</Target>
+		<Target Name="unpack_zip:Make">
+			<MSBuild Targets="Make" Projects="..\TorrentOrganizer\Modules\unpack_zip\unpack_zip.dproj"/>
+		</Target>
+		<Target Name="allmovie">
+			<MSBuild Projects="..\TorrentOrganizer\Modules\allmovie\allmovie.dproj"/>
+		</Target>
+		<Target Name="allmovie:Clean">
+			<MSBuild Targets="Clean" Projects="..\TorrentOrganizer\Modules\allmovie\allmovie.dproj"/>
+		</Target>
+		<Target Name="allmovie:Make">
+			<MSBuild Targets="Make" Projects="..\TorrentOrganizer\Modules\allmovie\allmovie.dproj"/>
+		</Target>
+		<Target Name="port_hu">
+			<MSBuild Projects="..\TorrentOrganizer\Modules\port_hu\port_hu.dproj"/>
+		</Target>
+		<Target Name="port_hu:Clean">
+			<MSBuild Targets="Clean" Projects="..\TorrentOrganizer\Modules\port_hu\port_hu.dproj"/>
+		</Target>
+		<Target Name="port_hu:Make">
+			<MSBuild Targets="Make" Projects="..\TorrentOrganizer\Modules\port_hu\port_hu.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="StuffOrganizer;StuffOrganizerTests;DirLister;unpack_7z;unpack_rar;unpack_zip;allmovie;port_hu"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="StuffOrganizer:Clean;StuffOrganizerTests:Clean;DirLister:Clean;unpack_7z:Clean;unpack_rar:Clean;unpack_zip:Clean;allmovie:Clean;port_hu:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="StuffOrganizer:Make;StuffOrganizerTests:Make;DirLister:Make;unpack_7z:Make;unpack_rar:Make;unpack_zip:Make;allmovie:Make;port_hu:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

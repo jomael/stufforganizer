@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011.02.13 15:58:07.808.pas,C:\Documents and Settings\Teszt\Dokumentumok\RAD Studio\Projects\Unit8.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uMain.pas</Transaction>
+    <Transaction>2011.02.13 15:58:07.808.dfm,C:\Documents and Settings\Teszt\Dokumentumok\RAD Studio\Projects\Unit8.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uMain.dfm</Transaction>
+    <Transaction>2011.02.13 15:58:25.503.dproj,C:\Documents and Settings\Teszt\Dokumentumok\RAD Studio\Projects\Project4.dproj=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\TorrentOrganizer.dproj</Transaction>
+    <Transaction>2011.02.21 18:38:21.506.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uProcessDirs.pas</Transaction>
+    <Transaction>2011.02.21 18:38:21.506.dfm,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uProcessDirs.dfm</Transaction>
+    <Transaction>2011.02.22 19:39:32.503.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uCategories.pas</Transaction>
+    <Transaction>2011.02.22 19:39:32.503.dfm,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uCategories.dfm</Transaction>
+    <Transaction>2011.03.18 21:29:46.051.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uPasswordForm.pas</Transaction>
+    <Transaction>2011.03.18 21:29:46.051.dfm,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uPasswordForm.dfm</Transaction>
+    <Transaction>2011.03.20 14:05:44.547.sql,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Tools\main.sql=</Transaction>
+    <Transaction>2011.03.20 14:05:44.897.sql,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Tools\productinfo.sql=</Transaction>
+    <Transaction>2011.03.20 14:32:19.650.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uNFOForm.pas</Transaction>
+    <Transaction>2011.03.20 14:32:19.650.dfm,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uNFOForm.dfm</Transaction>
+    <Transaction>2011.03.20 15:28:52.930.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uClasses.pas</Transaction>
+    <Transaction>2011.03.20 15:31:22.204.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uConstans.pas</Transaction>
+    <Transaction>2011.03.26 11:11:06.456.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uProcessDirs.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uPreprocessDirs.pas</Transaction>
+    <Transaction>2011.03.26 11:11:06.456.dfm,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uProcessDirs.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uPreprocessDirs.dfm</Transaction>
+    <Transaction>2011.03.26 11:27:21.258.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uThreadProcessForm.pas</Transaction>
+    <Transaction>2011.03.26 11:27:21.258.dfm,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uThreadProcessForm.dfm</Transaction>
+    <Transaction>2011.03.26 11:57:45.791.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uProcessThread.pas</Transaction>
+    <Transaction>2011.04.01 19:42:51.595.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uOptionsForm.pas</Transaction>
+    <Transaction>2011.04.01 19:42:51.595.dfm,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uOptionsForm.dfm</Transaction>
+    <Transaction>2011.04.09 14:16:55.375.dproj,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\TorrentOrganizer.dproj=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\StuffOrganizer.dproj</Transaction>
+    <Transaction>2011.04.09 16:49:17.351.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uPluginClasses.pas</Transaction>
+    <Transaction>2011.04.09 18:01:24.393.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\SOPluginDefs.pas</Transaction>
+    <Transaction>2011.04.10 09:16:41.641.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uPluginsForm.pas</Transaction>
+    <Transaction>2011.04.10 09:16:41.641.dfm,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uPluginsForm.dfm</Transaction>
+    <Transaction>2011.04.15 18:55:03.858.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uUserSelectForm.pas</Transaction>
+    <Transaction>2011.04.15 18:55:03.858.dfm,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uUserSelectForm.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
