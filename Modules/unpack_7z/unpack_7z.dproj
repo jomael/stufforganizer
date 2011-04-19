@@ -41,7 +41,9 @@
 			<DelphiCompile Include="unpack_7z.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\..\SOPluginDefs.pas"/>
+			<DCCReference Include="..\..\SourceSOPluginDefs.pas">
+				<ModuleName>SOPluginDefs</ModuleName>
+			</DCCReference>
 			<RcItem Include="7zip_32.ico">
 				<ResourceType>Icon</ResourceType>
 				<ResourceId>MAIN_32</ResourceId>

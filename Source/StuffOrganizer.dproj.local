@@ -30,5 +30,6 @@
     <Transaction>2011.04.10 09:16:41.641.dfm,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uPluginsForm.dfm</Transaction>
     <Transaction>2011.04.15 18:55:03.858.pas,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uUserSelectForm.pas</Transaction>
     <Transaction>2011.04.15 18:55:03.858.dfm,C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\TorrentOrganizer\Source\uUserSelectForm.dfm</Transaction>
+    <Transaction>2011.04.19 20:19:56.641.pas,c:\Work\Project\__D2009Projects__\StuffOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\uProcs.pas</Transaction>
   </Transactions>
 </BorlandProject>

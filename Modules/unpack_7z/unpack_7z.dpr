@@ -27,7 +27,7 @@ uses
   Classes,
   Graphics,
   sevenzip,
-  SOPluginDefs in '..\..\SOPluginDefs.pas';
+  SOPluginDefs in '..\..\Source\SOPluginDefs.pas';
 
 {$E sop}
 

@@ -7,7 +7,7 @@ uses
   sevenzip,
   Messages,
   Dialogs, IcePack,
-  SOPluginDefs in '..\..\SOPluginDefs.pas',
+  SOPluginDefs in '..\..\Source\SOPluginDefs.pas',
   uSearchInfo in 'uSearchInfo.pas';
 
 {$E sop}

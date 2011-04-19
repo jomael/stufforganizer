@@ -26,7 +26,7 @@ uses
   SysUtils,
   Classes, Graphics,
   RAR,
-  SOPluginDefs in '..\..\SOPluginDefs.pas';
+  SOPluginDefs in '..\..\Source\SOPluginDefs.pas';
 
 {$E sop}
 

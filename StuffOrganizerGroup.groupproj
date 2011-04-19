@@ -12,19 +12,19 @@
 			<Projects Include="Tools\DirLister\DirLister.dproj">
 				<Dependencies/>
 			</Projects>
-			<Projects Include="..\TorrentOrganizer\Modules\unpack_7z\unpack_7z.dproj">
+			<Projects Include="Modules\unpack_7z\unpack_7z.dproj">
 				<Dependencies/>
 			</Projects>
-			<Projects Include="..\TorrentOrganizer\Modules\unpack_rar\unpack_rar.dproj">
+			<Projects Include="Modules\unpack_rar\unpack_rar.dproj">
 				<Dependencies/>
 			</Projects>
-			<Projects Include="..\TorrentOrganizer\Modules\unpack_zip\unpack_zip.dproj">
+			<Projects Include="Modules\unpack_zip\unpack_zip.dproj">
 				<Dependencies/>
 			</Projects>
-			<Projects Include="..\TorrentOrganizer\Modules\allmovie\allmovie.dproj">
+			<Projects Include="Modules\allmovie\allmovie.dproj">
 				<Dependencies/>
 			</Projects>
-			<Projects Include="..\TorrentOrganizer\Modules\port_hu\port_hu.dproj">
+			<Projects Include="Modules\port_hu\port_hu.dproj">
 				<Dependencies/>
 			</Projects>
 		</ItemGroup>
@@ -63,49 +63,49 @@
 			<MSBuild Targets="Make" Projects="Tools\DirLister\DirLister.dproj"/>
 		</Target>
 		<Target Name="unpack_7z">
-			<MSBuild Projects="..\TorrentOrganizer\Modules\unpack_7z\unpack_7z.dproj"/>
+			<MSBuild Projects="Modules\unpack_7z\unpack_7z.dproj"/>
 		</Target>
 		<Target Name="unpack_7z:Clean">
-			<MSBuild Targets="Clean" Projects="..\TorrentOrganizer\Modules\unpack_7z\unpack_7z.dproj"/>
+			<MSBuild Targets="Clean" Projects="Modules\unpack_7z\unpack_7z.dproj"/>
 		</Target>
 		<Target Name="unpack_7z:Make">
-			<MSBuild Targets="Make" Projects="..\TorrentOrganizer\Modules\unpack_7z\unpack_7z.dproj"/>
+			<MSBuild Targets="Make" Projects="Modules\unpack_7z\unpack_7z.dproj"/>
 		</Target>
 		<Target Name="unpack_rar">
-			<MSBuild Projects="..\TorrentOrganizer\Modules\unpack_rar\unpack_rar.dproj"/>
+			<MSBuild Projects="Modules\unpack_rar\unpack_rar.dproj"/>
 		</Target>
 		<Target Name="unpack_rar:Clean">
-			<MSBuild Targets="Clean" Projects="..\TorrentOrganizer\Modules\unpack_rar\unpack_rar.dproj"/>
+			<MSBuild Targets="Clean" Projects="Modules\unpack_rar\unpack_rar.dproj"/>
 		</Target>
 		<Target Name="unpack_rar:Make">
-			<MSBuild Targets="Make" Projects="..\TorrentOrganizer\Modules\unpack_rar\unpack_rar.dproj"/>
+			<MSBuild Targets="Make" Projects="Modules\unpack_rar\unpack_rar.dproj"/>
 		</Target>
 		<Target Name="unpack_zip">
-			<MSBuild Projects="..\TorrentOrganizer\Modules\unpack_zip\unpack_zip.dproj"/>
+			<MSBuild Projects="Modules\unpack_zip\unpack_zip.dproj"/>
 		</Target>
 		<Target Name="unpack_zip:Clean">
-			<MSBuild Targets="Clean" Projects="..\TorrentOrganizer\Modules\unpack_zip\unpack_zip.dproj"/>
+			<MSBuild Targets="Clean" Projects="Modules\unpack_zip\unpack_zip.dproj"/>
 		</Target>
 		<Target Name="unpack_zip:Make">
-			<MSBuild Targets="Make" Projects="..\TorrentOrganizer\Modules\unpack_zip\unpack_zip.dproj"/>
+			<MSBuild Targets="Make" Projects="Modules\unpack_zip\unpack_zip.dproj"/>
 		</Target>
 		<Target Name="allmovie">
-			<MSBuild Projects="..\TorrentOrganizer\Modules\allmovie\allmovie.dproj"/>
+			<MSBuild Projects="Modules\allmovie\allmovie.dproj"/>
 		</Target>
 		<Target Name="allmovie:Clean">
-			<MSBuild Targets="Clean" Projects="..\TorrentOrganizer\Modules\allmovie\allmovie.dproj"/>
+			<MSBuild Targets="Clean" Projects="Modules\allmovie\allmovie.dproj"/>
 		</Target>
 		<Target Name="allmovie:Make">
-			<MSBuild Targets="Make" Projects="..\TorrentOrganizer\Modules\allmovie\allmovie.dproj"/>
+			<MSBuild Targets="Make" Projects="Modules\allmovie\allmovie.dproj"/>
 		</Target>
 		<Target Name="port_hu">
-			<MSBuild Projects="..\TorrentOrganizer\Modules\port_hu\port_hu.dproj"/>
+			<MSBuild Projects="Modules\port_hu\port_hu.dproj"/>
 		</Target>
 		<Target Name="port_hu:Clean">
-			<MSBuild Targets="Clean" Projects="..\TorrentOrganizer\Modules\port_hu\port_hu.dproj"/>
+			<MSBuild Targets="Clean" Projects="Modules\port_hu\port_hu.dproj"/>
 		</Target>
 		<Target Name="port_hu:Make">
-			<MSBuild Targets="Make" Projects="..\TorrentOrganizer\Modules\port_hu\port_hu.dproj"/>
+			<MSBuild Targets="Make" Projects="Modules\port_hu\port_hu.dproj"/>
 		</Target>
 		<Target Name="Build">
 			<CallTarget Targets="StuffOrganizer;StuffOrganizerTests;DirLister;unpack_7z;unpack_rar;unpack_zip;allmovie;port_hu"/>

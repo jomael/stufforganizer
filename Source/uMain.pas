@@ -28,7 +28,7 @@ uses
   Menus, ShellApi, ActiveX, Gradient, uClasses, ActnList, PngFunctions,
   jpeg, ToolWin, pngimage, JvBaseDlg, JvBrowseFolder, Math, SyncObjs, IceXML,
   Generics.Defaults, W7TaskBar, ShlObj, AbBase, AbBrowse, AbZBrows, AbZipper,
-  AbUtils, AbUnzper, SOPluginDefs;
+  AbUtils, AbUnzper, SOPluginDefs, uConstans;
 
 type
 
@@ -143,6 +143,13 @@ type
     Plugins1: TMenuItem;
     pmiPluginFuncs: TMenuItem;
     N5: TMenuItem;
+    aAbout: TAction;
+    ToolButton7: TToolButton;
+    pmAbout: TPopupMenu;
+    aHomepage: TAction;
+    aCheckNewVersion: TAction;
+    Visithomepage1: TMenuItem;
+    Checknewversion1: TMenuItem;
 
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -225,6 +232,8 @@ type
     procedure aDBBackupExecute(Sender: TObject);
     procedure aDBRestoreExecute(Sender: TObject);
     procedure aPluginsExecute(Sender: TObject);
+    procedure aAboutExecute(Sender: TObject);
+    procedure aHomepageExecute(Sender: TObject);
   private
     //Database methods
     procedure CreateMainDB;
@@ -264,6 +273,7 @@ type
   protected
     procedure AcceptFiles( var msg : TMessage ); message WM_DROPFILES;
     procedure WMEndSession(var Msg: TWMEndSession); Message WM_QUERYENDSESSION;
+    procedure AddItemsFromOtherProcess( var msg : TMessage ); message WM_PROCESS_ADDITEMS;
 
   public
     { Public declarations }
@@ -304,6 +314,8 @@ type
   end;
 
 var
+  mutexHandle: THandle;
+
   MainForm: TMainForm;
   ApplicationTerminating: boolean = false;
   MainDBPath: string;
@@ -314,12 +326,17 @@ implementation
 
 uses
   uPreprocessDirs, uCategories, DateUtils, uProgress, uNFOForm,
-  uConstans, uThreadProcessForm, uProcessThread, uOptionsForm, uPluginClasses,
-  uPluginsForm, CodePages;
+  uThreadProcessForm, uProcessThread, uOptionsForm, uPluginClasses,
+  uPluginsForm, CodePages, uProcs;
 
 {$R *.dfm}
 
  {$REGION 'Action methods'}
+procedure TMainForm.aAboutExecute(Sender: TObject);
+begin
+  //
+end;
+
 procedure TMainForm.aAddDirectoryExecute(Sender: TObject);
 var
   Data: PNodeCategory;
@@ -430,6 +447,11 @@ end;
 procedure TMainForm.aExitExecute(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TMainForm.aHomepageExecute(Sender: TObject);
+begin
+  OpenURL('http://stufforganizer.sourceforge.net/');
 end;
 
 procedure TMainForm.aModifyCategoryExecute(Sender: TObject);
@@ -621,6 +643,18 @@ begin
   MainForm.PreparingNewFiles(Files, CategoryID);
   Files.Free;
 end;
+
+procedure TMainForm.AddItemsFromOtherProcess(var msg: TMessage);
+var
+  ItemList: TStringList;
+begin
+  if msg.LParam <> 0 then
+    ShowMessage(string(PWideChar(msg.LParam)));
+//    ItemList := Pointer(msg.LParam);
+//  ShowMessage(ItemList.Text);
+  ShowMessage('WM_PROCESS_ADDITEMS');
+end;
+
 
 procedure TMainForm.AddNewCategory(const ParentID: integer = -1);
 var
@@ -845,18 +879,24 @@ var
 begin
   LoadConfigState;
 
-  LockDB;
+{  LockDB;
   try
     if DB.GetTableValue('select count(id) from Tags') = 0 then
       GenerateTagsTableFromDirs;
   finally
     UnLockDB;
-  end;
+  end;}
 
+  //For ICS
   GenerateTagCategoryMatrix;
 
+  //Load plugins
   PluginManager.LoadPlugins;
   CreateDescriptorMenus;
+
+  //Process application parameters
+  ProcessParameters;
+  CoolTrayIcon1.IconVisible := true;
 end;
 
  {$ENDREGION}
@@ -950,6 +990,7 @@ begin
 end;
 
 procedure TMainForm.GenerateTagsTableFromDirs;
+//Már nincs használva
 var
   Table: TSQLiteTable;
   Tags, tag: string;
@@ -1526,7 +1567,7 @@ var
 begin
   q := StringReplace(eTags.Text, ',', ' ', [rfReplaceAll]);
   if q <> '' then
-    ShellExecute(Handle, 'open', PChar('http://google.com/search?q=' + URLEncode(q, true)), nil, nil, SW_SHOW)
+    OpenURL('http://google.com/search?q=' + URLEncode(q, true))
   else
     MessageDlg('Please add some tags to product!', mtInformation, [mbOK], 0);
 end;
@@ -1718,7 +1759,6 @@ begin
           Item.CategoryName := UTF8ToString(Table.FieldAsString(2));
           Item.CategoryIconIndex := StrToIntDef(Table.FieldAsString(11), -1);
         end;
-//        Item.Name := Table.FieldAsString(3);
         Item.Name := UTF8ToString(Table.FieldAsString(3));
         Item.DirName := UTF8ToString(Table.FieldAsString(4));
         Item.TargetPath := UTF8ToString(Table.FieldAsString(5));
@@ -1933,7 +1973,7 @@ end;
 procedure TMainForm.lURLClick(Sender: TObject);
 begin
   if lURL.Caption <> '' then
-    ShellExecute(Handle, 'open', PChar(lURL.Caption), nil, nil, SW_SHOW);
+    OpenURL(lURL.Caption);
 end;
 
 procedure TMainForm.EditBoxKeyPress(Sender: TObject; var Key: Char);
@@ -2726,5 +2766,18 @@ procedure TMainForm.ShowOptionsForm;
 begin
   OptionsForm.Show;
 end;
+
+initialization
+  mutexHandle:= CreateMutex(nil, True, PWideChar(ExtractFileName(ParamStr(0))));
+  if GetLastError = ERROR_ALREADY_EXISTS then
+  begin
+    //ShowMessage('Application already running!');
+    SwitchToPrevApp;
+    Halt;
+  end;
+
+finalization
+  if mutexHandle <> 0 then
+    CloseHandle(mutexHandle);
 
 end.

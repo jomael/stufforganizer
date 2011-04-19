@@ -20,6 +20,7 @@
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
+			<GenDll>true</GenDll>
 			<DCC_ExeOutput>..\..\..\Bin\Plugins\</DCC_ExeOutput>
 			<DCC_DependencyCheckOutputName>..\..\..\Bin\Plugins\allmovie.sop</DCC_DependencyCheckOutputName>
 			<DCC_ImageBase>00400000</DCC_ImageBase>
