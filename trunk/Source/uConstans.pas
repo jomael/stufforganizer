@@ -22,7 +22,7 @@ unit uConstans;
 interface
 
 uses
-  SysUtils, Classes, Windows, Messages, IcePack, ShlObj;
+  SysUtils, Classes, Windows, Messages, IcePack, ShlObj, tlHelp32, Forms;
 
 const
   APP_TITLE                   = 'Stuff Organizer';
@@ -38,6 +38,7 @@ const
   PLUGIN_DIR                  = 'Plugins\';
 
   WM_THREADNOTIFY             = WM_USER + 27;
+  WM_PROCESS_ADDITEMS         = WM_USER + 127;
 
   RESULT_ERROR                = 0;
   RESULT_UNPACK               = 1;
@@ -81,7 +82,10 @@ var
   CatIDArray: array of integer;
   TagMatrix: array of array of Extended;
 
+
 implementation
+
+
 
 initialization
   TagList := TStringList.Create;

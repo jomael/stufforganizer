@@ -73,6 +73,7 @@
 			<DCCReference Include="uUserSelectForm.pas">
 				<Form>UserSelectForm</Form>
 			</DCCReference>
+			<DCCReference Include="uProcs.pas"/>
 			<RcItem Include="DBSQL\productinfo.sql">
 				<ContainerId>ResourceItem</ContainerId>
 				<ResourceType>RCData</ResourceType>

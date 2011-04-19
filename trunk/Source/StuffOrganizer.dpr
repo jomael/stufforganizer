@@ -20,7 +20,8 @@ uses
   uPluginClasses in 'uPluginClasses.pas',
   SOPluginDefs in 'SOPluginDefs.pas',
   uPluginsForm in 'uPluginsForm.pas' {PluginsForm},
-  uUserSelectForm in 'uUserSelectForm.pas' {UserSelectForm};
+  uUserSelectForm in 'uUserSelectForm.pas' {UserSelectForm},
+  uProcs in 'uProcs.pas';
 
 {$R *.res}
 
@@ -36,6 +37,7 @@ begin
   Application.CreateForm(TThreadProcessForm, ThreadProcessForm);
   Application.CreateForm(TOptionsForm, OptionsForm);
   Application.CreateForm(TPluginsForm, PluginsForm);
-//  Application.CreateForm(TUserSelectForm, UserSelectForm);
+  //  Application.CreateForm(TUserSelectForm, UserSelectForm);
   Application.Run;
 end.
+
