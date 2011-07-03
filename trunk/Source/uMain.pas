@@ -273,7 +273,7 @@ type
   protected
     procedure AcceptFiles( var msg : TMessage ); message WM_DROPFILES;
     procedure WMEndSession(var Msg: TWMEndSession); Message WM_QUERYENDSESSION;
-    procedure AddItemsFromOtherProcess( var msg : TMessage ); message WM_PROCESS_ADDITEMS;
+    procedure AddItemsFromOtherProcess( var msg : TMessage ); message WM_COPYDATA;
 
   public
     { Public declarations }
@@ -647,12 +647,22 @@ end;
 procedure TMainForm.AddItemsFromOtherProcess(var msg: TMessage);
 var
   ItemList: TStringList;
+  cd: TCopyDataStruct;
+  s: string;
 begin
-  if msg.LParam <> 0 then
-    ShowMessage(string(PWideChar(msg.LParam)));
-//    ItemList := Pointer(msg.LParam);
-//  ShowMessage(ItemList.Text);
-  ShowMessage('WM_PROCESS_ADDITEMS');
+  cd := PCopyDataStruct(msg.LParam)^;
+
+  if cd.dwData = 1200 then
+  begin
+    s := string(PWideChar(cd.lpData));
+    SetLength(s, cd.cbData div sizeOf(s[1]));
+    ShowMessage(s);
+
+    ItemList := TStringList.Create;
+    ItemList.Text := S;
+
+    ItemList.Free;
+  end;
 end;
 
 

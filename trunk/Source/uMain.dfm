@@ -1175,6 +1175,7 @@ object MainForm: TMainForm
         Left = 223
         Top = 0
         Action = aConsistenceCheck
+        Visible = False
       end
       object ToolButton5: TToolButton
         Left = 324

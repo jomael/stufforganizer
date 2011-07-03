@@ -135,16 +135,38 @@ function GetHwnd(Handle : HWND; lParam : LPARAM) : Boolean; stdcall;
 var
   lTempClass: String;
   len: integer;
-  sParam: string;
+  cd : TCopyDataStruct;
+  ParamList: TStrings;
+  I: Integer;
+  S: string;
 begin
   SetLength(lTempClass, 255);
   SetLength(lTempClass, GetClassName(Handle, PChar(lTempClass), 255));
   if lTempClass = TMainForm.ClassName then
   begin
-    sParam := ParamStr(0);
-    PostMessage(Handle, WM_PROCESS_ADDITEMS, integer(PWideChar(sParam)), 2);
-    ShowWindow(Handle, 1);
-    SetForegroundWindow(Handle);
+
+    ParamList := TStringList.Create;
+    for I := 1 to ParamCount do
+    begin
+      S := ParamStr(I);
+      if (Length(S) > 0) and FileExists(S) or DirectoryExists(S) then
+      begin
+        ParamList.Add(ExcludeTrailingBackslash(S));
+      end;
+    end;
+
+    if ParamList.Count > 0 then
+    begin
+      S := ParamList.Text;
+      cd.dwData := 1200;
+      cd.cbData := Length(S) * sizeOf(S[1]);
+      cd.lpData := PWideChar(S);
+
+      SendMessage(Handle, WM_COPYDATA, Application.Handle, LongInt(@cd));
+      ShowWindow(Handle, 1);
+      SetForegroundWindow(Handle);
+    end;
+    ParamList.Free;
   end;
   Result := True;
 end;
