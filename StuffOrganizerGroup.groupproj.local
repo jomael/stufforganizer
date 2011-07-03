@@ -5,6 +5,6 @@
     <Transaction>2011.04.09 15:10:18.641.groupproj,C:\Work\Project\__D2009Projects__\TorrentOrganizer\TorrentOrganizerGroup.groupproj=C:\Work\Project\__D2009Projects__\TorrentOrganizer\StuffOrganizerGroup.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="port_hu.sop"/>
+		<Projects ActiveProject="StuffOrganizer.exe"/>
 	</Default.Personality>
 </BorlandProject>

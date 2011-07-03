@@ -44,390 +44,390 @@
 #define GIFConsts_sBadBlock 64781
 #define GIFConsts_sUnsupportedClass 64782
 #define GIFConsts_sInvalidData 64783
-#define JclResources_RsIntelCacheDescrB1 64784
-#define JclResources_RsIntelCacheDescrB2 64785
-#define JclResources_RsIntelCacheDescrB3 64786
-#define JclResources_RsIntelCacheDescrB4 64787
-#define JclResources_RsIntelCacheDescrBA 64788
-#define JclResources_RsIntelCacheDescrC0 64789
-#define JclResources_RsIntelCacheDescrCA 64790
-#define JclResources_RsIntelCacheDescrE4 64791
-#define JclResources_RsIntelCacheDescrF0 64792
-#define JclResources_RsIntelCacheDescrF1 64793
-#define JclResources_RsIntelCacheDescrFF 64794
-#define JclResources_RsInvalidMMFName 64795
-#define JclResources_RsInvalidMMFEmpty 64796
+#define SQLiteWrap_c_errorsql 64784
+#define SQLiteWrap_c_errorprepare 64785
+#define SQLiteWrap_c_errorexec 64786
+#define SQLiteWrap_c_errordata 64787
+#define VirtualTrees_SEditLinkIsNil 64788
+#define VirtualTrees_SWrongMoveError 64789
+#define VirtualTrees_SWrongStreamFormat 64790
+#define VirtualTrees_SWrongStreamVersion 64791
+#define VirtualTrees_SStreamTooSmall 64792
+#define VirtualTrees_SCorruptStream1 64793
+#define VirtualTrees_SCorruptStream2 64794
+#define VirtualTrees_SClipboardFailed 64795
+#define VirtualTrees_SCannotSetUserData 64796
 #define GIFConsts_sOutOfData 64797
 #define GIFConsts_sTooManyColors 64798
 #define GIFConsts_sBadColorIndex 64799
-#define JclResources_RsIntelCacheDescr73 64800
-#define JclResources_RsIntelCacheDescr78 64801
-#define JclResources_RsIntelCacheDescr79 64802
-#define JclResources_RsIntelCacheDescr7A 64803
-#define JclResources_RsIntelCacheDescr7B 64804
-#define JclResources_RsIntelCacheDescr7C 64805
-#define JclResources_RsIntelCacheDescr7D 64806
-#define JclResources_RsIntelCacheDescr7F 64807
-#define JclResources_RsIntelCacheDescr80 64808
-#define JclResources_RsIntelCacheDescr82 64809
-#define JclResources_RsIntelCacheDescr83 64810
-#define JclResources_RsIntelCacheDescr84 64811
-#define JclResources_RsIntelCacheDescr85 64812
-#define JclResources_RsIntelCacheDescr86 64813
-#define JclResources_RsIntelCacheDescr87 64814
-#define JclResources_RsIntelCacheDescrB0 64815
-#define JclResources_RsIntelCacheDescr52 64816
-#define JclResources_RsIntelCacheDescr55 64817
-#define JclResources_RsIntelCacheDescr56 64818
-#define JclResources_RsIntelCacheDescr57 64819
-#define JclResources_RsIntelCacheDescr59 64820
-#define JclResources_RsIntelCacheDescr5A 64821
-#define JclResources_RsIntelCacheDescr5B 64822
-#define JclResources_RsIntelCacheDescr5C 64823
-#define JclResources_RsIntelCacheDescr5D 64824
-#define JclResources_RsIntelCacheDescr60 64825
-#define JclResources_RsIntelCacheDescr66 64826
-#define JclResources_RsIntelCacheDescr67 64827
-#define JclResources_RsIntelCacheDescr68 64828
-#define JclResources_RsIntelCacheDescr70 64829
-#define JclResources_RsIntelCacheDescr71 64830
-#define JclResources_RsIntelCacheDescr72 64831
-#define JclResources_RsIntelCacheDescr42 64832
-#define JclResources_RsIntelCacheDescr43 64833
-#define JclResources_RsIntelCacheDescr44 64834
-#define JclResources_RsIntelCacheDescr45 64835
-#define JclResources_RsIntelCacheDescr46 64836
-#define JclResources_RsIntelCacheDescr47 64837
-#define JclResources_RsIntelCacheDescr48 64838
-#define JclResources_RsIntelCacheDescr49 64839
-#define JclResources_RsIntelCacheDescr4A 64840
-#define JclResources_RsIntelCacheDescr4B 64841
-#define JclResources_RsIntelCacheDescr4C 64842
-#define JclResources_RsIntelCacheDescr4D 64843
-#define JclResources_RsIntelCacheDescr4E 64844
-#define JclResources_RsIntelCacheDescr4F 64845
-#define JclResources_RsIntelCacheDescr50 64846
-#define JclResources_RsIntelCacheDescr51 64847
-#define JclResources_RsIntelCacheDescr0E 64848
-#define JclResources_RsIntelCacheDescr21 64849
-#define JclResources_RsIntelCacheDescr22 64850
-#define JclResources_RsIntelCacheDescr23 64851
-#define JclResources_RsIntelCacheDescr25 64852
-#define JclResources_RsIntelCacheDescr29 64853
-#define JclResources_RsIntelCacheDescr2C 64854
-#define JclResources_RsIntelCacheDescr30 64855
-#define JclResources_RsIntelCacheDescr39 64856
-#define JclResources_RsIntelCacheDescr3A 64857
-#define JclResources_RsIntelCacheDescr3B 64858
-#define JclResources_RsIntelCacheDescr3C 64859
-#define JclResources_RsIntelCacheDescr3D 64860
-#define JclResources_RsIntelCacheDescr3E 64861
-#define JclResources_RsIntelCacheDescr40 64862
-#define JclResources_RsIntelCacheDescr41 64863
-#define JvResources_RsMenuHighlight 64864
-#define JclResources_RsWin32Prefix 64865
-#define JclResources_RsEReplacementChar 64866
-#define JclResources_RsSynchCreateMutex 64867
-#define JclResources_RsIntelCacheDescr00 64868
-#define JclResources_RsIntelCacheDescr01 64869
-#define JclResources_RsIntelCacheDescr02 64870
-#define JclResources_RsIntelCacheDescr03 64871
-#define JclResources_RsIntelCacheDescr04 64872
-#define JclResources_RsIntelCacheDescr05 64873
-#define JclResources_RsIntelCacheDescr06 64874
-#define JclResources_RsIntelCacheDescr08 64875
-#define JclResources_RsIntelCacheDescr0A 64876
-#define JclResources_RsIntelCacheDescr0B 64877
-#define JclResources_RsIntelCacheDescr0C 64878
-#define JclResources_RsIntelCacheDescr0D 64879
-#define JvResources_RsClHighlight 64880
-#define JvResources_RsClHighlightText 64881
-#define JvResources_RsClBtnFace 64882
-#define JvResources_RsClBtnShadow 64883
-#define JvResources_RsClGrayText 64884
-#define JvResources_RsClBtnText 64885
-#define JvResources_RsClInactiveCaptionText 64886
-#define JvResources_RsClBtnHighlight 64887
-#define JvResources_RsCl3DDkShadow 64888
-#define JvResources_RsCl3DLight 64889
-#define JvResources_RsClInfoText 64890
-#define JvResources_RsClInfoBk 64891
-#define JvResources_RsGradientActiveCaption 64892
-#define JvResources_RsGradientInactiveCaption 64893
-#define JvResources_RsHotLight 64894
-#define JvResources_RsMenuBar 64895
-#define JvResources_RsClLightTurquoise 64896
-#define JvResources_RsClPaleBlue 64897
-#define JvResources_RsClLavender 64898
-#define JvResources_RsClScrollBar 64899
-#define JvResources_RsClBackground 64900
-#define JvResources_RsClActiveCaption 64901
-#define JvResources_RsClInactiveCaption 64902
-#define JvResources_RsClMenu 64903
-#define JvResources_RsClWindow 64904
-#define JvResources_RsClWindowFrame 64905
-#define JvResources_RsClMenuText 64906
-#define JvResources_RsClWindowText 64907
-#define JvResources_RsClCaptionText 64908
-#define JvResources_RsClActiveBorder 64909
-#define JvResources_RsClInactiveBorder 64910
-#define JvResources_RsClAppWorkSpace 64911
-#define JvResources_RsClGray50 64912
-#define JvResources_RsClLightOrange 64913
-#define JvResources_RsClSeaGreen 64914
-#define JvResources_RsClLightBlue 64915
-#define JvResources_RsClViolet 64916
-#define JvResources_RsClGray40 64917
-#define JvResources_RsClPink 64918
-#define JvResources_RsClGold 64919
-#define JvResources_RsClBrightGreen 64920
-#define JvResources_RsClTurquoise 64921
-#define JvResources_RsClPlum 64922
-#define JvResources_RsClGray25 64923
-#define JvResources_RsClRose 64924
-#define JvResources_RsClTan 64925
-#define JvResources_RsClLightYellow 64926
-#define JvResources_RsClLightGreen 64927
-#define JvResources_RsClWhite 64928
-#define JvResources_RsClMoneyGreen 64929
-#define JvResources_RsClSkyBlue 64930
-#define JvResources_RsClCream 64931
-#define JvResources_RsClMedGray 64932
-#define JvResources_RsClBrown 64933
-#define JvResources_RsClOliveGreen 64934
-#define JvResources_RsClDarkGreen 64935
-#define JvResources_RsClDarkTeal 64936
-#define JvResources_RsClDarkBlue 64937
-#define JvResources_RsClIndigo 64938
-#define JvResources_RsClGray80 64939
-#define JvResources_RsClDarkRed 64940
-#define JvResources_RsClOrange 64941
-#define JvResources_RsClDarkYellow 64942
-#define JvResources_RsClBlueGray 64943
-#define JvResources_RsUnknown 64944
-#define JvResources_RsClBlack 64945
-#define JvResources_RsClMaroon 64946
-#define JvResources_RsClGreen 64947
-#define JvResources_RsClOlive 64948
-#define JvResources_RsClNavy 64949
-#define JvResources_RsClPurple 64950
-#define JvResources_RsClTeal 64951
-#define JvResources_RsClGray 64952
-#define JvResources_RsClSilver 64953
-#define JvResources_RsClRed 64954
-#define JvResources_RsClLime 64955
-#define JvResources_RsClYellow 64956
-#define JvResources_RsClBlue 64957
-#define JvResources_RsClFuchsia 64958
-#define JvResources_RsClAqua 64959
-#define JvResources_RsEInternalError 64960
-#define JvResources_RsEShellNotCompatible 64961
-#define JvResources_RsEItemCanNotBeDeleted 64962
-#define JvResources_RsEAContextWithThatNameAlreadyExists 64963
-#define JvResources_RsECannotCreateAContextWithoutAContext 64964
-#define JvResources_RsEYouMustSpecifyAProviderBeforeSettin 64965
-#define JvResources_RsEProviderHasNoContextNameds 64966
-#define JvResources_RsEProviderDoesNotSupportContexts 64967
-#define JvResources_RsETheSpecifiedContextIsNotPartOfTheSa 64968
-#define JvResources_RsEYouMustSpecifyAProviderBeforeSettin_ 64969
-#define JvResources_RsEItemNotFoundInTheSelectedContext 64970
-#define JvResources_RsEViewListOutOfSync 64971
-#define JvResources_RsEExtensibleIntObjDuplicateClass 64972
-#define JvResources_RsEExtensibleIntObjCollectionExpected 64973
-#define JvResources_RsEExtensibleIntObjClassNameExpected 64974
-#define JvResources_RsEExtensibleIntObjInvalidClass 64975
-#define AbConst_AbCabMethod1S 64976
-#define AbConst_AbLtAddS 64977
-#define AbConst_AbLtDeleteS 64978
-#define AbConst_AbLtExtractS 64979
-#define AbConst_AbLtFreshenS 64980
-#define AbConst_AbLtMoveS 64981
-#define AbConst_AbLtReplaceS 64982
-#define AbConst_AbLtStartS 64983
-#define AbConst_AbGzipInvalidS 64984
-#define AbConst_AbGzipBadCRCS 64985
-#define AbConst_AbGzipBadFileSizeS 64986
-#define AbConst_AbUnhandledEntityS 64987
-#define JConsts_sChangeJPGSize 64988
-#define JConsts_sJPEGError 64989
-#define JConsts_sJPEGImageFile 64990
-#define JvResources_RsDataItemRenderHasNoText 64991
-#define AbConst_AbItemNameHeadingS 64992
-#define AbConst_AbPackedHeadingS 64993
-#define AbConst_AbMethodHeadingS 64994
-#define AbConst_AbRatioHeadingS 64995
-#define AbConst_AbCRCHeadingS 64996
-#define AbConst_AbFileAttrHeadingS 64997
-#define AbConst_AbFileFormatHeadingS 64998
-#define AbConst_AbEncryptionHeadingS 64999
-#define AbConst_AbTimeStampHeadingS 65000
-#define AbConst_AbFileSizeHeadingS 65001
-#define AbConst_AbVersionMadeHeadingS 65002
-#define AbConst_AbVersionNeededHeadingS 65003
-#define AbConst_AbPathHeadingS 65004
-#define AbConst_AbPartialHeadingS 65005
-#define AbConst_AbExecutableHeadingS 65006
-#define AbConst_AbCabMethod0S 65007
-#define AbConst_AbVMSReadTooManyBytesS 65008
-#define AbConst_AbVMSInvalidOriginS 65009
-#define AbConst_AbVMSErrorOpenSwapS 65010
-#define AbConst_AbVMSSeekFailS 65011
-#define AbConst_AbVMSReadFailS 65012
-#define AbConst_AbVMSWriteFailS 65013
-#define AbConst_AbVMSWriteTooManyBytesS 65014
-#define AbConst_AbBBSReadTooManyBytesS 65015
-#define AbConst_AbBBSSeekOutsideBufferS 65016
-#define AbConst_AbBBSInvalidOriginS 65017
-#define AbConst_AbBBSWriteTooManyBytesS 65018
-#define AbConst_AbSWSNotEndofStreamS 65019
-#define AbConst_AbSWSSeekFailedS 65020
-#define AbConst_AbSWSWriteFailedS 65021
-#define AbConst_AbSWSInvalidOriginS 65022
-#define AbConst_AbSWSInvalidNewOriginS 65023
-#define AbConst_AbCommentFormatS 65024
-#define AbConst_AbDefaultExtS 65025
-#define AbConst_AbFilterS 65026
-#define AbConst_AbFileNameTitleS 65027
-#define AbConst_AbOKS 65028
-#define AbConst_AbCancelS 65029
-#define AbConst_AbSelectDirectoryS 65030
-#define AbConst_AbEnterPasswordS 65031
-#define AbConst_AbPasswordS 65032
-#define AbConst_AbVerifyS 65033
-#define AbConst_AbCabExtS 65034
-#define AbConst_AbCabFilterS 65035
-#define AbConst_AbLogExtS 65036
-#define AbConst_AbLogFilterS 65037
-#define AbConst_AbExeExtS 65038
-#define AbConst_AbExeFilterS 65039
-#define AbConst_AbCRCFormatS 65040
-#define AbConst_AbReadOnlyS 65041
-#define AbConst_AbHiddenS 65042
-#define AbConst_AbSystemS 65043
-#define AbConst_AbArchivedS 65044
-#define AbConst_AbEFAFormatS 65045
-#define AbConst_AbIFAFormatS 65046
-#define AbConst_AbTextS 65047
-#define AbConst_AbBinaryS 65048
-#define AbConst_AbEncryptionFormatS 65049
-#define AbConst_AbEncryptedS 65050
-#define AbConst_AbNotEncryptedS 65051
-#define AbConst_AbUnknownS 65052
-#define AbConst_AbTimeStampFormatS 65053
-#define AbConst_AbMadeByFormatS 65054
-#define AbConst_AbNeededFormatS 65055
-#define AbConst_AbMethod1S 65056
-#define AbConst_AbMethod2S 65057
-#define AbConst_AbMethod3S 65058
-#define AbConst_AbMethod4S 65059
-#define AbConst_AbMethod5S 65060
-#define AbConst_AbMethod6S 65061
-#define AbConst_AbMethod7S 65062
-#define AbConst_AbMethod8S 65063
-#define AbConst_AbMethod9S 65064
-#define AbConst_AbMethod10S 65065
-#define AbConst_AbMethod11S 65066
-#define AbConst_AbVersionFormatS 65067
-#define AbConst_AbCompressedSizeFormatS 65068
-#define AbConst_AbUncompressedSizeFormatS 65069
-#define AbConst_AbCompressionMethodFormatS 65070
-#define AbConst_AbCompressionRatioFormatS 65071
-#define AbConst_AbNoCabinetDllErrorS 65072
-#define AbConst_AbFCIFileOpenErrorS 65073
-#define AbConst_AbFCIFileReadErrorS 65074
-#define AbConst_AbFCIFileWriteErrorS 65075
-#define AbConst_AbFCIFileCloseErrorS 65076
-#define AbConst_AbFCIFileSeekErrorS 65077
-#define AbConst_AbFCIFileDeleteErrorS 65078
-#define AbConst_AbFCIAddFileErrorS 65079
-#define AbConst_AbFCICreateErrorS 65080
-#define AbConst_AbFCIFlushCabinetErrorS 65081
-#define AbConst_AbFCIFlushFolderErrorS 65082
-#define AbConst_AbFDICopyErrorS 65083
-#define AbConst_AbFDICreateErrorS 65084
-#define AbConst_AbInvalidCabTemplateS 65085
-#define AbConst_AbInvalidCabFileS 65086
-#define AbConst_AbMethod0S 65087
-#define AbConst_AbNoSuchDirectoryS 65088
-#define AbConst_AbInflateBlockErrorS 65089
-#define AbConst_AbBadStreamTypeS 65090
-#define AbConst_AbTruncateErrorS 65091
-#define AbConst_AbZipBadCRCS 65092
-#define AbConst_AbZipBadStubS 65093
-#define AbConst_AbFileNotFoundS 65094
-#define AbConst_AbInvalidLFHS 65095
-#define AbConst_AbNoArchiveS 65096
-#define AbConst_AbReadErrorS 65097
-#define AbConst_AbInvalidIndexS 65098
-#define AbConst_AbInvalidThresholdS 65099
-#define AbConst_AbUnhandledFileTypeS 65100
-#define AbConst_AbSpanningNotSupportedS 65101
-#define AbConst_AbLogCreateErrorS 65102
-#define AbConst_abMoveFileErrorS 65103
-#define AbConst_AbDuplicateNameS 65104
-#define AbConst_AbUnsupportedCompressionMethodS 65105
-#define AbConst_AbUserAbortS 65106
-#define AbConst_AbArchiveBusyS 65107
-#define AbConst_AbLastDiskRequestS 65108
-#define AbConst_AbDiskRequestS 65109
-#define AbConst_AbNthImageRequestS 65110
-#define AbConst_AbLastImageRequestS 65111
-#define AbConst_AbImageRequestS 65112
-#define AbConst_AbBadSpanStreamS 65113
-#define AbConst_AbDiskNumRequestS 65114
-#define AbConst_AbImageNumRequestS 65115
-#define AbConst_AbNoOverwriteSpanStreamS 65116
-#define AbConst_AbNoSpannedSelfExtractS 65117
-#define AbConst_AbBlankDiskS 65118
-#define AbConst_AbStreamFullS 65119
-#define VirtualTrees_SEditLinkIsNil 65120
-#define VirtualTrees_SWrongMoveError 65121
-#define VirtualTrees_SWrongStreamFormat 65122
-#define VirtualTrees_SWrongStreamVersion 65123
-#define VirtualTrees_SStreamTooSmall 65124
-#define VirtualTrees_SCorruptStream1 65125
-#define VirtualTrees_SCorruptStream2 65126
-#define VirtualTrees_SClipboardFailed 65127
-#define VirtualTrees_SCannotSetUserData 65128
-#define AbConst_AbErrZipInvalidS 65129
-#define AbConst_AbZipVersionNeededS 65130
-#define AbConst_AbUnknownCompressionMethodS 65131
-#define AbConst_AbNoExtractionMethodS 65132
-#define AbConst_AbInvalidPasswordS 65133
-#define AbConst_AbNoInsertionMethodS 65134
-#define AbConst_AbInvalidFactorS 65135
-#define pnglang_EPNGUnexpectedEndText 65136
-#define pnglang_EPNGNoImageDataText 65137
-#define pnglang_EPNGCannotAddChunkText 65138
-#define pnglang_EPNGCannotAddInvalidImageText 65139
-#define pnglang_EPNGOutMemoryText 65140
-#define pnglang_EPNGHeaderNotPresentText 65141
-#define pnglang_EInvalidNewSize 65142
-#define Generics_Collections_sArgumentOutOfRange 65143
-#define SQLiteWrap_c_unknown 65144
-#define SQLiteWrap_c_failopen 65145
-#define SQLiteWrap_c_error 65146
-#define SQLiteWrap_c_nomessage 65147
-#define SQLiteWrap_c_errorsql 65148
-#define SQLiteWrap_c_errorprepare 65149
-#define SQLiteWrap_c_errorexec 65150
-#define SQLiteWrap_c_errordata 65151
+#define pnglang_EPNGUnknownPalEntryText 64800
+#define pnglang_EPNGUnknownCriticalChunkText 64801
+#define pnglang_EPNGUnknownCompressionText 64802
+#define pnglang_EPNGUnknownInterlaceText 64803
+#define pnglang_EPNGCannotAssignChunkText 64804
+#define pnglang_EPNGUnexpectedEndText 64805
+#define pnglang_EPNGNoImageDataText 64806
+#define pnglang_EPNGCannotAddChunkText 64807
+#define pnglang_EPNGCannotAddInvalidImageText 64808
+#define pnglang_EPNGOutMemoryText 64809
+#define pnglang_EPNGHeaderNotPresentText 64810
+#define pnglang_EInvalidNewSize 64811
+#define SQLiteWrap_c_unknown 64812
+#define SQLiteWrap_c_failopen 64813
+#define SQLiteWrap_c_error 64814
+#define SQLiteWrap_c_nomessage 64815
+#define JclResources_RsIntelCacheDescrF0 64816
+#define JclResources_RsIntelCacheDescrF1 64817
+#define JclResources_RsIntelCacheDescrFF 64818
+#define JclResources_RsInvalidMMFName 64819
+#define JclResources_RsInvalidMMFEmpty 64820
+#define JConsts_sChangeJPGSize 64821
+#define JConsts_sJPEGError 64822
+#define JConsts_sJPEGImageFile 64823
+#define pnglang_EPngInvalidCRCText 64824
+#define pnglang_EPNGInvalidIHDRText 64825
+#define pnglang_EPNGMissingMultipleIDATText 64826
+#define pnglang_EPNGZLIBErrorText 64827
+#define pnglang_EPNGInvalidPaletteText 64828
+#define pnglang_EPNGInvalidFileHeaderText 64829
+#define pnglang_EPNGIHDRNotFirstText 64830
+#define pnglang_EPNGSizeExceedsText 64831
+#define JclResources_RsIntelCacheDescr80 64832
+#define JclResources_RsIntelCacheDescr82 64833
+#define JclResources_RsIntelCacheDescr83 64834
+#define JclResources_RsIntelCacheDescr84 64835
+#define JclResources_RsIntelCacheDescr85 64836
+#define JclResources_RsIntelCacheDescr86 64837
+#define JclResources_RsIntelCacheDescr87 64838
+#define JclResources_RsIntelCacheDescrB0 64839
+#define JclResources_RsIntelCacheDescrB1 64840
+#define JclResources_RsIntelCacheDescrB2 64841
+#define JclResources_RsIntelCacheDescrB3 64842
+#define JclResources_RsIntelCacheDescrB4 64843
+#define JclResources_RsIntelCacheDescrBA 64844
+#define JclResources_RsIntelCacheDescrC0 64845
+#define JclResources_RsIntelCacheDescrCA 64846
+#define JclResources_RsIntelCacheDescrE4 64847
+#define JclResources_RsIntelCacheDescr5D 64848
+#define JclResources_RsIntelCacheDescr60 64849
+#define JclResources_RsIntelCacheDescr66 64850
+#define JclResources_RsIntelCacheDescr67 64851
+#define JclResources_RsIntelCacheDescr68 64852
+#define JclResources_RsIntelCacheDescr70 64853
+#define JclResources_RsIntelCacheDescr71 64854
+#define JclResources_RsIntelCacheDescr72 64855
+#define JclResources_RsIntelCacheDescr73 64856
+#define JclResources_RsIntelCacheDescr78 64857
+#define JclResources_RsIntelCacheDescr79 64858
+#define JclResources_RsIntelCacheDescr7A 64859
+#define JclResources_RsIntelCacheDescr7B 64860
+#define JclResources_RsIntelCacheDescr7C 64861
+#define JclResources_RsIntelCacheDescr7D 64862
+#define JclResources_RsIntelCacheDescr7F 64863
+#define JclResources_RsIntelCacheDescr4A 64864
+#define JclResources_RsIntelCacheDescr4B 64865
+#define JclResources_RsIntelCacheDescr4C 64866
+#define JclResources_RsIntelCacheDescr4D 64867
+#define JclResources_RsIntelCacheDescr4E 64868
+#define JclResources_RsIntelCacheDescr4F 64869
+#define JclResources_RsIntelCacheDescr50 64870
+#define JclResources_RsIntelCacheDescr51 64871
+#define JclResources_RsIntelCacheDescr52 64872
+#define JclResources_RsIntelCacheDescr55 64873
+#define JclResources_RsIntelCacheDescr56 64874
+#define JclResources_RsIntelCacheDescr57 64875
+#define JclResources_RsIntelCacheDescr59 64876
+#define JclResources_RsIntelCacheDescr5A 64877
+#define JclResources_RsIntelCacheDescr5B 64878
+#define JclResources_RsIntelCacheDescr5C 64879
+#define JclResources_RsIntelCacheDescr39 64880
+#define JclResources_RsIntelCacheDescr3A 64881
+#define JclResources_RsIntelCacheDescr3B 64882
+#define JclResources_RsIntelCacheDescr3C 64883
+#define JclResources_RsIntelCacheDescr3D 64884
+#define JclResources_RsIntelCacheDescr3E 64885
+#define JclResources_RsIntelCacheDescr40 64886
+#define JclResources_RsIntelCacheDescr41 64887
+#define JclResources_RsIntelCacheDescr42 64888
+#define JclResources_RsIntelCacheDescr43 64889
+#define JclResources_RsIntelCacheDescr44 64890
+#define JclResources_RsIntelCacheDescr45 64891
+#define JclResources_RsIntelCacheDescr46 64892
+#define JclResources_RsIntelCacheDescr47 64893
+#define JclResources_RsIntelCacheDescr48 64894
+#define JclResources_RsIntelCacheDescr49 64895
+#define JclResources_RsIntelCacheDescr04 64896
+#define JclResources_RsIntelCacheDescr05 64897
+#define JclResources_RsIntelCacheDescr06 64898
+#define JclResources_RsIntelCacheDescr08 64899
+#define JclResources_RsIntelCacheDescr0A 64900
+#define JclResources_RsIntelCacheDescr0B 64901
+#define JclResources_RsIntelCacheDescr0C 64902
+#define JclResources_RsIntelCacheDescr0D 64903
+#define JclResources_RsIntelCacheDescr0E 64904
+#define JclResources_RsIntelCacheDescr21 64905
+#define JclResources_RsIntelCacheDescr22 64906
+#define JclResources_RsIntelCacheDescr23 64907
+#define JclResources_RsIntelCacheDescr25 64908
+#define JclResources_RsIntelCacheDescr29 64909
+#define JclResources_RsIntelCacheDescr2C 64910
+#define JclResources_RsIntelCacheDescr30 64911
+#define JvResources_RsCl3DDkShadow 64912
+#define JvResources_RsCl3DLight 64913
+#define JvResources_RsClInfoText 64914
+#define JvResources_RsClInfoBk 64915
+#define JvResources_RsGradientActiveCaption 64916
+#define JvResources_RsGradientInactiveCaption 64917
+#define JvResources_RsHotLight 64918
+#define JvResources_RsMenuBar 64919
+#define JvResources_RsMenuHighlight 64920
+#define JclResources_RsWin32Prefix 64921
+#define JclResources_RsEReplacementChar 64922
+#define JclResources_RsSynchCreateMutex 64923
+#define JclResources_RsIntelCacheDescr00 64924
+#define JclResources_RsIntelCacheDescr01 64925
+#define JclResources_RsIntelCacheDescr02 64926
+#define JclResources_RsIntelCacheDescr03 64927
+#define JvResources_RsClWindow 64928
+#define JvResources_RsClWindowFrame 64929
+#define JvResources_RsClMenuText 64930
+#define JvResources_RsClWindowText 64931
+#define JvResources_RsClCaptionText 64932
+#define JvResources_RsClActiveBorder 64933
+#define JvResources_RsClInactiveBorder 64934
+#define JvResources_RsClAppWorkSpace 64935
+#define JvResources_RsClHighlight 64936
+#define JvResources_RsClHighlightText 64937
+#define JvResources_RsClBtnFace 64938
+#define JvResources_RsClBtnShadow 64939
+#define JvResources_RsClGrayText 64940
+#define JvResources_RsClBtnText 64941
+#define JvResources_RsClInactiveCaptionText 64942
+#define JvResources_RsClBtnHighlight 64943
+#define JvResources_RsClBrightGreen 64944
+#define JvResources_RsClTurquoise 64945
+#define JvResources_RsClPlum 64946
+#define JvResources_RsClGray25 64947
+#define JvResources_RsClRose 64948
+#define JvResources_RsClTan 64949
+#define JvResources_RsClLightYellow 64950
+#define JvResources_RsClLightGreen 64951
+#define JvResources_RsClLightTurquoise 64952
+#define JvResources_RsClPaleBlue 64953
+#define JvResources_RsClLavender 64954
+#define JvResources_RsClScrollBar 64955
+#define JvResources_RsClBackground 64956
+#define JvResources_RsClActiveCaption 64957
+#define JvResources_RsClInactiveCaption 64958
+#define JvResources_RsClMenu 64959
+#define JvResources_RsClDarkTeal 64960
+#define JvResources_RsClDarkBlue 64961
+#define JvResources_RsClIndigo 64962
+#define JvResources_RsClGray80 64963
+#define JvResources_RsClDarkRed 64964
+#define JvResources_RsClOrange 64965
+#define JvResources_RsClDarkYellow 64966
+#define JvResources_RsClBlueGray 64967
+#define JvResources_RsClGray50 64968
+#define JvResources_RsClLightOrange 64969
+#define JvResources_RsClSeaGreen 64970
+#define JvResources_RsClLightBlue 64971
+#define JvResources_RsClViolet 64972
+#define JvResources_RsClGray40 64973
+#define JvResources_RsClPink 64974
+#define JvResources_RsClGold 64975
+#define JvResources_RsClGray 64976
+#define JvResources_RsClSilver 64977
+#define JvResources_RsClRed 64978
+#define JvResources_RsClLime 64979
+#define JvResources_RsClYellow 64980
+#define JvResources_RsClBlue 64981
+#define JvResources_RsClFuchsia 64982
+#define JvResources_RsClAqua 64983
+#define JvResources_RsClWhite 64984
+#define JvResources_RsClMoneyGreen 64985
+#define JvResources_RsClSkyBlue 64986
+#define JvResources_RsClCream 64987
+#define JvResources_RsClMedGray 64988
+#define JvResources_RsClBrown 64989
+#define JvResources_RsClOliveGreen 64990
+#define JvResources_RsClDarkGreen 64991
+#define JvResources_RsETheSpecifiedContextIsNotPartOfTheSa 64992
+#define JvResources_RsEYouMustSpecifyAProviderBeforeSettin_ 64993
+#define JvResources_RsEItemNotFoundInTheSelectedContext 64994
+#define JvResources_RsEViewListOutOfSync 64995
+#define JvResources_RsEExtensibleIntObjDuplicateClass 64996
+#define JvResources_RsEExtensibleIntObjCollectionExpected 64997
+#define JvResources_RsEExtensibleIntObjClassNameExpected 64998
+#define JvResources_RsEExtensibleIntObjInvalidClass 64999
+#define JvResources_RsUnknown 65000
+#define JvResources_RsClBlack 65001
+#define JvResources_RsClMaroon 65002
+#define JvResources_RsClGreen 65003
+#define JvResources_RsClOlive 65004
+#define JvResources_RsClNavy 65005
+#define JvResources_RsClPurple 65006
+#define JvResources_RsClTeal 65007
+#define AbConst_AbLtReplaceS 65008
+#define AbConst_AbLtStartS 65009
+#define AbConst_AbGzipInvalidS 65010
+#define AbConst_AbGzipBadCRCS 65011
+#define AbConst_AbGzipBadFileSizeS 65012
+#define AbConst_AbUnhandledEntityS 65013
+#define Generics_Collections_sArgumentOutOfRange 65014
+#define JvResources_RsDataItemRenderHasNoText 65015
+#define JvResources_RsEInternalError 65016
+#define JvResources_RsEShellNotCompatible 65017
+#define JvResources_RsEItemCanNotBeDeleted 65018
+#define JvResources_RsEAContextWithThatNameAlreadyExists 65019
+#define JvResources_RsECannotCreateAContextWithoutAContext 65020
+#define JvResources_RsEYouMustSpecifyAProviderBeforeSettin 65021
+#define JvResources_RsEProviderHasNoContextNameds 65022
+#define JvResources_RsEProviderDoesNotSupportContexts 65023
+#define AbConst_AbFileFormatHeadingS 65024
+#define AbConst_AbEncryptionHeadingS 65025
+#define AbConst_AbTimeStampHeadingS 65026
+#define AbConst_AbFileSizeHeadingS 65027
+#define AbConst_AbVersionMadeHeadingS 65028
+#define AbConst_AbVersionNeededHeadingS 65029
+#define AbConst_AbPathHeadingS 65030
+#define AbConst_AbPartialHeadingS 65031
+#define AbConst_AbExecutableHeadingS 65032
+#define AbConst_AbCabMethod0S 65033
+#define AbConst_AbCabMethod1S 65034
+#define AbConst_AbLtAddS 65035
+#define AbConst_AbLtDeleteS 65036
+#define AbConst_AbLtExtractS 65037
+#define AbConst_AbLtFreshenS 65038
+#define AbConst_AbLtMoveS 65039
+#define AbConst_AbVMSWriteTooManyBytesS 65040
+#define AbConst_AbBBSReadTooManyBytesS 65041
+#define AbConst_AbBBSSeekOutsideBufferS 65042
+#define AbConst_AbBBSInvalidOriginS 65043
+#define AbConst_AbBBSWriteTooManyBytesS 65044
+#define AbConst_AbSWSNotEndofStreamS 65045
+#define AbConst_AbSWSSeekFailedS 65046
+#define AbConst_AbSWSWriteFailedS 65047
+#define AbConst_AbSWSInvalidOriginS 65048
+#define AbConst_AbSWSInvalidNewOriginS 65049
+#define AbConst_AbItemNameHeadingS 65050
+#define AbConst_AbPackedHeadingS 65051
+#define AbConst_AbMethodHeadingS 65052
+#define AbConst_AbRatioHeadingS 65053
+#define AbConst_AbCRCHeadingS 65054
+#define AbConst_AbFileAttrHeadingS 65055
+#define AbConst_AbSelectDirectoryS 65056
+#define AbConst_AbEnterPasswordS 65057
+#define AbConst_AbPasswordS 65058
+#define AbConst_AbVerifyS 65059
+#define AbConst_AbCabExtS 65060
+#define AbConst_AbCabFilterS 65061
+#define AbConst_AbLogExtS 65062
+#define AbConst_AbLogFilterS 65063
+#define AbConst_AbExeExtS 65064
+#define AbConst_AbExeFilterS 65065
+#define AbConst_AbVMSReadTooManyBytesS 65066
+#define AbConst_AbVMSInvalidOriginS 65067
+#define AbConst_AbVMSErrorOpenSwapS 65068
+#define AbConst_AbVMSSeekFailS 65069
+#define AbConst_AbVMSReadFailS 65070
+#define AbConst_AbVMSWriteFailS 65071
+#define AbConst_AbIFAFormatS 65072
+#define AbConst_AbTextS 65073
+#define AbConst_AbBinaryS 65074
+#define AbConst_AbEncryptionFormatS 65075
+#define AbConst_AbEncryptedS 65076
+#define AbConst_AbNotEncryptedS 65077
+#define AbConst_AbUnknownS 65078
+#define AbConst_AbTimeStampFormatS 65079
+#define AbConst_AbMadeByFormatS 65080
+#define AbConst_AbNeededFormatS 65081
+#define AbConst_AbCommentFormatS 65082
+#define AbConst_AbDefaultExtS 65083
+#define AbConst_AbFilterS 65084
+#define AbConst_AbFileNameTitleS 65085
+#define AbConst_AbOKS 65086
+#define AbConst_AbCancelS 65087
+#define AbConst_AbMethod7S 65088
+#define AbConst_AbMethod8S 65089
+#define AbConst_AbMethod9S 65090
+#define AbConst_AbMethod10S 65091
+#define AbConst_AbMethod11S 65092
+#define AbConst_AbVersionFormatS 65093
+#define AbConst_AbCompressedSizeFormatS 65094
+#define AbConst_AbUncompressedSizeFormatS 65095
+#define AbConst_AbCompressionMethodFormatS 65096
+#define AbConst_AbCompressionRatioFormatS 65097
+#define AbConst_AbCRCFormatS 65098
+#define AbConst_AbReadOnlyS 65099
+#define AbConst_AbHiddenS 65100
+#define AbConst_AbSystemS 65101
+#define AbConst_AbArchivedS 65102
+#define AbConst_AbEFAFormatS 65103
+#define AbConst_AbFCIFileDeleteErrorS 65104
+#define AbConst_AbFCIAddFileErrorS 65105
+#define AbConst_AbFCICreateErrorS 65106
+#define AbConst_AbFCIFlushCabinetErrorS 65107
+#define AbConst_AbFCIFlushFolderErrorS 65108
+#define AbConst_AbFDICopyErrorS 65109
+#define AbConst_AbFDICreateErrorS 65110
+#define AbConst_AbInvalidCabTemplateS 65111
+#define AbConst_AbInvalidCabFileS 65112
+#define AbConst_AbMethod0S 65113
+#define AbConst_AbMethod1S 65114
+#define AbConst_AbMethod2S 65115
+#define AbConst_AbMethod3S 65116
+#define AbConst_AbMethod4S 65117
+#define AbConst_AbMethod5S 65118
+#define AbConst_AbMethod6S 65119
+#define AbConst_AbFileNotFoundS 65120
+#define AbConst_AbInvalidLFHS 65121
+#define AbConst_AbNoArchiveS 65122
+#define AbConst_AbReadErrorS 65123
+#define AbConst_AbInvalidIndexS 65124
+#define AbConst_AbInvalidThresholdS 65125
+#define AbConst_AbUnhandledFileTypeS 65126
+#define AbConst_AbSpanningNotSupportedS 65127
+#define AbConst_AbLogCreateErrorS 65128
+#define AbConst_abMoveFileErrorS 65129
+#define AbConst_AbNoCabinetDllErrorS 65130
+#define AbConst_AbFCIFileOpenErrorS 65131
+#define AbConst_AbFCIFileReadErrorS 65132
+#define AbConst_AbFCIFileWriteErrorS 65133
+#define AbConst_AbFCIFileCloseErrorS 65134
+#define AbConst_AbFCIFileSeekErrorS 65135
+#define AbConst_AbNthImageRequestS 65136
+#define AbConst_AbLastImageRequestS 65137
+#define AbConst_AbImageRequestS 65138
+#define AbConst_AbBadSpanStreamS 65139
+#define AbConst_AbDiskNumRequestS 65140
+#define AbConst_AbImageNumRequestS 65141
+#define AbConst_AbNoOverwriteSpanStreamS 65142
+#define AbConst_AbNoSpannedSelfExtractS 65143
+#define AbConst_AbBlankDiskS 65144
+#define AbConst_AbStreamFullS 65145
+#define AbConst_AbNoSuchDirectoryS 65146
+#define AbConst_AbInflateBlockErrorS 65147
+#define AbConst_AbBadStreamTypeS 65148
+#define AbConst_AbTruncateErrorS 65149
+#define AbConst_AbZipBadCRCS 65150
+#define AbConst_AbZipBadStubS 65151
 #define bdeconst_SNoFieldAccess 65152
 #define bdeconst_SUntitled 65153
 #define bdeconst_SLocalTransDirty 65154
-#define pnglang_EPngInvalidCRCText 65155
-#define pnglang_EPNGInvalidIHDRText 65156
-#define pnglang_EPNGMissingMultipleIDATText 65157
-#define pnglang_EPNGZLIBErrorText 65158
-#define pnglang_EPNGInvalidPaletteText 65159
-#define pnglang_EPNGInvalidFileHeaderText 65160
-#define pnglang_EPNGIHDRNotFirstText 65161
-#define pnglang_EPNGSizeExceedsText 65162
-#define pnglang_EPNGUnknownPalEntryText 65163
-#define pnglang_EPNGUnknownCriticalChunkText 65164
-#define pnglang_EPNGUnknownCompressionText 65165
-#define pnglang_EPNGUnknownInterlaceText 65166
-#define pnglang_EPNGCannotAssignChunkText 65167
+#define AbConst_AbErrZipInvalidS 65155
+#define AbConst_AbZipVersionNeededS 65156
+#define AbConst_AbUnknownCompressionMethodS 65157
+#define AbConst_AbNoExtractionMethodS 65158
+#define AbConst_AbInvalidPasswordS 65159
+#define AbConst_AbNoInsertionMethodS 65160
+#define AbConst_AbInvalidFactorS 65161
+#define AbConst_AbDuplicateNameS 65162
+#define AbConst_AbUnsupportedCompressionMethodS 65163
+#define AbConst_AbUserAbortS 65164
+#define AbConst_AbArchiveBusyS 65165
+#define AbConst_AbLastDiskRequestS 65166
+#define AbConst_AbDiskRequestS 65167
 #define bdeconst_SInvalidSessionName 65168
 #define bdeconst_SDatabaseNameMissing 65169
 #define bdeconst_SSessionNameMissing 65170
@@ -834,30 +834,54 @@ BEGIN
 	GIFConsts_sBadBlock,	"Unknown GIF block type"
 	GIFConsts_sUnsupportedClass,	"Object type not supported for operation"
 	GIFConsts_sInvalidData,	"Invalid GIF data"
-	JclResources_RsIntelCacheDescrB1,	"Instruction TLB: 2 MByte pages, 4-way, 8 entries or 4 MByte pages, 4-way, 4 entries"
-	JclResources_RsIntelCacheDescrB2,	"Instruction TLB: 4 KByte pages, 4-way set associative, 64 entries"
-	JclResources_RsIntelCacheDescrB3,	"Data TLB: 4 KByte pages, 4-way set associative, 128 entries"
-	JclResources_RsIntelCacheDescrB4,	"Data TLB1: 4 KByte pages, 4-way set associative, 256 entries"
-	JclResources_RsIntelCacheDescrBA,	"Data TLB1: 4 KByte pages, 4-way set associative, 64 entries"
-	JclResources_RsIntelCacheDescrC0,	"Data TLB: 4 KByte and 4 MByte pages, 4-way set associative, 8 entries"
-	JclResources_RsIntelCacheDescrCA,	"Shared 2nd-Level TLB: 4 KByte pages, 4-way associative, 512 entries"
-	JclResources_RsIntelCacheDescrE4,	"3rd-level cache: 8 MByte, 16-way set associative, 64 byte line size"
+	SQLiteWrap_c_errorsql,	"Error executing SQL"
+	SQLiteWrap_c_errorprepare,	"Could not prepare SQL statement"
+	SQLiteWrap_c_errorexec,	"Error executing SQL statement"
+	SQLiteWrap_c_errordata,	"Could not retrieve data"
+	VirtualTrees_SEditLinkIsNil,	"Edit link must not be nil."
+	VirtualTrees_SWrongMoveError,	"Target node cannot be a child node of the node to be moved."
+	VirtualTrees_SWrongStreamFormat,	"Unable to load tree structure, the format is wrong."
+	VirtualTrees_SWrongStreamVersion,	"Unable to load tree structure, the version is unknown."
+	VirtualTrees_SStreamTooSmall,	"Unable to load tree structure, not enough data available."
+	VirtualTrees_SCorruptStream1,	"Stream data corrupt. A node's anchor chunk is missing."
+	VirtualTrees_SCorruptStream2,	"Stream data corrupt. Unexpected data after node's end position."
+	VirtualTrees_SClipboardFailed,	"Clipboard operation failed."
+	VirtualTrees_SCannotSetUserData,	"Cannot set initial user data because there is not enough user data space allocated."
+	GIFConsts_sOutOfData,	"Premature end of data"
+	GIFConsts_sTooManyColors,	"Color table overflow"
+	GIFConsts_sBadColorIndex,	"Invalid color index"
+	pnglang_EPNGUnknownPalEntryText,	"There is no such palette entry."
+	pnglang_EPNGUnknownCriticalChunkText,	"This \"Portable Network Graphics\" image contains an unknown critical part which could not be decoded."
+	pnglang_EPNGUnknownCompressionText,	"This \"Portable Network Graphics\" image is encoded with an unknown compression scheme which could not be decoded."
+	pnglang_EPNGUnknownInterlaceText,	"This \"Portable Network Graphics\" image uses an unknown interlace scheme which could not be decoded."
+	pnglang_EPNGCannotAssignChunkText,	"The chunks must be compatible to be assigned."
+	pnglang_EPNGUnexpectedEndText,	"This \"Portable Network Graphics\" image is invalid because the decoder found an unexpected end of the file."
+	pnglang_EPNGNoImageDataText,	"This \"Portable Network Graphics\" image contains no data."
+	pnglang_EPNGCannotAddChunkText,	"The program tried to add a existent critical chunk to the current image which is not allowed."
+	pnglang_EPNGCannotAddInvalidImageText,	"It's not allowed to add a new chunk because the current image is invalid."
+	pnglang_EPNGOutMemoryText,	"Some operation could not be performed because the system is out of resources. Close some windows and try again."
+	pnglang_EPNGHeaderNotPresentText,	"This operation is not valid because the current image contains no valid header."
+	pnglang_EInvalidNewSize,	"The new size provided for image resizing is invalid."
+	SQLiteWrap_c_unknown,	"Unknown error"
+	SQLiteWrap_c_failopen,	"Failed to open database \"%s\" : %s"
+	SQLiteWrap_c_error,	".\r\nError [%d]: %s.\r\n\"%s\": %s"
+	SQLiteWrap_c_nomessage,	"No message"
 	JclResources_RsIntelCacheDescrF0,	"64-Byte Prefetching"
 	JclResources_RsIntelCacheDescrF1,	"128-Byte Prefetching"
 	JclResources_RsIntelCacheDescrFF,	"CPUID leaf 2 does not report cache descriptor information, use CPUID leaf 4 to query cache parameters"
 	JclResources_RsInvalidMMFName,	"Invalid MMF name \"%s\""
 	JclResources_RsInvalidMMFEmpty,	"The MMF named \"%s\" cannot be created empty"
-	GIFConsts_sOutOfData,	"Premature end of data"
-	GIFConsts_sTooManyColors,	"Color table overflow"
-	GIFConsts_sBadColorIndex,	"Invalid color index"
-	JclResources_RsIntelCacheDescr73,	"Trace cache: 64 K-Ops, 8-way set associative"
-	JclResources_RsIntelCacheDescr78,	"2nd-level cache: 1 MBytes, 4-way set associative, 64 bytes line size"
-	JclResources_RsIntelCacheDescr79,	"2nd-level cache: 128 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
-	JclResources_RsIntelCacheDescr7A,	"2nd-level cache: 256 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
-	JclResources_RsIntelCacheDescr7B,	"2nd-level cache: 512 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
-	JclResources_RsIntelCacheDescr7C,	"2nd-level cache: 1 MBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
-	JclResources_RsIntelCacheDescr7D,	"2nd-level cache: 2 MBytes, 8-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr7F,	"2nd-level cache: 512 KBytes, 2-way set associative, 64 byte line size"
+	JConsts_sChangeJPGSize,	"Cannot change the size of a JPEG image"
+	JConsts_sJPEGError,	"JPEG error #%d"
+	JConsts_sJPEGImageFile,	"JPEG Image File"
+	pnglang_EPngInvalidCRCText,	"This \"Portable Network Graphics\" image is not valid because it contains invalid pieces of data (crc error)"
+	pnglang_EPNGInvalidIHDRText,	"The \"Portable Network Graphics\" image could not be loaded because one of its main piece of data (ihdr) might be corrupted"
+	pnglang_EPNGMissingMultipleIDATText,	"This \"Portable Network Graphics\" image is invalid because it has missing image parts."
+	pnglang_EPNGZLIBErrorText,	"Could not decompress the image because it contains invalid compressed data.\r\n Description: "
+	pnglang_EPNGInvalidPaletteText,	"The \"Portable Network Graphics\" image contains an invalid palette."
+	pnglang_EPNGInvalidFileHeaderText,	"The file being readed is not a valid \"Portable Network Graphics\" image because it contains an invalid header. This file may be corruped, try obtaining it again."
+	pnglang_EPNGIHDRNotFirstText,	"This \"Portable Network Graphics\" image is not supported or it might be invalid.\r\n(IHDR chunk is not the first)"
+	pnglang_EPNGSizeExceedsText,	"This \"Portable Network Graphics\" image is not supported because either it's width or height exceeds the maximum size, which is 65535 pixels length."
 	JclResources_RsIntelCacheDescr80,	"2nd-level cache: 512 KBytes, 8-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr82,	"2nd-level cache: 256 KBytes, 8-way associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr83,	"2nd-level cache: 512 KBytes, 8-way associative, 32 byte line size"
@@ -866,14 +890,14 @@ BEGIN
 	JclResources_RsIntelCacheDescr86,	"2nd-level cache: 512 KByte, 4-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr87,	"2nd-level cache: 1 MByte, 8-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrB0,	"Instruction TLB: 4 KByte pages, 4-way set associative, 128 entries"
-	JclResources_RsIntelCacheDescr52,	"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 256 Entries"
-	JclResources_RsIntelCacheDescr55,	"Instruction TLB: 2-MByte or 4-MByte pages, fully associative, 7 entries"
-	JclResources_RsIntelCacheDescr56,	"Data TLB0: 4 MByte pages, 4-way set associative, 16 entries"
-	JclResources_RsIntelCacheDescr57,	"Data TLB0: 4 KByte pages, 4-way associative, 16 entries"
-	JclResources_RsIntelCacheDescr59,	"Data TLB0: 4 KByte pages, fully associative, 16 entries"
-	JclResources_RsIntelCacheDescr5A,	"Data TLB0: 2 MByte or 4 MByte pages, 4-way set associative, 32 entries"
-	JclResources_RsIntelCacheDescr5B,	"Data TLB: 4 KByte and 4 MByte pages, 64 Entries"
-	JclResources_RsIntelCacheDescr5C,	"Data TLB: 4 KByte and 4 MByte pages, 128 Entries"
+	JclResources_RsIntelCacheDescrB1,	"Instruction TLB: 2 MByte pages, 4-way, 8 entries or 4 MByte pages, 4-way, 4 entries"
+	JclResources_RsIntelCacheDescrB2,	"Instruction TLB: 4 KByte pages, 4-way set associative, 64 entries"
+	JclResources_RsIntelCacheDescrB3,	"Data TLB: 4 KByte pages, 4-way set associative, 128 entries"
+	JclResources_RsIntelCacheDescrB4,	"Data TLB1: 4 KByte pages, 4-way set associative, 256 entries"
+	JclResources_RsIntelCacheDescrBA,	"Data TLB1: 4 KByte pages, 4-way set associative, 64 entries"
+	JclResources_RsIntelCacheDescrC0,	"Data TLB: 4 KByte and 4 MByte pages, 4-way set associative, 8 entries"
+	JclResources_RsIntelCacheDescrCA,	"Shared 2nd-Level TLB: 4 KByte pages, 4-way associative, 512 entries"
+	JclResources_RsIntelCacheDescrE4,	"3rd-level cache: 8 MByte, 16-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr5D,	"Data TLB: 4 KByte and 4 MByte pages, 256 Entries"
 	JclResources_RsIntelCacheDescr60,	"1st-level data cache: 16 KByte, 8-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr66,	"1st-level data cache: 8 KBytes, 4-way set associative, 64 byte line size"
@@ -882,14 +906,14 @@ BEGIN
 	JclResources_RsIntelCacheDescr70,	"Trace cache: 12 K-Ops, 8-way set associative"
 	JclResources_RsIntelCacheDescr71,	"Trace cache: 16 K-Ops, 8-way set associative"
 	JclResources_RsIntelCacheDescr72,	"Trace cache: 32 K-Ops, 8-way set associative"
-	JclResources_RsIntelCacheDescr42,	"2nd-level cache: 256 KBytes, 4-way set associative, 32 byte line size"
-	JclResources_RsIntelCacheDescr43,	"2nd-level cache: 512 KBytes, 4-way set associative, 32 byte line size"
-	JclResources_RsIntelCacheDescr44,	"2nd-level cache: 1 MBytes, 4-way set associative, 32 byte line size"
-	JclResources_RsIntelCacheDescr45,	"2nd-level cache: 2 MBytes, 4-way set associative, 32 byte line size"
-	JclResources_RsIntelCacheDescr46,	"3rd-level cache: 4 MBytes, 4-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr47,	"3rd-level cache: 8 MBytes, 4-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr48,	"3rd-level cache: 8 MByte, 8-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr49,	"2nd-level cache: 4 MBytes, 16-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr73,	"Trace cache: 64 K-Ops, 8-way set associative"
+	JclResources_RsIntelCacheDescr78,	"2nd-level cache: 1 MBytes, 4-way set associative, 64 bytes line size"
+	JclResources_RsIntelCacheDescr79,	"2nd-level cache: 128 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
+	JclResources_RsIntelCacheDescr7A,	"2nd-level cache: 256 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
+	JclResources_RsIntelCacheDescr7B,	"2nd-level cache: 512 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
+	JclResources_RsIntelCacheDescr7C,	"2nd-level cache: 1 MBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
+	JclResources_RsIntelCacheDescr7D,	"2nd-level cache: 2 MBytes, 8-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr7F,	"2nd-level cache: 512 KBytes, 2-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr4A,	"3rd-level cache: 6MByte, 12-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr4B,	"3rd-level cache: 8MByte, 16-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr4C,	"3rd-level cache: 12MByte, 12-way set associative, 64 byte line size"
@@ -898,14 +922,14 @@ BEGIN
 	JclResources_RsIntelCacheDescr4F,	"Instruction TLB: 4 KByte pages, 32 Entries"
 	JclResources_RsIntelCacheDescr50,	"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 64 Entries"
 	JclResources_RsIntelCacheDescr51,	"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 128 Entries"
-	JclResources_RsIntelCacheDescr0E,	"1st level data cache: 24 KBytes, 6-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr21,	"2nd level cache: 256 KBytes, 8-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr22,	"3rd level cache: 512 KBytes, 4-way set associative, 64 byte line size, 2 lines per sector"
-	JclResources_RsIntelCacheDescr23,	"3rd level cache: 1 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
-	JclResources_RsIntelCacheDescr25,	"3rd level cache: 2 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
-	JclResources_RsIntelCacheDescr29,	"3rd level cache: 4 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
-	JclResources_RsIntelCacheDescr2C,	"1st level data cache: 32 KBytes, 8-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr30,	"1st level instruction cache: 32 KBytes, 8-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr52,	"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 256 Entries"
+	JclResources_RsIntelCacheDescr55,	"Instruction TLB: 2-MByte or 4-MByte pages, fully associative, 7 entries"
+	JclResources_RsIntelCacheDescr56,	"Data TLB0: 4 MByte pages, 4-way set associative, 16 entries"
+	JclResources_RsIntelCacheDescr57,	"Data TLB0: 4 KByte pages, 4-way associative, 16 entries"
+	JclResources_RsIntelCacheDescr59,	"Data TLB0: 4 KByte pages, fully associative, 16 entries"
+	JclResources_RsIntelCacheDescr5A,	"Data TLB0: 2 MByte or 4 MByte pages, 4-way set associative, 32 entries"
+	JclResources_RsIntelCacheDescr5B,	"Data TLB: 4 KByte and 4 MByte pages, 64 Entries"
+	JclResources_RsIntelCacheDescr5C,	"Data TLB: 4 KByte and 4 MByte pages, 128 Entries"
 	JclResources_RsIntelCacheDescr39,	"2nd-level cache: 128 KBytes, 4-way set associative, sectored cache, 64-byte line size"
 	JclResources_RsIntelCacheDescr3A,	"2nd-level cache: 192 KBytes, 6-way set associative, sectored cache, 64-byte line size"
 	JclResources_RsIntelCacheDescr3B,	"2nd-level cache: 128 KBytes, 2-way set associative, sectored cache, 64-byte line size"
@@ -914,14 +938,14 @@ BEGIN
 	JclResources_RsIntelCacheDescr3E,	"2nd-level cache: 512 KBytes, 4-way set associative, sectored cache, 64-byte line size"
 	JclResources_RsIntelCacheDescr40,	"No 2nd-level cache or, if processor contains a valid 2nd-level cache, no 3rd-level cache"
 	JclResources_RsIntelCacheDescr41,	"2nd-level cache: 128 KBytes, 4-way set associative, 32 byte line size"
-	JvResources_RsMenuHighlight,	"Menu Highlight"
-	JclResources_RsWin32Prefix,	"Win32: %s (%u)"
-	JclResources_RsEReplacementChar,	"Failed to get ANSI replacement character"
-	JclResources_RsSynchCreateMutex,	"Failed to create mutex"
-	JclResources_RsIntelCacheDescr00,	"Null descriptor"
-	JclResources_RsIntelCacheDescr01,	"Instruction TLB: 4 KByte pages, 4-way set associative, 32 entries"
-	JclResources_RsIntelCacheDescr02,	"Instruction TLB: 4 MByte pages, 4-way set associative, 2 entries"
-	JclResources_RsIntelCacheDescr03,	"Data TLB: 4 KByte pages, 4-way set associative, 64 entries"
+	JclResources_RsIntelCacheDescr42,	"2nd-level cache: 256 KBytes, 4-way set associative, 32 byte line size"
+	JclResources_RsIntelCacheDescr43,	"2nd-level cache: 512 KBytes, 4-way set associative, 32 byte line size"
+	JclResources_RsIntelCacheDescr44,	"2nd-level cache: 1 MBytes, 4-way set associative, 32 byte line size"
+	JclResources_RsIntelCacheDescr45,	"2nd-level cache: 2 MBytes, 4-way set associative, 32 byte line size"
+	JclResources_RsIntelCacheDescr46,	"3rd-level cache: 4 MBytes, 4-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr47,	"3rd-level cache: 8 MBytes, 4-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr48,	"3rd-level cache: 8 MByte, 8-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr49,	"2nd-level cache: 4 MBytes, 16-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr04,	"Data TLB: 4 MByte pages, 4-way set associative, 8 entries"
 	JclResources_RsIntelCacheDescr05,	"Data TLB1: 4 MByte pages, 4-way set associative, 32 entries"
 	JclResources_RsIntelCacheDescr06,	"1st level instruction cache: 8 KBytes, 4-way set associative, 32 byte line size"
@@ -930,14 +954,14 @@ BEGIN
 	JclResources_RsIntelCacheDescr0B,	"Instruction TLB: 4 MByte pages, 4-way set associative, 4 entries"
 	JclResources_RsIntelCacheDescr0C,	"1st level data cache: 16 KBytes, 4-way set associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr0D,	"1st level data cache: 16 KBytes, 4-way set associative, 64 byte line size"
-	JvResources_RsClHighlight,	"Selection background"
-	JvResources_RsClHighlightText,	"Selection text"
-	JvResources_RsClBtnFace,	"Button face"
-	JvResources_RsClBtnShadow,	"Button shadow"
-	JvResources_RsClGrayText,	"Dimmed text"
-	JvResources_RsClBtnText,	"Button text"
-	JvResources_RsClInactiveCaptionText,	"Inactive window title bar text"
-	JvResources_RsClBtnHighlight,	"Button highlight"
+	JclResources_RsIntelCacheDescr0E,	"1st level data cache: 24 KBytes, 6-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr21,	"2nd level cache: 256 KBytes, 8-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr22,	"3rd level cache: 512 KBytes, 4-way set associative, 64 byte line size, 2 lines per sector"
+	JclResources_RsIntelCacheDescr23,	"3rd level cache: 1 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
+	JclResources_RsIntelCacheDescr25,	"3rd level cache: 2 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
+	JclResources_RsIntelCacheDescr29,	"3rd level cache: 4 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
+	JclResources_RsIntelCacheDescr2C,	"1st level data cache: 32 KBytes, 8-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr30,	"1st level instruction cache: 32 KBytes, 8-way set associative, 64 byte line size"
 	JvResources_RsCl3DDkShadow,	"Dark shadow 3D elements"
 	JvResources_RsCl3DLight,	"Highlight 3D elements"
 	JvResources_RsClInfoText,	"Tooltip text"
@@ -946,14 +970,14 @@ BEGIN
 	JvResources_RsGradientInactiveCaption,	"Gradient Inactive Caption"
 	JvResources_RsHotLight,	"Hot Light"
 	JvResources_RsMenuBar,	"Menu Bar"
-	JvResources_RsClLightTurquoise,	"Light Turquoise"
-	JvResources_RsClPaleBlue,	"Pale Blue"
-	JvResources_RsClLavender,	"Lavender"
-	JvResources_RsClScrollBar,	"Scrollbar"
-	JvResources_RsClBackground,	"Desktop background"
-	JvResources_RsClActiveCaption,	"Active window title bar"
-	JvResources_RsClInactiveCaption,	"Inactive window title bar"
-	JvResources_RsClMenu,	"Menu background"
+	JvResources_RsMenuHighlight,	"Menu Highlight"
+	JclResources_RsWin32Prefix,	"Win32: %s (%u)"
+	JclResources_RsEReplacementChar,	"Failed to get ANSI replacement character"
+	JclResources_RsSynchCreateMutex,	"Failed to create mutex"
+	JclResources_RsIntelCacheDescr00,	"Null descriptor"
+	JclResources_RsIntelCacheDescr01,	"Instruction TLB: 4 KByte pages, 4-way set associative, 32 entries"
+	JclResources_RsIntelCacheDescr02,	"Instruction TLB: 4 MByte pages, 4-way set associative, 2 entries"
+	JclResources_RsIntelCacheDescr03,	"Data TLB: 4 KByte pages, 4-way set associative, 64 entries"
 	JvResources_RsClWindow,	"Window background"
 	JvResources_RsClWindowFrame,	"Window frame"
 	JvResources_RsClMenuText,	"Menu text"
@@ -962,14 +986,14 @@ BEGIN
 	JvResources_RsClActiveBorder,	"Active window border"
 	JvResources_RsClInactiveBorder,	"Inactive window border"
 	JvResources_RsClAppWorkSpace,	"Application workspace"
-	JvResources_RsClGray50,	"Gray 50%"
-	JvResources_RsClLightOrange,	"Light Orange"
-	JvResources_RsClSeaGreen,	"Sea Green"
-	JvResources_RsClLightBlue,	"Light Blue"
-	JvResources_RsClViolet,	"Violet"
-	JvResources_RsClGray40,	"Gray 40%"
-	JvResources_RsClPink,	"Pink"
-	JvResources_RsClGold,	"Gold"
+	JvResources_RsClHighlight,	"Selection background"
+	JvResources_RsClHighlightText,	"Selection text"
+	JvResources_RsClBtnFace,	"Button face"
+	JvResources_RsClBtnShadow,	"Button shadow"
+	JvResources_RsClGrayText,	"Dimmed text"
+	JvResources_RsClBtnText,	"Button text"
+	JvResources_RsClInactiveCaptionText,	"Inactive window title bar text"
+	JvResources_RsClBtnHighlight,	"Button highlight"
 	JvResources_RsClBrightGreen,	"Bright Green"
 	JvResources_RsClTurquoise,	"Turquoise"
 	JvResources_RsClPlum,	"Plum"
@@ -978,14 +1002,14 @@ BEGIN
 	JvResources_RsClTan,	"Tan"
 	JvResources_RsClLightYellow,	"Light Yellow"
 	JvResources_RsClLightGreen,	"Light Green"
-	JvResources_RsClWhite,	"White"
-	JvResources_RsClMoneyGreen,	"Money green"
-	JvResources_RsClSkyBlue,	"Sky blue"
-	JvResources_RsClCream,	"Cream"
-	JvResources_RsClMedGray,	"Medium gray"
-	JvResources_RsClBrown,	"Brown"
-	JvResources_RsClOliveGreen,	"Olive Green"
-	JvResources_RsClDarkGreen,	"Dark Green"
+	JvResources_RsClLightTurquoise,	"Light Turquoise"
+	JvResources_RsClPaleBlue,	"Pale Blue"
+	JvResources_RsClLavender,	"Lavender"
+	JvResources_RsClScrollBar,	"Scrollbar"
+	JvResources_RsClBackground,	"Desktop background"
+	JvResources_RsClActiveCaption,	"Active window title bar"
+	JvResources_RsClInactiveCaption,	"Inactive window title bar"
+	JvResources_RsClMenu,	"Menu background"
 	JvResources_RsClDarkTeal,	"Dark Teal"
 	JvResources_RsClDarkBlue,	"Dark Blue"
 	JvResources_RsClIndigo,	"Indigo"
@@ -994,14 +1018,14 @@ BEGIN
 	JvResources_RsClOrange,	"Orange"
 	JvResources_RsClDarkYellow,	"Dark Yellow"
 	JvResources_RsClBlueGray,	"Blue Gray"
-	JvResources_RsUnknown,	"Unknown"
-	JvResources_RsClBlack,	"Black"
-	JvResources_RsClMaroon,	"Maroon"
-	JvResources_RsClGreen,	"Green"
-	JvResources_RsClOlive,	"Olive green"
-	JvResources_RsClNavy,	"Navy blue"
-	JvResources_RsClPurple,	"Purple"
-	JvResources_RsClTeal,	"Teal"
+	JvResources_RsClGray50,	"Gray 50%"
+	JvResources_RsClLightOrange,	"Light Orange"
+	JvResources_RsClSeaGreen,	"Sea Green"
+	JvResources_RsClLightBlue,	"Light Blue"
+	JvResources_RsClViolet,	"Violet"
+	JvResources_RsClGray40,	"Gray 40%"
+	JvResources_RsClPink,	"Pink"
+	JvResources_RsClGold,	"Gold"
 	JvResources_RsClGray,	"Gray"
 	JvResources_RsClSilver,	"Silver"
 	JvResources_RsClRed,	"Red"
@@ -1010,14 +1034,14 @@ BEGIN
 	JvResources_RsClBlue,	"Blue"
 	JvResources_RsClFuchsia,	"Fuchsia"
 	JvResources_RsClAqua,	"Aqua"
-	JvResources_RsEInternalError,	"internal error"
-	JvResources_RsEShellNotCompatible,	"Shell not compatible with BrowseForFolder"
-	JvResources_RsEItemCanNotBeDeleted,	"Item cannot be deleted"
-	JvResources_RsEAContextWithThatNameAlreadyExists,	"A context with that name already exists"
-	JvResources_RsECannotCreateAContextWithoutAContext,	"Cannot create a context without a context list owner"
-	JvResources_RsEYouMustSpecifyAProviderBeforeSettin,	"You must specify a provider before setting the context"
-	JvResources_RsEProviderHasNoContextNameds,	"Provider has no context named \"%s\""
-	JvResources_RsEProviderDoesNotSupportContexts,	"Provider does not support contexts"
+	JvResources_RsClWhite,	"White"
+	JvResources_RsClMoneyGreen,	"Money green"
+	JvResources_RsClSkyBlue,	"Sky blue"
+	JvResources_RsClCream,	"Cream"
+	JvResources_RsClMedGray,	"Medium gray"
+	JvResources_RsClBrown,	"Brown"
+	JvResources_RsClOliveGreen,	"Olive Green"
+	JvResources_RsClDarkGreen,	"Dark Green"
 	JvResources_RsETheSpecifiedContextIsNotPartOfTheSa,	"The specified context is not part of the same provider"
 	JvResources_RsEYouMustSpecifyAProviderBeforeSettin_,	"You must specify a provider before setting the item"
 	JvResources_RsEItemNotFoundInTheSelectedContext,	"Item not found in the selected context"
@@ -1026,28 +1050,30 @@ BEGIN
 	JvResources_RsEExtensibleIntObjCollectionExpected,	"Expected collection"
 	JvResources_RsEExtensibleIntObjClassNameExpected,	"Missing ClassName property"
 	JvResources_RsEExtensibleIntObjInvalidClass,	"Invalid class type"
-	AbConst_AbCabMethod1S,	"MSZip"
-	AbConst_AbLtAddS,	" added "
-	AbConst_AbLtDeleteS,	" deleted "
-	AbConst_AbLtExtractS,	" extracted "
-	AbConst_AbLtFreshenS,	" freshened "
-	AbConst_AbLtMoveS,	" moved "
+	JvResources_RsUnknown,	"Unknown"
+	JvResources_RsClBlack,	"Black"
+	JvResources_RsClMaroon,	"Maroon"
+	JvResources_RsClGreen,	"Green"
+	JvResources_RsClOlive,	"Olive green"
+	JvResources_RsClNavy,	"Navy blue"
+	JvResources_RsClPurple,	"Purple"
+	JvResources_RsClTeal,	"Teal"
 	AbConst_AbLtReplaceS,	" replaced "
 	AbConst_AbLtStartS,	" logging "
 	AbConst_AbGzipInvalidS,	"Invalid Gzip"
 	AbConst_AbGzipBadCRCS,	"Bad CRC"
 	AbConst_AbGzipBadFileSizeS,	"Bad File Size"
 	AbConst_AbUnhandledEntityS,	"Unhandled Entity"
-	JConsts_sChangeJPGSize,	"Cannot change the size of a JPEG image"
-	JConsts_sJPEGError,	"JPEG error #%d"
-	JConsts_sJPEGImageFile,	"JPEG Image File"
+	Generics_Collections_sArgumentOutOfRange,	"Argument out of range"
 	JvResources_RsDataItemRenderHasNoText,	"(item does not support the IJvDataItemText interface)"
-	AbConst_AbItemNameHeadingS,	"Name"
-	AbConst_AbPackedHeadingS,	"Packed"
-	AbConst_AbMethodHeadingS,	"Method"
-	AbConst_AbRatioHeadingS,	"Ratio (%)"
-	AbConst_AbCRCHeadingS,	"CRC32"
-	AbConst_AbFileAttrHeadingS,	"Attributes"
+	JvResources_RsEInternalError,	"internal error"
+	JvResources_RsEShellNotCompatible,	"Shell not compatible with BrowseForFolder"
+	JvResources_RsEItemCanNotBeDeleted,	"Item cannot be deleted"
+	JvResources_RsEAContextWithThatNameAlreadyExists,	"A context with that name already exists"
+	JvResources_RsECannotCreateAContextWithoutAContext,	"Cannot create a context without a context list owner"
+	JvResources_RsEYouMustSpecifyAProviderBeforeSettin,	"You must specify a provider before setting the context"
+	JvResources_RsEProviderHasNoContextNameds,	"Provider has no context named \"%s\""
+	JvResources_RsEProviderDoesNotSupportContexts,	"Provider does not support contexts"
 	AbConst_AbFileFormatHeadingS,	"Format"
 	AbConst_AbEncryptionHeadingS,	"Encrypted"
 	AbConst_AbTimeStampHeadingS,	"Time Stamp"
@@ -1058,12 +1084,12 @@ BEGIN
 	AbConst_AbPartialHeadingS,	"Partial"
 	AbConst_AbExecutableHeadingS,	"Executable"
 	AbConst_AbCabMethod0S,	"None"
-	AbConst_AbVMSReadTooManyBytesS,	"VMS: request to read too many bytes [%d]"
-	AbConst_AbVMSInvalidOriginS,	"VMS: invalid origin %d, should be 0, 1, 2"
-	AbConst_AbVMSErrorOpenSwapS,	"VMS: Cannot open swap file %s"
-	AbConst_AbVMSSeekFailS,	"VMS: Failed to seek in swap file %s"
-	AbConst_AbVMSReadFailS,	"VMS: Failed to read %d bytes from swap file %s"
-	AbConst_AbVMSWriteFailS,	"VMS: Failed to write %d bytes to swap file %s"
+	AbConst_AbCabMethod1S,	"MSZip"
+	AbConst_AbLtAddS,	" added "
+	AbConst_AbLtDeleteS,	" deleted "
+	AbConst_AbLtExtractS,	" extracted "
+	AbConst_AbLtFreshenS,	" freshened "
+	AbConst_AbLtMoveS,	" moved "
 	AbConst_AbVMSWriteTooManyBytesS,	"VMS: request to write too many bytes [%d]"
 	AbConst_AbBBSReadTooManyBytesS,	"BBS: request to read too many bytes [%d]"
 	AbConst_AbBBSSeekOutsideBufferS,	"BBS: New position is outside the buffer"
@@ -1074,12 +1100,12 @@ BEGIN
 	AbConst_AbSWSWriteFailedS,	"TabSlidingWindowStream.bsWriteChunk: write failed"
 	AbConst_AbSWSInvalidOriginS,	"TabSlidingWindowStream.Seek: invalid origin"
 	AbConst_AbSWSInvalidNewOriginS,	"TabSlidingWindowStream.Seek: invalid new position"
-	AbConst_AbCommentFormatS,	"Comment: %s"
-	AbConst_AbDefaultExtS,	"*.zip"
-	AbConst_AbFilterS,	"PKZip Archives (*.zip)|*.zip|Self Extracting Archives (*.exe)|*.exe|All Files (*.*)|*.*"
-	AbConst_AbFileNameTitleS,	"Select File Name"
-	AbConst_AbOKS,	"OK"
-	AbConst_AbCancelS,	"Cancel"
+	AbConst_AbItemNameHeadingS,	"Name"
+	AbConst_AbPackedHeadingS,	"Packed"
+	AbConst_AbMethodHeadingS,	"Method"
+	AbConst_AbRatioHeadingS,	"Ratio (%)"
+	AbConst_AbCRCHeadingS,	"CRC32"
+	AbConst_AbFileAttrHeadingS,	"Attributes"
 	AbConst_AbSelectDirectoryS,	"Select Directory"
 	AbConst_AbEnterPasswordS,	"Enter Password"
 	AbConst_AbPasswordS,	"&Password"
@@ -1090,12 +1116,12 @@ BEGIN
 	AbConst_AbLogFilterS,	"Text Files (*.txt)|*.TXT|All Files (*.*)|*.*"
 	AbConst_AbExeExtS,	"*.exe"
 	AbConst_AbExeFilterS,	"Self-Extracting Zip Files (*.exe)|*.EXE|All Files (*.*)|*.*"
-	AbConst_AbCRCFormatS,	"CRC: %x"
-	AbConst_AbReadOnlyS,	"r"
-	AbConst_AbHiddenS,	"h"
-	AbConst_AbSystemS,	"s"
-	AbConst_AbArchivedS,	"a"
-	AbConst_AbEFAFormatS,	"External File Attributes: %s"
+	AbConst_AbVMSReadTooManyBytesS,	"VMS: request to read too many bytes [%d]"
+	AbConst_AbVMSInvalidOriginS,	"VMS: invalid origin %d, should be 0, 1, 2"
+	AbConst_AbVMSErrorOpenSwapS,	"VMS: Cannot open swap file %s"
+	AbConst_AbVMSSeekFailS,	"VMS: Failed to seek in swap file %s"
+	AbConst_AbVMSReadFailS,	"VMS: Failed to read %d bytes from swap file %s"
+	AbConst_AbVMSWriteFailS,	"VMS: Failed to write %d bytes to swap file %s"
 	AbConst_AbIFAFormatS,	"File Type: %s"
 	AbConst_AbTextS,	"Text"
 	AbConst_AbBinaryS,	"Binary"
@@ -1106,12 +1132,12 @@ BEGIN
 	AbConst_AbTimeStampFormatS,	"Time Stamp: %s"
 	AbConst_AbMadeByFormatS,	"Made by Version: %f"
 	AbConst_AbNeededFormatS,	"Version Needed to Extract: %f"
-	AbConst_AbMethod1S,	"Shrunk"
-	AbConst_AbMethod2S,	"Reduced"
-	AbConst_AbMethod3S,	"Reduced"
-	AbConst_AbMethod4S,	"Reduced"
-	AbConst_AbMethod5S,	"Reduced"
-	AbConst_AbMethod6S,	"Imploded"
+	AbConst_AbCommentFormatS,	"Comment: %s"
+	AbConst_AbDefaultExtS,	"*.zip"
+	AbConst_AbFilterS,	"PKZip Archives (*.zip)|*.zip|Self Extracting Archives (*.exe)|*.exe|All Files (*.*)|*.*"
+	AbConst_AbFileNameTitleS,	"Select File Name"
+	AbConst_AbOKS,	"OK"
+	AbConst_AbCancelS,	"Cancel"
 	AbConst_AbMethod7S,	"Tokenized"
 	AbConst_AbMethod8S,	"Deflated"
 	AbConst_AbMethod9S,	"Enhanced Deflation"
@@ -1122,12 +1148,12 @@ BEGIN
 	AbConst_AbUncompressedSizeFormatS,	"Uncompressed Size: %d"
 	AbConst_AbCompressionMethodFormatS,	"Compression Method: %s"
 	AbConst_AbCompressionRatioFormatS,	"Compression Ratio: %2.0f%%"
-	AbConst_AbNoCabinetDllErrorS,	"Cannot load cabinet.dll"
-	AbConst_AbFCIFileOpenErrorS,	"FCI cannot open file"
-	AbConst_AbFCIFileReadErrorS,	"FCI cannot read file"
-	AbConst_AbFCIFileWriteErrorS,	"FCI cannot write file"
-	AbConst_AbFCIFileCloseErrorS,	"FCI close file error"
-	AbConst_AbFCIFileSeekErrorS,	"FCI file seek error"
+	AbConst_AbCRCFormatS,	"CRC: %x"
+	AbConst_AbReadOnlyS,	"r"
+	AbConst_AbHiddenS,	"h"
+	AbConst_AbSystemS,	"s"
+	AbConst_AbArchivedS,	"a"
+	AbConst_AbEFAFormatS,	"External File Attributes: %s"
 	AbConst_AbFCIFileDeleteErrorS,	"FCI file delete error"
 	AbConst_AbFCIAddFileErrorS,	"FCI cannot add file"
 	AbConst_AbFCICreateErrorS,	"FCI cannot create context"
@@ -1138,12 +1164,12 @@ BEGIN
 	AbConst_AbInvalidCabTemplateS,	"Invalid cab file template"
 	AbConst_AbInvalidCabFileS,	"Invalid file - not a cabinet file"
 	AbConst_AbMethod0S,	"Stored"
-	AbConst_AbNoSuchDirectoryS,	"Directory does not exist"
-	AbConst_AbInflateBlockErrorS,	"Cannot inflate block"
-	AbConst_AbBadStreamTypeS,	"Invalid Stream"
-	AbConst_AbTruncateErrorS,	"Error truncating Zip File"
-	AbConst_AbZipBadCRCS,	"Failed CRC Check"
-	AbConst_AbZipBadStubS,	"Stub must be an executable"
+	AbConst_AbMethod1S,	"Shrunk"
+	AbConst_AbMethod2S,	"Reduced"
+	AbConst_AbMethod3S,	"Reduced"
+	AbConst_AbMethod4S,	"Reduced"
+	AbConst_AbMethod5S,	"Reduced"
+	AbConst_AbMethod6S,	"Imploded"
 	AbConst_AbFileNotFoundS,	"File not found"
 	AbConst_AbInvalidLFHS,	"Invalid Local File Header entry"
 	AbConst_AbNoArchiveS,	"Archive does not exist - Filename is blank"
@@ -1154,12 +1180,12 @@ BEGIN
 	AbConst_AbSpanningNotSupportedS,	"Spanning not supported by this Archive type"
 	AbConst_AbLogCreateErrorS,	"Error creating Log File"
 	AbConst_abMoveFileErrorS,	"Error Moving File %s to %s"
-	AbConst_AbDuplicateNameS,	"Cannot insert file - duplicates stored name"
-	AbConst_AbUnsupportedCompressionMethodS,	"Cannot insert file - unsupported compression method"
-	AbConst_AbUserAbortS,	"Process aborted by user"
-	AbConst_AbArchiveBusyS,	"Archive is busy - cannot process new requests"
-	AbConst_AbLastDiskRequestS,	"Insert the last disk in the spanned disk set"
-	AbConst_AbDiskRequestS,	"Insert floppy"
+	AbConst_AbNoCabinetDllErrorS,	"Cannot load cabinet.dll"
+	AbConst_AbFCIFileOpenErrorS,	"FCI cannot open file"
+	AbConst_AbFCIFileReadErrorS,	"FCI cannot read file"
+	AbConst_AbFCIFileWriteErrorS,	"FCI cannot write file"
+	AbConst_AbFCIFileCloseErrorS,	"FCI close file error"
+	AbConst_AbFCIFileSeekErrorS,	"FCI file seek error"
 	AbConst_AbNthImageRequestS,	"Specify spanned image file # "
 	AbConst_AbLastImageRequestS,	"Specify the last file name in the spanned image set"
 	AbConst_AbImageRequestS,	"Image file name"
@@ -1170,15 +1196,15 @@ BEGIN
 	AbConst_AbNoSpannedSelfExtractS,	"Cannot make a self-extracting spanned disk set"
 	AbConst_AbBlankDiskS,	"Insert a blank floppy disk"
 	AbConst_AbStreamFullS,	"Stream write error"
-	VirtualTrees_SEditLinkIsNil,	"Edit link must not be nil."
-	VirtualTrees_SWrongMoveError,	"Target node cannot be a child node of the node to be moved."
-	VirtualTrees_SWrongStreamFormat,	"Unable to load tree structure, the format is wrong."
-	VirtualTrees_SWrongStreamVersion,	"Unable to load tree structure, the version is unknown."
-	VirtualTrees_SStreamTooSmall,	"Unable to load tree structure, not enough data available."
-	VirtualTrees_SCorruptStream1,	"Stream data corrupt. A node's anchor chunk is missing."
-	VirtualTrees_SCorruptStream2,	"Stream data corrupt. Unexpected data after node's end position."
-	VirtualTrees_SClipboardFailed,	"Clipboard operation failed."
-	VirtualTrees_SCannotSetUserData,	"Cannot set initial user data because there is not enough user data space allocated."
+	AbConst_AbNoSuchDirectoryS,	"Directory does not exist"
+	AbConst_AbInflateBlockErrorS,	"Cannot inflate block"
+	AbConst_AbBadStreamTypeS,	"Invalid Stream"
+	AbConst_AbTruncateErrorS,	"Error truncating Zip File"
+	AbConst_AbZipBadCRCS,	"Failed CRC Check"
+	AbConst_AbZipBadStubS,	"Stub must be an executable"
+	bdeconst_SNoFieldAccess,	"Cannot access field '%s' in a filter"
+	bdeconst_SUntitled,	"Untitled Application"
+	bdeconst_SLocalTransDirty,	"The transaction isolation level must be dirty read for local databases"
 	AbConst_AbErrZipInvalidS,	"Invalid file - not a PKZip file"
 	AbConst_AbZipVersionNeededS,	"Cannot extract file - newer version required"
 	AbConst_AbUnknownCompressionMethodS,	"Cannot extract file - unsupported compression method"
@@ -1186,38 +1212,12 @@ BEGIN
 	AbConst_AbInvalidPasswordS,	"Cannot extract file - invalid password"
 	AbConst_AbNoInsertionMethodS,	"Cannot insert file - no insertion support provided"
 	AbConst_AbInvalidFactorS,	"Invalid Reduce Factor"
-	pnglang_EPNGUnexpectedEndText,	"This \"Portable Network Graphics\" image is invalid because the decoder found an unexpected end of the file."
-	pnglang_EPNGNoImageDataText,	"This \"Portable Network Graphics\" image contains no data."
-	pnglang_EPNGCannotAddChunkText,	"The program tried to add a existent critical chunk to the current image which is not allowed."
-	pnglang_EPNGCannotAddInvalidImageText,	"It's not allowed to add a new chunk because the current image is invalid."
-	pnglang_EPNGOutMemoryText,	"Some operation could not be performed because the system is out of resources. Close some windows and try again."
-	pnglang_EPNGHeaderNotPresentText,	"This operation is not valid because the current image contains no valid header."
-	pnglang_EInvalidNewSize,	"The new size provided for image resizing is invalid."
-	Generics_Collections_sArgumentOutOfRange,	"Argument out of range"
-	SQLiteWrap_c_unknown,	"Unknown error"
-	SQLiteWrap_c_failopen,	"Failed to open database \"%s\" : %s"
-	SQLiteWrap_c_error,	".\r\nError [%d]: %s.\r\n\"%s\": %s"
-	SQLiteWrap_c_nomessage,	"No message"
-	SQLiteWrap_c_errorsql,	"Error executing SQL"
-	SQLiteWrap_c_errorprepare,	"Could not prepare SQL statement"
-	SQLiteWrap_c_errorexec,	"Error executing SQL statement"
-	SQLiteWrap_c_errordata,	"Could not retrieve data"
-	bdeconst_SNoFieldAccess,	"Cannot access field '%s' in a filter"
-	bdeconst_SUntitled,	"Untitled Application"
-	bdeconst_SLocalTransDirty,	"The transaction isolation level must be dirty read for local databases"
-	pnglang_EPngInvalidCRCText,	"This \"Portable Network Graphics\" image is not valid because it contains invalid pieces of data (crc error)"
-	pnglang_EPNGInvalidIHDRText,	"The \"Portable Network Graphics\" image could not be loaded because one of its main piece of data (ihdr) might be corrupted"
-	pnglang_EPNGMissingMultipleIDATText,	"This \"Portable Network Graphics\" image is invalid because it has missing image parts."
-	pnglang_EPNGZLIBErrorText,	"Could not decompress the image because it contains invalid compressed data.\r\n Description: "
-	pnglang_EPNGInvalidPaletteText,	"The \"Portable Network Graphics\" image contains an invalid palette."
-	pnglang_EPNGInvalidFileHeaderText,	"The file being readed is not a valid \"Portable Network Graphics\" image because it contains an invalid header. This file may be corruped, try obtaining it again."
-	pnglang_EPNGIHDRNotFirstText,	"This \"Portable Network Graphics\" image is not supported or it might be invalid.\r\n(IHDR chunk is not the first)"
-	pnglang_EPNGSizeExceedsText,	"This \"Portable Network Graphics\" image is not supported because either it's width or height exceeds the maximum size, which is 65535 pixels length."
-	pnglang_EPNGUnknownPalEntryText,	"There is no such palette entry."
-	pnglang_EPNGUnknownCriticalChunkText,	"This \"Portable Network Graphics\" image contains an unknown critical part which could not be decoded."
-	pnglang_EPNGUnknownCompressionText,	"This \"Portable Network Graphics\" image is encoded with an unknown compression scheme which could not be decoded."
-	pnglang_EPNGUnknownInterlaceText,	"This \"Portable Network Graphics\" image uses an unknown interlace scheme which could not be decoded."
-	pnglang_EPNGCannotAssignChunkText,	"The chunks must be compatible to be assigned."
+	AbConst_AbDuplicateNameS,	"Cannot insert file - duplicates stored name"
+	AbConst_AbUnsupportedCompressionMethodS,	"Cannot insert file - unsupported compression method"
+	AbConst_AbUserAbortS,	"Process aborted by user"
+	AbConst_AbArchiveBusyS,	"Archive is busy - cannot process new requests"
+	AbConst_AbLastDiskRequestS,	"Insert the last disk in the spanned disk set"
+	AbConst_AbDiskRequestS,	"Insert floppy"
 	bdeconst_SInvalidSessionName,	"Invalid session name %s"
 	bdeconst_SDatabaseNameMissing,	"Database name missing"
 	bdeconst_SSessionNameMissing,	"Session name missing"
@@ -1594,19 +1594,19 @@ END
 /* c:\program files\codegear\rad studio\6.0\lib\ExtDlgs.res */
 /* c:\program files\codegear\rad studio\6.0\lib\Controls.res */
 /* c:\program files\codegear\rad studio\6.0\lib\FileCtrl.res */
-/* C:\Work\Project\__D2009Projects__\__Components__\Virtual Treeview\Source\VirtualTrees.res */
 /* C:\Work\Project\__D2009Projects__\__Components__\jvcl\Resources\JvConsts.res */
+/* C:\Work\Project\__D2009Projects__\__Components__\Virtual Treeview\Source\VirtualTrees.res */
+/* uPluginsForm.dfm */
+/* uOptionsForm.dfm */
 /* C:\Work\Project\__D2009Projects__\IcePackage\IcePackageEx\uProgress.dfm */
+/* uPreprocessDirs.dfm */
 /* uPasswordForm.dfm */
 /* uThreadProcessForm.dfm */
-/* uPreprocessDirs.dfm */
+/* uNFOForm.dfm */
 /* C:\Work\Project\__D2009Projects__\__Components__\jvcl\Resources\JvToolEdit.res */
 /* uCategories.dfm */
-/* uNFOForm.dfm */
-/* uOptionsForm.dfm */
-/* uPluginsForm.dfm */
-/* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\uMain.dfm */
 /* uUserSelectForm.dfm */
+/* uMain.dfm */
 /* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\StuffOrganizer.dres */
 /* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\StuffOrganizer.res */
 /* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\StuffOrganizer.drf */
