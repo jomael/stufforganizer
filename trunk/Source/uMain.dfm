@@ -6260,4 +6260,9 @@ object MainForm: TMainForm
       Action = aCheckNewVersion
     end
   end
+  object JvAppInstances1: TJvAppInstances
+    OnCmdLineReceived = JvAppInstances1CmdLineReceived
+    Left = 360
+    Top = 256
+  end
 end

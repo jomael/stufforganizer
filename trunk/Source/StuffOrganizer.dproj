@@ -116,7 +116,7 @@
 						<VersionInfo Name="MajorVer">0</VersionInfo>
 						<VersionInfo Name="MinorVer">4</VersionInfo>
 						<VersionInfo Name="Release">3</VersionInfo>
-						<VersionInfo Name="Build">36</VersionInfo>
+						<VersionInfo Name="Build">37</VersionInfo>
 						<VersionInfo Name="Debug">False</VersionInfo>
 						<VersionInfo Name="PreRelease">True</VersionInfo>
 						<VersionInfo Name="Special">False</VersionInfo>
@@ -128,7 +128,7 @@
 					<VersionInfoKeys>
 						<VersionInfoKeys Name="CompanyName">Ice Applications</VersionInfoKeys>
 						<VersionInfoKeys Name="FileDescription">Stuff Organizer</VersionInfoKeys>
-						<VersionInfoKeys Name="FileVersion">0.4.3.36</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">0.4.3.37</VersionInfoKeys>
 						<VersionInfoKeys Name="InternalName"/>
 						<VersionInfoKeys Name="LegalCopyright"/>
 						<VersionInfoKeys Name="LegalTrademarks"/>

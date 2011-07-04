@@ -6,7 +6,7 @@ program StuffOrganizer;
 
 uses
   ExceptionLog,
-  Forms,
+  Forms, JclAppInst,
   uMain in 'uMain.pas' {MainForm},
   uPreprocessDirs in 'uPreprocessDirs.pas' {PreProcessForm},
   uCategories in 'uCategories.pas' {CategoriesForm},
@@ -29,6 +29,7 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.Title := 'Stuff Organizer';
+  JclAppInst.JclAppInstances;
   Application.CreateForm(TMainForm, MainForm);
   Application.CreateForm(TPreProcessForm, PreProcessForm);
   Application.CreateForm(TCategoriesForm, CategoriesForm);
