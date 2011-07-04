@@ -8,522 +8,527 @@
   resources were bound to the produced executable.
 */
 
-#define GIFConsts_sProgressConverting 64736
-#define GIFConsts_sProgressRendering 64737
-#define GIFConsts_sProgressCopying 64738
-#define GIFConsts_sProgressOptimizing 64739
-#define GIFConsts_sBadSize 64752
-#define GIFConsts_sScreenSizeExceeded 64753
-#define GIFConsts_sNoColorTable 64754
-#define GIFConsts_sBadPixelCoordinates 64755
-#define GIFConsts_sInvalidPixelFormat 64756
-#define GIFConsts_sBadDimension 64757
-#define GIFConsts_sNoDIB 64758
-#define GIFConsts_sInvalidStream 64759
-#define GIFConsts_sInvalidColor 64760
-#define GIFConsts_sEmptyColorMap 64761
-#define GIFConsts_sEmptyImage 64762
-#define GIFConsts_sMultipleGCE 64763
-#define GIFConsts_sNoPalette 64764
-#define GIFConsts_sGIFImageFile 64765
-#define GIFConsts_sProgressLoading 64766
-#define GIFConsts_sProgressSaving 64767
-#define GIFConsts_sBadColorIndexFixed 64768
-#define GIFConsts_sGIFErrorSaveEmpty 64769
-#define GIFConsts_sBadSignature 64770
-#define GIFConsts_sScreenBadColorSize 64771
-#define GIFConsts_sImageBadColorSize 64772
-#define GIFConsts_sUnknownExtension 64773
-#define GIFConsts_sBadExtensionLabel 64774
-#define GIFConsts_sOutOfMemDIB 64775
-#define GIFConsts_sDecodeTooFewBits 64776
-#define GIFConsts_sDecodeCircular 64777
-#define GIFConsts_sBadTrailer 64778
-#define GIFConsts_sBadExtensionInstance 64779
-#define GIFConsts_sBadBlockSize 64780
-#define GIFConsts_sBadBlock 64781
-#define GIFConsts_sUnsupportedClass 64782
-#define GIFConsts_sInvalidData 64783
-#define SQLiteWrap_c_errorsql 64784
-#define SQLiteWrap_c_errorprepare 64785
-#define SQLiteWrap_c_errorexec 64786
-#define SQLiteWrap_c_errordata 64787
-#define VirtualTrees_SEditLinkIsNil 64788
-#define VirtualTrees_SWrongMoveError 64789
-#define VirtualTrees_SWrongStreamFormat 64790
-#define VirtualTrees_SWrongStreamVersion 64791
-#define VirtualTrees_SStreamTooSmall 64792
-#define VirtualTrees_SCorruptStream1 64793
-#define VirtualTrees_SCorruptStream2 64794
-#define VirtualTrees_SClipboardFailed 64795
-#define VirtualTrees_SCannotSetUserData 64796
-#define GIFConsts_sOutOfData 64797
-#define GIFConsts_sTooManyColors 64798
-#define GIFConsts_sBadColorIndex 64799
-#define pnglang_EPNGUnknownPalEntryText 64800
-#define pnglang_EPNGUnknownCriticalChunkText 64801
-#define pnglang_EPNGUnknownCompressionText 64802
-#define pnglang_EPNGUnknownInterlaceText 64803
-#define pnglang_EPNGCannotAssignChunkText 64804
-#define pnglang_EPNGUnexpectedEndText 64805
-#define pnglang_EPNGNoImageDataText 64806
-#define pnglang_EPNGCannotAddChunkText 64807
-#define pnglang_EPNGCannotAddInvalidImageText 64808
-#define pnglang_EPNGOutMemoryText 64809
-#define pnglang_EPNGHeaderNotPresentText 64810
-#define pnglang_EInvalidNewSize 64811
-#define SQLiteWrap_c_unknown 64812
-#define SQLiteWrap_c_failopen 64813
-#define SQLiteWrap_c_error 64814
-#define SQLiteWrap_c_nomessage 64815
-#define JclResources_RsIntelCacheDescrF0 64816
-#define JclResources_RsIntelCacheDescrF1 64817
-#define JclResources_RsIntelCacheDescrFF 64818
-#define JclResources_RsInvalidMMFName 64819
-#define JclResources_RsInvalidMMFEmpty 64820
-#define JConsts_sChangeJPGSize 64821
-#define JConsts_sJPEGError 64822
-#define JConsts_sJPEGImageFile 64823
-#define pnglang_EPngInvalidCRCText 64824
-#define pnglang_EPNGInvalidIHDRText 64825
-#define pnglang_EPNGMissingMultipleIDATText 64826
-#define pnglang_EPNGZLIBErrorText 64827
-#define pnglang_EPNGInvalidPaletteText 64828
-#define pnglang_EPNGInvalidFileHeaderText 64829
-#define pnglang_EPNGIHDRNotFirstText 64830
-#define pnglang_EPNGSizeExceedsText 64831
-#define JclResources_RsIntelCacheDescr80 64832
-#define JclResources_RsIntelCacheDescr82 64833
-#define JclResources_RsIntelCacheDescr83 64834
-#define JclResources_RsIntelCacheDescr84 64835
-#define JclResources_RsIntelCacheDescr85 64836
-#define JclResources_RsIntelCacheDescr86 64837
-#define JclResources_RsIntelCacheDescr87 64838
-#define JclResources_RsIntelCacheDescrB0 64839
-#define JclResources_RsIntelCacheDescrB1 64840
-#define JclResources_RsIntelCacheDescrB2 64841
-#define JclResources_RsIntelCacheDescrB3 64842
-#define JclResources_RsIntelCacheDescrB4 64843
-#define JclResources_RsIntelCacheDescrBA 64844
-#define JclResources_RsIntelCacheDescrC0 64845
-#define JclResources_RsIntelCacheDescrCA 64846
-#define JclResources_RsIntelCacheDescrE4 64847
-#define JclResources_RsIntelCacheDescr5D 64848
-#define JclResources_RsIntelCacheDescr60 64849
-#define JclResources_RsIntelCacheDescr66 64850
-#define JclResources_RsIntelCacheDescr67 64851
-#define JclResources_RsIntelCacheDescr68 64852
-#define JclResources_RsIntelCacheDescr70 64853
-#define JclResources_RsIntelCacheDescr71 64854
-#define JclResources_RsIntelCacheDescr72 64855
-#define JclResources_RsIntelCacheDescr73 64856
-#define JclResources_RsIntelCacheDescr78 64857
-#define JclResources_RsIntelCacheDescr79 64858
-#define JclResources_RsIntelCacheDescr7A 64859
-#define JclResources_RsIntelCacheDescr7B 64860
-#define JclResources_RsIntelCacheDescr7C 64861
-#define JclResources_RsIntelCacheDescr7D 64862
-#define JclResources_RsIntelCacheDescr7F 64863
-#define JclResources_RsIntelCacheDescr4A 64864
-#define JclResources_RsIntelCacheDescr4B 64865
-#define JclResources_RsIntelCacheDescr4C 64866
-#define JclResources_RsIntelCacheDescr4D 64867
-#define JclResources_RsIntelCacheDescr4E 64868
-#define JclResources_RsIntelCacheDescr4F 64869
-#define JclResources_RsIntelCacheDescr50 64870
-#define JclResources_RsIntelCacheDescr51 64871
-#define JclResources_RsIntelCacheDescr52 64872
-#define JclResources_RsIntelCacheDescr55 64873
-#define JclResources_RsIntelCacheDescr56 64874
-#define JclResources_RsIntelCacheDescr57 64875
-#define JclResources_RsIntelCacheDescr59 64876
-#define JclResources_RsIntelCacheDescr5A 64877
-#define JclResources_RsIntelCacheDescr5B 64878
-#define JclResources_RsIntelCacheDescr5C 64879
-#define JclResources_RsIntelCacheDescr39 64880
-#define JclResources_RsIntelCacheDescr3A 64881
-#define JclResources_RsIntelCacheDescr3B 64882
-#define JclResources_RsIntelCacheDescr3C 64883
-#define JclResources_RsIntelCacheDescr3D 64884
-#define JclResources_RsIntelCacheDescr3E 64885
-#define JclResources_RsIntelCacheDescr40 64886
-#define JclResources_RsIntelCacheDescr41 64887
-#define JclResources_RsIntelCacheDescr42 64888
-#define JclResources_RsIntelCacheDescr43 64889
-#define JclResources_RsIntelCacheDescr44 64890
-#define JclResources_RsIntelCacheDescr45 64891
-#define JclResources_RsIntelCacheDescr46 64892
-#define JclResources_RsIntelCacheDescr47 64893
-#define JclResources_RsIntelCacheDescr48 64894
-#define JclResources_RsIntelCacheDescr49 64895
-#define JclResources_RsIntelCacheDescr04 64896
-#define JclResources_RsIntelCacheDescr05 64897
-#define JclResources_RsIntelCacheDescr06 64898
-#define JclResources_RsIntelCacheDescr08 64899
-#define JclResources_RsIntelCacheDescr0A 64900
-#define JclResources_RsIntelCacheDescr0B 64901
-#define JclResources_RsIntelCacheDescr0C 64902
-#define JclResources_RsIntelCacheDescr0D 64903
-#define JclResources_RsIntelCacheDescr0E 64904
-#define JclResources_RsIntelCacheDescr21 64905
-#define JclResources_RsIntelCacheDescr22 64906
-#define JclResources_RsIntelCacheDescr23 64907
-#define JclResources_RsIntelCacheDescr25 64908
-#define JclResources_RsIntelCacheDescr29 64909
-#define JclResources_RsIntelCacheDescr2C 64910
-#define JclResources_RsIntelCacheDescr30 64911
-#define JvResources_RsCl3DDkShadow 64912
-#define JvResources_RsCl3DLight 64913
-#define JvResources_RsClInfoText 64914
-#define JvResources_RsClInfoBk 64915
-#define JvResources_RsGradientActiveCaption 64916
-#define JvResources_RsGradientInactiveCaption 64917
-#define JvResources_RsHotLight 64918
-#define JvResources_RsMenuBar 64919
-#define JvResources_RsMenuHighlight 64920
-#define JclResources_RsWin32Prefix 64921
-#define JclResources_RsEReplacementChar 64922
-#define JclResources_RsSynchCreateMutex 64923
-#define JclResources_RsIntelCacheDescr00 64924
-#define JclResources_RsIntelCacheDescr01 64925
-#define JclResources_RsIntelCacheDescr02 64926
-#define JclResources_RsIntelCacheDescr03 64927
-#define JvResources_RsClWindow 64928
-#define JvResources_RsClWindowFrame 64929
-#define JvResources_RsClMenuText 64930
-#define JvResources_RsClWindowText 64931
-#define JvResources_RsClCaptionText 64932
-#define JvResources_RsClActiveBorder 64933
-#define JvResources_RsClInactiveBorder 64934
-#define JvResources_RsClAppWorkSpace 64935
-#define JvResources_RsClHighlight 64936
-#define JvResources_RsClHighlightText 64937
-#define JvResources_RsClBtnFace 64938
-#define JvResources_RsClBtnShadow 64939
-#define JvResources_RsClGrayText 64940
-#define JvResources_RsClBtnText 64941
-#define JvResources_RsClInactiveCaptionText 64942
-#define JvResources_RsClBtnHighlight 64943
-#define JvResources_RsClBrightGreen 64944
-#define JvResources_RsClTurquoise 64945
-#define JvResources_RsClPlum 64946
-#define JvResources_RsClGray25 64947
-#define JvResources_RsClRose 64948
-#define JvResources_RsClTan 64949
-#define JvResources_RsClLightYellow 64950
-#define JvResources_RsClLightGreen 64951
-#define JvResources_RsClLightTurquoise 64952
-#define JvResources_RsClPaleBlue 64953
-#define JvResources_RsClLavender 64954
-#define JvResources_RsClScrollBar 64955
-#define JvResources_RsClBackground 64956
-#define JvResources_RsClActiveCaption 64957
-#define JvResources_RsClInactiveCaption 64958
-#define JvResources_RsClMenu 64959
-#define JvResources_RsClDarkTeal 64960
-#define JvResources_RsClDarkBlue 64961
-#define JvResources_RsClIndigo 64962
-#define JvResources_RsClGray80 64963
-#define JvResources_RsClDarkRed 64964
-#define JvResources_RsClOrange 64965
-#define JvResources_RsClDarkYellow 64966
-#define JvResources_RsClBlueGray 64967
-#define JvResources_RsClGray50 64968
-#define JvResources_RsClLightOrange 64969
-#define JvResources_RsClSeaGreen 64970
-#define JvResources_RsClLightBlue 64971
-#define JvResources_RsClViolet 64972
-#define JvResources_RsClGray40 64973
-#define JvResources_RsClPink 64974
-#define JvResources_RsClGold 64975
-#define JvResources_RsClGray 64976
-#define JvResources_RsClSilver 64977
-#define JvResources_RsClRed 64978
-#define JvResources_RsClLime 64979
-#define JvResources_RsClYellow 64980
-#define JvResources_RsClBlue 64981
-#define JvResources_RsClFuchsia 64982
-#define JvResources_RsClAqua 64983
-#define JvResources_RsClWhite 64984
-#define JvResources_RsClMoneyGreen 64985
-#define JvResources_RsClSkyBlue 64986
-#define JvResources_RsClCream 64987
-#define JvResources_RsClMedGray 64988
-#define JvResources_RsClBrown 64989
-#define JvResources_RsClOliveGreen 64990
-#define JvResources_RsClDarkGreen 64991
-#define JvResources_RsETheSpecifiedContextIsNotPartOfTheSa 64992
-#define JvResources_RsEYouMustSpecifyAProviderBeforeSettin_ 64993
-#define JvResources_RsEItemNotFoundInTheSelectedContext 64994
-#define JvResources_RsEViewListOutOfSync 64995
-#define JvResources_RsEExtensibleIntObjDuplicateClass 64996
-#define JvResources_RsEExtensibleIntObjCollectionExpected 64997
-#define JvResources_RsEExtensibleIntObjClassNameExpected 64998
-#define JvResources_RsEExtensibleIntObjInvalidClass 64999
-#define JvResources_RsUnknown 65000
-#define JvResources_RsClBlack 65001
-#define JvResources_RsClMaroon 65002
-#define JvResources_RsClGreen 65003
-#define JvResources_RsClOlive 65004
-#define JvResources_RsClNavy 65005
-#define JvResources_RsClPurple 65006
-#define JvResources_RsClTeal 65007
-#define AbConst_AbLtReplaceS 65008
-#define AbConst_AbLtStartS 65009
-#define AbConst_AbGzipInvalidS 65010
-#define AbConst_AbGzipBadCRCS 65011
-#define AbConst_AbGzipBadFileSizeS 65012
-#define AbConst_AbUnhandledEntityS 65013
-#define Generics_Collections_sArgumentOutOfRange 65014
-#define JvResources_RsDataItemRenderHasNoText 65015
-#define JvResources_RsEInternalError 65016
-#define JvResources_RsEShellNotCompatible 65017
-#define JvResources_RsEItemCanNotBeDeleted 65018
-#define JvResources_RsEAContextWithThatNameAlreadyExists 65019
-#define JvResources_RsECannotCreateAContextWithoutAContext 65020
-#define JvResources_RsEYouMustSpecifyAProviderBeforeSettin 65021
-#define JvResources_RsEProviderHasNoContextNameds 65022
-#define JvResources_RsEProviderDoesNotSupportContexts 65023
-#define AbConst_AbFileFormatHeadingS 65024
-#define AbConst_AbEncryptionHeadingS 65025
-#define AbConst_AbTimeStampHeadingS 65026
-#define AbConst_AbFileSizeHeadingS 65027
-#define AbConst_AbVersionMadeHeadingS 65028
-#define AbConst_AbVersionNeededHeadingS 65029
-#define AbConst_AbPathHeadingS 65030
-#define AbConst_AbPartialHeadingS 65031
-#define AbConst_AbExecutableHeadingS 65032
-#define AbConst_AbCabMethod0S 65033
-#define AbConst_AbCabMethod1S 65034
-#define AbConst_AbLtAddS 65035
-#define AbConst_AbLtDeleteS 65036
-#define AbConst_AbLtExtractS 65037
-#define AbConst_AbLtFreshenS 65038
-#define AbConst_AbLtMoveS 65039
-#define AbConst_AbVMSWriteTooManyBytesS 65040
-#define AbConst_AbBBSReadTooManyBytesS 65041
-#define AbConst_AbBBSSeekOutsideBufferS 65042
-#define AbConst_AbBBSInvalidOriginS 65043
-#define AbConst_AbBBSWriteTooManyBytesS 65044
-#define AbConst_AbSWSNotEndofStreamS 65045
-#define AbConst_AbSWSSeekFailedS 65046
-#define AbConst_AbSWSWriteFailedS 65047
-#define AbConst_AbSWSInvalidOriginS 65048
-#define AbConst_AbSWSInvalidNewOriginS 65049
-#define AbConst_AbItemNameHeadingS 65050
-#define AbConst_AbPackedHeadingS 65051
-#define AbConst_AbMethodHeadingS 65052
-#define AbConst_AbRatioHeadingS 65053
-#define AbConst_AbCRCHeadingS 65054
-#define AbConst_AbFileAttrHeadingS 65055
-#define AbConst_AbSelectDirectoryS 65056
-#define AbConst_AbEnterPasswordS 65057
-#define AbConst_AbPasswordS 65058
-#define AbConst_AbVerifyS 65059
-#define AbConst_AbCabExtS 65060
-#define AbConst_AbCabFilterS 65061
-#define AbConst_AbLogExtS 65062
-#define AbConst_AbLogFilterS 65063
-#define AbConst_AbExeExtS 65064
-#define AbConst_AbExeFilterS 65065
-#define AbConst_AbVMSReadTooManyBytesS 65066
-#define AbConst_AbVMSInvalidOriginS 65067
-#define AbConst_AbVMSErrorOpenSwapS 65068
-#define AbConst_AbVMSSeekFailS 65069
-#define AbConst_AbVMSReadFailS 65070
-#define AbConst_AbVMSWriteFailS 65071
-#define AbConst_AbIFAFormatS 65072
-#define AbConst_AbTextS 65073
-#define AbConst_AbBinaryS 65074
-#define AbConst_AbEncryptionFormatS 65075
-#define AbConst_AbEncryptedS 65076
-#define AbConst_AbNotEncryptedS 65077
-#define AbConst_AbUnknownS 65078
-#define AbConst_AbTimeStampFormatS 65079
-#define AbConst_AbMadeByFormatS 65080
-#define AbConst_AbNeededFormatS 65081
-#define AbConst_AbCommentFormatS 65082
-#define AbConst_AbDefaultExtS 65083
-#define AbConst_AbFilterS 65084
-#define AbConst_AbFileNameTitleS 65085
-#define AbConst_AbOKS 65086
-#define AbConst_AbCancelS 65087
-#define AbConst_AbMethod7S 65088
-#define AbConst_AbMethod8S 65089
-#define AbConst_AbMethod9S 65090
-#define AbConst_AbMethod10S 65091
-#define AbConst_AbMethod11S 65092
-#define AbConst_AbVersionFormatS 65093
-#define AbConst_AbCompressedSizeFormatS 65094
-#define AbConst_AbUncompressedSizeFormatS 65095
-#define AbConst_AbCompressionMethodFormatS 65096
-#define AbConst_AbCompressionRatioFormatS 65097
-#define AbConst_AbCRCFormatS 65098
-#define AbConst_AbReadOnlyS 65099
-#define AbConst_AbHiddenS 65100
-#define AbConst_AbSystemS 65101
-#define AbConst_AbArchivedS 65102
-#define AbConst_AbEFAFormatS 65103
-#define AbConst_AbFCIFileDeleteErrorS 65104
-#define AbConst_AbFCIAddFileErrorS 65105
-#define AbConst_AbFCICreateErrorS 65106
-#define AbConst_AbFCIFlushCabinetErrorS 65107
-#define AbConst_AbFCIFlushFolderErrorS 65108
-#define AbConst_AbFDICopyErrorS 65109
-#define AbConst_AbFDICreateErrorS 65110
-#define AbConst_AbInvalidCabTemplateS 65111
-#define AbConst_AbInvalidCabFileS 65112
-#define AbConst_AbMethod0S 65113
-#define AbConst_AbMethod1S 65114
-#define AbConst_AbMethod2S 65115
-#define AbConst_AbMethod3S 65116
-#define AbConst_AbMethod4S 65117
-#define AbConst_AbMethod5S 65118
-#define AbConst_AbMethod6S 65119
-#define AbConst_AbFileNotFoundS 65120
-#define AbConst_AbInvalidLFHS 65121
-#define AbConst_AbNoArchiveS 65122
-#define AbConst_AbReadErrorS 65123
-#define AbConst_AbInvalidIndexS 65124
-#define AbConst_AbInvalidThresholdS 65125
-#define AbConst_AbUnhandledFileTypeS 65126
-#define AbConst_AbSpanningNotSupportedS 65127
-#define AbConst_AbLogCreateErrorS 65128
-#define AbConst_abMoveFileErrorS 65129
-#define AbConst_AbNoCabinetDllErrorS 65130
-#define AbConst_AbFCIFileOpenErrorS 65131
-#define AbConst_AbFCIFileReadErrorS 65132
-#define AbConst_AbFCIFileWriteErrorS 65133
-#define AbConst_AbFCIFileCloseErrorS 65134
-#define AbConst_AbFCIFileSeekErrorS 65135
-#define AbConst_AbNthImageRequestS 65136
-#define AbConst_AbLastImageRequestS 65137
-#define AbConst_AbImageRequestS 65138
-#define AbConst_AbBadSpanStreamS 65139
-#define AbConst_AbDiskNumRequestS 65140
-#define AbConst_AbImageNumRequestS 65141
-#define AbConst_AbNoOverwriteSpanStreamS 65142
-#define AbConst_AbNoSpannedSelfExtractS 65143
-#define AbConst_AbBlankDiskS 65144
-#define AbConst_AbStreamFullS 65145
-#define AbConst_AbNoSuchDirectoryS 65146
-#define AbConst_AbInflateBlockErrorS 65147
-#define AbConst_AbBadStreamTypeS 65148
-#define AbConst_AbTruncateErrorS 65149
-#define AbConst_AbZipBadCRCS 65150
-#define AbConst_AbZipBadStubS 65151
-#define bdeconst_SNoFieldAccess 65152
-#define bdeconst_SUntitled 65153
-#define bdeconst_SLocalTransDirty 65154
-#define AbConst_AbErrZipInvalidS 65155
-#define AbConst_AbZipVersionNeededS 65156
-#define AbConst_AbUnknownCompressionMethodS 65157
-#define AbConst_AbNoExtractionMethodS 65158
-#define AbConst_AbInvalidPasswordS 65159
-#define AbConst_AbNoInsertionMethodS 65160
-#define AbConst_AbInvalidFactorS 65161
-#define AbConst_AbDuplicateNameS 65162
-#define AbConst_AbUnsupportedCompressionMethodS 65163
-#define AbConst_AbUserAbortS 65164
-#define AbConst_AbArchiveBusyS 65165
-#define AbConst_AbLastDiskRequestS 65166
-#define AbConst_AbDiskRequestS 65167
-#define bdeconst_SInvalidSessionName 65168
-#define bdeconst_SDatabaseNameMissing 65169
-#define bdeconst_SSessionNameMissing 65170
-#define bdeconst_SDatabaseOpen 65171
-#define bdeconst_SDatabaseClosed 65172
-#define bdeconst_SDatabaseHandleSet 65173
-#define bdeconst_SSessionActive 65174
-#define bdeconst_SHandleError 65175
-#define bdeconst_SNoReferenceTableName 65176
-#define bdeconst_SNoParameterValue 65177
-#define bdeconst_SLoginError 65178
-#define bdeconst_SInitError 65179
-#define bdeconst_SIDAPILangID 65180
-#define bdeconst_SBDEError 65181
-#define bdeconst_SNoDataSetField 65182
-#define bdeconst_SNoCachedUpdates 65183
-#define DBConsts_SUnassignedVar 65184
-#define DBConsts_SRecordNotFound 65185
-#define DBConsts_SBcdOverflow 65186
-#define DBConsts_SInvalidBcdValue 65187
-#define DBConsts_SInvalidFormatType 65188
-#define DBConsts_SCouldNotParseTimeStamp 65189
-#define DBConsts_SInvalidSqlTimeStamp 65190
-#define ComConst_SOleError 65191
-#define ComConst_SNoMethod 65192
-#define ComConst_SVarNotObject 65193
-#define ComConst_STooManyParams 65194
-#define bdeconst_SAutoSessionExclusive 65195
-#define bdeconst_SAutoSessionExists 65196
-#define bdeconst_SAutoSessionActive 65197
-#define bdeconst_SDuplicateDatabaseName 65198
-#define bdeconst_SDuplicateSessionName 65199
-#define DBConsts_SExprBadScope 65200
-#define DBConsts_SExprNoArith 65201
-#define DBConsts_SExprNotAgg 65202
-#define DBConsts_SExprBadConst 65203
-#define DBConsts_SExprNoAggFilter 65204
-#define DBConsts_SExprEmptyInList 65205
-#define DBConsts_SInvalidKeywordUse 65206
-#define DBConsts_STextFalse 65207
-#define DBConsts_STextTrue 65208
-#define DBConsts_SParameterNotFound 65209
-#define DBConsts_SInvalidVersion 65210
-#define DBConsts_SBadFieldType 65211
-#define DBConsts_SProviderSQLNotSupported 65212
-#define DBConsts_SProviderExecuteNotSupported 65213
-#define DBConsts_SExprNoAggOnCalcs 65214
-#define DBConsts_SDataSetUnidirectional 65215
-#define DBConsts_SDataSetReadOnly 65216
-#define DBConsts_SNestedDataSetClass 65217
-#define DBConsts_SExprTermination 65218
-#define DBConsts_SExprNameError 65219
-#define DBConsts_SExprStringError 65220
-#define DBConsts_SExprInvalidChar 65221
-#define DBConsts_SExprNoLParen 65222
-#define DBConsts_SExprNoRParen 65223
-#define DBConsts_SExprNoRParenOrComma 65224
-#define DBConsts_SExprExpected 65225
-#define DBConsts_SExprBadField 65226
-#define DBConsts_SExprBadNullTest 65227
-#define DBConsts_SExprRangeError 65228
-#define DBConsts_SExprIncorrect 65229
-#define DBConsts_SExprNothing 65230
-#define DBConsts_SExprTypeMis 65231
-#define DBConsts_SInvalidFloatValue 65232
-#define DBConsts_SFieldTypeMismatch 65233
-#define DBConsts_SFieldSizeMismatch 65234
-#define DBConsts_SInvalidVarByteArray 65235
-#define DBConsts_SFieldOutOfRange 65236
-#define DBConsts_SFieldRequired 65237
-#define DBConsts_SDataSetMissing 65238
-#define DBConsts_SInvalidCalcType 65239
-#define DBConsts_SFieldReadOnly 65240
-#define DBConsts_SNotIndexField 65241
-#define DBConsts_SDBDuplicateName 65242
-#define DBConsts_SCircularDataLink 65243
-#define DBConsts_SLookupInfoError 65244
-#define DBConsts_SDataSetOpen 65245
-#define DBConsts_SNotEditing 65246
-#define DBConsts_SDataSetClosed 65247
+#define GIFConsts_sMultipleGCE 64736
+#define GIFConsts_sNoPalette 64737
+#define GIFConsts_sGIFImageFile 64738
+#define GIFConsts_sProgressLoading 64739
+#define GIFConsts_sProgressSaving 64740
+#define GIFConsts_sProgressConverting 64741
+#define GIFConsts_sProgressRendering 64742
+#define GIFConsts_sProgressCopying 64743
+#define GIFConsts_sProgressOptimizing 64744
+#define GIFConsts_sBadExtensionInstance 64752
+#define GIFConsts_sBadBlockSize 64753
+#define GIFConsts_sBadBlock 64754
+#define GIFConsts_sUnsupportedClass 64755
+#define GIFConsts_sInvalidData 64756
+#define GIFConsts_sBadSize 64757
+#define GIFConsts_sScreenSizeExceeded 64758
+#define GIFConsts_sNoColorTable 64759
+#define GIFConsts_sBadPixelCoordinates 64760
+#define GIFConsts_sInvalidPixelFormat 64761
+#define GIFConsts_sBadDimension 64762
+#define GIFConsts_sNoDIB 64763
+#define GIFConsts_sInvalidStream 64764
+#define GIFConsts_sInvalidColor 64765
+#define GIFConsts_sEmptyColorMap 64766
+#define GIFConsts_sEmptyImage 64767
+#define JvResources_RsMenuBar 64768
+#define JvResources_RsMenuHighlight 64769
+#define GIFConsts_sOutOfData 64770
+#define GIFConsts_sTooManyColors 64771
+#define GIFConsts_sBadColorIndex 64772
+#define GIFConsts_sBadColorIndexFixed 64773
+#define GIFConsts_sGIFErrorSaveEmpty 64774
+#define GIFConsts_sBadSignature 64775
+#define GIFConsts_sScreenBadColorSize 64776
+#define GIFConsts_sImageBadColorSize 64777
+#define GIFConsts_sUnknownExtension 64778
+#define GIFConsts_sBadExtensionLabel 64779
+#define GIFConsts_sOutOfMemDIB 64780
+#define GIFConsts_sDecodeTooFewBits 64781
+#define GIFConsts_sDecodeCircular 64782
+#define GIFConsts_sBadTrailer 64783
+#define JvResources_RsClAppWorkSpace 64784
+#define JvResources_RsClHighlight 64785
+#define JvResources_RsClHighlightText 64786
+#define JvResources_RsClBtnFace 64787
+#define JvResources_RsClBtnShadow 64788
+#define JvResources_RsClGrayText 64789
+#define JvResources_RsClBtnText 64790
+#define JvResources_RsClInactiveCaptionText 64791
+#define JvResources_RsClBtnHighlight 64792
+#define JvResources_RsCl3DDkShadow 64793
+#define JvResources_RsCl3DLight 64794
+#define JvResources_RsClInfoText 64795
+#define JvResources_RsClInfoBk 64796
+#define JvResources_RsGradientActiveCaption 64797
+#define JvResources_RsGradientInactiveCaption 64798
+#define JvResources_RsHotLight 64799
+#define JvResources_RsClLightGreen 64800
+#define JvResources_RsClLightTurquoise 64801
+#define JvResources_RsClPaleBlue 64802
+#define JvResources_RsClLavender 64803
+#define JvResources_RsClScrollBar 64804
+#define JvResources_RsClBackground 64805
+#define JvResources_RsClActiveCaption 64806
+#define JvResources_RsClInactiveCaption 64807
+#define JvResources_RsClMenu 64808
+#define JvResources_RsClWindow 64809
+#define JvResources_RsClWindowFrame 64810
+#define JvResources_RsClMenuText 64811
+#define JvResources_RsClWindowText 64812
+#define JvResources_RsClCaptionText 64813
+#define JvResources_RsClActiveBorder 64814
+#define JvResources_RsClInactiveBorder 64815
+#define JvResources_RsClBlueGray 64816
+#define JvResources_RsClGray50 64817
+#define JvResources_RsClLightOrange 64818
+#define JvResources_RsClSeaGreen 64819
+#define JvResources_RsClLightBlue 64820
+#define JvResources_RsClViolet 64821
+#define JvResources_RsClGray40 64822
+#define JvResources_RsClPink 64823
+#define JvResources_RsClGold 64824
+#define JvResources_RsClBrightGreen 64825
+#define JvResources_RsClTurquoise 64826
+#define JvResources_RsClPlum 64827
+#define JvResources_RsClGray25 64828
+#define JvResources_RsClRose 64829
+#define JvResources_RsClTan 64830
+#define JvResources_RsClLightYellow 64831
+#define JvResources_RsClAqua 64832
+#define JvResources_RsClWhite 64833
+#define JvResources_RsClMoneyGreen 64834
+#define JvResources_RsClSkyBlue 64835
+#define JvResources_RsClCream 64836
+#define JvResources_RsClMedGray 64837
+#define JvResources_RsClBrown 64838
+#define JvResources_RsClOliveGreen 64839
+#define JvResources_RsClDarkGreen 64840
+#define JvResources_RsClDarkTeal 64841
+#define JvResources_RsClDarkBlue 64842
+#define JvResources_RsClIndigo 64843
+#define JvResources_RsClGray80 64844
+#define JvResources_RsClDarkRed 64845
+#define JvResources_RsClOrange 64846
+#define JvResources_RsClDarkYellow 64847
+#define JvResources_RsEExtensibleIntObjInvalidClass 64848
+#define JvResources_RsUnknown 64849
+#define JvResources_RsClBlack 64850
+#define JvResources_RsClMaroon 64851
+#define JvResources_RsClGreen 64852
+#define JvResources_RsClOlive 64853
+#define JvResources_RsClNavy 64854
+#define JvResources_RsClPurple 64855
+#define JvResources_RsClTeal 64856
+#define JvResources_RsClGray 64857
+#define JvResources_RsClSilver 64858
+#define JvResources_RsClRed 64859
+#define JvResources_RsClLime 64860
+#define JvResources_RsClYellow 64861
+#define JvResources_RsClBlue 64862
+#define JvResources_RsClFuchsia 64863
+#define JvResources_RsDataItemRenderHasNoText 64864
+#define JvResources_RsEInternalError 64865
+#define JvResources_RsEShellNotCompatible 64866
+#define JvResources_RsEItemCanNotBeDeleted 64867
+#define JvResources_RsEAContextWithThatNameAlreadyExists 64868
+#define JvResources_RsECannotCreateAContextWithoutAContext 64869
+#define JvResources_RsEYouMustSpecifyAProviderBeforeSettin 64870
+#define JvResources_RsEProviderHasNoContextNameds 64871
+#define JvResources_RsEProviderDoesNotSupportContexts 64872
+#define JvResources_RsETheSpecifiedContextIsNotPartOfTheSa 64873
+#define JvResources_RsEYouMustSpecifyAProviderBeforeSettin_ 64874
+#define JvResources_RsEItemNotFoundInTheSelectedContext 64875
+#define JvResources_RsEViewListOutOfSync 64876
+#define JvResources_RsEExtensibleIntObjDuplicateClass 64877
+#define JvResources_RsEExtensibleIntObjCollectionExpected 64878
+#define JvResources_RsEExtensibleIntObjClassNameExpected 64879
+#define AbConst_AbCabMethod0S 64880
+#define AbConst_AbCabMethod1S 64881
+#define AbConst_AbLtAddS 64882
+#define AbConst_AbLtDeleteS 64883
+#define AbConst_AbLtExtractS 64884
+#define AbConst_AbLtFreshenS 64885
+#define AbConst_AbLtMoveS 64886
+#define AbConst_AbLtReplaceS 64887
+#define AbConst_AbLtStartS 64888
+#define AbConst_AbGzipInvalidS 64889
+#define AbConst_AbGzipBadCRCS 64890
+#define AbConst_AbGzipBadFileSizeS 64891
+#define AbConst_AbUnhandledEntityS 64892
+#define JConsts_sChangeJPGSize 64893
+#define JConsts_sJPEGError 64894
+#define JConsts_sJPEGImageFile 64895
+#define AbConst_AbSWSInvalidNewOriginS 64896
+#define AbConst_AbItemNameHeadingS 64897
+#define AbConst_AbPackedHeadingS 64898
+#define AbConst_AbMethodHeadingS 64899
+#define AbConst_AbRatioHeadingS 64900
+#define AbConst_AbCRCHeadingS 64901
+#define AbConst_AbFileAttrHeadingS 64902
+#define AbConst_AbFileFormatHeadingS 64903
+#define AbConst_AbEncryptionHeadingS 64904
+#define AbConst_AbTimeStampHeadingS 64905
+#define AbConst_AbFileSizeHeadingS 64906
+#define AbConst_AbVersionMadeHeadingS 64907
+#define AbConst_AbVersionNeededHeadingS 64908
+#define AbConst_AbPathHeadingS 64909
+#define AbConst_AbPartialHeadingS 64910
+#define AbConst_AbExecutableHeadingS 64911
+#define AbConst_AbExeFilterS 64912
+#define AbConst_AbVMSReadTooManyBytesS 64913
+#define AbConst_AbVMSInvalidOriginS 64914
+#define AbConst_AbVMSErrorOpenSwapS 64915
+#define AbConst_AbVMSSeekFailS 64916
+#define AbConst_AbVMSReadFailS 64917
+#define AbConst_AbVMSWriteFailS 64918
+#define AbConst_AbVMSWriteTooManyBytesS 64919
+#define AbConst_AbBBSReadTooManyBytesS 64920
+#define AbConst_AbBBSSeekOutsideBufferS 64921
+#define AbConst_AbBBSInvalidOriginS 64922
+#define AbConst_AbBBSWriteTooManyBytesS 64923
+#define AbConst_AbSWSNotEndofStreamS 64924
+#define AbConst_AbSWSSeekFailedS 64925
+#define AbConst_AbSWSWriteFailedS 64926
+#define AbConst_AbSWSInvalidOriginS 64927
+#define AbConst_AbNeededFormatS 64928
+#define AbConst_AbCommentFormatS 64929
+#define AbConst_AbDefaultExtS 64930
+#define AbConst_AbFilterS 64931
+#define AbConst_AbFileNameTitleS 64932
+#define AbConst_AbOKS 64933
+#define AbConst_AbCancelS 64934
+#define AbConst_AbSelectDirectoryS 64935
+#define AbConst_AbEnterPasswordS 64936
+#define AbConst_AbPasswordS 64937
+#define AbConst_AbVerifyS 64938
+#define AbConst_AbCabExtS 64939
+#define AbConst_AbCabFilterS 64940
+#define AbConst_AbLogExtS 64941
+#define AbConst_AbLogFilterS 64942
+#define AbConst_AbExeExtS 64943
+#define AbConst_AbCompressionRatioFormatS 64944
+#define AbConst_AbCRCFormatS 64945
+#define AbConst_AbReadOnlyS 64946
+#define AbConst_AbHiddenS 64947
+#define AbConst_AbSystemS 64948
+#define AbConst_AbArchivedS 64949
+#define AbConst_AbEFAFormatS 64950
+#define AbConst_AbIFAFormatS 64951
+#define AbConst_AbTextS 64952
+#define AbConst_AbBinaryS 64953
+#define AbConst_AbEncryptionFormatS 64954
+#define AbConst_AbEncryptedS 64955
+#define AbConst_AbNotEncryptedS 64956
+#define AbConst_AbUnknownS 64957
+#define AbConst_AbTimeStampFormatS 64958
+#define AbConst_AbMadeByFormatS 64959
+#define AbConst_AbMethod0S 64960
+#define AbConst_AbMethod1S 64961
+#define AbConst_AbMethod2S 64962
+#define AbConst_AbMethod3S 64963
+#define AbConst_AbMethod4S 64964
+#define AbConst_AbMethod5S 64965
+#define AbConst_AbMethod6S 64966
+#define AbConst_AbMethod7S 64967
+#define AbConst_AbMethod8S 64968
+#define AbConst_AbMethod9S 64969
+#define AbConst_AbMethod10S 64970
+#define AbConst_AbMethod11S 64971
+#define AbConst_AbVersionFormatS 64972
+#define AbConst_AbCompressedSizeFormatS 64973
+#define AbConst_AbUncompressedSizeFormatS 64974
+#define AbConst_AbCompressionMethodFormatS 64975
+#define AbConst_abMoveFileErrorS 64976
+#define AbConst_AbNoCabinetDllErrorS 64977
+#define AbConst_AbFCIFileOpenErrorS 64978
+#define AbConst_AbFCIFileReadErrorS 64979
+#define AbConst_AbFCIFileWriteErrorS 64980
+#define AbConst_AbFCIFileCloseErrorS 64981
+#define AbConst_AbFCIFileSeekErrorS 64982
+#define AbConst_AbFCIFileDeleteErrorS 64983
+#define AbConst_AbFCIAddFileErrorS 64984
+#define AbConst_AbFCICreateErrorS 64985
+#define AbConst_AbFCIFlushCabinetErrorS 64986
+#define AbConst_AbFCIFlushFolderErrorS 64987
+#define AbConst_AbFDICopyErrorS 64988
+#define AbConst_AbFDICreateErrorS 64989
+#define AbConst_AbInvalidCabTemplateS 64990
+#define AbConst_AbInvalidCabFileS 64991
+#define AbConst_AbStreamFullS 64992
+#define AbConst_AbNoSuchDirectoryS 64993
+#define AbConst_AbInflateBlockErrorS 64994
+#define AbConst_AbBadStreamTypeS 64995
+#define AbConst_AbTruncateErrorS 64996
+#define AbConst_AbZipBadCRCS 64997
+#define AbConst_AbZipBadStubS 64998
+#define AbConst_AbFileNotFoundS 64999
+#define AbConst_AbInvalidLFHS 65000
+#define AbConst_AbNoArchiveS 65001
+#define AbConst_AbReadErrorS 65002
+#define AbConst_AbInvalidIndexS 65003
+#define AbConst_AbInvalidThresholdS 65004
+#define AbConst_AbUnhandledFileTypeS 65005
+#define AbConst_AbSpanningNotSupportedS 65006
+#define AbConst_AbLogCreateErrorS 65007
+#define AbConst_AbInvalidFactorS 65008
+#define AbConst_AbDuplicateNameS 65009
+#define AbConst_AbUnsupportedCompressionMethodS 65010
+#define AbConst_AbUserAbortS 65011
+#define AbConst_AbArchiveBusyS 65012
+#define AbConst_AbLastDiskRequestS 65013
+#define AbConst_AbDiskRequestS 65014
+#define AbConst_AbNthImageRequestS 65015
+#define AbConst_AbLastImageRequestS 65016
+#define AbConst_AbImageRequestS 65017
+#define AbConst_AbBadSpanStreamS 65018
+#define AbConst_AbDiskNumRequestS 65019
+#define AbConst_AbImageNumRequestS 65020
+#define AbConst_AbNoOverwriteSpanStreamS 65021
+#define AbConst_AbNoSpannedSelfExtractS 65022
+#define AbConst_AbBlankDiskS 65023
+#define SQLiteWrap_c_errordata 65024
+#define VirtualTrees_SEditLinkIsNil 65025
+#define VirtualTrees_SWrongMoveError 65026
+#define VirtualTrees_SWrongStreamFormat 65027
+#define VirtualTrees_SWrongStreamVersion 65028
+#define VirtualTrees_SStreamTooSmall 65029
+#define VirtualTrees_SCorruptStream1 65030
+#define VirtualTrees_SCorruptStream2 65031
+#define VirtualTrees_SClipboardFailed 65032
+#define VirtualTrees_SCannotSetUserData 65033
+#define AbConst_AbErrZipInvalidS 65034
+#define AbConst_AbZipVersionNeededS 65035
+#define AbConst_AbUnknownCompressionMethodS 65036
+#define AbConst_AbNoExtractionMethodS 65037
+#define AbConst_AbInvalidPasswordS 65038
+#define AbConst_AbNoInsertionMethodS 65039
+#define pnglang_EPNGCannotAssignChunkText 65040
+#define pnglang_EPNGUnexpectedEndText 65041
+#define pnglang_EPNGNoImageDataText 65042
+#define pnglang_EPNGCannotAddChunkText 65043
+#define pnglang_EPNGCannotAddInvalidImageText 65044
+#define pnglang_EPNGOutMemoryText 65045
+#define pnglang_EPNGHeaderNotPresentText 65046
+#define pnglang_EInvalidNewSize 65047
+#define Generics_Collections_sArgumentOutOfRange 65048
+#define SQLiteWrap_c_unknown 65049
+#define SQLiteWrap_c_failopen 65050
+#define SQLiteWrap_c_error 65051
+#define SQLiteWrap_c_nomessage 65052
+#define SQLiteWrap_c_errorsql 65053
+#define SQLiteWrap_c_errorprepare 65054
+#define SQLiteWrap_c_errorexec 65055
+#define bdeconst_SNoCachedUpdates 65056
+#define bdeconst_SNoFieldAccess 65057
+#define bdeconst_SUntitled 65058
+#define bdeconst_SLocalTransDirty 65059
+#define pnglang_EPngInvalidCRCText 65060
+#define pnglang_EPNGInvalidIHDRText 65061
+#define pnglang_EPNGMissingMultipleIDATText 65062
+#define pnglang_EPNGZLIBErrorText 65063
+#define pnglang_EPNGInvalidPaletteText 65064
+#define pnglang_EPNGInvalidFileHeaderText 65065
+#define pnglang_EPNGIHDRNotFirstText 65066
+#define pnglang_EPNGSizeExceedsText 65067
+#define pnglang_EPNGUnknownPalEntryText 65068
+#define pnglang_EPNGUnknownCriticalChunkText 65069
+#define pnglang_EPNGUnknownCompressionText 65070
+#define pnglang_EPNGUnknownInterlaceText 65071
+#define bdeconst_SDuplicateSessionName 65072
+#define bdeconst_SInvalidSessionName 65073
+#define bdeconst_SDatabaseNameMissing 65074
+#define bdeconst_SSessionNameMissing 65075
+#define bdeconst_SDatabaseOpen 65076
+#define bdeconst_SDatabaseClosed 65077
+#define bdeconst_SDatabaseHandleSet 65078
+#define bdeconst_SSessionActive 65079
+#define bdeconst_SHandleError 65080
+#define bdeconst_SNoReferenceTableName 65081
+#define bdeconst_SNoParameterValue 65082
+#define bdeconst_SLoginError 65083
+#define bdeconst_SInitError 65084
+#define bdeconst_SIDAPILangID 65085
+#define bdeconst_SBDEError 65086
+#define bdeconst_SNoDataSetField 65087
+#define DBConsts_SBadFieldType 65088
+#define DBConsts_SProviderSQLNotSupported 65089
+#define DBConsts_SProviderExecuteNotSupported 65090
+#define DBConsts_SExprNoAggOnCalcs 65091
+#define DBConsts_SDataSetUnidirectional 65092
+#define DBConsts_SUnassignedVar 65093
+#define DBConsts_SRecordNotFound 65094
+#define DBConsts_SBcdOverflow 65095
+#define DBConsts_SInvalidBcdValue 65096
+#define DBConsts_SInvalidFormatType 65097
+#define DBConsts_SCouldNotParseTimeStamp 65098
+#define DBConsts_SInvalidSqlTimeStamp 65099
+#define bdeconst_SAutoSessionExclusive 65100
+#define bdeconst_SAutoSessionExists 65101
+#define bdeconst_SAutoSessionActive 65102
+#define bdeconst_SDuplicateDatabaseName 65103
+#define DBConsts_SExprBadNullTest 65104
+#define DBConsts_SExprRangeError 65105
+#define DBConsts_SExprIncorrect 65106
+#define DBConsts_SExprNothing 65107
+#define DBConsts_SExprTypeMis 65108
+#define DBConsts_SExprBadScope 65109
+#define DBConsts_SExprNoArith 65110
+#define DBConsts_SExprNotAgg 65111
+#define DBConsts_SExprBadConst 65112
+#define DBConsts_SExprNoAggFilter 65113
+#define DBConsts_SExprEmptyInList 65114
+#define DBConsts_SInvalidKeywordUse 65115
+#define DBConsts_STextFalse 65116
+#define DBConsts_STextTrue 65117
+#define DBConsts_SParameterNotFound 65118
+#define DBConsts_SInvalidVersion 65119
+#define DBConsts_SCircularDataLink 65120
+#define DBConsts_SLookupInfoError 65121
+#define DBConsts_SDataSetOpen 65122
+#define DBConsts_SNotEditing 65123
+#define DBConsts_SDataSetClosed 65124
+#define DBConsts_SDataSetReadOnly 65125
+#define DBConsts_SNestedDataSetClass 65126
+#define DBConsts_SExprTermination 65127
+#define DBConsts_SExprNameError 65128
+#define DBConsts_SExprStringError 65129
+#define DBConsts_SExprInvalidChar 65130
+#define DBConsts_SExprNoLParen 65131
+#define DBConsts_SExprNoRParen 65132
+#define DBConsts_SExprNoRParenOrComma 65133
+#define DBConsts_SExprExpected 65134
+#define DBConsts_SExprBadField 65135
+#define DBConsts_SFieldValueError 65136
+#define DBConsts_SFieldRangeError 65137
+#define DBConsts_SBcdFieldRangeError 65138
+#define DBConsts_SInvalidIntegerValue 65139
+#define DBConsts_SInvalidBoolValue 65140
+#define DBConsts_SInvalidFloatValue 65141
+#define DBConsts_SFieldTypeMismatch 65142
+#define DBConsts_SFieldSizeMismatch 65143
+#define DBConsts_SInvalidVarByteArray 65144
+#define DBConsts_SFieldOutOfRange 65145
+#define DBConsts_SFieldRequired 65146
+#define DBConsts_SDataSetMissing 65147
+#define DBConsts_SInvalidCalcType 65148
+#define DBConsts_SFieldReadOnly 65149
+#define DBConsts_SNotIndexField 65150
+#define DBConsts_SDBDuplicateName 65151
+#define JclResources_RsIntelCacheDescrF0 65152
+#define JclResources_RsIntelCacheDescrF1 65153
+#define JclResources_RsIntelCacheDescrFF 65154
+#define JclResources_RsInvalidMMFName 65155
+#define JclResources_RsInvalidMMFEmpty 65156
+#define ComConst_SOleError 65157
+#define ComConst_SNoMethod 65158
+#define ComConst_SVarNotObject 65159
+#define ComConst_STooManyParams 65160
+#define DBConsts_SInvalidFieldSize 65161
+#define DBConsts_SInvalidFieldKind 65162
+#define DBConsts_SUnknownFieldType 65163
+#define DBConsts_SFieldNameMissing 65164
+#define DBConsts_SDuplicateFieldName 65165
+#define DBConsts_SFieldNotFound 65166
+#define DBConsts_SFieldAccessError 65167
+#define JclResources_RsIntelCacheDescr80 65168
+#define JclResources_RsIntelCacheDescr82 65169
+#define JclResources_RsIntelCacheDescr83 65170
+#define JclResources_RsIntelCacheDescr84 65171
+#define JclResources_RsIntelCacheDescr85 65172
+#define JclResources_RsIntelCacheDescr86 65173
+#define JclResources_RsIntelCacheDescr87 65174
+#define JclResources_RsIntelCacheDescrB0 65175
+#define JclResources_RsIntelCacheDescrB1 65176
+#define JclResources_RsIntelCacheDescrB2 65177
+#define JclResources_RsIntelCacheDescrB3 65178
+#define JclResources_RsIntelCacheDescrB4 65179
+#define JclResources_RsIntelCacheDescrBA 65180
+#define JclResources_RsIntelCacheDescrC0 65181
+#define JclResources_RsIntelCacheDescrCA 65182
+#define JclResources_RsIntelCacheDescrE4 65183
+#define JclResources_RsIntelCacheDescr5D 65184
+#define JclResources_RsIntelCacheDescr60 65185
+#define JclResources_RsIntelCacheDescr66 65186
+#define JclResources_RsIntelCacheDescr67 65187
+#define JclResources_RsIntelCacheDescr68 65188
+#define JclResources_RsIntelCacheDescr70 65189
+#define JclResources_RsIntelCacheDescr71 65190
+#define JclResources_RsIntelCacheDescr72 65191
+#define JclResources_RsIntelCacheDescr73 65192
+#define JclResources_RsIntelCacheDescr78 65193
+#define JclResources_RsIntelCacheDescr79 65194
+#define JclResources_RsIntelCacheDescr7A 65195
+#define JclResources_RsIntelCacheDescr7B 65196
+#define JclResources_RsIntelCacheDescr7C 65197
+#define JclResources_RsIntelCacheDescr7D 65198
+#define JclResources_RsIntelCacheDescr7F 65199
+#define JclResources_RsIntelCacheDescr4A 65200
+#define JclResources_RsIntelCacheDescr4B 65201
+#define JclResources_RsIntelCacheDescr4C 65202
+#define JclResources_RsIntelCacheDescr4D 65203
+#define JclResources_RsIntelCacheDescr4E 65204
+#define JclResources_RsIntelCacheDescr4F 65205
+#define JclResources_RsIntelCacheDescr50 65206
+#define JclResources_RsIntelCacheDescr51 65207
+#define JclResources_RsIntelCacheDescr52 65208
+#define JclResources_RsIntelCacheDescr55 65209
+#define JclResources_RsIntelCacheDescr56 65210
+#define JclResources_RsIntelCacheDescr57 65211
+#define JclResources_RsIntelCacheDescr59 65212
+#define JclResources_RsIntelCacheDescr5A 65213
+#define JclResources_RsIntelCacheDescr5B 65214
+#define JclResources_RsIntelCacheDescr5C 65215
+#define JclResources_RsIntelCacheDescr39 65216
+#define JclResources_RsIntelCacheDescr3A 65217
+#define JclResources_RsIntelCacheDescr3B 65218
+#define JclResources_RsIntelCacheDescr3C 65219
+#define JclResources_RsIntelCacheDescr3D 65220
+#define JclResources_RsIntelCacheDescr3E 65221
+#define JclResources_RsIntelCacheDescr40 65222
+#define JclResources_RsIntelCacheDescr41 65223
+#define JclResources_RsIntelCacheDescr42 65224
+#define JclResources_RsIntelCacheDescr43 65225
+#define JclResources_RsIntelCacheDescr44 65226
+#define JclResources_RsIntelCacheDescr45 65227
+#define JclResources_RsIntelCacheDescr46 65228
+#define JclResources_RsIntelCacheDescr47 65229
+#define JclResources_RsIntelCacheDescr48 65230
+#define JclResources_RsIntelCacheDescr49 65231
+#define JclResources_RsIntelCacheDescr04 65232
+#define JclResources_RsIntelCacheDescr05 65233
+#define JclResources_RsIntelCacheDescr06 65234
+#define JclResources_RsIntelCacheDescr08 65235
+#define JclResources_RsIntelCacheDescr0A 65236
+#define JclResources_RsIntelCacheDescr0B 65237
+#define JclResources_RsIntelCacheDescr0C 65238
+#define JclResources_RsIntelCacheDescr0D 65239
+#define JclResources_RsIntelCacheDescr0E 65240
+#define JclResources_RsIntelCacheDescr21 65241
+#define JclResources_RsIntelCacheDescr22 65242
+#define JclResources_RsIntelCacheDescr23 65243
+#define JclResources_RsIntelCacheDescr25 65244
+#define JclResources_RsIntelCacheDescr29 65245
+#define JclResources_RsIntelCacheDescr2C 65246
+#define JclResources_RsIntelCacheDescr30 65247
 #define Consts_SXPThemesRequired 65248
 #define Consts_STaskDlgButtonCaption 65249
 #define Consts_STaskDlgRadioButtonCaption 65250
 #define Consts_SInvalidTaskDlgButtonCaption 65251
-#define DBConsts_SInvalidFieldSize 65252
-#define DBConsts_SInvalidFieldKind 65253
-#define DBConsts_SUnknownFieldType 65254
-#define DBConsts_SFieldNameMissing 65255
-#define DBConsts_SDuplicateFieldName 65256
-#define DBConsts_SFieldNotFound 65257
-#define DBConsts_SFieldAccessError 65258
-#define DBConsts_SFieldValueError 65259
-#define DBConsts_SFieldRangeError 65260
-#define DBConsts_SBcdFieldRangeError 65261
-#define DBConsts_SInvalidIntegerValue 65262
-#define DBConsts_SInvalidBoolValue 65263
+#define JclResources_RsWin32Prefix 65252
+#define JclResources_RsEReplacementChar 65253
+#define JclResources_RsCreateFileMapping 65254
+#define JclResources_RsCreateFileMappingView 65255
+#define JclResources_RsViewNeedsMapping 65256
+#define JclResources_RsFailedToObtainSize 65257
+#define JclResources_RsSynchCreateEvent 65258
+#define JclResources_RsSynchCreateMutex 65259
+#define JclResources_RsIntelCacheDescr00 65260
+#define JclResources_RsIntelCacheDescr01 65261
+#define JclResources_RsIntelCacheDescr02 65262
+#define JclResources_RsIntelCacheDescr03 65263
 #define Consts_SDuplicateMenus 65264
 #define Consts_SDockedCtlNeedsName 65265
 #define Consts_SDockTreeRemoveError 65266
@@ -798,10 +803,20 @@
 #define SysConst_SInvalidOp 65535
 STRINGTABLE
 BEGIN
+	GIFConsts_sMultipleGCE,	"Frame contains multiple Graphic Control Extension blocks"
+	GIFConsts_sNoPalette,	"Missing, invalid or empty palette"
+	GIFConsts_sGIFImageFile,	"GIF Image"
+	GIFConsts_sProgressLoading,	"Loading"
+	GIFConsts_sProgressSaving,	"Saving"
 	GIFConsts_sProgressConverting,	"Converting"
 	GIFConsts_sProgressRendering,	"Rendering"
 	GIFConsts_sProgressCopying,	"Copying"
 	GIFConsts_sProgressOptimizing,	"Optimizing"
+	GIFConsts_sBadExtensionInstance,	"Internal error: Extension Instance does not match Extension Label"
+	GIFConsts_sBadBlockSize,	"Unsupported Application Extension block size"
+	GIFConsts_sBadBlock,	"Unknown GIF block type"
+	GIFConsts_sUnsupportedClass,	"Object type not supported for operation"
+	GIFConsts_sInvalidData,	"Invalid GIF data"
 	GIFConsts_sBadSize,	"Invalid image size"
 	GIFConsts_sScreenSizeExceeded,	"Image exceeds Logical Screen size"
 	GIFConsts_sNoColorTable,	"No global or local color table defined"
@@ -813,11 +828,11 @@ BEGIN
 	GIFConsts_sInvalidColor,	"Color not in color table"
 	GIFConsts_sEmptyColorMap,	"Color table is empty"
 	GIFConsts_sEmptyImage,	"Image is empty"
-	GIFConsts_sMultipleGCE,	"Frame contains multiple Graphic Control Extension blocks"
-	GIFConsts_sNoPalette,	"Missing, invalid or empty palette"
-	GIFConsts_sGIFImageFile,	"GIF Image"
-	GIFConsts_sProgressLoading,	"Loading"
-	GIFConsts_sProgressSaving,	"Saving"
+	JvResources_RsMenuBar,	"Menu Bar"
+	JvResources_RsMenuHighlight,	"Menu Highlight"
+	GIFConsts_sOutOfData,	"Premature end of data"
+	GIFConsts_sTooManyColors,	"Color table overflow"
+	GIFConsts_sBadColorIndex,	"Invalid color index"
 	GIFConsts_sBadColorIndexFixed,	"Invalid color index - color map expanded"
 	GIFConsts_sGIFErrorSaveEmpty,	"Cannot save empty GIF"
 	GIFConsts_sBadSignature,	"Invalid GIF signature"
@@ -829,14 +844,246 @@ BEGIN
 	GIFConsts_sDecodeTooFewBits,	"Decoder bit buffer under-run"
 	GIFConsts_sDecodeCircular,	"Circular decoder table entry"
 	GIFConsts_sBadTrailer,	"Invalid Image trailer"
-	GIFConsts_sBadExtensionInstance,	"Internal error: Extension Instance does not match Extension Label"
-	GIFConsts_sBadBlockSize,	"Unsupported Application Extension block size"
-	GIFConsts_sBadBlock,	"Unknown GIF block type"
-	GIFConsts_sUnsupportedClass,	"Object type not supported for operation"
-	GIFConsts_sInvalidData,	"Invalid GIF data"
-	SQLiteWrap_c_errorsql,	"Error executing SQL"
-	SQLiteWrap_c_errorprepare,	"Could not prepare SQL statement"
-	SQLiteWrap_c_errorexec,	"Error executing SQL statement"
+	JvResources_RsClAppWorkSpace,	"Application workspace"
+	JvResources_RsClHighlight,	"Selection background"
+	JvResources_RsClHighlightText,	"Selection text"
+	JvResources_RsClBtnFace,	"Button face"
+	JvResources_RsClBtnShadow,	"Button shadow"
+	JvResources_RsClGrayText,	"Dimmed text"
+	JvResources_RsClBtnText,	"Button text"
+	JvResources_RsClInactiveCaptionText,	"Inactive window title bar text"
+	JvResources_RsClBtnHighlight,	"Button highlight"
+	JvResources_RsCl3DDkShadow,	"Dark shadow 3D elements"
+	JvResources_RsCl3DLight,	"Highlight 3D elements"
+	JvResources_RsClInfoText,	"Tooltip text"
+	JvResources_RsClInfoBk,	"Tooltip background"
+	JvResources_RsGradientActiveCaption,	"Gradient Active Caption"
+	JvResources_RsGradientInactiveCaption,	"Gradient Inactive Caption"
+	JvResources_RsHotLight,	"Hot Light"
+	JvResources_RsClLightGreen,	"Light Green"
+	JvResources_RsClLightTurquoise,	"Light Turquoise"
+	JvResources_RsClPaleBlue,	"Pale Blue"
+	JvResources_RsClLavender,	"Lavender"
+	JvResources_RsClScrollBar,	"Scrollbar"
+	JvResources_RsClBackground,	"Desktop background"
+	JvResources_RsClActiveCaption,	"Active window title bar"
+	JvResources_RsClInactiveCaption,	"Inactive window title bar"
+	JvResources_RsClMenu,	"Menu background"
+	JvResources_RsClWindow,	"Window background"
+	JvResources_RsClWindowFrame,	"Window frame"
+	JvResources_RsClMenuText,	"Menu text"
+	JvResources_RsClWindowText,	"Window text"
+	JvResources_RsClCaptionText,	"Active window title bar text"
+	JvResources_RsClActiveBorder,	"Active window border"
+	JvResources_RsClInactiveBorder,	"Inactive window border"
+	JvResources_RsClBlueGray,	"Blue Gray"
+	JvResources_RsClGray50,	"Gray 50%"
+	JvResources_RsClLightOrange,	"Light Orange"
+	JvResources_RsClSeaGreen,	"Sea Green"
+	JvResources_RsClLightBlue,	"Light Blue"
+	JvResources_RsClViolet,	"Violet"
+	JvResources_RsClGray40,	"Gray 40%"
+	JvResources_RsClPink,	"Pink"
+	JvResources_RsClGold,	"Gold"
+	JvResources_RsClBrightGreen,	"Bright Green"
+	JvResources_RsClTurquoise,	"Turquoise"
+	JvResources_RsClPlum,	"Plum"
+	JvResources_RsClGray25,	"Gray 25%"
+	JvResources_RsClRose,	"Rose"
+	JvResources_RsClTan,	"Tan"
+	JvResources_RsClLightYellow,	"Light Yellow"
+	JvResources_RsClAqua,	"Aqua"
+	JvResources_RsClWhite,	"White"
+	JvResources_RsClMoneyGreen,	"Money green"
+	JvResources_RsClSkyBlue,	"Sky blue"
+	JvResources_RsClCream,	"Cream"
+	JvResources_RsClMedGray,	"Medium gray"
+	JvResources_RsClBrown,	"Brown"
+	JvResources_RsClOliveGreen,	"Olive Green"
+	JvResources_RsClDarkGreen,	"Dark Green"
+	JvResources_RsClDarkTeal,	"Dark Teal"
+	JvResources_RsClDarkBlue,	"Dark Blue"
+	JvResources_RsClIndigo,	"Indigo"
+	JvResources_RsClGray80,	"Gray 80%"
+	JvResources_RsClDarkRed,	"Dark Red"
+	JvResources_RsClOrange,	"Orange"
+	JvResources_RsClDarkYellow,	"Dark Yellow"
+	JvResources_RsEExtensibleIntObjInvalidClass,	"Invalid class type"
+	JvResources_RsUnknown,	"Unknown"
+	JvResources_RsClBlack,	"Black"
+	JvResources_RsClMaroon,	"Maroon"
+	JvResources_RsClGreen,	"Green"
+	JvResources_RsClOlive,	"Olive green"
+	JvResources_RsClNavy,	"Navy blue"
+	JvResources_RsClPurple,	"Purple"
+	JvResources_RsClTeal,	"Teal"
+	JvResources_RsClGray,	"Gray"
+	JvResources_RsClSilver,	"Silver"
+	JvResources_RsClRed,	"Red"
+	JvResources_RsClLime,	"Lime"
+	JvResources_RsClYellow,	"Yellow"
+	JvResources_RsClBlue,	"Blue"
+	JvResources_RsClFuchsia,	"Fuchsia"
+	JvResources_RsDataItemRenderHasNoText,	"(item does not support the IJvDataItemText interface)"
+	JvResources_RsEInternalError,	"internal error"
+	JvResources_RsEShellNotCompatible,	"Shell not compatible with BrowseForFolder"
+	JvResources_RsEItemCanNotBeDeleted,	"Item cannot be deleted"
+	JvResources_RsEAContextWithThatNameAlreadyExists,	"A context with that name already exists"
+	JvResources_RsECannotCreateAContextWithoutAContext,	"Cannot create a context without a context list owner"
+	JvResources_RsEYouMustSpecifyAProviderBeforeSettin,	"You must specify a provider before setting the context"
+	JvResources_RsEProviderHasNoContextNameds,	"Provider has no context named \"%s\""
+	JvResources_RsEProviderDoesNotSupportContexts,	"Provider does not support contexts"
+	JvResources_RsETheSpecifiedContextIsNotPartOfTheSa,	"The specified context is not part of the same provider"
+	JvResources_RsEYouMustSpecifyAProviderBeforeSettin_,	"You must specify a provider before setting the item"
+	JvResources_RsEItemNotFoundInTheSelectedContext,	"Item not found in the selected context"
+	JvResources_RsEViewListOutOfSync,	"ViewList out of sync"
+	JvResources_RsEExtensibleIntObjDuplicateClass,	"Implementation of that class already exists"
+	JvResources_RsEExtensibleIntObjCollectionExpected,	"Expected collection"
+	JvResources_RsEExtensibleIntObjClassNameExpected,	"Missing ClassName property"
+	AbConst_AbCabMethod0S,	"None"
+	AbConst_AbCabMethod1S,	"MSZip"
+	AbConst_AbLtAddS,	" added "
+	AbConst_AbLtDeleteS,	" deleted "
+	AbConst_AbLtExtractS,	" extracted "
+	AbConst_AbLtFreshenS,	" freshened "
+	AbConst_AbLtMoveS,	" moved "
+	AbConst_AbLtReplaceS,	" replaced "
+	AbConst_AbLtStartS,	" logging "
+	AbConst_AbGzipInvalidS,	"Invalid Gzip"
+	AbConst_AbGzipBadCRCS,	"Bad CRC"
+	AbConst_AbGzipBadFileSizeS,	"Bad File Size"
+	AbConst_AbUnhandledEntityS,	"Unhandled Entity"
+	JConsts_sChangeJPGSize,	"Cannot change the size of a JPEG image"
+	JConsts_sJPEGError,	"JPEG error #%d"
+	JConsts_sJPEGImageFile,	"JPEG Image File"
+	AbConst_AbSWSInvalidNewOriginS,	"TabSlidingWindowStream.Seek: invalid new position"
+	AbConst_AbItemNameHeadingS,	"Name"
+	AbConst_AbPackedHeadingS,	"Packed"
+	AbConst_AbMethodHeadingS,	"Method"
+	AbConst_AbRatioHeadingS,	"Ratio (%)"
+	AbConst_AbCRCHeadingS,	"CRC32"
+	AbConst_AbFileAttrHeadingS,	"Attributes"
+	AbConst_AbFileFormatHeadingS,	"Format"
+	AbConst_AbEncryptionHeadingS,	"Encrypted"
+	AbConst_AbTimeStampHeadingS,	"Time Stamp"
+	AbConst_AbFileSizeHeadingS,	"Size"
+	AbConst_AbVersionMadeHeadingS,	"Version Made"
+	AbConst_AbVersionNeededHeadingS,	"Version Needed"
+	AbConst_AbPathHeadingS,	"Path"
+	AbConst_AbPartialHeadingS,	"Partial"
+	AbConst_AbExecutableHeadingS,	"Executable"
+	AbConst_AbExeFilterS,	"Self-Extracting Zip Files (*.exe)|*.EXE|All Files (*.*)|*.*"
+	AbConst_AbVMSReadTooManyBytesS,	"VMS: request to read too many bytes [%d]"
+	AbConst_AbVMSInvalidOriginS,	"VMS: invalid origin %d, should be 0, 1, 2"
+	AbConst_AbVMSErrorOpenSwapS,	"VMS: Cannot open swap file %s"
+	AbConst_AbVMSSeekFailS,	"VMS: Failed to seek in swap file %s"
+	AbConst_AbVMSReadFailS,	"VMS: Failed to read %d bytes from swap file %s"
+	AbConst_AbVMSWriteFailS,	"VMS: Failed to write %d bytes to swap file %s"
+	AbConst_AbVMSWriteTooManyBytesS,	"VMS: request to write too many bytes [%d]"
+	AbConst_AbBBSReadTooManyBytesS,	"BBS: request to read too many bytes [%d]"
+	AbConst_AbBBSSeekOutsideBufferS,	"BBS: New position is outside the buffer"
+	AbConst_AbBBSInvalidOriginS,	"BBS: Invalid Origin value"
+	AbConst_AbBBSWriteTooManyBytesS,	"BBS: request to write too many bytes [%d]"
+	AbConst_AbSWSNotEndofStreamS,	"TabSlidingWindowStream.Write: Not at end of stream"
+	AbConst_AbSWSSeekFailedS,	"TabSlidingWindowStream.bsWriteChunk: seek failed"
+	AbConst_AbSWSWriteFailedS,	"TabSlidingWindowStream.bsWriteChunk: write failed"
+	AbConst_AbSWSInvalidOriginS,	"TabSlidingWindowStream.Seek: invalid origin"
+	AbConst_AbNeededFormatS,	"Version Needed to Extract: %f"
+	AbConst_AbCommentFormatS,	"Comment: %s"
+	AbConst_AbDefaultExtS,	"*.zip"
+	AbConst_AbFilterS,	"PKZip Archives (*.zip)|*.zip|Self Extracting Archives (*.exe)|*.exe|All Files (*.*)|*.*"
+	AbConst_AbFileNameTitleS,	"Select File Name"
+	AbConst_AbOKS,	"OK"
+	AbConst_AbCancelS,	"Cancel"
+	AbConst_AbSelectDirectoryS,	"Select Directory"
+	AbConst_AbEnterPasswordS,	"Enter Password"
+	AbConst_AbPasswordS,	"&Password"
+	AbConst_AbVerifyS,	"&Verify"
+	AbConst_AbCabExtS,	"*.cab"
+	AbConst_AbCabFilterS,	"Cabinet Archives (*.cab)|*.CAB|All Files (*.*)|*.*"
+	AbConst_AbLogExtS,	"*.txt"
+	AbConst_AbLogFilterS,	"Text Files (*.txt)|*.TXT|All Files (*.*)|*.*"
+	AbConst_AbExeExtS,	"*.exe"
+	AbConst_AbCompressionRatioFormatS,	"Compression Ratio: %2.0f%%"
+	AbConst_AbCRCFormatS,	"CRC: %x"
+	AbConst_AbReadOnlyS,	"r"
+	AbConst_AbHiddenS,	"h"
+	AbConst_AbSystemS,	"s"
+	AbConst_AbArchivedS,	"a"
+	AbConst_AbEFAFormatS,	"External File Attributes: %s"
+	AbConst_AbIFAFormatS,	"File Type: %s"
+	AbConst_AbTextS,	"Text"
+	AbConst_AbBinaryS,	"Binary"
+	AbConst_AbEncryptionFormatS,	"Encryption: %s"
+	AbConst_AbEncryptedS,	"Encrypted"
+	AbConst_AbNotEncryptedS,	"Not Encrypted"
+	AbConst_AbUnknownS,	"Unknown"
+	AbConst_AbTimeStampFormatS,	"Time Stamp: %s"
+	AbConst_AbMadeByFormatS,	"Made by Version: %f"
+	AbConst_AbMethod0S,	"Stored"
+	AbConst_AbMethod1S,	"Shrunk"
+	AbConst_AbMethod2S,	"Reduced"
+	AbConst_AbMethod3S,	"Reduced"
+	AbConst_AbMethod4S,	"Reduced"
+	AbConst_AbMethod5S,	"Reduced"
+	AbConst_AbMethod6S,	"Imploded"
+	AbConst_AbMethod7S,	"Tokenized"
+	AbConst_AbMethod8S,	"Deflated"
+	AbConst_AbMethod9S,	"Enhanced Deflation"
+	AbConst_AbMethod10S,	"DCL Imploded"
+	AbConst_AbMethod11S,	"Best Method"
+	AbConst_AbVersionFormatS,	"Version %s"
+	AbConst_AbCompressedSizeFormatS,	"Compressed Size: %d"
+	AbConst_AbUncompressedSizeFormatS,	"Uncompressed Size: %d"
+	AbConst_AbCompressionMethodFormatS,	"Compression Method: %s"
+	AbConst_abMoveFileErrorS,	"Error Moving File %s to %s"
+	AbConst_AbNoCabinetDllErrorS,	"Cannot load cabinet.dll"
+	AbConst_AbFCIFileOpenErrorS,	"FCI cannot open file"
+	AbConst_AbFCIFileReadErrorS,	"FCI cannot read file"
+	AbConst_AbFCIFileWriteErrorS,	"FCI cannot write file"
+	AbConst_AbFCIFileCloseErrorS,	"FCI close file error"
+	AbConst_AbFCIFileSeekErrorS,	"FCI file seek error"
+	AbConst_AbFCIFileDeleteErrorS,	"FCI file delete error"
+	AbConst_AbFCIAddFileErrorS,	"FCI cannot add file"
+	AbConst_AbFCICreateErrorS,	"FCI cannot create context"
+	AbConst_AbFCIFlushCabinetErrorS,	"FCI cannot flush cabinet"
+	AbConst_AbFCIFlushFolderErrorS,	"FCI cannot flush folder"
+	AbConst_AbFDICopyErrorS,	"FDI cannot enumerate files"
+	AbConst_AbFDICreateErrorS,	"FDI cannot create context"
+	AbConst_AbInvalidCabTemplateS,	"Invalid cab file template"
+	AbConst_AbInvalidCabFileS,	"Invalid file - not a cabinet file"
+	AbConst_AbStreamFullS,	"Stream write error"
+	AbConst_AbNoSuchDirectoryS,	"Directory does not exist"
+	AbConst_AbInflateBlockErrorS,	"Cannot inflate block"
+	AbConst_AbBadStreamTypeS,	"Invalid Stream"
+	AbConst_AbTruncateErrorS,	"Error truncating Zip File"
+	AbConst_AbZipBadCRCS,	"Failed CRC Check"
+	AbConst_AbZipBadStubS,	"Stub must be an executable"
+	AbConst_AbFileNotFoundS,	"File not found"
+	AbConst_AbInvalidLFHS,	"Invalid Local File Header entry"
+	AbConst_AbNoArchiveS,	"Archive does not exist - Filename is blank"
+	AbConst_AbReadErrorS,	"Error reading archive"
+	AbConst_AbInvalidIndexS,	"Invalid archive item index"
+	AbConst_AbInvalidThresholdS,	"Invalid archive size threshold"
+	AbConst_AbUnhandledFileTypeS,	"Unhandled Archive Type"
+	AbConst_AbSpanningNotSupportedS,	"Spanning not supported by this Archive type"
+	AbConst_AbLogCreateErrorS,	"Error creating Log File"
+	AbConst_AbInvalidFactorS,	"Invalid Reduce Factor"
+	AbConst_AbDuplicateNameS,	"Cannot insert file - duplicates stored name"
+	AbConst_AbUnsupportedCompressionMethodS,	"Cannot insert file - unsupported compression method"
+	AbConst_AbUserAbortS,	"Process aborted by user"
+	AbConst_AbArchiveBusyS,	"Archive is busy - cannot process new requests"
+	AbConst_AbLastDiskRequestS,	"Insert the last disk in the spanned disk set"
+	AbConst_AbDiskRequestS,	"Insert floppy"
+	AbConst_AbNthImageRequestS,	"Specify spanned image file # "
+	AbConst_AbLastImageRequestS,	"Specify the last file name in the spanned image set"
+	AbConst_AbImageRequestS,	"Image file name"
+	AbConst_AbBadSpanStreamS,	"Spanned archives must be opened as file streams"
+	AbConst_AbDiskNumRequestS,	"Insert disk number %d of the spanned disk set"
+	AbConst_AbImageNumRequestS,	"Insert span number %d of the spanned file set"
+	AbConst_AbNoOverwriteSpanStreamS,	"Cannot update an existing spanned disk set"
+	AbConst_AbNoSpannedSelfExtractS,	"Cannot make a self-extracting spanned disk set"
+	AbConst_AbBlankDiskS,	"Insert a blank floppy disk"
 	SQLiteWrap_c_errordata,	"Could not retrieve data"
 	VirtualTrees_SEditLinkIsNil,	"Edit link must not be nil."
 	VirtualTrees_SWrongMoveError,	"Target node cannot be a child node of the node to be moved."
@@ -847,13 +1094,12 @@ BEGIN
 	VirtualTrees_SCorruptStream2,	"Stream data corrupt. Unexpected data after node's end position."
 	VirtualTrees_SClipboardFailed,	"Clipboard operation failed."
 	VirtualTrees_SCannotSetUserData,	"Cannot set initial user data because there is not enough user data space allocated."
-	GIFConsts_sOutOfData,	"Premature end of data"
-	GIFConsts_sTooManyColors,	"Color table overflow"
-	GIFConsts_sBadColorIndex,	"Invalid color index"
-	pnglang_EPNGUnknownPalEntryText,	"There is no such palette entry."
-	pnglang_EPNGUnknownCriticalChunkText,	"This \"Portable Network Graphics\" image contains an unknown critical part which could not be decoded."
-	pnglang_EPNGUnknownCompressionText,	"This \"Portable Network Graphics\" image is encoded with an unknown compression scheme which could not be decoded."
-	pnglang_EPNGUnknownInterlaceText,	"This \"Portable Network Graphics\" image uses an unknown interlace scheme which could not be decoded."
+	AbConst_AbErrZipInvalidS,	"Invalid file - not a PKZip file"
+	AbConst_AbZipVersionNeededS,	"Cannot extract file - newer version required"
+	AbConst_AbUnknownCompressionMethodS,	"Cannot extract file - unsupported compression method"
+	AbConst_AbNoExtractionMethodS,	"Cannot extract file - no extraction support provided"
+	AbConst_AbInvalidPasswordS,	"Cannot extract file - invalid password"
+	AbConst_AbNoInsertionMethodS,	"Cannot insert file - no insertion support provided"
 	pnglang_EPNGCannotAssignChunkText,	"The chunks must be compatible to be assigned."
 	pnglang_EPNGUnexpectedEndText,	"This \"Portable Network Graphics\" image is invalid because the decoder found an unexpected end of the file."
 	pnglang_EPNGNoImageDataText,	"This \"Portable Network Graphics\" image contains no data."
@@ -862,18 +1108,18 @@ BEGIN
 	pnglang_EPNGOutMemoryText,	"Some operation could not be performed because the system is out of resources. Close some windows and try again."
 	pnglang_EPNGHeaderNotPresentText,	"This operation is not valid because the current image contains no valid header."
 	pnglang_EInvalidNewSize,	"The new size provided for image resizing is invalid."
+	Generics_Collections_sArgumentOutOfRange,	"Argument out of range"
 	SQLiteWrap_c_unknown,	"Unknown error"
 	SQLiteWrap_c_failopen,	"Failed to open database \"%s\" : %s"
 	SQLiteWrap_c_error,	".\r\nError [%d]: %s.\r\n\"%s\": %s"
 	SQLiteWrap_c_nomessage,	"No message"
-	JclResources_RsIntelCacheDescrF0,	"64-Byte Prefetching"
-	JclResources_RsIntelCacheDescrF1,	"128-Byte Prefetching"
-	JclResources_RsIntelCacheDescrFF,	"CPUID leaf 2 does not report cache descriptor information, use CPUID leaf 4 to query cache parameters"
-	JclResources_RsInvalidMMFName,	"Invalid MMF name \"%s\""
-	JclResources_RsInvalidMMFEmpty,	"The MMF named \"%s\" cannot be created empty"
-	JConsts_sChangeJPGSize,	"Cannot change the size of a JPEG image"
-	JConsts_sJPEGError,	"JPEG error #%d"
-	JConsts_sJPEGImageFile,	"JPEG Image File"
+	SQLiteWrap_c_errorsql,	"Error executing SQL"
+	SQLiteWrap_c_errorprepare,	"Could not prepare SQL statement"
+	SQLiteWrap_c_errorexec,	"Error executing SQL statement"
+	bdeconst_SNoCachedUpdates,	"Not in cached update mode"
+	bdeconst_SNoFieldAccess,	"Cannot access field '%s' in a filter"
+	bdeconst_SUntitled,	"Untitled Application"
+	bdeconst_SLocalTransDirty,	"The transaction isolation level must be dirty read for local databases"
 	pnglang_EPngInvalidCRCText,	"This \"Portable Network Graphics\" image is not valid because it contains invalid pieces of data (crc error)"
 	pnglang_EPNGInvalidIHDRText,	"The \"Portable Network Graphics\" image could not be loaded because one of its main piece of data (ihdr) might be corrupted"
 	pnglang_EPNGMissingMultipleIDATText,	"This \"Portable Network Graphics\" image is invalid because it has missing image parts."
@@ -882,6 +1128,106 @@ BEGIN
 	pnglang_EPNGInvalidFileHeaderText,	"The file being readed is not a valid \"Portable Network Graphics\" image because it contains an invalid header. This file may be corruped, try obtaining it again."
 	pnglang_EPNGIHDRNotFirstText,	"This \"Portable Network Graphics\" image is not supported or it might be invalid.\r\n(IHDR chunk is not the first)"
 	pnglang_EPNGSizeExceedsText,	"This \"Portable Network Graphics\" image is not supported because either it's width or height exceeds the maximum size, which is 65535 pixels length."
+	pnglang_EPNGUnknownPalEntryText,	"There is no such palette entry."
+	pnglang_EPNGUnknownCriticalChunkText,	"This \"Portable Network Graphics\" image contains an unknown critical part which could not be decoded."
+	pnglang_EPNGUnknownCompressionText,	"This \"Portable Network Graphics\" image is encoded with an unknown compression scheme which could not be decoded."
+	pnglang_EPNGUnknownInterlaceText,	"This \"Portable Network Graphics\" image uses an unknown interlace scheme which could not be decoded."
+	bdeconst_SDuplicateSessionName,	"Duplicate session name '%s'"
+	bdeconst_SInvalidSessionName,	"Invalid session name %s"
+	bdeconst_SDatabaseNameMissing,	"Database name missing"
+	bdeconst_SSessionNameMissing,	"Session name missing"
+	bdeconst_SDatabaseOpen,	"Cannot perform this operation on an open database"
+	bdeconst_SDatabaseClosed,	"Cannot perform this operation on a closed database"
+	bdeconst_SDatabaseHandleSet,	"Database handle owned by a different session"
+	bdeconst_SSessionActive,	"Cannot perform this operation on an active session"
+	bdeconst_SHandleError,	"Error creating cursor handle"
+	bdeconst_SNoReferenceTableName,	"ReferenceTableName not specified for field '%s'"
+	bdeconst_SNoParameterValue,	"No value for parameter '%s'"
+	bdeconst_SLoginError,	"Cannot connect to database '%s'"
+	bdeconst_SInitError,	"An error occurred while attempting to initialize the Borland Database Engine (error $%.4x)"
+	bdeconst_SIDAPILangID,	"0009"
+	bdeconst_SBDEError,	"BDE error $%.4x"
+	bdeconst_SNoDataSetField,	"Missing DataSetField property"
+	DBConsts_SBadFieldType,	"Field '%s' is of an unsupported type"
+	DBConsts_SProviderSQLNotSupported,	"SQL not supported"
+	DBConsts_SProviderExecuteNotSupported,	"Execute not supported"
+	DBConsts_SExprNoAggOnCalcs,	"Field '%s' is not the correct type of calculated field to be used in an aggregate, use an internalcalc"
+	DBConsts_SDataSetUnidirectional,	"Operation not allowed on a unidirectional dataset"
+	DBConsts_SUnassignedVar,	"Unassigned variant value"
+	DBConsts_SRecordNotFound,	"Record not found"
+	DBConsts_SBcdOverflow,	"BCD overflow"
+	DBConsts_SInvalidBcdValue,	"%s is not a valid BCD value"
+	DBConsts_SInvalidFormatType,	"Invalid format type for BCD"
+	DBConsts_SCouldNotParseTimeStamp,	"Could not parse SQL TimeStamp string"
+	DBConsts_SInvalidSqlTimeStamp,	"Invalid SQL date/time values"
+	bdeconst_SAutoSessionExclusive,	"Cannot enable AutoSessionName property with more than one session on a form or data-module"
+	bdeconst_SAutoSessionExists,	"Cannot add a session to the form or data-module while session '%s' has AutoSessionName enabled"
+	bdeconst_SAutoSessionActive,	"Cannot modify SessionName while AutoSessionName is enabled"
+	bdeconst_SDuplicateDatabaseName,	"Duplicate database name '%s'"
+	DBConsts_SExprBadNullTest,	"NULL only allowed with '=' and '<>'"
+	DBConsts_SExprRangeError,	"Constant out of range"
+	DBConsts_SExprIncorrect,	"Incorrectly formed filter expression"
+	DBConsts_SExprNothing,	"nothing"
+	DBConsts_SExprTypeMis,	"Type mismatch in expression"
+	DBConsts_SExprBadScope,	"Operation cannot mix aggregate value with record-varying value"
+	DBConsts_SExprNoArith,	"Arithmetic in filter expressions not supported"
+	DBConsts_SExprNotAgg,	"Expression is not an aggregate expression"
+	DBConsts_SExprBadConst,	"Constant is not correct type %s"
+	DBConsts_SExprNoAggFilter,	"Aggregate expressions not allowed in filters"
+	DBConsts_SExprEmptyInList,	"IN predicate list may not be empty"
+	DBConsts_SInvalidKeywordUse,	"Invalid use of keyword"
+	DBConsts_STextFalse,	"False"
+	DBConsts_STextTrue,	"True"
+	DBConsts_SParameterNotFound,	"Parameter '%s' not found"
+	DBConsts_SInvalidVersion,	"Unable to load bind parameters"
+	DBConsts_SCircularDataLink,	"Circular datalinks are not allowed"
+	DBConsts_SLookupInfoError,	"Lookup information for field '%s' is incomplete"
+	DBConsts_SDataSetOpen,	"Cannot perform this operation on an open dataset"
+	DBConsts_SNotEditing,	"Dataset not in edit or insert mode"
+	DBConsts_SDataSetClosed,	"Cannot perform this operation on a closed dataset"
+	DBConsts_SDataSetReadOnly,	"Cannot modify a read-only dataset"
+	DBConsts_SNestedDataSetClass,	"Nested dataset must inherit from %s"
+	DBConsts_SExprTermination,	"Filter expression incorrectly terminated"
+	DBConsts_SExprNameError,	"Unterminated field name"
+	DBConsts_SExprStringError,	"Unterminated string constant"
+	DBConsts_SExprInvalidChar,	"Invalid filter expression character: '%s'"
+	DBConsts_SExprNoLParen,	"'(' expected but %s found"
+	DBConsts_SExprNoRParen,	"')' expected but %s found"
+	DBConsts_SExprNoRParenOrComma,	"')' or ',' expected but %s found"
+	DBConsts_SExprExpected,	"Expression expected but %s found"
+	DBConsts_SExprBadField,	"Field '%s' cannot be used in a filter expression"
+	DBConsts_SFieldValueError,	"Invalid value for field '%s'"
+	DBConsts_SFieldRangeError,	"%g is not a valid value for field '%s'. The allowed range is %g to %g"
+	DBConsts_SBcdFieldRangeError,	"%s is not a valid value for field '%s'. The allowed range is %s to %s"
+	DBConsts_SInvalidIntegerValue,	"'%s' is not a valid integer value for field '%s'"
+	DBConsts_SInvalidBoolValue,	"'%s' is not a valid boolean value for field '%s'"
+	DBConsts_SInvalidFloatValue,	"'%s' is not a valid floating point value for field '%s'"
+	DBConsts_SFieldTypeMismatch,	"Type mismatch for field '%s', expecting: %s actual: %s"
+	DBConsts_SFieldSizeMismatch,	"Size mismatch for field '%s', expecting: %d actual: %d"
+	DBConsts_SInvalidVarByteArray,	"Invalid variant type or size for field '%s'"
+	DBConsts_SFieldOutOfRange,	"Value of field '%s' is out of range"
+	DBConsts_SFieldRequired,	"Field '%s' must have a value"
+	DBConsts_SDataSetMissing,	"Field '%s' has no dataset"
+	DBConsts_SInvalidCalcType,	"Field '%s' cannot be a calculated or lookup field"
+	DBConsts_SFieldReadOnly,	"Field '%s' cannot be modified"
+	DBConsts_SNotIndexField,	"Field '%s' is not indexed and cannot be modified"
+	DBConsts_SDBDuplicateName,	"Duplicate name '%s' in %s"
+	JclResources_RsIntelCacheDescrF0,	"64-Byte Prefetching"
+	JclResources_RsIntelCacheDescrF1,	"128-Byte Prefetching"
+	JclResources_RsIntelCacheDescrFF,	"CPUID leaf 2 does not report cache descriptor information, use CPUID leaf 4 to query cache parameters"
+	JclResources_RsInvalidMMFName,	"Invalid MMF name \"%s\""
+	JclResources_RsInvalidMMFEmpty,	"The MMF named \"%s\" cannot be created empty"
+	ComConst_SOleError,	"OLE error %.8x"
+	ComConst_SNoMethod,	"Method '%s' not supported by automation object"
+	ComConst_SVarNotObject,	"Variant does not reference an automation object"
+	ComConst_STooManyParams,	"Dispatch methods do not support more than 64 parameters"
+	DBConsts_SInvalidFieldSize,	"Invalid field size"
+	DBConsts_SInvalidFieldKind,	"Invalid FieldKind"
+	DBConsts_SUnknownFieldType,	"Field '%s' is of an unknown type"
+	DBConsts_SFieldNameMissing,	"Field name missing"
+	DBConsts_SDuplicateFieldName,	"Duplicate field name '%s'"
+	DBConsts_SFieldNotFound,	"Field '%s' not found"
+	DBConsts_SFieldAccessError,	"Cannot access field '%s' as type %s"
 	JclResources_RsIntelCacheDescr80,	"2nd-level cache: 512 KBytes, 8-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr82,	"2nd-level cache: 256 KBytes, 8-way associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr83,	"2nd-level cache: 512 KBytes, 8-way associative, 32 byte line size"
@@ -962,358 +1308,22 @@ BEGIN
 	JclResources_RsIntelCacheDescr29,	"3rd level cache: 4 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr2C,	"1st level data cache: 32 KBytes, 8-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr30,	"1st level instruction cache: 32 KBytes, 8-way set associative, 64 byte line size"
-	JvResources_RsCl3DDkShadow,	"Dark shadow 3D elements"
-	JvResources_RsCl3DLight,	"Highlight 3D elements"
-	JvResources_RsClInfoText,	"Tooltip text"
-	JvResources_RsClInfoBk,	"Tooltip background"
-	JvResources_RsGradientActiveCaption,	"Gradient Active Caption"
-	JvResources_RsGradientInactiveCaption,	"Gradient Inactive Caption"
-	JvResources_RsHotLight,	"Hot Light"
-	JvResources_RsMenuBar,	"Menu Bar"
-	JvResources_RsMenuHighlight,	"Menu Highlight"
+	Consts_SXPThemesRequired,	"%s requires themes to be enabled"
+	Consts_STaskDlgButtonCaption,	"Button%d"
+	Consts_STaskDlgRadioButtonCaption,	"RadioButton%d"
+	Consts_SInvalidTaskDlgButtonCaption,	"Caption cannot be empty"
 	JclResources_RsWin32Prefix,	"Win32: %s (%u)"
 	JclResources_RsEReplacementChar,	"Failed to get ANSI replacement character"
+	JclResources_RsCreateFileMapping,	"Failed to create FileMapping"
+	JclResources_RsCreateFileMappingView,	"Failed to create FileMappingView"
+	JclResources_RsViewNeedsMapping,	"FileMap argument of TJclFileMappingView constructor cannot be nil"
+	JclResources_RsFailedToObtainSize,	"Failed to obtain size of file"
+	JclResources_RsSynchCreateEvent,	"Failed to create event"
 	JclResources_RsSynchCreateMutex,	"Failed to create mutex"
 	JclResources_RsIntelCacheDescr00,	"Null descriptor"
 	JclResources_RsIntelCacheDescr01,	"Instruction TLB: 4 KByte pages, 4-way set associative, 32 entries"
 	JclResources_RsIntelCacheDescr02,	"Instruction TLB: 4 MByte pages, 4-way set associative, 2 entries"
 	JclResources_RsIntelCacheDescr03,	"Data TLB: 4 KByte pages, 4-way set associative, 64 entries"
-	JvResources_RsClWindow,	"Window background"
-	JvResources_RsClWindowFrame,	"Window frame"
-	JvResources_RsClMenuText,	"Menu text"
-	JvResources_RsClWindowText,	"Window text"
-	JvResources_RsClCaptionText,	"Active window title bar text"
-	JvResources_RsClActiveBorder,	"Active window border"
-	JvResources_RsClInactiveBorder,	"Inactive window border"
-	JvResources_RsClAppWorkSpace,	"Application workspace"
-	JvResources_RsClHighlight,	"Selection background"
-	JvResources_RsClHighlightText,	"Selection text"
-	JvResources_RsClBtnFace,	"Button face"
-	JvResources_RsClBtnShadow,	"Button shadow"
-	JvResources_RsClGrayText,	"Dimmed text"
-	JvResources_RsClBtnText,	"Button text"
-	JvResources_RsClInactiveCaptionText,	"Inactive window title bar text"
-	JvResources_RsClBtnHighlight,	"Button highlight"
-	JvResources_RsClBrightGreen,	"Bright Green"
-	JvResources_RsClTurquoise,	"Turquoise"
-	JvResources_RsClPlum,	"Plum"
-	JvResources_RsClGray25,	"Gray 25%"
-	JvResources_RsClRose,	"Rose"
-	JvResources_RsClTan,	"Tan"
-	JvResources_RsClLightYellow,	"Light Yellow"
-	JvResources_RsClLightGreen,	"Light Green"
-	JvResources_RsClLightTurquoise,	"Light Turquoise"
-	JvResources_RsClPaleBlue,	"Pale Blue"
-	JvResources_RsClLavender,	"Lavender"
-	JvResources_RsClScrollBar,	"Scrollbar"
-	JvResources_RsClBackground,	"Desktop background"
-	JvResources_RsClActiveCaption,	"Active window title bar"
-	JvResources_RsClInactiveCaption,	"Inactive window title bar"
-	JvResources_RsClMenu,	"Menu background"
-	JvResources_RsClDarkTeal,	"Dark Teal"
-	JvResources_RsClDarkBlue,	"Dark Blue"
-	JvResources_RsClIndigo,	"Indigo"
-	JvResources_RsClGray80,	"Gray 80%"
-	JvResources_RsClDarkRed,	"Dark Red"
-	JvResources_RsClOrange,	"Orange"
-	JvResources_RsClDarkYellow,	"Dark Yellow"
-	JvResources_RsClBlueGray,	"Blue Gray"
-	JvResources_RsClGray50,	"Gray 50%"
-	JvResources_RsClLightOrange,	"Light Orange"
-	JvResources_RsClSeaGreen,	"Sea Green"
-	JvResources_RsClLightBlue,	"Light Blue"
-	JvResources_RsClViolet,	"Violet"
-	JvResources_RsClGray40,	"Gray 40%"
-	JvResources_RsClPink,	"Pink"
-	JvResources_RsClGold,	"Gold"
-	JvResources_RsClGray,	"Gray"
-	JvResources_RsClSilver,	"Silver"
-	JvResources_RsClRed,	"Red"
-	JvResources_RsClLime,	"Lime"
-	JvResources_RsClYellow,	"Yellow"
-	JvResources_RsClBlue,	"Blue"
-	JvResources_RsClFuchsia,	"Fuchsia"
-	JvResources_RsClAqua,	"Aqua"
-	JvResources_RsClWhite,	"White"
-	JvResources_RsClMoneyGreen,	"Money green"
-	JvResources_RsClSkyBlue,	"Sky blue"
-	JvResources_RsClCream,	"Cream"
-	JvResources_RsClMedGray,	"Medium gray"
-	JvResources_RsClBrown,	"Brown"
-	JvResources_RsClOliveGreen,	"Olive Green"
-	JvResources_RsClDarkGreen,	"Dark Green"
-	JvResources_RsETheSpecifiedContextIsNotPartOfTheSa,	"The specified context is not part of the same provider"
-	JvResources_RsEYouMustSpecifyAProviderBeforeSettin_,	"You must specify a provider before setting the item"
-	JvResources_RsEItemNotFoundInTheSelectedContext,	"Item not found in the selected context"
-	JvResources_RsEViewListOutOfSync,	"ViewList out of sync"
-	JvResources_RsEExtensibleIntObjDuplicateClass,	"Implementation of that class already exists"
-	JvResources_RsEExtensibleIntObjCollectionExpected,	"Expected collection"
-	JvResources_RsEExtensibleIntObjClassNameExpected,	"Missing ClassName property"
-	JvResources_RsEExtensibleIntObjInvalidClass,	"Invalid class type"
-	JvResources_RsUnknown,	"Unknown"
-	JvResources_RsClBlack,	"Black"
-	JvResources_RsClMaroon,	"Maroon"
-	JvResources_RsClGreen,	"Green"
-	JvResources_RsClOlive,	"Olive green"
-	JvResources_RsClNavy,	"Navy blue"
-	JvResources_RsClPurple,	"Purple"
-	JvResources_RsClTeal,	"Teal"
-	AbConst_AbLtReplaceS,	" replaced "
-	AbConst_AbLtStartS,	" logging "
-	AbConst_AbGzipInvalidS,	"Invalid Gzip"
-	AbConst_AbGzipBadCRCS,	"Bad CRC"
-	AbConst_AbGzipBadFileSizeS,	"Bad File Size"
-	AbConst_AbUnhandledEntityS,	"Unhandled Entity"
-	Generics_Collections_sArgumentOutOfRange,	"Argument out of range"
-	JvResources_RsDataItemRenderHasNoText,	"(item does not support the IJvDataItemText interface)"
-	JvResources_RsEInternalError,	"internal error"
-	JvResources_RsEShellNotCompatible,	"Shell not compatible with BrowseForFolder"
-	JvResources_RsEItemCanNotBeDeleted,	"Item cannot be deleted"
-	JvResources_RsEAContextWithThatNameAlreadyExists,	"A context with that name already exists"
-	JvResources_RsECannotCreateAContextWithoutAContext,	"Cannot create a context without a context list owner"
-	JvResources_RsEYouMustSpecifyAProviderBeforeSettin,	"You must specify a provider before setting the context"
-	JvResources_RsEProviderHasNoContextNameds,	"Provider has no context named \"%s\""
-	JvResources_RsEProviderDoesNotSupportContexts,	"Provider does not support contexts"
-	AbConst_AbFileFormatHeadingS,	"Format"
-	AbConst_AbEncryptionHeadingS,	"Encrypted"
-	AbConst_AbTimeStampHeadingS,	"Time Stamp"
-	AbConst_AbFileSizeHeadingS,	"Size"
-	AbConst_AbVersionMadeHeadingS,	"Version Made"
-	AbConst_AbVersionNeededHeadingS,	"Version Needed"
-	AbConst_AbPathHeadingS,	"Path"
-	AbConst_AbPartialHeadingS,	"Partial"
-	AbConst_AbExecutableHeadingS,	"Executable"
-	AbConst_AbCabMethod0S,	"None"
-	AbConst_AbCabMethod1S,	"MSZip"
-	AbConst_AbLtAddS,	" added "
-	AbConst_AbLtDeleteS,	" deleted "
-	AbConst_AbLtExtractS,	" extracted "
-	AbConst_AbLtFreshenS,	" freshened "
-	AbConst_AbLtMoveS,	" moved "
-	AbConst_AbVMSWriteTooManyBytesS,	"VMS: request to write too many bytes [%d]"
-	AbConst_AbBBSReadTooManyBytesS,	"BBS: request to read too many bytes [%d]"
-	AbConst_AbBBSSeekOutsideBufferS,	"BBS: New position is outside the buffer"
-	AbConst_AbBBSInvalidOriginS,	"BBS: Invalid Origin value"
-	AbConst_AbBBSWriteTooManyBytesS,	"BBS: request to write too many bytes [%d]"
-	AbConst_AbSWSNotEndofStreamS,	"TabSlidingWindowStream.Write: Not at end of stream"
-	AbConst_AbSWSSeekFailedS,	"TabSlidingWindowStream.bsWriteChunk: seek failed"
-	AbConst_AbSWSWriteFailedS,	"TabSlidingWindowStream.bsWriteChunk: write failed"
-	AbConst_AbSWSInvalidOriginS,	"TabSlidingWindowStream.Seek: invalid origin"
-	AbConst_AbSWSInvalidNewOriginS,	"TabSlidingWindowStream.Seek: invalid new position"
-	AbConst_AbItemNameHeadingS,	"Name"
-	AbConst_AbPackedHeadingS,	"Packed"
-	AbConst_AbMethodHeadingS,	"Method"
-	AbConst_AbRatioHeadingS,	"Ratio (%)"
-	AbConst_AbCRCHeadingS,	"CRC32"
-	AbConst_AbFileAttrHeadingS,	"Attributes"
-	AbConst_AbSelectDirectoryS,	"Select Directory"
-	AbConst_AbEnterPasswordS,	"Enter Password"
-	AbConst_AbPasswordS,	"&Password"
-	AbConst_AbVerifyS,	"&Verify"
-	AbConst_AbCabExtS,	"*.cab"
-	AbConst_AbCabFilterS,	"Cabinet Archives (*.cab)|*.CAB|All Files (*.*)|*.*"
-	AbConst_AbLogExtS,	"*.txt"
-	AbConst_AbLogFilterS,	"Text Files (*.txt)|*.TXT|All Files (*.*)|*.*"
-	AbConst_AbExeExtS,	"*.exe"
-	AbConst_AbExeFilterS,	"Self-Extracting Zip Files (*.exe)|*.EXE|All Files (*.*)|*.*"
-	AbConst_AbVMSReadTooManyBytesS,	"VMS: request to read too many bytes [%d]"
-	AbConst_AbVMSInvalidOriginS,	"VMS: invalid origin %d, should be 0, 1, 2"
-	AbConst_AbVMSErrorOpenSwapS,	"VMS: Cannot open swap file %s"
-	AbConst_AbVMSSeekFailS,	"VMS: Failed to seek in swap file %s"
-	AbConst_AbVMSReadFailS,	"VMS: Failed to read %d bytes from swap file %s"
-	AbConst_AbVMSWriteFailS,	"VMS: Failed to write %d bytes to swap file %s"
-	AbConst_AbIFAFormatS,	"File Type: %s"
-	AbConst_AbTextS,	"Text"
-	AbConst_AbBinaryS,	"Binary"
-	AbConst_AbEncryptionFormatS,	"Encryption: %s"
-	AbConst_AbEncryptedS,	"Encrypted"
-	AbConst_AbNotEncryptedS,	"Not Encrypted"
-	AbConst_AbUnknownS,	"Unknown"
-	AbConst_AbTimeStampFormatS,	"Time Stamp: %s"
-	AbConst_AbMadeByFormatS,	"Made by Version: %f"
-	AbConst_AbNeededFormatS,	"Version Needed to Extract: %f"
-	AbConst_AbCommentFormatS,	"Comment: %s"
-	AbConst_AbDefaultExtS,	"*.zip"
-	AbConst_AbFilterS,	"PKZip Archives (*.zip)|*.zip|Self Extracting Archives (*.exe)|*.exe|All Files (*.*)|*.*"
-	AbConst_AbFileNameTitleS,	"Select File Name"
-	AbConst_AbOKS,	"OK"
-	AbConst_AbCancelS,	"Cancel"
-	AbConst_AbMethod7S,	"Tokenized"
-	AbConst_AbMethod8S,	"Deflated"
-	AbConst_AbMethod9S,	"Enhanced Deflation"
-	AbConst_AbMethod10S,	"DCL Imploded"
-	AbConst_AbMethod11S,	"Best Method"
-	AbConst_AbVersionFormatS,	"Version %s"
-	AbConst_AbCompressedSizeFormatS,	"Compressed Size: %d"
-	AbConst_AbUncompressedSizeFormatS,	"Uncompressed Size: %d"
-	AbConst_AbCompressionMethodFormatS,	"Compression Method: %s"
-	AbConst_AbCompressionRatioFormatS,	"Compression Ratio: %2.0f%%"
-	AbConst_AbCRCFormatS,	"CRC: %x"
-	AbConst_AbReadOnlyS,	"r"
-	AbConst_AbHiddenS,	"h"
-	AbConst_AbSystemS,	"s"
-	AbConst_AbArchivedS,	"a"
-	AbConst_AbEFAFormatS,	"External File Attributes: %s"
-	AbConst_AbFCIFileDeleteErrorS,	"FCI file delete error"
-	AbConst_AbFCIAddFileErrorS,	"FCI cannot add file"
-	AbConst_AbFCICreateErrorS,	"FCI cannot create context"
-	AbConst_AbFCIFlushCabinetErrorS,	"FCI cannot flush cabinet"
-	AbConst_AbFCIFlushFolderErrorS,	"FCI cannot flush folder"
-	AbConst_AbFDICopyErrorS,	"FDI cannot enumerate files"
-	AbConst_AbFDICreateErrorS,	"FDI cannot create context"
-	AbConst_AbInvalidCabTemplateS,	"Invalid cab file template"
-	AbConst_AbInvalidCabFileS,	"Invalid file - not a cabinet file"
-	AbConst_AbMethod0S,	"Stored"
-	AbConst_AbMethod1S,	"Shrunk"
-	AbConst_AbMethod2S,	"Reduced"
-	AbConst_AbMethod3S,	"Reduced"
-	AbConst_AbMethod4S,	"Reduced"
-	AbConst_AbMethod5S,	"Reduced"
-	AbConst_AbMethod6S,	"Imploded"
-	AbConst_AbFileNotFoundS,	"File not found"
-	AbConst_AbInvalidLFHS,	"Invalid Local File Header entry"
-	AbConst_AbNoArchiveS,	"Archive does not exist - Filename is blank"
-	AbConst_AbReadErrorS,	"Error reading archive"
-	AbConst_AbInvalidIndexS,	"Invalid archive item index"
-	AbConst_AbInvalidThresholdS,	"Invalid archive size threshold"
-	AbConst_AbUnhandledFileTypeS,	"Unhandled Archive Type"
-	AbConst_AbSpanningNotSupportedS,	"Spanning not supported by this Archive type"
-	AbConst_AbLogCreateErrorS,	"Error creating Log File"
-	AbConst_abMoveFileErrorS,	"Error Moving File %s to %s"
-	AbConst_AbNoCabinetDllErrorS,	"Cannot load cabinet.dll"
-	AbConst_AbFCIFileOpenErrorS,	"FCI cannot open file"
-	AbConst_AbFCIFileReadErrorS,	"FCI cannot read file"
-	AbConst_AbFCIFileWriteErrorS,	"FCI cannot write file"
-	AbConst_AbFCIFileCloseErrorS,	"FCI close file error"
-	AbConst_AbFCIFileSeekErrorS,	"FCI file seek error"
-	AbConst_AbNthImageRequestS,	"Specify spanned image file # "
-	AbConst_AbLastImageRequestS,	"Specify the last file name in the spanned image set"
-	AbConst_AbImageRequestS,	"Image file name"
-	AbConst_AbBadSpanStreamS,	"Spanned archives must be opened as file streams"
-	AbConst_AbDiskNumRequestS,	"Insert disk number %d of the spanned disk set"
-	AbConst_AbImageNumRequestS,	"Insert span number %d of the spanned file set"
-	AbConst_AbNoOverwriteSpanStreamS,	"Cannot update an existing spanned disk set"
-	AbConst_AbNoSpannedSelfExtractS,	"Cannot make a self-extracting spanned disk set"
-	AbConst_AbBlankDiskS,	"Insert a blank floppy disk"
-	AbConst_AbStreamFullS,	"Stream write error"
-	AbConst_AbNoSuchDirectoryS,	"Directory does not exist"
-	AbConst_AbInflateBlockErrorS,	"Cannot inflate block"
-	AbConst_AbBadStreamTypeS,	"Invalid Stream"
-	AbConst_AbTruncateErrorS,	"Error truncating Zip File"
-	AbConst_AbZipBadCRCS,	"Failed CRC Check"
-	AbConst_AbZipBadStubS,	"Stub must be an executable"
-	bdeconst_SNoFieldAccess,	"Cannot access field '%s' in a filter"
-	bdeconst_SUntitled,	"Untitled Application"
-	bdeconst_SLocalTransDirty,	"The transaction isolation level must be dirty read for local databases"
-	AbConst_AbErrZipInvalidS,	"Invalid file - not a PKZip file"
-	AbConst_AbZipVersionNeededS,	"Cannot extract file - newer version required"
-	AbConst_AbUnknownCompressionMethodS,	"Cannot extract file - unsupported compression method"
-	AbConst_AbNoExtractionMethodS,	"Cannot extract file - no extraction support provided"
-	AbConst_AbInvalidPasswordS,	"Cannot extract file - invalid password"
-	AbConst_AbNoInsertionMethodS,	"Cannot insert file - no insertion support provided"
-	AbConst_AbInvalidFactorS,	"Invalid Reduce Factor"
-	AbConst_AbDuplicateNameS,	"Cannot insert file - duplicates stored name"
-	AbConst_AbUnsupportedCompressionMethodS,	"Cannot insert file - unsupported compression method"
-	AbConst_AbUserAbortS,	"Process aborted by user"
-	AbConst_AbArchiveBusyS,	"Archive is busy - cannot process new requests"
-	AbConst_AbLastDiskRequestS,	"Insert the last disk in the spanned disk set"
-	AbConst_AbDiskRequestS,	"Insert floppy"
-	bdeconst_SInvalidSessionName,	"Invalid session name %s"
-	bdeconst_SDatabaseNameMissing,	"Database name missing"
-	bdeconst_SSessionNameMissing,	"Session name missing"
-	bdeconst_SDatabaseOpen,	"Cannot perform this operation on an open database"
-	bdeconst_SDatabaseClosed,	"Cannot perform this operation on a closed database"
-	bdeconst_SDatabaseHandleSet,	"Database handle owned by a different session"
-	bdeconst_SSessionActive,	"Cannot perform this operation on an active session"
-	bdeconst_SHandleError,	"Error creating cursor handle"
-	bdeconst_SNoReferenceTableName,	"ReferenceTableName not specified for field '%s'"
-	bdeconst_SNoParameterValue,	"No value for parameter '%s'"
-	bdeconst_SLoginError,	"Cannot connect to database '%s'"
-	bdeconst_SInitError,	"An error occurred while attempting to initialize the Borland Database Engine (error $%.4x)"
-	bdeconst_SIDAPILangID,	"0009"
-	bdeconst_SBDEError,	"BDE error $%.4x"
-	bdeconst_SNoDataSetField,	"Missing DataSetField property"
-	bdeconst_SNoCachedUpdates,	"Not in cached update mode"
-	DBConsts_SUnassignedVar,	"Unassigned variant value"
-	DBConsts_SRecordNotFound,	"Record not found"
-	DBConsts_SBcdOverflow,	"BCD overflow"
-	DBConsts_SInvalidBcdValue,	"%s is not a valid BCD value"
-	DBConsts_SInvalidFormatType,	"Invalid format type for BCD"
-	DBConsts_SCouldNotParseTimeStamp,	"Could not parse SQL TimeStamp string"
-	DBConsts_SInvalidSqlTimeStamp,	"Invalid SQL date/time values"
-	ComConst_SOleError,	"OLE error %.8x"
-	ComConst_SNoMethod,	"Method '%s' not supported by automation object"
-	ComConst_SVarNotObject,	"Variant does not reference an automation object"
-	ComConst_STooManyParams,	"Dispatch methods do not support more than 64 parameters"
-	bdeconst_SAutoSessionExclusive,	"Cannot enable AutoSessionName property with more than one session on a form or data-module"
-	bdeconst_SAutoSessionExists,	"Cannot add a session to the form or data-module while session '%s' has AutoSessionName enabled"
-	bdeconst_SAutoSessionActive,	"Cannot modify SessionName while AutoSessionName is enabled"
-	bdeconst_SDuplicateDatabaseName,	"Duplicate database name '%s'"
-	bdeconst_SDuplicateSessionName,	"Duplicate session name '%s'"
-	DBConsts_SExprBadScope,	"Operation cannot mix aggregate value with record-varying value"
-	DBConsts_SExprNoArith,	"Arithmetic in filter expressions not supported"
-	DBConsts_SExprNotAgg,	"Expression is not an aggregate expression"
-	DBConsts_SExprBadConst,	"Constant is not correct type %s"
-	DBConsts_SExprNoAggFilter,	"Aggregate expressions not allowed in filters"
-	DBConsts_SExprEmptyInList,	"IN predicate list may not be empty"
-	DBConsts_SInvalidKeywordUse,	"Invalid use of keyword"
-	DBConsts_STextFalse,	"False"
-	DBConsts_STextTrue,	"True"
-	DBConsts_SParameterNotFound,	"Parameter '%s' not found"
-	DBConsts_SInvalidVersion,	"Unable to load bind parameters"
-	DBConsts_SBadFieldType,	"Field '%s' is of an unsupported type"
-	DBConsts_SProviderSQLNotSupported,	"SQL not supported"
-	DBConsts_SProviderExecuteNotSupported,	"Execute not supported"
-	DBConsts_SExprNoAggOnCalcs,	"Field '%s' is not the correct type of calculated field to be used in an aggregate, use an internalcalc"
-	DBConsts_SDataSetUnidirectional,	"Operation not allowed on a unidirectional dataset"
-	DBConsts_SDataSetReadOnly,	"Cannot modify a read-only dataset"
-	DBConsts_SNestedDataSetClass,	"Nested dataset must inherit from %s"
-	DBConsts_SExprTermination,	"Filter expression incorrectly terminated"
-	DBConsts_SExprNameError,	"Unterminated field name"
-	DBConsts_SExprStringError,	"Unterminated string constant"
-	DBConsts_SExprInvalidChar,	"Invalid filter expression character: '%s'"
-	DBConsts_SExprNoLParen,	"'(' expected but %s found"
-	DBConsts_SExprNoRParen,	"')' expected but %s found"
-	DBConsts_SExprNoRParenOrComma,	"')' or ',' expected but %s found"
-	DBConsts_SExprExpected,	"Expression expected but %s found"
-	DBConsts_SExprBadField,	"Field '%s' cannot be used in a filter expression"
-	DBConsts_SExprBadNullTest,	"NULL only allowed with '=' and '<>'"
-	DBConsts_SExprRangeError,	"Constant out of range"
-	DBConsts_SExprIncorrect,	"Incorrectly formed filter expression"
-	DBConsts_SExprNothing,	"nothing"
-	DBConsts_SExprTypeMis,	"Type mismatch in expression"
-	DBConsts_SInvalidFloatValue,	"'%s' is not a valid floating point value for field '%s'"
-	DBConsts_SFieldTypeMismatch,	"Type mismatch for field '%s', expecting: %s actual: %s"
-	DBConsts_SFieldSizeMismatch,	"Size mismatch for field '%s', expecting: %d actual: %d"
-	DBConsts_SInvalidVarByteArray,	"Invalid variant type or size for field '%s'"
-	DBConsts_SFieldOutOfRange,	"Value of field '%s' is out of range"
-	DBConsts_SFieldRequired,	"Field '%s' must have a value"
-	DBConsts_SDataSetMissing,	"Field '%s' has no dataset"
-	DBConsts_SInvalidCalcType,	"Field '%s' cannot be a calculated or lookup field"
-	DBConsts_SFieldReadOnly,	"Field '%s' cannot be modified"
-	DBConsts_SNotIndexField,	"Field '%s' is not indexed and cannot be modified"
-	DBConsts_SDBDuplicateName,	"Duplicate name '%s' in %s"
-	DBConsts_SCircularDataLink,	"Circular datalinks are not allowed"
-	DBConsts_SLookupInfoError,	"Lookup information for field '%s' is incomplete"
-	DBConsts_SDataSetOpen,	"Cannot perform this operation on an open dataset"
-	DBConsts_SNotEditing,	"Dataset not in edit or insert mode"
-	DBConsts_SDataSetClosed,	"Cannot perform this operation on a closed dataset"
-	Consts_SXPThemesRequired,	"%s requires themes to be enabled"
-	Consts_STaskDlgButtonCaption,	"Button%d"
-	Consts_STaskDlgRadioButtonCaption,	"RadioButton%d"
-	Consts_SInvalidTaskDlgButtonCaption,	"Caption cannot be empty"
-	DBConsts_SInvalidFieldSize,	"Invalid field size"
-	DBConsts_SInvalidFieldKind,	"Invalid FieldKind"
-	DBConsts_SUnknownFieldType,	"Field '%s' is of an unknown type"
-	DBConsts_SFieldNameMissing,	"Field name missing"
-	DBConsts_SDuplicateFieldName,	"Duplicate field name '%s'"
-	DBConsts_SFieldNotFound,	"Field '%s' not found"
-	DBConsts_SFieldAccessError,	"Cannot access field '%s' as type %s"
-	DBConsts_SFieldValueError,	"Invalid value for field '%s'"
-	DBConsts_SFieldRangeError,	"%g is not a valid value for field '%s'. The allowed range is %g to %g"
-	DBConsts_SBcdFieldRangeError,	"%s is not a valid value for field '%s'. The allowed range is %s to %s"
-	DBConsts_SInvalidIntegerValue,	"'%s' is not a valid integer value for field '%s'"
-	DBConsts_SInvalidBoolValue,	"'%s' is not a valid boolean value for field '%s'"
 	Consts_SDuplicateMenus,	"Menu '%s' is already being used by another form"
 	Consts_SDockedCtlNeedsName,	"Docked control must have a name"
 	Consts_SDockTreeRemoveError,	"Error removing control from dock tree"
@@ -1594,19 +1604,19 @@ END
 /* c:\program files\codegear\rad studio\6.0\lib\ExtDlgs.res */
 /* c:\program files\codegear\rad studio\6.0\lib\Controls.res */
 /* c:\program files\codegear\rad studio\6.0\lib\FileCtrl.res */
-/* C:\Work\Project\__D2009Projects__\__Components__\jvcl\Resources\JvConsts.res */
 /* C:\Work\Project\__D2009Projects__\__Components__\Virtual Treeview\Source\VirtualTrees.res */
-/* uPluginsForm.dfm */
-/* uOptionsForm.dfm */
+/* C:\Work\Project\__D2009Projects__\__Components__\jvcl\Resources\JvConsts.res */
 /* C:\Work\Project\__D2009Projects__\IcePackage\IcePackageEx\uProgress.dfm */
-/* uPreprocessDirs.dfm */
 /* uPasswordForm.dfm */
 /* uThreadProcessForm.dfm */
-/* uNFOForm.dfm */
+/* uPreprocessDirs.dfm */
 /* C:\Work\Project\__D2009Projects__\__Components__\jvcl\Resources\JvToolEdit.res */
 /* uCategories.dfm */
+/* uNFOForm.dfm */
+/* uOptionsForm.dfm */
+/* uPluginsForm.dfm */
+/* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\uMain.dfm */
 /* uUserSelectForm.dfm */
-/* uMain.dfm */
 /* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\StuffOrganizer.dres */
 /* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\StuffOrganizer.res */
 /* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\StuffOrganizer.drf */

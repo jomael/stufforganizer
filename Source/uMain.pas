@@ -28,7 +28,7 @@ uses
   Menus, ShellApi, ActiveX, Gradient, uClasses, ActnList, PngFunctions,
   jpeg, ToolWin, pngimage, JvBaseDlg, JvBrowseFolder, Math, SyncObjs, IceXML,
   Generics.Defaults, W7TaskBar, ShlObj, AbBase, AbBrowse, AbZBrows, AbZipper,
-  AbUtils, AbUnzper, SOPluginDefs, uConstans;
+  AbUtils, AbUnzper, SOPluginDefs, uConstans, JvAppInst;
 
 type
 
@@ -150,6 +150,7 @@ type
     aCheckNewVersion: TAction;
     Visithomepage1: TMenuItem;
     Checknewversion1: TMenuItem;
+    JvAppInstances1: TJvAppInstances;
 
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -234,6 +235,8 @@ type
     procedure aPluginsExecute(Sender: TObject);
     procedure aAboutExecute(Sender: TObject);
     procedure aHomepageExecute(Sender: TObject);
+    procedure JvAppInstances1CmdLineReceived(Sender: TObject;
+      CmdLine: TStrings);
   private
     //Database methods
     procedure CreateMainDB;
@@ -327,7 +330,7 @@ implementation
 uses
   uPreprocessDirs, uCategories, DateUtils, uProgress, uNFOForm,
   uThreadProcessForm, uProcessThread, uOptionsForm, uPluginClasses,
-  uPluginsForm, CodePages, uProcs;
+  uPluginsForm, CodePages, uProcs, JclAppInst;
 
 {$R *.dfm}
 
@@ -907,6 +910,7 @@ begin
   //Process application parameters
   ProcessParameters;
   CoolTrayIcon1.IconVisible := true;
+
 end;
 
  {$ENDREGION}
@@ -1524,6 +1528,30 @@ begin
   finally
     UnLockDB;
   end;
+end;
+
+procedure TMainForm.JvAppInstances1CmdLineReceived(Sender: TObject;
+  CmdLine: TStrings);
+var
+  I: Integer;
+  S: string;
+  ParamList: TStrings;
+begin
+  if JvAppInstances1.AppInstances.InstanceIndex[GetCurrentProcessId] <> 0 then Exit;
+
+  ParamList := TStringList.Create;
+  for I := 0 to CmdLine.Count - 1 do
+  begin
+    S := CmdLine[I];
+    if FileExists(S) or DirectoryExists(S) then
+    begin
+      ParamList.Add(ExcludeTrailingBackslash(S));
+    end;
+  end;
+  if ParamList.Count > 0 then
+    MainForm.PreparingNewFiles(ParamList, -1);
+
+  ParamList.Free;
 end;
 
 procedure TMainForm.lChangeDirectoryNameClick(Sender: TObject);
@@ -2778,16 +2806,16 @@ begin
 end;
 
 initialization
-  mutexHandle:= CreateMutex(nil, True, PWideChar(ExtractFileName(ParamStr(0))));
+{  mutexHandle:= CreateMutex(nil, True, PWideChar(ExtractFileName(ParamStr(0))));
   if GetLastError = ERROR_ALREADY_EXISTS then
   begin
     //ShowMessage('Application already running!');
     SwitchToPrevApp;
     Halt;
-  end;
+  end;    }
 
 finalization
-  if mutexHandle <> 0 then
-    CloseHandle(mutexHandle);
+ { if mutexHandle <> 0 then
+    CloseHandle(mutexHandle);   }
 
 end.
