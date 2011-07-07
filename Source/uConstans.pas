@@ -32,6 +32,8 @@ const
   INFODBFILENAME              = 'productinfo.db';
   CONFIG_FILENAME             = 'Configurations.xml';
 
+  UPDATE_URL                  = 'http://stufforganizer.sourceforge.net/update.php';
+
   TARGET_TEMP_DIR             = '___StuffOrganizerTEMP__';
   //REGPATH                   = 'HKCU\Software\Stuff Organizer\';
 
@@ -82,6 +84,12 @@ var
   CatIDArray: array of integer;
   TagMatrix: array of array of Extended;
 
+
+  (* Settings variables *)
+
+  DELETE_TO_RECBIN: boolean = false;
+  HIDE_FILE_DIALOGS: boolean = true;
+  ICS_ENABLED: boolean = true;
 
 implementation
 

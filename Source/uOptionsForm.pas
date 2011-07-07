@@ -33,7 +33,7 @@ type
     btnCancel: TButton;
     GroupBox1: TGroupBox;
     cbDelToRB: TCheckBox;
-    CheckBox1: TCheckBox;
+    cbHideDialogs: TCheckBox;
     GroupBox2: TGroupBox;
     cbCheckNewVersion: TCheckBox;
     bCheckUpdate: TLabel;
@@ -41,9 +41,11 @@ type
     Gradient2: TGradient;
     GroupBox3: TGroupBox;
     lbExtensions: TCheckListBox;
+    cbICS: TCheckBox;
     procedure btnCancelClick(Sender: TObject);
     procedure btnOkClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure bCheckUpdateClick(Sender: TObject);
   private
     procedure LoadExtensions;
     { Private declarations }
@@ -57,9 +59,14 @@ var
 implementation
 
 uses
-  uPLuginClasses, uClasses, IceXML, IcePack;
+  uPLuginClasses, uClasses, IceXML, IcePack, uProcs, uMain;
 
 {$R *.dfm}
+
+procedure TOptionsForm.bCheckUpdateClick(Sender: TObject);
+begin
+  CheckUpdate(false);
+end;
 
 procedure TOptionsForm.btnCancelClick(Sender: TObject);
 begin
@@ -79,17 +86,27 @@ begin
       Item.Attr['state'] := iff(lbExtensions.Checked[I], 1, 0);
   end;
 
-               //   <Filter extension="*.7z" plugin="unpack_7z.sop" state="1"/>
+  ConfigXML.Root.SetItemParamValue('Main.Settings', 'deleteToRecycleBin', cbDelToRB.Checked);
+  ConfigXML.Root.SetItemParamValue('Main.Settings', 'hideFileDialogs', cbHideDialogs.Checked);
+  ConfigXML.Root.SetItemParamValue('Main.Settings', 'ICS', cbICS.Checked);
 
-
+  ConfigXML.Root.SetItemParamValue('Main.Update', 'checkAtStart', cbCheckNewVersion.Checked);
 
   ConfigXML.SaveToFile;
+  MainForm.LoadVariablesFromConfig;
+
   Close;
 end;
 
 procedure TOptionsForm.FormShow(Sender: TObject);
 begin
   LoadExtensions;
+
+  cbDelToRB.Checked := ConfigXML.Root.GetItemParamValue('Main.Settings', 'deleteToRecycleBin', 'True') = 'True';
+  cbHideDialogs.Checked := ConfigXML.Root.GetItemParamValue('Main.Settings', 'hideFileDialogs', 'True') = 'True';
+  cbICS.Checked := ConfigXML.Root.GetItemParamValue('Main.Settings', 'ICS', 'True') = 'True';
+
+  cbCheckNewVersion.Checked := ConfigXML.Root.GetItemParamValue('Main.Update', 'checkAtStart', 'True') = 'True';
 end;
 
 procedure TOptionsForm.LoadExtensions;
