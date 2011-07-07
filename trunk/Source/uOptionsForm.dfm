@@ -24,7 +24,6 @@ object OptionsForm: TOptionsForm
     Caption = 'Panel1'
     ShowCaption = False
     TabOrder = 0
-    ExplicitHeight = 212
     object Gradient1: TGradient
       Left = 1
       Top = 1
@@ -52,14 +51,21 @@ object OptionsForm: TOptionsForm
         Caption = 'Delete to recycle bin'
         TabOrder = 0
       end
-      object CheckBox1: TCheckBox
+      object cbHideDialogs: TCheckBox
         Left = 24
         Top = 47
         Width = 185
         Height = 17
         Caption = 'Hide copy/move/delete dialog'
         TabOrder = 1
-        Visible = False
+      end
+      object cbICS: TCheckBox
+        Left = 24
+        Top = 70
+        Width = 233
+        Height = 17
+        Caption = 'Enable ICS (Intelligent category selector)'
+        TabOrder = 2
       end
     end
     object GroupBox2: TGroupBox
@@ -83,6 +89,7 @@ object OptionsForm: TOptionsForm
         Font.Name = 'Tahoma'
         Font.Style = [fsUnderline]
         ParentFont = False
+        OnClick = bCheckUpdateClick
       end
       object cbCheckNewVersion: TCheckBox
         Left = 24
@@ -109,10 +116,6 @@ object OptionsForm: TOptionsForm
         Color = 14211288
         ItemHeight = 13
         TabOrder = 0
-        ExplicitLeft = 192
-        ExplicitTop = 40
-        ExplicitWidth = 121
-        ExplicitHeight = 97
       end
     end
   end
@@ -126,7 +129,6 @@ object OptionsForm: TOptionsForm
     Caption = 'Panel2'
     ShowCaption = False
     TabOrder = 1
-    ExplicitTop = 212
     DesignSize = (
       535
       37)

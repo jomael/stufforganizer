@@ -172,6 +172,7 @@ object ThreadProcessForm: TThreadProcessForm
     ParentBackground = False
     ParentColor = False
     TabOrder = 2
+    ExplicitTop = 67
     object LogList: TVirtualStringTree
       Left = 2
       Top = 15

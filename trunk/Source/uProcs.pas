@@ -23,7 +23,7 @@ interface
 
 uses
   SysUtils, Classes, Windows, Messages, IcePack, ShlObj, tlHelp32, Forms,
-  ShellAPI, Generics.Collections, Dialogs;
+  ShellAPI, Generics.Collections, Dialogs, Registry, IdHTTP, Types;
 
 
 
@@ -31,14 +31,16 @@ function GetHwnd(Handle : HWND; lParam : LPARAM) : Boolean; stdcall;
 procedure SwitchToPrevAppMainWindow(pid: THandle);
 procedure SwitchToPrevApp;
 procedure OpenURL(site: string);
+procedure CheckUpdate(const Silent: boolean = true);
 
 procedure ProcessParameters;
+procedure CheckOpenWithKeys;
 
 
 implementation
 
 uses
-  uMain, uConstans;
+  uMain, uConstans, IceXML, uUpdateForm;
 
 procedure ProcessParameters;
 var
@@ -59,6 +61,82 @@ begin
     MainForm.PreparingNewFiles(ParamList, -1);
 
   ParamList.Free;
+end;
+
+procedure CheckOpenWithKeys;
+var
+  reg: TRegistry;
+  c,S:string;
+begin
+  reg := TRegistry.Create;
+  reg.RootKey := HKEY_CLASSES_ROOT;
+
+  reg.OpenKey('*\shell\Add to Stuff Organizer library\command', true);
+  reg.WriteString('', Application.ExeName + ' "%1"');
+  reg.CloseKey;
+
+  reg.OpenKey('Folder\shell\Add to Stuff Organizer library\command', true);
+  reg.WriteString('', Application.ExeName + ' "%1"');
+  reg.CloseKey;
+
+  reg.Free;
+end;
+
+procedure CheckUpdate(const Silent: boolean = true);
+var
+  http: TIdHTTP;
+  data: string;
+  xml: TIceXML;
+  Item: TXMLItem;
+  SelfVer, updVer: string;
+  UpdateList: TList;
+begin
+  http := TIdHTTP.Create(nil);
+  xml := TIceXML.Create(nil);
+  try
+    data := '';
+    try
+      data := http.Get(UPDATE_URL);
+      if data <> '' then
+      begin
+        xml.LoadFromString(data);
+
+        if xml.Root.Name = 'UpdateData' then
+        begin
+          Item := xml.Root.GetItemEx('Product[MAIN]');
+          if Assigned(Item) then
+          begin
+            updVer := Item.GetItemValue('Version', '');
+            if updVer <> '' then
+            begin
+              SelfVer := IcePack.GetFileVersion();
+              if IcePack.CheckVersion(SelfVer, updVer) = GreaterThanValue then
+              begin
+                //ShowMessage('Has new update!');
+                UpdateList := ShowUpdateForm(xml.Root);
+              end
+              else if not Silent then
+                MessageDlg('Application is up to date.', mtInformation, [mbOK], 0);
+            end;
+          end;
+        end
+        else if not Silent then
+          MessageDlg('Unknow update file!', mtError, [mbOK], 0);
+
+
+        //ShowMessage(xml.SaveToString);
+      end;
+    except
+      on E: Exception do
+      begin
+        if not Silent then
+          MessageDlg('Update error! ' + E.Message, mtError, [mbOK], 0);
+      end;
+    end;
+  finally
+    http.Free;
+    xml.Free;
+  end;
 end;
 
 procedure OpenURL(site: string);

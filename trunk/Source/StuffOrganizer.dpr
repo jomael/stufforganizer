@@ -6,7 +6,8 @@ program StuffOrganizer;
 
 uses
   ExceptionLog,
-  Forms, JclAppInst,
+  Forms,
+  JclAppInst,
   uMain in 'uMain.pas' {MainForm},
   uPreprocessDirs in 'uPreprocessDirs.pas' {PreProcessForm},
   uCategories in 'uCategories.pas' {CategoriesForm},
@@ -21,7 +22,8 @@ uses
   SOPluginDefs in 'SOPluginDefs.pas',
   uPluginsForm in 'uPluginsForm.pas' {PluginsForm},
   uUserSelectForm in 'uUserSelectForm.pas' {UserSelectForm},
-  uProcs in 'uProcs.pas';
+  uProcs in 'uProcs.pas',
+  uUpdateForm in 'uUpdateForm.pas' {UpdateForm};
 
 {$R *.res}
 
@@ -38,6 +40,7 @@ begin
   Application.CreateForm(TThreadProcessForm, ThreadProcessForm);
   Application.CreateForm(TOptionsForm, OptionsForm);
   Application.CreateForm(TPluginsForm, PluginsForm);
+  Application.CreateForm(TUpdateForm, UpdateForm);
   //  Application.CreateForm(TUserSelectForm, UserSelectForm);
   Application.Run;
 end.

@@ -154,6 +154,7 @@ type
 
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
     procedure FilterListGetText(Sender: TBaseVirtualTree; Node: PVirtualNode;
       Column: TColumnIndex; TextType: TVSTTextType; var CellText: string);
     procedure FilterListGetImageIndex(Sender: TBaseVirtualTree;
@@ -174,7 +175,6 @@ type
     procedure FilterListDragOver(Sender: TBaseVirtualTree; Source: TObject;
       Shift: TShiftState; State: TDragState; Pt: TPoint; Mode: TDropMode;
       var Effect: Integer; var Accept: Boolean);
-    procedure FormShow(Sender: TObject);
     procedure VListKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure VListCompareNodes(Sender: TBaseVirtualTree; Node1,
       Node2: PVirtualNode; Column: TColumnIndex; var Result: Integer);
@@ -287,6 +287,7 @@ type
     //Application methods
     procedure LoadConfigFile;
     procedure LoadConfigState;
+    procedure LoadVariablesFromConfig;
     procedure SaveConfig;
 
     //Queue methods
@@ -884,6 +885,8 @@ begin
   LoadCategoriesFromDB;
 
   LoadUnprocessedItems;
+
+  CheckOpenWithKeys;
 end;
 
 procedure TMainForm.FormShow(Sender: TObject);
@@ -901,7 +904,8 @@ begin
   end;}
 
   //For ICS
-  GenerateTagCategoryMatrix;
+  if ICS_ENABLED then
+    GenerateTagCategoryMatrix;
 
   //Load plugins
   PluginManager.LoadPlugins;
@@ -911,6 +915,9 @@ begin
   ProcessParameters;
   CoolTrayIcon1.IconVisible := true;
 
+
+  if ConfigXML.Root.GetItemParamValue('Main.Update', 'checkAtStart', 'True') = 'True' then
+    CheckUpdate;
 end;
 
  {$ENDREGION}
@@ -1431,6 +1438,15 @@ begin
     WindowState := wsMaximized
   else
     WindowState := wsNormal;
+
+  LoadVariablesFromConfig;
+end;
+
+procedure TMainForm.LoadVariablesFromConfig;
+begin
+  DELETE_TO_RECBIN := ConfigXML.Root.GetItemParamValue('Main.Settings', 'deleteToRecycleBin', 'True') = 'True';
+  HIDE_FILE_DIALOGS := ConfigXML.Root.GetItemParamValue('Main.Settings', 'hideFileDialogs', 'True') = 'True';
+  ICS_ENABLED := ConfigXML.Root.GetItemParamValue('Main.Settings', 'ICS', 'True') = 'True';
 
 end;
 
@@ -2164,10 +2180,13 @@ begin
 
     if Item.CategoryID = -1 then
     begin
-      //Intelligens kategória választót futtatni
-      ChangeProgressCaption(Format('Running ICS on ''%s''...', [ExtractFileName(FileList[I])]));
+      if ICS_ENABLED then
+      begin
+        //Intelligens kategória választót futtatni
+        ChangeProgressCaption(Format('Running ICS on ''%s''...', [ExtractFileName(FileList[I])]));
 
-      Item.CategoryID := ExecuteICS(Item.Tags);
+        Item.CategoryID := ExecuteICS(Item.Tags);
+      end;
     end;
 
 
