@@ -89,7 +89,6 @@ var
   xml: TIceXML;
   Item: TXMLItem;
   SelfVer, updVer: string;
-  UpdateList: TList;
 begin
   http := TIdHTTP.Create(nil);
   xml := TIceXML.Create(nil);
@@ -112,8 +111,12 @@ begin
               SelfVer := IcePack.GetFileVersion();
               if IcePack.CheckVersion(SelfVer, updVer) = GreaterThanValue then
               begin
-                //ShowMessage('Has new update!');
-                UpdateList := ShowUpdateForm(xml.Root);
+                if ShowUpdateForm(xml.Root) then
+                begin
+                  MessageDlg('A frissítések érvényesítéséhez, újra kell indítani az alkalmazást.', mtInformation, [mbOK], 0);
+                  //Start SOUpdater and Terminate;
+                  Application.Terminate;
+                end;
               end
               else if not Silent then
                 MessageDlg('Application is up to date.', mtInformation, [mbOK], 0);
