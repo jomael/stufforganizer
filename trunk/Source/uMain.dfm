@@ -1509,8 +1509,8 @@ object MainForm: TMainForm
     PopupMenu = pmTray
     MinimizeToTray = True
     OnDblClick = CoolTrayIcon1DblClick
-    Left = 672
-    Top = 136
+    Left = 1024
+    Top = 256
   end
   object stateImages: TPngImageList
     PngImages = <
@@ -3894,7 +3894,7 @@ object MainForm: TMainForm
   end
   object pmCategories: TPopupMenu
     OnPopup = pmCategoriesPopup
-    Left = 80
+    Left = 112
     Top = 208
     object Modifycategory1: TMenuItem
       Action = aModifyCategory
@@ -4173,8 +4173,8 @@ object MainForm: TMainForm
   end
   object pmAddStuff: TPopupMenu
     Images = ToolbarImages
-    Left = 72
-    Top = 72
+    Left = 32
+    Top = 80
     object Adddirectory1: TMenuItem
       Action = aAddDirectory
     end
@@ -4187,7 +4187,7 @@ object MainForm: TMainForm
   end
   object alToolbar: TActionList
     Images = ToolbarImages
-    Left = 536
+    Left = 608
     Top = 16
     object aAddFile: TAction
       Caption = 'Add files(s)...'

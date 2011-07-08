@@ -27,6 +27,9 @@
 			<Projects Include="Modules\port_hu\port_hu.dproj">
 				<Dependencies/>
 			</Projects>
+			<Projects Include="Source\SOUpdater\SOUpdater.dproj">
+				<Dependencies/>
+			</Projects>
 		</ItemGroup>
 		<ProjectExtensions>
 			<Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -107,14 +110,23 @@
 		<Target Name="port_hu:Make">
 			<MSBuild Targets="Make" Projects="Modules\port_hu\port_hu.dproj"/>
 		</Target>
+		<Target Name="SOUpdater">
+			<MSBuild Projects="Source\SOUpdater\SOUpdater.dproj"/>
+		</Target>
+		<Target Name="SOUpdater:Clean">
+			<MSBuild Targets="Clean" Projects="Source\SOUpdater\SOUpdater.dproj"/>
+		</Target>
+		<Target Name="SOUpdater:Make">
+			<MSBuild Targets="Make" Projects="Source\SOUpdater\SOUpdater.dproj"/>
+		</Target>
 		<Target Name="Build">
-			<CallTarget Targets="StuffOrganizer;StuffOrganizerTests;DirLister;unpack_7z;unpack_rar;unpack_zip;allmovie;port_hu"/>
+			<CallTarget Targets="StuffOrganizer;StuffOrganizerTests;DirLister;unpack_7z;unpack_rar;unpack_zip;allmovie;port_hu;SOUpdater"/>
 		</Target>
 		<Target Name="Clean">
-			<CallTarget Targets="StuffOrganizer:Clean;StuffOrganizerTests:Clean;DirLister:Clean;unpack_7z:Clean;unpack_rar:Clean;unpack_zip:Clean;allmovie:Clean;port_hu:Clean"/>
+			<CallTarget Targets="StuffOrganizer:Clean;StuffOrganizerTests:Clean;DirLister:Clean;unpack_7z:Clean;unpack_rar:Clean;unpack_zip:Clean;allmovie:Clean;port_hu:Clean;SOUpdater:Clean"/>
 		</Target>
 		<Target Name="Make">
-			<CallTarget Targets="StuffOrganizer:Make;StuffOrganizerTests:Make;DirLister:Make;unpack_7z:Make;unpack_rar:Make;unpack_zip:Make;allmovie:Make;port_hu:Make"/>
+			<CallTarget Targets="StuffOrganizer:Make;StuffOrganizerTests:Make;DirLister:Make;unpack_7z:Make;unpack_rar:Make;unpack_zip:Make;allmovie:Make;port_hu:Make;SOUpdater:Make"/>
 		</Target>
 		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 	</Project>

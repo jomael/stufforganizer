@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2011.07.08 22:07:10.511.pas,C:\Documents and Settings\Teszt\Dokumentumok\RAD Studio\Projects\Unit10.pas=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\SOUpdater\uMain.pas</Transaction>
+    <Transaction>2011.07.08 22:07:10.511.dfm,C:\Documents and Settings\Teszt\Dokumentumok\RAD Studio\Projects\Unit10.dfm=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\SOUpdater\uMain.dfm</Transaction>
+    <Transaction>2011.07.08 22:07:15.117.dproj,C:\Documents and Settings\Teszt\Dokumentumok\RAD Studio\Projects\Project6.dproj=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\SOUpdater\SOUpdater.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
