@@ -89,6 +89,7 @@ var
   xml: TIceXML;
   Item: TXMLItem;
   SelfVer, updVer: string;
+  updateFile: string;
 begin
   http := TIdHTTP.Create(nil);
   xml := TIceXML.Create(nil);
@@ -114,7 +115,13 @@ begin
                 if ShowUpdateForm(xml.Root) then
                 begin
                   MessageDlg('A frissítések érvényesítéséhez, újra kell indítani az alkalmazást.', mtInformation, [mbOK], 0);
-                  //Start SOUpdater and Terminate;
+                  updateFile := IcePack.GetTempDirectory + 'SOUpdater.exe';
+                  if FileExists(updateFile) then
+                    DeleteFile(PWideChar(updateFile));
+                  IcePack.ExtractResource('UPDATE_EXE', updateFile);
+                  if FileExists(updateFile) then
+                    ShellExecute(0, 'open', PWideChar(updateFile), PWideChar(ExecPath), '', SW_SHOW);
+
                   Application.Terminate;
                 end;
               end
