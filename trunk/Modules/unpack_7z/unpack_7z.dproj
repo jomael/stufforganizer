@@ -21,8 +21,8 @@
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
 			<DCC_UsePackage>vclx;vcl;dbrtl;Rave76VCL;bdertl;rtl;vclactnband;vcldb;vcldbx;dsnap;dsnapcon;TeeUI;TeeDB;Tee;adortl;vclib;ibxpress;IndyCore;IndySystem;IndyProtocols;xmlrtl;inet;intrawebdb_100_120;Intraweb_100_120;VclSmp;vclie;websnap;webdsnap;inetdbbde;inetdbxpress;soaprtl;vclribbon;dbexpress;DbxCommonDriver;DataSnapIndy10ServerTransport;DataSnapProviderClient;DataSnapServer;DbxClientDriver;DBXInterBaseDriver;DBXMySQLDriver;dbxcds;DBXSybaseASEDriver;DBXSybaseASADriver;DBXOracleDriver;DBXMSSQLDriver;DBXInformixDriver;DBXDb2Driver;PerlRegExD2009;Jcl;JclVcl;JvCoreD12R;JvSystemD12R;JvStdCtrlsD12R;JvAppFrmD12R;JvBandsD12R;JvDBD12R;JvDlgsD12R;JvBDED12R;JvCmpD12R;JvCryptD12R;JvCtrlsD12R;JvCustomD12R;JvDockingD12R;JvDotNetCtrlsD12R;JvEDID12R;JvGlobusD12R;JvHMID12R;JvInterpreterD12R;JvJansD12R;JvManagedThreadsD12R;JvMMD12R;JvNetD12R;JvPageCompsD12R;JvPluginD12R;JvPrintPreviewD12R;JvRuntimeDesignD12R;JvTimeFrameworkD12R;JvValidatorsD12R;JvWizardD12R;JvXPCtrlsD12R;PngComponents;DSPack_D12;DirectX9_D12;GR32_BDS2009;OverbyteIcsD2009Run;IceSocketPackage;IcePackageLite;IcePropertyEditorD;NDSPackage;IcePackageEx;RARComponent_d2009;B305vr2009;VirtualTreesD12</DCC_UsePackage>
-			<DCC_ExeOutput>..\..\..\Bin\Plugins\</DCC_ExeOutput>
-			<DCC_DependencyCheckOutputName>..\..\..\Bin\Plugins\unpack_7z.sop</DCC_DependencyCheckOutputName>
+			<DCC_ExeOutput>..\..\Bin\Plugins\</DCC_ExeOutput>
+			<DCC_DependencyCheckOutputName>..\..\Bin\Plugins\unpack_7z.sop</DCC_DependencyCheckOutputName>
 			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
 			<GenDll>true</GenDll>
 			<DCC_ImageBase>00400000</DCC_ImageBase>
@@ -41,9 +41,7 @@
 			<DelphiCompile Include="unpack_7z.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\..\SourceSOPluginDefs.pas">
-				<ModuleName>SOPluginDefs</ModuleName>
-			</DCCReference>
+			<DCCReference Include="..\..\Source\SOPluginDefs.pas"/>
 			<RcItem Include="7zip_32.ico">
 				<ResourceType>Icon</ResourceType>
 				<ResourceId>MAIN_32</ResourceId>

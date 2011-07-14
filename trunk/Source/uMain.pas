@@ -237,6 +237,7 @@ type
     procedure aHomepageExecute(Sender: TObject);
     procedure JvAppInstances1CmdLineReceived(Sender: TObject;
       CmdLine: TStrings);
+    procedure aCheckNewVersionExecute(Sender: TObject);
   private
     //Database methods
     procedure CreateMainDB;
@@ -376,6 +377,11 @@ end;
 procedure TMainForm.aAddStuffExecute(Sender: TObject);
 begin
   aAddDirectory.Execute;
+end;
+
+procedure TMainForm.aCheckNewVersionExecute(Sender: TObject);
+begin
+  CheckUpdate(false);
 end;
 
 procedure TMainForm.aConsistenceCheckExecute(Sender: TObject);

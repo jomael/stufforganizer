@@ -85,6 +85,8 @@ type
 
     procedure LoadPlugins;
     procedure UnloadPlugins;
+
+    function GetPluginByName(plgName: string): TPluginItem;
   end;
 
   TFileProcCallBackItem = class
@@ -315,6 +317,16 @@ end;
 function TPluginManager.GetItems(Index: integer): TPluginItem;
 begin
   result := FPlugins[Index];
+end;
+
+function TPluginManager.GetPluginByName(plgName: string): TPluginItem;
+var
+  I: Integer;
+begin
+  result := nil;
+  for I := 0 to FPlugins.Count - 1 do
+    if LowerCase(ExtractFileName(TPluginItem(FPlugins[I]).FileName)) = LowerCase(plgName + '.sop') then
+      Exit(TPluginItem(FPlugins[I]));
 end;
 
 procedure TPluginManager.LoadPlugins;

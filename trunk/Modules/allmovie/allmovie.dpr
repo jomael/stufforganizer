@@ -32,12 +32,12 @@ end;
 function PluginGetInfo(): PPluginInfo; stdcall;
 begin
   New(result);
-  result.Name := 'Allmovie.com plugin';
+  result.Name := 'Allrovi.com plugin';
   result.PluginType := 2;
-  result.Description := 'All Movie Guide detailed info import with small picture';
+  result.Description := 'All Rovi movie detailed info import with small picture';
   result.Icon := nil;
   result.Author := 'Ice Apps';
-  result.WebPage := 'http://';
+  result.WebPage := 'http://stufforganizer.sourceforge.net';
   result.Version := '1.0.0.0';
   result.InterfaceVersion := 1;
   result.VersionDate := '2010-04-16';
@@ -76,7 +76,7 @@ begin
   if InputQuery('Search description', 'Enter title (only letters, digits and spaces): ', MovieName) then
   begin
     Product := ProductInfo;
-    AnalyzePage('http://www.allmovie.com/search/work/' + StringReplace(URLEncode(MovieName, false), '%20', '+', [rfReplaceAll]));
+    AnalyzePage('http://www.allrovi.com/search/movies/' + StringReplace(URLEncode(MovieName, false), '%20', '+', [rfReplaceAll]));
   end;
 end;
 
@@ -87,7 +87,7 @@ begin
   SaveProductInfoToDB := PluginCallBacks.SaveProductInfoToDB;
   UserSelect := PluginCallBacks.UserSelect;
 
-  PluginCallBacks.RegisterDescriptor(Self, 'Search description on www.allmovie.com', Run);
+  PluginCallBacks.RegisterDescriptor(Self, 'Search description on www.allrovi.com', Run);
 end;
 
 function PluginInitialize(): boolean; stdcall;
