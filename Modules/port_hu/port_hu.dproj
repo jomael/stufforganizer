@@ -39,7 +39,7 @@
 			<DelphiCompile Include="port_hu.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\..\SOPluginDefs.pas"/>
+			<DCCReference Include="..\..\Source\SOPluginDefs.pas"/>
 			<DCCReference Include="uSearchInfo.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>

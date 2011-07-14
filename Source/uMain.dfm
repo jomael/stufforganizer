@@ -4257,6 +4257,7 @@ object MainForm: TMainForm
     object aCheckNewVersion: TAction
       Caption = 'Check new version'
       ImageIndex = 24
+      OnExecute = aCheckNewVersionExecute
     end
   end
   object PictureDialog: TOpenDialog

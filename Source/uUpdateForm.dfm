@@ -12,6 +12,7 @@ object UpdateForm: TUpdateForm
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object Panel2: TPanel
@@ -24,8 +25,6 @@ object UpdateForm: TUpdateForm
     Caption = 'Panel2'
     ShowCaption = False
     TabOrder = 0
-    ExplicitTop = 346
-    ExplicitWidth = 477
     DesignSize = (
       479
       41)
@@ -51,7 +50,6 @@ object UpdateForm: TUpdateForm
       Caption = 'Cancel'
       TabOrder = 0
       OnClick = btnCancelClick
-      ExplicitLeft = 391
     end
     object btnUpdate: TButton
       Left = 312
@@ -63,7 +61,6 @@ object UpdateForm: TUpdateForm
       Default = True
       TabOrder = 1
       OnClick = btnUpdateClick
-      ExplicitLeft = 310
     end
   end
   object GroupBox1: TGroupBox
@@ -77,9 +74,6 @@ object UpdateForm: TUpdateForm
     ParentBackground = False
     ParentColor = False
     TabOrder = 1
-    ExplicitTop = 65
-    ExplicitWidth = 477
-    ExplicitHeight = 281
     object DataList: TVirtualStringTree
       Left = 2
       Top = 15
@@ -103,8 +97,6 @@ object UpdateForm: TUpdateForm
       OnFocusChanged = DataListFocusChanged
       OnGetText = DataListGetText
       OnGetImageIndex = DataListGetImageIndex
-      ExplicitWidth = 473
-      ExplicitHeight = 264
       Columns = <
         item
           Position = 0
@@ -137,9 +129,6 @@ object UpdateForm: TUpdateForm
       ParentBackground = False
       ParentColor = False
       TabOrder = 1
-      ExplicitLeft = 256
-      ExplicitTop = 8
-      ExplicitWidth = 185
       DesignSize = (
         475
         105)
@@ -187,10 +176,11 @@ object UpdateForm: TUpdateForm
       AutoSize = False
       Caption = 'New version found!'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
+      Font.Color = 210
       Font.Height = -13
       Font.Name = 'Verdana'
       Font.Style = [fsBold]
+      GlowSize = 2
       ParentFont = False
       ExplicitWidth = 450
     end

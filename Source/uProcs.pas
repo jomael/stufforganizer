@@ -40,7 +40,7 @@ procedure CheckOpenWithKeys;
 implementation
 
 uses
-  uMain, uConstans, IceXML, uUpdateForm;
+  uMain, uConstans, IceXML, uUpdateForm, uPluginClasses;
 
 procedure ProcessParameters;
 var
@@ -82,6 +82,16 @@ begin
   reg.Free;
 end;
 
+function GetPluginVersion(plgName: string): string;
+var
+  Plugin: TPluginItem;
+begin
+  result := '';
+  Plugin := PluginManager.GetPluginByName(plgName);
+  if Assigned(Plugin) then
+    result := Plugin.PluginInfo.Version;
+end;
+
 procedure CheckUpdate(const Silent: boolean = true);
 var
   http: TIdHTTP;
@@ -90,7 +100,11 @@ var
   Item: TXMLItem;
   SelfVer, updVer: string;
   updateFile: string;
+  updateList: TList;
+  I: Integer;
+  plgName: string;
 begin
+  updateList := TList.Create;
   http := TIdHTTP.Create(nil);
   xml := TIceXML.Create(nil);
   try
@@ -103,39 +117,57 @@ begin
 
         if xml.Root.Name = 'UpdateData' then
         begin
-          Item := xml.Root.GetItemEx('Product[MAIN]');
-          if Assigned(Item) then
+          for I := 0 to xml.Root.Count - 1 do
           begin
-            updVer := Item.GetItemValue('Version', '');
-            if updVer <> '' then
+            Item := xml.Root[I];
+            if Item.Attr['name'] = 'MAIN' then
             begin
-              SelfVer := IcePack.GetFileVersion();
-              if IcePack.CheckVersion(SelfVer, updVer) = GreaterThanValue then
+              //Main program update
+              updVer := Item.GetItemValue('Version', '');
+              if updVer <> '' then
               begin
-                if ShowUpdateForm(xml.Root) then
-                begin
-                  MessageDlg('A frissítések érvényesítéséhez, újra kell indítani az alkalmazást.', mtInformation, [mbOK], 0);
-                  updateFile := IcePack.GetTempDirectory + 'SOUpdater.exe';
-                  if FileExists(updateFile) then
-                    DeleteFile(PWideChar(updateFile));
-                  IcePack.ExtractResource('UPDATE_EXE', updateFile);
-                  if FileExists(updateFile) then
-                    ShellExecute(0, 'open', PWideChar(updateFile), PWideChar(ExecPath), '', SW_SHOW);
-
-                  Application.Terminate;
-                end;
-              end
-              else if not Silent then
-                MessageDlg('Application is up to date.', mtInformation, [mbOK], 0);
+                SelfVer := IcePack.GetFileVersion();
+                if IcePack.CheckVersion(SelfVer, updVer) = GreaterThanValue then
+                  updateList.Add(Item);
+              end;
+            end
+            else if Pos('PLG_', Item.Attr['name']) = 1 then
+            begin
+              //Plugin update
+              updVer := Item.GetItemValue('Version', '');
+              if updVer <> '' then
+              begin
+                plgName := Item.Attr['name'];
+                SelfVer := GetPluginVersion(Copy(plgName, 5, Length(plgName)));
+                if (SelfVer <> '') and (IcePack.CheckVersion(SelfVer, updVer) = GreaterThanValue) then
+                  updateList.Add(Item);
+              end;
             end;
           end;
+
+          if updateList.Count > 0 then
+          begin
+            if ShowUpdateForm(updateList) then
+            begin
+              //MessageDlg('Application exit for to update...', mtInformation, [mbOK], 0);
+              updateFile := IcePack.GetTempDirectory + 'SOUpdater.exe';
+              if FileExists(updateFile) then
+                DeleteFile(PWideChar(updateFile));
+              IcePack.ExtractResource('UPDATE_EXE', updateFile);
+              if FileExists(updateFile) then
+                ShellExecute(0, 'open', PWideChar(updateFile), PWideChar(ExecPath), '', SW_SHOW);
+
+              Application.Terminate;
+            end;
+          end
+          else if not Silent then
+            MessageDlg('Application is up to date.', mtInformation, [mbOK], 0);
         end
         else if not Silent then
           MessageDlg('Unknow update file!', mtError, [mbOK], 0);
-
-
-        //ShowMessage(xml.SaveToString);
-      end;
+      end
+      else if not Silent then
+        MessageDlg('Update info not found!', mtWarning, [mbOK], 0);
     except
       on E: Exception do
       begin
@@ -146,6 +178,7 @@ begin
   finally
     http.Free;
     xml.Free;
+    updateList.Free;
   end;
 end;
 

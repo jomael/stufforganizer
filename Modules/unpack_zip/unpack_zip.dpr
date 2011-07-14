@@ -81,7 +81,7 @@ begin
   result.Description := 'This is the default unzip plugin. Unpack the *.zip, *.gz, *.tgz *.tar files.';
   result.Icon := Pointer(MainIcon.Handle);
   result.Author := 'Ice Apps';
-  result.WebPage := 'http://';
+  result.WebPage := 'http://stufforganizer.sourceforge.net';
   result.Version := '1.0.0.0';
   result.InterfaceVersion := 1;
   result.VersionDate := '2010-04-16';

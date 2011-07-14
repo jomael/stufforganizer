@@ -20,8 +20,8 @@
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
-			<DCC_ExeOutput>..\..\..\Bin\Plugins\</DCC_ExeOutput>
-			<DCC_DependencyCheckOutputName>..\..\..\Bin\Plugins\unpack_zip.sop</DCC_DependencyCheckOutputName>
+			<DCC_ExeOutput>..\..\Bin\Plugins\</DCC_ExeOutput>
+			<DCC_DependencyCheckOutputName>..\..\Bin\Plugins\unpack_zip.sop</DCC_DependencyCheckOutputName>
 			<GenDll>true</GenDll>
 			<DCC_ImageBase>00400000</DCC_ImageBase>
 			<DCC_Platform>x86</DCC_Platform>
@@ -39,7 +39,7 @@
 			<DelphiCompile Include="unpack_zip.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\..\SOPluginDefs.pas"/>
+			<DCCReference Include="..\..\Source\SOPluginDefs.pas"/>
 			<RcItem Include="zip.ico">
 				<ResourceType>Icon</ResourceType>
 				<ResourceId>MAIN_32</ResourceId>

@@ -37,7 +37,7 @@ begin
   result.Description := 'PORT.HU filmadatbázisából keresi ki a filmek adatait';
   result.Icon := nil;
   result.Author := 'Ice Apps';
-  result.WebPage := 'http://';
+  result.WebPage := 'http://stufforganizer.sourceforge.net';
   result.Version := '1.0.0.0';
   result.InterfaceVersion := 1;
   result.VersionDate := '2010-04-16';

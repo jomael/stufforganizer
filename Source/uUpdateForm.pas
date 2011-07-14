@@ -62,7 +62,7 @@ type
 var
   UpdateForm: TUpdateForm;
 
-function ShowUpdateForm(Content: TXMLItem): boolean;
+function ShowUpdateForm(Content: TList): boolean;
 
 implementation
 
@@ -76,7 +76,7 @@ begin
     Exit(name);
 end;
 
-function ShowUpdateForm(Content: TXMLItem): boolean;
+function ShowUpdateForm(Content: TList): boolean;
 var
   I: Integer;
   Item: TXMLItem;
@@ -86,13 +86,15 @@ begin
   with UpdateForm do
   begin
     Downloading := false;
+    btnUpdate.Enabled := true;
+
     DataList.BeginUpdate;
     DataList.Clear;
     DataList.NodeDataSize := SizeOf(TNodeData);
 
     for I := 0 to Content.Count - 1 do
     begin
-      Item := Content[I];
+      Item := TXMLItem(Content[I]);
 
       Node := DataList.AddChild(nil);
       Data := DataList.GetNodeData(Node);
@@ -126,6 +128,7 @@ var
 begin
   if Downloading then Exit;
 
+  btnUpdate.Enabled := false;
   Downloading := true;
   UpdateDir := ExecPath + 'Update\';
   ForceDirectories(UpdateDir);
@@ -157,6 +160,7 @@ begin
   end;
   CurrentDownloadItem := nil;
   Downloading := false;
+  btnUpdate.Enabled := true;
 end;
 
 procedure TUpdateForm.DataListBeforeCellPaint(Sender: TBaseVirtualTree;

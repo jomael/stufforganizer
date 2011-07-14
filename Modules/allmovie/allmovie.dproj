@@ -21,8 +21,8 @@
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
 			<GenDll>true</GenDll>
-			<DCC_ExeOutput>..\..\..\Bin\Plugins\</DCC_ExeOutput>
-			<DCC_DependencyCheckOutputName>..\..\..\Bin\Plugins\allmovie.sop</DCC_DependencyCheckOutputName>
+			<DCC_ExeOutput>..\..\Bin\Plugins\</DCC_ExeOutput>
+			<DCC_DependencyCheckOutputName>..\..\Bin\Plugins\allmovie.sop</DCC_DependencyCheckOutputName>
 			<DCC_ImageBase>00400000</DCC_ImageBase>
 			<DCC_Platform>x86</DCC_Platform>
 		</PropertyGroup>
@@ -39,7 +39,7 @@
 			<DelphiCompile Include="allmovie.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\..\SOPluginDefs.pas"/>
+			<DCCReference Include="..\..\Source\SOPluginDefs.pas"/>
 			<DCCReference Include="uSearchInfo.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
@@ -66,7 +66,7 @@
 						<Parameters Name="UseLauncher">False</Parameters>
 						<Parameters Name="LoadAllSymbols">True</Parameters>
 						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
-						<Parameters Name="HostApplication">C:\Work\Project\__D2009Projects__\TorrentOrganizer\Bin\StuffOrganizer.exe</Parameters>
+						<Parameters Name="HostApplication">C:\Work\Project\__D2009Projects__\StuffOrganizer\Bin\StuffOrganizer.exe</Parameters>
 					</Parameters>
 					<VersionInfo>
 						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
