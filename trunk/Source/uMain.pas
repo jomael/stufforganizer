@@ -336,6 +336,8 @@ uses
 
 {$R *.dfm}
 
+{$R StuffOrganizer.rec}
+
  {$REGION 'Action methods'}
 procedure TMainForm.aAboutExecute(Sender: TObject);
 begin

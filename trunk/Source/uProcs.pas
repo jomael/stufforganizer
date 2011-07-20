@@ -68,18 +68,25 @@ var
   reg: TRegistry;
   c,S:string;
 begin
-  reg := TRegistry.Create;
-  reg.RootKey := HKEY_CLASSES_ROOT;
+  try
+    try
+    reg := TRegistry.Create;
+    reg.RootKey := HKEY_CLASSES_ROOT;
 
-  reg.OpenKey('*\shell\Add to Stuff Organizer library\command', true);
-  reg.WriteString('', Application.ExeName + ' "%1"');
-  reg.CloseKey;
+    reg.OpenKey('*\shell\Add to Stuff Organizer library\command', true);
+    reg.WriteString('', Application.ExeName + ' "%1"');
+    reg.CloseKey;
 
-  reg.OpenKey('Folder\shell\Add to Stuff Organizer library\command', true);
-  reg.WriteString('', Application.ExeName + ' "%1"');
-  reg.CloseKey;
+    reg.OpenKey('Folder\shell\Add to Stuff Organizer library\command', true);
+    reg.WriteString('', Application.ExeName + ' "%1"');
+    reg.CloseKey;
 
-  reg.Free;
+    finally
+      reg.Free;
+    end;
+  except
+    //Silent
+  end;
 end;
 
 function GetPluginVersion(plgName: string): string;
