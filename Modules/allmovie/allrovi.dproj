@@ -1,10 +1,10 @@
 ﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		<PropertyGroup>
-			<ProjectGuid>{C7556F8F-71B3-4645-A1BD-414F7CDD1C38}</ProjectGuid>
-			<ProjectVersion>12.0</ProjectVersion>
-			<MainSource>StuffOrganizer.dpr</MainSource>
+			<ProjectGuid>{744B3385-809C-4B1D-961A-C3A255FA58F7}</ProjectGuid>
+			<MainSource>allrovi.dpr</MainSource>
 			<Config Condition="'$(Config)'==''">Debug</Config>
 			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
 			<Base>true</Base>
@@ -20,9 +20,9 @@
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
-			<DCC_ExeOutput>..\Bin\</DCC_ExeOutput>
-			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
-			<DCC_DependencyCheckOutputName>..\Bin\StuffOrganizer.exe</DCC_DependencyCheckOutputName>
+			<GenDll>true</GenDll>
+			<DCC_ExeOutput>..\..\Bin\Plugins\</DCC_ExeOutput>
+			<DCC_DependencyCheckOutputName>..\..\Bin\Plugins\allrovi.sop</DCC_DependencyCheckOutputName>
 			<DCC_ImageBase>00400000</DCC_ImageBase>
 			<DCC_Platform>x86</DCC_Platform>
 		</PropertyGroup>
@@ -33,65 +33,14 @@
 			<DCC_DebugInformation>false</DCC_DebugInformation>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Cfg_2)'!=''">
-			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
-			<DCC_MapFile>3</DCC_MapFile>
-			<DCC_Define>DEBUG;EUREKALOG;EUREKALOG_VER6;$(DCC_Define)</DCC_Define>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
 		</PropertyGroup>
 		<ItemGroup>
-			<DelphiCompile Include="StuffOrganizer.dpr">
+			<DelphiCompile Include="allrovi.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="uMain.pas">
-				<Form>MainForm</Form>
-			</DCCReference>
-			<DCCReference Include="uPreprocessDirs.pas">
-				<Form>PreProcessForm</Form>
-			</DCCReference>
-			<DCCReference Include="uCategories.pas">
-				<Form>CategoriesForm</Form>
-			</DCCReference>
-			<DCCReference Include="uPasswordForm.pas">
-				<Form>PasswordForm</Form>
-			</DCCReference>
-			<DCCReference Include="uNFOForm.pas">
-				<Form>NFOForm</Form>
-			</DCCReference>
-			<DCCReference Include="uClasses.pas"/>
-			<DCCReference Include="uConstans.pas"/>
-			<DCCReference Include="uThreadProcessForm.pas">
-				<Form>ThreadProcessForm</Form>
-			</DCCReference>
-			<DCCReference Include="uProcessThread.pas"/>
-			<DCCReference Include="uOptionsForm.pas">
-				<Form>OptionsForm</Form>
-			</DCCReference>
-			<DCCReference Include="uPluginClasses.pas"/>
-			<DCCReference Include="SOPluginDefs.pas"/>
-			<DCCReference Include="uPluginsForm.pas">
-				<Form>PluginsForm</Form>
-			</DCCReference>
-			<DCCReference Include="uUserSelectForm.pas">
-				<Form>UserSelectForm</Form>
-			</DCCReference>
-			<DCCReference Include="uProcs.pas"/>
-			<DCCReference Include="uUpdateForm.pas">
-				<Form>UpdateForm</Form>
-			</DCCReference>
-			<RcItem Include="DBSQL\productinfo.sql">
-				<ContainerId>ResourceItem</ContainerId>
-				<ResourceType>RCData</ResourceType>
-				<ResourceId>DB_INFO</ResourceId>
-			</RcItem>
-			<RcItem Include="DBSQL\main.sql">
-				<ContainerId>ResourceItem</ContainerId>
-				<ResourceType>RCData</ResourceType>
-				<ResourceId>DB_MAIN</ResourceId>
-			</RcItem>
-			<RcItem Include="SOUpdater\SOUpdater.exe">
-				<ContainerId>ResourceItem</ContainerId>
-				<ResourceType>RCData</ResourceType>
-				<ResourceId>UPDATE_EXE</ResourceId>
-			</RcItem>
+			<DCCReference Include="..\..\Source\SOPluginDefs.pas"/>
+			<DCCReference Include="uSearchInfo.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
@@ -107,26 +56,27 @@
 		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
 		<ProjectExtensions>
 			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
-			<Borland.ProjectType/>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
 			<BorlandProject>
 				<Delphi.Personality>
 					<Source>
-						<Source Name="MainSource">StuffOrganizer.dpr</Source>
+						<Source Name="MainSource">allrovi.dpr</Source>
 					</Source>
 					<Parameters>
 						<Parameters Name="UseLauncher">False</Parameters>
 						<Parameters Name="LoadAllSymbols">True</Parameters>
 						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+						<Parameters Name="HostApplication">C:\Work\Project\__D2009Projects__\StuffOrganizer\Bin\StuffOrganizer.exe</Parameters>
 					</Parameters>
 					<VersionInfo>
-						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
-						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
-						<VersionInfo Name="MajorVer">0</VersionInfo>
-						<VersionInfo Name="MinorVer">4</VersionInfo>
-						<VersionInfo Name="Release">4</VersionInfo>
-						<VersionInfo Name="Build">40</VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
 						<VersionInfo Name="Debug">False</VersionInfo>
-						<VersionInfo Name="PreRelease">True</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
 						<VersionInfo Name="Special">False</VersionInfo>
 						<VersionInfo Name="Private">False</VersionInfo>
 						<VersionInfo Name="DLL">False</VersionInfo>
@@ -134,16 +84,16 @@
 						<VersionInfo Name="CodePage">1252</VersionInfo>
 					</VersionInfo>
 					<VersionInfoKeys>
-						<VersionInfoKeys Name="CompanyName">Ice Applications</VersionInfoKeys>
-						<VersionInfoKeys Name="FileDescription">Stuff Organizer</VersionInfoKeys>
-						<VersionInfoKeys Name="FileVersion">0.4.4.40</VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
 						<VersionInfoKeys Name="InternalName"/>
 						<VersionInfoKeys Name="LegalCopyright"/>
 						<VersionInfoKeys Name="LegalTrademarks"/>
-						<VersionInfoKeys Name="OriginalFilename">StuffOrganizer.exe</VersionInfoKeys>
-						<VersionInfoKeys Name="ProductName">Stuff Organizer</VersionInfoKeys>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
 						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
-						<VersionInfoKeys Name="Comments">Stuff Organizer</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
 					</VersionInfoKeys>
 					<Excluded_Packages>
 						<Excluded_Packages Name="$(BDS)\bin\dcloffice2k120.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
@@ -158,12 +108,12 @@
 <!-- EurekaLog First Line
 [Exception Log]
 EurekaLog Version=6020
-Activate=1
+Activate=0
 Activate Handle=1
 Save Log File=1
 Foreground Tab=0
 Freeze Activate=0
-Freeze Timeout=60
+Freeze Timeout=0
 SMTP From=eurekalog@email.com
 SMTP Host=
 SMTP Port=25
@@ -636,5 +586,5 @@ Count mtException_AntiFreeze=1
 mtException_AntiFreeze0="The application seems to be frozen."
 Count mtInvalidEmailMsg=1
 mtInvalidEmailMsg0="Invalid email."
-TextsCollection=
+TextsCollection=English
 EurekaLog Last Line -->

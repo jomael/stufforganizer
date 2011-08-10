@@ -2833,16 +2833,7 @@ begin
 end;
 
 initialization
-{  mutexHandle:= CreateMutex(nil, True, PWideChar(ExtractFileName(ParamStr(0))));
-  if GetLastError = ERROR_ALREADY_EXISTS then
-  begin
-    //ShowMessage('Application already running!');
-    SwitchToPrevApp;
-    Halt;
-  end;    }
 
 finalization
- { if mutexHandle <> 0 then
-    CloseHandle(mutexHandle);   }
 
 end.
