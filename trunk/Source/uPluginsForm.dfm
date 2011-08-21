@@ -23,9 +23,6 @@ object PluginsForm: TPluginsForm
     Height = 41
     Align = alBottom
     TabOrder = 0
-    ExplicitLeft = 272
-    ExplicitTop = 280
-    ExplicitWidth = 185
     DesignSize = (
       707
       41)
@@ -52,7 +49,6 @@ object PluginsForm: TPluginsForm
       Caption = 'Close'
       TabOrder = 0
       OnClick = btnOkClick
-      ExplicitLeft = 680
     end
   end
   object GroupBox1: TGroupBox
@@ -66,10 +62,6 @@ object PluginsForm: TPluginsForm
     ParentBackground = False
     ParentColor = False
     TabOrder = 1
-    ExplicitLeft = 272
-    ExplicitTop = 176
-    ExplicitWidth = 185
-    ExplicitHeight = 105
     object Splitter1: TSplitter
       Left = 428
       Top = 15
@@ -86,8 +78,6 @@ object PluginsForm: TPluginsForm
       Height = 306
       Align = alRight
       TabOrder = 0
-      ExplicitLeft = 392
-      ExplicitHeight = 298
       DesignSize = (
         274
         306)
@@ -239,8 +229,6 @@ object PluginsForm: TPluginsForm
       TabOrder = 1
       OnClick = PluginListClick
       OnDrawItem = PluginListDrawItem
-      ExplicitWidth = 523
-      ExplicitHeight = 298
     end
   end
   object pluginIcons: TPngImageList

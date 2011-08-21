@@ -2,7 +2,8 @@ program SOUpdater;
 
 uses
   Forms,
-  uMain in 'uMain.pas' {MainForm};
+  uMain in 'uMain.pas' {MainForm},
+  uConstans in '..\uConstans.pas';
 
 {$R *.res}
 

@@ -862,7 +862,7 @@ end;
 
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
-  Caption := APP_TITLE + ' v' + GetFileVersion();
+  Caption := APP_TITLE + ' v' + GetFileVersion(Application.ExeName, '%d.%d.%d');
   Application.Title := APP_TITLE;
   CoolTrayIcon1.Hint := Caption;
 
@@ -877,7 +877,7 @@ begin
   ConfigXML := TIceXML.Create(nil);
   ConfigXML.EncodeType := 'UTF-8';
   ConfigXML.UseEncode := True;
-  ConfigXML.Filename := ExecPath + CONFIG_FILENAME;
+  ConfigXML.Filename := GetSpecialFolderPath(CSIDL_LOCAL_APPDATA) + CONFIGPATH + CONFIG_FILENAME;
   ConfigXML.NameParamName := 'id';
 
   PreparingProducts := TObjectList<TPreProcessItem>.Create(TComparer<TPreProcessItem>.Default);
@@ -894,7 +894,7 @@ begin
 
   LoadUnprocessedItems;
 
-  CheckOpenWithKeys;
+  //CheckOpenWithKeys; //Installer does it
 end;
 
 procedure TMainForm.FormShow(Sender: TObject);

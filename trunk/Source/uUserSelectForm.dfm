@@ -22,7 +22,6 @@ object UserSelectForm: TUserSelectForm
     Height = 37
     Align = alBottom
     TabOrder = 0
-    ExplicitTop = 277
     DesignSize = (
       598
       37)

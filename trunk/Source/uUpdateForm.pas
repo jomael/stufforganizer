@@ -1,3 +1,21 @@
+(*
+	  This file is part of Stuff Organizer.
+
+    Copyright (C) 2011  Icebob <icebob.apps@gmail.com>
+
+    Stuff Organizer is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Foobar is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Stuff Organizer.  If not, see <http://www.gnu.org/licenses/>.
+*)
 unit uUpdateForm;
 
 interface
@@ -6,7 +24,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, VirtualTrees, Gradient, ExtCtrls, IcePack, IceXML,
   IdBaseComponent, IdComponent, IdTCPConnection, IdTCPClient, IdHTTP, ImgList,
-  PngImageList;
+  PngImageList, uConstans, ShlObj;
 
 type
   PNodeData = ^TNodeData;
@@ -67,6 +85,20 @@ function ShowUpdateForm(Content: TList): boolean;
 implementation
 
 {$R *.dfm}
+
+uses IdCoder, IdCoder3to4, IdCoderMIME, jpeg;
+
+function Base64Decode(const Text : string): string;
+var
+  Decoder : TIdDecoderMime;
+begin
+  Decoder := TIdDecoderMime.Create(nil);
+  try
+    Result := Decoder.DecodeString(Text);
+  finally
+    FreeAndNil(Decoder)
+  end
+end;
 
 function GetReadableModuleName(name: string): string;
 begin
@@ -130,7 +162,7 @@ begin
 
   btnUpdate.Enabled := false;
   Downloading := true;
-  UpdateDir := ExecPath + 'Update\';
+  UpdateDir := GetSpecialFolderPath(CSIDL_LOCAL_APPDATA) + UPDATEPATH;
   ForceDirectories(UpdateDir);
 
   try
@@ -193,7 +225,7 @@ var
   Data: PNodeData;
 begin
   Data := DataList.GetNodeData(Node);
-  mChanges.Lines.Text := Data.XML.GetItemValue('Changes', '');
+  mChanges.Lines.Text := UTF8ToString(Base64Decode(Data.XML.GetItemValue('Changes', '')));
 end;
 
 procedure TUpdateForm.DataListGetImageIndex(Sender: TBaseVirtualTree;

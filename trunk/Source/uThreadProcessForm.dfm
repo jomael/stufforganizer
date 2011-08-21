@@ -172,7 +172,6 @@ object ThreadProcessForm: TThreadProcessForm
     ParentBackground = False
     ParentColor = False
     TabOrder = 2
-    ExplicitTop = 67
     object LogList: TVirtualStringTree
       Left = 2
       Top = 15
@@ -187,7 +186,6 @@ object ThreadProcessForm: TThreadProcessForm
       Header.Font.Name = 'Tahoma'
       Header.Font.Style = []
       Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible]
-      StateImages = MainForm.stateImages
       TabOrder = 0
       TreeOptions.MiscOptions = [toAcceptOLEDrop, toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning]
       TreeOptions.SelectionOptions = [toFullRowSelect]

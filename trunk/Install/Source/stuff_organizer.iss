@@ -2,7 +2,7 @@
 SetupIconFile=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\Images\stuff_organizer_icon_all.ico
 AppCopyright=Ice Apps
 AppName=Stuff Organizer
-AppVerName=v0.5.0.0
+AppVerName=v0.4.5
 DefaultDirName={pf}\Stuff Organizer\
 OutputDir=C:\Work\Project\__D2009Projects__\StuffOrganizer\Install\Bin
 OutputBaseFilename=setup_stuff_organizer
@@ -11,13 +11,17 @@ DefaultGroupName=Stuff Organizer
 AppPublisherURL=http://stufforganizer.sourceforge.net/
 AppSupportURL=http://stufforganizer.sourceforge.net/
 AppUpdatesURL=http://stufforganizer.sourceforge.net/
-VersionInfoVersion=0.5.0.0
+VersionInfoVersion=0.4.5
 VersionInfoCompany=Ice Apps
 VersionInfoDescription=Stuff Organizer
-VersionInfoTextVersion=v0.5.0.0
+VersionInfoTextVersion=0.4.5
 VersionInfoCopyright=Ice Apps
 VersionInfoProductName=Stuff Organizer
-VersionInfoProductVersion=0.5.0.0
+VersionInfoProductVersion=0.4.5
+UninstallDisplayName=Stuff Organizer
+AppVersion=0.4.5
+UninstallDisplayIcon={app}\StuffOrganizer.exe
+AppPublisher=Ice Apps
 
 [Files]
 Source: ..\..\Bin\License; DestDir: {app};
@@ -28,16 +32,26 @@ Source: ..\..\Bin\StuffOrganizer.exe; DestDir: {app};
 Source: ..\..\Bin\Plugins\unpack_7z.sop; DestDir: {app}\Plugins; 
 Source: ..\..\Bin\Plugins\unpack_rar.sop; DestDir: {app}\Plugins; 
 Source: ..\..\Bin\Plugins\unpack_zip.sop; DestDir: {app}\Plugins; 
+Source: ..\..\Bin\Plugins\allrovi.sop; DestDir: {app}\Plugins; 
 
 [Icons]
 Name: "{group}\Stuff Organizer"; Filename: {app}\StuffOrganizer.exe; WorkingDir: {app}; IconFilename: {app}\StuffOrganizer.exe;
 Name: "{userdesktop}\Stuff Organizer"; Filename: {app}\StuffOrganizer.exe; WorkingDir: {app}; IconFilename: {app}\StuffOrganizer.exe; Tasks: "DesktopIcon"; 
 
 [Run]
-Filename: {app}\StuffOrganizer.exe; WorkingDir: {app}; Flags: PostInstall ShellExec; 
+Filename: {app}\StuffOrganizer.exe; WorkingDir: {app}; Flags: PostInstall ShellExec; Description: "Run program"; 
 
 [Tasks]
 Name: DesktopIcon; Description: "Create a desktop icon"; 
 
 [InnoIDE_Settings]
 UseRelativePaths=true
+
+[Registry]
+Root: HKCR; SubKey: "*\shell\Add to Stuff Organizer library"; Flags: UninsDeleteKey;
+Root: HKCR; SubKey: "*\shell\Add to Stuff Organizer library\command"; ValueType: string; ValueData: """{app}\StuffOrganizer.exe"" ""%1"""; Flags: UninsDeleteKey;
+Root: HKCR; SubKey: "Folder\shell\Add to Stuff Organizer library"; Flags: UninsDeleteKey;
+Root: HKCR; SubKey: "Folder\shell\Add to Stuff Organizer library\command"; ValueType: string; ValueData: """{app}\StuffOrganizer.exe"" ""%1"""; Flags: UninsDeleteKey;
+
+[UninstallDelete]
+Name: {app}\Plugins; Type: filesandordirs;

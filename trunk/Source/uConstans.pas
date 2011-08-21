@@ -27,6 +27,8 @@ uses
 const
   APP_TITLE                   = 'Stuff Organizer';
 
+  CONFIGPATH                  = '\Stuff Organizer\';
+  UPDATEPATH                  = '\Stuff Organizer\Update\';
   DBPATH                      = '\Stuff Organizer\Database\';
   MAINDBFILENAME              = 'main.db';
   INFODBFILENAME              = 'productinfo.db';
