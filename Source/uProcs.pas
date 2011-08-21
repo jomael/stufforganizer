@@ -70,16 +70,16 @@ var
 begin
   try
     try
-    reg := TRegistry.Create;
-    reg.RootKey := HKEY_CLASSES_ROOT;
+      reg := TRegistry.Create;
+      reg.RootKey := HKEY_CLASSES_ROOT;
 
-    reg.OpenKey('*\shell\Add to Stuff Organizer library\command', true);
-    reg.WriteString('', Application.ExeName + ' "%1"');
-    reg.CloseKey;
+      reg.OpenKey('*\shell\Add to Stuff Organizer library\command', true);
+      reg.WriteString('', Application.ExeName + ' "%1"');
+      reg.CloseKey;
 
-    reg.OpenKey('Folder\shell\Add to Stuff Organizer library\command', true);
-    reg.WriteString('', Application.ExeName + ' "%1"');
-    reg.CloseKey;
+      reg.OpenKey('Folder\shell\Add to Stuff Organizer library\command', true);
+      reg.WriteString('', Application.ExeName + ' "%1"');
+      reg.CloseKey;
 
     finally
       reg.Free;
@@ -110,7 +110,9 @@ var
   updateList: TList;
   I: Integer;
   plgName: string;
+  updateDir: string;
 begin
+  updateDir := GetSpecialFolderPath(CSIDL_LOCAL_APPDATA) + UPDATEPATH;
   updateList := TList.Create;
   http := TIdHTTP.Create(nil);
   xml := TIceXML.Create(nil);
@@ -162,7 +164,12 @@ begin
                 DeleteFile(PWideChar(updateFile));
               IcePack.ExtractResource('UPDATE_EXE', updateFile);
               if FileExists(updateFile) then
-                ShellExecute(0, 'open', PWideChar(updateFile), PWideChar(ExecPath), '', SW_SHOW);
+              begin
+                if CheckWin32Version(6) then //greater or equal than Vista
+                  RunAsAdmin(Application.Handle, updateFile, '"' + ExecPath + '"')
+                else
+                  ShellExecute(0, 'open', PWideChar(updateFile), PWideChar('"' + ExecPath + '"'), '', SW_SHOW);
+              end;
 
               Application.Terminate;
             end;

@@ -21,9 +21,6 @@
 			<Projects Include="Modules\unpack_zip\unpack_zip.dproj">
 				<Dependencies/>
 			</Projects>
-			<Projects Include="Modules\allmovie\allrovi.dproj">
-				<Dependencies/>
-			</Projects>
 			<Projects Include="Modules\port_hu\port_hu.dproj">
 				<Dependencies/>
 			</Projects>
@@ -31,6 +28,9 @@
 				<Dependencies/>
 			</Projects>
 			<Projects Include="..\TorIdentity\TorNewIdentity.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Modules\allrovi\allrovi.dproj">
 				<Dependencies/>
 			</Projects>
 		</ItemGroup>
@@ -95,15 +95,6 @@
 		<Target Name="unpack_zip:Make">
 			<MSBuild Targets="Make" Projects="Modules\unpack_zip\unpack_zip.dproj"/>
 		</Target>
-		<Target Name="allrovi">
-			<MSBuild Projects="Modules\allmovie\allrovi.dproj"/>
-		</Target>
-		<Target Name="allrovi:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\allmovie\allrovi.dproj"/>
-		</Target>
-		<Target Name="allrovi:Make">
-			<MSBuild Targets="Make" Projects="Modules\allmovie\allrovi.dproj"/>
-		</Target>
 		<Target Name="port_hu">
 			<MSBuild Projects="Modules\port_hu\port_hu.dproj"/>
 		</Target>
@@ -131,14 +122,23 @@
 		<Target Name="TorNewIdentity:Make">
 			<MSBuild Targets="Make" Projects="..\TorIdentity\TorNewIdentity.dproj"/>
 		</Target>
+		<Target Name="allrovi">
+			<MSBuild Projects="Modules\allrovi\allrovi.dproj"/>
+		</Target>
+		<Target Name="allrovi:Clean">
+			<MSBuild Targets="Clean" Projects="Modules\allrovi\allrovi.dproj"/>
+		</Target>
+		<Target Name="allrovi:Make">
+			<MSBuild Targets="Make" Projects="Modules\allrovi\allrovi.dproj"/>
+		</Target>
 		<Target Name="Build">
-			<CallTarget Targets="StuffOrganizer;StuffOrganizerTests;DirLister;unpack_7z;unpack_rar;unpack_zip;allrovi;port_hu;SOUpdater;TorNewIdentity"/>
+			<CallTarget Targets="StuffOrganizer;StuffOrganizerTests;DirLister;unpack_7z;unpack_rar;unpack_zip;port_hu;SOUpdater;TorNewIdentity;allrovi"/>
 		</Target>
 		<Target Name="Clean">
-			<CallTarget Targets="StuffOrganizer:Clean;StuffOrganizerTests:Clean;DirLister:Clean;unpack_7z:Clean;unpack_rar:Clean;unpack_zip:Clean;allrovi:Clean;port_hu:Clean;SOUpdater:Clean;TorNewIdentity:Clean"/>
+			<CallTarget Targets="StuffOrganizer:Clean;StuffOrganizerTests:Clean;DirLister:Clean;unpack_7z:Clean;unpack_rar:Clean;unpack_zip:Clean;port_hu:Clean;SOUpdater:Clean;TorNewIdentity:Clean;allrovi:Clean"/>
 		</Target>
 		<Target Name="Make">
-			<CallTarget Targets="StuffOrganizer:Make;StuffOrganizerTests:Make;DirLister:Make;unpack_7z:Make;unpack_rar:Make;unpack_zip:Make;allrovi:Make;port_hu:Make;SOUpdater:Make;TorNewIdentity:Make"/>
+			<CallTarget Targets="StuffOrganizer:Make;StuffOrganizerTests:Make;DirLister:Make;unpack_7z:Make;unpack_rar:Make;unpack_zip:Make;port_hu:Make;SOUpdater:Make;TorNewIdentity:Make;allrovi:Make"/>
 		</Target>
 		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 	</Project>

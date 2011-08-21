@@ -1184,6 +1184,7 @@ object MainForm: TMainForm
         Caption = 'ToolButton5'
         ImageIndex = 5
         Style = tbsSeparator
+        Visible = False
       end
       object ToolButton6: TToolButton
         Left = 332
