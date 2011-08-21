@@ -1,7 +1,7 @@
 (*
 	  This file is part of Stuff Organizer.
 
-    Copyright (C) 2011  Icebob <icebob.apps@gmail.com>
+    Copyright (C) 2011  Ice Apps <so.iceapps@gmail.com>
 
     Stuff Organizer is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -83,7 +83,7 @@ begin
   result.Version := '1.0.0.0';
   result.InterfaceVersion := 1;
   result.VersionDate := '2010-04-16';
-  result.MinimumVersion := '0.4.2.0';
+  result.MinimumVersion := '0.4.5.0';
 end;
 
 function PluginSetup(): boolean; stdcall;

@@ -1,3 +1,22 @@
+(*
+	  This file is part of Stuff Organizer.
+
+    Copyright (C) 2011  Ice Apps <so.iceapps@gmail.com>
+
+    Stuff Organizer is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Foobar is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Stuff Organizer.  If not, see <http://www.gnu.org/licenses/>.
+*)
+
 library allrovi;
 
 uses
@@ -41,7 +60,7 @@ begin
   result.Version := '1.0.0.0';
   result.InterfaceVersion := 1;
   result.VersionDate := '2011-08-10';
-  result.MinimumVersion := '0.4.2.0';
+  result.MinimumVersion := '0.4.5.0';
 end;
 
 function PluginSetup(): boolean; stdcall;
