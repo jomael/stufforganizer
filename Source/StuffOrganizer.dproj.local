@@ -33,5 +33,7 @@
     <Transaction>2011.04.19 20:19:56.641.pas,c:\Work\Project\__D2009Projects__\StuffOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\uProcs.pas</Transaction>
     <Transaction>2011.07.07 21:19:08.292.pas,c:\Work\Project\__D2009Projects__\StuffOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\uUpdateForm.pas</Transaction>
     <Transaction>2011.07.07 21:19:08.292.dfm,c:\Work\Project\__D2009Projects__\StuffOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\uUpdateForm.dfm</Transaction>
+    <Transaction>2011.08.29 20:14:42.821.pas,c:\Work\Project\__D2009Projects__\StuffOrganizer\Source\Unit1.pas=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\uAboutForm.pas</Transaction>
+    <Transaction>2011.08.29 20:14:42.821.dfm,c:\Work\Project\__D2009Projects__\StuffOrganizer\Source\Unit1.dfm=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\uAboutForm.dfm</Transaction>
   </Transactions>
 </BorlandProject>
