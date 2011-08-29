@@ -20,7 +20,7 @@ VersionInfoProductName=Stuff Organizer
 VersionInfoProductVersion=0.4.5
 UninstallDisplayName=Stuff Organizer
 AppVersion=0.4.5
-UninstallDisplayIcon={app}\StuffOrganizer.exe
+;UninstallDisplayIcon={app}\StuffOrganizer.exe
 AppPublisher=Ice Apps
 
 [Files]
@@ -33,9 +33,12 @@ Source: ..\..\Bin\Plugins\unpack_7z.sop; DestDir: {app}\Plugins;
 Source: ..\..\Bin\Plugins\unpack_rar.sop; DestDir: {app}\Plugins; 
 Source: ..\..\Bin\Plugins\unpack_zip.sop; DestDir: {app}\Plugins; 
 Source: ..\..\Bin\Plugins\allrovi.sop; DestDir: {app}\Plugins; 
+Source: ..\..\Source\homepage.url; DestDir: "{app}";
 
 [Icons]
 Name: "{group}\Stuff Organizer"; Filename: {app}\StuffOrganizer.exe; WorkingDir: {app}; IconFilename: {app}\StuffOrganizer.exe;
+Name: "{group}\Visit homepage"; Filename: {app}\homepage.url;
+Name: "{group}\Uninstall Stuff Organizer"; Filename: {uninstallexe};
 Name: "{userdesktop}\Stuff Organizer"; Filename: {app}\StuffOrganizer.exe; WorkingDir: {app}; IconFilename: {app}\StuffOrganizer.exe; Tasks: "DesktopIcon"; 
 
 [Run]

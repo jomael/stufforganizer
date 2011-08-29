@@ -332,7 +332,7 @@ implementation
 uses
   uPreprocessDirs, uCategories, DateUtils, uProgress, uNFOForm,
   uThreadProcessForm, uProcessThread, uOptionsForm, uPluginClasses,
-  uPluginsForm, CodePages, uProcs, JclAppInst;
+  uPluginsForm, CodePages, uProcs, JclAppInst, uAboutForm;
 
 {$R *.dfm}
 
@@ -341,7 +341,7 @@ uses
  {$REGION 'Action methods'}
 procedure TMainForm.aAboutExecute(Sender: TObject);
 begin
-  //
+  AboutForm.ShowModal;
 end;
 
 procedure TMainForm.aAddDirectoryExecute(Sender: TObject);

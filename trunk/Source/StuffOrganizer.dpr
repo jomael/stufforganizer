@@ -40,7 +40,8 @@ uses
   uPluginsForm in 'uPluginsForm.pas' {PluginsForm},
   uUserSelectForm in 'uUserSelectForm.pas' {UserSelectForm},
   uProcs in 'uProcs.pas',
-  uUpdateForm in 'uUpdateForm.pas' {UpdateForm};
+  uUpdateForm in 'uUpdateForm.pas' {UpdateForm},
+  uAboutForm in 'uAboutForm.pas' {AboutForm};
 
 {$R *.res}
 
@@ -58,6 +59,7 @@ begin
   Application.CreateForm(TOptionsForm, OptionsForm);
   Application.CreateForm(TPluginsForm, PluginsForm);
   Application.CreateForm(TUpdateForm, UpdateForm);
+  Application.CreateForm(TAboutForm, AboutForm);
   //  Application.CreateForm(TUserSelectForm, UserSelectForm);
   Application.Run;
 end.
