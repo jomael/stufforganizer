@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Gradient, uProcs, StdCtrls, pngimage, ExtCtrls, ComCtrls, ShellAPI,
-  IcePack;
+  IcePack, RichEditURL;
 
 type
   TAboutForm = class(TForm)
@@ -16,7 +16,7 @@ type
     Label3: TLabel;
     lHomePage: TLabel;
     bOK: TButton;
-    RichEdit1: TRichEdit;
+    mLicenses: TRichEditURL;
     lEmail: TLabel;
     bCheckUpdate: TLabel;
     Label2: TLabel;
@@ -27,6 +27,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure bCheckUpdateClick(Sender: TObject);
     procedure lGPLClick(Sender: TObject);
+    procedure mLicensesURLClick(Sender: TObject; const URL: string);
   private
     { Private declarations }
   public
@@ -53,6 +54,7 @@ end;
 procedure TAboutForm.FormShow(Sender: TObject);
 begin
   lVersion.Caption := IcePack.GetFileVersion('', 'Version %d.%d.%d ( Build %d )');
+  mLicenses.Lines.Text := mLicenses.Lines.Text + ' '; //URL
 end;
 
 procedure TAboutForm.lEmailClick(Sender: TObject);
@@ -68,6 +70,11 @@ end;
 procedure TAboutForm.lHomePageClick(Sender: TObject);
 begin
   OpenURL(TLabel(Sender).Caption);
+end;
+
+procedure TAboutForm.mLicensesURLClick(Sender: TObject; const URL: string);
+begin
+  OpenURL(URL);
 end;
 
 end.

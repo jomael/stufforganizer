@@ -12,6 +12,7 @@ object AboutForm: TAboutForm
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poMainFormCenter
   OnShow = FormShow
   DesignSize = (
     556
@@ -383,10 +384,8 @@ object AboutForm: TAboutForm
     Caption = 'OK'
     TabOrder = 0
     OnClick = bOKClick
-    ExplicitLeft = 463
-    ExplicitTop = 285
   end
-  object RichEdit1: TRichEdit
+  object mLicenses: TRichEditURL
     Left = 8
     Top = 153
     Width = 540
@@ -400,11 +399,12 @@ object AboutForm: TAboutForm
     Lines.Strings = (
       'This program is using the following libraries and programs:'
       ''
-      'SQLite'
+      'SQLite database'
       'http://www.sqlite.org'
       ''
       'TurboPower'
-      'Copyright (C) 1997-2002 TurboPower Software'
+      'Copyright (C) 1997-2002 '
+      'TurboPower Software'
       'http://tpabbrevia.sourceforge.net/'
       ''
       'Unrar.dll delphi component'
@@ -428,7 +428,9 @@ object AboutForm: TAboutForm
       'AllRovi.com descriptor script'
       'Original code written by Chetan Rao')
     ParentFont = False
+    ReadOnly = True
     ScrollBars = ssVertical
     TabOrder = 1
+    OnURLClick = mLicensesURLClick
   end
 end

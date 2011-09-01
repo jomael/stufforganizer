@@ -20,6 +20,7 @@
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UsePackage>vclx;vcl;dbrtl;Rave76VCL;bdertl;rtl;vclactnband;vcldb;vcldbx;dsnap;dsnapcon;TeeUI;TeeDB;Tee;adortl;vclib;ibxpress;IndyCore;IndySystem;IndyProtocols;xmlrtl;inet;intrawebdb_100_120;Intraweb_100_120;VclSmp;vclie;websnap;webdsnap;inetdbbde;inetdbxpress;soaprtl;vclribbon;dbexpress;DbxCommonDriver;DataSnapIndy10ServerTransport;DataSnapProviderClient;DataSnapServer;DbxClientDriver;DBXInterBaseDriver;DBXMySQLDriver;dbxcds;DBXSybaseASEDriver;DBXSybaseASADriver;DBXOracleDriver;DBXMSSQLDriver;DBXInformixDriver;DBXDb2Driver;PerlRegExD2009;Jcl;JclVcl;JvCoreD12R;JvSystemD12R;JvStdCtrlsD12R;JvAppFrmD12R;JvBandsD12R;JvDBD12R;JvDlgsD12R;JvBDED12R;JvCmpD12R;JvCryptD12R;JvCtrlsD12R;JvCustomD12R;JvDockingD12R;JvDotNetCtrlsD12R;JvEDID12R;JvGlobusD12R;JvHMID12R;JvInterpreterD12R;JvJansD12R;JvManagedThreadsD12R;JvMMD12R;JvNetD12R;JvPageCompsD12R;JvPluginD12R;JvPrintPreviewD12R;JvRuntimeDesignD12R;JvTimeFrameworkD12R;JvValidatorsD12R;JvWizardD12R;JvXPCtrlsD12R;PngComponents;DSPack_D12;DirectX9_D12;GR32_BDS2009;OverbyteIcsD2009Run;IceSocketPackage;IcePackageLite;IcePropertyEditorD;NDSPackage;IcePackageEx;RARComponent_d2009;B305vr2009;VirtualTreesD12</DCC_UsePackage>
 			<DCC_ExeOutput>..\Bin\</DCC_ExeOutput>
 			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
 			<DCC_DependencyCheckOutputName>..\Bin\StuffOrganizer.exe</DCC_DependencyCheckOutputName>
@@ -35,7 +36,7 @@
 		<PropertyGroup Condition="'$(Cfg_2)'!=''">
 			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
 			<DCC_MapFile>3</DCC_MapFile>
-			<DCC_Define>DEBUG;EUREKALOG;EUREKALOG_VER6;$(DCC_Define)</DCC_Define>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
 		</PropertyGroup>
 		<ItemGroup>
 			<DelphiCompile Include="StuffOrganizer.dpr">
@@ -127,7 +128,7 @@
 						<VersionInfo Name="MajorVer">0</VersionInfo>
 						<VersionInfo Name="MinorVer">4</VersionInfo>
 						<VersionInfo Name="Release">5</VersionInfo>
-						<VersionInfo Name="Build">45</VersionInfo>
+						<VersionInfo Name="Build">46</VersionInfo>
 						<VersionInfo Name="Debug">False</VersionInfo>
 						<VersionInfo Name="PreRelease">True</VersionInfo>
 						<VersionInfo Name="Special">False</VersionInfo>
@@ -139,7 +140,7 @@
 					<VersionInfoKeys>
 						<VersionInfoKeys Name="CompanyName">Ice Applications</VersionInfoKeys>
 						<VersionInfoKeys Name="FileDescription">Stuff Organizer</VersionInfoKeys>
-						<VersionInfoKeys Name="FileVersion">0.4.5.45</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">0.4.5.46</VersionInfoKeys>
 						<VersionInfoKeys Name="InternalName"/>
 						<VersionInfoKeys Name="LegalCopyright"/>
 						<VersionInfoKeys Name="LegalTrademarks"/>
@@ -149,6 +150,11 @@
 						<VersionInfoKeys Name="Comments">Stuff Organizer</VersionInfoKeys>
 					</VersionInfoKeys>
 					<Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxLibraryD12.bpl">Express Cross Platform Library by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxEditorsD12.bpl">ExpressEditors Library 5 by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxExtEditorsD12.bpl">ExpressExtendedEditors Library 5 by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxTreeListD12.bpl">ExpressQuantumTreeList 4 by Developer Express Inc.</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dcldxNavBarD12.bpl">ExpressNavBar 2 by Developer Express Inc.</Excluded_Packages>
 						<Excluded_Packages Name="$(BDS)\bin\dcloffice2k120.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
 						<Excluded_Packages Name="$(BDS)\bin\dclofficexp120.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
 					</Excluded_Packages>
@@ -161,7 +167,7 @@
 <!-- EurekaLog First Line
 [Exception Log]
 EurekaLog Version=6020
-Activate=1
+Activate=0
 Activate Handle=1
 Save Log File=1
 Foreground Tab=0

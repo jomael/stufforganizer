@@ -1,5 +1,5 @@
 [Setup]
-SetupIconFile=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\Images\stuff_organizer_icon_all.ico
+;SetupIconFile=C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\Images\stuff_organizer_icon_all.ico
 AppCopyright=Ice Apps
 AppName=Stuff Organizer
 AppVerName=v0.4.5
@@ -22,6 +22,10 @@ UninstallDisplayName=Stuff Organizer
 AppVersion=0.4.5
 ;UninstallDisplayIcon={app}\StuffOrganizer.exe
 AppPublisher=Ice Apps
+MinVersion=,5.1.2600
+ShowLanguageDialog=auto
+LicenseFile=..\..\Bin\License
+WizardSmallImageFile=..\..\Source\Images\stuff_organizer_icon_55.bmp
 
 [Files]
 Source: ..\..\Bin\License; DestDir: {app};
@@ -33,11 +37,11 @@ Source: ..\..\Bin\Plugins\unpack_7z.sop; DestDir: {app}\Plugins;
 Source: ..\..\Bin\Plugins\unpack_rar.sop; DestDir: {app}\Plugins; 
 Source: ..\..\Bin\Plugins\unpack_zip.sop; DestDir: {app}\Plugins; 
 Source: ..\..\Bin\Plugins\allrovi.sop; DestDir: {app}\Plugins; 
-Source: ..\..\Source\homepage.url; DestDir: "{app}";
+Source: ..\..\Source\Homepage.url; DestDir: {group};
 
 [Icons]
 Name: "{group}\Stuff Organizer"; Filename: {app}\StuffOrganizer.exe; WorkingDir: {app}; IconFilename: {app}\StuffOrganizer.exe;
-Name: "{group}\Visit homepage"; Filename: {app}\homepage.url;
+;Name: "{group}\Visit homepage"; Filename: {app}\homepage.url;
 Name: "{group}\Uninstall Stuff Organizer"; Filename: {uninstallexe};
 Name: "{userdesktop}\Stuff Organizer"; Filename: {app}\StuffOrganizer.exe; WorkingDir: {app}; IconFilename: {app}\StuffOrganizer.exe; Tasks: "DesktopIcon"; 
 

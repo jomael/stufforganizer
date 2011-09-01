@@ -22,7 +22,6 @@ program StuffOrganizer;
 {$R *.dres}
 
 uses
-  ExceptionLog,
   Forms,
   JclAppInst,
   uMain in 'uMain.pas' {MainForm},
