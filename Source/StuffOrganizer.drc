@@ -1863,7 +1863,6 @@ BEGIN
 END
 
 /* c:\program files\codegear\rad studio\6.0\lib\character.res */
-/* C:\Work\Project\__D2009Projects__\__Components__\EurekaLog 6\EurekaLog 6\Delphi12\DIALOG.RES */
 /* c:\program files\codegear\rad studio\6.0\lib\Buttons.res */
 /* c:\program files\codegear\rad studio\6.0\lib\ExtDlgs.res */
 /* c:\program files\codegear\rad studio\6.0\lib\Controls.res */
@@ -1871,19 +1870,19 @@ END
 /* c:\program files\codegear\rad studio\6.0\lib\FileCtrl.res */
 /* C:\Work\Project\__D2009Projects__\__Components__\Virtual Treeview\Source\VirtualTrees.res */
 /* uUpdateForm.dfm */
-/* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\uAboutForm.dfm */
+/* uAboutForm.dfm */
+/* uPluginsForm.dfm */
+/* uOptionsForm.dfm */
 /* C:\Work\Project\__D2009Projects__\IcePackage\IcePackageEx\uProgress.dfm */
+/* uPreprocessDirs.dfm */
 /* uPasswordForm.dfm */
 /* uThreadProcessForm.dfm */
-/* uPreprocessDirs.dfm */
+/* uNFOForm.dfm */
 /* C:\Work\Project\__D2009Projects__\__Components__\jvcl\Resources\JvToolEdit.res */
 /* uCategories.dfm */
-/* uNFOForm.dfm */
-/* uOptionsForm.dfm */
-/* uPluginsForm.dfm */
-/* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\uMain.dfm */
-/* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\StuffOrganizer.rec */
 /* uUserSelectForm.dfm */
+/* uMain.dfm */
+/* StuffOrganizer.rec */
 /* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\StuffOrganizer.dres */
 /* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\StuffOrganizer.res */
 /* C:\Work\Project\__D2009Projects__\StuffOrganizer\Source\StuffOrganizer.drf */
