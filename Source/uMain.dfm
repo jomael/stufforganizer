@@ -1029,7 +1029,7 @@ object MainForm: TMainForm
         ParentFont = False
         OnClick = bShowNFOClick
       end
-      object Label2: TLabel
+      object bAddNFO: TLabel
         Left = 0
         Top = 20
         Width = 170
@@ -1045,7 +1045,7 @@ object MainForm: TMainForm
         Font.Name = 'Tahoma'
         Font.Style = [fsUnderline]
         ParentFont = False
-        OnClick = bShowNFOClick
+        OnClick = bAddNFOClick
       end
       object Bevel3: TBevel
         Left = 0
@@ -6266,5 +6266,11 @@ object MainForm: TMainForm
     OnCmdLineReceived = JvAppInstances1CmdLineReceived
     Left = 360
     Top = 256
+  end
+  object NFODialog: TOpenDialog
+    Filter = 'NFO files (*.nfo)|*.nfo'
+    FilterIndex = 0
+    Left = 936
+    Top = 392
   end
 end

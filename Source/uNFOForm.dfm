@@ -30,5 +30,15 @@ object NFOForm: TNFOForm
     ReadOnly = True
     ScrollBars = ssBoth
     TabOrder = 0
+    OnKeyPress = mNFOKeyPress
+  end
+  object FontDialog1: TFontDialog
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Left = 224
+    Top = 208
   end
 end
