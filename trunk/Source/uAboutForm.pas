@@ -21,6 +21,7 @@ type
     bCheckUpdate: TLabel;
     Label2: TLabel;
     lGPL: TLabel;
+    iDonate: TImage;
     procedure lHomePageClick(Sender: TObject);
     procedure bOKClick(Sender: TObject);
     procedure lEmailClick(Sender: TObject);
@@ -28,6 +29,7 @@ type
     procedure bCheckUpdateClick(Sender: TObject);
     procedure lGPLClick(Sender: TObject);
     procedure mLicensesURLClick(Sender: TObject; const URL: string);
+    procedure iDonateClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,6 +57,11 @@ procedure TAboutForm.FormShow(Sender: TObject);
 begin
   lVersion.Caption := IcePack.GetFileVersion('', 'Version %d.%d.%d ( Build %d )');
   mLicenses.Lines.Text := mLicenses.Lines.Text + ' '; //URL
+end;
+
+procedure TAboutForm.iDonateClick(Sender: TObject);
+begin
+  OpenURL('http://sourceforge.net/donate/index.php?group_id=534563');
 end;
 
 procedure TAboutForm.lEmailClick(Sender: TObject);

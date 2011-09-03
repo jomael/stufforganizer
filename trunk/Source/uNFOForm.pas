@@ -28,6 +28,8 @@ uses
 type
   TNFOForm = class(TForm)
     mNFO: TMemo;
+    FontDialog1: TFontDialog;
+    procedure mNFOKeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -51,6 +53,16 @@ begin
     NFOForm.Show
   else
     NFOForm.BringToFront;
+end;
+
+procedure TNFOForm.mNFOKeyPress(Sender: TObject; var Key: Char);
+begin
+{  if Key = 'c' then
+  begin
+    FontDialog1.Font.Assign(mNFO.Font);
+    if FontDialog1.Execute then
+      mNFO.Font.Assign(FontDialog1.Font);
+  end;}
 end;
 
 end.

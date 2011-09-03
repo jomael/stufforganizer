@@ -78,7 +78,7 @@ type
     DescrFuncPanel: TPanel;
     Gradient3: TGradient;
     bShowNFO: TLabel;
-    Label2: TLabel;
+    bAddNFO: TLabel;
     Bevel3: TBevel;
     alToolbar: TActionList;
     aAddFile: TAction;
@@ -151,6 +151,7 @@ type
     Visithomepage1: TMenuItem;
     Checknewversion1: TMenuItem;
     JvAppInstances1: TJvAppInstances;
+    NFODialog: TOpenDialog;
 
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -238,6 +239,7 @@ type
     procedure JvAppInstances1CmdLineReceived(Sender: TObject;
       CmdLine: TStrings);
     procedure aCheckNewVersionExecute(Sender: TObject);
+    procedure bAddNFOClick(Sender: TObject);
   private
     //Database methods
     procedure CreateMainDB;
@@ -731,6 +733,39 @@ begin
 end;
 
 
+
+procedure TMainForm.bAddNFOClick(Sender: TObject);
+var
+  Data: PNodeProduct;
+  FS: TFileStream;
+  count: integer;
+begin
+  NFODialog.FilterIndex := 0;
+  if NFODialog.Execute(Application.Handle) then
+  begin
+    if Assigned(VList.FocusedNode) then
+    begin
+      Data := VList.GetNodeData(VList.FocusedNode);
+      FS := TFileStream.Create(NFODialog.FileName, fmOpenRead);
+      LockDB;
+      try
+        InfoDB.AddParamInt(':id', Data.ID);
+        count := InfoDB.GetTableValue('select count(*) from ProductInfo where product_id = :id');
+
+        InfoDB.AddParamInt(':id', Data.ID);
+        InfoDB.AddParamBlob(':data', FS);
+        if count > 0 then
+          InfoDB.ExecSQL('update ProductInfo set nfo = :data where product_id = :id')
+        else
+          InfoDB.ExecSQL('insert into ProductInfo (product_id, nfo) values (:id, :data);');
+      finally
+        FS.Free;
+        UnlockDB;
+      end;
+      LoadProductInfoToNode(Data^);
+    end;
+  end;
+end;
 
 procedure TMainForm.bChangePictureClick(Sender: TObject);
 var
