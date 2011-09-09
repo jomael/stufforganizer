@@ -275,6 +275,7 @@ type
     procedure DescriptorPluginClick(Sender: TObject);
 
     function FirstLine(S: string): string;
+    procedure LoadImageToProduct(FileName: string; Node: PVirtualNode);
     { Private declarations }
   protected
     procedure AcceptFiles( var msg : TMessage ); message WM_DROPFILES;
@@ -625,8 +626,8 @@ var
   ctrl: TWinControl;
   Node: PVirtualNode;
   Data: PNodeCategory;
-  Pos: TPoint;
   CategoryID: integer;
+  FS: TFileStream;
 begin
   CategoryID := -1;
   ctrl := FindVCLWindow(Mouse.CursorPos);
@@ -646,16 +647,56 @@ begin
   Files := TStringList.Create;
   nCount := DragQueryFile( msg.WParam, $FFFFFFFF, acFileName, cnMaxFileNameLen );
 
-  for i := 0 to nCount-1 do
+  if (ctrl = DescrImagePanel) and (nCount = 1) and Assigned(FilterList.FocusedNode) then
   begin
-    DragQueryFile( msg.WParam, i, acFileName, cnMaxFileNameLen );
-    Files.Add(acFileName);
+    DragQueryFile( msg.WParam, 0, acFileName, cnMaxFileNameLen );
+    if Pos(ExtractFileExt(acFileName), GraphicFileMask(TGraphic)) > 0 then
+    begin
+      //Add image to selected node
+      LoadImageToProduct(acFileName, FilterList.FocusedNode);
+    end;
+  end
+  else
+  begin
+    for i := 0 to nCount-1 do
+    begin
+      DragQueryFile( msg.WParam, i, acFileName, cnMaxFileNameLen );
+      Files.Add(acFileName);
+    end;
   end;
   DragFinish( msg.WParam );
 
   Application.BringToFront;
   MainForm.PreparingNewFiles(Files, CategoryID);
   Files.Free;
+end;
+
+procedure TMainForm.LoadImageToProduct(FileName: string; Node: PVirtualNode);
+var
+  Data: PNodeProduct;
+  FS: TFileStream;
+  count: integer;
+begin
+  Data := VList.GetNodeData(VList.FocusedNode);
+  FS := TFileStream.Create(FileName, fmOpenRead);
+  LockDB;
+  try
+    InfoDB.AddParamInt(':id', Data.ID);
+    count := InfoDB.GetTableValue('select count(*) from ProductImage where product_id = :id');
+
+    InfoDB.AddParamInt(':id', Data.ID);
+    InfoDB.AddParamText(':filename', UTF8Encode(ExtractFileName(FileName)));
+    InfoDB.AddParamBlob(':data', FS);
+    if count > 0 then
+      InfoDB.ExecSQL('update ProductImage set filename = :filename, data = :data where product_id = :id')
+    else
+      InfoDB.ExecSQL('insert into ProductImage (product_id, filename, data) values (:id, :filename, :data);');
+  finally
+    FS.Free;
+    UnlockDB;
+  end;
+  LoadProductInfoToNode(Data^);
+
 end;
 
 procedure TMainForm.AddItemsFromOtherProcess(var msg: TMessage);
@@ -771,33 +812,12 @@ procedure TMainForm.bChangePictureClick(Sender: TObject);
 var
   Data: PNodeProduct;
   FS: TFileStream;
-  count: integer;
 begin
   PictureDialog.Filter := GraphicFilter(TGraphic);
   if PictureDialog.Execute(Application.Handle) then
   begin
     if Assigned(VList.FocusedNode) then
-    begin
-      Data := VList.GetNodeData(VList.FocusedNode);
-      FS := TFileStream.Create(PictureDialog.FileName, fmOpenRead);
-      LockDB;
-      try
-        InfoDB.AddParamInt(':id', Data.ID);
-        count := InfoDB.GetTableValue('select count(*) from ProductImage where product_id = :id');
-
-        InfoDB.AddParamInt(':id', Data.ID);
-        InfoDB.AddParamText(':filename', UTF8Encode(ExtractFileName(PictureDialog.FileName)));
-        InfoDB.AddParamBlob(':data', FS);
-        if count > 0 then
-          InfoDB.ExecSQL('update ProductImage set filename = :filename, data = :data where product_id = :id')
-        else
-          InfoDB.ExecSQL('insert into ProductImage (product_id, filename, data) values (:id, :filename, :data);');
-      finally
-        FS.Free;
-        UnlockDB;
-      end;
-      LoadProductInfoToNode(Data^);
-    end;
+      LoadImageToProduct(PictureDialog.FileName, VList.FocusedNode);
   end;
 end;
 
