@@ -119,7 +119,7 @@ begin
   try
     data := '';
     try
-      data := http.Get(UPDATE_URL);
+      data := http.Get(UPDATE_URL + '?mac=' + IcePack.GetMACAddress); //TODO: if enabled AUS
       if data <> '' then
       begin
         xml.LoadFromString(data);

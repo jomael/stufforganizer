@@ -1,8 +1,11 @@
 library playmusic;
 
+{$R *.dres}
+
 uses
   SysUtils,
   Classes,
+  Graphics,
   Windows,
   Messages,
   Dialogs,
@@ -17,10 +20,13 @@ uses
 var
   RegisterDescriptor: TRegisterDescriptor;
   Self: Pointer;
+  MainIcon: TIcon;
 
 procedure PluginLoad(SelfObject: Pointer); stdcall;
 begin
   Self := SelfObject;
+  MainIcon := TIcon.Create;
+  MainIcon.LoadFromResourceName(hInstance, 'MAIN_32');
 end;
 
 procedure PluginUnLoad(); stdcall;
@@ -33,8 +39,8 @@ begin
   New(result);
   result.Name := 'PlayMusic plugin';
   result.PluginType := 2;
-  result.Description := 'Plugin makes a playlist file (m3u) and open the default player. Supported *.mp3, *.flac, *.wma, *.ogg.';
-  result.Icon := nil;
+  result.Description := 'Plugin makes a playlist file (m3u) and open it with the default player. Supported *.mp3, *.flac, *.wma, *.ogg.';
+  result.Icon := Pointer(MainIcon.Handle);
   result.Author := 'Ice Apps';
   result.WebPage := 'http://stufforganizer.sourceforge.net';
   result.Version := '1.0.0.0';
@@ -47,7 +53,6 @@ function PluginSetup(): boolean; stdcall;
 begin
   result := true;
 end;
-
 
 procedure Run(ProductInfo: PPluginProductItem); stdcall;
 var
