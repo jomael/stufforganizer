@@ -30,6 +30,9 @@
 			<Projects Include="Modules\allrovi\allrovi.dproj">
 				<Dependencies/>
 			</Projects>
+			<Projects Include="Modules\playmusic\playmusic.dproj">
+				<Dependencies/>
+			</Projects>
 		</ItemGroup>
 		<ProjectExtensions>
 			<Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -119,14 +122,23 @@
 		<Target Name="allrovi:Make">
 			<MSBuild Targets="Make" Projects="Modules\allrovi\allrovi.dproj"/>
 		</Target>
+		<Target Name="playmusic">
+			<MSBuild Projects="Modules\playmusic\playmusic.dproj"/>
+		</Target>
+		<Target Name="playmusic:Clean">
+			<MSBuild Targets="Clean" Projects="Modules\playmusic\playmusic.dproj"/>
+		</Target>
+		<Target Name="playmusic:Make">
+			<MSBuild Targets="Make" Projects="Modules\playmusic\playmusic.dproj"/>
+		</Target>
 		<Target Name="Build">
-			<CallTarget Targets="StuffOrganizer;StuffOrganizerTests;DirLister;unpack_7z;unpack_rar;unpack_zip;port_hu;SOUpdater;allrovi"/>
+			<CallTarget Targets="StuffOrganizer;StuffOrganizerTests;DirLister;unpack_7z;unpack_rar;unpack_zip;port_hu;SOUpdater;allrovi;playmusic"/>
 		</Target>
 		<Target Name="Clean">
-			<CallTarget Targets="StuffOrganizer:Clean;StuffOrganizerTests:Clean;DirLister:Clean;unpack_7z:Clean;unpack_rar:Clean;unpack_zip:Clean;port_hu:Clean;SOUpdater:Clean;allrovi:Clean"/>
+			<CallTarget Targets="StuffOrganizer:Clean;StuffOrganizerTests:Clean;DirLister:Clean;unpack_7z:Clean;unpack_rar:Clean;unpack_zip:Clean;port_hu:Clean;SOUpdater:Clean;allrovi:Clean;playmusic:Clean"/>
 		</Target>
 		<Target Name="Make">
-			<CallTarget Targets="StuffOrganizer:Make;StuffOrganizerTests:Make;DirLister:Make;unpack_7z:Make;unpack_rar:Make;unpack_zip:Make;port_hu:Make;SOUpdater:Make;allrovi:Make"/>
+			<CallTarget Targets="StuffOrganizer:Make;StuffOrganizerTests:Make;DirLister:Make;unpack_7z:Make;unpack_rar:Make;unpack_zip:Make;port_hu:Make;SOUpdater:Make;allrovi:Make;playmusic:Make"/>
 		</Target>
 		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 	</Project>
