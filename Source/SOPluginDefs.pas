@@ -8,7 +8,7 @@
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    Foobar is distributed in the hope that it will be useful,
+    Stuff Organizer is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
@@ -73,27 +73,30 @@ type
     Modified          : boolean;
   end;
 
-  //Minden pluginban megtalálható alap exportált fgv-ek
+  //Base exported functions in every plugin
   TPluginLoadProc = procedure(SelfObject: Pointer); stdcall;
   TPluginUnLoadProc = procedure(); stdcall;
   TPluginGetInfo = function(): PPluginInfo; stdcall;
   TPluginSetup = function(): boolean; stdcall;
   TPluginInitialize = function(): boolean; stdcall;
+  TPluginOptions = function(): boolean; stdcall;
 
-  //----- Unpack plugins ------
-  //Plugin meghívása a kicsomagoláshoz
+  (*********************************************
+   *********** Unpack/preprocess plugins *******
+   *********************************************)
+  //Callback for unpack
   TFileProcCallback =  function(ProcItem: Pointer; FileName, TargetDir: PWideChar): integer; stdcall;
 
-  //Kicsomagoló pluginoknak elérhetõ fgvek
+  //Callbacks for preprocess plugins
   TNeedPassCallBack = procedure(ProcItem: Pointer; var NewPassword: PWideChar); stdcall;
   TUnPackProcessCallBack = procedure(ProcItem: Pointer; StatusText: PWideChar; Current, Total: Int64); stdcall;
   TUnPackErrorCallBack = procedure(ProcItem: Pointer; ErrorCode: integer; ErrorText: PWideChar);stdcall;
   TRemoveVolumeFromFileListCallBack = procedure(ProcItem: Pointer;FileName: PWideChar); stdcall;
 
-  //Plugin által meghívandó fgv egy fájltípus regisztrációjához
+  //Callback for register a file extension by plugin
   TRegisterFileType = procedure(Plugin: Pointer; FileExt: PWideChar; FileProcType: integer; ProcCallBack: TFileProcCallback); stdcall;
 
-  //Unpack Pluginnak átadott struktúra az õ számára meghívható fgv-ekrõl
+  //Callback struct for unpack/preprocess plugin
   PPluginUnPackCallbacks = ^TPluginUnPackCallbacks;
   TPluginUnPackCallbacks = packed record
     RegisterFileType: TRegisterFileType;
@@ -103,13 +106,14 @@ type
     RemoveFileFromList: TRemoveVolumeFromFileListCallBack;
   end;
 
-  //Callback-ek átadása a pluginnek
+  //Give callbacks to plugin
   TPluginRegUnPackFunctions = procedure(PluginCallBacks: PPluginUnPackCallbacks); stdcall;
 
+  (*********************************************
+   ******* Descriptor/postprocess plugins ******
+   *********************************************)
 
-  //----- Descriptor plugins ------
-
-  //Adatszerkezet az UserSelecthez
+  //Struct for UserSelect
   PDescriptorProductInfo = ^TDescriptorProductInfo;
   TDescriptorProductInfo = packed record
     Name: PWideChar;
@@ -119,20 +123,19 @@ type
   end;
 
   PTDescriptorProductInfoArray = ^TDescriptorProductInfoArray;
-//  PDescriptorProductInfoArray = array of PDescriptorProductInfo;
   TDescriptorProductInfoArray = array of TDescriptorProductInfo;
 
-  //Plugin meghívása a futtatáshoz
+  //Execution callback
   TRunDescriptorCallback = procedure(ProductInfo: PPluginProductItem); stdcall;
 
-  //Plugin által meghívandó fgv a descriptor-ok regisztrálásához
+  //CAllback for register the description function
   TRegisterDescriptor = procedure(Plugin: Pointer; Name: PWideChar; ProcCallBack: TRunDescriptorCallback); stdcall;
 
   TDescriptorSaveImage = procedure(Plugin: Pointer; ProductInfo: PPluginProductItem; FileName: PWideChar); stdcall;
   TDescriptorSaveProductInfo = procedure(Plugin: Pointer; ProductInfo: PPluginProductItem); stdcall;
   TDescriptorUserSelect = function(Plugin: Pointer; ItemList: PTDescriptorProductInfoArray): integer; stdcall;
 
-  //Descriptor Pluginnak átadott struktúra az õ számára meghívható fgv-ekrõl
+  //Callback struct for descriptor/preprocess plugin
   PPluginDescriptorCallbacks = ^TPluginDescriptorCallbacks;
   TPluginDescriptorCallbacks = packed record
     RegisterDescriptor: TRegisterDescriptor;
@@ -141,7 +144,7 @@ type
     UserSelect: TDescriptorUserSelect;
   end;
 
-  //Callback-ek átadása a pluginnek
+  //Give callbacks to plugin
   TPluginRegDescriptorFunctions = procedure(PluginCallBacks: PPluginDescriptorCallbacks); stdcall;
 
 implementation
