@@ -17,7 +17,7 @@
     along with Stuff Organizer.  If not, see <http://www.gnu.org/licenses/>.
 *)
 
-library allrovi;
+library opensubtitles;
 
 uses
   Windows,
@@ -50,15 +50,15 @@ end;
 function PluginGetInfo(): PPluginInfo; stdcall;
 begin
   New(result);
-  result.Name := 'Allrovi.com plugin';
+  result.Name := 'OpenSubtitles.org plugin';
   result.PluginType := 2;
-  result.Description := 'All Rovi movie detailed info import with small picture';
+  result.Description := 'Get subtitles for movies from OpenSubtitles.org';
   result.Icon := nil;
   result.Author := 'Ice Apps';
   result.WebPage := 'http://stufforganizer.sourceforge.net';
   result.Version := '1.0.0.0';
   result.InterfaceVersion := 1;
-  result.VersionDate := '2011-08-10';
+  result.VersionDate := '2011-09-13';
   result.MinimumVersion := '0.4.5.0';
 end;
 
@@ -106,7 +106,7 @@ begin
   SaveProductInfoToDB := PluginCallBacks.SaveProductInfoToDB;
   UserSelect := PluginCallBacks.UserSelect;
 
-  PluginCallBacks.RegisterDescriptor(Self, 'Search description on www.allrovi.com', Run);
+  PluginCallBacks.RegisterDescriptor(Self, 'Search subtitles on OpenSubtitles.org', Run);
 end;
 
 function PluginInitialize(): boolean; stdcall;
