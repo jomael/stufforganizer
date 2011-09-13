@@ -8,7 +8,7 @@
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    Foobar is distributed in the hope that it will be useful,
+    Stuff Organizer is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
@@ -39,6 +39,7 @@ type
     FPluginRegUnPackFunctions: TPluginRegUnPackFunctions;
     FPluginGetInfo: TPluginGetInfo;
     FPluginRegDescriptorFunctions: TPluginRegDescriptorFunctions;
+    FPluginOptions: TPluginOptions;
 
 
     procedure SetFileName(const Value: string);
@@ -52,6 +53,7 @@ type
       Plugin: TPluginItem): boolean;
     procedure SetPluginRegDescriptorFunctions(
       const Value: TPluginRegDescriptorFunctions);
+    procedure SetPluginOptions(const Value: TPluginOptions);
   published
   public
     PluginInfo: TPluginInfo;
@@ -63,6 +65,7 @@ type
     property PluginRegUnPackFunctions: TPluginRegUnPackFunctions read FPluginRegUnPackFunctions write SetPluginRegUnPackFunctions;
     property PluginRegDescriptorFunctions: TPluginRegDescriptorFunctions read FPluginRegDescriptorFunctions write SetPluginRegDescriptorFunctions;
     property PluginInitialize: TPluginInitialize read FPluginInitialize write SetPluginInitialize;
+    property PluginOptions: TPluginOptions read FPluginOptions write SetPluginOptions;
 
     constructor Create(FileName: string);
     destructor Destroy; override;
@@ -178,6 +181,7 @@ begin
     FPluginUnLoad := GetProcAddress(DLLHandle, 'PluginUnLoad');
     FPluginGetInfo := GetProcAddress(DLLHandle, 'PluginGetInfo');
     FPluginSetup := GetProcAddress(DLLHandle, 'PluginSetup');
+    FPluginOptions := GetProcAddress(DLLHandle, 'PluginOptions'); //since 0.4.6
     FPluginRegUnPackFunctions := GetProcAddress(DLLHandle, 'PluginRegUnPackFunctions');
     FPluginRegDescriptorFunctions := GetProcAddress(DLLHandle, 'PluginRegDescriptorFunctions');
     FPluginInitialize := GetProcAddress(DLLHandle, 'PluginInitialize');
@@ -271,6 +275,11 @@ end;
 procedure TPluginItem.SetPluginLoadProc(const Value: TPluginLoadProc);
 begin
   FPluginLoad := Value;
+end;
+
+procedure TPluginItem.SetPluginOptions(const Value: TPluginOptions);
+begin
+  FPluginOptions := Value;
 end;
 
 procedure TPluginItem.SetPluginRegDescriptorFunctions(
