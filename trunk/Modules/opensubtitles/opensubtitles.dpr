@@ -19,6 +19,10 @@
 
 library opensubtitles;
 
+
+
+{$R *.dres}
+
 uses
   Windows,
   SysUtils,
@@ -26,10 +30,12 @@ uses
   Messages,
   Dialogs,
   IcePack,
+  Graphics,
   SOPluginDefs in '..\..\Source\SOPluginDefs.pas',
   uSearchInfo in 'uSearchInfo.pas',
   uISO639 in 'uISO639.pas',
-  uOSClient in 'uOSClient.pas';
+  uOSClient in 'uOSClient.pas',
+  uLangSelectForm in 'uLangSelectForm.pas' {LangSelectForm};
 
 {$E sop}
 
@@ -38,10 +44,13 @@ uses
 var
   RegisterDescriptor: TRegisterDescriptor;
   proc: Pointer;
+  MainIcon: TIcon;
 
 procedure PluginLoad(SelfObject: Pointer); stdcall;
 begin
   Self := SelfObject;
+  MainIcon := TIcon.Create;
+  MainIcon.LoadFromResourceName(hInstance, 'MAIN_32');
 end;
 
 procedure PluginUnLoad(); stdcall;
@@ -54,8 +63,8 @@ begin
   New(result);
   result.Name := 'OpenSubtitles.org plugin';
   result.PluginType := 2;
-  result.Description := 'Get subtitles for movies from OpenSubtitles.org';
-  result.Icon := nil;
+  result.Description := 'Get subtitles for movies. Subtitles service powered by www.OpenSubtitles.org';
+  result.Icon := Pointer(MainIcon.Handle);
   result.Author := 'Ice Apps';
   result.WebPage := 'http://stufforganizer.sourceforge.net';
   result.Version := '1.0.0.0';
@@ -67,25 +76,6 @@ end;
 function PluginSetup(): boolean; stdcall;
 begin
   result := true;
-end;
-
-function NormalizeMovieTitle(Title: string): string;
-var
-  S, SS: string;
-  I: integer;
-begin
-  SS := Title;
-  S := Trim(CutAt(SS, '('));;
-
-  result := '';
-  for I := 1 to Length(S) do
-  begin
-    if IsCharAlphaNumeric(S[I]) then
-      result := result + S[I]
-    else if (Length(result) > 0) and (result[Length(result) - 1] <> ' ') then
-      result := result + ' ';
-  end;
-  result := Trim(result);
 end;
 
 procedure Run(ProductInfo: PPluginProductItem); stdcall;
@@ -103,7 +93,9 @@ begin
   SaveProductInfoToDB := PluginCallBacks.SaveProductInfoToDB;
   UserSelect := PluginCallBacks.UserSelect;
 
-  PluginCallBacks.RegisterDescriptor(Self, 'Search subtitles on OpenSubtitles.org', Run);
+  PluginCallBacks.RegisterDescriptor(Self, '-', nil);
+  PluginCallBacks.RegisterDescriptor(Self, 'Subtitles from OpenSubtitles.org', Run);
+  PluginCallBacks.RegisterDescriptor(Self, '-', nil);
 end;
 
 function PluginInitialize(): boolean; stdcall;

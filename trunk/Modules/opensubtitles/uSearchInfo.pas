@@ -51,7 +51,7 @@ function UnPack(FileName, TargetDir: string; ArchiveType: TGUID): boolean;
 implementation
 
 uses
-  uProgress;
+  uProgress, uLangSelectForm;
 
 procedure GetOpenSubtitlesForProduct(Product: PPluginProductItem);
 var
@@ -60,9 +60,14 @@ var
   I: Integer;
   SelectedIndex: integer;
   URL: string;
+  UserLang: TLanguageItem;
 begin
+  UserLang := ShowLangSelectForm;
+  if UserLang.Lang = '' then Exit;
+
+  ShowProgressDialog('Getting movie informations...', 'OpenSubtitle.org plugin');
   O := TOSClient.Create;
-  O.Languages := AutoDetectLanguage.Lang;
+  O.Languages := UserLang.Lang;
   O.Login;
   Subs := O.GetSubtitles(Product.TargetPath);
 
@@ -72,6 +77,7 @@ begin
     AddSubtitleItem(Subs[I]);
     // add movie to list
   end;
+  CloseProgressDialog;
   if Length(foundItems) > 0 then
   begin
     SelectedIndex := UserSelectFromList;

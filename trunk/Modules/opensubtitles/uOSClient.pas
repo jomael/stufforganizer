@@ -22,7 +22,7 @@ interface
 
 uses
   SysUtils, Windows, Dialogs, Classes, IcePack, IceXML, IdBaseComponent, IdComponent,
-  IdTCPConnection, IdTCPClient, IdHTTP, RegularExpressions;
+  IdTCPConnection, IdTCPClient, IdHTTP, PerlRegEx{RegularExpressions};
 
 type
   TSubtitle = record
@@ -291,6 +291,29 @@ end;
 function TOSClient.GetImdbIDFromNFO(FileName: string): string;
 var
   Content: TStringList;
+  RegEx: TPerlRegEx;
+begin
+  result := '';
+  Content := TStringList.Create;
+  try
+    Content.LoadFromFile(FileName);
+    //    /imdb\.[^\/]+\/title\/tt(\d+)/i
+    RegEx := TPerlRegEx.Create();
+    RegEx.RegEx := 'imdb\.[^\/]+\/title\/tt(\d+)';
+    RegEx.Options := [preCaseLess];
+    RegEx.Subject := Content.Text;
+    if RegEx.Match and (RegEx.GroupCount > 0) then
+    begin
+      result := RegEx.Groups[1];
+    end;
+  finally
+    Content.Free;
+  end;
+end;
+
+{function TOSClient.GetImdbIDFromNFO(FileName: string): string;
+var
+  Content: TStringList;
   RegEx: TRegEx;
   Match: TMatch;
 begin
@@ -306,7 +329,7 @@ begin
   finally
     Content.Free;
   end;
-end;
+end;}
 
 function TOSClient.Login: boolean;
 var
@@ -455,7 +478,7 @@ begin
     param := param.GetItemEx('value.array.data.value.struct', true);
     member := param.New('member');
     member.SetItemValue('name', 'sublanguageid');
-    member.SetItemValue('value.string', 'hun');
+    member.SetItemValue('value.string', FLanguages);
     if ImdbID = '' then
     begin
       member := param.New('member');

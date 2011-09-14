@@ -27,7 +27,7 @@
 			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
 			<GenDll>true</GenDll>
 			<DCC_ExeOutput>..\..\Bin\Plugins\</DCC_ExeOutput>
-			<DCC_DependencyCheckOutputName>..\..\Bin\Plugins\allrovi.sop</DCC_DependencyCheckOutputName>
+			<DCC_DependencyCheckOutputName>..\..\Bin\Plugins\opensubtitles.sop</DCC_DependencyCheckOutputName>
 			<DCC_ImageBase>00400000</DCC_ImageBase>
 			<DCC_Platform>x86</DCC_Platform>
 		</PropertyGroup>
@@ -48,20 +48,26 @@
 			<DCCReference Include="uSearchInfo.pas"/>
 			<DCCReference Include="uISO639.pas"/>
 			<DCCReference Include="uOSClient.pas"/>
+			<DCCReference Include="uLangSelectForm.pas">
+				<Form>LangSelectForm</Form>
+			</DCCReference>
+			<RcItem Include="opensubtitles_logo_32.ico">
+				<ResourceType>Icon</ResourceType>
+				<ResourceId>MAIN_32</ResourceId>
+			</RcItem>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
 			<BuildConfiguration Include="Debug">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
-			</BuildConfiguration>
-			<BuildConfiguration Include="Base">
-				<Key>Base</Key>
 			</BuildConfiguration>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_1</Key>
 				<CfgParent>Base</CfgParent>
 			</BuildConfiguration>
 		</ItemGroup>
-		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
-		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj"/>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
 		<ProjectExtensions>
 			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
 			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
@@ -71,7 +77,10 @@
 						<Source Name="MainSource">opensubtitles.dpr</Source>
 					</Source>
 					<Parameters>
-						<Parameters Name="HostApplication">D:\Store\StuffOrganizer\Bin\StuffOrganizer.exe</Parameters>
+						<Parameters Name="HostApplication">C:\Work\Project\__D2009Projects__\StuffOrganizer\Bin\StuffOrganizer.exe</Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
 					</Parameters>
 					<VersionInfo>
 						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
@@ -101,8 +110,8 @@
 						<VersionInfoKeys Name="Comments"/>
 					</VersionInfoKeys>
 					<Excluded_Packages>
-						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k120.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-						<Excluded_Packages Name="$(BDSBIN)\dclofficexp120.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="%BDSBIN%\dcloffice2k120.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="%BDSBIN%\dclofficexp120.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
 					</Excluded_Packages>
 				</Delphi.Personality>
 				<Platforms>
@@ -115,7 +124,7 @@
 
 <!-- EurekaLog First Line
 [Exception Log]
-EurekaLog Version=6101
+EurekaLog Version=6020
 Activate=0
 Activate Handle=1
 Save Log File=1
@@ -275,7 +284,6 @@ loFreeAllLeaks=1
 loCatchLeaksExceptions=1
 cfoReduceFileSize=1
 cfoCheckFileCorruption=0
-cfoUseEL7=0
 Count mtInformationMsgCaption=1
 mtInformationMsgCaption0="Information."
 Count mtQuestionMsgCaption=1
