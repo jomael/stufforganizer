@@ -24,9 +24,12 @@ uses
   SysUtils,
   Classes,
   Messages,
-  Dialogs, IcePack,
+  Dialogs,
+  IcePack,
   SOPluginDefs in '..\..\Source\SOPluginDefs.pas',
-  uSearchInfo in 'uSearchInfo.pas';
+  uSearchInfo in 'uSearchInfo.pas',
+  uISO639 in 'uISO639.pas',
+  uOSClient in 'uOSClient.pas';
 
 {$E sop}
 
@@ -34,7 +37,6 @@ uses
 
 var
   RegisterDescriptor: TRegisterDescriptor;
-
   proc: Pointer;
 
 procedure PluginLoad(SelfObject: Pointer); stdcall;
@@ -90,13 +92,8 @@ procedure Run(ProductInfo: PPluginProductItem); stdcall;
 var
   MovieName: string;
 begin
-  MovieName := NormalizeMovieTitle(ProductInfo.Name);
-  if InputQuery('Search description', 'Enter title (only letters, digits and spaces): ', MovieName) then
-  begin
-    Product := ProductInfo;
-    AnalyzeSearchResults( StringReplace(URLEncode(MovieName, false), '%20', '+', [rfReplaceAll]) );
-//    AnalyzePage('http://www.allrovi.com/search/movies/' + StringReplace(URLEncode(MovieName, false), '%20', '+', [rfReplaceAll]));
-  end;
+  Product := ProductInfo;
+  GetOpenSubtitlesForProduct(ProductInfo);
 end;
 
 procedure PluginRegDescriptorFunctions(PluginCallBacks: PPluginDescriptorCallbacks); stdcall;
