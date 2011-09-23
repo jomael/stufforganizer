@@ -103,7 +103,7 @@ end;
 function GetReadableModuleName(name: string): string;
 begin
   if name = 'MAIN' then
-    Exit('Main module')
+    Exit(Lang['Mainmodule'])
   else
     Exit(name);
 end;
@@ -186,7 +186,7 @@ begin
   except
     on E: Exception do
     begin
-      MessageDlg('Download error: ' + E.Message, mtError, [mbOK], 0);
+      MessageDlg(Lang['Downloaderror'] + E.Message, mtError, [mbOK], 0);
       ModalResult := mrCancel;
     end;
   end;

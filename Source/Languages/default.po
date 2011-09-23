@@ -1,0 +1,1036 @@
+#: VList$HeaderColumns0Text
+msgid "Category"
+msgstr "Category"
+
+#: VList$HeaderColumns1Text
+msgid "Product name"
+msgstr "Product name"
+
+#: VList$HeaderColumns2Text
+msgid "Description"
+msgstr "Description"
+
+#: VList$HeaderColumns3Text
+msgid "Added"
+msgstr "Added"
+
+#: VList$HeaderColumns4Text
+msgid "Path"
+msgstr "Path"
+
+#: CategoryPanel$Caption
+msgid "CategoryPanel"
+msgstr "CategoryPanel"
+
+#: Label1$Caption
+msgid "Product information:"
+msgstr "Product information:"
+
+#: lProductName$Hint
+msgid "Click here to change"
+msgstr "Click here to change"
+
+#: lURL$Hint
+msgid "Click here to open"
+msgstr "Click here to open"
+
+#: lGoogleSearch$Caption
+msgid "Google search"
+msgstr "Google search"
+
+#: lGoogleSearch$Hint
+msgid "Click here to search in Google"
+msgstr "Click here to search in Google"
+
+#: eTags$Hint
+msgid "Product tags"
+msgstr "Product tags"
+
+#: eTags$TextHint
+msgid "Enter tags"
+msgstr "Enter tags"
+
+#: bShowNFO$Caption
+msgid "View NFO file"
+msgstr "View NFO file"
+
+#: bAddNFO$Caption
+msgid "Add NFO file"
+msgstr "Add NFO file"
+
+#: bChangeURL$Caption
+msgid "Change URL"
+msgstr "Change URL"
+
+#: bChangePicture$Caption
+msgid "Change picture"
+msgstr "Change picture"
+
+#: lChnageDirectoryName$Caption
+msgid "Change directory name"
+msgstr "Change directory name"
+
+#: ToolButton1$Caption
+msgid "Add stuff"
+msgstr "Add stuff"
+
+#: ToolButton2$Caption
+msgid "Queue"
+msgstr "Queue"
+
+#: ToolButton4$Caption
+msgid "Consistence check"
+msgstr "Consistence check"
+
+#: ToolButton6$Caption
+msgid "Settings"
+msgstr "Settings"
+
+#: ToolButton7$Caption
+msgid "About"
+msgstr "About"
+
+#: eSearch$TextHint
+msgid "Enter the search text"
+msgstr "Enter the search text"
+
+#: Modifycategory1$Caption
+msgid "Modify category..."
+msgstr "Modify category..."
+
+#: Addnewcategory1$Caption
+msgid "Add new category..."
+msgstr "Add new category..."
+
+#: Deletecategory1$Caption
+msgid "Delete category..."
+msgstr "Delete category..."
+
+#: Opendirectory1$Caption
+msgid "Open directory"
+msgstr "Open directory"
+
+#: Opensourcedirectory1$Caption
+msgid "Open source directory"
+msgstr "Open source directory"
+
+#: Copytargetdirectorytoclipboard1$Caption
+msgid "Copy target directory to clipboard"
+msgstr "Copy target directory to clipboard"
+
+#: Reprocess1$Caption
+msgid "Reprocess"
+msgstr "Reprocess"
+
+#: pmiPluginFuncs$Caption
+msgid "Plugin functions"
+msgstr "Plugin functions"
+
+#: Deleteselecteditems1$Caption
+msgid "Delete selected item(s)..."
+msgstr "Delete selected item(s)..."
+
+#: Deletesourcefiles1$Caption
+msgid "Delete source files..."
+msgstr "Delete source files..."
+
+#: aModifyCategory$Caption
+msgid "Modify category..."
+msgstr "Modify category..."
+
+#: aDeleteCategory$Caption
+msgid "Delete category..."
+msgstr "Delete category..."
+
+#: aDeleteItems$Caption
+msgid "Delete selected item(s)..."
+msgstr "Delete selected item(s)..."
+
+#: aOpenDir$Caption
+msgid "Open directory"
+msgstr "Open directory"
+
+#: aNewCategory$Caption
+msgid "Add new category..."
+msgstr "Add new category..."
+
+#: aShowMainForm$Caption
+msgid "Show"
+msgstr "Show"
+
+#: aExit$Caption
+msgid "Exit"
+msgstr "Exit"
+
+#: aViewProcessLog$Caption
+msgid "View process log"
+msgstr "View process log"
+
+#: aReprocess$Caption
+msgid "Reprocess"
+msgstr "Reprocess"
+
+#: aDelSource$Caption
+msgid "Delete source files..."
+msgstr "Delete source files..."
+
+#: aOpenSourceDir$Caption
+msgid "Open source directory"
+msgstr "Open source directory"
+
+#: aTargetToClipBoard$Caption
+msgid "Copy target directory to clipboard"
+msgstr "Copy target directory to clipboard"
+
+#: Adddirectory1$Caption
+msgid "Add directory..."
+msgstr "Add directory..."
+
+#: Addfiless1$Caption
+msgid "Add files(s)..."
+msgstr "Add files(s)..."
+
+#: Adddirectorytowatchlist1$Caption
+msgid "Add directory to watchlist..."
+msgstr "Add directory to watchlist..."
+
+#: aAddFile$Caption
+msgid "Add files(s)..."
+msgstr "Add files(s)..."
+
+#: aAddDirectory$Caption
+msgid "Add directory..."
+msgstr "Add directory..."
+
+#: aQueue$Caption
+msgid "Queue"
+msgstr "Queue"
+
+#: aConsistenceCheck$Caption
+msgid "Consistence check"
+msgstr "Consistence check"
+
+#: aAddStuff$Caption
+msgid "Add stuff"
+msgstr "Add stuff"
+
+#: aAddToWatch$Caption
+msgid "Add directory to watchlist..."
+msgstr "Add directory to watchlist..."
+
+#: aSettings$Caption
+msgid "Settings"
+msgstr "Settings"
+
+#: aDBBackup$Caption
+msgid "Database backup..."
+msgstr "Database backup..."
+
+#: aDBRestore$Caption
+msgid "Database restore..."
+msgstr "Database restore..."
+
+#: aDBVacuum$Caption
+msgid "Database vacuum"
+msgstr "Database vacuum"
+
+#: aPlugins$Caption
+msgid "Plugins"
+msgstr "Plugins"
+
+#: aAbout$Caption
+msgid "About"
+msgstr "About"
+
+#: aHomepage$Caption
+msgid "Visit homepage"
+msgstr "Visit homepage"
+
+#: aCheckNewVersion$Caption
+msgid "Check new version"
+msgstr "Check new version"
+
+#: Show1$Caption
+msgid "Show"
+msgstr "Show"
+
+#: Viewprocesslog1$Caption
+msgid "View process log"
+msgstr "View process log"
+
+#: Exit1$Caption
+msgid "Exit"
+msgstr "Exit"
+
+#: ools1$Caption
+msgid "Settings"
+msgstr "Settings"
+
+#: Plugins1$Caption
+msgid "Plugins"
+msgstr "Plugins"
+
+#: Databasebackup1$Caption
+msgid "Database backup..."
+msgstr "Database backup..."
+
+#: Databaserestore1$Caption
+msgid "Database restore..."
+msgstr "Database restore..."
+
+#: Databasevacuum1$Caption
+msgid "Database vacuum"
+msgstr "Database vacuum"
+
+#: Visithomepage1$Caption
+msgid "Visit homepage"
+msgstr "Visit homepage"
+
+#: Checknewversion1$Caption
+msgid "Check new version"
+msgstr "Check new version"
+
+#: $Caption0
+msgid "About"
+msgstr "About"
+
+#: bCheckUpdate$Caption
+msgid "Check new version"
+msgstr "Check new version"
+
+#: Label2$Caption
+msgid "Stuff Organizer is open source software distributed free of charge under the terms of the"
+msgstr "Stuff Organizer is open source software distributed free of charge under the terms of the"
+
+#: lGPL$Caption
+msgid "GNU General Public License"
+msgstr "GNU General Public License"
+
+#: bOK$Caption
+msgid "OK"
+msgstr "OK"
+
+#: $Caption1
+msgid "Category"
+msgstr "Category"
+
+#: Label1$Caption1
+msgid "Category target path"
+msgstr "Category target path"
+
+#: Label2$Caption0
+msgid "If blank, it's equal with source path"
+msgstr "If blank, it's equal with source path"
+
+#: Label3$Caption0
+msgid "Color"
+msgstr "Color"
+
+#: Label4$Caption
+msgid "Icon"
+msgstr "Icon"
+
+#: btnCancel$Caption
+msgid "Cancel"
+msgstr "Cancel"
+
+#: btnOk$Caption
+msgid "Ok"
+msgstr "Ok"
+
+#: eName$EditLabelCaption
+msgid "Category name"
+msgstr "Category name"
+
+#: $Caption2
+msgid "NFO Viewer"
+msgstr "NFO Viewer"
+
+#: $Caption3
+msgid "Preferences"
+msgstr "Preferences"
+
+#: Panel1$Caption
+msgid "Panel1"
+msgstr "Panel1"
+
+#: GroupBox1$Caption
+msgid "Process settings"
+msgstr "Process settings"
+
+#: cbDelToRB$Caption
+msgid "Delete to recycle bin"
+msgstr "Delete to recycle bin"
+
+#: cbHideDialogs$Caption
+msgid "Hide copy/move/delete dialog"
+msgstr "Hide copy/move/delete dialog"
+
+#: cbICS$Caption
+msgid "Enable ICS (Intelligent category selector)"
+msgstr "Enable ICS (Intelligent category selector)"
+
+#: GroupBox2$Caption
+msgid "Auto update"
+msgstr "Auto update"
+
+#: bCheckUpdate$Caption0
+msgid "Check now"
+msgstr "Check now"
+
+#: cbCheckNewVersion$Caption
+msgid "Check new version at start"
+msgstr "Check new version at start"
+
+#: GroupBox3$Caption
+msgid "Extensions"
+msgstr "Extensions"
+
+#: btnOk$Caption0
+msgid "OK"
+msgstr "OK"
+
+#: $Caption4
+msgid "Password"
+msgstr "Password"
+
+#: ePass$EditLabelCaption
+msgid "Enter the password"
+msgstr "Enter the password"
+
+#: bCancel$Caption
+msgid "Cancel"
+msgstr "Cancel"
+
+#: $Caption5
+msgid "Plugins"
+msgstr "Plugins"
+
+#: btnOk$Caption1
+msgid "Close"
+msgstr "Close"
+
+#: GroupBox1$Caption0
+msgid "Installed plugins"
+msgstr "Installed plugins"
+
+#: Label1$Caption2
+msgid "Name:"
+msgstr "Name:"
+
+#: Label2$Caption1
+msgid "Version:"
+msgstr "Version:"
+
+#: Label3$Caption1
+msgid "Author:"
+msgstr "Author:"
+
+#: Label4$Caption0
+msgid "Web:"
+msgstr "Web:"
+
+#: Label5$Caption
+msgid "Description:"
+msgstr "Description:"
+
+#: $Caption6
+msgid "Preprocessing new directories"
+msgstr "Preprocessing new directories"
+
+#: VList$HeaderColumns1Text0
+msgid "New directory name"
+msgstr "New directory name"
+
+#: VList$HeaderColumns2Text0
+msgid "Old directory"
+msgstr "Old directory"
+
+#: VList$HeaderColumns3Text0
+msgid "Unpack"
+msgstr "Unpack"
+
+#: VList$HeaderColumns4Text0
+msgid "ISO"
+msgstr "ISO"
+
+#: VList$HeaderColumns5Text
+msgid "Del source"
+msgstr "Del source"
+
+#: VList$HeaderColumns6Text
+msgid "Size"
+msgstr "Size"
+
+#: Label3$Caption2
+msgid "Category"
+msgstr "Category"
+
+#: lNewPath$Caption
+msgid "New path:"
+msgstr "New path:"
+
+#: lAddCat$Caption
+msgid "Add"
+msgstr "Add"
+
+#: lSaveDefault$Caption
+msgid "Save as default"
+msgstr "Save as default"
+
+#: eNewDirName$EditLabelCaption
+msgid "New directory name"
+msgstr "New directory name"
+
+#: cbUnpack$Caption
+msgid "Unpack"
+msgstr "Unpack"
+
+#: cbUnPackISO$Caption
+msgid "Extract ISO"
+msgstr "Extract ISO"
+
+#: cbDelSource$Caption
+msgid "Delete source path"
+msgstr "Delete source path"
+
+#: cbDelNFO$Caption
+msgid "Delete *.nfo"
+msgstr "Delete *.nfo"
+
+#: cbDelDIZ$Caption
+msgid "Delete *.diz"
+msgstr "Delete *.diz"
+
+#: cbDelSFV$Caption
+msgid "Delete *.sfv"
+msgstr "Delete *.sfv"
+
+#: eTags$EditLabelCaption
+msgid "Tags"
+msgstr "Tags"
+
+#: bOk$Caption0
+msgid "Process"
+msgstr "Process"
+
+#: bCancel$Caption0
+msgid "Close"
+msgstr "Close"
+
+#: Deleteselecteditem1$Caption
+msgid "Delete selected item"
+msgstr "Delete selected item"
+
+#: Checkall1$Caption
+msgid "Check all"
+msgstr "Check all"
+
+#: Uncheckall1$Caption
+msgid "Uncheck all"
+msgstr "Uncheck all"
+
+#: $Caption7
+msgid "Processing"
+msgstr "Processing"
+
+#: lMainCaption$Caption
+msgid "Processing..."
+msgstr "Processing..."
+
+#: lElapsedTime$Caption
+msgid "Elapsed time:"
+msgstr "Elapsed time:"
+
+#: lEstimatedTime$Caption
+msgid "Estimated time:"
+msgstr "Estimated time:"
+
+#: Label1$Caption3
+msgid "Priority"
+msgstr "Priority"
+
+#: btnHide$Caption
+msgid "Hide"
+msgstr "Hide"
+
+#: btnPause$Caption
+msgid "Pause"
+msgstr "Pause"
+
+#: btnStop$Caption
+msgid "Stop"
+msgstr "Stop"
+
+#: cbPriority$Items0
+msgid "Low"
+msgstr "Low"
+
+#: cbPriority$Items1
+msgid "Below normal"
+msgstr "Below normal"
+
+#: cbPriority$Items2
+msgid "Normal"
+msgstr "Normal"
+
+#: cbPriority$Items3
+msgid "Above normal"
+msgstr "Above normal"
+
+#: cbPriority$Items4
+msgid "High"
+msgstr "High"
+
+#: GroupBox1$Caption1
+msgid "Process log"
+msgstr "Process log"
+
+#: LogList$HeaderColumns0Text
+msgid "Log"
+msgstr "Log"
+
+#: LogList$HeaderColumns1Text
+msgid "Progress"
+msgstr "Progress"
+
+#: $Caption8
+msgid "Update"
+msgstr "Update"
+
+#: btnUpdate$Caption
+msgid "Update"
+msgstr "Update"
+
+#: GroupBox1$Caption2
+msgid "Update content"
+msgstr "Update content"
+
+#: DataList$HeaderColumns0Text
+msgid "Module"
+msgstr "Module"
+
+#: DataList$HeaderColumns1Text
+msgid "Date"
+msgstr "Date"
+
+#: DataList$HeaderColumns2Text
+msgid "Version"
+msgstr "Version"
+
+#: GroupBox2$Caption0
+msgid "Changes"
+msgstr "Changes"
+
+#: lMainCaption$Caption0
+msgid "New version found!"
+msgstr "New version found!"
+
+#: $Caption9
+msgid "Select an item"
+msgstr "Select an item"
+
+#: Pleaseenteraname
+msgid "Please enter a name!"
+msgstr "Please enter a name!"
+
+#: Savingtodatabase
+msgid "Saving to database..."
+msgstr "Saving to database..."
+
+#: Findnfoforsave
+msgid "Find *.nfo for save..."
+msgstr "Find *.nfo for save..."
+
+#: Savesforprocess
+msgid "Save '%s' for process..."
+msgstr "Save '%s' for process..."
+
+#: Findimageforsave
+msgid "Find image for save..."
+msgstr "Find image for save..."
+
+#: Waitingforpassword
+msgid "Waiting for password..."
+msgstr "Waiting for password..."
+
+#: Deletesourcefiles
+msgid "Delete source files..."
+msgstr "Delete source files..."
+
+#: Deletedsourcefiles
+msgid "Deleted source files."
+msgstr "Deleted source files."
+
+#: Deletesourcedirectorys
+msgid "Delete source directory '%s'..."
+msgstr "Delete source directory '%s'..."
+
+#: Movestotargetpath
+msgid "Move '%s' to target path..."
+msgstr "Move '%s' to target path..."
+
+#: Filemoveerror
+msgid "File move error: "
+msgstr "File move error: "
+
+#: Deletetemporarydirectory2
+msgid "Delete temporary directory #2..."
+msgstr "Delete temporary directory #2..."
+
+#: Targetdirectorydoesntexists
+msgid "Target directory doesn't exists!"
+msgstr "Target directory doesn't exists!"
+
+#: Deletetemporarydirectory1
+msgid "Delete temporary directory #1..."
+msgstr "Delete temporary directory #1..."
+
+#: Deletedsourcedirectorys
+msgid "Deleted source directory '%s'."
+msgstr "Deleted source directory '%s'."
+
+#: Deletesourcefiles0
+msgid "Delete source file '%s'..."
+msgstr "Delete source file '%s'..."
+
+#: Deletedsourcefiles0
+msgid "Deleted source file '%s'."
+msgstr "Deleted source file '%s'."
+
+#: Searcharchives
+msgid "Search archives..."
+msgstr "Search archives..."
+
+#: Unpacks
+msgid "Unpack '%s'..."
+msgstr "Unpack '%s'..."
+
+#: Unpackerror
+msgid "Unpack error!"
+msgstr "Unpack error!"
+
+#: Extracts
+msgid "Extract '%s'..."
+msgstr "Extract '%s'..."
+
+#: Extracterror
+msgid "Extract error!"
+msgstr "Extract error!"
+
+#: Movestotemp
+msgid "Move '%s' to temp..."
+msgstr "Move '%s' to temp..."
+
+#: Copystotemp
+msgid "Copy '%s' to temp..."
+msgstr "Copy '%s' to temp..."
+
+#: Filecopyerror
+msgid "File copy error: "
+msgstr "File copy error: "
+
+#: Pleasewaituntiltheprocessingoperationsarecompleted
+msgid "Please wait until the processing operations are completed!"
+msgstr "Please wait until the processing operations are completed!"
+
+#: Doyouwanttodeletethe
+msgid "Do you want to delete the '%s' category?"
+msgstr "Do you want to delete the '%s' category?"
+
+#: Areyousuredeletetheselecteddirectories
+msgid "Are you sure delete the selected directories?"
+msgstr "Are you sure delete the selected directories?"
+
+#: AreyousuredeletethesourcefilesPath
+msgid "Are you sure delete the source files? Path: %s"
+msgstr "Are you sure delete the source files? Path: %s"
+
+#: Preparing
+msgid "Preparing..."
+msgstr "Preparing..."
+
+#: Pleasewait
+msgid "Please wait"
+msgstr "Please wait"
+
+#: Reprocess
+msgid "Reprocess %s..."
+msgstr "Reprocess %s..."
+
+#: Addnewcategory
+msgid "Add new category"
+msgstr "Add new category"
+
+#: ChangeURL
+msgid "Change URL"
+msgstr "Change URL"
+
+#: EnterURL
+msgid "Enter URL"
+msgstr "Enter URL"
+
+#: DoyouwanttocontinuewithclosingmightcauseDATALOSS
+msgid "Do you want to continue with closing (might cause DATA LOSS)?"
+msgstr "Do you want to continue with closing (might cause DATA LOSS)?"
+
+#: SomefoldersarestillbeingprocessedDoyoureallywanttoexit
+msgid "Some folders are still being processed. Do you really want to exit?"
+msgstr "Some folders are still being processed. Do you really want to exit?"
+
+#: Errorduringspluginprocesss
+msgid "Error during %s plugin process: %s"
+msgstr "Error during %s plugin process: %s"
+
+#: Regeneratetags
+msgid "Regenerate tags..."
+msgstr "Regenerate tags..."
+
+#: Generatematrixtointelligentsorter
+msgid "Generate matrix to intelligent sorter..."
+msgstr "Generate matrix to intelligent sorter..."
+
+#: Calculatingtagsusage
+msgid "Calculating tags usage..."
+msgstr "Calculating tags usage..."
+
+#: Allproducts
+msgid "All products"
+msgstr "All products"
+
+#: Addcategory
+msgid "< Add category... >"
+msgstr "< Add category... >"
+
+#: Queued
+msgid "Queue (%d)"
+msgstr "Queue (%d)"
+
+#: Queue
+msgid "Queue"
+msgstr "Queue"
+
+#: Changedirectoryname
+msgid "Change directory name"
+msgstr "Change directory name"
+
+#: Enternewdirectoryname
+msgid "Enter new directory name"
+msgstr "Enter new directory name"
+
+#: Wouldyouliketosetdirectorynametoproductname
+msgid "Would you like to set directory name to product name?"
+msgstr "Would you like to set directory name to product name?"
+
+#: Pleaseaddsometagstoproduct
+msgid "Please add some tags to product!"
+msgstr "Please add some tags to product!"
+
+#: Consistencechecking
+msgid "Consistence checking..."
+msgstr "Consistence checking..."
+
+#: Thesdirectorydoesn
+msgid "The '%s' directory doesn"
+msgstr "The '%s' directory doesn"
+
+#: Consistencecheckfinished
+msgid "Consistence check finished!"
+msgstr "Consistence check finished!"
+
+#: Vacuummaindatabase
+msgid "Vacuum main database..."
+msgstr "Vacuum main database..."
+
+#: Vacuuminfodatabase
+msgid "Vacuum info database..."
+msgstr "Vacuum info database..."
+
+#: Vacuumfinished
+msgid "Vacuum finished!"
+msgstr "Vacuum finished!"
+
+#: Stufforganizerbackupfiles
+msgid "Stuff organizer backup files"
+msgstr "Stuff organizer backup files"
+
+#: Backup
+msgid "Backup..."
+msgstr "Backup..."
+
+#: Finished
+msgid "Finished!"
+msgstr "Finished!"
+
+#: Errorduringbackup
+msgid "Error during backup: "
+msgstr "Error during backup: "
+
+#: Restore
+msgid "Restore..."
+msgstr "Restore..."
+
+#: Errorduringrestore
+msgid "Error during restore: "
+msgstr "Error during restore: "
+
+#: Preparings
+msgid "Preparing '%s'..."
+msgstr "Preparing '%s'..."
+
+#: ThespecifiedsourcedirectoryshasbeenprocessedDoyouwanttocontinue
+msgid "The specified source directory (%s) has been processed! Do you want to continue?"
+msgstr "The specified source directory (%s) has been processed! Do you want to continue?"
+
+#: RunningICSons
+msgid "Running ICS on '%s'..."
+msgstr "Running ICS on '%s'..."
+
+#: Wouldyouliketomovedirectoriesaccordingtothenewcategory
+msgid "Would you like to move directories according to the new category?"
+msgstr "Would you like to move directories according to the new category?"
+
+#: Deleteitems
+msgid "Delete items..."
+msgstr "Delete items..."
+
+#: Delete
+msgid "Delete "
+msgstr "Delete "
+
+#: Wouldyouliketodeletethesefoldersonharddisk
+msgid "Would you like to delete these folders on hard disk?"
+msgstr "Would you like to delete these folders on hard disk?"
+
+#: Modifycategoryproperties
+msgid "Modify category properties"
+msgstr "Modify category properties"
+
+#: Saveunprocesseditems
+msgid "Save unprocessed items..."
+msgstr "Save unprocessed items..."
+
+#: Passwordfors
+msgid "Password for %s"
+msgstr "Password for %s"
+
+#: Viewlog
+msgid "View log"
+msgstr "View log"
+
+#: Process
+msgid "Process"
+msgstr "Process"
+
+#: Processd
+msgid "Process (%d)"
+msgstr "Process (%d)"
+
+#: Newpath
+msgid "New path: "
+msgstr "New path: "
+
+#: Areyousuredeletetheselecteditems
+msgid "Are you sure delete the selected items?"
+msgstr "Are you sure delete the selected items?"
+
+#: Thesitemcantdelete
+msgid "The '%s' item can't delete!"
+msgstr "The '%s' item can't delete!"
+
+#: nocategory
+msgid "<no category>"
+msgstr "<no category>"
+
+#: Settingssavedasdefault
+msgid "Settings saved as default."
+msgstr "Settings saved as default."
+
+#: Finished0
+msgid "Finished."
+msgstr "Finished."
+
+#: Aborted
+msgid "Aborted."
+msgstr "Aborted."
+
+#: Applicationexitfortoupdate
+msgid "Application exit for to update..."
+msgstr "Application exit for to update..."
+
+#: Applicationisuptodate
+msgid "Application is up to date."
+msgstr "Application is up to date."
+
+#: Unknowupdatefile
+msgid "Unknow update file!"
+msgstr "Unknow update file!"
+
+#: Updateinfonotfound
+msgid "Update info not found!"
+msgstr "Update info not found!"
+
+#: Updateerror
+msgid "Update error! "
+msgstr "Update error! "
+
+#: Pause
+msgid "Pause"
+msgstr "Pause"
+
+#: Resume
+msgid "Resume"
+msgstr "Resume"
+
+#: Areyousurestoptheprocessing
+msgid "Are you sure stop the processing?"
+msgstr "Are you sure stop the processing?"
+
+#: Waitingforthreadterminate
+msgid "Waiting for thread terminate..."
+msgstr "Waiting for thread terminate..."
+
+#: Hide
+msgid "Hide"
+msgstr "Hide"
+
+#: Processing
+msgid "Processing"
+msgstr "Processing"
+
+#: Processings
+msgid "Processing %s..."
+msgstr "Processing %s..."
+
+#: Finished1
+msgid "Finished"
+msgstr "Finished"
+
+#: Close
+msgid "Close"
+msgstr "Close"
+
+#: Elapsedtimes
+msgid "Elapsed time: %s"
+msgstr "Elapsed time: %s"
+
+#: Estimatedtimes
+msgid "Estimated time: %s"
+msgstr "Estimated time: %s"
+
+#: Downloaderror
+msgid "Download error: "
+msgstr "Download error: "
+
+#: VersiondddBuildd
+msgid "Version %d.%d.%d ( Build %d )"
+msgstr "Version %d.%d.%d ( Build %d )"
+
+#: Savedtodatabase
+msgid "Saved to database."
+msgstr "Saved to database."
+
+#: Mainmodule
+msgid "Main module"
+msgstr "Main module"
+

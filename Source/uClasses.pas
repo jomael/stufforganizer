@@ -142,34 +142,6 @@ type
     procedure SetDirTreeSize(const Value: Int64);
     procedure SetOnStatusEvent(const Value: TProcessEvent);
 
-(*    procedure RarFileVolumeChanged(Sender: TObject;
-      const NewVolumeName: AnsiString);
-    procedure RarFileProgress(Sender: TObject; const FileName: WideString;
-      const ArchiveBytesTotal, ArchiveBytesDone, FileBytesTotal,
-      FileBytesDone: Int64);
-    procedure RarFileFileProcessed(Sender: TObject; const FileName: WideString;
-      const Operation: TRAROperation; const Result: Integer);
-    procedure RarFileError(Sender: TObject; const ErrorCode: Integer;
-      const Operation: TRAROperation);
-    procedure RarFileReplace(Sender: TObject; const ExistingData,
-      NewData: TRARReplaceData; out Action: TRARReplaceAction);
-    procedure RarNextVolumeRequired(Sender: TObject; const requiredFileName: AnsiString; out newFileName: AnsiString; out Cancel: boolean);
-
-    procedure ZIP1DecompressedFile(Sender: TObject; const FileName: string;
-      const FileSize: Cardinal);
-    procedure ZipFileArchiveProgress(Sender: TObject; Progress: Byte;
-      var Abort: Boolean);
-    procedure ZipFileConfirmOverwrite(var Name: string;
-      var Confirm: Boolean);
-    procedure ZipFileNeedPassword(Sender: TObject;
-      var NewPassword: AnsiString);
-    procedure ZipFileProcessItemFailure(Sender: TObject;
-      Item: TAbArchiveItem; ProcessType: TAbProcessType;
-      ErrorClass: TAbErrorClass; ErrorCode: Integer);
-    procedure RarFilePasswordRequired(Sender: TObject;
-      const HeaderPassword: boolean; const FileName: WideString;
-      out NewPassword: AnsiString; out Cancel: boolean);
- *)
     procedure GenerateAutoTags; overload;
 
     procedure ChangeNewDirName;
@@ -181,14 +153,6 @@ type
 
     procedure DoStatusEvent(StatusCode: integer; StatusText: string;
       Progress: integer);
-
-//    procedure UnZip(TargetDir: string; FileName: string);
-//    procedure UnRar(TargetDir, FileName: string);
-//    procedure UnISO(TargetDir, FileName: string);
-//    procedure Un7Z(TargetDir, FileName: string);
-//    procedure UnBZIP(TargetDir, FileName: string);
-//    procedure UnGZIP(TargetDir, FileName: string);
-//    procedure UnTAR(TargetDir, FileName: string);
 
     procedure RemoveFromAllFiles(FileName: string);
 
@@ -247,10 +211,7 @@ var
   Categories: array of TNodeCategory;
 
   ConfigXML: TIceXML;
-//  maxValue: integer; //for 7Z progress callback
 
-//function Un7ZGetPassword(sender: Pointer; var password: UnicodeString): HRESULT; stdcall;
-//function Un7ZProgress(sender: Pointer; total: boolean; value: int64): HRESULT; stdcall;
 
 procedure UnPackNeedPassword(ProcItem: Pointer; var NewPassword: PWideChar); stdcall;
 procedure UnPackProgress(ProcItem: Pointer; StatusText: PWideChar; Current, Total: Int64); stdcall;
@@ -384,7 +345,7 @@ var
 begin
   LockDB;
   try
-    DoStatusEvent(STATUS_SAVEDB, 'Saving to database...', 0);
+    DoStatusEvent(STATUS_SAVEDB, Lang['Savingtodatabase'], 0);
     if Self.ID = -1 then
     begin
       DB.AddParamText(':path', UTF8Encode(Self.NewDirPath));
@@ -429,7 +390,7 @@ begin
     begin
       SaveNFOAndImage;
     end;
-    DoStatusEvent(STATUS_SAVEDB, 'Saved to database.', 100);
+    DoStatusEvent(STATUS_SAVEDB, Lang['Savedtodatabase'], 100);
   finally
     UnLockDB;
   end;
@@ -777,12 +738,12 @@ begin
   LockDB;
   try
     //Find *.nfo to save
-    DoStatusEvent(STATUS_SAVEDB, 'Find *.nfo for save...', 50);
+    DoStatusEvent(STATUS_SAVEDB, Lang['Findnfoforsave'], 50);
     NFOs := IcePack.GetFiles(Self.NewDirPath, '*.nfo', true);
     if NFOs.Count > 0 then
     begin
       InfoDB.ExecSQL('delete from ProductInfo where product_id = ' + IntToStr(Self.ID));
-      DoStatusEvent(STATUS_SAVEDB, Format('Save ''%s'' for process...', [ExtractFileName(NFOs[0])]), 70);
+      DoStatusEvent(STATUS_SAVEDB, Format(Lang['Savesforprocess'], [ExtractFileName(NFOs[0])]), 70);
       NFOContent := IcePack.ReadFromFileS(NFOs[0]);
       InfoDB.AddParamText(':content', UTF8Encode(NFOContent));
       InfoDB.AddParamInt(':id', Self.ID);
@@ -790,7 +751,7 @@ begin
     end;
     NFOs.Free;
     //Find image to save
-    DoStatusEvent(STATUS_SAVEDB, 'Find image for save...', 80);
+    DoStatusEvent(STATUS_SAVEDB, Lang['Findimageforsave'], 80);
     Files := IcePack.GetFiles(Self.NewDirPath, '*.*', false);
     for I := 0 to Files.Count - 1 do
     begin
@@ -798,7 +759,7 @@ begin
       begin
         FS := TFileStream.Create(Files[I], fmOpenRead);
         try
-          DoStatusEvent(STATUS_SAVEDB, Format('Save ''%s'' for process...', [ExtractFileName(NFOs[0])]), 70);
+          DoStatusEvent(STATUS_SAVEDB, Format(Lang['Savesforprocess'], [ExtractFileName(NFOs[0])]), 70);
           InfoDB.ExecSQL('delete from ProductImage where product_id = ' + IntToStr(Self.ID));
           InfoDB.AddParamInt(':id', Self.ID);
           InfoDB.AddParamText(':filename', UTF8Encode(ExtractFileName(Files[I])));
@@ -893,122 +854,9 @@ begin
   UnLock;
 end;
 
-(*
-procedure TPreProcessItem.ZipFileArchiveProgress(Sender: TObject; Progress: Byte;
-  var Abort: Boolean);
-begin
-  DoStatusEvent(STATUS_UNPACK, '', Progress);
-
-end;
-
-procedure TPreProcessItem.ZipFileConfirmOverwrite(var Name: string;
-  var Confirm: Boolean);
-begin
-  Confirm := true;
-end;
-
-procedure TPreProcessItem.ZipFileNeedPassword(Sender: TObject;
-  var NewPassword: AnsiString);
-begin
-  DoStatusEvent(STATUS_NEED_PASSWORD, 'Wait for password...', 0);
-  NeedPasswordEvent.ResetEvent;
-  WaitForSingleObject(NeedPasswordEvent.Handle, 10 * 60 * 1000); //wait max 10 min
-  NewPassword := UserPassword;
-end;
-
-procedure TPreProcessItem.ZipFileProcessItemFailure(Sender: TObject;
-  Item: TAbArchiveItem; ProcessType: TAbProcessType; ErrorClass: TAbErrorClass;
-  ErrorCode: Integer);
-begin
-  DoStatusEvent(STATUS_ERROR, Format('Unpack error! ErrorCode: %d', [ErrorCode]), 0);
-  FWasUnpackError := true;
-  //MessageDlg('Error ' + IntToStr(ErrorCode), mtError, [mbOK], 0);
-end;
-
-procedure TPreProcessItem.ZIP1DecompressedFile(Sender: TObject; const FileName: string;
-  const FileSize: Cardinal);
-begin
-  //memo1.Lines.Add('Extracted... ' + FileName);
-end;
-
-
-procedure TPreProcessItem.RarFileError(Sender: TObject; const ErrorCode: Integer;
-  const Operation: TRAROperation);
-begin
-  //MessageDlg('Error ' + IntToStr(ErrorCode), mtError, [mbOK], 0);
-  DoStatusEvent(STATUS_ERROR, Format('Unpack error! ErrorCode: %d', [ErrorCode]), 0);
-  FWasUnpackError := true;
-
-  {
-  ERAR_COMMENTS_EXISTS = 1;
-  ERAR_NO_COMMENTS = 0;
-  ERAR_END_ARCHIVE = 10;
-  ERAR_NO_MEMORY = 11;
-  ERAR_BAD_DATA = 12;
-  ERAR_BAD_ARCHIVE = 13;
-  ERAR_UNKNOWN_FORMAT = 14;
-  ERAR_EOPEN = 15;
-  ERAR_ECREATE = 16;
-  ERAR_ECLOSE = 17;
-  ERAR_EREAD = 18;
-  ERAR_EWRITE = 19;
-  ERAR_SMALL_BUF = 20;
-  ERAR_UNKNOWN = 21;
-  ERAR_DLL_LOAD_ERROR = 99;
-
-}
-end;
-
-procedure TPreProcessItem.RarFileFileProcessed(Sender: TObject; const FileName: WideString;
-  const Operation: TRAROperation; const Result: Integer);
-begin
-//  memo1.Lines.Add('Extracted file: ' + FileName);
-//  Application.ProcessMessages;
-end;
-
-procedure TPreProcessItem.RarFileProgress(Sender: TObject; const FileName: WideString;
-  const ArchiveBytesTotal, ArchiveBytesDone, FileBytesTotal,
-  FileBytesDone: Int64);
-begin
-  if ArchiveBytesTotal > 0 then
-    DoStatusEvent(STATUS_UNPACK, '', ArchiveBytesDone * 100 div ArchiveBytesTotal);
-end;
-
-procedure TPreProcessItem.RarFileReplace(Sender: TObject; const ExistingData,
-  NewData: TRARReplaceData; out Action: TRARReplaceAction);
-begin
-  Action := rrOverwrite;
-end;
-
-procedure TPreProcessItem.RarFileVolumeChanged(Sender: TObject;
-  const NewVolumeName: AnsiString);
-begin
-  RemoveFromAllFiles(NewVolumeName);
-end;
-
-procedure TPreProcessItem.RarNextVolumeRequired(Sender: TObject;
-  const requiredFileName: AnsiString; out newFileName: AnsiString;
-  out Cancel: boolean);
-begin
-  DoStatusEvent(STATUS_ERROR, Format('Missing volume! File: %s', [requiredFileName]), 0);
-  FWasUnpackError := true;
-  Cancel := true;
-end;
-
-procedure TPreProcessItem.RarFilePasswordRequired(Sender: TObject;
-  const HeaderPassword: boolean; const FileName: WideString;
-  out NewPassword: AnsiString; out Cancel: boolean);
-begin
-  DoStatusEvent(STATUS_NEED_PASSWORD, 'Wait for password...', 0);
-  NeedPasswordEvent.ResetEvent;
-  WaitForSingleObject(NeedPasswordEvent.Handle, 10 * 60 * 1000);
-  NewPassword := UserPassword;
-  Cancel := NewPassword = '';
-end;                    *)
-
 procedure UnPackNeedPassword(ProcItem: Pointer; var NewPassword: PWideChar); stdcall;
 begin
-  TPreProcessItem(ProcItem).DoStatusEvent(STATUS_NEED_PASSWORD, 'Waiting for password...', 0);
+  TPreProcessItem(ProcItem).DoStatusEvent(STATUS_NEED_PASSWORD, Lang['Waitingforpassword'], 0);
   NeedPasswordEvent.ResetEvent;
   WaitForSingleObject(NeedPasswordEvent.Handle, 10 * 60 * 1000);
   NewPassword := PWideChar(UserPassword);
@@ -1030,26 +878,6 @@ procedure RemoveFromAllFiles(ProcItem: Pointer; FileName: PWideChar); stdcall;
 begin
   TPreProcessItem(ProcItem).RemoveFromAllFiles(FileName);
 end;
- {
-function Un7ZGetPassword(sender: Pointer; var password: UnicodeString): HRESULT;
-begin
-  TPreProcessItem(Sender).DoStatusEvent(STATUS_NEED_PASSWORD, 'Wait for password...', 0);
-  NeedPasswordEvent.ResetEvent;
-  WaitForSingleObject(NeedPasswordEvent.Handle, 10 * 60 * 1000);
-  password := UserPassword;
-  result := S_OK;
-end;
-
-function Un7ZProgress(sender: Pointer; total: boolean; value: int64): HRESULT;
-begin
-  if total then
-    maxValue := value;
-
-  if maxValue > 0 then
-    TPreProcessItem(Sender).DoStatusEvent(STATUS_UNPACK, '', value * 100 div maxValue);
-  result := S_OK;
-end;  }
-
 
 procedure TPreProcessItem.RemoveFromAllFiles(FileName: string);
 var
@@ -1112,19 +940,19 @@ begin
         if FDelSourceDir and (FNewDirPath = FSourcePath) and (not OnlyFile) then
         begin
           //Ha törölni kell a forrást és a cél = forrás akkor most törölhetõ
-          DoStatusEvent(STATUS_DELETEFILE, Format('Delete source files...', []), 0);
+          DoStatusEvent(STATUS_DELETEFILE, Format(Lang['Deletesourcefiles'], []), 0);
           IcePack.IceFileOperation(FO_DELETE, IncludeTrailingBackslash(FSourcePath) + '*.*', '', false, true);
-          DoStatusEvent(STATUS_DELETEFILE, Format('Deleted source files.', []), 100);
+          DoStatusEvent(STATUS_DELETEFILE, Format(Lang['Deletedsourcefiles'], []), 100);
           TempList := IcePAck.GetDirectories(FSourcePath, false);
           for J := TempList.Count - 1 downto 0 do
           begin
             if IncludeTrailingPathDelimiter(TempList[J]) <> IncludeTrailingPathDelimiter(TempDir1) then //A Temp1 könyvtárt kihagyjuk a törlésbõl, mert lesz második kör is
             begin
-              DoStatusEvent(STATUS_DELETEDIR, Format('Delete source directory ''%s''...', [ExtractFileName(TempList[J])]), (J+1) * 100 div TempList.Count);
+              DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletesourcedirectorys'], [ExtractFileName(TempList[J])]), (J+1) * 100 div TempList.Count);
               IcePack.IceFileOperation(FO_DELETE, ExcludeTrailingBackslash(TempList[J]), '', false, true);
             end;
           end;
-          DoStatusEvent(STATUS_DELETEDIR, Format('Deleted source files.', []), 0);
+          DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletedsourcefiles'], []), 0);
           TempList.Free;
         end;
 
@@ -1141,14 +969,14 @@ begin
             RelPath := ExtractRelativePath(TempDir2, ExtractFilePath(CurrentFile));
             TargetPath := TargetDir + RelPath;
             ForceDirectories(TargetPath);
-            DoStatusEvent(STATUS_MOVEFILE, Format('Move ''%s'' to target path...', [ExtractFileName(CurrentFile)]), (J+1) * 100 div TempList.Count);
+            DoStatusEvent(STATUS_MOVEFILE, Format(Lang['Movestotargetpath'], [ExtractFileName(CurrentFile)]), (J+1) * 100 div TempList.Count);
 
             if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then
             //if not RenameFile(PWideChar(CurrentFile), PWideChar(TargetPath + ExtractFileName(CurrentFile))) then
-              raise Exception.Create('File move error: ' + CurrentFile);
+              raise Exception.Create(Lang['Filemoveerror'] + CurrentFile);
           end;
           TempList.Free;
-          DoStatusEvent(STATUS_DELETEFILE, Format('Delete temporary directory #2...', []), 0);
+          DoStatusEvent(STATUS_DELETEFILE, Format(Lang['Deletetemporarydirectory2'], []), 0);
           IcePack.IceFileOperation(FO_DELETE, ExcludeTrailingBackslash(TempDir2), '', false, true);
         end;
       end
@@ -1163,20 +991,20 @@ begin
           RelPath := ExtractRelativePath(TempDir1, ExtractFilePath(CurrentFile));
           TargetPath := TargetDir + RelPath;
           ForceDirectories(TargetPath);
-          DoStatusEvent(STATUS_MOVEFILE, Format('Move ''%s'' to target path...', [ExtractFileName(CurrentFile)]), (J+1) * 100 div TempList.Count);
+          DoStatusEvent(STATUS_MOVEFILE, Format(Lang['Movestotargetpath'], [ExtractFileName(CurrentFile)]), (J+1) * 100 div TempList.Count);
           if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then
           //if not RenameFile(PWideChar(CurrentFile), PWideChar(TargetPath + ExtractFileName(CurrentFile))) then
-            raise Exception.Create('File move error: ' + CurrentFile);
+            raise Exception.Create(Lang['Filemoveerror'] + CurrentFile);
         end;
       end;
 
       if Res <> RESULT_ERROR then
       begin
         if not DirectoryExists(FNewDirPath) then
-          raise Exception.Create('Target directory doesn''t exists!');
+          raise Exception.Create(Lang['Targetdirectorydoesntexists']);
 
         //Temp1 könyvtár törlése
-        DoStatusEvent(STATUS_DELETEFILE, Format('Delete temporary directory #1...', []), 0);
+        DoStatusEvent(STATUS_DELETEFILE, Format(Lang['Deletetemporarydirectory1'], []), 0);
         IcePack.IceFileOperation(FO_DELETE, ExcludeTrailingBackslash(TempDir1), '', false, true);
 
         //Ha a cél <> forrással és kell törölni, akkor itt
@@ -1184,15 +1012,15 @@ begin
         begin
           if not OnlyFile then
           begin
-            DoStatusEvent(STATUS_DELETEDIR, Format('Delete source directory ''%s''...', [ExtractFileName(FSourcePath)]), 0);
+            DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletesourcedirectorys'], [ExtractFileName(FSourcePath)]), 0);
             IcePack.IceFileOperation(FO_DELETE, ExcludeTrailingBackslash(FSourcePath), '', false, true);
-            DoStatusEvent(STATUS_DELETEDIR, Format('Deleted source directory ''%s''.', [ExtractFileName(FSourcePath)]), 100);
+            DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletedsourcedirectorys'], [ExtractFileName(FSourcePath)]), 100);
           end
           else if FileExists(FSourcePath) then
           begin
-            DoStatusEvent(STATUS_DELETEDIR, Format('Delete source file ''%s''...', [FSourcePath]), 0);
+            DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletesourcefiles0'], [FSourcePath]), 0);
             IcePack.IceFileOperation(FO_DELETE, FSourcePath, '', false, true);
-            DoStatusEvent(STATUS_DELETEDIR, Format('Deleted source file ''%s''.', [FSourcePath]), 100);
+            DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletedsourcefiles0'], [FSourcePath]), 100);
           end;
         end;
         if ProgressStopping then Exit;
@@ -1211,14 +1039,6 @@ begin
         Result := RESULT_UNPACK;
       end;
     end;
-{  except
-    on E: Exception do
-    begin
-      DoStatusEvent(STATUS_ERROR, Format('Error during process. %s', [E.Message]), 0);
-      MessageDlg('Error during process. ', mtError, [mbOK], 0);
-      Result := RESULT_ERROR;
-    end;
-  end;}
 
 end;
 
@@ -1267,7 +1087,7 @@ begin
 
 
   if UnPack then
-    DoStatusEvent(STATUS_SEARCH_ARCHIVE, Format('Search archives...', []), 0);
+    DoStatusEvent(STATUS_SEARCH_ARCHIVE, Format(Lang['Searcharchives'], []), 0);
 
   if FOnlyFile and (Level = 1) then
   begin
@@ -1294,12 +1114,12 @@ begin
               for I := 0 to PackFiles.Count - 1 do
               begin
                 CurrentFile := PackFiles[I];
-                DoStatusEvent(STATUS_UNPACK, Format('Unpack ''%s''...', [ExtractFileName(CurrentFile)]), 0);
+                DoStatusEvent(STATUS_UNPACK, Format(Lang['Unpacks'], [ExtractFileName(CurrentFile)]), 0);
                 RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
                 ForceDirectories(TempDir + RelPath);
                 result := UnPackCB.CallBack(Self, PWideChar(CurrentFile), PWideChar(TempDir + RelPath));
                 if FWasUnpackError or (result = UNPACK_RESULT_ERROR) then
-                  raise Exception.Create('Unpack error!');
+                  raise Exception.Create(Lang['Unpackerror']);
 
                 RemoveFromAllFiles(CurrentFile);
               end;
@@ -1308,150 +1128,6 @@ begin
           end;
         end;
 
-
-        {
-        //Ha van zip akkor kicsomagolni  a temp könyvtárba
-        PackFiles := GetFilesByExt(AllFiles, '*.zip;*.tar;*.gz;*.tgz', true);
-        if (PackFiles.Count > 0) then
-        begin
-          for I := 0 to PackFiles.Count - 1 do
-          begin
-            CurrentFile := PackFiles[I];
-            if Pos('.zip-missing', LowerCase(CurrentFile)) > 0 then
-              continue;
-
-            DoStatusEvent(STATUS_UNPACK, Format('Unzip ''%s''...', [ExtractFileName(CurrentFile)]), 0);
-            RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
-            ForceDirectories(TempDir + RelPath);
-            UnZip(TempDir + RelPath, CurrentFile);
-            if FWasUnpackError then
-              raise Exception.Create('Unpack error!');
-
-            //Keresni a multi-volume-okat is
-            Index := 1;
-            AFile := ChangeFileExt(CurrentFile, '.z' + IntToStr0(Index, 2));
-            while FileExists(AFile) do
-            begin
-              RemoveFromAllFiles(AFile);
-              Inc(Index);
-              AFile := ChangeFileExt(CurrentFile, '.z' + IntToStr0(Index, 2));
-            end;
-            RemoveFromAllFiles(CurrentFile);
-          end;
-          result := RESULT_UNPACK;
-        end;
-        PackFiles.Free;
-
-        //Ha van újfajta elnevezésû rar akkor kicsomagolni a temp könyvtárba
-        PackFiles := GetFilesByExt(AllFiles, '*.part1.rar;*.part01.rar;*.part001.rar', true);
-        if (PackFiles.Count > 0) then
-        begin
-          for I := 0 to PackFiles.Count - 1 do
-          begin
-            CurrentFile := PackFiles[I];
-            DoStatusEvent(STATUS_UNPACK, Format('Unrar ''%s''...', [ExtractFileName(CurrentFile)]), 0);
-            RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
-            ForceDirectories(TempDir + RelPath);
-            UnRar(TempDir + RelPath, CurrentFile);
-            if FWasUnpackError then
-              raise Exception.Create('Unpack error!');
-
-            RemoveFromAllFiles(CurrentFile);
-          end;
-          result := RESULT_UNPACK;
-        end
-        //ha nincs új, de van régi típusú rar, akkor kicsomagolni a temp könyvtárba
-        else
-        begin
-          PackFiles.Free;
-          PackFiles := GetFilesByExt(AllFiles, '*.rar', true);
-          if PackFiles.Count > 0 then
-          begin
-            for I := 0 to PackFiles.Count - 1 do
-            begin
-              CurrentFile := PackFiles[I];
-              DoStatusEvent(STATUS_UNPACK, Format('Unrar ''%s''...', [ExtractFileName(CurrentFile)]), 0);
-              RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
-              ForceDirectories(TempDir + RelPath);
-              UnRar(TempDir + RelPath, CurrentFile);
-              if FWasUnpackError then
-                raise Exception.Create('Unpack error!');
-
-              RemoveFromAllFiles(CurrentFile);
-            end;
-            result := RESULT_UNPACK;
-          end;
-        end;
-        PackFiles.Free;
-
-
-        //Ha van 7Z akkor kicsomagolni  a temp könyvtárba /ha kérték
-        PackFiles := GetFilesByExt(AllFiles, '*.7z', true);
-        if (PackFiles.Count > 0) then
-        begin
-          for I := 0 to PackFiles.Count - 1 do
-          begin
-            CurrentFile := PackFiles[I];
-            DoStatusEvent(STATUS_UNPACK, Format('Un7ZIP ''%s''...', [ExtractFileName(CurrentFile)]), 0);
-            RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
-            ForceDirectories(TempDir + RelPath);
-            Un7Z(TempDir + RelPath, CurrentFile);
-            RemoveFromAllFiles(CurrentFile);
-          end;
-          result := RESULT_UNPACK;
-        end;
-        PackFiles.Free;
-
-        //Ha van bz2 bzip2 tbz2 tbz akkor kicsomagolni  a temp könyvtárba /ha kérték
-        PackFiles := GetFilesByExt(AllFiles, '*.bz2;*.bzip2;*.tbz2;*.tbz', true);
-        if (PackFiles.Count > 0) then
-        begin
-          for I := 0 to PackFiles.Count - 1 do
-          begin
-            CurrentFile := PackFiles[I];
-            DoStatusEvent(STATUS_UNPACK, Format('UnBZIP ''%s''...', [ExtractFileName(CurrentFile)]), 0);
-            RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
-            ForceDirectories(TempDir + RelPath);
-            UnBZIP(TempDir + RelPath, CurrentFile);
-            RemoveFromAllFiles(CurrentFile);
-          end;
-          result := RESULT_UNPACK;
-        end;
-        PackFiles.Free;
-
-        //Ha van tar akkor kicsomagolni  a temp könyvtárba /ha kérték
-        PackFiles := GetFilesByExt(AllFiles, '*.tar', true);
-        if (PackFiles.Count > 0) then
-        begin
-          for I := 0 to PackFiles.Count - 1 do
-          begin
-            CurrentFile := PackFiles[I];
-            DoStatusEvent(STATUS_UNPACK, Format('UnTAR ''%s''...', [ExtractFileName(CurrentFile)]), 0);
-            RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
-            ForceDirectories(TempDir + RelPath);
-            UnTAR(TempDir + RelPath, CurrentFile);
-            RemoveFromAllFiles(CurrentFile);
-          end;
-          result := RESULT_UNPACK;
-        end;
-        PackFiles.Free;
-
-        //Ha van gz gzip tgz tpz akkor kicsomagolni  a temp könyvtárba /ha kérték
-        PackFiles := GetFilesByExt(AllFiles, '*.gz;*.gzip;*.tgz;*.tpz', true);
-        if (PackFiles.Count > 0) then
-        begin
-          for I := 0 to PackFiles.Count - 1 do
-          begin
-            CurrentFile := PackFiles[I];
-            DoStatusEvent(STATUS_UNPACK, Format('UnGZIP ''%s''...', [ExtractFileName(CurrentFile)]), 0);
-            RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
-            ForceDirectories(TempDir + RelPath);
-            UnGZIP(TempDir + RelPath, CurrentFile);
-            RemoveFromAllFiles(CurrentFile);
-          end;
-          result := RESULT_UNPACK;
-        end;
-        PackFiles.Free;  }
       end;
 
       if UnPackISO then
@@ -1467,12 +1143,12 @@ begin
               for I := 0 to PackFiles.Count - 1 do
               begin
                 CurrentFile := PackFiles[I];
-                DoStatusEvent(STATUS_UNPACK, Format('Extract ''%s''...', [ExtractFileName(CurrentFile)]), 0);
+                DoStatusEvent(STATUS_UNPACK, Format(Lang['Extracts'], [ExtractFileName(CurrentFile)]), 0);
                 RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
                 ForceDirectories(TempDir + RelPath);
                 result := UnPackCB.CallBack(Self, PWideChar(CurrentFile), PWideChar(TempDir + RelPath));
                 if FWasUnpackError or (result = UNPACK_RESULT_ERROR) then
-                  raise Exception.Create('Extract error!');
+                  raise Exception.Create(Lang['Extracterror']);
 
                 RemoveFromAllFiles(CurrentFile);
               end;
@@ -1480,25 +1156,6 @@ begin
             PackFiles.Free;
           end;
         end;
-
-
-      {
-        //Ha van ISO akkor kicsomagolni  a temp könyvtárba /ha kérték
-        PackFiles := GetFilesByExt(AllFiles, '*.iso', true);
-        if (PackFiles.Count > 0) then
-        begin
-          for I := 0 to PackFiles.Count - 1 do
-          begin
-            CurrentFile := PackFiles[I];
-            DoStatusEvent(STATUS_EXTRACTISO, Format('Extract ''%s''...', [ExtractFileName(CurrentFile)]), 0);
-            RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
-            ForceDirectories(TempDir + RelPath);
-            UnISO(TempDir + RelPath, CurrentFile);
-            RemoveFromAllFiles(CurrentFile);
-          end;
-          result := RESULT_UNPACK;
-        end;
-        PackFiles.Free; }
       end;
 
       //Megmaradt fájlokat átmozgatni a {célkönyvtárba} tempbe ha a Level > mint 1 (inter temp)
@@ -1515,20 +1172,18 @@ begin
           // 1. Ha már a második szinten vagyunk, akkor mozgassa a tempbõl a cél helyre
           // 2. Ha törölni kell a forrást, akkor a megmaradt fájlokat mozgassa
           // 3. Ha nem történt tömörítés és a célhely megegyezik az új hellyel
-          DoStatusEvent(STATUS_MOVEFILE, Format('Move ''%s'' to temp...', [ExtractFileName(CurrentFile)]), (I+1) * 100 div AllFiles.Count);
+          DoStatusEvent(STATUS_MOVEFILE, Format(Lang['Movestotemp'], [ExtractFileName(CurrentFile)]), (I+1) * 100 div AllFiles.Count);
           if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then
-            raise Exception.Create('File move error: ' + CurrentFile);
+            raise Exception.Create(Lang['Filemoveerror'] + CurrentFile);
 
         end
         else
         begin
-          DoStatusEvent(STATUS_COPYFILE, Format('Copy ''%s'' to temp...', [ExtractFileName(CurrentFile)]), (I+1) * 100 div AllFiles.Count);
+          DoStatusEvent(STATUS_COPYFILE, Format(Lang['Copystotemp'], [ExtractFileName(CurrentFile)]), (I+1) * 100 div AllFiles.Count);
           if not CopyFile(PWideChar(CurrentFile), PWideChar(TargetPath + ExtractFileName(CurrentFile)), false) then
-            raise Exception.Create('File copy error: ' + CurrentFile);
+            raise Exception.Create(Lang['Filecopyerror'] + CurrentFile);
         end;
       end;
-      //if (result <> RESULT_COPY) then
-
 
     finally
       AllFiles.Free;
@@ -1547,135 +1202,10 @@ begin
   result := CodePages.UTF8Encode(Name);
 end;
 
-{
-procedure TPreProcessItem.UnZip(TargetDir: string; FileName: string);
-var
-  ZipFile: TAbUnZipper;
-begin
-  ZipFile := TAbUnZipper.Create(nil);
-  with ZipFile do
-  begin
-    OnArchiveProgress := ZipFileArchiveProgress;
-    OnConfirmOverwrite := ZipFileConfirmOverwrite;
-    OnNeedPassword := ZipFileNeedPassword;
-    OnProcessItemFailure := ZipFileProcessItemFailure;
-  end;
-
-  ZipFile.FileName := FileName;
-  ZipFile.BaseDirectory := TargetDir;
-  ZipFile.ExtractOptions := [eoCreateDirs, eoRestorePath];
-  ZipFile.ExtractFiles('*.*');
-  ZipFile.CloseArchive;
-  ZipFile.Free;
-end;
-
-procedure TPreProcessItem.UnISO(TargetDir: string; FileName: string);
-var
-  ISOFile: I7zInArchive;
-begin
-//  ISOFile := CreateInArchive(CLSID_CFormatUdf);
-  ISOFile := CreateInArchive(CLSID_CFormatIso);
-  ISOFile.SetPasswordCallback(Self, Un7ZGetPassword);
-  ISOFile.SetProgressCallback(Self, Un7ZProgress);
-  ISOFile.OpenFile(FileName);
-  ISOFile.ExtractTo(TargetDir);
-  ISOFile.Close;
-end;       }
-
 procedure TPreProcessItem.UnLock;
 begin
   FLock.Leave;
 end;
-{
-procedure TPreProcessItem.Un7Z(TargetDir: string; FileName: string);
-var
-  SevenZip: I7zInArchive;
-begin
-  SevenZip := CreateInArchive(CLSID_CFormat7z);
-  SevenZip.SetPasswordCallback(Self, Un7ZGetPassword);
-  SevenZip.SetProgressCallback(Self, Un7ZProgress);
-  SevenZip.OpenFile(FileName);
-  SevenZip.ExtractTo(TargetDir);
-  SevenZip.Close;
-end;
-
-procedure TPreProcessItem.UnBZIP(TargetDir: string; FileName: string);
-var
-  SevenZip: I7zInArchive;
-begin
-  SevenZip := CreateInArchive(CLSID_CFormatBZ2);
-  SevenZip.SetPasswordCallback(Self, Un7ZGetPassword);
-  SevenZip.SetProgressCallback(Self, Un7ZProgress);
-  SevenZip.OpenFile(FileName);
-  SevenZip.ExtractTo(TargetDir);
-  SevenZip.Close;
-end;
-
-procedure TPreProcessItem.UnTAR(TargetDir: string; FileName: string);
-var
-  SevenZip: I7zInArchive;
-begin
-  SevenZip := CreateInArchive(CLSID_CFormatTar);
-  SevenZip.SetPasswordCallback(Self, Un7ZGetPassword);
-  SevenZip.SetProgressCallback(Self, Un7ZProgress);
-  SevenZip.OpenFile(FileName);
-  SevenZip.ExtractTo(TargetDir);
-  SevenZip.Close;
-end;
-
-procedure TPreProcessItem.UnGZIP(TargetDir: string; FileName: string);
-var
-  SevenZip: I7zInArchive;
-begin
-  SevenZip := CreateInArchive(CLSID_CFormatGZip);
-  SevenZip.SetPasswordCallback(Self, Un7ZGetPassword);
-  SevenZip.SetProgressCallback(Self, Un7ZProgress);
-  SevenZip.OpenFile(FileName);
-  SevenZip.ExtractTo(TargetDir);
-  SevenZip.Close;
-end;
-
-procedure TPreProcessItem.UnRar(TargetDir: string; FileName: string);
-var
-  K: Integer;
-  RARFile: TRAR;
-begin
-  RARFile := TRAR.Create(nil);
-  RARFile.ReadMultiVolumeToEnd := true;
-  with RARFile do
-  begin
-    OnError := RarFileError;
-    OnFileProcessed := RarFileFileProcessed;
-    OnProgress := RarFileProgress;
-    OnPasswordRequired := RarFilePasswordRequired;
-    OnVolumeChanged := RarFileVolumeChanged;
-    OnNextVolumeRequired := RarNextVolumeRequired;
-    OnReplace := RarFileReplace;
-  end;
-
-//  memo1.Lines.Add('Extracting... ' + FileName);
-  RARFile.OpenFile(FileName);
-  RARFile.Extract(TargetDir, true, nil);
-
-  RARFile.Free;
-end;
-
-
-procedure TForm8.UnZip(TargetDir: string; FileName: string);
-var
-  K: Integer;
-  ZipFileMem: TZipFile;
-begin
-  ZipFileMem := TZipFile.Create;
-  ZipFileMem.LoadFromFile(FileName);
-  for K := 0 to ZipFileMem.Count - 1 do
-  begin
-    memo1.Lines.Add('Extracting... ' + ZipFileMem.Name[K]);
-    //TODO: Confirm overwrite;
-    IcePack.WriteToFileS(TargetDir + '\' + ZipFileMem.Name[K], ZipFileMem.Uncompressed[K]);
-  end;
-  ZipFileMem.Free;
-end;  }
 
 initialization
   FDBLocker := TCriticalSection.Create;

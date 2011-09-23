@@ -59,6 +59,9 @@ var
 
 implementation
 
+uses
+  uConstans;
+
 {$R *.dfm}
 
 procedure TAboutForm.bCheckUpdateClick(Sender: TObject);
@@ -73,7 +76,7 @@ end;
 
 procedure TAboutForm.FormShow(Sender: TObject);
 begin
-  lVersion.Caption := IcePack.GetFileVersion('', 'Version %d.%d.%d ( Build %d )');
+  lVersion.Caption := IcePack.GetFileVersion('', Lang['VersiondddBuildd']);
   mLicenses.Lines.Text := mLicenses.Lines.Text + ' '; //URL
 end;
 

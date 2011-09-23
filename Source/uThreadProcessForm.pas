@@ -102,20 +102,20 @@ begin
   if ProcThread.Suspended then
   begin
     ProcThread.Resume;
-    btnPause.Caption := 'Pause';
+    btnPause.Caption := Lang['Pause'];
     SetProgressState(tbpsPaused);
   end
   else
   begin
     ProcThread.Suspend;
-    btnPause.Caption := 'Resume';
+    btnPause.Caption := Lang['Resume'];
     SetProgressState(tbpsNormal);
   end;
 end;
 
 procedure TThreadProcessForm.btnStopClick(Sender: TObject);
 begin
-  if (MessageDlg('Are you sure stop the processing?', mtWarning, [mbYes, mbCancel], 0) = mrYes) then
+  if (MessageDlg(Lang['Areyousurestoptheprocessing'], mtWarning, [mbYes, mbCancel], 0) = mrYes) then
   begin
     ProcessStopping;
   end;
@@ -149,7 +149,7 @@ begin
   if ProcThread.Suspended then
     ProcThread.Resume;
   ProcThread.Terminate;
-  ShowProgressDialog('Waiting for thread terminate...', 'Please wait');
+  ShowProgressDialog(Lang['Waitingforthreadterminate'], Lang['Pleasewait']);
 end;
 
 procedure TThreadProcessForm.Clear;
@@ -160,11 +160,11 @@ begin
   lElapsedTime.Caption := '';
   lEstimatedTime.Caption := '';
   pBar.Position := 0;
-  btnPause.Caption := 'Pause';
+  btnPause.Caption := Lang['Pause'];
   btnPause.Enabled := true;
   btnHide.Enabled := true;
-  btnHide.Caption := 'Hide';
-  Caption := 'Processing';
+  btnHide.Caption := Lang['Hide'];
+  Caption := Lang['Processing'];
 end;
 
 procedure TThreadProcessForm.Start(ItemCount: integer; FullTreeSize: Int64);
@@ -253,7 +253,7 @@ procedure TThreadProcessForm.GetEvents;
       LogList.FullExpand(Node);
       result := Node;
 
-      lMainCaption.Caption := Format('Processing %s...', [Item.NewDirName]);
+      lMainCaption.Caption := Format(Lang['Processings'], [Item.NewDirName]);
     end;
   end;
 
@@ -412,11 +412,11 @@ begin
 
   TimeTimer.Enabled := false;
   pBar.Position := pBar.Max;
-  lMainCaption.Caption := 'Finished';
+  lMainCaption.Caption := Lang['Finished1'];
   lElapsedTime.Caption := '';
   lEstimatedTime.Caption := '';
   btnPause.Enabled := false;
-  btnHide.Caption := 'Close';
+  btnHide.Caption := Lang['Close'];
 
   for I := PreparingProducts.Count - 1 downto 0 do
   begin
@@ -435,7 +435,7 @@ begin
   btnStop.Visible := false;
   CloseProgressDialog;
 
-  Caption := 'Finished';
+  Caption := Lang['Finished1'];
 
   if ApplicationTerminating then //Ha fõformon kezdeményezték a leállítást
     Application.Terminate;
@@ -447,13 +447,13 @@ var
 
 begin
   elapsedSec := SecondsBetween(StartTime, Now);
-  lElapsedTime.Caption := Format('Elapsed time: %s', [SecondsToTimeString(elapsedSec)]);
+  lElapsedTime.Caption := Format(Lang['Elapsedtimes'], [SecondsToTimeString(elapsedSec)]);
 
   //calc estimated time from processed bytes
   if (ElapsedBytes > 0) and (FullTreeSize > 0)  then
   begin
     estimatedSec := Round(((FullTreeSize - ElapsedBytes) / ElapsedBytes) * elapsedSec);
-    lEstimatedTime.Caption := Format('Estimated time: %s', [SecondsToTimeString(estimatedSec)]);
+    lEstimatedTime.Caption := Format(Lang['Estimatedtimes'], [SecondsToTimeString(estimatedSec)]);
   end
   else
     lEstimatedTime.Caption := ' - ';
