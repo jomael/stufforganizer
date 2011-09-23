@@ -28,7 +28,7 @@ uses
   Menus, ShellApi, ActiveX, Gradient, uClasses, ActnList, PngFunctions,
   jpeg, ToolWin, pngimage, JvBaseDlg, JvBrowseFolder, Math, SyncObjs, IceXML,
   Generics.Defaults, W7TaskBar, ShlObj, AbBase, AbBrowse, AbZBrows, AbZipper,
-  AbUtils, AbUnzper, SOPluginDefs, uConstans, JvAppInst;
+  AbUtils, AbUnzper, SOPluginDefs, uConstans, JvAppInst, IceLanguage;
 
 type
 
@@ -152,6 +152,7 @@ type
     Checknewversion1: TMenuItem;
     JvAppInstances1: TJvAppInstances;
     NFODialog: TOpenDialog;
+    Lang1: TIceLanguage;
 
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -397,7 +398,7 @@ end;
 procedure TMainForm.aDBBackupExecute(Sender: TObject);
 begin
   if NowProcessing then
-    MessageDlg('Please wait until the processing operations are completed!', mtWarning, [mbOK], 0)
+    MessageDlg(Lang['Pleasewaituntiltheprocessingoperationsarecompleted'], mtWarning, [mbOK], 0)
   else
     BackupDB;
 end;
@@ -405,7 +406,7 @@ end;
 procedure TMainForm.aDBRestoreExecute(Sender: TObject);
 begin
   if NowProcessing then
-    MessageDlg('Please wait until the processing operations are completed!', mtWarning, [mbOK], 0)
+    MessageDlg(Lang['Pleasewaituntiltheprocessingoperationsarecompleted'], mtWarning, [mbOK], 0)
   else
     RestoreDB;
 end;
@@ -413,7 +414,7 @@ end;
 procedure TMainForm.aDBVacuumExecute(Sender: TObject);
 begin
   if NowProcessing then
-    MessageDlg('Please wait until the processing operations are completed!', mtWarning, [mbOK], 0)
+    MessageDlg(Lang['Pleasewaituntiltheprocessingoperationsarecompleted'], mtWarning, [mbOK], 0)
   else
     VacuumDB;
 end;
@@ -431,7 +432,7 @@ begin
   begin
     Data := FilterList.GetNodeData(FilterList.FocusedNode);
     if Data.NodeType = NODE_FILTER_CATEGORY then
-      if MessageDlg('Do you want to delete the ''' + Data.Name + ''' category?', mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+      if MessageDlg(Format(Lang['Doyouwanttodeletethe'], [Data.Name]), mtConfirmation, [mbYes, mbNo], 0) = mrYes then
         DeleteCategory(Data);
   end;
 end;
@@ -440,7 +441,7 @@ procedure TMainForm.aDeleteItemsExecute(Sender: TObject);
 begin
   if VList.SelectedCount > 0 then
   begin
-    if (MessageDlg('Are you sure delete the selected directories?', mtWarning, [mbYes, mbNo], 0) = mrYes) then
+    if (MessageDlg(Lang['Areyousuredeletetheselecteddirectories'], mtWarning, [mbYes, mbNo], 0) = mrYes) then
       DeleteSelectedProductNodes;
   end;
 end;
@@ -452,7 +453,7 @@ begin
   if (VList.SelectedCount = 1) and Assigned(VList.FocusedNode) then
   begin
     Data := VList.GetNodeData(VList.FocusedNode);
-    if (MessageDlg('Are you sure delete the source files? Path: ' + Data.SourcePath, mtWarning, [mbYes, mbNo], 0) = mrYes) then
+    if (MessageDlg(Format(Lang['AreyousuredeletethesourcefilesPath'], [Data.SourcePath]), mtWarning, [mbYes, mbNo], 0) = mrYes) then
     begin
       IcePack.IceFileOperation(FO_DELETE, ExcludeTrailingBackslash(Data.SourcePath), '', true, true);
     end;
@@ -537,7 +538,7 @@ var
   Data: PNodeProduct;
   Item: TPreProcessItem;
 begin
-  ShowProgressDialog('Preparing...', 'Please wait', bStopClick);
+  ShowProgressDialog(Lang['Preparing'], Lang['Pleasewait'], bStopClick);
   DirList := TStringList.Create;
   SelectList := VList.GetSortedSelection(true);
   for I := Low(SelectList) to High(SelectList) do
@@ -547,7 +548,7 @@ begin
 
     Node := SelectList[I];
     Data := VList.GetNodeData(Node);
-    ChangeProgressCaption('Reprocess ' + Data.DirName + '...');
+    ChangeProgressCaption(Format(Lang['Reprocess'], [Data.DirName]));
     if DirectoryExists(Data.TargetPath) then
     begin
       Item := TPreProcessItem.Create(Data.TargetPath);
@@ -727,7 +728,7 @@ var
   I: Integer;
 begin
   NewID := -1;
-  CategoriesForm.Caption := 'Add new category';
+  CategoriesForm.Caption := Lang['Addnewcategory'];
   CategoriesForm.eName.Text := '';
   CategoriesForm.ePath.Text := '';
   CategoriesForm.ePath.Enabled := true;
@@ -830,7 +831,7 @@ begin
   begin
     Data := VList.GetNodeData(VList.FocusedNode);
     url := Data.URL;
-    if InputQuery('Change URL', 'Enter URL', url) then
+    if InputQuery(Lang['ChangeURL'], Lang['EnterURL'], url) then
     begin
       Data.URL := url;
       SaveSelectedNodeInfo;
@@ -885,7 +886,7 @@ begin
     if ProcThread.Terminated then //Ha már másodszor nyomja, akkor kilépünk ha tényleg akarja
     begin
       HideProgressDialog;
-      if (MessageDlg('Do you want to continue with closing (might cause DATA LOSS)?', mtWarning, [mbYes, mbNo], 0) = mrNo) then
+      if (MessageDlg(Lang['DoyouwanttocontinuewithclosingmightcauseDATALOSS'], mtWarning, [mbYes, mbNo], 0) = mrNo) then
       begin
         UnHideProgressDialog;
         CanClose := false;
@@ -895,7 +896,7 @@ begin
     end
     else
     begin
-      if (MessageDlg('Some folders are still being processed. Do you really want to exit?', mtWarning, [mbYes, mbNo], 0) = mrYes) then
+      if (MessageDlg(Lang['SomefoldersarestillbeingprocessedDoyoureallywanttoexit'], mtWarning, [mbYes, mbNo], 0) = mrYes) then
       begin
         CanClose := false;
         ApplicationTerminating := true;
@@ -1041,7 +1042,7 @@ begin
       except
         on E: Exception do
         begin
-          MessageDlg(Format('Error during %s plugin process: %s', [ExtractFileName(descrItem.Plugin.FileName), E.Message]), mtWarning, [mbOK], 0);
+          MessageDlg(Format(Lang['Errorduringspluginprocesss'], [ExtractFileName(descrItem.Plugin.FileName), E.Message]), mtWarning, [mbOK], 0);
         end;
       end;
       Node := VList.GetNextSelected(Node);
@@ -1082,7 +1083,7 @@ var
   TagList: TStringList;
   I: Integer;
 begin
-  ShowProgressDialog('Regenerate tags...', 'Please wait');
+  ShowProgressDialog(Lang['Regeneratetags'], Lang['Pleasewait']);
   LockDB;
   try
     Table := DB.GetTable('select id, tags from Products where status = 1');
@@ -1126,7 +1127,7 @@ var
   I, J, Sum: integer;
   Tag: string;
 begin
-  ShowProgressDialog('Generate matrix to intelligent sorter...', 'Please wait');
+  ShowProgressDialog(Lang['Generatematrixtointelligentsorter'], Lang['Pleasewait']);
 
   TagMatrix := nil;
   if not Assigned(TagList) then
@@ -1147,7 +1148,7 @@ begin
       for J := Low(TagMatrix[I]) to High(TagMatrix[I]) do
         TagMatrix[I][J] := 0;
 
-    ChangeProgressCaption('Calculating tags usage...');
+    ChangeProgressCaption(Lang['Calculatingtagsusage']);
 
     //Elõször feltölteni a mátrixba, hogy melyik tag melyik kategóriába hányszor lett belerakva
     Table := DB.GetTable('select tag, category from Tags inner join Products on product_id = Products.id');
@@ -1401,7 +1402,7 @@ begin
   Data := FilterList.GetNodeData(AllNode);
   Data.NodeType := NODE_FILTER_ALL;
   Data.ID := -1;
-  Data.Name := 'All products';
+  Data.Name := Lang['Allproducts'];
   Data.Color := clNone;
   Data.Count := 0;
 
@@ -1448,7 +1449,7 @@ begin
   Data := FilterList.GetNodeData(Node);
   Data.NodeType := NODE_FILTER_NEW_CATEGORY;
   Data.ID := -2;
-  Data.Name := '< Add category... >';
+  Data.Name := Lang['Addcategory'];
   Data.Count := 0;
 
   FilterList.EndUpdate;
@@ -1590,9 +1591,9 @@ end;
 procedure TMainForm.RefreshQueueItemCount;
 begin
   if PreparingProducts.Count > 0 then
-    aQueue.Caption := Format('Queue (%d)', [PreparingProducts.Count])
+    aQueue.Caption := Format(Lang['Queued'], [PreparingProducts.Count])
   else
-    aQueue.Caption := 'Queue';
+    aQueue.Caption := Lang['Queue'];
 end;
 
 function TMainForm.HasInDB(Item: TPreProcessItem): boolean;
@@ -1643,7 +1644,7 @@ begin
   begin
     Data := VList.GetNodeData(VList.FocusedNode);
     dir := Data.DirName;
-    if InputQuery('Change directory name', 'Enter new directory name', dir) then
+    if InputQuery(Lang['Changedirectoryname'], Lang['Enternewdirectoryname'], dir) then
     begin
       path := ExtractFilePath(Data.TargetPath);
       if RenameFile(PWideChar(Data.TargetPath), PWideChar(path + dir)) then
@@ -1657,7 +1658,7 @@ begin
           DB.AddParamText(':path', UTF8Encode(Data.TargetPath));
           DB.AddParamInt(':id', Data.ID);
 
-          if MessageDlg('Would you like to set directory name to product name?', mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+          if MessageDlg(Lang['Wouldyouliketosetdirectorynametoproductname'], mtConfirmation, [mbYes, mbNo], 0) = mrYes then
           begin
             DB.AddParamText(':name', UTF8Encode(Data.DirName));
             Data.Name := Data.DirName;
@@ -1686,7 +1687,7 @@ begin
   if q <> '' then
     OpenURL('http://google.com/search?q=' + URLEncode(q, true))
   else
-    MessageDlg('Please add some tags to product!', mtInformation, [mbOK], 0);
+    MessageDlg(Lang['Pleaseaddsometagstoproduct'], mtInformation, [mbOK], 0);
 end;
 
 procedure TMainForm.RunConsistenceCheck;
@@ -1700,7 +1701,7 @@ var
   SS: AnsiString;
 begin
   ProgressStopping := false;
-  ShowProgressDialog('Consistence checking...', 'Please wait', StopProcess);
+  ShowProgressDialog(Lang['Consistencechecking'], Lang['Pleasewait'], StopProcess);
 
   LockDB;
   try
@@ -1740,7 +1741,7 @@ begin
       if not DirectoryExists(Dir) then
       begin
         HideProgressDialog;
-        case MessageDlg(Format('A ''%s'' könyvtár már nem létezik. Törli az elemet a listából?', [Dir]), mtWarning, [mbYes, mbNo, mbAbort], 0) of
+        case MessageDlg(Format(Lang['Thesdirectorydoesn']t exists. Do you want to delete from library?', [Dir]), mtWarning, [mbYes, mbNo, mbAbort], 0) of
           mrYes:
           begin
             DB.ExecSQL('delete from Products where id = ' + Table.FieldAsString(0));
@@ -1782,7 +1783,7 @@ begin
   end;
 
   CloseProgressDialog;
-  MessageDlg('Consistence check finished!', mtInformation, [mbOK], 0);
+  MessageDlg(Lang['Consistencecheckfinished'], mtInformation, [mbOK], 0);
 
   LoadProductsFromDB(true);
 end;
@@ -1916,12 +1917,12 @@ end;
  {$REGION 'DB Tools'}
 procedure TMainForm.VacuumDB;
 begin
-  ShowProgressDialog('Vacuum main database...', 'Please wait');
+  ShowProgressDialog(Lang['Vacuummaindatabase'], Lang['Pleasewait']);
   DB.ExecSQL('VACUUM');
-  ChangeProgressCaption('Vacuum info database...');
+  ChangeProgressCaption(Lang['Vacuuminfodatabase']);
   InfoDB.ExecSQL('VACUUM');
   CloseProgressDialog;
-  MessageDlg('Vacuum finished!', mtInformation, [mbOK], 0);
+  MessageDlg(Lang['Vacuumfinished'], mtInformation, [mbOK], 0);
 end;
 
 procedure TMainForm.BackupDB;
@@ -1930,7 +1931,7 @@ var
 begin
   BackupDialog := TSaveDialog.Create(MainForm);
   BackupDialog.InitialDir := IcePack.GetSpecialFolderPath(CSIDL_MYDOCUMENTS);
-  BackupDialog.Filter := 'Stuff organizer backup files (*.backup)|*.backup';
+  BackupDialog.Filter := Lang['Stufforganizerbackupfiles'] + ' (*.backup)|*.backup';
   BackupDialog.FileName := Format('Stuff Organizer backup %s.backup', [FormatDateTime('yyyymmdd', Now)]);
   BackupDialog.DefaultExt := '.backup';
   if BackupDialog.Execute then
@@ -1942,7 +1943,7 @@ end;
 
 procedure TMainForm.BackupDBToFile(FileName: string);
 begin
-  ShowProgressDialog('Backup...', 'Please wait');
+  ShowProgressDialog(Lang['Backup'], Lang['Pleasewait']);
   try
     CloseDB;
     try
@@ -1958,12 +1959,12 @@ begin
       OpenDB;
     end;
     CloseProgressDialog;
-    MessageDlg('Finished!', mtInformation, [mbOK], 0);
+    MessageDlg(Lang['Finished'], mtInformation, [mbOK], 0);
   except
     on E: Exception do
     begin
       CloseProgressDialog;
-      MessageDlg('Error during backup: ' + E.Message, mtError, [mbOK], 0);
+      MessageDlg(Lang['Errorduringbackup'] + E.Message, mtError, [mbOK], 0);
     end;
   end;
 end;
@@ -1974,7 +1975,7 @@ var
 begin
   RestoreDialog := TOpenDialog.Create(MainForm);
   RestoreDialog.InitialDir := IcePack.GetSpecialFolderPath(CSIDL_MYDOCUMENTS);
-  RestoreDialog.Filter := 'Stuff organizer backup files (*.backup)|*.backup';
+  RestoreDialog.Filter := Lang['Stufforganizerbackupfiles'] + ' (*.backup)|*.backup';
   RestoreDialog.FileName := '';
   RestoreDialog.DefaultExt := '.backup';
   if RestoreDialog.Execute then
@@ -1986,7 +1987,7 @@ end;
 
 procedure TMainForm.RestoreDBFromFile(FileName: string);
 begin
-  ShowProgressDialog('Restore...', 'Please wait');
+  ShowProgressDialog(Lang['Restore'], Lang['Pleasewait']);
   try
     CloseDB;
     try
@@ -2003,13 +2004,13 @@ begin
       OpenDB;
     end;
     CloseProgressDialog;
-    MessageDlg('Finished!', mtInformation, [mbOK], 0);
+    MessageDlg(Lang['Finished'], mtInformation, [mbOK], 0);
     LoadCategoriesFromDB();
   except
     on E: Exception do
     begin
       CloseProgressDialog;
-      MessageDlg('Error during restore: ' + E.Message, mtError, [mbOK], 0);
+      MessageDlg(Lang['Errorduringrestore'] + E.Message, mtError, [mbOK], 0);
     end;
   end;
 end;
@@ -2187,7 +2188,7 @@ var
   mrRes: integer;
 begin
   mrRes := mrNone;
-  ShowProgressDialog('Preparing...', 'Please wait', bStopClick);
+  ShowProgressDialog(Lang['Preparing'], Lang['Pleasewait'], bStopClick);
   for I := 0 to FileList.Count - 1 do
   begin
     Item := nil;
@@ -2206,7 +2207,7 @@ begin
     if bNext then
       continue;
 
-    ChangeProgressCaption(Format('Preparing ''%s''...', [ExtractFileName(FileList[I])]));
+    ChangeProgressCaption(Format(Lang['Preparings'], [ExtractFileName(FileList[I])]));
     Item := TPreProcessItem.Create(FileList[I]);
     Item.CategoryID := CategoryID;
     Item.CalcDirSize;
@@ -2217,7 +2218,7 @@ begin
       if not (mrRes in [mrYesToAll, mrNoToAll]) then
       begin
         HideProgressDialog;
-        mrRes := MessageDlg(Format('The specified source directory (%s) has been processed! Do you want to continue?', [Item.SourcePath]), mtWarning, [mbYes, mbNo, mbYesToAll, mbNoToAll], 0);
+        mrRes := MessageDlg(Format(Lang['ThespecifiedsourcedirectoryshasbeenprocessedDoyouwanttocontinue'], [Item.SourcePath]), mtWarning, [mbYes, mbNo, mbYesToAll, mbNoToAll], 0);
         UnhideProgressDialog;
       end;
 
@@ -2246,7 +2247,7 @@ begin
       if ICS_ENABLED then
       begin
         //Intelligens kategória választót futtatni
-        ChangeProgressCaption(Format('Running ICS on ''%s''...', [ExtractFileName(FileList[I])]));
+        ChangeProgressCaption(Format(Lang['RunningICSons'], [ExtractFileName(FileList[I])]));
 
         Item.CategoryID := ExecuteICS(Item.Tags);
       end;
@@ -2332,7 +2333,7 @@ begin
               if IncludeTrailingBackslash(NewCategoryPath) <> OrigCategoryPath then
               begin
                 if mResult = mrNone then
-                  mResult := MessageDlg('Would you like to move directories according to the new category?', mtConfirmation, [mbYes, mbNo, mbAbort], 0);
+                  mResult := MessageDlg(Lang['Wouldyouliketomovedirectoriesaccordingtothenewcategory'], mtConfirmation, [mbYes, mbNo, mbAbort], 0);
                 case mResult of
                   mrYes: begin
 
@@ -2715,7 +2716,7 @@ begin
   mrDelHDDAnswer := mrNone;
   VList.BeginUpdate;
   try
-    ShowProgressDialog('Delete items...', 'Please wait', StopProcess);
+    ShowProgressDialog(Lang['Deleteitems'], Lang['Pleasewait'], StopProcess);
     SelectList := VList.GetSortedSelection(true);
     for I := Low(SelectList) to High(SelectList) do
     begin
@@ -2723,13 +2724,13 @@ begin
         break;
       Node := SelectList[I];
       Data := VList.GetNodeData(Node);
-      ChangeProgressCaption('Delete ' + Data.DirName + '...');
+      ChangeProgressCaption(Lang['Delete'] + Data.DirName + '...');
       if DirectoryExists(Data.TargetPath) then
       begin
         if mrDelHDDAnswer = mrNone then
         begin
           HideProgressDialog;
-          mrDelHDDAnswer := MessageDlg('Would you like to delete these folders on hard disk?', mtWarning, [mbYes, mbNo, mbAbort], 0);
+          mrDelHDDAnswer := MessageDlg(Lang['Wouldyouliketodeletethesefoldersonharddisk'], mtWarning, [mbYes, mbNo, mbAbort], 0);
           UnhideProgressDialog;
         end;
         case mrDelHDDAnswer of
@@ -2751,7 +2752,7 @@ end;
 
 procedure TMainForm.ModifyCategory(Data: PNodeCategory);
 begin
-  CategoriesForm.Caption := 'Modify category properties';
+  CategoriesForm.Caption := Lang['Modifycategoryproperties'];
   CategoriesForm.eName.Text := Data.Name;
   CategoriesForm.ePath.Text := Data.Path;
   CategoriesForm.ePath.Enabled := Data.Count = 0;
@@ -2869,7 +2870,7 @@ var
   NewID, ID: integer;
 
 begin
-  ShowProgressDialog('Save unprocessed items...', 'Please wait');
+  ShowProgressDialog(Lang['Saveunprocesseditems'], Lang['Pleasewait']);
   for I := 0 to PreparingProducts.Count - 1 do
   begin
     Item := PreparingProducts[I];

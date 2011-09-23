@@ -122,12 +122,12 @@ begin
       begin
         Item.SaveToDB;
         Item.Status := ITEM_PROCESS_SUCCESS;
-        ItemProcessEvent(Item, STATUS_FINISHED, 'Finished.', 100);
+        ItemProcessEvent(Item, STATUS_FINISHED, Lang['Finished0'], 100);
       end
       else
       begin
         Item.Status := ITEM_PROCESS_ERROR;
-        ItemProcessEvent(Item, STATUS_ERROR, 'Aborted.', 100);
+        ItemProcessEvent(Item, STATUS_ERROR, Lang['Aborted'], 100);
       end;
     except on E: Exception do
       begin

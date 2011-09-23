@@ -158,7 +158,7 @@ begin
           begin
             if ShowUpdateForm(updateList) then
             begin
-              //MessageDlg('Application exit for to update...', mtInformation, [mbOK], 0);
+              //MessageDlg(Lang['Applicationexitfortoupdate'], mtInformation, [mbOK], 0);
               updateFile := IcePack.GetTempDirectory + 'SOUpdater.exe';
               if FileExists(updateFile) then
                 DeleteFile(PWideChar(updateFile));
@@ -175,18 +175,18 @@ begin
             end;
           end
           else if not Silent then
-            MessageDlg('Application is up to date.', mtInformation, [mbOK], 0);
+            MessageDlg(Lang['Applicationisuptodate'], mtInformation, [mbOK], 0);
         end
         else if not Silent then
-          MessageDlg('Unknow update file!', mtError, [mbOK], 0);
+          MessageDlg(Lang['Unknowupdatefile'], mtError, [mbOK], 0);
       end
       else if not Silent then
-        MessageDlg('Update info not found!', mtWarning, [mbOK], 0);
+        MessageDlg(Lang['Updateinfonotfound'], mtWarning, [mbOK], 0);
     except
       on E: Exception do
       begin
         if not Silent then
-          MessageDlg('Update error! ' + E.Message, mtError, [mbOK], 0);
+          MessageDlg(Lang['Updateerror'] + E.Message, mtError, [mbOK], 0);
       end;
     end;
   finally

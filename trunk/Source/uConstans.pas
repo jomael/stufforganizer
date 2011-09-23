@@ -22,7 +22,8 @@ unit uConstans;
 interface
 
 uses
-  SysUtils, Classes, Windows, Messages, IcePack, ShlObj, tlHelp32, Forms;
+  SysUtils, Classes, Windows, Messages, IcePack, ShlObj, tlHelp32, Forms,
+  IceLanguage;
 
 const
   APP_TITLE                   = 'Stuff Organizer';
@@ -85,6 +86,7 @@ var
   TagList: TStringList;
   CatIDArray: array of integer;
   TagMatrix: array of array of Extended;
+  Lang: TIceLanguage;
 
 
   (* Settings variables *)
@@ -99,9 +101,13 @@ implementation
 
 initialization
   TagList := TStringList.Create;
+  Lang := TIceLanguage.Create(nil);
 
 finalization
   if Assigned(TagList) then
     TagList.Free;
+
+  if Assigned(Lang) then
+    Lang.Free;
 
 end.

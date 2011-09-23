@@ -156,19 +156,19 @@ begin
   begin
     if NowProcessing then
     begin
-      bOk.Caption := 'View log';
+      bOk.Caption := Lang['Viewlog'];
       bOk.Enabled := true;
     end
     else
     begin
-      bOk.Caption := 'Process';
+      bOk.Caption := Lang['Process'];
       bOk.Enabled := false;
 
     end;
   end
   else
   begin
-    bOk.Caption := Format('Process (%d)', [c]);
+    bOk.Caption := Format(Lang['Processd'], [c]);
     bOk.Enabled := true;
   end;
 
@@ -322,7 +322,7 @@ begin
       else
         TPreProcessItem(SelectionList[I]).CategoryID := -1;
 
-      lNewPath.Caption := 'New path: ' + TPreProcessItem(SelectionList[I]).NewDirPath;
+      lNewPath.Caption := Lang['Newpath'] + TPreProcessItem(SelectionList[I]).NewDirPath;
     end;
   end;
 
@@ -373,7 +373,7 @@ var
   I, Index: Integer;
   Item: TPreProcessItem;
 begin
-  if (MessageDlg('Are you sure delete the selected items?', mtConfirmation, [mbYes, mbNo], 0) = mrYes) then
+  if (MessageDlg(Lang['Areyousuredeletetheselecteditems'], mtConfirmation, [mbYes, mbNo], 0) = mrYes) then
   begin
     VList.BeginUpdate;
     for I := SelectionList.Count - 1 downto 0 do
@@ -387,7 +387,7 @@ begin
         SelectionList.Delete(I);
       end
       else
-        MessageDlg(Format('A(z) ''%s'' elem nem törölhetõ!', [(TPreProcessItem(SelectionList[I])).NewDirName]), mtWarning, [mbOK], 0);
+        MessageDlg(Format(Lang['Thesitemcantdelete'], [(TPreProcessItem(SelectionList[I])).NewDirName]), mtWarning, [mbOK], 0);
     end;
 
     VList.RootNodeCount := PreparingProducts.Count;
@@ -411,7 +411,7 @@ begin
     if TPreProcessItem(SelectionList[I]).Status in [ITEM_ACTIVE, ITEM_PASSIVE] then
     begin
       TPreProcessItem(SelectionList[I]).NewDirName := eNewDirName.Text;
-      lNewPath.Caption := 'New path: ' + TPreProcessItem(SelectionList[I]).NewDirPath;
+      lNewPath.Caption := Lang['Newpath'] + TPreProcessItem(SelectionList[I]).NewDirPath;
     end;
   end;
 
@@ -512,7 +512,7 @@ var
   I: Integer;
 begin
   cbCategories.Items.Clear;
-  cbCategories.AddItem('<no category>', nil);
+  cbCategories.AddItem(Lang['nocategory'], nil);
   for I := Low(Categories) to High(Categories) do
     cbCategories.AddItem(Categories[I].Name, nil);
   cbCategories.ItemIndex := 0;
@@ -550,7 +550,7 @@ begin
   ConfigXML.Root.SetItemValue('PreProcess.DefaultSettings.DeleteSFV', iff(cbDelSFV.Checked, '1', '0'));
   ConfigXML.Root.SetItemValue('PreProcess.DefaultSettings.DeleteSourcePath', iff(cbDelSource.Checked, '1', '0'));
   MainForm.SaveConfig;
-  MessageDlg('Settings saved as default.', mtInformation, [mbOK], 0);
+  MessageDlg(Lang['Settingssavedasdefault'], mtInformation, [mbOK], 0);
 end;
 
 procedure TPreProcessForm.VListClick(Sender: TObject);
@@ -623,7 +623,7 @@ begin
     cbDelDIZ.Checked := Item.DelDIZ;
     cbDelSFV.Checked := Item.DelSFV;
 
-    lNewPath.Caption := 'New path: ' + Item.NewDirPath;
+    lNewPath.Caption := Lang['Newpath'] + Item.NewDirPath;
 
     Loading := false;
 

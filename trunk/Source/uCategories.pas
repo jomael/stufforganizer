@@ -65,13 +65,13 @@ implementation
 
 {$R *.dfm}
 
-uses IcePack, uMain;
+uses IcePack, uMain, uConstans;
 
 procedure TCategoriesForm.btnOkClick(Sender: TObject);
 begin
   if Trim(eName.Text) = '' then
   begin
-    MessageDlg('Please enter a name!', mtWarning, [mbOK], 0);
+    MessageDlg(Lang['Pleaseenteraname'], mtWarning, [mbOK], 0);
     eName.SetFocus;
     Exit;
   end;
