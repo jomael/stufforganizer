@@ -34,6 +34,7 @@ type
     procedure DataListGetText(Sender: TBaseVirtualTree; Node: PVirtualNode;
       Column: TColumnIndex; TextType: TVSTTextType; var CellText: string);
     procedure DataListDblClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -53,7 +54,7 @@ implementation
 {$R *.dfm}
 
 uses
-  uMain;
+  uMain, uConstans;
 
 function UserSelectList(ItemList: PTDescriptorProductInfoArray): integer;
 var
@@ -84,6 +85,12 @@ procedure TUserSelectForm.DataListGetText(Sender: TBaseVirtualTree;
   var CellText: string);
 begin
   CellText := string(Items[Node.Index].Name);
+end;
+
+procedure TUserSelectForm.FormCreate(Sender: TObject);
+begin
+  Lang.Execute('', Self);
+
 end;
 
 end.

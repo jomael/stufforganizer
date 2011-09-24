@@ -12,6 +12,7 @@ object OptionsForm: TOptionsForm
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
+  OnCreate = FormCreate
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -46,7 +47,7 @@ object OptionsForm: TOptionsForm
       object cbDelToRB: TCheckBox
         Left = 24
         Top = 24
-        Width = 185
+        Width = 273
         Height = 17
         Caption = 'Delete to recycle bin'
         TabOrder = 0
@@ -54,7 +55,7 @@ object OptionsForm: TOptionsForm
       object cbHideDialogs: TCheckBox
         Left = 24
         Top = 47
-        Width = 185
+        Width = 273
         Height = 17
         Caption = 'Hide copy/move/delete dialog'
         TabOrder = 1
@@ -62,7 +63,7 @@ object OptionsForm: TOptionsForm
       object cbICS: TCheckBox
         Left = 24
         Top = 70
-        Width = 233
+        Width = 273
         Height = 17
         Caption = 'Enable ICS (Intelligent category selector)'
         TabOrder = 2

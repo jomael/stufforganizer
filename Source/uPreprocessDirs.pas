@@ -461,6 +461,8 @@ end;
 
 procedure TPreProcessForm.FormCreate(Sender: TObject);
 begin
+  Lang.Execute('', Self);
+
   SelectionList := TList.Create;
   DragAcceptFiles( Handle, True );
   FirstRun := true;

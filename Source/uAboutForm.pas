@@ -48,6 +48,7 @@ type
     procedure lGPLClick(Sender: TObject);
     procedure mLicensesURLClick(Sender: TObject; const URL: string);
     procedure iDonateClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -72,6 +73,11 @@ end;
 procedure TAboutForm.bOKClick(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TAboutForm.FormCreate(Sender: TObject);
+begin
+  Lang.Execute('', Self);
 end;
 
 procedure TAboutForm.FormShow(Sender: TObject);

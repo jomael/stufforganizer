@@ -13,6 +13,7 @@ object AboutForm: TAboutForm
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
+  OnCreate = FormCreate
   OnShow = FormShow
   DesignSize = (
     556
@@ -342,11 +343,11 @@ object AboutForm: TAboutForm
     Left = 135
     Top = 114
     Width = 413
-    Height = 33
+    Height = 19
     AutoSize = False
     Caption = 
       'Stuff Organizer is open source software distributed free of char' +
-      'ge under the terms of the'
+      'ge under the terms of'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -356,14 +357,14 @@ object AboutForm: TAboutForm
     WordWrap = True
   end
   object lGPL: TLabel
-    Left = 154
+    Left = 135
     Top = 127
-    Width = 129
+    Width = 413
     Height = 13
     Cursor = crHandPoint
-    Alignment = taRightJustify
     Anchors = [akTop, akRight]
-    Caption = 'GNU General Public License'
+    AutoSize = False
+    Caption = 'the GNU General Public License'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlue
     Font.Height = -11

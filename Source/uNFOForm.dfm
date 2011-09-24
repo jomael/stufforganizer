@@ -13,6 +13,7 @@ object NFOForm: TNFOForm
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object mNFO: TMemo

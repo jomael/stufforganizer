@@ -51,6 +51,7 @@ type
       Rect: TRect; State: TOwnerDrawState);
     procedure PluginListClick(Sender: TObject);
     procedure lWebClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   {  procedure PluginListDrawItem(Sender: TCustomListView; Item: TListItem;
       Rect: TRect; State: TOwnerDrawState);
     procedure PluginListCustomDrawItem(Sender: TCustomListView; Item: TListItem;
@@ -70,7 +71,7 @@ implementation
 {$R *.dfm}
 
 uses
-  uPluginClasses, ShellAPI;
+  uPluginClasses, ShellAPI, uConstans;
 
 procedure TPluginsForm.btnOkClick(Sender: TObject);
 begin
@@ -198,6 +199,12 @@ begin
   Icon.Handle := HIcon(Plugin.PluginInfo.Icon);
   Sender.Canvas.Draw(Rect.Left + 2, Rect.Top + 2, Icon);
 end;   }
+
+procedure TPluginsForm.FormCreate(Sender: TObject);
+begin
+  Lang.Execute('', Self);
+
+end;
 
 procedure TPluginsForm.FormShow(Sender: TObject);
 begin

@@ -18,10 +18,6 @@ msgstr "Added"
 msgid "Path"
 msgstr "Path"
 
-#: CategoryPanel$Caption
-msgid "CategoryPanel"
-msgstr "CategoryPanel"
-
 #: Label1$Caption
 msgid "Product information:"
 msgstr "Product information:"
@@ -350,10 +346,6 @@ msgstr "NFO Viewer"
 msgid "Preferences"
 msgstr "Preferences"
 
-#: Panel1$Caption
-msgid "Panel1"
-msgstr "Panel1"
-
 #: GroupBox1$Caption
 msgid "Process settings"
 msgstr "Process settings"
@@ -643,8 +635,8 @@ msgid "Find *.nfo for save..."
 msgstr "Find *.nfo for save..."
 
 #: Savesforprocess
-msgid "Save '%s' for process..."
-msgstr "Save '%s' for process..."
+msgid "Save '%s' for product..."
+msgstr "Save '%s' for product..."
 
 #: Findimageforsave
 msgid "Find image for save..."
@@ -831,8 +823,8 @@ msgid "Consistence checking..."
 msgstr "Consistence checking..."
 
 #: Thesdirectorydoesn
-msgid "The '%s' directory doesn"
-msgstr "The '%s' directory doesn"
+msgid "The '%s' directory doesn't exists. Do you want to delete from library?"
+msgstr "The '%s' directory doesn't exists. Do you want to delete from library?"
 
 #: Consistencecheckfinished
 msgid "Consistence check finished!"
@@ -1033,4 +1025,20 @@ msgstr "Saved to database."
 #: Mainmodule
 msgid "Main module"
 msgstr "Main module"
+
+#: PAD keywords
+msgid "catalog, stuff, organizer, collection, library, movie, applications, software, music, game, uncompressor, decompressor"
+msgstr "catalog, stuff, organizer, collection, library, movie, applications, software, music, game, uncompressor, decompressor"
+
+#: PAD description 40
+msgid "Stuff Organizer is a catalog software"
+msgstr "Stuff Organizer is a catalog software"
+
+#: PAD description 450
+msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003."
+msgstr "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003."
+
+#: PAD description 2000
+msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer is open source software distributed free of charge under the terms of the GNU General Public License. Main features: unpack compressed files (e.g: zip, rar) in two levels after unpack, cleans up the unused files in the directory (e.g: file_id.diz, sfv file) extract iso if you want sort to multi-level categories support drag-n-drop support tags save NFO file content and image to database get product description from the web (e.g: allrovi.com)"
+msgstr "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer is open source software distributed free of charge under the terms of the GNU General Public License. Main features: unpack compressed files (e.g: zip, rar) in two levels after unpack, cleans up the unused files in the directory (e.g: file_id.diz, sfv file) extract iso if you want sort to multi-level categories support drag-n-drop support tags save NFO file content and image to database get product description from the web (e.g: allrovi.com)"
 

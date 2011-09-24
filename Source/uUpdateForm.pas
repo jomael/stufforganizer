@@ -67,6 +67,7 @@ type
       var Ghosted: Boolean; var ImageIndex: Integer);
     procedure DataListFocusChanged(Sender: TBaseVirtualTree; Node: PVirtualNode;
       Column: TColumnIndex);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -257,6 +258,12 @@ begin
     2: CellText := Data.Version;
     3: CellText := '';
   end;
+end;
+
+procedure TUpdateForm.FormCreate(Sender: TObject);
+begin
+  Lang.Execute('', Self);
+
 end;
 
 procedure TUpdateForm.httpWork(ASender: TObject; AWorkMode: TWorkMode;

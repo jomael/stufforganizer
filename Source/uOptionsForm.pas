@@ -46,6 +46,7 @@ type
     procedure btnOkClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure bCheckUpdateClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     procedure LoadExtensions;
     { Private declarations }
@@ -59,7 +60,7 @@ var
 implementation
 
 uses
-  uPLuginClasses, uClasses, IceXML, IcePack, uProcs, uMain;
+  uPLuginClasses, uClasses, IceXML, IcePack, uProcs, uMain, uConstans;
 
 {$R *.dfm}
 
@@ -96,6 +97,12 @@ begin
   MainForm.LoadVariablesFromConfig;
 
   Close;
+end;
+
+procedure TOptionsForm.FormCreate(Sender: TObject);
+begin
+  Lang.Execute('', Self);
+
 end;
 
 procedure TOptionsForm.FormShow(Sender: TObject);

@@ -57,6 +57,7 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure btnStopClick(Sender: TObject);
     procedure cbPriorityChange(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     FEventList: TList;
 
@@ -214,6 +215,12 @@ begin
     if Mainform.Showing then
       MainForm.BringToFront;
   end;
+end;
+
+procedure TThreadProcessForm.FormCreate(Sender: TObject);
+begin
+  Lang.Execute('', Self);
+
 end;
 
 procedure TThreadProcessForm.ThreadEventNotify(var msg: TMessage);

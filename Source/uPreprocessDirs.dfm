@@ -177,12 +177,14 @@ object PreProcessForm: TPreProcessForm
         OnClick = lAddCatClick
       end
       object lSaveDefault: TLabel
-        Left = 696
+        Left = 671
         Top = 92
-        Width = 75
+        Width = 99
         Height = 13
         Cursor = crHandPoint
+        Alignment = taRightJustify
         Anchors = [akTop, akRight]
+        AutoSize = False
         Caption = 'Save as default'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlue
@@ -235,9 +237,9 @@ object PreProcessForm: TPreProcessForm
         OnClick = cbUnpackClick
       end
       object cbDelSource: TCheckBox
-        Left = 792
+        Left = 780
         Top = 19
-        Width = 113
+        Width = 135
         Height = 17
         Anchors = [akTop, akRight]
         Caption = 'Delete source path'
@@ -245,9 +247,9 @@ object PreProcessForm: TPreProcessForm
         OnClick = cbUnpackClick
       end
       object cbDelNFO: TCheckBox
-        Left = 792
+        Left = 780
         Top = 42
-        Width = 113
+        Width = 135
         Height = 17
         Anchors = [akTop, akRight]
         Caption = 'Delete *.nfo'
@@ -255,9 +257,9 @@ object PreProcessForm: TPreProcessForm
         OnClick = cbUnpackClick
       end
       object cbDelDIZ: TCheckBox
-        Left = 792
+        Left = 780
         Top = 65
-        Width = 113
+        Width = 135
         Height = 17
         Anchors = [akTop, akRight]
         Caption = 'Delete *.diz'
@@ -265,9 +267,9 @@ object PreProcessForm: TPreProcessForm
         OnClick = cbUnpackClick
       end
       object cbDelSFV: TCheckBox
-        Left = 792
+        Left = 780
         Top = 88
-        Width = 113
+        Width = 135
         Height = 17
         Anchors = [akTop, akRight]
         Caption = 'Delete *.sfv'
@@ -318,9 +320,9 @@ object PreProcessForm: TPreProcessForm
       ExplicitHeight = 40
     end
     object bOk: TButton
-      Left = 742
+      Left = 674
       Top = 6
-      Width = 75
+      Width = 143
       Height = 25
       Anchors = [akTop, akRight]
       Caption = 'Process'
