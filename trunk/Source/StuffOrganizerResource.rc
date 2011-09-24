@@ -1,3 +1,4 @@
 DB_INFO RCData "DBSQL\\productinfo.sql"
 DB_MAIN RCData "DBSQL\\main.sql"
 UPDATE_EXE RCData "SOUpdater\\SOUpdater.exe"
+LANG_DESCRIPTOR RCData "lang_descriptor.xml"

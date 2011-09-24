@@ -30,6 +30,7 @@ type
     mNFO: TMemo;
     FontDialog1: TFontDialog;
     procedure mNFOKeyPress(Sender: TObject; var Key: Char);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,6 +44,9 @@ procedure ShowNFOContent(Data: string);
 
 implementation
 
+uses
+  uConstans;
+
 {$R *.dfm}
 
 procedure ShowNFOContent(Data: string);
@@ -53,6 +57,12 @@ begin
     NFOForm.Show
   else
     NFOForm.BringToFront;
+end;
+
+procedure TNFOForm.FormCreate(Sender: TObject);
+begin
+  Lang.Execute('', Self);
+
 end;
 
 procedure TNFOForm.mNFOKeyPress(Sender: TObject; var Key: Char);

@@ -102,6 +102,9 @@ implementation
 initialization
   TagList := TStringList.Create;
   Lang := TIceLanguage.Create(nil);
+  Lang.LanguageDir := ExecPath + 'Languages';
+  Lang.GetLanguageFiles;
+  Lang.InitializeDescriptor(TResourceStream.Create(hInstance, 'LANG_DESCRIPTOR', RT_RCDATA));
 
 finalization
   if Assigned(TagList) then

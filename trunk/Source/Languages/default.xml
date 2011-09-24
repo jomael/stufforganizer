@@ -6,7 +6,6 @@
       <String name="VList$HeaderColumns2Text">Description</String>
       <String name="VList$HeaderColumns3Text">Added</String>
       <String name="VList$HeaderColumns4Text">Path</String>
-      <String name="CategoryPanel$Caption">CategoryPanel</String>
       <String name="Label1$Caption">Product information:</String>
       <String name="lProductName$Hint">Click here to change</String>
       <String name="lURL$Hint">Click here to open</String>
@@ -89,7 +88,6 @@
       <String name="eName$EditLabelCaption">Category name</String>
       <String name="$Caption2">NFO Viewer</String>
       <String name="$Caption3">Preferences</String>
-      <String name="Panel1$Caption">Panel1</String>
       <String name="GroupBox1$Caption">Process settings</String>
       <String name="cbDelToRB$Caption">Delete to recycle bin</String>
       <String name="cbHideDialogs$Caption">Hide copy/move/delete dialog</String>
@@ -162,7 +160,7 @@
       <String name="Pleaseenteraname">Please enter a name!</String>
       <String name="Savingtodatabase">Saving to database...</String>
       <String name="Findnfoforsave">Find *.nfo for save...</String>
-      <String name="Savesforprocess">Save '%s' for process...</String>
+      <String name="Savesforprocess">Save '%s' for product...</String>
       <String name="Findimageforsave">Find image for save...</String>
       <String name="Waitingforpassword">Waiting for password...</String>
       <String name="Deletesourcefiles">Delete source files...</String>
@@ -209,7 +207,7 @@
       <String name="Wouldyouliketosetdirectorynametoproductname">Would you like to set directory name to product name?</String>
       <String name="Pleaseaddsometagstoproduct">Please add some tags to product!</String>
       <String name="Consistencechecking">Consistence checking...</String>
-      <String name="Thesdirectorydoesn">The '%s' directory doesn</String>
+      <String name="Thesdirectorydoesn">The '%s' directory doesn't exists. Do you want to delete from library?</String>
       <String name="Consistencecheckfinished">Consistence check finished!</String>
       <String name="Vacuummaindatabase">Vacuum main database...</String>
       <String name="Vacuuminfodatabase">Vacuum info database...</String>

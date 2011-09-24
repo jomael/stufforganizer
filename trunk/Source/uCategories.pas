@@ -103,6 +103,8 @@ procedure TCategoriesForm.FormCreate(Sender: TObject);
 var
   I: Integer;
 begin
+  Lang.Execute('', Self);
+
   shColor.Brush.Color := clWhite;
 
   for I := cbIcons.Items.Count to MainForm.ilCategories.Count - 1 do

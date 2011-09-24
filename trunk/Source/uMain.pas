@@ -922,6 +922,9 @@ begin
   Application.Title := APP_TITLE;
   CoolTrayIcon1.Hint := Caption;
 
+  Lang.LanguageCode := 'hu-HU';
+  Lang.Execute('', Self);
+
   MainDBPath := GetSpecialFolderPath(CSIDL_LOCAL_APPDATA) + DBPATH + MAINDBFILENAME;
   InfoDBPath := GetSpecialFolderPath(CSIDL_LOCAL_APPDATA) + DBPATH + INFODBFILENAME;
   PluginPath := ExecPath + PLUGIN_DIR;

@@ -33,6 +33,7 @@ type
     procedure bOkClick(Sender: TObject);
     procedure bCancelClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -81,6 +82,12 @@ end;
 procedure TPasswordForm.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
+end;
+
+procedure TPasswordForm.FormCreate(Sender: TObject);
+begin
+  Lang.Execute('', Self);
+
 end;
 
 end.

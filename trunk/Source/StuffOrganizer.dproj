@@ -96,6 +96,11 @@
 				<ResourceType>RCData</ResourceType>
 				<ResourceId>UPDATE_EXE</ResourceId>
 			</RcItem>
+			<RcItem Include="lang_descriptor.xml">
+				<ContainerId>ResourceItem</ContainerId>
+				<ResourceType>RCData</ResourceType>
+				<ResourceId>LANG_DESCRIPTOR</ResourceId>
+			</RcItem>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
@@ -128,7 +133,7 @@
 						<VersionInfo Name="MajorVer">0</VersionInfo>
 						<VersionInfo Name="MinorVer">4</VersionInfo>
 						<VersionInfo Name="Release">6</VersionInfo>
-						<VersionInfo Name="Build">49</VersionInfo>
+						<VersionInfo Name="Build">51</VersionInfo>
 						<VersionInfo Name="Debug">False</VersionInfo>
 						<VersionInfo Name="PreRelease">True</VersionInfo>
 						<VersionInfo Name="Special">False</VersionInfo>
@@ -140,7 +145,7 @@
 					<VersionInfoKeys>
 						<VersionInfoKeys Name="CompanyName">Ice Applications</VersionInfoKeys>
 						<VersionInfoKeys Name="FileDescription">Stuff Organizer</VersionInfoKeys>
-						<VersionInfoKeys Name="FileVersion">0.4.6.49</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">0.4.6.51</VersionInfoKeys>
 						<VersionInfoKeys Name="InternalName"/>
 						<VersionInfoKeys Name="LegalCopyright"/>
 						<VersionInfoKeys Name="LegalTrademarks"/>

@@ -43,8 +43,9 @@ object CategoriesForm: TCategoriesForm
   object Label2: TLabel
     Left = 24
     Top = 101
-    Width = 168
+    Width = 403
     Height = 13
+    AutoSize = False
     Caption = 'If blank, it'#39's equal with source path'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clGray
