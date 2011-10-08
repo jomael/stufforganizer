@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+  <LanguageDescriptor version="3.0">
+    <Properties/>
+    <Forms name="StuffOrganizer.exe">
+      <Form name="TMainForm">
+        <Component name="VList">
+          <Property name="Header.Columns[0].Text">RES$VList$HeaderColumns0Text</Property>
+          <Property name="Header.Columns[1].Text">RES$VList$HeaderColumns1Text</Property>
+          <Property name="Header.Columns[2].Text">RES$VList$HeaderColumns2Text</Property>
+          <Property name="Header.Columns[3].Text">RES$VList$HeaderColumns3Text</Property>
+          <Property name="Header.Columns[4].Text">RES$VList$HeaderColumns4Text</Property>
+        </Component>
+        <Component name="CategoryPanel">
+          <Property name="Caption">RES$CategoryPanel$Caption</Property>
+        </Component>
+        <Component name="Label1">
+          <Property name="Caption">RES$Label1$Caption</Property>
+        </Component>
+        <Component name="lProductName">
+          <Property name="Hint">RES$lProductName$Hint</Property>
+        </Component>
+        <Component name="lURL">
+          <Property name="Hint">RES$lURL$Hint</Property>
+        </Component>
+        <Component name="lGoogleSearch">
+          <Property name="Caption">RES$lGoogleSearch$Caption</Property>
+          <Property name="Hint">RES$lGoogleSearch$Hint</Property>
+        </Component>
+        <Component name="eTags">
+          <Property name="Hint">RES$eTags$Hint</Property>
+          <Property name="TextHint">RES$eTags$TextHint</Property>
+        </Component>
+        <Component name="bShowNFO">
+          <Property name="Caption">RES$bShowNFO$Caption</Property>
+        </Component>
+        <Component name="bAddNFO">
+          <Property name="Caption">RES$bAddNFO$Caption</Property>
+        </Component>
+        <Component name="bChangeURL">
+          <Property name="Caption">RES$bChangeURL$Caption</Property>
+        </Component>
+        <Component name="bChangePicture">
+          <Property name="Caption">RES$bChangePicture$Caption</Property>
+        </Component>
+        <Component name="lChnageDirectoryName">
+          <Property name="Caption">RES$lChnageDirectoryName$Caption</Property>
+        </Component>
+        <Component name="ToolButton1">
+          <Property name="Caption">RES$ToolButton1$Caption</Property>
+        </Component>
+        <Component name="ToolButton2">
+          <Property name="Caption">RES$ToolButton2$Caption</Property>
+        </Component>
+        <Component name="ToolButton3">
+          <Property name="Caption">RES$ToolButton3$Caption</Property>
+        </Component>
+        <Component name="ToolButton4">
+          <Property name="Caption">RES$ToolButton4$Caption</Property>
+        </Component>
+        <Component name="ToolButton5">
+          <Property name="Caption">RES$ToolButton5$Caption</Property>
+        </Component>
+        <Component name="ToolButton6">
+          <Property name="Caption">RES$ToolButton6$Caption</Property>
+        </Component>
+        <Component name="ToolButton7">
+          <Property name="Caption">RES$ToolButton7$Caption</Property>
+        </Component>
+        <Component name="eSearch">
+          <Property name="TextHint">RES$eSearch$TextHint</Property>
+        </Component>
+        <Component name="Modifycategory1">
+          <Property name="Caption">RES$Modifycategory1$Caption</Property>
+        </Component>
+        <Component name="Addnewcategory1">
+          <Property name="Caption">RES$Addnewcategory1$Caption</Property>
+        </Component>
+		<Component name="Deletecategory1">
+          <Property name="Caption">RES$Deletecategory1$Caption</Property>
+        </Component>
+        <Component name="Opendirectory1">
+          <Property name="Caption">RES$Opendirectory1$Caption</Property>
+        </Component>
+        <Component name="Opensourcedirectory1">
+          <Property name="Caption">RES$Opensourcedirectory1$Caption</Property>
+        </Component>
+        <Component name="Copytargetdirectorytoclipboard1">
+          <Property name="Caption">RES$Copytargetdirectorytoclipboard1$Caption</Property>
+        </Component>
+        <Component name="Reprocess1">
+          <Property name="Caption">RES$Reprocess1$Caption</Property>
+        </Component>
+		<Component name="pmiPluginFuncs">
+		  <Property name="Caption">RES$pmiPluginFuncs$Caption</Property>
+		</Component>
+		<Component name="Deleteselecteditems1">
+          <Property name="Caption">RES$Deleteselecteditems1$Caption</Property>
+        </Component>
+        <Component name="Deletesourcefiles1">
+          <Property name="Caption">RES$Deletesourcefiles1$Caption</Property>
+        </Component>
+        <Component name="aModifyCategory">
+          <Property name="Caption">RES$aModifyCategory$Caption</Property>
+        </Component>
+        <Component name="aDeleteCategory">
+          <Property name="Caption">RES$aDeleteCategory$Caption</Property>
+        </Component>
+        <Component name="aDeleteItems">
+          <Property name="Caption">RES$aDeleteItems$Caption</Property>
+        </Component>
+        <Component name="aOpenDir">
+          <Property name="Caption">RES$aOpenDir$Caption</Property>
+        </Component>
+        <Component name="aNewCategory">
+          <Property name="Caption">RES$aNewCategory$Caption</Property>
+        </Component>
+        <Component name="aShowMainForm">
+          <Property name="Caption">RES$aShowMainForm$Caption</Property>
+        </Component>
+        <Component name="aExit">
+          <Property name="Caption">RES$aExit$Caption</Property>
+        </Component>
+        <Component name="aViewProcessLog">
+          <Property name="Caption">RES$aViewProcessLog$Caption</Property>
+        </Component>
+        <Component name="aReprocess">
+          <Property name="Caption">RES$aReprocess$Caption</Property>
+        </Component>
+        <Component name="aDelSource">
+          <Property name="Caption">RES$aDelSource$Caption</Property>
+        </Component>
+        <Component name="aOpenSourceDir">
+          <Property name="Caption">RES$aOpenSourceDir$Caption</Property>
+        </Component>
+        <Component name="aTargetToClipBoard">
+          <Property name="Caption">RES$aTargetToClipBoard$Caption</Property>
+        </Component>
+        <Component name="Adddirectory1">
+          <Property name="Caption">RES$Adddirectory1$Caption</Property>
+        </Component>
+        <Component name="Addfiless1">
+          <Property name="Caption">RES$Addfiless1$Caption</Property>
+        </Component>
+        <Component name="Adddirectorytowatchlist1">
+          <Property name="Caption">RES$Adddirectorytowatchlist1$Caption</Property>
+        </Component>
+        <Component name="aAddFile">
+          <Property name="Caption">RES$aAddFile$Caption</Property>
+        </Component>
+        <Component name="aAddDirectory">
+          <Property name="Caption">RES$aAddDirectory$Caption</Property>
+        </Component>
+        <Component name="aQueue">
+          <Property name="Caption">RES$aQueue$Caption</Property>
+        </Component>
+        <Component name="aConsistenceCheck">
+          <Property name="Caption">RES$aConsistenceCheck$Caption</Property>
+        </Component>
+        <Component name="aAddStuff">
+          <Property name="Caption">RES$aAddStuff$Caption</Property>
+        </Component>
+        <Component name="aAddToWatch">
+          <Property name="Caption">RES$aAddToWatch$Caption</Property>
+        </Component>
+        <Component name="aSettings">
+          <Property name="Caption">RES$aSettings$Caption</Property>
+        </Component>
+        <Component name="aDBBackup">
+          <Property name="Caption">RES$aDBBackup$Caption</Property>
+        </Component>
+        <Component name="aDBRestore">
+          <Property name="Caption">RES$aDBRestore$Caption</Property>
+        </Component>
+        <Component name="aDBVacuum">
+          <Property name="Caption">RES$aDBVacuum$Caption</Property>
+        </Component>
+        <Component name="aPlugins">
+          <Property name="Caption">RES$aPlugins$Caption</Property>
+        </Component>
+        <Component name="aAbout">
+          <Property name="Caption">RES$aAbout$Caption</Property>
+        </Component>
+        <Component name="aHomepage">
+          <Property name="Caption">RES$aHomepage$Caption</Property>
+        </Component>
+        <Component name="aCheckNewVersion">
+          <Property name="Caption">RES$aCheckNewVersion$Caption</Property>
+        </Component>
+        <Component name="Show1">
+          <Property name="Caption">RES$Show1$Caption</Property>
+        </Component>
+        <Component name="Viewprocesslog1">
+          <Property name="Caption">RES$Viewprocesslog1$Caption</Property>
+        </Component>
+		<Component name="Exit1">
+		  <Property name="Caption">RES$Exit1$Caption</Property>
+		</Component>
+		<Component name="ools1">
+		  <Property name="Caption">RES$ools1$Caption</Property>
+		</Component>
+		<Component name="Plugins1">
+		  <Property name="Caption">RES$Plugins1$Caption</Property>
+		</Component>
+        <Component name="Databasebackup1">
+          <Property name="Caption">RES$Databasebackup1$Caption</Property>
+        </Component>
+        <Component name="Databaserestore1">
+          <Property name="Caption">RES$Databaserestore1$Caption</Property>
+        </Component>
+        <Component name="Databasevacuum1">
+          <Property name="Caption">RES$Databasevacuum1$Caption</Property>
+        </Component>
+        <Component name="Visithomepage1">
+          <Property name="Caption">RES$Visithomepage1$Caption</Property>
+        </Component>
+        <Component name="Checknewversion1">
+          <Property name="Caption">RES$Checknewversion1$Caption</Property>
+        </Component>
+      </Form>
+      <Form name="TAboutForm">
+        <Property name="Caption">RES$$Caption0</Property>
+        <Component name="bCheckUpdate">
+          <Property name="Caption">RES$bCheckUpdate$Caption</Property>
+        </Component>
+        <Component name="Label2">
+          <Property name="Caption">RES$Label2$Caption</Property>
+        </Component>
+        <Component name="lGPL">
+          <Property name="Caption">RES$lGPL$Caption</Property>
+        </Component>
+        <Component name="bOK">
+          <Property name="Caption">RES$bOK$Caption</Property>
+        </Component>
+      </Form>
+      <Form name="TCategoriesForm">
+        <Property name="Caption">RES$$Caption1</Property>
+        <Component name="Label1">
+          <Property name="Caption">RES$Label1$Caption1</Property>
+        </Component>
+        <Component name="Label2">
+          <Property name="Caption">RES$Label2$Caption0</Property>
+        </Component>
+        <Component name="Label3">
+          <Property name="Caption">RES$Label3$Caption0</Property>
+        </Component>
+        <Component name="Label4">
+          <Property name="Caption">RES$Label4$Caption</Property>
+        </Component>
+        <Component name="btnCancel">
+          <Property name="Caption">RES$btnCancel$Caption</Property>
+        </Component>
+        <Component name="btnOk">
+          <Property name="Caption">RES$btnOk$Caption</Property>
+        </Component>
+        <Component name="eName">
+          <Property name="EditLabel.Caption">RES$eName$EditLabelCaption</Property>
+        </Component>
+      </Form>
+      <Form name="TNFOForm">
+        <Property name="Caption">RES$$Caption2</Property>
+      </Form>
+      <Form name="TOptionsForm">
+        <Property name="Caption">RES$$Caption3</Property>
+        <Component name="Panel1">
+          <Property name="Caption">RES$Panel1$Caption</Property>
+        </Component>
+        <Component name="GroupBox1">
+          <Property name="Caption">RES$GroupBox1$Caption</Property>
+        </Component>
+        <Component name="cbDelToRB">
+          <Property name="Caption">RES$cbDelToRB$Caption</Property>
+        </Component>
+        <Component name="cbHideDialogs">
+          <Property name="Caption">RES$cbHideDialogs$Caption</Property>
+        </Component>
+        <Component name="cbICS">
+          <Property name="Caption">RES$cbICS$Caption</Property>
+        </Component>
+        <Component name="GroupBox2">
+          <Property name="Caption">RES$GroupBox2$Caption</Property>
+        </Component>
+        <Component name="bCheckUpdate">
+          <Property name="Caption">RES$bCheckUpdate$Caption0</Property>
+        </Component>
+        <Component name="cbCheckNewVersion">
+          <Property name="Caption">RES$cbCheckNewVersion$Caption</Property>
+        </Component>
+        <Component name="GroupBox3">
+          <Property name="Caption">RES$GroupBox3$Caption</Property>
+        </Component>
+        <Component name="Panel2">
+          <Property name="Caption">RES$Panel2$Caption</Property>
+        </Component>
+        <Component name="btnOk">
+          <Property name="Caption">RES$btnOk$Caption0</Property>
+        </Component>
+        <Component name="btnCancel">
+          <Property name="Caption">RES$btnCancel$Caption</Property>
+        </Component>
+		<Component name="GroupBox4">
+		  <Property name="Caption">RES$GroupBox4$Caption</Property>
+		</Component>
+		<Component name="lDownloadLangs">
+		  <Property name="Caption">RES$lDownloadLangs$Caption</Property>
+		</Component>
+		<Component name="lTranslateTo">
+		  <Property name="Caption">RES$lTranslateTo$Caption</Property>
+		</Component>
+	  </Form>
+	  <Form name="TPasswordForm">
+        <Property name="Caption">RES$$Caption4</Property>
+        <Component name="ePass">
+          <Property name="EditLabel.Caption">RES$ePass$EditLabelCaption</Property>
+        </Component>
+        <Component name="bOk">
+          <Property name="Caption">RES$bOk$Caption</Property>
+        </Component>
+        <Component name="bCancel">
+          <Property name="Caption">RES$bCancel$Caption</Property>
+        </Component>
+      </Form>
+      <Form name="TPluginsForm">
+        <Property name="Caption">RES$$Caption5</Property>
+        <Component name="btnOk">
+          <Property name="Caption">RES$btnOk$Caption1</Property>
+        </Component>
+        <Component name="GroupBox1">
+          <Property name="Caption">RES$GroupBox1$Caption0</Property>
+        </Component>
+        <Component name="Label1">
+          <Property name="Caption">RES$Label1$Caption2</Property>
+        </Component>
+        <Component name="Label2">
+          <Property name="Caption">RES$Label2$Caption1</Property>
+        </Component>
+        <Component name="Label3">
+          <Property name="Caption">RES$Label3$Caption1</Property>
+        </Component>
+        <Component name="Label4">
+          <Property name="Caption">RES$Label4$Caption0</Property>
+        </Component>
+        <Component name="Label5">
+          <Property name="Caption">RES$Label5$Caption</Property>
+        </Component>
+		<Component name="IceTabSet1">
+		  <Property name="Tabs[0].Caption">RES$IceTabSet1Tabs0$Caption</Property>
+		  <Property name="Tabs[1].Caption">RES$IceTabSet1Tabs1$Caption</Property>
+		</Component>
+		<Component name="bInstall">
+		  <Property name="Caption">RES$bInstall$Caption</Property>
+		</Component>
+	  </Form>
+	  <Form name="TPreProcessForm">
+        <Property name="Caption">RES$$Caption6</Property>
+        <Component name="Panel1">
+          <Property name="Caption">RES$Panel1$Caption</Property>
+        </Component>
+        <Component name="VList">
+          <Property name="Header.Columns[0].Text">RES$VList$HeaderColumns0Text</Property>
+          <Property name="Header.Columns[1].Text">RES$VList$HeaderColumns1Text0</Property>
+          <Property name="Header.Columns[2].Text">RES$VList$HeaderColumns2Text0</Property>
+          <Property name="Header.Columns[3].Text">RES$VList$HeaderColumns3Text0</Property>
+          <Property name="Header.Columns[4].Text">RES$VList$HeaderColumns4Text0</Property>
+          <Property name="Header.Columns[5].Text">RES$VList$HeaderColumns5Text</Property>
+          <Property name="Header.Columns[6].Text">RES$VList$HeaderColumns6Text</Property>
+        </Component>
+        <Component name="Label3">
+          <Property name="Caption">RES$Label3$Caption2</Property>
+        </Component>
+        <Component name="lNewPath">
+          <Property name="Caption">RES$lNewPath$Caption</Property>
+        </Component>
+        <Component name="lAddCat">
+          <Property name="Caption">RES$lAddCat$Caption</Property>
+        </Component>
+        <Component name="lSaveDefault">
+          <Property name="Caption">RES$lSaveDefault$Caption</Property>
+        </Component>
+        <Component name="eNewDirName">
+          <Property name="EditLabel.Caption">RES$eNewDirName$EditLabelCaption</Property>
+        </Component>
+        <Component name="cbUnpack">
+          <Property name="Caption">RES$cbUnpack$Caption</Property>
+        </Component>
+        <Component name="cbUnPackISO">
+          <Property name="Caption">RES$cbUnPackISO$Caption</Property>
+        </Component>
+        <Component name="cbDelSource">
+          <Property name="Caption">RES$cbDelSource$Caption</Property>
+        </Component>
+        <Component name="cbDelNFO">
+          <Property name="Caption">RES$cbDelNFO$Caption</Property>
+        </Component>
+        <Component name="cbDelDIZ">
+          <Property name="Caption">RES$cbDelDIZ$Caption</Property>
+        </Component>
+        <Component name="cbDelSFV">
+          <Property name="Caption">RES$cbDelSFV$Caption</Property>
+        </Component>
+        <Component name="eTags">
+          <Property name="EditLabel.Caption">RES$eTags$EditLabelCaption</Property>
+        </Component>
+        <Component name="bOk">
+          <Property name="Caption">RES$bOk$Caption0</Property>
+        </Component>
+        <Component name="bCancel">
+          <Property name="Caption">RES$bCancel$Caption0</Property>
+        </Component>
+        <Component name="Deleteselecteditem1">
+          <Property name="Caption">RES$Deleteselecteditem1$Caption</Property>
+        </Component>
+        <Component name="N1">
+          <Property name="Caption">RES$N1$Caption</Property>
+        </Component>
+        <Component name="Checkall1">
+          <Property name="Caption">RES$Checkall1$Caption</Property>
+        </Component>
+        <Component name="Uncheckall1">
+          <Property name="Caption">RES$Uncheckall1$Caption</Property>
+        </Component>
+      </Form>
+      <Form name="TThreadProcessForm">
+        <Property name="Caption">RES$$Caption7</Property>
+        <Component name="Panel1">
+          <Property name="Caption">RES$Panel1$Caption</Property>
+        </Component>
+        <Component name="lMainCaption">
+          <Property name="Caption">RES$lMainCaption$Caption</Property>
+        </Component>
+        <Component name="lElapsedTime">
+          <Property name="Caption">RES$lElapsedTime$Caption</Property>
+        </Component>
+        <Component name="lEstimatedTime">
+          <Property name="Caption">RES$lEstimatedTime$Caption</Property>
+        </Component>
+        <Component name="Panel2">
+          <Property name="Caption">RES$Panel2$Caption</Property>
+        </Component>
+        <Component name="Label1">
+          <Property name="Caption">RES$Label1$Caption3</Property>
+        </Component>
+        <Component name="btnHide">
+          <Property name="Caption">RES$btnHide$Caption</Property>
+        </Component>
+        <Component name="btnPause">
+          <Property name="Caption">RES$btnPause$Caption</Property>
+        </Component>
+        <Component name="btnStop">
+          <Property name="Caption">RES$btnStop$Caption</Property>
+        </Component>
+        <Component name="cbPriority">
+          <Property name="Items[0]">RES$cbPriority$Items0</Property>
+          <Property name="Items[1]">RES$cbPriority$Items1</Property>
+          <Property name="Items[2]">RES$cbPriority$Items2</Property>
+          <Property name="Items[3]">RES$cbPriority$Items3</Property>
+          <Property name="Items[4]">RES$cbPriority$Items4</Property>
+        </Component>
+        <Component name="GroupBox1">
+          <Property name="Caption">RES$GroupBox1$Caption1</Property>
+        </Component>
+        <Component name="LogList">
+          <Property name="Header.Columns[0].Text">RES$LogList$HeaderColumns0Text</Property>
+          <Property name="Header.Columns[1].Text">RES$LogList$HeaderColumns1Text</Property>
+        </Component>
+      </Form>
+      <Form name="TUpdateForm">
+        <Property name="Caption">RES$$Caption8</Property>
+        <Component name="Panel2">
+          <Property name="Caption">RES$Panel2$Caption</Property>
+        </Component>
+        <Component name="btnCancel">
+          <Property name="Caption">RES$btnCancel$Caption</Property>
+        </Component>
+        <Component name="btnUpdate">
+          <Property name="Caption">RES$btnUpdate$Caption</Property>
+        </Component>
+        <Component name="GroupBox1">
+          <Property name="Caption">RES$GroupBox1$Caption2</Property>
+        </Component>
+        <Component name="DataList">
+          <Property name="Header.Columns[0].Text">RES$DataList$HeaderColumns0Text</Property>
+          <Property name="Header.Columns[1].Text">RES$DataList$HeaderColumns1Text</Property>
+          <Property name="Header.Columns[2].Text">RES$DataList$HeaderColumns2Text</Property>
+        </Component>
+        <Component name="GroupBox2">
+          <Property name="Caption">RES$GroupBox2$Caption0</Property>
+        </Component>
+        <Component name="Panel1">
+          <Property name="Caption">RES$Panel1$Caption</Property>
+        </Component>
+        <Component name="lMainCaption">
+          <Property name="Caption">RES$lMainCaption$Caption0</Property>
+        </Component>
+      </Form>
+      <Form name="TUserSelectForm">
+        <Property name="Caption">RES$$Caption9</Property>
+        <Component name="btnOk">
+          <Property name="Caption">RES$btnOk$Caption0</Property>
+        </Component>
+        <Component name="btnCancel">
+          <Property name="Caption">RES$btnCancel$Caption</Property>
+        </Component>
+      </Form>
+    </Forms>
+  </LanguageDescriptor>
