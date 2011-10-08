@@ -13,6 +13,7 @@ object PluginsForm: TPluginsForm
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
+  OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
   PixelsPerInch = 96
@@ -145,12 +146,10 @@ object PluginsForm: TPluginsForm
         Left = 24
         Top = 103
         Width = 237
-        Height = 178
+        Height = 162
         Anchors = [akLeft, akTop, akRight, akBottom]
         AutoSize = False
         WordWrap = True
-        ExplicitWidth = 201
-        ExplicitHeight = 170
       end
       object lName: TLabel
         Left = 71
@@ -218,18 +217,89 @@ object PluginsForm: TPluginsForm
         OnClick = lWebClick
         ExplicitWidth = 154
       end
+      object bInstall: TButton
+        Left = 196
+        Top = 278
+        Width = 75
+        Height = 25
+        Caption = 'Install'
+        TabOrder = 0
+        Visible = False
+        OnClick = bInstallClick
+      end
     end
-    object PluginList: TListBox
+    object Panel3: TPanel
       Left = 2
       Top = 15
       Width = 426
       Height = 306
-      Style = lbOwnerDrawFixed
       Align = alClient
-      ItemHeight = 42
       TabOrder = 1
-      OnClick = PluginListClick
-      OnDrawItem = PluginListDrawItem
+      ExplicitLeft = 40
+      ExplicitTop = 14
+      ExplicitWidth = 369
+      ExplicitHeight = 282
+      object PluginList: TListBox
+        Left = 1
+        Top = 26
+        Width = 424
+        Height = 279
+        Style = lbOwnerDrawFixed
+        Align = alClient
+        ItemHeight = 42
+        TabOrder = 0
+        OnClick = PluginListClick
+        OnDrawItem = PluginListDrawItem
+        ExplicitLeft = 10
+        ExplicitTop = 112
+        ExplicitWidth = 399
+        ExplicitHeight = 190
+      end
+      object IceTabSet1: TIceTabSet
+        Left = 1
+        Top = 1
+        Width = 424
+        Height = 25
+        Align = alTop
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        SelectedFont.Charset = DEFAULT_CHARSET
+        SelectedFont.Color = clBlack
+        SelectedFont.Height = -11
+        SelectedFont.Name = 'Tahoma'
+        SelectedFont.Style = []
+        ModifiedFont.Charset = DEFAULT_CHARSET
+        ModifiedFont.Color = 11777023
+        ModifiedFont.Height = -11
+        ModifiedFont.Name = 'Tahoma'
+        ModifiedFont.Style = []
+        Tabs = <
+          item
+            Caption = 'Installed plugins'
+            Selected = True
+            Modified = False
+          end
+          item
+            Caption = 'Downloadable plugins'
+            Selected = False
+            Modified = False
+          end>
+        TabIndex = 0
+        MaintainMenu = False
+        TabHeight = 20
+        CloseTab = False
+        ModifiedTabStartColor = 10588280
+        ModifiedTabStopColor = 10588280
+        BackgroundStartColor = 14211288
+        BackgroundStopColor = 14211288
+        CanDragTabs = False
+        OnTabSelected = IceTabSet1TabSelected
+        ExplicitLeft = 0
+        ExplicitTop = -5
+      end
     end
   end
   object pluginIcons: TPngImageList
@@ -793,5 +863,21 @@ object PluginsForm: TPluginsForm
     Left = 328
     Top = 176
     Bitmap = {}
+  end
+  object http: TIdHTTP
+    OnWork = httpWork
+    OnWorkBegin = httpWorkBegin
+    AllowCookies = True
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.Accept = 'text/html, */*'
+    Request.BasicAuthentication = False
+    Request.UserAgent = 
+      'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.1 (KHTML, like Geck' +
+      'o) Chrome/14.0.835.186 Safari/535.1'
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 320
+    Top = 120
   end
 end

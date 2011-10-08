@@ -258,6 +258,16 @@
       <String name="VersiondddBuildd">Version %d.%d.%d ( Build %d )</String>
       <String name="Savedtodatabase">Saved to database.</String>
       <String name="Mainmodule">Main module</String>
+	  <String name="Pleaserestartthesoftwareforchangestotakeeffect">Please restart the software for changes to take effect!</String>
+	  <String name="GroupBox4$Caption">Languages</String>
+	  <String name="lDownloadLangs$Caption">Download languages...</String>
+	  <String name="lTranslateTo$Caption">Translate to your native language...</String>
+	  <String name="IceTabSet1Tabs0$Caption">Installed plugins</String>
+	  <String name="IceTabSet1Tabs1$Caption">Downloadable plugins</String>
+	  <String name="bInstall$Caption">Install</String>
+	  <String name="Downloadingplugind">Downloading plugin (%d%%)...</String>
+	  <String name="Downloadingpluginlist">Downloading plugin list...</String>
+	  <String name="Applicationexitfortoupdate">Application exit for install new plugin...</String>
     </ResourceStrings>
     <GlobalVariables/>
   </LanguageStrings>

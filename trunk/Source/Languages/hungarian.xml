@@ -31,7 +31,7 @@
       <String name="Opensourcedirectory1$Caption">Forrás könyvtár megnyitása</String>
       <String name="Copytargetdirectorytoclipboard1$Caption">Könyvtár másolása a vágólapra</String>
       <String name="Reprocess1$Caption">Újrafeldolgozás</String>
-      <String name="pmiPluginFuncs$Caption">Bővítmény funkciók</String>
+	  <String name="pmiPluginFuncs$Caption">Bővítmény funkciók</String>
       <String name="Deleteselecteditems1$Caption">Kijelölt elem(ek) törlése...</String>
       <String name="Deletesourcefiles1$Caption">Forrásfájlok törlése...</String>
       <String name="aModifyCategory$Caption">Kategória módosítása...</String>
@@ -75,7 +75,7 @@
       <String name="Checknewversion1$Caption">Új verzió keresése</String>
       <String name="$Caption0">Névjegy</String>
       <String name="bCheckUpdate$Caption">Új verzió keresése</String>
-      <String name="Label2$Caption">Stuff Szervező egy nyílt forráskódú szoftverek ingyenesen terjeszthető a&#32;</String>
+      <String name="Label2$Caption">Stuff Szervező egy nyílt forráskódú szoftver. Ingyenesen terjeszthető a&nbsp;</String>
       <String name="lGPL$Caption">GNU General Public License feltételei szerint.</String>
       <String name="bOK$Caption">OK</String>
       <String name="$Caption1">Kategória</String>
@@ -167,7 +167,7 @@
       <String name="Deletedsourcefiles">Forrásfájlok törölve.</String>
       <String name="Deletesourcedirectorys">Forráskönyvtár '%s' törlése...</String>
       <String name="Movestotargetpath">'%s' mozgatása a célkönyvtárba...</String>
-      <String name="Filemoveerror">Fájl áthelyezési hiba:&#32;</String>
+      <String name="Filemoveerror">Fájl áthelyezési hiba:&nbsp;</String>
       <String name="Deletetemporarydirectory2">Ideiglenes könyvtár #2 törlése...</String>
       <String name="Targetdirectorydoesntexists">Célkönyvtár nem létezik!</String>
       <String name="Deletetemporarydirectory1">Ideiglenes könyvtár #1 törlése...</String>
@@ -181,7 +181,7 @@
       <String name="Extracterror">Kicsomagolási hiba!</String>
       <String name="Movestotemp">'%s' áthelyezése az ideiglenes tárolóba...</String>
       <String name="Copystotemp">'%s' másolása az ideiglenes tárolóba...</String>
-      <String name="Filecopyerror">Fájlmásolási hiba:&#32;</String>
+      <String name="Filecopyerror">Fájlmásolási hiba:&nbsp;</String>
       <String name="Pleasewaituntiltheprocessingoperationsarecompleted">Várjon, amíg a feldolgozási műveletek befejeződtek!</String>
       <String name="Doyouwanttodeletethe">Szeretné törölni a '%s' kategóriát?</String>
       <String name="Areyousuredeletetheselecteddirectories">Biztos, hogy törli a kiválasztott könyvtárakat?</String>
@@ -215,9 +215,9 @@
       <String name="Stufforganizerbackupfiles">Stuff organizer biztonsági mentések</String>
       <String name="Backup">Biztonsági másolat készítése...</String>
       <String name="Finished">Kész!</String>
-      <String name="Errorduringbackup">Hiba a biztonsági mentés közben:&#32;</String>
+      <String name="Errorduringbackup">Hiba a biztonsági mentés közben:&nbsp;</String>
       <String name="Restore">Visszaállítás...</String>
-      <String name="Errorduringrestore">Hiba a visszaállítás során:&#32;</String>
+      <String name="Errorduringrestore">Hiba a visszaállítás során:&nbsp;</String>
       <String name="Preparings">%s előkészítése...</String>
       <String name="ThespecifiedsourcedirectoryshasbeenprocessedDoyouwanttocontinue">A megadott forráskönyvtár (%s) már fel lett dolgozva! Kívánja folytatni?</String>
       <String name="RunningICSons">ICS futtatása a '%s'-n...</String>
@@ -231,18 +231,18 @@
       <String name="Viewlog">Napló megtekintése</String>
       <String name="Process">Feldolgozás</String>
       <String name="Processd">Feldolgozás (%d)</String>
-      <String name="Newpath">Új elérési út:&#32;</String>
+      <String name="Newpath">Új elérési út:&nbsp;</String>
       <String name="Areyousuredeletetheselecteditems">Biztos, hogy törli a kijelölt elemeket?</String>
       <String name="Thesitemcantdelete">A '%s' elemet nem lehet törölni!</String>
       <String name="nocategory">&lt;nincs kategória&gt;</String>
       <String name="Settingssavedasdefault">A beállítások mentve alapértelmezettként.</String>
       <String name="Finished0">Kész.</String>
       <String name="Aborted">Megszakítva</String>
-      <String name="Applicationexitfortoupdate">Az alkalmazás kilép a frissítés befejezése miatt...</String>
+	  <String name="Applicationexitfortoupdate">Az alkalmazás újraindul a frissítés befejezése miatt...</String>
       <String name="Applicationisuptodate">Az alkalmazás naprakész.</String>
       <String name="Unknowupdatefile">Ismeretlen frissítési fájl!</String>
       <String name="Updateinfonotfound">Frissítési információk nem találhatóak!</String>
-      <String name="Updateerror">Frissítési hiba!&#32;</String>
+      <String name="Updateerror">Frissítési hiba!&nbsp;</String>
       <String name="Pause">Szünet</String>
       <String name="Resume">Folytatás</String>
       <String name="Areyousurestoptheprocessing">Biztos, hogy leállítja a feldolgozást?</String>
@@ -254,9 +254,19 @@
       <String name="Close">Bezárás</String>
       <String name="Elapsedtimes">Eltelt idő: %s</String>
       <String name="Estimatedtimes">Becsült idő: %s</String>
-      <String name="Downloaderror">Letöltési hiba:&#32;</String>
+      <String name="Downloaderror">Letöltési hiba:&nbsp;</String>
       <String name="VersiondddBuildd">Verzió %d.%d.%d ( Build %d )</String>
       <String name="Savedtodatabase">Adatbázisba mentve</String>
       <String name="Mainmodule">Fő modul</String>
-    </ResourceStrings>
+      <String name="Pleaserestartthesoftwareforchangestotakeeffect">Please restart the software for changes to take effect!</String>
+      <String name="GroupBox4$Caption">Nyelvek</String>
+	  <String name="lDownloadLangs$Caption">Nyelvek letöltése...</String>
+	  <String name="lTranslateTo$Caption">Fordítsd le az anyanyelvedre...</String>
+	  <String name="IceTabSet1Tabs0$Caption">Telepített bővítmények</String>
+	  <String name="IceTabSet1Tabs1$Caption">Letölthető bővítmények</String>
+	  <String name="bInstall$Caption">Telepítés</String>
+	  <String name="Downloadingplugind">Bővítmény letöltése (%d%%)...</String>
+	  <String name="Downloadingpluginlist">Bővítménylista letöltése...</String>
+	  <String name="Applicationexitfortoupdate">Az alkalmazás újraindul a bővítmény telepítése miatt...</String>
+	</ResourceStrings>
   </LanguageStrings>

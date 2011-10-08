@@ -102,6 +102,8 @@ implementation
 initialization
   TagList := TStringList.Create;
   Lang := TIceLanguage.Create(nil);
+  if not DirectoryExists(ExecPath + 'Languages') then
+    ForceDirectories(ExecPath + 'Languages');
   Lang.LanguageDir := ExecPath + 'Languages';
   Lang.GetLanguageFiles;
   Lang.InitializeDescriptor(TResourceStream.Create(hInstance, 'LANG_DESCRIPTOR', RT_RCDATA));

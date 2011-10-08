@@ -23,7 +23,7 @@ interface
 
 uses
   SysUtils, Classes, Windows, Messages, IcePack, ShlObj, tlHelp32, Forms,
-  ShellAPI, Generics.Collections, Dialogs, Registry, IdHTTP, Types;
+  ShellAPI, Generics.Collections, Dialogs, Registry, IdHTTP, Types, IceXML;
 
 
 
@@ -32,15 +32,31 @@ procedure SwitchToPrevAppMainWindow(pid: THandle);
 procedure SwitchToPrevApp;
 procedure OpenURL(site: string);
 procedure CheckUpdate(const Silent: boolean = true);
+function GetDownloadablePluginList: TIceXML;
+procedure ExecuteSOUpdater();
 
 procedure ProcessParameters;
 procedure CheckOpenWithKeys;
 
+function Base64Decode(const Text : string): string;
 
 implementation
 
 uses
-  uMain, uConstans, IceXML, uUpdateForm, uPluginClasses;
+  uMain, uConstans, uUpdateForm, uPluginClasses,
+  IdCoder, IdCoder3to4, IdCoderMIME;
+
+function Base64Decode(const Text : string): string;
+var
+  Decoder : TIdDecoderMime;
+begin
+  Decoder := TIdDecoderMime.Create(nil);
+  try
+    Result := Decoder.DecodeString(Text);
+  finally
+    FreeAndNil(Decoder)
+  end
+end;
 
 procedure ProcessParameters;
 var
@@ -98,6 +114,56 @@ begin
   if Assigned(Plugin) then
     result := Plugin.PluginInfo.Version;
 end;
+
+function GetDownloadablePluginList: TIceXML;
+var
+  http: TIdHTTP;
+  data: string;
+  xml: TIceXML;
+  I: Integer;
+  Item: TXMLItem;
+  Plugin: TPluginItem;
+  plgName: string;
+begin
+  result := nil;
+  http := TIdHTTP.Create(nil);
+  http.Request.UserAgent := 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.186 Safari/535.1';
+  xml := TIceXML.Create(nil);
+  try
+    data := '';
+    try
+      data := http.Get(UPDATE_URL + '?mac=' + IcePack.GetMACAddress); //TODO: if enabled AUS
+      if data <> '' then
+      begin
+        xml.LoadFromString(data);
+        if xml.Root.Name = 'UpdateData' then
+        begin
+          for I := xml.Root.Count - 1 downto 0 do
+          begin
+            if Pos('PLG_', xml.Root[I].Attr['name']) = 1 then
+            begin
+              plgName := xml.Root[I].Attr['name'];
+              Plugin := PluginManager.GetPluginByName(Copy(plgName, 5, Length(plgName)));
+              if Assigned(Plugin) then
+                xml.Root[I].Remove;
+            end
+            else
+              xml.Root[I].Remove;
+          end;
+
+          result := xml;
+        end;
+      end
+    except
+      on E: Exception do
+      begin
+      end;
+    end;
+  finally
+    http.Free;
+  end;
+end;
+
 
 procedure CheckUpdate(const Silent: boolean = true);
 var
@@ -159,18 +225,7 @@ begin
             if ShowUpdateForm(updateList) then
             begin
               //MessageDlg(Lang['Applicationexitfortoupdate'], mtInformation, [mbOK], 0);
-              updateFile := IcePack.GetTempDirectory + 'SOUpdater.exe';
-              if FileExists(updateFile) then
-                DeleteFile(PWideChar(updateFile));
-              IcePack.ExtractResource('UPDATE_EXE', updateFile);
-              if FileExists(updateFile) then
-              begin
-                if CheckWin32Version(6) then //greater or equal than Vista
-                  RunAsAdmin(Application.Handle, updateFile, '"' + ExecPath + '"')
-                else
-                  ShellExecute(0, 'open', PWideChar(updateFile), PWideChar('"' + ExecPath + '"'), '', SW_SHOW);
-              end;
-
+              ExecuteSOUpdater;
               Application.Terminate;
             end;
           end
@@ -194,6 +249,26 @@ begin
     xml.Free;
     updateList.Free;
   end;
+end;
+
+procedure ExecuteSOUpdater();
+var
+  updateFile: string;
+begin
+  updateFile := IcePack.GetTempDirectory + 'SOUpdater.exe';
+  if FileExists(updateFile) then
+    DeleteFile(PWideChar(updateFile));
+  IcePack.ExtractResource('UPDATE_EXE', updateFile);
+  if FileExists(updateFile) then
+  begin
+    if CheckWin32Version(6) then //greater or equal than Vista
+      RunAsAdmin(Application.Handle, updateFile, '"' + ExecPath + '"')
+    else
+      ShellExecute(0, 'open', PWideChar(updateFile), PWideChar('"' + ExecPath + '"'), '', SW_SHOW);
+  end;
+
+  Application.Terminate;
+
 end;
 
 procedure OpenURL(site: string);

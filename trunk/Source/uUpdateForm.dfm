@@ -195,7 +195,9 @@ object UpdateForm: TUpdateForm
     Request.ContentLength = -1
     Request.Accept = 'text/html, */*'
     Request.BasicAuthentication = False
-    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    Request.UserAgent = 
+      'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.1 (KHTML, like Geck' +
+      'o) Chrome/14.0.835.186 Safari/535.1'
     HTTPOptions = [hoForceEncodeParams]
     Left = 320
     Top = 120

@@ -119,6 +119,57 @@ object OptionsForm: TOptionsForm
         TabOrder = 0
       end
     end
+    object GroupBox4: TGroupBox
+      Left = 319
+      Top = 143
+      Width = 209
+      Height = 137
+      Caption = 'Languages'
+      TabOrder = 3
+      object lDownloadLangs: TLabel
+        Left = 16
+        Top = 48
+        Width = 177
+        Height = 13
+        Cursor = crHandPoint
+        AutoSize = False
+        Caption = 'Download languages...'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsUnderline]
+        ParentFont = False
+        WordWrap = True
+        OnClick = lDownloadLangsClick
+      end
+      object lTranslateTo: TLabel
+        Left = 16
+        Top = 67
+        Width = 187
+        Height = 13
+        Cursor = crHandPoint
+        AutoSize = False
+        Caption = 'Translate to your native language'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsUnderline]
+        ParentFont = False
+        WordWrap = True
+        OnClick = lTranslateToClick
+      end
+      object cbLanguages: TComboBox
+        Left = 16
+        Top = 21
+        Width = 177
+        Height = 21
+        Style = csDropDownList
+        ItemHeight = 13
+        TabOrder = 0
+      end
+    end
   end
   object Panel2: TPanel
     Left = 0
