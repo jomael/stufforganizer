@@ -87,19 +87,9 @@ implementation
 
 {$R *.dfm}
 
-uses IdCoder, IdCoder3to4, IdCoderMIME, jpeg;
+uses uProcs, jpeg;
 
-function Base64Decode(const Text : string): string;
-var
-  Decoder : TIdDecoderMime;
-begin
-  Decoder := TIdDecoderMime.Create(nil);
-  try
-    Result := Decoder.DecodeString(Text);
-  finally
-    FreeAndNil(Decoder)
-  end
-end;
+
 
 function GetReadableModuleName(name: string): string;
 begin

@@ -294,6 +294,7 @@ type
     procedure LoadConfigState;
     procedure LoadVariablesFromConfig;
     procedure SaveConfig;
+    procedure ChangeLanguage(newLang: string);
 
     //Queue methods
     procedure LoadUnprocessedItems;
@@ -916,13 +917,19 @@ begin
   ApplicationTerminating := true;
 end;
 
+procedure TMainForm.ChangeLanguage(newLang: string);
+begin
+  IcePack.WriteRegistryValue('HKCU\Software\Ice Apps\Stuff Organizer\Language', newLang);
+  MessageDlg(Lang['Pleaserestartthesoftwareforchangestotakeeffect'], mtInformation, [mbOk], 0);
+end;
+
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
   Caption := APP_TITLE + ' v' + GetFileVersion(Application.ExeName, '%d.%d.%d');
   Application.Title := APP_TITLE;
   CoolTrayIcon1.Hint := Caption;
 
-  Lang.LanguageCode := 'hu-HU';
+  Lang.LanguageCode := IcePack.ReadRegistryValue('HKCU\Software\Ice Apps\Stuff Organizer\Language', 'en-US');
   Lang.Execute('', Self);
 
   MainDBPath := GetSpecialFolderPath(CSIDL_LOCAL_APPDATA) + DBPATH + MAINDBFILENAME;

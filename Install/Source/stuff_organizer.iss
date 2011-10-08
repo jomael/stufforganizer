@@ -60,6 +60,8 @@ Name: QuickLaunchIcon; Description: "Create a Quick Launch icon";
 UseRelativePaths=true
 
 [Registry]
+Root: HKCU; SubKey: "Software\Ice Apps\Stuff Organizer"; ValueName: InstalledPath; ValueType: string; ValueData: """{app}"""; Flags: UninsDeleteKey; 
+
 Root: HKCR; SubKey: "*\shell\Add to Stuff Organizer library"; Flags: UninsDeleteKey;
 Root: HKCR; SubKey: "*\shell\Add to Stuff Organizer library\command"; ValueType: string; ValueData: """{app}\StuffOrganizer.exe"" ""%1"""; Flags: UninsDeleteKey;
 Root: HKCR; SubKey: "Folder\shell\Add to Stuff Organizer library"; Flags: UninsDeleteKey;

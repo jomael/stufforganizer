@@ -42,13 +42,20 @@ type
     GroupBox3: TGroupBox;
     lbExtensions: TCheckListBox;
     cbICS: TCheckBox;
+    GroupBox4: TGroupBox;
+    lDownloadLangs: TLabel;
+    lTranslateTo: TLabel;
+    cbLanguages: TComboBox;
     procedure btnCancelClick(Sender: TObject);
     procedure btnOkClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure bCheckUpdateClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure lTranslateToClick(Sender: TObject);
+    procedure lDownloadLangsClick(Sender: TObject);
   private
     procedure LoadExtensions;
+    procedure LoadLanguages;
     { Private declarations }
   public
     { Public declarations }
@@ -60,7 +67,8 @@ var
 implementation
 
 uses
-  uPLuginClasses, uClasses, IceXML, IcePack, uProcs, uMain, uConstans;
+  uPLuginClasses, uClasses, IceXML, IcePack, uProcs, uMain, uConstans,
+  IceLanguage;
 
 {$R *.dfm}
 
@@ -72,6 +80,26 @@ end;
 procedure TOptionsForm.btnCancelClick(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TOptionsForm.LoadLanguages;
+var
+  Langs: TList;
+  I: Integer;
+begin
+  Langs := Lang.GetLanguages;
+  cbLanguages.Items.Clear;
+  for I := 0 to Langs.Count - 1 do
+  begin
+    cbLanguages.AddItem(TLangFileItem(Langs[I]).Language, Langs[I]);
+    if TLangFileItem(Langs[I]).LangCode = Lang.LanguageCode then
+      cbLanguages.ItemIndex := cbLanguages.Items.Count -1;
+  end;
+end;
+
+procedure TOptionsForm.lTranslateToClick(Sender: TObject);
+begin
+  OpenURL('http://stufforganizer.sourceforge.net/index.php?pid=31');
 end;
 
 procedure TOptionsForm.btnOkClick(Sender: TObject);
@@ -93,6 +121,11 @@ begin
 
   ConfigXML.Root.SetItemParamValue('Main.Update', 'checkAtStart', cbCheckNewVersion.Checked);
 
+  if (cbLanguages.ItemIndex <> -1) and (Lang.LanguageCode <> TLangFileItem(cbLanguages.Items.Objects[cbLanguages.ItemIndex]).LangCode) then
+  begin
+    MainForm.ChangeLanguage( TLangFileItem(cbLanguages.Items.Objects[cbLanguages.ItemIndex]).LangCode );
+  end;
+
   ConfigXML.SaveToFile;
   MainForm.LoadVariablesFromConfig;
 
@@ -108,12 +141,18 @@ end;
 procedure TOptionsForm.FormShow(Sender: TObject);
 begin
   LoadExtensions;
+  LoadLanguages;
 
   cbDelToRB.Checked := ConfigXML.Root.GetItemParamValue('Main.Settings', 'deleteToRecycleBin', 'True') = 'True';
   cbHideDialogs.Checked := ConfigXML.Root.GetItemParamValue('Main.Settings', 'hideFileDialogs', 'True') = 'True';
   cbICS.Checked := ConfigXML.Root.GetItemParamValue('Main.Settings', 'ICS', 'True') = 'True';
 
   cbCheckNewVersion.Checked := ConfigXML.Root.GetItemParamValue('Main.Update', 'checkAtStart', 'True') = 'True';
+end;
+
+procedure TOptionsForm.lDownloadLangsClick(Sender: TObject);
+begin
+  OpenURL('http://stufforganizer.sourceforge.net/index.php?pid=27');
 end;
 
 procedure TOptionsForm.LoadExtensions;
