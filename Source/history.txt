@@ -1,0 +1,34 @@
+
+                      Stuff Organizer
+                      ===============
+
+      Copyright (C) 2011  Ice Apps <so.iceapps@gmail.com>
+                http://stufforganizer.sf.net
+
+
+This file contains a Stuff Organizer product history.  It includes
+lists of new features, changes, and bug fixes sorted by release.
+
+
+Changes in v0.4.6 -- xxx x, 2011
+--------------------------------------------------------
+
+New features:
+
+  - Added new PlayMusic plugin to install package
+  - Added new OpenSubtitles.org plugin to package
+
+Changes:
+
+  - Windows: The 32-bit installer can be installed on a 64-bit system.
+
+Bug fixes:
+
+  - Xmodem transfers failed over connections using the Raw protocol.
+  - The hostname was not saved in sessions that used the Raw protocol.
+
+
+Changes in v0.4.5 -- Sept 9, 2011
+--------------------------------------------------------
+
+First release.

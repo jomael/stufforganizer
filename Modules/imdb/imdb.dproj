@@ -42,6 +42,10 @@
 			</DelphiCompile>
 			<DCCReference Include="..\..\Source\SOPluginDefs.pas"/>
 			<DCCReference Include="uSearchInfo.pas"/>
+			<RcItem Include="imdb_logo_32.ico">
+				<ResourceType>Icon</ResourceType>
+				<ResourceId>MAIN_32</ResourceId>
+			</RcItem>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>

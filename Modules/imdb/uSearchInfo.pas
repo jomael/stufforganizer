@@ -72,6 +72,7 @@ begin
   http := TIdHTTP.Create(nil);
   http.Request.UserAgent := 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.204 Safari/534.16';
   http.Request.Referer := RefererPage;
+  http.HandleRedirects := true;
   try
     result := http.Get(Address);
   finally
@@ -113,37 +114,66 @@ begin
   RefererPage := url;
 
   regexp := TPerlRegEx.Create;
-  regexp.RegEx := 'href="/title/tt(\d{7})/"[^>]*>(.*?)</a>\s*(\((\d{4})(/.+?|)\)|)[^<]*(<small>(.*?)</small>|)';
+  regexp.Options := [preCaseLess, preMultiLine];
+  regexp.RegEx := 'og:url" content="http://www.imdb.\w+/find"';
   regexp.Subject := content;
-  resList := TStringList.Create;
-  SetLength(foundItems, 0);
-  while regexp.MatchAgain do
+  if not regexp.Match then
   begin
-    if regexp.GroupCount > 4 then
+    //Redirected to movie details page
+    regexp.Start := 0;
+    regexp.RegEx := 'og:url" content="(http://www.imdb.\w+/title/tt\d+/)"';
+    if regexp.Match and (regexp.GroupCount > 0) then
+      MovieAddress := regexp.Groups[1];
+
+    regexp.Start := 0;
+    regexp.RegEx := '<meta name="title" content="(.*?)- IMDB"';
+    if regexp.Match and (regexp.GroupCount > 0) then
+      title := XMLToStr(regexp.Groups[1]);
+
+    SetLength(foundItems, 0);
+    Item.Name := StrNew(PWideChar(title));
+    Item.URL := StrNew(PWideChar(MovieAddress));
+    Item.Description := nil;
+    Item.Image := nil;
+
+    SetLength(foundItems, Length(foundItems) + 1);
+    foundItems[Length(foundItems) - 1] := Item;
+  end
+  else
+  begin
+    //Search result page
+    regexp.RegEx := 'href="/title/tt(\d{7})/"[^>]*>(.*?)</a>\s*(\((\d{4})(/.+?|)\)|)[^<]*(<small>(.*?)</small>|)';
+    resList := TStringList.Create;
+    SetLength(foundItems, 0);
+    regexp.Start := 0;
+    while regexp.MatchAgain do
     begin
-      if Pos('<img', regexp.Groups[2]) = 0 then
+      if regexp.GroupCount > 4 then
       begin
-        imdbID := regexp.Groups[1];
-        if resList.IndexOf(imdbID) = -1 then
+        if Pos('<img', regexp.Groups[2]) = 0 then
         begin
-          s := regexp.Groups[2] + ' ' + regexp.Groups[4];
-          title := XMLToStr(s);
-          MovieAddress := 'http://www.imdb.com/title/tt' + imdbID + '/';
-          resList.Add(imdbID);
+          imdbID := regexp.Groups[1];
+          if resList.IndexOf(imdbID) = -1 then
+          begin
+            s := regexp.Groups[2] + ' ' + regexp.Groups[4];
+            title := XMLToStr(s);
+            MovieAddress := 'http://www.imdb.com/title/tt' + imdbID + '/';
+            resList.Add(imdbID);
 
-          Item.Name := StrNew(PWideChar(title));
-          Item.URL := StrNew(PWideChar(MovieAddress));
-          Item.Description := nil;
-          Item.Image := nil;
+            Item.Name := StrNew(PWideChar(title));
+            Item.URL := StrNew(PWideChar(MovieAddress));
+            Item.Description := nil;
+            Item.Image := nil;
 
-          SetLength(foundItems, Length(foundItems) + 1);
-          foundItems[Length(foundItems) - 1] := Item;
+            SetLength(foundItems, Length(foundItems) + 1);
+            foundItems[Length(foundItems) - 1] := Item;
+          end;
+
         end;
-
       end;
     end;
+    resList.Free;
   end;
-  resList.Free;
 
   if Length(foundItems) > 0 then
   begin
@@ -171,6 +201,7 @@ var
   Descr: TStringBuilder;
   Tags, sTitle: string;
   imageURL, tempFile: string;
+  plotSummary, fullCredits: string;
 begin
   content := GetPage(URL);
   content := StringReplace(content, #13, '', [rfReplaceAll]);
@@ -276,35 +307,74 @@ begin
     Descr := TStringBuilder.Create;
     Descr.AppendFormat('%s - Rating: %s - Genres: %s', [length, rating, genres]).AppendLine.AppendLine;
 
+    //FullCredits & Director & Writer
+    fullCredits := GetPage(URL + 'fullcredits');
+    regexp.Subject := fullCredits;
+    regexp.RegEx := 'name="directors".*?>.*?/name/nm\d+/.*?>(.*?)</a';
+    if regexp.Match and (regexp.GroupCount > 0) then
+      director := Trim(XMLToStr(regexp.Groups[1]));
+
+    regexp.Start := 0;
+    regexp.RegEx := 'name="writers".*?>.*?/name/nm\d+/.*?>(.*?)</a';
+    if regexp.Match and (regexp.GroupCount > 0) then
+      writer := Trim(XMLToStr(regexp.Groups[1]));
+
+    Cast := '';
+    regexp.Start := 0;
+    regexp.RegEx := '<td class="nm">.*?/name/nm\d+/.*?>(.*?)</a>.*?/character/ch\d+/">(.*?)</a>';
+    while regexp.MatchAgain do
+    begin
+      if regexp.GroupCount > 1 then
+        cast := cast + '     ' + Trim(regexp.Groups[1]) + '  ...  ' + Trim(regexp.Groups[2]) + #13#10;
+    end;
+
+
+
     Descr.Append(Description).AppendLine.AppendLine;
-//    Descr.Append('Director: ' + Director).AppendLine;
-//    Descr.Append('Writer: ' + Director).AppendLine;
-    Descr.Append('Stars: ' + stars).AppendLine;
+    Descr.Append('Director: ' + Director).AppendLine;
+    Descr.Append('Writer: ' + Writer).AppendLine;
+    Descr.Append('Stars: ' + stars).AppendLine.AppendLine;
 
-  sTitle := XMLToStr(title + ' (' + year + ')');
-  Product.Name := PWideChar(sTitle);
-  Product.Description := PWideChar(Descr.ToString);
-  Product.URL := PWideChar(URL);
-  Product.Modified := true;
-  Descr.Free;
+    //PlotSummary
+    plotSummary := GetPage(URL + 'plotsummary');
 
-  Tags := GenerateAutoTags(Product.Name);
-  Product.Tags := PWideChar(Tags);
-  //Save new product info
-  SaveProductInfoToDB(Self, Product);
+    Descr.Append('Plot: ').AppendLine;
+    regexp.Subject := plotSummary;
+    regexp.RegEx := '<p class="plotpar">(\s.*?)*?</p>';
+    while regexp.MatchAgain do
+      Descr.Append(Trim(XMLToStr(StripHTMLtags(regexp.Groups[0])))).AppendLine.AppendLine;
 
-  //picture
-  if System.Length(imageURL) > 0 then
-  begin
-    tempFile := IncludeTrailingBackslash(IcePack.GetTempDirectory) + ExtractUrlFileName(imageURL);
-    tempFile := CutAt(tempFile, '?');
-    if FileExists(tempFile) then
+    Descr.Append('Cast: ').AppendLine.Append(Cast);
+
+
+
+    sTitle := XMLToStr(title);
+    if Trim(year) <> '' then
+      sTitle := sTitle + ' (' + year + ')';
+    s := XMLToStr(Descr.ToString);
+    Product.Name := PWideChar(sTitle);
+    Product.Description := PWideChar(s);
+    Product.URL := PWideChar(URL);
+    Product.Modified := true;
+    Descr.Free;
+
+    Tags := GenerateAutoTags(Product.Name);
+    Product.Tags := PWideChar(Tags);
+    //Save new product info
+    SaveProductInfoToDB(Self, Product);
+
+    //picture
+    if System.Length(imageURL) > 0 then
+    begin
+      tempFile := IncludeTrailingBackslash(IcePack.GetTempDirectory) + ExtractUrlFileName(imageURL);
+      tempFile := CutAt(tempFile, '?');
+      if FileExists(tempFile) then
+        DeleteFile(PWideChar(tempFile));
+      GetImage(imageURL, tempFile);
+
+      SaveImageToDB(Self, Product, PWideChar(tempFile));
       DeleteFile(PWideChar(tempFile));
-    GetImage(imageURL, tempFile);
-
-    SaveImageToDB(Self, Product, PWideChar(tempFile));
-    DeleteFile(PWideChar(tempFile));
-  end;
+    end;
 
   end;
 end;

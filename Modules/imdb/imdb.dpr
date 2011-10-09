@@ -19,6 +19,8 @@
 
 library imdb;
 
+{$R *.dres}
+
 uses
   Windows,
   SysUtils,
@@ -56,13 +58,13 @@ begin
   New(result);
   result.Name := 'IMDb plugin';
   result.PluginType := 2;
-  result.Description := 'Get movie description from IMDB.com';
+  result.Description := 'Get movie description from IMDb.com';
   result.Icon := Pointer(MainIcon.Handle);
   result.Author := 'Ice Apps';
   result.WebPage := 'http://stufforganizer.sourceforge.net';
   result.Version := '1.0.0.0';
   result.InterfaceVersion := 1;
-  result.VersionDate := '2011-10-08';
+  result.VersionDate := '2011-10-09';
   result.MinimumVersion := '0.4.5.0';
 end;
 
