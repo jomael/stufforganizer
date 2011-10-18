@@ -100,7 +100,7 @@ begin
   if InputQuery('Search description', 'Enter title (only letters, digits and spaces): ', MovieName) then
   begin
     Product := ProductInfo;
-    SearchMovie( StringReplace(URLEncode(MovieName, false), '%20', '+', [rfReplaceAll]) );
+    SearchMovie( StringReplace(URLEncode(MovieName, false), '%20', '+', [rfReplaceAll]) , 'com');
   end;
 end;
 
@@ -111,7 +111,7 @@ begin
   SaveProductInfoToDB := PluginCallBacks.SaveProductInfoToDB;
   UserSelect := PluginCallBacks.UserSelect;
 
-  PluginCallBacks.RegisterDescriptor(Self, 'Search description on IMDb', Run);
+  PluginCallBacks.RegisterDescriptor(Self, 'Search description on IMDb.com', Run);
 end;
 
 function PluginInitialize(): boolean; stdcall;

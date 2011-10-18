@@ -17,11 +17,15 @@ var
 
   MovieName: string;
   RefererPage: string = '';
+  LangTexts: TStringList;
 
   foundItems: TDescriptorProductInfoArray;
 
-procedure SearchMovie(MovieTitle: string);
-procedure AnalyzePage(URL: string);
+function Lang(Text: string): string;
+
+procedure SearchMovie(MovieTitle, imdbSite: string);
+procedure AnalyzePageNew(URL: string);
+procedure AnalyzePageOld(URL: string);
 
 function GetPage(Address: string): string;
 procedure GetImage(Address: string; FileName: string);
@@ -35,6 +39,13 @@ function GenerateAutoTags(Name: string): string;
 function Padding(Str: string; Count: integer): string;
 
 implementation
+
+function Lang(Text: string): string;
+begin
+  result := LangTexts.Values[Text];
+  if result = '' then
+    result := Text;
+end;
 
 function UserSelectFromList: integer;
 begin
@@ -98,7 +109,7 @@ begin
   end;
 end;
 
-procedure SearchMovie(MovieTitle: string);
+procedure SearchMovie(MovieTitle, imdbSite: string);
 var
   content: string;
   regexp: TPerlRegEx;
@@ -109,7 +120,7 @@ var
   url: string;
   s: string;
 begin
-  url := 'http://www.imdb.com/find?q=' + MovieTitle;
+  url := 'http://www.imdb.' + imdbSite + '/find?q=' + MovieTitle;
   content := GetPage(url);
   RefererPage := url;
 
@@ -126,7 +137,7 @@ begin
       MovieAddress := regexp.Groups[1];
 
     regexp.Start := 0;
-    regexp.RegEx := '<meta name="title" content="(.*?)- IMDB"';
+    regexp.RegEx := '<meta name="title" content="(.*?)"';
     if regexp.Match and (regexp.GroupCount > 0) then
       title := XMLToStr(regexp.Groups[1]);
 
@@ -157,7 +168,7 @@ begin
           begin
             s := regexp.Groups[2] + ' ' + regexp.Groups[4];
             title := XMLToStr(s);
-            MovieAddress := 'http://www.imdb.com/title/tt' + imdbID + '/';
+            MovieAddress := 'http://www.imdb.' + imdbSite + '/title/tt' + imdbID + '/';
             resList.Add(imdbID);
 
             Item.Name := StrNew(PWideChar(title));
@@ -181,7 +192,11 @@ begin
     if SelectedIndex <> -1 then
     begin
       MovieAddress := foundItems[SelectedIndex].URL;
-      AnalyzePage(MovieAddress);
+
+      if imdbSite = 'com' then
+        AnalyzePageNew(MovieAddress)
+      else
+        AnalyzePageOld(MovieAddress);
 
       FreeFoundItems;
     end;
@@ -192,7 +207,7 @@ begin
 //  regexp.Free;
 end;
 
-procedure AnalyzePage(URL: string);
+procedure AnalyzePageNew(URL: string);
 var
   content, s: string;
   regexp: TPerlRegEx;
@@ -211,7 +226,7 @@ begin
     regexp := TPerlRegEx.Create;
     regexp.Subject := content;
     regexp.Options := [preCaseLess, preMultiLine];
-    regexp.RegEx := '<h1.+?>\s*(.*?)\s*<';
+    regexp.RegEx := '<h1.*?>\s*(.*?)\s*<';
     if regexp.Match and (regexp.GroupCount > 0)then
       title := Trim(regexp.Groups[1]);
 
@@ -271,34 +286,6 @@ begin
       end;
     end;
 
-  {  regexp.Start := 0;
-    regexp.RegEx := '<h5>(.*?)</h5>\s+<div\s+(.*?)\s+.*(<a.*?>(.*?)</a.*)\s+</div>';
-    while regexp.MatchAgain do
-    begin
-      if regexp.GroupCount > 3 then
-      begin
-        if Pos('Director', Trim(regexp.Groups[1])) = 1 then
-          director := Trim(regexp.Groups[4])
-        else if Pos('Writer', Trim(regexp.Groups[1])) = 1 then
-          writer := Trim(regexp.Groups[4])
-      end;
-    end;    }
-
-{    CutAt(content, '<h2>Cast</h2>');
-    s := CutAt(content, '<h2>Storyline</h2>');
-    IcePack.WriteToFileS('c:\text.txt', s);
-    cast := '';
-    regexp.Subject := s;
-    regexp.Start := 0;
-    regexp.RegEx := 'name/nm\d+/"\s*>(.*?)<(\s*.*?)+?/character/ch\d+/">(.*?)<';
-    while regexp.MatchAgain do
-    begin
-      if regexp.GroupCount > 2 then
-      begin
-        cast := cast + Padding(Trim(regexp.Groups[1]), 50) + ' ... ' + Trim(regexp.Groups[3]) + #13#10;
-      end;
-    end;               }
-
     regexp.Start := 0;
     regexp.RegEx := 'title-overview/primary.*?><img src="(.*?)"';
     if regexp.Match and (regexp.GroupCount > 0)then
@@ -321,13 +308,13 @@ begin
 
     Cast := '';
     regexp.Start := 0;
-    regexp.RegEx := '<td class="nm">.*?/name/nm\d+/.*?>(.*?)</a>.*?/character/ch\d+/">(.*?)</a>';
+//    regexp.RegEx := '<td class="nm">.*?/name/nm\d+/.*?>(.*?)</a>.*?/character/ch\d+/">(.*?)</a>';
+    regexp.RegEx := '<td class="nm">.*?/name/nm\d+/.*?>(.*?)</a>.*?<td class="char">(.*?)</td>';
     while regexp.MatchAgain do
     begin
       if regexp.GroupCount > 1 then
-        cast := cast + '     ' + Trim(regexp.Groups[1]) + '  ...  ' + Trim(regexp.Groups[2]) + #13#10;
+        cast := cast + '     ' + Trim(StripHTMLtags(regexp.Groups[1])) + '  ...  ' + Trim(StripHTMLtags(regexp.Groups[2])) + #13#10;
     end;
-
 
 
     Descr.Append(Description).AppendLine.AppendLine;
@@ -351,6 +338,154 @@ begin
     sTitle := XMLToStr(title);
     if Trim(year) <> '' then
       sTitle := sTitle + ' (' + year + ')';
+    s := XMLToStr(Descr.ToString);
+    Product.Name := PWideChar(sTitle);
+    Product.Description := PWideChar(s);
+    Product.URL := PWideChar(URL);
+    Product.Modified := true;
+    Descr.Free;
+
+    Tags := GenerateAutoTags(Product.Name);
+    Product.Tags := PWideChar(Tags);
+    //Save new product info
+    SaveProductInfoToDB(Self, Product);
+
+    //picture
+    if System.Length(imageURL) > 0 then
+    begin
+      tempFile := IncludeTrailingBackslash(IcePack.GetTempDirectory) + ExtractUrlFileName(imageURL);
+      tempFile := CutAt(tempFile, '?');
+      if FileExists(tempFile) then
+        DeleteFile(PWideChar(tempFile));
+      GetImage(imageURL, tempFile);
+
+      SaveImageToDB(Self, Product, PWideChar(tempFile));
+      DeleteFile(PWideChar(tempFile));
+    end;
+
+  end;
+end;
+
+
+procedure AnalyzePageOld(URL: string);
+var
+  content, s: string;
+  regexp: TPerlRegEx;
+  title, origtitle, year, description, length, genres, rating, storyline, cast: string;
+  stars, director, writer: string;
+  Descr: TStringBuilder;
+  Tags, sTitle: string;
+  imageURL, tempFile: string;
+  plotSummary, fullCredits: string;
+begin
+  content := GetPage(URL);
+  //content := StringReplace(content, #13, '', [rfReplaceAll]);
+  //content := StringReplace(content, #10, '', [rfReplaceAll]);
+  if content <> '' then
+  begin
+    regexp := TPerlRegEx.Create;
+    regexp.Subject := content;
+    regexp.Options := [preCaseLess, preMultiLine];
+    regexp.RegEx := '<h1.*?>\s*(.*?)\s*<span>(.*?)<';
+    if regexp.Match and (regexp.GroupCount > 0)then
+      title := Trim(regexp.Groups[1]);
+    if regexp.Match and (regexp.GroupCount > 1)then
+      year := Trim(regexp.Groups[2]);
+
+    origtitle := '';
+
+    regexp.Start := 0;
+    regexp.RegEx := '<h5>' + Lang('_Length') + '</h5><div.*?>(.*?)</div>';
+    if regexp.Match and (regexp.GroupCount > 0)then
+      length := Trim(regexp.Groups[1]);
+
+    genres := '';
+    regexp.Start := 0;
+    regexp.RegEx := '<h5>' + Lang('_Genres') + '</h5>\s*<div.*?>\s*(.*?)\s*</div>';
+    if regexp.Match and (regexp.GroupCount > 0)then
+      genres := Trim(regexp.Groups[1]);
+
+    regexp.Start := 0;
+    regexp.RegEx := '<div class="starbar-meta">\s*.*?<b>(.*?)\/\d+</b>';
+    if regexp.Match and (regexp.GroupCount > 0)then
+      rating := regexp.Groups[1];
+
+    regexp.Start := 0;
+    regexp.RegEx := '<h5>' + Lang('_Summary') + '</h5>\s*<div class="info-content">\s(.*?)\s<';
+    if regexp.Match and (regexp.GroupCount > 0)then
+      description := Trim(regexp.Groups[1]);
+
+{    regexp.Start := 0;
+    regexp.RegEx := 'Storyline</h2>\s*\<p>\s*(.*?)\s*<em';
+    if regexp.Match and (regexp.GroupCount > 0)then
+      storyline := regexp.Groups[1];}
+
+    stars := '';
+{    regexp.Start := 0;
+    regexp.RegEx := 'itemprop="actors"\s+>(.+?)<';
+    while regexp.MatchAgain do
+    begin
+      if regexp.GroupCount > 0 then
+      begin
+        if stars <> '' then
+          stars := stars + ', ';
+        stars := stars + Trim(regexp.Groups[1]);
+      end;
+    end;}
+
+    regexp.Start := 0;
+    regexp.RegEx := '<div class="photo">\s*<a name="poster".*?><img.*?src="(.*?)"';
+    if regexp.Match and (regexp.GroupCount > 0)then
+      imageURL := regexp.Groups[1];
+
+    Descr := TStringBuilder.Create;
+    Descr.AppendFormat('%s - ' + Lang('Rating') + ': %s - ' + Lang('Genres') + ': %s', [length, rating, genres]).AppendLine.AppendLine;
+
+    //FullCredits & Director & Writer
+    fullCredits := GetPage(URL + 'fullcredits');
+    regexp.Subject := fullCredits;
+    regexp.RegEx := 'name="directors".*?>.*?/name/nm\d+/.*?>(.*?)</a';
+    if regexp.Match and (regexp.GroupCount > 0) then
+      director := Trim(XMLToStr(regexp.Groups[1]));
+
+    regexp.Start := 0;
+    regexp.RegEx := 'name="writers".*?>.*?/name/nm\d+/.*?>(.*?)</a';
+    if regexp.Match and (regexp.GroupCount > 0) then
+      writer := Trim(XMLToStr(regexp.Groups[1]));
+
+    Cast := '';
+    regexp.Start := 0;
+    regexp.RegEx := '<td class="nm">.*?/name/nm\d+/.*?>(.*?)</a>.*?<td class="char">(.*?)</td>';
+    while regexp.MatchAgain do
+    begin
+      if regexp.GroupCount > 1 then
+        cast := cast + '     ' + Trim(StripHTMLtags(regexp.Groups[1])) + '  ...  ' + Trim(StripHTMLtags(regexp.Groups[2])) + #13#10;
+    end;
+
+
+
+    Descr.Append(Description).AppendLine.AppendLine;
+    Descr.Append(Lang('Director') + ': ' + Director).AppendLine;
+    Descr.Append(Lang('Writer') + ': ' + Writer).AppendLine.AppendLine;
+//    Descr.Append('Stars: ' + stars).AppendLine.AppendLine;
+
+    //PlotSummary
+    plotSummary := GetPage(URL + 'plotsummary');
+
+    Descr.Append(Lang('Plot') + ': ').AppendLine;
+    regexp.Subject := plotSummary;
+    regexp.RegEx := '<div id="swiki.2.1">\s*(.*?)\s*?</div>';
+    while regexp.MatchAgain do
+      Descr.Append(Trim(XMLToStr(StripHTMLtags(regexp.Groups[0])))).AppendLine.AppendLine;
+
+
+    Descr.Append(Lang('Cast') + ': ').AppendLine.Append(Cast);
+
+
+
+    sTitle := XMLToStr(title);
+    if Trim(year) <> '' then
+      sTitle := sTitle + ' ' + year;
     s := XMLToStr(Descr.ToString);
     Product.Name := PWideChar(sTitle);
     Product.Description := PWideChar(s);
@@ -475,5 +610,11 @@ begin
     Poz := Pos('&#',Result);   //  &#245;
   end;
 end;
+
+initialization
+  LangTexts := TStringList.Create;
+
+finalization
+  LangTexts.Free;
 
 end.

@@ -1,10 +1,10 @@
 ﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		<PropertyGroup>
-			<ProjectGuid>{283AC6A7-D3CF-4BA1-B9E0-11DDD3D8D3AF}</ProjectGuid>
-			<ProjectVersion>12.0</ProjectVersion>
-			<MainSource>tmdb.dpr</MainSource>
+			<ProjectGuid>{D9613669-CCFD-4B35-A69C-7558E89BD879}</ProjectGuid>
+			<MainSource>imdb_fr.dpr</MainSource>
 			<Config Condition="'$(Config)'==''">Debug</Config>
 			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<ProjectVersion>12.0</ProjectVersion>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
 			<Base>true</Base>
@@ -20,10 +20,8 @@
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
-			<DCC_UsePackage>vclx;vcl;dbrtl;Rave76VCL;bdertl;rtl;vclactnband;vcldb;vcldbx;dsnap;dsnapcon;TeeUI;TeeDB;Tee;adortl;vclib;ibxpress;IndyCore;IndySystem;IndyProtocols;xmlrtl;inet;intrawebdb_100_120;Intraweb_100_120;VclSmp;vclie;websnap;webdsnap;inetdbbde;inetdbxpress;soaprtl;vclribbon;dbexpress;DbxCommonDriver;DataSnapIndy10ServerTransport;DataSnapProviderClient;DataSnapServer;DbxClientDriver;DBXInterBaseDriver;DBXMySQLDriver;dbxcds;DBXSybaseASEDriver;DBXSybaseASADriver;DBXOracleDriver;DBXMSSQLDriver;DBXInformixDriver;DBXDb2Driver;PerlRegExD2009;Jcl;JclVcl;JvCoreD12R;JvSystemD12R;JvStdCtrlsD12R;JvAppFrmD12R;JvBandsD12R;JvDBD12R;JvDlgsD12R;JvBDED12R;JvCmpD12R;JvCryptD12R;JvCtrlsD12R;JvCustomD12R;JvDockingD12R;JvDotNetCtrlsD12R;JvEDID12R;JvGlobusD12R;JvHMID12R;JvInterpreterD12R;JvJansD12R;JvManagedThreadsD12R;JvMMD12R;JvNetD12R;JvPageCompsD12R;JvPluginD12R;JvPrintPreviewD12R;JvRuntimeDesignD12R;JvTimeFrameworkD12R;JvValidatorsD12R;JvWizardD12R;JvXPCtrlsD12R;PngComponents;DSPack_D12;DirectX9_D12;GR32_BDS2009;OverbyteIcsD2009Run;IceSocketPackage;IcePackageLite;IcePropertyEditorD;NDSPackage;IcePackageEx;RARComponent_d2009;B305vr2009;VirtualTreesD12;Richedit_DXE;Snarl_D2009</DCC_UsePackage>
+			<DCC_DependencyCheckOutputName>..\..\Bin\Plugins\imdb_fr.sop</DCC_DependencyCheckOutputName>
 			<DCC_ExeOutput>..\..\Bin\Plugins\</DCC_ExeOutput>
-			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
-			<DCC_DependencyCheckOutputName>..\..\Bin\Plugins\tmdb.sop</DCC_DependencyCheckOutputName>
 			<GenDll>true</GenDll>
 			<DCC_ImageBase>00400000</DCC_ImageBase>
 			<DCC_Platform>x86</DCC_Platform>
@@ -38,16 +36,13 @@
 			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
 		</PropertyGroup>
 		<ItemGroup>
-			<DelphiCompile Include="tmdb.dpr">
+			<DelphiCompile Include="imdb_fr.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\..\Source\SOPluginDefs.pas"/>
-			<DCCReference Include="uSearchInfo.pas"/>
-			<DCCReference Include="..\..\api_keys.pas"/>
-			<RcItem Include="tmdb-logo_32.ico">
-				<ResourceType>Icon</ResourceType>
-				<ResourceId>MAIN_32</ResourceId>
-			</RcItem>
+			<DCCReference Include="..\..\Source\SOPluginDefs.pas">
+				<Form>$E sop</Form>
+			</DCCReference>
+			<DCCReference Include="..\imdb\uSearchInfo.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
@@ -63,11 +58,11 @@
 		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
 		<ProjectExtensions>
 			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
-			<Borland.ProjectType/>
+			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
 			<BorlandProject>
 				<Delphi.Personality>
 					<Source>
-						<Source Name="MainSource">tmdb.dpr</Source>
+						<Source Name="MainSource">imdb_fr.dpr</Source>
 					</Source>
 					<Parameters>
 						<Parameters Name="UseLauncher">False</Parameters>
@@ -103,11 +98,6 @@
 						<VersionInfoKeys Name="Comments"/>
 					</VersionInfoKeys>
 					<Excluded_Packages>
-						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxLibraryD12.bpl">Express Cross Platform Library by Developer Express Inc.</Excluded_Packages>
-						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxEditorsD12.bpl">ExpressEditors Library 5 by Developer Express Inc.</Excluded_Packages>
-						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxExtEditorsD12.bpl">ExpressExtendedEditors Library 5 by Developer Express Inc.</Excluded_Packages>
-						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxTreeListD12.bpl">ExpressQuantumTreeList 4 by Developer Express Inc.</Excluded_Packages>
-						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dcldxNavBarD12.bpl">ExpressNavBar 2 by Developer Express Inc.</Excluded_Packages>
 						<Excluded_Packages Name="$(BDS)\bin\dcloffice2k120.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
 						<Excluded_Packages Name="$(BDS)\bin\dclofficexp120.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
 					</Excluded_Packages>
@@ -125,7 +115,7 @@ Activate Handle=1
 Save Log File=1
 Foreground Tab=0
 Freeze Activate=0
-Freeze Timeout=60
+Freeze Timeout=0
 SMTP From=eurekalog@email.com
 SMTP Host=
 SMTP Port=25
