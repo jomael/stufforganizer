@@ -45,6 +45,15 @@
 			<Projects Include="Modules\tmdb\tmdb.dproj">
 				<Dependencies/>
 			</Projects>
+			<Projects Include="Modules\imdb_fr\imdb_fr.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Modules\imdb_de\imdb_de.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Modules\imdb_it\imdb_it.dproj">
+				<Dependencies/>
+			</Projects>
 		</ItemGroup>
 		<ProjectExtensions>
 			<Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -179,14 +188,41 @@
 		<Target Name="tmdb:Make">
 			<MSBuild Targets="Make" Projects="Modules\tmdb\tmdb.dproj"/>
 		</Target>
+		<Target Name="imdb_fr">
+			<MSBuild Projects="Modules\imdb_fr\imdb_fr.dproj"/>
+		</Target>
+		<Target Name="imdb_fr:Clean">
+			<MSBuild Targets="Clean" Projects="Modules\imdb_fr\imdb_fr.dproj"/>
+		</Target>
+		<Target Name="imdb_fr:Make">
+			<MSBuild Targets="Make" Projects="Modules\imdb_fr\imdb_fr.dproj"/>
+		</Target>
+		<Target Name="imdb_de">
+			<MSBuild Projects="Modules\imdb_de\imdb_de.dproj"/>
+		</Target>
+		<Target Name="imdb_de:Clean">
+			<MSBuild Targets="Clean" Projects="Modules\imdb_de\imdb_de.dproj"/>
+		</Target>
+		<Target Name="imdb_de:Make">
+			<MSBuild Targets="Make" Projects="Modules\imdb_de\imdb_de.dproj"/>
+		</Target>
+		<Target Name="imdb_it">
+			<MSBuild Projects="Modules\imdb_it\imdb_it.dproj"/>
+		</Target>
+		<Target Name="imdb_it:Clean">
+			<MSBuild Targets="Clean" Projects="Modules\imdb_it\imdb_it.dproj"/>
+		</Target>
+		<Target Name="imdb_it:Make">
+			<MSBuild Targets="Make" Projects="Modules\imdb_it\imdb_it.dproj"/>
+		</Target>
 		<Target Name="Build">
-			<CallTarget Targets="StuffOrganizer;StuffOrganizerTests;DirLister;unpack_7z;unpack_rar;unpack_zip;port_hu;SOUpdater;allrovi;playmusic;opensubtitles;imdb;RegexpTest;tmdb"/>
+			<CallTarget Targets="StuffOrganizer;StuffOrganizerTests;DirLister;unpack_7z;unpack_rar;unpack_zip;port_hu;SOUpdater;allrovi;playmusic;opensubtitles;imdb;RegexpTest;tmdb;imdb_fr;imdb_de;imdb_it"/>
 		</Target>
 		<Target Name="Clean">
-			<CallTarget Targets="StuffOrganizer:Clean;StuffOrganizerTests:Clean;DirLister:Clean;unpack_7z:Clean;unpack_rar:Clean;unpack_zip:Clean;port_hu:Clean;SOUpdater:Clean;allrovi:Clean;playmusic:Clean;opensubtitles:Clean;imdb:Clean;RegexpTest:Clean;tmdb:Clean"/>
+			<CallTarget Targets="StuffOrganizer:Clean;StuffOrganizerTests:Clean;DirLister:Clean;unpack_7z:Clean;unpack_rar:Clean;unpack_zip:Clean;port_hu:Clean;SOUpdater:Clean;allrovi:Clean;playmusic:Clean;opensubtitles:Clean;imdb:Clean;RegexpTest:Clean;tmdb:Clean;imdb_fr:Clean;imdb_de:Clean;imdb_it:Clean"/>
 		</Target>
 		<Target Name="Make">
-			<CallTarget Targets="StuffOrganizer:Make;StuffOrganizerTests:Make;DirLister:Make;unpack_7z:Make;unpack_rar:Make;unpack_zip:Make;port_hu:Make;SOUpdater:Make;allrovi:Make;playmusic:Make;opensubtitles:Make;imdb:Make;RegexpTest:Make;tmdb:Make"/>
+			<CallTarget Targets="StuffOrganizer:Make;StuffOrganizerTests:Make;DirLister:Make;unpack_7z:Make;unpack_rar:Make;unpack_zip:Make;port_hu:Make;SOUpdater:Make;allrovi:Make;playmusic:Make;opensubtitles:Make;imdb:Make;RegexpTest:Make;tmdb:Make;imdb_fr:Make;imdb_de:Make;imdb_it:Make"/>
 		</Target>
 		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 	</Project>

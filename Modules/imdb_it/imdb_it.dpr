@@ -17,11 +17,9 @@
     along with Stuff Organizer.  If not, see <http://www.gnu.org/licenses/>.
 *)
 
-library tmdb;
+library imdb_it;
 
 
-
-{$R *.dres}
 
 uses
   Windows,
@@ -32,8 +30,7 @@ uses
   IcePack,
   Graphics,
   SOPluginDefs in '..\..\Source\SOPluginDefs.pas',
-  uSearchInfo in 'uSearchInfo.pas',
-  api_keys in '..\..\api_keys.pas';
+  uSearchInfo in '..\imdb\uSearchInfo.pas';
 
 {$E sop}
 
@@ -59,9 +56,9 @@ end;
 function PluginGetInfo(): PPluginInfo; stdcall;
 begin
   New(result);
-  result.Name := 'TMDb plugin';
+  result.Name := 'IMDb.it plugin';
   result.PluginType := 2;
-  result.Description := 'Get movie description from themoviedb.org';
+  result.Description := 'Get movie description from IMDb.it';
   result.Icon := Pointer(MainIcon.Handle);
   result.Author := 'Ice Apps';
   result.WebPage := 'http://stufforganizer.sourceforge.net';
@@ -103,10 +100,9 @@ begin
   if InputQuery('Search description', 'Enter title (only letters, digits and spaces): ', MovieName) then
   begin
     Product := ProductInfo;
-    SearchMovie( StringReplace(URLEncode(MovieName, false), '%20', '+', [rfReplaceAll]) );
+    SearchMovie( StringReplace(URLEncode(MovieName, false), '%20', '+', [rfReplaceAll]) , 'it');
   end;
 end;
-
 procedure PluginRegDescriptorFunctions(PluginCallBacks: PPluginDescriptorCallbacks); stdcall;
 begin
   RegisterDescriptor := PluginCallBacks.RegisterDescriptor;
@@ -114,12 +110,25 @@ begin
   SaveProductInfoToDB := PluginCallBacks.SaveProductInfoToDB;
   UserSelect := PluginCallBacks.UserSelect;
 
-  PluginCallBacks.RegisterDescriptor(Self, 'Search description on TMDb', Run);
+  PluginCallBacks.RegisterDescriptor(Self, 'Search description on IMDb.it (Italic)', Run);
 end;
 
 function PluginInitialize(): boolean; stdcall;
 begin
   result := true;
+
+  LangTexts.Values['Director'] := 'Regia di';
+  LangTexts.Values['Writer'] := 'Scritto da';
+  LangTexts.Values['Plot'] := 'Riassunto della trama';
+  LangTexts.Values['Cast'] := 'Cast';
+  LangTexts.Values['Rating'] := 'Voti degli utenti';
+  LangTexts.Values['Genres'] := 'Genere';
+
+
+  LangTexts.Values['_Length'] := 'Durata:';
+  LangTexts.Values['_Genres'] := 'Genere:';
+  LangTexts.Values['_Summary'] := 'Trama:';
+
 end;
 
 
