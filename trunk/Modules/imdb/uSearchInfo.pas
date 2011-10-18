@@ -289,7 +289,9 @@ begin
     regexp.Start := 0;
     regexp.RegEx := 'title-overview/primary.*?><img src="(.*?)"';
     if regexp.Match and (regexp.GroupCount > 0)then
+    begin
       imageURL := regexp.Groups[1];
+    end;
 
     Descr := TStringBuilder.Create;
     Descr.AppendFormat('%s - Rating: %s - Genres: %s', [length, rating, genres]).AppendLine.AppendLine;
@@ -370,7 +372,7 @@ end;
 procedure AnalyzePageOld(URL: string);
 var
   content, s: string;
-  regexp: TPerlRegEx;
+  regexp, reImage: TPerlRegEx;
   title, origtitle, year, description, length, genres, rating, storyline, cast: string;
   stars, director, writer: string;
   Descr: TStringBuilder;
@@ -436,7 +438,17 @@ begin
     regexp.Start := 0;
     regexp.RegEx := '<div class="photo">\s*<a name="poster".*?><img.*?src="(.*?)"';
     if regexp.Match and (regexp.GroupCount > 0)then
+    begin
       imageURL := regexp.Groups[1];
+      //change to ....V1.jpg
+      reImage := TPerlRegEx.Create;
+      reImage.Subject := imageURL;
+      reImage.Replacement := '0';
+      reImage.Options := [preCaseLess, preMultiLine];
+      reImage.Regex := '\._SX\d+_SY\d+_';
+      if reImage.Match and reImage.ReplaceAll then
+        imageURL := reImage.Subject;
+    end;
 
     Descr := TStringBuilder.Create;
     Descr.AppendFormat('%s - ' + Lang('Rating') + ': %s - ' + Lang('Genres') + ': %s', [length, rating, genres]).AppendLine.AppendLine;
