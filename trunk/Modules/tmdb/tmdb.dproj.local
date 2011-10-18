@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011.10.08 18:20:49.570.dproj,C:\Documents and Settings\Teszt\Dokumentumok\RAD Studio\Projects\Project8.dproj=C:\Work\Project\__D2009Projects__\StuffOrganizer\Modules\imdb\imdb.dproj</Transaction>
+    <Transaction>2011.10.08 18:22:16.615.pas,C:\Work\Project\__D2009Projects__\StuffOrganizer\Modules\imdb\Unit1.pas=C:\Work\Project\__D2009Projects__\StuffOrganizer\Modules\imdb\uSearchInfo.pas</Transaction>
+    <Transaction>2011.10.18 18:54:06.385.dproj,c:\Work\Project\__D2009Projects__\StuffOrganizer\Modules\tmdb\imdb.dproj=c:\Work\Project\__D2009Projects__\StuffOrganizer\Modules\tmdb\tmdb.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
