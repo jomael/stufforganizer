@@ -121,15 +121,16 @@ begin
 
   ConfigXML.Root.SetItemParamValue('Main.Update', 'checkAtStart', cbCheckNewVersion.Checked);
 
-  if (cbLanguages.ItemIndex <> -1) and (Lang.LanguageCode <> TLangFileItem(cbLanguages.Items.Objects[cbLanguages.ItemIndex]).LangCode) then
-  begin
-    MainForm.ChangeLanguage( TLangFileItem(cbLanguages.Items.Objects[cbLanguages.ItemIndex]).LangCode );
-  end;
+  Close;
 
   ConfigXML.SaveToFile;
   MainForm.LoadVariablesFromConfig;
 
-  Close;
+  if (cbLanguages.ItemIndex <> -1) and (Lang.LanguageCode <> TLangFileItem(cbLanguages.Items.Objects[cbLanguages.ItemIndex]).LangCode) then
+  begin
+    MainForm.ChangeLanguage( TLangFileItem(cbLanguages.Items.Objects[cbLanguages.ItemIndex]).LangCode );
+  end;
+  MainForm.BringToFront;
 end;
 
 procedure TOptionsForm.FormCreate(Sender: TObject);
