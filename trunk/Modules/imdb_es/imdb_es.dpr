@@ -1,4 +1,4 @@
-(*
+ï»¿(*
 	  This file is part of Stuff Organizer.
 
     Copyright (C) 2011  Ice Apps <so.iceapps@gmail.com>
@@ -17,7 +17,7 @@
     along with Stuff Organizer.  If not, see <http://www.gnu.org/licenses/>.
 *)
 
-library imdb_fr;
+library imdb_es;
 
 
 
@@ -56,15 +56,15 @@ end;
 function PluginGetInfo(): PPluginInfo; stdcall;
 begin
   New(result);
-  result.Name := 'IMDb.fr plugin';
+  result.Name := 'IMDb.es plugin';
   result.PluginType := 2;
-  result.Description := 'Get movie description from IMDb.fr';
+  result.Description := 'Get movie description from IMDb.es';
   result.Icon := Pointer(MainIcon.Handle);
   result.Author := 'Ice Apps';
   result.WebPage := 'http://stufforganizer.sourceforge.net';
   result.Version := '1.0.0.0';
   result.InterfaceVersion := 1;
-  result.VersionDate := '2011-10-18';
+  result.VersionDate := '2011-10-19';
   result.MinimumVersion := '0.4.5.0';
 end;
 
@@ -100,7 +100,7 @@ begin
   if InputQuery('Search description', 'Enter title (only letters, digits and spaces): ', MovieName) then
   begin
     Product := ProductInfo;
-    SearchMovie( StringReplace(URLEncode(MovieName, false), '%20', '+', [rfReplaceAll]) , 'fr');
+    SearchMovie( StringReplace(URLEncode(MovieName, false), '%20', '+', [rfReplaceAll]) , 'es');
   end;
 end;
 procedure PluginRegDescriptorFunctions(PluginCallBacks: PPluginDescriptorCallbacks); stdcall;
@@ -110,24 +110,24 @@ begin
   SaveProductInfoToDB := PluginCallBacks.SaveProductInfoToDB;
   UserSelect := PluginCallBacks.UserSelect;
 
-  PluginCallBacks.RegisterDescriptor(Self, 'Rechercher la description sur IMDb.fr', Run);
+  PluginCallBacks.RegisterDescriptor(Self, 'Search description on IMDb.es (EspaÃ±ol)', Run);
 end;
 
 function PluginInitialize(): boolean; stdcall;
 begin
   result := true;
 
-  LangTexts.Values['Director'] := 'Réalisateur';
-  LangTexts.Values['Writer'] := 'Scénariste';
-  LangTexts.Values['Plot'] := 'Intrigue';
-  LangTexts.Values['Cast'] := 'Ensemble';
-  LangTexts.Values['Rating'] := 'Note Générale';
-  LangTexts.Values['Genres'] := 'Genre';
+  LangTexts.Values['Director'] := 'Director';
+  LangTexts.Values['Writer'] := 'Guionista';
+  LangTexts.Values['Plot'] := 'Trama';
+  LangTexts.Values['Cast'] := 'Reparto';
+  LangTexts.Values['Rating'] := 'CalificaciÃ³n';
+  LangTexts.Values['Genres'] := 'GÃ©nero';
 
 
-  LangTexts.Values['_Length'] := 'Dur&#xE9;e:';
-  LangTexts.Values['_Genres'] := 'Genre:';
-  LangTexts.Values['_Summary'] := 'Intrigue:';
+  LangTexts.Values['_Length'] := 'Duraci&#xF3;n:';
+  LangTexts.Values['_Genres'] := 'G&#xE9;nero:';
+  LangTexts.Values['_Summary'] := 'Trama:';
 
 end;
 
