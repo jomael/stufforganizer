@@ -258,7 +258,7 @@
       <String name="VersiondddBuildd">Verzió %d.%d.%d ( Build %d )</String>
       <String name="Savedtodatabase">Adatbázisba mentve</String>
       <String name="Mainmodule">Fő modul</String>
-      <String name="Pleaserestartthesoftwareforchangestotakeeffect">Please restart the software for changes to take effect!</String>
+      <String name="Pleaserestartthesoftwareforchangestotakeeffect">Indítsa újra a programot, hogy a változtatások érvénybe lépjenek!</String>
       <String name="GroupBox4$Caption">Nyelvek</String>
 	  <String name="lDownloadLangs$Caption">Nyelvek letöltése...</String>
 	  <String name="lTranslateTo$Caption">Fordítsd le az anyanyelvedre...</String>

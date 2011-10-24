@@ -20,13 +20,12 @@ New features:
 
 Changes:
 
-  - Windows: The 32-bit installer can be installed on a 64-bit system.
+  - 
 
 Bug fixes:
 
-  - Xmodem transfers failed over connections using the Raw protocol.
-  - The hostname was not saved in sessions that used the Raw protocol.
-
+  - 
+  
 
 Changes in v0.4.5 -- Sept 9, 2011
 --------------------------------------------------------

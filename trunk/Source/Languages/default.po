@@ -1042,3 +1042,43 @@ msgstr "Stuff Organizer is a free open source catalog application. You can organ
 msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer is open source software distributed free of charge under the terms of the GNU General Public License. Main features: unpack compressed files (e.g: zip, rar) in two levels after unpack, cleans up the unused files in the directory (e.g: file_id.diz, sfv file) extract iso if you want sort to multi-level categories support drag-n-drop support tags save NFO file content and image to database get product description from the web (e.g: allrovi.com)"
 msgstr "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer is open source software distributed free of charge under the terms of the GNU General Public License. Main features: unpack compressed files (e.g: zip, rar) in two levels after unpack, cleans up the unused files in the directory (e.g: file_id.diz, sfv file) extract iso if you want sort to multi-level categories support drag-n-drop support tags save NFO file content and image to database get product description from the web (e.g: allrovi.com)"
 
+#: Pleaserestartthesoftwareforchangestotakeeffect
+msgid "Please restart the software for changes to take effect!"
+msgstr "Please restart the software for changes to take effect!"
+
+#: GroupBox4$Caption
+msgid "Languages"
+msgstr "Languages"
+
+#: lDownloadLangs$Caption
+msgid "Download languages..."
+msgstr "Download languages..."
+
+#: lTranslateTo$Caption
+msgid "Translate to your native language..."
+msgstr "Translate to your native language..."
+
+#: IceTabSet1Tabs0$Caption
+msgid "Installed plugins"
+msgstr "Installed plugins"
+
+#: IceTabSet1Tabs1$Caption
+msgid "Downloadable plugins"
+msgstr "Downloadable plugins"
+
+#: bInstall$Caption
+msgid "Install"
+msgstr "Install"
+
+#: Downloadingplugind
+msgid "Downloading plugin (%d%%)..."
+msgstr "Downloading plugin (%d%%)..."
+
+#: Downloadingpluginlist
+msgid "Downloading plugin list..."
+msgstr "Downloading plugin list..."
+
+#: Applicationexitfortoupdate
+msgid "Application exit for install new plugin..."
+msgstr "Application exit for install new plugin..."
+

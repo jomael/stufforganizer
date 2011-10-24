@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
   <LanguageStrings version="3.0" language="default" lng="en-US">
     <ResourceStrings>
-	  <String name="VList$HeaderColumns0Text">Category</String>
+      <String name="VList$HeaderColumns0Text">Category</String>
       <String name="VList$HeaderColumns1Text">Product name</String>
       <String name="VList$HeaderColumns2Text">Description</String>
       <String name="VList$HeaderColumns3Text">Added</String>
@@ -20,19 +20,19 @@
       <String name="lChnageDirectoryName$Caption">Change directory name</String>
       <String name="ToolButton1$Caption">Add stuff</String>
       <String name="ToolButton2$Caption">Queue</String>
-	  <String name="ToolButton4$Caption">Consistence check</String>
-	  <String name="ToolButton6$Caption">Settings</String>
+      <String name="ToolButton4$Caption">Consistence check</String>
+      <String name="ToolButton6$Caption">Settings</String>
       <String name="ToolButton7$Caption">About</String>
       <String name="eSearch$TextHint">Enter the search text</String>
       <String name="Modifycategory1$Caption">Modify category...</String>
-	  <String name="Addnewcategory1$Caption">Add new category...</String>
-	  <String name="Deletecategory1$Caption">Delete category...</String>
-	  <String name="Opendirectory1$Caption">Open directory</String>
-	  <String name="Opensourcedirectory1$Caption">Open source directory</String>
-	  <String name="Copytargetdirectorytoclipboard1$Caption">Copy target directory to clipboard</String>
-	  <String name="Reprocess1$Caption">Reprocess</String>
-	  <String name="pmiPluginFuncs$Caption">Plugin functions</String>
-	  <String name="Deleteselecteditems1$Caption">Delete selected item(s)...</String>
+      <String name="Addnewcategory1$Caption">Add new category...</String>
+      <String name="Deletecategory1$Caption">Delete category...</String>
+      <String name="Opendirectory1$Caption">Open directory</String>
+      <String name="Opensourcedirectory1$Caption">Open source directory</String>
+      <String name="Copytargetdirectorytoclipboard1$Caption">Copy target directory to clipboard</String>
+      <String name="Reprocess1$Caption">Reprocess</String>
+      <String name="pmiPluginFuncs$Caption">Plugin functions</String>
+      <String name="Deleteselecteditems1$Caption">Delete selected item(s)...</String>
       <String name="Deletesourcefiles1$Caption">Delete source files...</String>
       <String name="aModifyCategory$Caption">Modify category...</String>
       <String name="aDeleteCategory$Caption">Delete category...</String>
@@ -65,16 +65,16 @@
       <String name="aCheckNewVersion$Caption">Check new version</String>
       <String name="Show1$Caption">Show</String>
       <String name="Viewprocesslog1$Caption">View process log</String>
-	  <String name="Exit1$Caption">Exit</String>
-	  <String name="ools1$Caption">Settings</String>
-	  <String name="Plugins1$Caption">Plugins</String>
-	  <String name="Databasebackup1$Caption">Database backup...</String>
+      <String name="Exit1$Caption">Exit</String>
+      <String name="ools1$Caption">Settings</String>
+      <String name="Plugins1$Caption">Plugins</String>
+      <String name="Databasebackup1$Caption">Database backup...</String>
       <String name="Databaserestore1$Caption">Database restore...</String>
       <String name="Databasevacuum1$Caption">Database vacuum</String>
       <String name="Visithomepage1$Caption">Visit homepage</String>
-	  <String name="Checknewversion1$Caption">Check new version</String>
+      <String name="Checknewversion1$Caption">Check new version</String>
       <String name="$Caption0">About</String>
-	  <String name="bCheckUpdate$Caption">Check new version</String>
+      <String name="bCheckUpdate$Caption">Check new version</String>
       <String name="Label2$Caption">Stuff Organizer is open source software distributed free of charge under the terms of the</String>
       <String name="lGPL$Caption">GNU General Public License</String>
       <String name="bOK$Caption">OK</String>
@@ -96,7 +96,7 @@
       <String name="bCheckUpdate$Caption0">Check now</String>
       <String name="cbCheckNewVersion$Caption">Check new version at start</String>
       <String name="GroupBox3$Caption">Extensions</String>
-	  <String name="btnOk$Caption0">OK</String>
+      <String name="btnOk$Caption0">OK</String>
       <String name="$Caption4">Password</String>
       <String name="ePass$EditLabelCaption">Enter the password</String>
       <String name="bCancel$Caption">Cancel</String>
@@ -167,7 +167,7 @@
       <String name="Deletedsourcefiles">Deleted source files.</String>
       <String name="Deletesourcedirectorys">Delete source directory '%s'...</String>
       <String name="Movestotargetpath">Move '%s' to target path...</String>
-      <String name="Filemoveerror">File move error:&nbsp;</String>
+      <String name="Filemoveerror">File move error:&#32;</String>
       <String name="Deletetemporarydirectory2">Delete temporary directory #2...</String>
       <String name="Targetdirectorydoesntexists">Target directory doesn't exists!</String>
       <String name="Deletetemporarydirectory1">Delete temporary directory #1...</String>
@@ -181,14 +181,14 @@
       <String name="Extracterror">Extract error!</String>
       <String name="Movestotemp">Move '%s' to temp...</String>
       <String name="Copystotemp">Copy '%s' to temp...</String>
-      <String name="Filecopyerror">File copy error:&nbsp;</String>
+      <String name="Filecopyerror">File copy error:&#32;</String>
       <String name="Pleasewaituntiltheprocessingoperationsarecompleted">Please wait until the processing operations are completed!</String>
       <String name="Doyouwanttodeletethe">Do you want to delete the '%s' category?</String>
       <String name="Areyousuredeletetheselecteddirectories">Are you sure delete the selected directories?</String>
       <String name="AreyousuredeletethesourcefilesPath">Are you sure delete the source files? Path: %s</String>
       <String name="Preparing">Preparing...</String>
       <String name="Pleasewait">Please wait</String>
-	  <String name="Reprocess">Reprocess %s...</String>
+      <String name="Reprocess">Reprocess %s...</String>
       <String name="Addnewcategory">Add new category</String>
       <String name="ChangeURL">Change URL</String>
       <String name="EnterURL">Enter URL</String>
@@ -215,15 +215,15 @@
       <String name="Stufforganizerbackupfiles">Stuff organizer backup files</String>
       <String name="Backup">Backup...</String>
       <String name="Finished">Finished!</String>
-      <String name="Errorduringbackup">Error during backup:&nbsp;</String>
+      <String name="Errorduringbackup">Error during backup:&#32;</String>
       <String name="Restore">Restore...</String>
-      <String name="Errorduringrestore">Error during restore:&nbsp;</String>
+      <String name="Errorduringrestore">Error during restore:&#32;</String>
       <String name="Preparings">Preparing '%s'...</String>
       <String name="ThespecifiedsourcedirectoryshasbeenprocessedDoyouwanttocontinue">The specified source directory (%s) has been processed! Do you want to continue?</String>
       <String name="RunningICSons">Running ICS on '%s'...</String>
       <String name="Wouldyouliketomovedirectoriesaccordingtothenewcategory">Would you like to move directories according to the new category?</String>
       <String name="Deleteitems">Delete items...</String>
-      <String name="Delete">Delete&nbsp;</String>
+      <String name="Delete">Delete&#32;</String>
       <String name="Wouldyouliketodeletethesefoldersonharddisk">Would you like to delete these folders on hard disk?</String>
       <String name="Modifycategoryproperties">Modify category properties</String>
       <String name="Saveunprocesseditems">Save unprocessed items...</String>
@@ -231,7 +231,7 @@
       <String name="Viewlog">View log</String>
       <String name="Process">Process</String>
       <String name="Processd">Process (%d)</String>
-      <String name="Newpath">New path:&nbsp;</String>
+      <String name="Newpath">New path:&#32;</String>
       <String name="Areyousuredeletetheselecteditems">Are you sure delete the selected items?</String>
       <String name="Thesitemcantdelete">The '%s' item can't delete!</String>
       <String name="nocategory">&lt;no category&gt;</String>
@@ -242,7 +242,7 @@
       <String name="Applicationisuptodate">Application is up to date.</String>
       <String name="Unknowupdatefile">Unknow update file!</String>
       <String name="Updateinfonotfound">Update info not found!</String>
-      <String name="Updateerror">Update error!&nbsp;</String>
+      <String name="Updateerror">Update error!&#32;</String>
       <String name="Pause">Pause</String>
       <String name="Resume">Resume</String>
       <String name="Areyousurestoptheprocessing">Are you sure stop the processing?</String>
@@ -254,20 +254,26 @@
       <String name="Close">Close</String>
       <String name="Elapsedtimes">Elapsed time: %s</String>
       <String name="Estimatedtimes">Estimated time: %s</String>
-      <String name="Downloaderror">Download error:&nbsp;</String>
+      <String name="Downloaderror">Download error:&#32;</String>
       <String name="VersiondddBuildd">Version %d.%d.%d ( Build %d )</String>
       <String name="Savedtodatabase">Saved to database.</String>
       <String name="Mainmodule">Main module</String>
-	  <String name="Pleaserestartthesoftwareforchangestotakeeffect">Please restart the software for changes to take effect!</String>
-	  <String name="GroupBox4$Caption">Languages</String>
-	  <String name="lDownloadLangs$Caption">Download languages...</String>
-	  <String name="lTranslateTo$Caption">Translate to your native language...</String>
-	  <String name="IceTabSet1Tabs0$Caption">Installed plugins</String>
-	  <String name="IceTabSet1Tabs1$Caption">Downloadable plugins</String>
-	  <String name="bInstall$Caption">Install</String>
-	  <String name="Downloadingplugind">Downloading plugin (%d%%)...</String>
-	  <String name="Downloadingpluginlist">Downloading plugin list...</String>
-	  <String name="Applicationexitfortoupdate">Application exit for install new plugin...</String>
+      <String name="Pleaserestartthesoftwareforchangestotakeeffect">Please restart the software for changes to take effect!</String>
+      <String name="GroupBox4$Caption">Languages</String>
+      <String name="lDownloadLangs$Caption">Download languages...</String>
+      <String name="lTranslateTo$Caption">Translate to your native language...</String>
+      <String name="IceTabSet1Tabs0$Caption">Installed plugins</String>
+      <String name="IceTabSet1Tabs1$Caption">Downloadable plugins</String>
+      <String name="bInstall$Caption">Install</String>
+      <String name="Downloadingplugind">Downloading plugin (%d%%)...</String>
+      <String name="Downloadingpluginlist">Downloading plugin list...</String>
+      <String name="Applicationexitfortoupdate">Application exit for install new plugin...</String>
+      <String name="$Caption">Stuff Organizer</String>
+      <String name="CategoryPanel$Caption">CategoryPanel</String>
+      <String name="ToolButton3$Caption">ToolButton3</String>
+      <String name="ToolButton5$Caption">ToolButton5</String>
+      <String name="N1$Caption">-</String>
     </ResourceStrings>
     <GlobalVariables/>
+    <Properties/>
   </LanguageStrings>
