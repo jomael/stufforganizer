@@ -86,7 +86,7 @@ var
   TagList: TStringList;
   CatIDArray: array of integer;
   TagMatrix: array of array of Extended;
-  Lang: TIceLanguage;
+  //Lang: TIceLanguage;
 
 
   (* Settings variables *)
@@ -101,18 +101,18 @@ implementation
 
 initialization
   TagList := TStringList.Create;
-  Lang := TIceLanguage.Create(nil);
+{  Lang := TIceLanguage.Create(nil);
   if not DirectoryExists(ExecPath + 'Languages') then
     ForceDirectories(ExecPath + 'Languages');
   Lang.LanguageDir := ExecPath + 'Languages';
   Lang.GetLanguageFiles;
-  Lang.InitializeDescriptor(TResourceStream.Create(hInstance, 'LANG_DESCRIPTOR', RT_RCDATA));
+  Lang.InitializeDescriptor(TResourceStream.Create(hInstance, 'LANG_DESCRIPTOR', RT_RCDATA));}
 
 finalization
   if Assigned(TagList) then
     TagList.Free;
 
-  if Assigned(Lang) then
+{  if Assigned(Lang) then
     Lang.Free;
-
+}
 end.

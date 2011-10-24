@@ -28,7 +28,7 @@ uses
   Menus, ShellApi, ActiveX, Gradient, uClasses, ActnList, PngFunctions,
   jpeg, ToolWin, pngimage, JvBaseDlg, JvBrowseFolder, Math, SyncObjs, IceXML,
   Generics.Defaults, W7TaskBar, ShlObj, AbBase, AbBrowse, AbZBrows, AbZipper,
-  AbUtils, AbUnzper, SOPluginDefs, uConstans, JvAppInst, IceLanguage;
+  AbUtils, AbUnzper, SOPluginDefs, uConstans, JvAppInst, IceLanguage, gnugettext;
 
 type
 
@@ -152,7 +152,6 @@ type
     Checknewversion1: TMenuItem;
     JvAppInstances1: TJvAppInstances;
     NFODialog: TOpenDialog;
-    Lang1: TIceLanguage;
 
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -924,13 +923,21 @@ begin
 end;
 
 procedure TMainForm.FormCreate(Sender: TObject);
+var
+  langCode: string;
 begin
   Caption := APP_TITLE + ' v' + GetFileVersion(Application.ExeName, '%d.%d.%d');
   Application.Title := APP_TITLE;
   CoolTrayIcon1.Hint := Caption;
 
-  Lang.LanguageCode := IcePack.ReadRegistryValue('HKCU\Software\Ice Apps\Stuff Organizer\Language', 'en-US');
-  Lang.Execute('', Self);
+  //Language initialize
+  langCode := IcePack.ReadRegistryValue('HKCU\Software\Ice Apps\Stuff Organizer\Language', '');
+  if langCode <> '' then
+    UseLanguage('langCode');
+
+  TP_GlobalIgnoreClass(TFont);
+  TranslateComponent(Self, 'default');
+
 
   MainDBPath := GetSpecialFolderPath(CSIDL_LOCAL_APPDATA) + DBPATH + MAINDBFILENAME;
   InfoDBPath := GetSpecialFolderPath(CSIDL_LOCAL_APPDATA) + DBPATH + INFODBFILENAME;
