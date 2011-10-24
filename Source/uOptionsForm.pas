@@ -68,7 +68,7 @@ implementation
 
 uses
   uPLuginClasses, uClasses, IceXML, IcePack, uProcs, uMain, uConstans,
-  IceLanguage;
+  IceLanguage, gnugettext;
 
 {$R *.dfm}
 
@@ -87,6 +87,9 @@ var
   Langs: TList;
   I: Integer;
 begin
+  cbLanguages.Items.Clear;
+  DefaultInstance.GetListOfLanguages('default',cbLanguages.Items);
+{
   Langs := Lang.GetLanguages;
   cbLanguages.Items.Clear;
   for I := 0 to Langs.Count - 1 do
@@ -94,7 +97,7 @@ begin
     cbLanguages.AddItem(TLangFileItem(Langs[I]).Language, Langs[I]);
     if TLangFileItem(Langs[I]).LangCode = Lang.LanguageCode then
       cbLanguages.ItemIndex := cbLanguages.Items.Count -1;
-  end;
+  end;  }
 end;
 
 procedure TOptionsForm.lTranslateToClick(Sender: TObject);
@@ -135,7 +138,7 @@ end;
 
 procedure TOptionsForm.FormCreate(Sender: TObject);
 begin
-  Lang.Execute('', Self);
+  TranslateComponent(Self, 'default');
 
 end;
 

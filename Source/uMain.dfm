@@ -6273,22 +6273,4 @@ object MainForm: TMainForm
     Left = 936
     Top = 392
   end
-  object Lang1: TIceLanguage
-    LanguageDir = 'c:\Work\Project\__D2009Projects__\StuffOrganizer\Bin\Languages'
-    Language = 'English'
-    LanguageCode = 'en-US'
-    GenerateLanguageFile = 
-      'c:\Work\Project\__D2009Projects__\StuffOrganizer\Source\Language' +
-      's\default.xml'
-    GenerateDescriptorFile = 
-      'c:\Work\Project\__D2009Projects__\StuffOrganizer\Source\lang_des' +
-      'criptor.xml'
-    TemplateFile = 
-      'c:\Work\Project\__D2009Projects__\IceLanguage\IceLanguageComps.d' +
-      'at'
-    ExecuteName = 'IceLangPackD.bpl'
-    DebugMode = False
-    Left = 440
-    Top = 184
-  end
 end

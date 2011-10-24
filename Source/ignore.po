@@ -1,0 +1,932 @@
+#  Doesn't have any letters
+#. MainForm..pmCategories..N1..Caption
+#: uMain.dfm:3908
+#. MainForm..pmList..N5..Caption
+#: uMain.dfm:3933
+#. MainForm..pmList..N2..Caption
+#: uMain.dfm:3939
+#. MainForm..pmTray..N3..Caption
+#: uMain.dfm:6100
+#. MainForm..pmDBTools..N4..Caption
+#: uMain.dfm:6232
+#. PreProcessForm..PopupMenu1..N1..Caption
+#: uPreprocessDirs.dfm:353
+msgid "-"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:1991
+msgid "1300380464_Process-Accept"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1584
+#. MainForm..ilMenu......Name
+#: uMain.dfm:4070
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4312
+msgid "1300383623_node-select-all"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1607
+#. MainForm..ilMenu......Name
+#: uMain.dfm:4093
+msgid "1300383627_plus"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1625
+#. MainForm..ilMenu......Name
+#: uMain.dfm:4111
+msgid "1300383629_folder"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1646
+#. MainForm..ilMenu......Name
+#: uMain.dfm:4132
+msgid "1300383645_category"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1667
+#. MainForm..ilMenu......Name
+#: uMain.dfm:4153
+msgid "1300385480_tag"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2103
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2322
+msgid "1300552961_checklist"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4473
+msgid "1300648931_package_games"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4501
+msgid "1300648955_package_games"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4537
+msgid "1300648959_agt_games"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4405
+msgid "1300648965_application-x-rar"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4335
+msgid "1300648970_application_view_tile"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4439
+msgid "1300648974_application-x-initrd"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4358
+msgid "1300648978_application"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4377
+msgid "1300648982_application-wave"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4571
+msgid "1300648985_film"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4595
+msgid "1300648990_video"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4706
+msgid "1300648994_movie"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4819
+msgid "1300648997_video"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4927
+msgid "1300649002_movie_grey_dark"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4977
+msgid "1300649006_guitar"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5006
+msgid "1300649009_hint"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5120
+msgid "1300649012_musicstore"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5150
+msgid "1300649016_kmixdocked_error"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5271
+msgid "1300649019_Music_Note"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5296
+msgid "1300649023_book_open"
+msgstr ""
+
+#  Doesn't have any letters
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5327
+msgid "1300649027_164"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5352
+msgid "1300649031_book-open"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5381
+msgid "1300649038_pdf"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5409
+msgid "1300649044_application-vnd.oasis.opendocument.text"
+msgstr ""
+
+#  Seems like a component name
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5436
+msgid "1300649048_PS_GenericFileIcon 2_file_document"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5649
+msgid "1300649051_document"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5758
+msgid "1300649055_page_word"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5791
+msgid "1300649058_Picture"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5813
+msgid "1300649062_image-x-photo-cd"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5844
+msgid "1300649065_picture"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilCategories......Name
+#: uMain.dfm:5870
+msgid "1300649074_Picture"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2385
+msgid "1300724929_list-edit"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2526
+msgid "1300724931_media-playlist"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2591
+msgid "1300724934_media-playlist-refresh"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2669
+msgid "1300724940_order-1"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2166
+msgid "1300724945_application-x-kgetlist"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2782
+msgid "1300729191_add"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2848
+msgid "1300729195_page_white_add"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2899
+msgid "1300729204_add1-"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2723
+msgid "1300729214_folder_add"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1719
+msgid "1301149797_blue-document-zipper"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1750
+#. UpdateForm..stateImages......Name
+#: uUpdateForm.dfm:209
+msgid "1301149817_cross"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1773
+#. UpdateForm..stateImages......Name
+#: uUpdateForm.dfm:232
+msgid "1301149836_arrow_circle_double"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1806
+#. UpdateForm..stateImages......Name
+#: uUpdateForm.dfm:265
+msgid "1301149839_tick_circle"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1837
+msgid "1301149958_edit-trash"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1887
+msgid "1301150045_Copy"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1687
+msgid "1301150150_database_save"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1871
+#. UpdateForm..stateImages......Name
+#: uUpdateForm.dfm:296
+msgid "1301150523_process"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1902
+msgid "1301150689_key"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1952
+#. UpdateForm..stateImages......Name
+#: uUpdateForm.dfm:336
+msgid "1301246058_hourglass"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1928
+#. UpdateForm..stateImages......Name
+#: uUpdateForm.dfm:312
+msgid "1301246061_gnome-fs-loading-icon"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:3131
+msgid "1301594687_database_edit"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:3061
+msgid "1301594690_database_gear"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:3199
+msgid "1301594844_database_save"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:3266
+msgid "1301594847_database_refresh"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:3342
+msgid "1301594849_database_error"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:3405
+msgid "1301594851_database_go"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:3468
+msgid "1302340275_Tools"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:3612
+msgid "1303235732_info_32"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:3758
+msgid "1303236476_gnome-mime-application-xhtml+xml"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:3822
+msgid "1303236645_Network-Update_32"
+msgstr ""
+
+#  Doesn't look like text
+#. UpdateForm..stateImages......Name
+#: uUpdateForm.dfm:367
+msgid "1310141802_download"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..Lang1....TemplateFile
+#: uMain.dfm:6288
+msgid "c:\\Work\\Project\\__D2009Projects__\\IceLanguage\\IceLanguageComps.dat"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..Lang1..LanguageDir
+#: uMain.dfm:6277
+msgid "c:\\Work\\Project\\__D2009Projects__\\StuffOrganizer\\Bin\\Languages"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..Lang1....GenerateDescriptorFile
+#: uMain.dfm:6285
+msgid "c:\\Work\\Project\\__D2009Projects__\\StuffOrganizer\\Source\\lang_descripto"
+"r.xml"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..Lang1....GenerateLanguageFile
+#: uMain.dfm:6282
+msgid "c:\\Work\\Project\\__D2009Projects__\\StuffOrganizer\\Source\\Languages\\defa"
+"ult.xml"
+msgstr ""
+
+#  Seems like a component name
+#. MainForm..stateImages......Name
+#: uMain.dfm:1553
+#. MainForm..ilMenu......Name
+#: uMain.dfm:4039
+msgid "checkbox"
+msgstr ""
+
+#  Seems like a component name
+#. MainForm..stateImages......Name
+#: uMain.dfm:1569
+#. MainForm..ilMenu......Name
+#: uMain.dfm:4055
+msgid "checkbox_part"
+msgstr ""
+
+#  Seems like a component name
+#. MainForm..stateImages......Name
+#: uMain.dfm:1543
+#. MainForm..ilMenu......Name
+#: uMain.dfm:4029
+msgid "checkbox_uncheck"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2968
+msgid "chronometer_32"
+msgstr ""
+
+#  Doesn't look like text
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:472
+msgid "http://www.itwriting.com/blog/?page_id=659"
+msgstr ""
+
+#  Doesn't look like text
+#. OptionsForm..Panel1..Caption
+#: uOptionsForm.dfm:25
+#. PreProcessForm..Panel1..Caption
+#: uPreprocessDirs.dfm:29
+#. ThreadProcessForm..Panel1..Caption
+#: uThreadProcessForm.dfm:27
+#. UpdateForm..Panel1..Caption
+#: uUpdateForm.dfm:153
+msgid "Panel1"
+msgstr ""
+
+#  Doesn't look like text
+#. OptionsForm..Panel2..Caption
+#: uOptionsForm.dfm:181
+#. ThreadProcessForm..Panel2..Caption
+#: uThreadProcessForm.dfm:88
+#. UpdateForm..Panel2..Caption
+#: uUpdateForm.dfm:26
+msgid "Panel2"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:3546
+#. PluginsForm..pluginIcons......Name
+#: uPluginsForm.dfm:311
+msgid "Plugin-32"
+msgstr ""
+
+#  Doesn't look like text
+#. PluginsForm..pluginIcons......Name
+#: uPluginsForm.dfm:440
+msgid "Plugin-Add-32"
+msgstr ""
+
+#  Doesn't look like text
+#. PluginsForm..pluginIcons......Name
+#: uPluginsForm.dfm:582
+msgid "Plugin-Delete-32"
+msgstr ""
+
+#  Doesn't look like text
+#. PluginsForm..pluginIcons......Name
+#: uPluginsForm.dfm:377
+msgid "Plugin-Disabled-32"
+msgstr ""
+
+#  Doesn't look like text
+#. PluginsForm..pluginIcons......Name
+#: uPluginsForm.dfm:653
+msgid "Plugin-Edit-32"
+msgstr ""
+
+#  Doesn't look like text
+#. PluginsForm..pluginIcons......Name
+#: uPluginsForm.dfm:726
+msgid "Plugin-Error-32"
+msgstr ""
+
+#  Doesn't look like text
+#. PluginsForm..pluginIcons......Name
+#: uPluginsForm.dfm:796
+msgid "Plugin-Go-32"
+msgstr ""
+
+#  Doesn't look like text
+#. PluginsForm..pluginIcons......Name
+#: uPluginsForm.dfm:511
+msgid "Plugin-Link-32"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ilTray......Name
+#: uMain.dfm:6110
+msgid "stuff_organizer_icon_16"
+msgstr ""
+
+#  Seems like a Font.Name extract
+#. AboutForm..Font.Name
+#: uAboutForm.dfm:12
+#. AboutForm..Label1..Font.Name
+#: uAboutForm.dfm:259
+#. AboutForm..lVersion..Font.Name
+#: uAboutForm.dfm:272
+#. AboutForm..Label3..Font.Name
+#: uAboutForm.dfm:285
+#. AboutForm..lHomePage..Font.Name
+#: uAboutForm.dfm:301
+#. AboutForm..lEmail..Font.Name
+#: uAboutForm.dfm:319
+#. AboutForm..bCheckUpdate..Font.Name
+#: uAboutForm.dfm:337
+#. AboutForm..Label2..Font.Name
+#: uAboutForm.dfm:354
+#. AboutForm..lGPL..Font.Name
+#: uAboutForm.dfm:371
+#. AboutForm..mLicenses..Font.Name
+#: uAboutForm.dfm:449
+#. CategoriesForm..Font.Name
+#: uCategories.dfm:12
+#. CategoriesForm..Label2..Font.Name
+#: uCategories.dfm:53
+#. MainForm..Font.Name
+#: uMain.dfm:13
+#. MainForm..ListPanel..Panel3..VList..Header.Font.Name
+#: uMain.dfm:700
+#. MainForm..ListPanel..CategoryPanel..FilterList..Header.Font.Name
+#: uMain.dfm:767
+#. MainForm..DescrPanel..Panel4..Label1..Font.Name
+#: uMain.dfm:887
+#. MainForm..DescrPanel..Panel4..lURL..Font.Name
+#: uMain.dfm:925
+#. MainForm..DescrPanel..Panel4..lGoogleSearch..Font.Name
+#: uMain.dfm:945
+#. MainForm..DescrPanel..DescrFuncPanel..bShowNFO..Font.Name
+#: uMain.dfm:1027
+#. MainForm..DescrPanel..DescrFuncPanel..bAddNFO..Font.Name
+#: uMain.dfm:1045
+#. MainForm..DescrPanel..DescrFuncPanel..bChangeURL..Font.Name
+#: uMain.dfm:1073
+#. MainForm..DescrPanel..DescrFuncPanel..bChangePicture..Font.Name
+#: uMain.dfm:1091
+#. MainForm..DescrPanel..DescrFuncPanel..lChnageDirectoryName..Font.Name
+#: uMain.dfm:1119
+#. NFOForm..Font.Name
+#: uNFOForm.dfm:12
+#. NFOForm..FontDialog1..Font.Name
+#: uNFOForm.dfm:40
+#. OptionsForm..Font.Name
+#: uOptionsForm.dfm:11
+#. OptionsForm..Panel1..GroupBox2..bCheckUpdate..Font.Name
+#: uOptionsForm.dfm:90
+#. OptionsForm..Panel1..GroupBox4..lDownloadLangs..Font.Name
+#: uOptionsForm.dfm:140
+#. OptionsForm..Panel1..GroupBox4..lTranslateTo..Font.Name
+#: uOptionsForm.dfm:157
+#. PasswordForm..Font.Name
+#: uPasswordForm.dfm:11
+#. PluginsForm..Font.Name
+#: uPluginsForm.dfm:12
+#. PluginsForm..GroupBox1..Panel2..lName..Font.Name
+#: uPluginsForm.dfm:165
+#. PluginsForm..GroupBox1..Panel2..lVersion..Font.Name
+#: uPluginsForm.dfm:181
+#. PluginsForm..GroupBox1..Panel2..lAuthor..Font.Name
+#: uPluginsForm.dfm:197
+#. PluginsForm..GroupBox1..Panel2..lWeb..Font.Name
+#: uPluginsForm.dfm:214
+#. PluginsForm..GroupBox1..Panel3..IceTabSet1..Font.Name
+#: uPluginsForm.dfm:267
+#. PluginsForm..GroupBox1..Panel3..IceTabSet1..SelectedFont.Name
+#: uPluginsForm.dfm:272
+#. PluginsForm..GroupBox1..Panel3..IceTabSet1..ModifiedFont.Name
+#: uPluginsForm.dfm:277
+#. PreProcessForm..Font.Name
+#: uPreprocessDirs.dfm:14
+#. PreProcessForm..Panel1..VList..Header.Font.Name
+#: uPreprocessDirs.dfm:46
+#. PreProcessForm..Panel1..SettingsPanel..lNewPath..Font.Name
+#: uPreprocessDirs.dfm:160
+#. PreProcessForm..Panel1..SettingsPanel..lAddCat..Font.Name
+#: uPreprocessDirs.dfm:174
+#. PreProcessForm..Panel1..SettingsPanel..lSaveDefault..Font.Name
+#: uPreprocessDirs.dfm:192
+#. ThreadProcessForm..Font.Name
+#: uThreadProcessForm.dfm:12
+#. ThreadProcessForm..GroupBox1..LogList..Header.Font.Name
+#: uThreadProcessForm.dfm:187
+#. UpdateForm..Font.Name
+#: uUpdateForm.dfm:12
+#. UpdateForm..GroupBox1..DataList..Header.Font.Name
+#: uUpdateForm.dfm:89
+#. UserSelectForm..Font.Name
+#: uUserSelectForm.dfm:12
+#. UserSelectForm..DataList..Header.Font.Name
+#: uUserSelectForm.dfm:73
+msgid "Tahoma"
+msgstr ""
+
+#  Seems like a Font.Name extract
+#. NFOForm..mNFO..Font.Name
+#: uNFOForm.dfm:28
+msgid "Terminal"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..HeaderPanel..ToolBar1..Caption
+#: uMain.dfm:1145
+msgid "ToolBar1"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..HeaderPanel..ToolBar1..ToolButton3..Caption
+#: uMain.dfm:1170
+msgid "ToolButton3"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..HeaderPanel..ToolBar1..ToolButton5..Caption
+#: uMain.dfm:1184
+msgid "ToolButton5"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..stateImages......Name
+#: uMain.dfm:1520
+#. MainForm..ilMenu......Name
+#: uMain.dfm:4006
+#. MainForm..ilCategories......Name
+#: uMain.dfm:4289
+msgid "torrent_organizer_icon_16"
+msgstr ""
+
+#  Doesn't look like text
+#. MainForm..ToolbarImages......Name
+#: uMain.dfm:2062
+msgid "torrent_organizer_icon_32"
+msgstr ""
+
+#  Seems like a Font.Name extract
+#. MainForm..DescrPanel..Panel4..lProductName..Font.Name
+#: uMain.dfm:904
+#. MainForm..DescrPanel..Panel4..eTags..Font.Name
+#: uMain.dfm:963
+#. MainForm..DescrPanel..Panel4..mProductDescr..Font.Name
+#: uMain.dfm:983
+#. UpdateForm..Panel1..lMainCaption..Font.Name
+#: uUpdateForm.dfm:182
+msgid "Verdana"
+msgstr ""
+
+#  Seems like a Font.Name extract
+#. PasswordForm..ePass..Font.Name
+#: uPasswordForm.dfm:30
+msgid "Wingdings"
+msgstr ""
+
+#. AboutForm..lVersion..Caption
+#: uAboutForm.dfm:268
+msgid "Version 0.4.5 (Build xxxx)"
+msgstr ""
+
+#. AboutForm..lHomePage..Caption
+#: uAboutForm.dfm:297
+msgid "http://stufforganizer.sf.net"
+msgstr ""
+
+#. AboutForm..lEmail..Caption
+#: uAboutForm.dfm:315
+msgid "so.iceapps@gmail.com"
+msgstr ""
+
+#. AboutForm..Label3..Caption
+#: uAboutForm.dfm:281
+msgid "Copyright @ 2011 Ice Apps"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:452
+msgid "This program is using the following libraries and "
+"programs:"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:454
+msgid "SQLite database"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:455
+msgid "http://www.sqlite.org"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:457
+msgid "TurboPower"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:458
+msgid "Copyright (C) 1997-2002 "
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:459
+msgid "TurboPower Software"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:460
+msgid "http://tpabbrevia.sourceforge.net/"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:462
+msgid "Unrar.dll delphi component"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:463
+msgid "Copyright (C) 2008 - 2009 Philippe Wechsler"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:464
+msgid "http://www.PhilippeWechsler.ch"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:466
+msgid "7zip delphi API"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:467
+msgid "Created by Henri Gourvest"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:468
+msgid "hgourvest@gmail.com"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:470
+msgid "SQLite3 wrapper classes"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:471
+msgid "Created by Tim Anderson"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:474
+msgid "Virtual Treeview"
+msgstr ""
+
+#. AboutForm..mLicenses......Lines.Strings
+#: uAboutForm.dfm:477
+msgid "Copyright (C) 1999-2001 digital publishing AG. All Rights "
+"Reserved"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:478
+msgid "http://www.soft-gems.net"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:480
+msgid "AllRovi.com descriptor script"
+msgstr ""
+
+#. AboutForm..mLicenses....Lines.Strings
+#: uAboutForm.dfm:481
+msgid "Original code written by Chetan Rao"
+msgstr ""
+
+#. MainForm..Lang1..Language
+#: uMain.dfm:6278
+msgid "English"
+msgstr ""
+
+#. MainForm..Lang1..LanguageCode
+#: uMain.dfm:6279
+msgid "en-US"
+msgstr ""
+
+#. MainForm..Lang1..ExecuteName
+#: uMain.dfm:6289
+msgid "IceLangPackD.bpl"
+msgstr ""
+
+#. PasswordForm..ePass..PasswordChar
+#: uPasswordForm.dfm:33
+msgid "l"
+msgstr ""
+
+#. PluginsForm..http..Request.Accept
+#: uPluginsForm.dfm:874
+#. UpdateForm..http..Request.Accept
+#: uUpdateForm.dfm:196
+msgid "text/html, */*"
+msgstr ""
+
+#. PluginsForm..http....Request.UserAgent
+#: uPluginsForm.dfm:878
+#. UpdateForm..http....Request.UserAgent
+#: uUpdateForm.dfm:200
+msgid "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.1 (KHTML, like Gecko) "
+"Chrome/14.0.835.186 Safari/535.1"
+msgstr ""
+
+#. Programmer's name: 1 24
+#: manifest.rc:1
+msgid "StuffOrganizer.manifest"
+msgstr ""
+
+#. Programmer's name: DB_INFO RCData
+#: StuffOrganizerResource.rc:1
+msgid "DBSQL\\productinfo.sql"
+msgstr ""
+
+#. Programmer's name: DB_MAIN RCData
+#: StuffOrganizerResource.rc:2
+msgid "DBSQL\\main.sql"
+msgstr ""
+
+#. Programmer's name: UPDATE_EXE RCData
+#: StuffOrganizerResource.rc:3
+msgid "SOUpdater\\SOUpdater.exe"
+msgstr ""
+
+#. Programmer's name: LANG_DESCRIPTOR RCData
+#: StuffOrganizerResource.rc:4
+msgid "lang_descriptor.xml"
+msgstr ""
+
