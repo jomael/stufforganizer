@@ -39,8 +39,11 @@ Source: ..\..\Bin\Plugins\unpack_zip.sop; DestDir: {app}\Plugins;
 Source: ..\..\Bin\Plugins\allrovi.sop; DestDir: {app}\Plugins; 
 Source: ..\..\Bin\Plugins\playmusic.sop; DestDir: {app}\Plugins; 
 Source: ..\..\Bin\Plugins\opensubtitles.sop; DestDir: {app}\Plugins; 
-Source: ..\..\Bin\Languages\*.xml; DestDir: {app}\Languages; 
+Source: ..\..\Bin\Plugins\imdb.sop; DestDir: {app}\Plugins; 
+Source: ..\..\Bin\Plugins\tmdb.sop; DestDir: {app}\Plugins; 
+Source: ..\..\Bin\locale\*; DestDir: {app}\locale; Flags: recursesubdirs;
 Source: ..\..\Source\Homepage.url; DestDir: {group};
+Source: ..\..\Source\history.txt; DestDir: {app};
 
 [Icons]
 Name: "{group}\Stuff Organizer"; Filename: {app}\StuffOrganizer.exe; WorkingDir: {app}; IconFilename: {app}\StuffOrganizer.exe;

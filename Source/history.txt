@@ -16,7 +16,13 @@ Changes in v0.4.6 -- xxx x, 2011
 New features:
 
   - Added new PlayMusic plugin to install package
-  - Added new OpenSubtitles.org plugin to package
+  - Added new OpenSubtitles.org plugin to install package
+  - Added new IMDb.com plugin to installpackage
+  - Added new TMDb.org plugin to install package
+  - Multi language support! http://crowdin.net/project/stuff-organizer
+  - Included languages: English, Hungarian, French
+  - Drag-n drop product images
+  - Quick launch icon added to installer
 
 Changes:
 
