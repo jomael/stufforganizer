@@ -35,6 +35,7 @@ procedure CheckUpdate(const Silent: boolean = true);
 function GetDownloadablePluginList: TIceXML;
 procedure ExecuteSOUpdater();
 
+function CheckWindowsLanguages: string;
 procedure ProcessParameters;
 procedure CheckOpenWithKeys;
 
@@ -44,7 +45,7 @@ implementation
 
 uses
   uMain, uConstans, uUpdateForm, uPluginClasses,
-  IdCoder, IdCoder3to4, IdCoderMIME;
+  IdCoder, IdCoder3to4, IdCoderMIME, gnugettext;
 
 function Base64Decode(const Text : string): string;
 var
@@ -56,6 +57,22 @@ begin
   finally
     FreeAndNil(Decoder)
   end
+end;
+
+function CheckWindowsLanguages: string;
+var
+  s, curLang: string;
+  Langs: TStrings;
+begin
+  Langs := TStringList.Create;
+  DefaultInstance.GetListOfLanguages('default', Langs);
+  s := GetCurrentLanguage;
+  curLang := CutAt(s, '_');
+  if Langs.IndexOf(LowerCase(curLang)) = -1 then
+    result := 'en'
+  else
+    result := curLang;
+  Langs.Free;
 end;
 
 procedure ProcessParameters;
@@ -230,18 +247,18 @@ begin
             end;
           end
           else if not Silent then
-            MessageDlg(Lang['Applicationisuptodate'], mtInformation, [mbOK], 0);
+            MessageDlg(_('Application is up to date.'), mtInformation, [mbOK], 0);
         end
         else if not Silent then
-          MessageDlg(Lang['Unknowupdatefile'], mtError, [mbOK], 0);
+          MessageDlg(_('Unknow update file!'), mtError, [mbOK], 0);
       end
       else if not Silent then
-        MessageDlg(Lang['Updateinfonotfound'], mtWarning, [mbOK], 0);
+        MessageDlg(_('Update info not found!'), mtWarning, [mbOK], 0);
     except
       on E: Exception do
       begin
         if not Silent then
-          MessageDlg(Lang['Updateerror'] + E.Message, mtError, [mbOK], 0);
+          MessageDlg(_('Update error! ') + E.Message, mtError, [mbOK], 0);
       end;
     end;
   finally

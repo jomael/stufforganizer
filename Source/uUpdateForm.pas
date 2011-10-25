@@ -87,14 +87,14 @@ implementation
 
 {$R *.dfm}
 
-uses uProcs, jpeg;
+uses uProcs, jpeg, gnugettext;
 
 
 
 function GetReadableModuleName(name: string): string;
 begin
   if name = 'MAIN' then
-    Exit(Lang['Mainmodule'])
+    Exit(_('Main module'))
   else
     Exit(name);
 end;
@@ -177,7 +177,7 @@ begin
   except
     on E: Exception do
     begin
-      MessageDlg(Lang['Downloaderror'] + E.Message, mtError, [mbOK], 0);
+      MessageDlg(_('Download error: ') + E.Message, mtError, [mbOK], 0);
       ModalResult := mrCancel;
     end;
   end;
@@ -252,7 +252,7 @@ end;
 
 procedure TUpdateForm.FormCreate(Sender: TObject);
 begin
-  Lang.Execute('', Self);
+  TranslateComponent(Self, 'default');
 
 end;
 

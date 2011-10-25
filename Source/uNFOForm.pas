@@ -45,7 +45,7 @@ procedure ShowNFOContent(Data: string);
 implementation
 
 uses
-  uConstans;
+  gnugettext;
 
 {$R *.dfm}
 
@@ -61,7 +61,7 @@ end;
 
 procedure TNFOForm.FormCreate(Sender: TObject);
 begin
-  Lang.Execute('', Self);
+  TranslateComponent(Self, 'default');
 
 end;
 

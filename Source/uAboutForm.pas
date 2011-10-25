@@ -61,7 +61,7 @@ var
 implementation
 
 uses
-  uConstans;
+  uConstans, gnugettext;
 
 {$R *.dfm}
 
@@ -77,12 +77,12 @@ end;
 
 procedure TAboutForm.FormCreate(Sender: TObject);
 begin
-  Lang.Execute('', Self);
+  TranslateComponent(Self, 'default');
 end;
 
 procedure TAboutForm.FormShow(Sender: TObject);
 begin
-  lVersion.Caption := IcePack.GetFileVersion('', Lang['VersiondddBuildd']);
+  lVersion.Caption := IcePack.GetFileVersion('', _('Version %d.%d.%d ( Build %d )'));
   mLicenses.Lines.Text := mLicenses.Lines.Text + ' '; //URL
 end;
 

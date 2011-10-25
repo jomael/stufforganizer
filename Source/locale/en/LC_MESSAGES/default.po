@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Stuff Organizer v0.4.6\n"
 "POT-Creation-Date: 2011-10-24 21:39\n"
 "PO-Revision-Date: 2011-10-24 21:39\n"
-"Last-Translator: NAME <MAIL@ADDRESS>\n"
-"Language: \n"
+"Last-Translator: Ice Apps <so.iceapps@gmail.com>\n"
+"Language: English\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,32 +21,33 @@ msgstr ""
 #. MainForm..alToolbar..aAbout..Caption
 #: uMain.dfm:4249
 msgid "About"
-msgstr ""
+msgstr "About"
 
 #. AboutForm..Label1..Caption
 #: uAboutForm.dfm:255
 #. MainForm..Caption
 #: uMain.dfm:4
 msgid "Stuff Organizer"
-msgstr ""
+msgstr "Stuff Organizer"
 
 #. AboutForm..bCheckUpdate..Caption
 #: uAboutForm.dfm:333
 #. MainForm..alToolbar..aCheckNewVersion..Caption
 #: uMain.dfm:4259
 msgid "Check new version"
-msgstr ""
+msgstr "Check new version"
 
 #. AboutForm..Label2....Caption
 #: uAboutForm.dfm:350
 msgid "Stuff Organizer is open source software distributed free of charge "
 "under the terms of"
-msgstr ""
+msgstr "Stuff Organizer is open source software distributed free of charge "
+"under the terms of"
 
 #. AboutForm..lGPL..Caption
 #: uAboutForm.dfm:367
 msgid "the GNU General Public License"
-msgstr ""
+msgstr "the GNU General Public License"
 
 #. AboutForm..bOK..Caption
 #: uAboutForm.dfm:436
@@ -57,7 +58,7 @@ msgstr ""
 #. UserSelectForm..Panel1..btnOk..Caption
 #: uUserSelectForm.dfm:46
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #. CategoriesForm..Caption
 #: uCategories.dfm:5
@@ -68,27 +69,27 @@ msgstr ""
 #. PreProcessForm..Panel1..SettingsPanel..Label3..Caption
 #: uPreprocessDirs.dfm:147
 msgid "Category"
-msgstr ""
+msgstr "Category"
 
 #. CategoriesForm..Label1..Caption
 #: uCategories.dfm:41
 msgid "Category target path"
-msgstr ""
+msgstr "Category target path"
 
 #. CategoriesForm..Label2..Caption
 #: uCategories.dfm:49
 msgid "If blank, it's equal with source path"
-msgstr ""
+msgstr "If blank, it's equal with source path"
 
 #. CategoriesForm..Label3..Caption
 #: uCategories.dfm:70
 msgid "Color"
-msgstr ""
+msgstr "Color"
 
 #. CategoriesForm..Label4..Caption
 #: uCategories.dfm:77
 msgid "Icon"
-msgstr ""
+msgstr "Icon"
 
 #. CategoriesForm..Panel1..btnCancel..Caption
 #: uCategories.dfm:98
@@ -101,602 +102,603 @@ msgstr ""
 #. UserSelectForm..Panel1..btnCancel..Caption
 #: uUserSelectForm.dfm:57
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 #. CategoriesForm..Panel1..btnOk..Caption
 #: uCategories.dfm:108
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #. CategoriesForm..eName..EditLabel.Caption
 #: uCategories.dfm:122
 msgid "Category name"
-msgstr ""
+msgstr "Category name"
 
 #. CategoriesForm..ePath..TitleName
 #: uCategories.dfm:134
 msgid "Please specify a directory"
-msgstr ""
+msgstr "Please specify a directory"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:726
 msgid "Product name"
-msgstr ""
+msgstr "Product name"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:732
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:737
 msgid "Added"
-msgstr ""
+msgstr "Added"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:742
 msgid "Path"
-msgstr ""
+msgstr "Path"
 
 #. MainForm..DescrPanel..Panel4..Label1..Caption
 #: uMain.dfm:883
 msgid "Product information:"
-msgstr ""
+msgstr "Product information:"
 
 #. MainForm..DescrPanel..Panel4..lProductName..Hint
 #: uMain.dfm:897
 msgid "Click here to change"
-msgstr ""
+msgstr "Click here to change"
 
 #. MainForm..DescrPanel..Panel4..lURL..Hint
 #: uMain.dfm:917
 msgid "Click here to open"
-msgstr ""
+msgstr "Click here to open"
 
 #. MainForm..DescrPanel..Panel4..lGoogleSearch..Hint
 #: uMain.dfm:938
 msgid "Click here to search in Google"
-msgstr ""
+msgstr "Click here to search in Google"
 
 #. MainForm..DescrPanel..Panel4..lGoogleSearch..Caption
 #: uMain.dfm:941
 msgid "Google search"
-msgstr ""
+msgstr "Google search"
 
 #. MainForm..DescrPanel..Panel4..eTags..Hint
 #: uMain.dfm:957
 msgid "Product tags"
-msgstr ""
+msgstr "Product tags"
 
 #. MainForm..DescrPanel..Panel4..eTags..TextHint
 #: uMain.dfm:969
 msgid "Enter tags"
-msgstr ""
+msgstr "Enter tags"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bShowNFO..Caption
 #: uMain.dfm:1023
 msgid "View NFO file"
-msgstr ""
+msgstr "View NFO file"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bAddNFO..Caption
 #: uMain.dfm:1041
 msgid "Add NFO file"
-msgstr ""
+msgstr "Add NFO file"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bChangeURL..Caption
 #: uMain.dfm:1069
 msgid "Change URL"
-msgstr ""
+msgstr "Change URL"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bChangePicture..Caption
 #: uMain.dfm:1087
 msgid "Change picture"
-msgstr ""
+msgstr "Change picture"
 
 #. MainForm..DescrPanel..DescrFuncPanel..lChnageDirectoryName..Caption
 #: uMain.dfm:1115
 msgid "Change directory name"
-msgstr ""
+msgstr "Change directory name"
 
 #. MainForm..HeaderPanel..Panel1..eSearch..TextHint
 #: uMain.dfm:1464
 msgid "Enter the search text"
-msgstr ""
+msgstr "Enter the search text"
 
 #. MainForm..pmList..pmiPluginFuncs..Caption
 #: uMain.dfm:3936
 msgid "Plugin functions"
-msgstr ""
+msgstr "Plugin functions"
 
 #. MainForm..alPopup..aModifyCategory..Caption
 #: uMain.dfm:3953
 msgid "Modify category..."
-msgstr ""
+msgstr "Modify category..."
 
 #. MainForm..alPopup..aDeleteCategory..Caption
 #: uMain.dfm:3957
 msgid "Delete category..."
-msgstr ""
+msgstr "Delete category..."
 
 #. MainForm..alPopup..aDeleteItems..Caption
 #: uMain.dfm:3961
 msgid "Delete selected item(s)..."
-msgstr ""
+msgstr "Delete selected item(s)..."
 
 #. MainForm..alPopup..aOpenDir..Caption
 #: uMain.dfm:3965
 msgid "Open directory"
-msgstr ""
+msgstr "Open directory"
 
 #. MainForm..alPopup..aNewCategory..Caption
 #: uMain.dfm:3969
 msgid "Add new category..."
-msgstr ""
+msgstr "Add new category..."
 
 #. MainForm..alPopup..aShowMainForm..Caption
 #: uMain.dfm:3973
 msgid "Show"
-msgstr ""
+msgstr "Show"
 
 #. MainForm..alPopup..aExit..Caption
 #: uMain.dfm:3977
 msgid "Exit"
-msgstr ""
+msgstr "Exit"
 
 #. MainForm..alPopup..aViewProcessLog..Caption
 #: uMain.dfm:3981
 msgid "View process log"
-msgstr ""
+msgstr "View process log"
 
 #. MainForm..alPopup..aReprocess..Caption
 #: uMain.dfm:3985
 msgid "Reprocess"
-msgstr ""
+msgstr "Reprocess"
 
 #. MainForm..alPopup..aDelSource..Caption
 #: uMain.dfm:3990
 msgid "Delete source files..."
-msgstr ""
+msgstr "Delete source files..."
 
 #. MainForm..alPopup..aOpenSourceDir..Caption
 #: uMain.dfm:3994
 msgid "Open source directory"
-msgstr ""
+msgstr "Open source directory"
 
 #. MainForm..alPopup..aTargetToClipBoard..Caption
 #: uMain.dfm:3998
 msgid "Copy target directory to clipboard"
-msgstr ""
+msgstr "Copy target directory to clipboard"
 
 #. MainForm..alToolbar..aAddFile..Caption
 #: uMain.dfm:4194
 msgid "Add files(s)..."
-msgstr ""
+msgstr "Add files(s)..."
 
 #. MainForm..alToolbar..aAddDirectory..Caption
 #: uMain.dfm:4199
 msgid "Add directory..."
-msgstr ""
+msgstr "Add directory..."
 
 #. MainForm..alToolbar..aQueue..Caption
 #: uMain.dfm:4204
 msgid "Queue"
-msgstr ""
+msgstr "Queue"
 
 #. MainForm..alToolbar..aConsistenceCheck..Caption
 #: uMain.dfm:4209
 msgid "Consistence check"
-msgstr ""
+msgstr "Consistence check"
 
 #. MainForm..alToolbar..aAddStuff..Caption
 #: uMain.dfm:4214
 msgid "Add stuff"
-msgstr ""
+msgstr "Add stuff"
 
 #. MainForm..alToolbar..aAddToWatch..Caption
 #: uMain.dfm:4219
 msgid "Add directory to watchlist..."
-msgstr ""
+msgstr "Add directory to watchlist..."
 
 #. MainForm..alToolbar..aSettings..Caption
 #: uMain.dfm:4224
 msgid "Settings"
-msgstr ""
+msgstr "Settings"
 
 #. MainForm..alToolbar..aDBBackup..Caption
 #: uMain.dfm:4229
 msgid "Database backup..."
-msgstr ""
+msgstr "Database backup..."
 
 #. MainForm..alToolbar..aDBRestore..Caption
 #: uMain.dfm:4234
 msgid "Database restore..."
-msgstr ""
+msgstr "Database restore..."
 
 #. MainForm..alToolbar..aDBVacuum..Caption
 #: uMain.dfm:4239
 msgid "Database vacuum"
-msgstr ""
+msgstr "Database vacuum"
 
 #. MainForm..alToolbar..aPlugins..Caption
 #: uMain.dfm:4244
 #. PluginsForm..Caption
 #: uPluginsForm.dfm:5
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #. MainForm..alToolbar..aHomepage..Caption
 #: uMain.dfm:4254
 msgid "Visit homepage"
-msgstr ""
+msgstr "Visit homepage"
 
 #. MainForm..PictureDialog....Filter
 #: uMain.dfm:4267
 msgid "Supported images (*.bmp, *.jpg, *.gif, "
 "*.png)|*.bmp;*.jpg;*.gif;*.png"
-msgstr ""
+msgstr "Supported images (*.bmp, *.jpg, *.gif, "
+"*.png)|*.bmp;*.jpg;*.gif;*.png"
 
 #. MainForm..OD..Filter
 #: uMain.dfm:4273
 msgid "All files (*.*)|*.*"
-msgstr ""
+msgstr "All files (*.*)|*.*"
 
 #. MainForm..NFODialog..Filter
 #: uMain.dfm:6271
 msgid "NFO files (*.nfo)|*.nfo"
-msgstr ""
+msgstr "NFO files (*.nfo)|*.nfo"
 
 #. NFOForm..Caption
 #: uNFOForm.dfm:5
 msgid "NFO Viewer"
-msgstr ""
+msgstr "NFO Viewer"
 
 #. OptionsForm..Caption
 #: uOptionsForm.dfm:4
 msgid "Preferences"
-msgstr ""
+msgstr "Preferences"
 
 #. OptionsForm..Panel1..GroupBox1..Caption
 #: uOptionsForm.dfm:45
 msgid "Process settings"
-msgstr ""
+msgstr "Process settings"
 
 #. OptionsForm..Panel1..GroupBox1..cbDelToRB..Caption
 #: uOptionsForm.dfm:52
 msgid "Delete to recycle bin"
-msgstr ""
+msgstr "Delete to recycle bin"
 
 #. OptionsForm..Panel1..GroupBox1..cbHideDialogs..Caption
 #: uOptionsForm.dfm:60
 msgid "Hide copy/move/delete dialog"
-msgstr ""
+msgstr "Hide copy/move/delete dialog"
 
 #. OptionsForm..Panel1..GroupBox1..cbICS..Caption
 #: uOptionsForm.dfm:68
 msgid "Enable ICS (Intelligent category selector)"
-msgstr ""
+msgstr "Enable ICS (Intelligent category selector)"
 
 #. OptionsForm..Panel1..GroupBox2..Caption
 #: uOptionsForm.dfm:77
 msgid "Auto update"
-msgstr ""
+msgstr "Auto update"
 
 #. OptionsForm..Panel1..GroupBox2..bCheckUpdate..Caption
 #: uOptionsForm.dfm:86
 msgid "Check now"
-msgstr ""
+msgstr "Check now"
 
 #. OptionsForm..Panel1..GroupBox2..cbCheckNewVersion..Caption
 #: uOptionsForm.dfm:100
 msgid "Check new version at start"
-msgstr ""
+msgstr "Check new version at start"
 
 #. OptionsForm..Panel1..GroupBox3..Caption
 #: uOptionsForm.dfm:109
 msgid "Extensions"
-msgstr ""
+msgstr "Extensions"
 
 #. OptionsForm..Panel1..GroupBox4..Caption
 #: uOptionsForm.dfm:127
 msgid "Languages"
-msgstr ""
+msgstr "Languages"
 
 #. OptionsForm..Panel1..GroupBox4..lDownloadLangs..Caption
 #: uOptionsForm.dfm:136
 msgid "Download languages..."
-msgstr ""
+msgstr "Download languages..."
 
 #. OptionsForm..Panel1..GroupBox4..lTranslateTo..Caption
 #: uOptionsForm.dfm:153
 msgid "Translate to your native language"
-msgstr ""
+msgstr "Translate to your native language"
 
 #. PasswordForm..Caption
 #: uPasswordForm.dfm:4
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 #. PasswordForm..ePass..EditLabel.Caption
 #: uPasswordForm.dfm:26
 msgid "Enter the password"
-msgstr ""
+msgstr "Enter the password"
 
 #. PluginsForm..Panel1..btnOk..Caption
 #: uPluginsForm.dfm:51
 #. PreProcessForm..Panel2..bCancel..Caption
 #: uPreprocessDirs.dfm:339
 msgid "Close"
-msgstr ""
+msgstr "Close"
 
 #. PluginsForm..GroupBox1..Caption
 #: uPluginsForm.dfm:62
 #. PluginsForm..GroupBox1..Panel3..IceTabSet1......Caption
 #: uPluginsForm.dfm:281
 msgid "Installed plugins"
-msgstr ""
+msgstr "Installed plugins"
 
 #. PluginsForm..GroupBox1..Panel2..Label1..Caption
 #: uPluginsForm.dfm:107
 msgid "Name:"
-msgstr ""
+msgstr "Name:"
 
 #. PluginsForm..GroupBox1..Panel2..Label2..Caption
 #: uPluginsForm.dfm:116
 msgid "Version:"
-msgstr ""
+msgstr "Version:"
 
 #. PluginsForm..GroupBox1..Panel2..Label3..Caption
 #: uPluginsForm.dfm:125
 msgid "Author:"
-msgstr ""
+msgstr "Author:"
 
 #. PluginsForm..GroupBox1..Panel2..Label4..Caption
 #: uPluginsForm.dfm:134
 msgid "Web:"
-msgstr ""
+msgstr "Web:"
 
 #. PluginsForm..GroupBox1..Panel2..Label5..Caption
 #: uPluginsForm.dfm:143
 msgid "Description:"
-msgstr ""
+msgstr "Description:"
 
 #. PluginsForm..GroupBox1..Panel2..bInstall..Caption
 #: uPluginsForm.dfm:225
 msgid "Install"
-msgstr ""
+msgstr "Install"
 
 #. PluginsForm..GroupBox1..Panel3..IceTabSet1......Caption
 #: uPluginsForm.dfm:286
 msgid "Downloadable plugins"
-msgstr ""
+msgstr "Downloadable plugins"
 
 #. PreProcessForm..Caption
 #: uPreprocessDirs.dfm:5
 msgid "Preprocessing new directories"
-msgstr ""
+msgstr "Preprocessing new directories"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:77
 #. PreProcessForm..Panel1..SettingsPanel..eNewDirName..EditLabel.Caption
 #: uPreprocessDirs.dfm:215
 msgid "New directory name"
-msgstr ""
+msgstr "New directory name"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:83
 msgid "Old directory"
-msgstr ""
+msgstr "Old directory"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:89
 #. PreProcessForm..Panel1..SettingsPanel..cbUnpack..Caption
 #: uPreprocessDirs.dfm:225
 msgid "Unpack"
-msgstr ""
+msgstr "Unpack"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:95
 msgid "ISO"
-msgstr ""
+msgstr "ISO"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:102
 msgid "Del source"
-msgstr ""
+msgstr "Del source"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:109
 msgid "Size"
-msgstr ""
+msgstr "Size"
 
 #. PreProcessForm..Panel1..SettingsPanel..lNewPath..Caption
 #: uPreprocessDirs.dfm:156
 msgid "New path:"
-msgstr ""
+msgstr "New path:"
 
 #. PreProcessForm..Panel1..SettingsPanel..lAddCat..Caption
 #: uPreprocessDirs.dfm:170
 msgid "Add"
-msgstr ""
+msgstr "Add"
 
 #. PreProcessForm..Panel1..SettingsPanel..lSaveDefault..Caption
 #: uPreprocessDirs.dfm:188
 msgid "Save as default"
-msgstr ""
+msgstr "Save as default"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbUnPackISO..Caption
 #: uPreprocessDirs.dfm:235
 msgid "Extract ISO"
-msgstr ""
+msgstr "Extract ISO"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelSource..Caption
 #: uPreprocessDirs.dfm:245
 msgid "Delete source path"
-msgstr ""
+msgstr "Delete source path"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelNFO..Caption
 #: uPreprocessDirs.dfm:255
 msgid "Delete *.nfo"
-msgstr ""
+msgstr "Delete *.nfo"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelDIZ..Caption
 #: uPreprocessDirs.dfm:265
 msgid "Delete *.diz"
-msgstr ""
+msgstr "Delete *.diz"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelSFV..Caption
 #: uPreprocessDirs.dfm:275
 msgid "Delete *.sfv"
-msgstr ""
+msgstr "Delete *.sfv"
 
 #. PreProcessForm..Panel1..SettingsPanel..eTags..EditLabel.Caption
 #: uPreprocessDirs.dfm:287
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #. PreProcessForm..Panel2..bOk..Caption
 #: uPreprocessDirs.dfm:328
 msgid "Process"
-msgstr ""
+msgstr "Process"
 
 #. PreProcessForm..PopupMenu1..Deleteselecteditem1..Caption
 #: uPreprocessDirs.dfm:349
 msgid "Delete selected item"
-msgstr ""
+msgstr "Delete selected item"
 
 #. PreProcessForm..PopupMenu1..Checkall1..Caption
 #: uPreprocessDirs.dfm:356
 msgid "Check all"
-msgstr ""
+msgstr "Check all"
 
 #. PreProcessForm..PopupMenu1..Uncheckall1..Caption
 #: uPreprocessDirs.dfm:360
 msgid "Uncheck all"
-msgstr ""
+msgstr "Uncheck all"
 
 #. ThreadProcessForm..Caption
 #: uThreadProcessForm.dfm:5
 msgid "Processing"
-msgstr ""
+msgstr "Processing"
 
 #. ThreadProcessForm..Panel1..lMainCaption..Caption
 #: uThreadProcessForm.dfm:54
 msgid "Processing..."
-msgstr ""
+msgstr "Processing..."
 
 #. ThreadProcessForm..Panel1..lElapsedTime..Caption
 #: uThreadProcessForm.dfm:61
 msgid "Elapsed time:"
-msgstr ""
+msgstr "Elapsed time:"
 
 #. ThreadProcessForm..Panel1..lEstimatedTime..Caption
 #: uThreadProcessForm.dfm:70
 msgid "Estimated time:"
-msgstr ""
+msgstr "Estimated time:"
 
 #. ThreadProcessForm..Panel2..Label1..Caption
 #: uThreadProcessForm.dfm:113
 msgid "Priority"
-msgstr ""
+msgstr "Priority"
 
 #. ThreadProcessForm..Panel2..btnHide..Caption
 #: uThreadProcessForm.dfm:121
 msgid "Hide"
-msgstr ""
+msgstr "Hide"
 
 #. ThreadProcessForm..Panel2..btnPause..Caption
 #: uThreadProcessForm.dfm:131
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #. ThreadProcessForm..Panel2..btnStop..Caption
 #: uThreadProcessForm.dfm:141
 msgid "Stop"
-msgstr ""
+msgstr "Stop"
 
 #. ThreadProcessForm..Panel2..cbPriority..Text
 #: uThreadProcessForm.dfm:155
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:160
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:158
 msgid "Low"
-msgstr ""
+msgstr "Low"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:159
 msgid "Below normal"
-msgstr ""
+msgstr "Below normal"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:161
 msgid "Above normal"
-msgstr ""
+msgstr "Above normal"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:162
 msgid "High"
-msgstr ""
+msgstr "High"
 
 #. ThreadProcessForm..GroupBox1..Caption
 #: uThreadProcessForm.dfm:171
 msgid "Process log"
-msgstr ""
+msgstr "Process log"
 
 #. ThreadProcessForm..GroupBox1..LogList......WideText
 #: uThreadProcessForm.dfm:200
 msgid "Log"
-msgstr ""
+msgstr "Log"
 
 #. ThreadProcessForm..GroupBox1..LogList......WideText
 #: uThreadProcessForm.dfm:205
 msgid "Progress"
-msgstr ""
+msgstr "Progress"
 
 #. UpdateForm..Caption
 #: uUpdateForm.dfm:5
 #. UpdateForm..Panel2..btnUpdate..Caption
 #: uUpdateForm.dfm:61
 msgid "Update"
-msgstr ""
+msgstr "Update"
 
 #. UpdateForm..GroupBox1..Caption
 #: uUpdateForm.dfm:73
 msgid "Update content"
-msgstr ""
+msgstr "Update content"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:105
 msgid "Module"
-msgstr ""
+msgstr "Module"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:110
 msgid "Date"
-msgstr ""
+msgstr "Date"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:115
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #. UpdateForm..GroupBox1..GroupBox2..Caption
 #: uUpdateForm.dfm:128
 msgid "Changes"
-msgstr ""
+msgstr "Changes"
 
 #. UpdateForm..Panel1..lMainCaption..Caption
 #: uUpdateForm.dfm:178
 msgid "New version found!"
-msgstr ""
+msgstr "New version found!"
 
 #. UserSelectForm..Caption
 #: uUserSelectForm.dfm:5
 msgid "Select an item"
-msgstr ""
+msgstr "Select an item"
 
 #: Pleaseenteraname
 msgid "Please enter a name!"

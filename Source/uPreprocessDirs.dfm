@@ -178,9 +178,9 @@ object PreProcessForm: TPreProcessForm
       end
       object lSaveDefault: TLabel
         Left = 671
-        Top = 92
+        Top = 72
         Width = 99
-        Height = 13
+        Height = 33
         Cursor = crHandPoint
         Alignment = taRightJustify
         Anchors = [akTop, akRight]
@@ -192,6 +192,8 @@ object PreProcessForm: TPreProcessForm
         Font.Name = 'Tahoma'
         Font.Style = [fsUnderline]
         ParentFont = False
+        Layout = tlBottom
+        WordWrap = True
         OnClick = lSaveDefaultClick
       end
       object cbCategories: TComboBox

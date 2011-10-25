@@ -88,7 +88,7 @@ implementation
 {$R *.dfm}
 
 uses
-  uPluginClasses, ShellAPI, uConstans, uProcs, uProgress, ShlObj;
+  uPluginClasses, ShellAPI, uConstans, uProcs, uProgress, ShlObj, gnugettext;
 
 procedure TPluginsForm.bInstallClick(Sender: TObject);
 var
@@ -100,7 +100,7 @@ var
 begin
   if (PluginList.ItemIndex <> -1) and Assigned(dlPluginXML) and (dlPluginXML.Root.Count > PluginList.ItemIndex) then
   begin
-    ShowProgressDialog(Format(Lang['Downloadingplugind'], [0]), Lang['Pleasewait']);
+    ShowProgressDialog(Format(_('Downloading plugin (%d%%)...'), [0]), _('Please wait'));
     try
       UpdateDir := GetSpecialFolderPath(CSIDL_LOCAL_APPDATA) + UPDATEPATH;
       ForceDirectories(UpdateDir);
@@ -129,13 +129,13 @@ begin
         end;
       end;
       CloseProgressDialog();
-      MessageDlg(Lang['Applicationexitfortoupdate'], mtInformation, [mbOK], 0);
+      MessageDlg(_('Application exit for install new plugin...'), mtInformation, [mbOK], 0);
       ExecuteSOUpdater;
     except
       on E: Exception do
       begin
         CloseProgressDialog();
-        MessageDlg(Lang['Downloaderror'] + E.Message, mtError, [mbOK], 0);
+        MessageDlg(_('Download error: ') + E.Message, mtError, [mbOK], 0);
       end;
     end;
   end;
@@ -154,7 +154,7 @@ var
 begin
   if not Assigned(dlPluginXML) then
   begin
-    ShowProgressDialog(Lang['Downloadingpluginlist'], Lang['Pleasewait']);
+    ShowProgressDialog(_('Downloading plugin list...'), _('Please wait'));
     dlPluginXML := GetDownloadablePluginList;
     CloseProgressDialog();
   end;
@@ -307,7 +307,7 @@ end;
 
 procedure TPluginsForm.FormCreate(Sender: TObject);
 begin
-  Lang.Execute('', Self);
+  TranslateComponent(Self, 'default');
 
 end;
 
@@ -321,7 +321,7 @@ procedure TPluginsForm.httpWork(ASender: TObject; AWorkMode: TWorkMode;
   AWorkCount: Int64);
 begin
   if MaxCount > 0 then
-    ChangeProgressCaption(Format(Lang['Downloadingplugind'], [AWorkCount * 100 div MaxCount]));
+    ChangeProgressCaption(Format(_('Downloading plugin (%d%%)...'), [AWorkCount * 100 div MaxCount]));
 end;
 
 procedure TPluginsForm.httpWorkBegin(ASender: TObject; AWorkMode: TWorkMode;
