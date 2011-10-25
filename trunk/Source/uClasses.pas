@@ -225,7 +225,7 @@ implementation
 
 uses
   uConstans, uPreProcessDirs, uPasswordForm, uPluginClasses, SOPluginDefs,
-  ShellAPI, CodePages;
+  ShellAPI, CodePages, gnugettext;
 
 procedure LockDB;
 begin
@@ -345,7 +345,7 @@ var
 begin
   LockDB;
   try
-    DoStatusEvent(STATUS_SAVEDB, Lang['Savingtodatabase'], 0);
+    DoStatusEvent(STATUS_SAVEDB, _('Saving to database...'), 0);
     if Self.ID = -1 then
     begin
       DB.AddParamText(':path', UTF8Encode(Self.NewDirPath));
@@ -390,7 +390,7 @@ begin
     begin
       SaveNFOAndImage;
     end;
-    DoStatusEvent(STATUS_SAVEDB, Lang['Savedtodatabase'], 100);
+    DoStatusEvent(STATUS_SAVEDB, _('Saved to database.'), 100);
   finally
     UnLockDB;
   end;
@@ -738,12 +738,12 @@ begin
   LockDB;
   try
     //Find *.nfo to save
-    DoStatusEvent(STATUS_SAVEDB, Lang['Findnfoforsave'], 50);
+    DoStatusEvent(STATUS_SAVEDB, _('Find *.nfo for save...'), 50);
     NFOs := IcePack.GetFiles(Self.NewDirPath, '*.nfo', true);
     if NFOs.Count > 0 then
     begin
       InfoDB.ExecSQL('delete from ProductInfo where product_id = ' + IntToStr(Self.ID));
-      DoStatusEvent(STATUS_SAVEDB, Format(Lang['Savesforprocess'], [ExtractFileName(NFOs[0])]), 70);
+      DoStatusEvent(STATUS_SAVEDB, Format(_('Save ''%s'' for product...'), [ExtractFileName(NFOs[0])]), 70);
       NFOContent := IcePack.ReadFromFileS(NFOs[0]);
       InfoDB.AddParamText(':content', UTF8Encode(NFOContent));
       InfoDB.AddParamInt(':id', Self.ID);
@@ -751,7 +751,7 @@ begin
     end;
     NFOs.Free;
     //Find image to save
-    DoStatusEvent(STATUS_SAVEDB, Lang['Findimageforsave'], 80);
+    DoStatusEvent(STATUS_SAVEDB, _('Find image for save...'), 80);
     Files := IcePack.GetFiles(Self.NewDirPath, '*.*', false);
     for I := 0 to Files.Count - 1 do
     begin
@@ -759,7 +759,7 @@ begin
       begin
         FS := TFileStream.Create(Files[I], fmOpenRead);
         try
-          DoStatusEvent(STATUS_SAVEDB, Format(Lang['Savesforprocess'], [ExtractFileName(NFOs[0])]), 70);
+          DoStatusEvent(STATUS_SAVEDB, Format(_('Save ''%s'' for product...'), [ExtractFileName(NFOs[0])]), 70);
           InfoDB.ExecSQL('delete from ProductImage where product_id = ' + IntToStr(Self.ID));
           InfoDB.AddParamInt(':id', Self.ID);
           InfoDB.AddParamText(':filename', UTF8Encode(ExtractFileName(Files[I])));
@@ -856,7 +856,7 @@ end;
 
 procedure UnPackNeedPassword(ProcItem: Pointer; var NewPassword: PWideChar); stdcall;
 begin
-  TPreProcessItem(ProcItem).DoStatusEvent(STATUS_NEED_PASSWORD, Lang['Waitingforpassword'], 0);
+  TPreProcessItem(ProcItem).DoStatusEvent(STATUS_NEED_PASSWORD, _('Waiting for password...'), 0);
   NeedPasswordEvent.ResetEvent;
   WaitForSingleObject(NeedPasswordEvent.Handle, 10 * 60 * 1000);
   NewPassword := PWideChar(UserPassword);
@@ -940,19 +940,19 @@ begin
         if FDelSourceDir and (FNewDirPath = FSourcePath) and (not OnlyFile) then
         begin
           //Ha törölni kell a forrást és a cél = forrás akkor most törölhetõ
-          DoStatusEvent(STATUS_DELETEFILE, Format(Lang['Deletesourcefiles'], []), 0);
+          DoStatusEvent(STATUS_DELETEFILE, Format(_('Delete source file ''%s''...'), []), 0);
           IcePack.IceFileOperation(FO_DELETE, IncludeTrailingBackslash(FSourcePath) + '*.*', '', false, true);
-          DoStatusEvent(STATUS_DELETEFILE, Format(Lang['Deletedsourcefiles'], []), 100);
+          DoStatusEvent(STATUS_DELETEFILE, Format(_('Deleted source file ''%s''.'), []), 100);
           TempList := IcePAck.GetDirectories(FSourcePath, false);
           for J := TempList.Count - 1 downto 0 do
           begin
             if IncludeTrailingPathDelimiter(TempList[J]) <> IncludeTrailingPathDelimiter(TempDir1) then //A Temp1 könyvtárt kihagyjuk a törlésbõl, mert lesz második kör is
             begin
-              DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletesourcedirectorys'], [ExtractFileName(TempList[J])]), (J+1) * 100 div TempList.Count);
+              DoStatusEvent(STATUS_DELETEDIR, Format(_('Delete source directory ''%s''...'), [ExtractFileName(TempList[J])]), (J+1) * 100 div TempList.Count);
               IcePack.IceFileOperation(FO_DELETE, ExcludeTrailingBackslash(TempList[J]), '', false, true);
             end;
           end;
-          DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletedsourcefiles'], []), 0);
+          DoStatusEvent(STATUS_DELETEDIR, Format(_('Deleted source files.'), []), 0);
           TempList.Free;
         end;
 
@@ -969,14 +969,14 @@ begin
             RelPath := ExtractRelativePath(TempDir2, ExtractFilePath(CurrentFile));
             TargetPath := TargetDir + RelPath;
             ForceDirectories(TargetPath);
-            DoStatusEvent(STATUS_MOVEFILE, Format(Lang['Movestotargetpath'], [ExtractFileName(CurrentFile)]), (J+1) * 100 div TempList.Count);
+            DoStatusEvent(STATUS_MOVEFILE, Format(_('Move ''%s'' to target path...'), [ExtractFileName(CurrentFile)]), (J+1) * 100 div TempList.Count);
 
             if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then
             //if not RenameFile(PWideChar(CurrentFile), PWideChar(TargetPath + ExtractFileName(CurrentFile))) then
-              raise Exception.Create(Lang['Filemoveerror'] + CurrentFile);
+              raise Exception.Create(_('File move error: ') + CurrentFile);
           end;
           TempList.Free;
-          DoStatusEvent(STATUS_DELETEFILE, Format(Lang['Deletetemporarydirectory2'], []), 0);
+          DoStatusEvent(STATUS_DELETEFILE, Format(_('Delete temporary directory #2...'), []), 0);
           IcePack.IceFileOperation(FO_DELETE, ExcludeTrailingBackslash(TempDir2), '', false, true);
         end;
       end
@@ -991,20 +991,20 @@ begin
           RelPath := ExtractRelativePath(TempDir1, ExtractFilePath(CurrentFile));
           TargetPath := TargetDir + RelPath;
           ForceDirectories(TargetPath);
-          DoStatusEvent(STATUS_MOVEFILE, Format(Lang['Movestotargetpath'], [ExtractFileName(CurrentFile)]), (J+1) * 100 div TempList.Count);
+          DoStatusEvent(STATUS_MOVEFILE, Format(_('Move ''%s'' to target path...'), [ExtractFileName(CurrentFile)]), (J+1) * 100 div TempList.Count);
           if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then
           //if not RenameFile(PWideChar(CurrentFile), PWideChar(TargetPath + ExtractFileName(CurrentFile))) then
-            raise Exception.Create(Lang['Filemoveerror'] + CurrentFile);
+            raise Exception.Create(_('File move error: ') + CurrentFile);
         end;
       end;
 
       if Res <> RESULT_ERROR then
       begin
         if not DirectoryExists(FNewDirPath) then
-          raise Exception.Create(Lang['Targetdirectorydoesntexists']);
+          raise Exception.Create(_('Target directory doesn''t exists!'));
 
         //Temp1 könyvtár törlése
-        DoStatusEvent(STATUS_DELETEFILE, Format(Lang['Deletetemporarydirectory1'], []), 0);
+        DoStatusEvent(STATUS_DELETEFILE, Format(_('Delete temporary directory #1...'), []), 0);
         IcePack.IceFileOperation(FO_DELETE, ExcludeTrailingBackslash(TempDir1), '', false, true);
 
         //Ha a cél <> forrással és kell törölni, akkor itt
@@ -1012,15 +1012,15 @@ begin
         begin
           if not OnlyFile then
           begin
-            DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletesourcedirectorys'], [ExtractFileName(FSourcePath)]), 0);
+            DoStatusEvent(STATUS_DELETEDIR, Format(_('Delete source directory ''%s''...'), [ExtractFileName(FSourcePath)]), 0);
             IcePack.IceFileOperation(FO_DELETE, ExcludeTrailingBackslash(FSourcePath), '', false, true);
-            DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletedsourcedirectorys'], [ExtractFileName(FSourcePath)]), 100);
+            DoStatusEvent(STATUS_DELETEDIR, Format(_('Deleted source directory ''%s''.'), [ExtractFileName(FSourcePath)]), 100);
           end
           else if FileExists(FSourcePath) then
           begin
-            DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletesourcefiles0'], [FSourcePath]), 0);
+            DoStatusEvent(STATUS_DELETEDIR, Format(_('Delete source file ''%s''...'), [FSourcePath]), 0);
             IcePack.IceFileOperation(FO_DELETE, FSourcePath, '', false, true);
-            DoStatusEvent(STATUS_DELETEDIR, Format(Lang['Deletedsourcefiles0'], [FSourcePath]), 100);
+            DoStatusEvent(STATUS_DELETEDIR, Format(_('Deleted source file ''%s''.'), [FSourcePath]), 100);
           end;
         end;
         if ProgressStopping then Exit;
@@ -1087,7 +1087,7 @@ begin
 
 
   if UnPack then
-    DoStatusEvent(STATUS_SEARCH_ARCHIVE, Format(Lang['Searcharchives'], []), 0);
+    DoStatusEvent(STATUS_SEARCH_ARCHIVE, Format(_('Search archives...'), []), 0);
 
   if FOnlyFile and (Level = 1) then
   begin
@@ -1114,12 +1114,12 @@ begin
               for I := 0 to PackFiles.Count - 1 do
               begin
                 CurrentFile := PackFiles[I];
-                DoStatusEvent(STATUS_UNPACK, Format(Lang['Unpacks'], [ExtractFileName(CurrentFile)]), 0);
+                DoStatusEvent(STATUS_UNPACK, Format(_('Unpack ''%s''...'), [ExtractFileName(CurrentFile)]), 0);
                 RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
                 ForceDirectories(TempDir + RelPath);
                 result := UnPackCB.CallBack(Self, PWideChar(CurrentFile), PWideChar(TempDir + RelPath));
                 if FWasUnpackError or (result = UNPACK_RESULT_ERROR) then
-                  raise Exception.Create(Lang['Unpackerror']);
+                  raise Exception.Create(_('Unpack error!'));
 
                 RemoveFromAllFiles(CurrentFile);
               end;
@@ -1143,12 +1143,12 @@ begin
               for I := 0 to PackFiles.Count - 1 do
               begin
                 CurrentFile := PackFiles[I];
-                DoStatusEvent(STATUS_UNPACK, Format(Lang['Extracts'], [ExtractFileName(CurrentFile)]), 0);
+                DoStatusEvent(STATUS_UNPACK, Format(_('Extract ''%s''...'), [ExtractFileName(CurrentFile)]), 0);
                 RelPath := SysUtils.ExtractRelativePath(SourceDir, ExtractFilePath(CurrentFile));
                 ForceDirectories(TempDir + RelPath);
                 result := UnPackCB.CallBack(Self, PWideChar(CurrentFile), PWideChar(TempDir + RelPath));
                 if FWasUnpackError or (result = UNPACK_RESULT_ERROR) then
-                  raise Exception.Create(Lang['Extracterror']);
+                  raise Exception.Create(_('Extract error!'));
 
                 RemoveFromAllFiles(CurrentFile);
               end;
@@ -1172,16 +1172,16 @@ begin
           // 1. Ha már a második szinten vagyunk, akkor mozgassa a tempbõl a cél helyre
           // 2. Ha törölni kell a forrást, akkor a megmaradt fájlokat mozgassa
           // 3. Ha nem történt tömörítés és a célhely megegyezik az új hellyel
-          DoStatusEvent(STATUS_MOVEFILE, Format(Lang['Movestotemp'], [ExtractFileName(CurrentFile)]), (I+1) * 100 div AllFiles.Count);
+          DoStatusEvent(STATUS_MOVEFILE, Format(_('Move ''%s'' to temp...'), [ExtractFileName(CurrentFile)]), (I+1) * 100 div AllFiles.Count);
           if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then
-            raise Exception.Create(Lang['Filemoveerror'] + CurrentFile);
+            raise Exception.Create(_('File move error: ') + CurrentFile);
 
         end
         else
         begin
-          DoStatusEvent(STATUS_COPYFILE, Format(Lang['Copystotemp'], [ExtractFileName(CurrentFile)]), (I+1) * 100 div AllFiles.Count);
+          DoStatusEvent(STATUS_COPYFILE, Format(_('Copy ''%s'' to temp...'), [ExtractFileName(CurrentFile)]), (I+1) * 100 div AllFiles.Count);
           if not CopyFile(PWideChar(CurrentFile), PWideChar(TargetPath + ExtractFileName(CurrentFile)), false) then
-            raise Exception.Create(Lang['Filecopyerror'] + CurrentFile);
+            raise Exception.Create(_('File copy error: ') + CurrentFile);
         end;
       end;
 

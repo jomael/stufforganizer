@@ -54,7 +54,7 @@ implementation
 {$R *.dfm}
 
 uses
-  uMain, uConstans;
+  uMain, uConstans, gnugettext;
 
 function UserSelectList(ItemList: PTDescriptorProductInfoArray): integer;
 var
@@ -89,7 +89,7 @@ end;
 
 procedure TUserSelectForm.FormCreate(Sender: TObject);
 begin
-  Lang.Execute('', Self);
+  TranslateComponent(Self, 'default');
 
 end;
 

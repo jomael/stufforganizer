@@ -930,3 +930,7 @@ msgstr ""
 msgid "lang_descriptor.xml"
 msgstr ""
 
+#. MainForm..ListPanel..CategoryPanel..Caption
+#: uMain.dfm:753
+msgid "CategoryPanel"
+msgstr ""

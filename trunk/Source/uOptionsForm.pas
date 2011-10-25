@@ -23,7 +23,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, StdCtrls, Gradient, CheckLst;
+  Dialogs, ExtCtrls, StdCtrls, Gradient, CheckLst, languagecodes;
 
 type
   TOptionsForm = class(TForm)
@@ -53,12 +53,15 @@ type
     procedure FormCreate(Sender: TObject);
     procedure lTranslateToClick(Sender: TObject);
     procedure lDownloadLangsClick(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
   private
     procedure LoadExtensions;
     procedure LoadLanguages;
     { Private declarations }
   public
     { Public declarations }
+    Langs: TStrings;
+    oldLang: string;
   end;
 
 var
@@ -84,20 +87,25 @@ end;
 
 procedure TOptionsForm.LoadLanguages;
 var
-  Langs: TList;
   I: Integer;
+  s, curLang: string;
 begin
   cbLanguages.Items.Clear;
-  DefaultInstance.GetListOfLanguages('default',cbLanguages.Items);
-{
-  Langs := Lang.GetLanguages;
+  Langs.Clear;
+  DefaultInstance.GetListOfLanguages('default', Langs);
+  s := GetCurrentLanguage;
+  curLang := CutAt(s, '_');
+
   cbLanguages.Items.Clear;
   for I := 0 to Langs.Count - 1 do
   begin
-    cbLanguages.AddItem(TLangFileItem(Langs[I]).Language, Langs[I]);
-    if TLangFileItem(Langs[I]).LangCode = Lang.LanguageCode then
+    s := getlanguagename(Langs[I]);
+    if s = '' then
+      s := Langs[I];
+    cbLanguages.Items.Add(s);
+    if LowerCase(Langs[I]) = LowerCase(curLang) then
       cbLanguages.ItemIndex := cbLanguages.Items.Count -1;
-  end;  }
+  end;
 end;
 
 procedure TOptionsForm.lTranslateToClick(Sender: TObject);
@@ -129,9 +137,9 @@ begin
   ConfigXML.SaveToFile;
   MainForm.LoadVariablesFromConfig;
 
-  if (cbLanguages.ItemIndex <> -1) and (Lang.LanguageCode <> TLangFileItem(cbLanguages.Items.Objects[cbLanguages.ItemIndex]).LangCode) then
+  if (cbLanguages.ItemIndex <> -1) and (GetCurrentLanguage <> Langs[cbLanguages.ItemIndex]) then
   begin
-    MainForm.ChangeLanguage( TLangFileItem(cbLanguages.Items.Objects[cbLanguages.ItemIndex]).LangCode );
+    MainForm.ChangeLanguage( Langs[cbLanguages.ItemIndex] );
   end;
   MainForm.BringToFront;
 end;
@@ -140,6 +148,12 @@ procedure TOptionsForm.FormCreate(Sender: TObject);
 begin
   TranslateComponent(Self, 'default');
 
+  Langs := TStringList.Create;
+end;
+
+procedure TOptionsForm.FormDestroy(Sender: TObject);
+begin
+  Langs.Free;
 end;
 
 procedure TOptionsForm.FormShow(Sender: TObject);

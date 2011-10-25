@@ -47,7 +47,7 @@ function ShowPasswordDialog(DirName: string): string;
 
 implementation
 
-uses uMain, uClasses, uConstans;
+uses uMain, uClasses, gnugettext;
 
 {$R *.dfm}
 
@@ -55,7 +55,7 @@ function ShowPasswordDialog(DirName: string): string;
 begin
   UserPassword := '';
   PasswordForm := TPasswordForm.Create(MainForm);
-  PasswordForm.Caption := Format(Lang['Passwordfors'], [DirName]);
+  PasswordForm.Caption := Format(_('Password for %s'), [DirName]);
   PasswordForm.ePass.Text := '';
 {  if PasswordForm.ShowModal = mrOk then
     result := PasswordForm.ePass.Text
@@ -86,7 +86,7 @@ end;
 
 procedure TPasswordForm.FormCreate(Sender: TObject);
 begin
-  Lang.Execute('', Self);
+  TranslateComponent(Self, 'default');
 
 end;
 

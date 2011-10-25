@@ -235,10 +235,6 @@ object PluginsForm: TPluginsForm
       Height = 306
       Align = alClient
       TabOrder = 1
-      ExplicitLeft = 40
-      ExplicitTop = 14
-      ExplicitWidth = 369
-      ExplicitHeight = 282
       object PluginList: TListBox
         Left = 1
         Top = 26
@@ -250,10 +246,6 @@ object PluginsForm: TPluginsForm
         TabOrder = 0
         OnClick = PluginListClick
         OnDrawItem = PluginListDrawItem
-        ExplicitLeft = 10
-        ExplicitTop = 112
-        ExplicitWidth = 399
-        ExplicitHeight = 190
       end
       object IceTabSet1: TIceTabSet
         Left = 1
@@ -297,8 +289,6 @@ object PluginsForm: TPluginsForm
         BackgroundStopColor = 14211288
         CanDragTabs = False
         OnTabSelected = IceTabSet1TabSelected
-        ExplicitLeft = 0
-        ExplicitTop = -5
       end
     end
   end

@@ -343,7 +343,7 @@ object AboutForm: TAboutForm
     Left = 135
     Top = 114
     Width = 413
-    Height = 19
+    Height = 15
     AutoSize = False
     Caption = 
       'Stuff Organizer is open source software distributed free of char' +
@@ -354,7 +354,6 @@ object AboutForm: TAboutForm
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    WordWrap = True
   end
   object lGPL: TLabel
     Left = 135

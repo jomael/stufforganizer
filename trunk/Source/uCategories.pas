@@ -65,13 +65,13 @@ implementation
 
 {$R *.dfm}
 
-uses IcePack, uMain, uConstans;
+uses IcePack, uMain, uConstans, gnugettext;
 
 procedure TCategoriesForm.btnOkClick(Sender: TObject);
 begin
   if Trim(eName.Text) = '' then
   begin
-    MessageDlg(Lang['Pleaseenteraname'], mtWarning, [mbOK], 0);
+    MessageDlg(_('Please enter a name!'), mtWarning, [mbOK], 0);
     eName.SetFocus;
     Exit;
   end;
@@ -103,7 +103,7 @@ procedure TCategoriesForm.FormCreate(Sender: TObject);
 var
   I: Integer;
 begin
-  Lang.Execute('', Self);
+  TranslateComponent(Self, 'default');
 
   shColor.Brush.Color := clWhite;
 

@@ -22,8 +22,7 @@ unit uConstans;
 interface
 
 uses
-  SysUtils, Classes, Windows, Messages, IcePack, ShlObj, tlHelp32, Forms,
-  IceLanguage;
+  SysUtils, Classes, Windows, Messages, IcePack, ShlObj, tlHelp32, Forms;
 
 const
   APP_TITLE                   = 'Stuff Organizer';
@@ -96,8 +95,6 @@ var
   ICS_ENABLED: boolean = true;
 
 implementation
-
-
 
 initialization
   TagList := TStringList.Create;
