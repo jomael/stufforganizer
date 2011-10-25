@@ -129,7 +129,7 @@ object OptionsForm: TOptionsForm
       TabOrder = 3
       object lDownloadLangs: TLabel
         Left = 16
-        Top = 48
+        Top = 67
         Width = 177
         Height = 13
         Cursor = crHandPoint
@@ -141,12 +141,13 @@ object OptionsForm: TOptionsForm
         Font.Name = 'Tahoma'
         Font.Style = [fsUnderline]
         ParentFont = False
+        Visible = False
         WordWrap = True
         OnClick = lDownloadLangsClick
       end
       object lTranslateTo: TLabel
-        Left = 16
-        Top = 67
+        Left = 19
+        Top = 48
         Width = 187
         Height = 13
         Cursor = crHandPoint

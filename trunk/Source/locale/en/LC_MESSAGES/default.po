@@ -23,13 +23,6 @@ msgstr ""
 msgid "About"
 msgstr "About"
 
-#. AboutForm..Label1..Caption
-#: uAboutForm.dfm:255
-#. MainForm..Caption
-#: uMain.dfm:4
-msgid "Stuff Organizer"
-msgstr "Stuff Organizer"
-
 #. AboutForm..bCheckUpdate..Caption
 #: uAboutForm.dfm:333
 #. MainForm..alToolbar..aCheckNewVersion..Caption

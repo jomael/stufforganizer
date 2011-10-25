@@ -934,3 +934,10 @@ msgstr ""
 #: uMain.dfm:753
 msgid "CategoryPanel"
 msgstr ""
+
+#. AboutForm..Label1..Caption
+#: uAboutForm.dfm:255
+#. MainForm..Caption
+#: uMain.dfm:4
+msgid "Stuff Organizer"
+msgstr ""

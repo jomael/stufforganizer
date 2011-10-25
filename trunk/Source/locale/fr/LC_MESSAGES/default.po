@@ -3,44 +3,30 @@
 # This file is distributed under the same license as the Stuff Organizer application.
 # Ice Apps <so.iceapps@gmail.com>, 2011.
 # 
-#, fuzzy
 msgid ""
-msgstr ""
-"Project-Id-Version: Stuff Organizer v0.4.6\n"
+msgstr "Project-Id-Version: stuff-organizer\n"
 "POT-Creation-Date: 2011-10-24 21:39\n"
-"PO-Revision-Date: 2011-10-24 21:39\n"
+"PO-Revision-Date: 2011-10-25 21:11+0200\n"
 "Last-Translator: Beuzbeuz78 <beuzbeuz78@gmail.com>\n"
 "Language: French\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: dxgettext 1.2.2\n"
+"X-Generator: crowdin.net\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language-Team: French\n"
 
-#. AboutForm..Caption
-#: uAboutForm.dfm:5
-#. MainForm..alToolbar..aAbout..Caption
 #: uMain.dfm:4249
 msgid "About"
 msgstr "À propos"
 
-#. AboutForm..Label1..Caption
-#: uAboutForm.dfm:255
-#. MainForm..Caption
-#: uMain.dfm:4
-msgid "Stuff Organizer"
-msgstr "Stuff Organizer"
-
-#. AboutForm..bCheckUpdate..Caption
-#: uAboutForm.dfm:333
-#. MainForm..alToolbar..aCheckNewVersion..Caption
 #: uMain.dfm:4259
 msgid "Check new version"
 msgstr "Vérifiez la nouvelle version"
 
 #. AboutForm..Label2....Caption
 #: uAboutForm.dfm:350
-msgid "Stuff Organizer is open source software distributed free of charge "
-"under the terms of"
+msgid "Stuff Organizer is open source software distributed free of charge under the terms of"
 msgstr "Stuff Organisateur est un logiciel open source distribuĂ© gratuitement selon les termes de la"
 
 #. AboutForm..lGPL..Caption
@@ -48,24 +34,10 @@ msgstr "Stuff Organisateur est un logiciel open source distribuĂ© gratuitement
 msgid "the GNU General Public License"
 msgstr "GNU General Public License"
 
-#. AboutForm..bOK..Caption
-#: uAboutForm.dfm:436
-#. OptionsForm..Panel2..btnOk..Caption
-#: uOptionsForm.dfm:207
-#. PasswordForm..bOk..Caption
-#: uPasswordForm.dfm:41
-#. UserSelectForm..Panel1..btnOk..Caption
 #: uUserSelectForm.dfm:46
 msgid "OK"
 msgstr "OK"
 
-#. CategoriesForm..Caption
-#: uCategories.dfm:5
-#. MainForm..ListPanel..Panel3..VList......WideText
-#: uMain.dfm:721
-#. PreProcessForm..Panel1..VList......WideText
-#: uPreprocessDirs.dfm:71
-#. PreProcessForm..Panel1..SettingsPanel..Label3..Caption
 #: uPreprocessDirs.dfm:147
 msgid "Category"
 msgstr "Catégorie"
@@ -90,15 +62,6 @@ msgstr "Couleur"
 msgid "Icon"
 msgstr "Icône"
 
-#. CategoriesForm..Panel1..btnCancel..Caption
-#: uCategories.dfm:98
-#. OptionsForm..Panel2..btnCancel..Caption
-#: uOptionsForm.dfm:219
-#. PasswordForm..bCancel..Caption
-#: uPasswordForm.dfm:52
-#. UpdateForm..Panel2..btnCancel..Caption
-#: uUpdateForm.dfm:51
-#. UserSelectForm..Panel1..btnCancel..Caption
 #: uUserSelectForm.dfm:57
 msgid "Cancel"
 msgstr "Annuler"
@@ -116,7 +79,7 @@ msgstr "Nom de la catégorie"
 #. CategoriesForm..ePath..TitleName
 #: uCategories.dfm:134
 msgid "Please specify a directory"
-msgstr ""
+msgstr "S'il vous plaît spécifier un répertoire"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:726
@@ -318,9 +281,6 @@ msgstr "Restauration de la base de données..."
 msgid "Database vacuum"
 msgstr "Vidage de la base de données"
 
-#. MainForm..alToolbar..aPlugins..Caption
-#: uMain.dfm:4244
-#. PluginsForm..Caption
 #: uPluginsForm.dfm:5
 msgid "Plugins"
 msgstr "Plugins"
@@ -332,19 +292,18 @@ msgstr "Visiter le site web"
 
 #. MainForm..PictureDialog....Filter
 #: uMain.dfm:4267
-msgid "Supported images (*.bmp, *.jpg, *.gif, "
-"*.png)|*.bmp;*.jpg;*.gif;*.png"
-msgstr ""
+msgid "Supported images (*.bmp, *.jpg, *.gif, *.png)|*.bmp;*.jpg;*.gif;*.png"
+msgstr "Images supportés (*.bmp, *.jpg, *.gif, *.png)|*.bmp;*.jpg;*.gif;*.png"
 
 #. MainForm..OD..Filter
 #: uMain.dfm:4273
 msgid "All files (*.*)|*.*"
-msgstr ""
+msgstr "Tous les fichiers (*.*)|*.*"
 
 #. MainForm..NFODialog..Filter
 #: uMain.dfm:6271
 msgid "NFO files (*.nfo)|*.nfo"
-msgstr ""
+msgstr "NFO fichiers (*.nfo)|*.nfo"
 
 #. NFOForm..Caption
 #: uNFOForm.dfm:5
@@ -421,16 +380,10 @@ msgstr "Mot de passe"
 msgid "Enter the password"
 msgstr "Entrez le mot de passe"
 
-#. PluginsForm..Panel1..btnOk..Caption
-#: uPluginsForm.dfm:51
-#. PreProcessForm..Panel2..bCancel..Caption
 #: uPreprocessDirs.dfm:339
 msgid "Close"
 msgstr "Fermer"
 
-#. PluginsForm..GroupBox1..Caption
-#: uPluginsForm.dfm:62
-#. PluginsForm..GroupBox1..Panel3..IceTabSet1......Caption
 #: uPluginsForm.dfm:281
 msgid "Installed plugins"
 msgstr "Plugins installés"
@@ -475,9 +428,6 @@ msgstr "Plugins téléchargeables"
 msgid "Preprocessing new directories"
 msgstr "Prétraitement des répertoires nouveaux"
 
-#. PreProcessForm..Panel1..VList......WideText
-#: uPreprocessDirs.dfm:77
-#. PreProcessForm..Panel1..SettingsPanel..eNewDirName..EditLabel.Caption
 #: uPreprocessDirs.dfm:215
 msgid "New directory name"
 msgstr "Nouveau nom de répertoire"
@@ -487,9 +437,6 @@ msgstr "Nouveau nom de répertoire"
 msgid "Old directory"
 msgstr "Ancien répertoire"
 
-#. PreProcessForm..Panel1..VList......WideText
-#: uPreprocessDirs.dfm:89
-#. PreProcessForm..Panel1..SettingsPanel..cbUnpack..Caption
 #: uPreprocessDirs.dfm:225
 msgid "Unpack"
 msgstr "Décompresser"
@@ -614,9 +561,6 @@ msgstr "Pause"
 msgid "Stop"
 msgstr "Arrêtez"
 
-#. ThreadProcessForm..Panel2..cbPriority..Text
-#: uThreadProcessForm.dfm:155
-#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:160
 msgid "Normal"
 msgstr "Normal"
@@ -656,9 +600,6 @@ msgstr "Journal"
 msgid "Progress"
 msgstr "Progression"
 
-#. UpdateForm..Caption
-#: uUpdateForm.dfm:5
-#. UpdateForm..Panel2..btnUpdate..Caption
 #: uUpdateForm.dfm:61
 msgid "Update"
 msgstr "Mise à jour"
