@@ -23,7 +23,8 @@ interface
 
 uses
   SysUtils, Classes, Windows, Messages, IcePack, ShlObj, tlHelp32, Forms,
-  ShellAPI, Generics.Collections, Dialogs, Registry, IdHTTP, Types, IceXML;
+  ShellAPI, Generics.Collections, Dialogs, Registry, IdHTTP, Types, IceXML,
+  sevenzip;
 
 
 
@@ -38,6 +39,8 @@ procedure ExecuteSOUpdater();
 function CheckWindowsLanguages: string;
 procedure ProcessParameters;
 procedure CheckOpenWithKeys;
+
+procedure UnPackLocaleZip;
 
 function Base64Decode(const Text : string): string;
 
@@ -74,6 +77,20 @@ begin
     result := curLang;
   Langs.Free;
 end;
+
+procedure UnPackLocaleZip;
+var
+  SevenZip: I7zInArchive;
+begin
+  try
+    SevenZip := CreateInArchive(CLSID_CFormatZip);
+    SevenZip.OpenFile(ExecPath + 'locale.zip');
+    SevenZip.ExtractTo(ExecPath);
+    SevenZip.Close;
+  except
+  end;
+end;
+
 
 procedure ProcessParameters;
 var
