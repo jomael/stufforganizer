@@ -940,9 +940,9 @@ begin
         if FDelSourceDir and (FNewDirPath = FSourcePath) and (not OnlyFile) then
         begin
           //Ha törölni kell a forrást és a cél = forrás akkor most törölhetõ
-          DoStatusEvent(STATUS_DELETEFILE, Format(_('Delete source file ''%s''...'), []), 0);
+          DoStatusEvent(STATUS_DELETEFILE, Format(_('Delete source file ''%s''...'), ['*.*']), 0);
           IcePack.IceFileOperation(FO_DELETE, IncludeTrailingBackslash(FSourcePath) + '*.*', '', false, true);
-          DoStatusEvent(STATUS_DELETEFILE, Format(_('Deleted source file ''%s''.'), []), 100);
+          DoStatusEvent(STATUS_DELETEFILE, Format(_('Deleted source file ''%s''.'), ['*.*']), 100);
           TempList := IcePAck.GetDirectories(FSourcePath, false);
           for J := TempList.Count - 1 downto 0 do
           begin
