@@ -10,7 +10,7 @@ This file contains a Stuff Organizer product history.  It includes
 lists of new features, changes, and bug fixes sorted by release.
 
 
-Changes in v0.4.6 -- xxx x, 2011
+Changes in v0.4.6 -- Oct 25, 2011
 --------------------------------------------------------
 
 New features:

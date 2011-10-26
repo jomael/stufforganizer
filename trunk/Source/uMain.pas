@@ -930,6 +930,13 @@ begin
   Application.Title := APP_TITLE;
   CoolTrayIcon1.Hint := Caption;
 
+  //Check locale.zip
+  if FileExists(ExecPath + 'locale.zip') then
+  begin
+    UnPackLocaleZip;
+    DeleteFile(ExecPath + 'locale.zip');
+  end;
+
   //Language initialize
   langCode := IcePack.ReadRegistryValue('HKCU\Software\Ice Apps\Stuff Organizer\Language', '');
   if langCode = '' then
