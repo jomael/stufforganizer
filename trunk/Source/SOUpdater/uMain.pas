@@ -93,6 +93,7 @@ begin
   for I := 0 to Files.Count - 1 do
   begin
     RelPath := ExtractRelativePath(UpdPath, Files[I]);
+    ForceDirectories(ExtractFilePath(PrgPath + RelPath));
     CopyFile(PWideChar(Files[I]), PWideChar(PrgPath + RelPath), false);
   end;
   StepList1.CurrentStepState(ssPassed);
