@@ -53,6 +53,8 @@ object MainForm: TMainForm
       Height = 322
       Align = alClient
       BevelOuter = bvNone
+      Color = 14211288
+      ParentBackground = False
       TabOrder = 0
       object imgNoPicture: TImage
         Left = 96
@@ -687,9 +689,9 @@ object MainForm: TMainForm
       end
       object VList: TVirtualStringTree
         Left = 0
-        Top = 0
+        Top = 24
         Width = 872
-        Height = 322
+        Height = 298
         Align = alClient
         DragMode = dmAutomatic
         Header.AutoSizeIndex = -1
@@ -754,6 +756,51 @@ object MainForm: TMainForm
         ParentDoubleBuffered = False
         ShowCaption = False
         TabOrder = 1
+        Visible = False
+      end
+      object mainTabs: TIceTabSet
+        Left = 0
+        Top = 0
+        Width = 872
+        Height = 24
+        Align = alTop
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        SelectedFont.Charset = DEFAULT_CHARSET
+        SelectedFont.Color = clBlack
+        SelectedFont.Height = -11
+        SelectedFont.Name = 'Tahoma'
+        SelectedFont.Style = []
+        ModifiedFont.Charset = DEFAULT_CHARSET
+        ModifiedFont.Color = 11777023
+        ModifiedFont.Height = -11
+        ModifiedFont.Name = 'Tahoma'
+        ModifiedFont.Style = []
+        Tabs = <
+          item
+            Caption = 'Product list'
+            Selected = True
+            Modified = False
+          end
+          item
+            Caption = 'Tag cloud'
+            Selected = False
+            Modified = False
+          end>
+        TabIndex = 0
+        MaintainMenu = False
+        TabHeight = 20
+        EdgeWidth = 14
+        CloseTab = False
+        ModifiedTabStartColor = 10588280
+        ModifiedTabStopColor = 10588280
+        BackgroundStartColor = 14211288
+        BackgroundStopColor = 14211288
+        CanDragTabs = False
+        OnTabSelected = mainTabsTabSelected
       end
     end
     object CategoryPanel: TPanel

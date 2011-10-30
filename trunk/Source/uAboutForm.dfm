@@ -476,8 +476,9 @@ object AboutForm: TAboutForm
         'ed'
       'http://www.soft-gems.net'
       ''
-      'AllRovi.com descriptor script'
-      'Original code written by Chetan Rao')
+      'TIceTabSet'
+      'Created by Norbert Mereg'
+      'https://sourceforge.net/projects/icetabset/')
     ParentFont = False
     ReadOnly = True
     ScrollBars = ssVertical
