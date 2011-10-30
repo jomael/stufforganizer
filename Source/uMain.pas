@@ -28,7 +28,8 @@ uses
   Menus, ShellApi, ActiveX, Gradient, uClasses, ActnList, PngFunctions,
   jpeg, ToolWin, pngimage, JvBaseDlg, JvBrowseFolder, Math, SyncObjs, IceXML,
   Generics.Defaults, W7TaskBar, ShlObj, AbBase, AbBrowse, AbZBrows, AbZipper,
-  AbUtils, AbUnzper, SOPluginDefs, uConstans, JvAppInst, IceLanguage, gnugettext;
+  AbUtils, AbUnzper, SOPluginDefs, uConstans, JvAppInst, IceLanguage, gnugettext,
+  IceTabSet;
 
 type
 
@@ -153,6 +154,7 @@ type
     JvAppInstances1: TJvAppInstances;
     NFODialog: TOpenDialog;
     TagCloudPanel: TFlowPanel;
+    mainTabs: TIceTabSet;
 
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -241,6 +243,8 @@ type
       CmdLine: TStrings);
     procedure aCheckNewVersionExecute(Sender: TObject);
     procedure bAddNFOClick(Sender: TObject);
+    procedure mainTabsTabSelected(Sender: TObject; ATab: TIceTab;
+      ASelected: Boolean);
   private
     //Database methods
     procedure CreateMainDB;
@@ -1066,6 +1070,7 @@ begin
   lbl := TLabel(Sender);
   eSearch.Text := 'tag: ' + lbl.Caption;
   LoadProductsFromDB(true);
+  MainTabs.Selected := MainTabs.Tabs[0];
 end;
 
  procedure TMainForm.tagCloudLabelMouseEnter(Sender: TObject);
@@ -2225,6 +2230,28 @@ procedure TMainForm.lURLClick(Sender: TObject);
 begin
   if lURL.Caption <> '' then
     OpenURL(lURL.Caption);
+end;
+
+procedure TMainForm.mainTabsTabSelected(Sender: TObject; ATab: TIceTab;
+  ASelected: Boolean);
+begin
+  if (ASelected) then
+  begin
+    case ATab.Index of
+      0: begin
+        TagCloudPanel.Visible := false;
+
+        VList.Visible := true;
+        VList.Align := alClient;
+      end;
+      1: begin
+        TagCloudPanel.Align := alClient;
+        TagCloudPanel.Visible := true;
+
+        VList.Visible := false;
+      end;
+    end;
+  end;
 end;
 
 procedure TMainForm.EditBoxKeyPress(Sender: TObject; var Key: Char);
