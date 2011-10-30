@@ -152,6 +152,7 @@ type
     Checknewversion1: TMenuItem;
     JvAppInstances1: TJvAppInstances;
     NFODialog: TOpenDialog;
+    TagCloudPanel: TFlowPanel;
 
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -276,6 +277,10 @@ type
 
     function FirstLine(S: string): string;
     procedure LoadImageToProduct(FileName: string; Node: PVirtualNode);
+    procedure GenerateTagCloud;
+    procedure tagCloudLabelClick(Sender: TObject);
+    procedure tagCloudLabelMouseEnter(Sender: TObject);
+    procedure tagCloudLabelMouseLeave(Sender: TObject);
     { Private declarations }
   protected
     procedure AcceptFiles( var msg : TMessage ); message WM_DROPFILES;
@@ -856,7 +861,7 @@ begin
   end;
 end;
 
- {$REGION 'Form events'}
+{$REGION 'Form events'}
 procedure TMainForm.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   //Action:=caNone;
@@ -981,6 +986,96 @@ begin
   LoadUnprocessedItems;
 
   //CheckOpenWithKeys; //Installer does it
+
+  GenerateTagCloud;
+end;
+
+procedure TMainForm.GenerateTagCloud;
+
+  function GetFontSize(min, max, val: integer): integer;
+  const
+    minSize = 8;
+    maxSize = 32;
+  var
+    x: Extended;
+  begin
+    x := ((val - min) / (max - min));
+    result := Round(minSize + ((maxSize - minSize) * x));
+  end;
+
+var
+  Table: TSQLiteTable;
+  Tags: TDictionary<string, integer>;
+  lbl: TLabel;
+  I: Integer;
+  pair: TPair<string, integer>;
+  count, min, max: integer;
+  lf : TLogFont;
+begin
+  Tags := TDictionary<string, integer>.Create(1);
+  LockDB;
+  try
+    min := -1;
+    max := -1;
+    Table := DB.GetTable('select tag, count(id) from tags group by tag order by count(id) desc limit 0, 50');
+    while not Table.EOF do
+    begin
+      count := Table.FieldAsInteger(1);
+      if min = -1 then min := count else min := Math.Min(min, count);
+      if max = -1 then max := count else max := Math.Max(max, count);
+      Tags.Add(UTF8ToString(Table.FieldAsString(0)), count);
+      Table.Next;
+    end;
+    Table.Free;
+  finally
+    UnLockDB;
+  end;
+
+  TagCloudPanel.DestroyComponents;
+  if Tags.Count > 0 then
+  begin
+    for pair in Tags do
+    begin
+      lbl := TLabel.Create(TagCloudPanel);
+      lbl.Parent := TagCloudPanel;
+      lbl.Cursor := crHandPoint;
+      lbl.AlignWithMargins := true;
+      lbl.Layout := tlCenter;
+      lbl.Margins.Top := 1;
+      lbl.Margins.Bottom := 1;
+      lbl.Caption := pair.Key;
+      lbl.Font.Name := 'Verdana';
+      lbl.Font.Size := GetFontSize(min, max, pair.Value);
+
+      GetObject(lbl.Font.Handle, SizeOf(TLogFont), @lf);
+      lf.lfQuality := ANTIALIASED_QUALITY;
+      lbl.Font.Handle := CreateFontIndirect(lf);
+
+      lbl.OnClick := tagCloudLabelClick;
+      lbl.OnMouseEnter := tagCloudLabelMouseEnter;
+      lbl.OnMouseLeave := tagCloudLabelMouseLeave;
+    end;
+  end;
+  Tags.Free;
+end;
+
+procedure TMainForm.tagCloudLabelClick(Sender: TObject);
+var
+  lbl: TLabel;
+begin
+  lbl := TLabel(Sender);
+  eSearch.Text := 'tag: ' + lbl.Caption;
+  LoadProductsFromDB(true);
+end;
+
+ procedure TMainForm.tagCloudLabelMouseEnter(Sender: TObject);
+begin
+  TLabel(Sender).Font.Style := [fsUnderline];
+end;
+
+procedure TMainForm.tagCloudLabelMouseLeave(Sender: TObject);
+begin
+  TLabel(Sender).Font.Style := [];
 end;
 
 procedure TMainForm.FormShow(Sender: TObject);
@@ -1877,8 +1972,16 @@ begin
     Filter := '';
     if eSearch.Text <> '' then
     begin
-      Filter := '((Products.name LIKE :search) or (tags LIKE :search) or (description LIKE :search)) and ';
-      DB.AddParamText(':search', UTF8Encode('%' + eSearch.Text + '%'));
+      if Pos('tag:', eSearch.Text) > 0 then
+      begin
+        Filter := '(tags LIKE :search) and ';
+        DB.AddParamText(':search', UTF8Encode('%' + Trim(Copy(eSearch.Text, 5, Length(eSearch.Text))) + '%'));
+      end
+      else
+      begin
+        Filter := '((Products.name LIKE :search) or (tags LIKE :search) or (description LIKE :search)) and ';
+        DB.AddParamText(':search', UTF8Encode('%' + Trim(eSearch.Text) + '%'));
+      end;
     end
     else if Assigned(FilterList.FocusedNode) then
     begin

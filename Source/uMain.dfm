@@ -743,6 +743,18 @@ object MainForm: TMainForm
           end>
         WideDefaultText = ''
       end
+      object TagCloudPanel: TFlowPanel
+        Left = 106
+        Top = 76
+        Width = 529
+        Height = 201
+        Color = 14211288
+        DoubleBuffered = True
+        ParentBackground = False
+        ParentDoubleBuffered = False
+        ShowCaption = False
+        TabOrder = 1
+      end
     end
     object CategoryPanel: TPanel
       Left = 0
