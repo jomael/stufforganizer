@@ -1093,3 +1093,5 @@ msgstr "Downloading plugin list..."
 msgid "Application exit for install new plugin..."
 msgstr "Application exit for install new plugin..."
 
+msgid "Directory doesn't exists! Path: %s"
+msgstr "Directory doesn't exists! Path: %s"
