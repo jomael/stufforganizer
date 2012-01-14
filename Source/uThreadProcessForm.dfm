@@ -187,6 +187,7 @@ object ThreadProcessForm: TThreadProcessForm
       Header.Font.Name = 'Tahoma'
       Header.Font.Style = []
       Header.Options = [hoAutoResize, hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible]
+      StateImages = MainForm.stateImages
       TabOrder = 0
       TreeOptions.MiscOptions = [toAcceptOLEDrop, toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning]
       TreeOptions.SelectionOptions = [toFullRowSelect]

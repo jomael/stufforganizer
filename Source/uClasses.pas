@@ -470,8 +470,10 @@ end;
 procedure TPreProcessItem.CalcDirSize;
 begin
   if FOnlyFile then
-    FDirTreeSize := GetFileSize(FSourcePath)
+    if FileExists(FSourcePath) then
+      FDirTreeSize := GetFileSize(FSourcePath)
   else
+    if DirectoryExists(FSourcePath) then
     FDirTreeSize := IcePack.GetDirectorySize(FSourcePath);
 end;
 
@@ -904,6 +906,13 @@ begin
       SourceDir := ExtractFilePath(FSourcePath)
     else
       SourceDir := IncludeTrailingBackslash(FSourcePath);
+
+    if not DirectoryExists(SourceDir) then
+    begin
+      DoStatusEvent(STATUS_ERROR, Format(_('Directory doesn''t exists! Path: %s'), [SourceDir]), 100);
+      Result := RESULT_ERROR;
+      Exit;
+    end;
 
     TargetDir := IncludeTrailingBackslash(FNewDirPath);
     ForceDirectories(TargetDir);

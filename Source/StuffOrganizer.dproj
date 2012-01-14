@@ -1,10 +1,14 @@
 ﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		<PropertyGroup>
 			<ProjectGuid>{C7556F8F-71B3-4645-A1BD-414F7CDD1C38}</ProjectGuid>
-			<ProjectVersion>12.0</ProjectVersion>
+			<ProjectVersion>12.2</ProjectVersion>
 			<MainSource>StuffOrganizer.dpr</MainSource>
 			<Config Condition="'$(Config)'==''">Debug</Config>
 			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+			<Base>True</Base>
+			<Platform>Win32</Platform>
+			<AppType>Application</AppType>
+			<FrameworkType>VCL</FrameworkType>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
 			<Base>true</Base>
@@ -101,19 +105,20 @@
 				<ResourceType>RCData</ResourceType>
 				<ResourceId>LANG_DESCRIPTOR</ResourceId>
 			</RcItem>
-			<BuildConfiguration Include="Base">
-				<Key>Base</Key>
-			</BuildConfiguration>
 			<BuildConfiguration Include="Debug">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
 			</BuildConfiguration>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_1</Key>
 				<CfgParent>Base</CfgParent>
 			</BuildConfiguration>
 		</ItemGroup>
-		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj"/>
 		<ProjectExtensions>
 			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
 			<Borland.ProjectType/>
@@ -122,18 +127,14 @@
 					<Source>
 						<Source Name="MainSource">StuffOrganizer.dpr</Source>
 					</Source>
-					<Parameters>
-						<Parameters Name="UseLauncher">False</Parameters>
-						<Parameters Name="LoadAllSymbols">True</Parameters>
-						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
-					</Parameters>
+					<Parameters/>
 					<VersionInfo>
 						<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
 						<VersionInfo Name="AutoIncBuild">True</VersionInfo>
 						<VersionInfo Name="MajorVer">0</VersionInfo>
 						<VersionInfo Name="MinorVer">4</VersionInfo>
 						<VersionInfo Name="Release">6</VersionInfo>
-						<VersionInfo Name="Build">55</VersionInfo>
+						<VersionInfo Name="Build">61</VersionInfo>
 						<VersionInfo Name="Debug">False</VersionInfo>
 						<VersionInfo Name="PreRelease">True</VersionInfo>
 						<VersionInfo Name="Special">False</VersionInfo>
@@ -145,7 +146,7 @@
 					<VersionInfoKeys>
 						<VersionInfoKeys Name="CompanyName">Ice Applications</VersionInfoKeys>
 						<VersionInfoKeys Name="FileDescription">Stuff Organizer</VersionInfoKeys>
-						<VersionInfoKeys Name="FileVersion">0.4.6.55</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">0.4.6.61</VersionInfoKeys>
 						<VersionInfoKeys Name="InternalName"/>
 						<VersionInfoKeys Name="LegalCopyright"/>
 						<VersionInfoKeys Name="LegalTrademarks"/>
@@ -160,10 +161,13 @@
 						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxExtEditorsD12.bpl">ExpressExtendedEditors Library 5 by Developer Express Inc.</Excluded_Packages>
 						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxTreeListD12.bpl">ExpressQuantumTreeList 4 by Developer Express Inc.</Excluded_Packages>
 						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dcldxNavBarD12.bpl">ExpressNavBar 2 by Developer Express Inc.</Excluded_Packages>
-						<Excluded_Packages Name="$(BDS)\bin\dcloffice2k120.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-						<Excluded_Packages Name="$(BDS)\bin\dclofficexp120.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k120.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp120.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
 					</Excluded_Packages>
 				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
 			</BorlandProject>
 			<ProjectFileVersion>12</ProjectFileVersion>
 		</ProjectExtensions>
@@ -171,7 +175,7 @@
 
 <!-- EurekaLog First Line
 [Exception Log]
-EurekaLog Version=6020
+EurekaLog Version=6025
 Activate=0
 Activate Handle=1
 Save Log File=1

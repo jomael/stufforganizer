@@ -71,7 +71,7 @@ implementation
 
 uses
   uPLuginClasses, uClasses, IceXML, IcePack, uProcs, uMain, uConstans,
-  IceLanguage, gnugettext;
+  gnugettext;
 
 {$R *.dfm}
 

@@ -220,6 +220,7 @@ end;
 procedure TThreadProcessForm.FormCreate(Sender: TObject);
 begin
   TranslateComponent(Self, 'default');
+  LogList.StateImages := MainForm.stateImages;
 end;
 
 procedure TThreadProcessForm.ThreadEventNotify(var msg: TMessage);

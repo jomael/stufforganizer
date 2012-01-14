@@ -28,8 +28,8 @@ uses
   Menus, ShellApi, ActiveX, Gradient, uClasses, ActnList, PngFunctions,
   jpeg, ToolWin, pngimage, JvBaseDlg, JvBrowseFolder, Math, SyncObjs, IceXML,
   Generics.Defaults, W7TaskBar, ShlObj, AbBase, AbBrowse, AbZBrows, AbZipper,
-  AbUtils, AbUnzper, SOPluginDefs, uConstans, JvAppInst, IceLanguage, gnugettext,
-  IceTabSet;
+  AbUtils, AbUnzper, SOPluginDefs, uConstans, JvAppInst, gnugettext,
+  IceTabSet, IceTagCloud;
 
 type
 
@@ -153,9 +153,10 @@ type
     Checknewversion1: TMenuItem;
     JvAppInstances1: TJvAppInstances;
     NFODialog: TOpenDialog;
-    TagCloudPanel: TFlowPanel;
     mainTabs: TIceTabSet;
     PngImageList1: TPngImageList;
+    TagCloudPanel: TPanel;
+    TagCloud: TIceTagCloud;
 
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -183,7 +184,6 @@ type
     procedure VListKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure VListCompareNodes(Sender: TBaseVirtualTree; Node1,
       Node2: PVirtualNode; Column: TColumnIndex; var Result: Integer);
-    procedure VListHeaderClick(Sender: TVTHeader; HitInfo: TVTHeaderHitInfo);
     procedure FilterListDragDrop(Sender: TBaseVirtualTree; Source: TObject;
       DataObject: IDataObject; Formats: TFormatArray; Shift: TShiftState;
       Pt: TPoint; var Effect: Integer; Mode: TDropMode);
@@ -246,6 +246,9 @@ type
     procedure bAddNFOClick(Sender: TObject);
     procedure mainTabsTabSelected(Sender: TObject; ATab: TIceTab;
       ASelected: Boolean);
+    procedure TagCloudItemClick(Sender: TObject; Tag: TIceTagCloudItem);
+    procedure VListHeaderClick(Sender: TVTHeader; Column: TColumnIndex;
+      Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
   private
     //Database methods
     procedure CreateMainDB;
@@ -283,9 +286,6 @@ type
     function FirstLine(S: string): string;
     procedure LoadImageToProduct(FileName: string; Node: PVirtualNode);
     procedure GenerateTagCloud;
-    procedure tagCloudLabelClick(Sender: TObject);
-    procedure tagCloudLabelMouseEnter(Sender: TObject);
-    procedure tagCloudLabelMouseLeave(Sender: TObject);
     { Private declarations }
   protected
     procedure AcceptFiles( var msg : TMessage ); message WM_DROPFILES;
@@ -996,92 +996,36 @@ begin
 end;
 
 procedure TMainForm.GenerateTagCloud;
-
-  function GetFontSize(min, max, val: integer): integer;
-  const
-    minSize = 8;
-    maxSize = 32;
-  var
-    x: Extended;
-  begin
-    x := ((val - min) / (max - min));
-    result := Round(minSize + ((maxSize - minSize) * x));
-  end;
-
 var
   Table: TSQLiteTable;
-  Tags: TDictionary<string, integer>;
   lbl: TLabel;
   I: Integer;
   pair: TPair<string, integer>;
   count, min, max: integer;
   lf : TLogFont;
 begin
-  Tags := TDictionary<string, integer>.Create(1);
-  LockDB;
   try
-    min := -1;
-    max := -1;
-    Table := DB.GetTable('select tag, count(id) from tags group by tag order by count(id) desc limit 0, 50');
-    while not Table.EOF do
-    begin
-      count := Table.FieldAsInteger(1);
-      if min = -1 then min := count else min := Math.Min(min, count);
-      if max = -1 then max := count else max := Math.Max(max, count);
-      Tags.Add(UTF8ToString(Table.FieldAsString(0)), count);
-      Table.Next;
+    LockDB;
+    try
+      TagCloud.ClearItems;
+      Table := DB.GetTable('select tag, count(id) from tags group by tag order by count(id) desc limit 0, 250');
+      while not Table.EOF do
+      begin
+        TagCloud.AddItem(UTF8ToString(Table.FieldAsString(0)), '', Table.FieldAsInteger(1));
+        Table.Next;
+      end;
+      Table.Free;
+
+      TagCloud.SortByCaption;
+    finally
+      UnLockDB;
     end;
-    Table.Free;
-  finally
-    UnLockDB;
-  end;
-
-  TagCloudPanel.DestroyComponents;
-  if Tags.Count > 0 then
-  begin
-    for pair in Tags do
+  except
+    on E: Exception do
     begin
-      lbl := TLabel.Create(TagCloudPanel);
-      lbl.Parent := TagCloudPanel;
-      lbl.Cursor := crHandPoint;
-      lbl.AlignWithMargins := true;
-      lbl.Layout := tlCenter;
-      lbl.Margins.Top := 1;
-      lbl.Margins.Bottom := 1;
-      lbl.Caption := pair.Key;
-      lbl.Font.Name := 'Verdana';
-      lbl.Font.Size := GetFontSize(min, max, pair.Value);
 
-      GetObject(lbl.Font.Handle, SizeOf(TLogFont), @lf);
-      lf.lfQuality := ANTIALIASED_QUALITY;
-      lbl.Font.Handle := CreateFontIndirect(lf);
-
-      lbl.OnClick := tagCloudLabelClick;
-      lbl.OnMouseEnter := tagCloudLabelMouseEnter;
-      lbl.OnMouseLeave := tagCloudLabelMouseLeave;
     end;
   end;
-  Tags.Free;
-end;
-
-procedure TMainForm.tagCloudLabelClick(Sender: TObject);
-var
-  lbl: TLabel;
-begin
-  lbl := TLabel(Sender);
-  eSearch.Text := 'tag: ' + lbl.Caption;
-  LoadProductsFromDB(true);
-  MainTabs.Selected := MainTabs.Tabs[0];
-end;
-
- procedure TMainForm.tagCloudLabelMouseEnter(Sender: TObject);
-begin
-  TLabel(Sender).Font.Style := [fsUnderline];
-end;
-
-procedure TMainForm.tagCloudLabelMouseLeave(Sender: TObject);
-begin
-  TLabel(Sender).Font.Style := [];
 end;
 
 procedure TMainForm.FormShow(Sender: TObject);
@@ -1376,6 +1320,8 @@ begin
 
   DB := TSqliteDatabase.Create(MAINDBPATH);
   InfoDB := TSqliteDatabase.Create(INFODBPATH);
+
+//  ShowMessage(IntToStr(DB.UserVersion));
 end;
 
 procedure TMainForm.CloseDB;
@@ -1615,7 +1561,11 @@ begin
       VList.Header.Columns[I].Width := Col.GetParamAsInt('width', VList.Header.Columns[I].Width);
     end;
     VList.Header.SortColumn := Columns.GetParamAsInt('sortcolumn', VList.Header.SortColumn);
-    VList.Header.SortDirection := TSortDirection(Columns.GetParamAsInt('sortdir', integer(VList.Header.SortDirection)));
+//    VList.Header.SortDirection := TSortDirection(Columns.GetParamAsInt('sortdir', integer(VList.Header.SortDirection)));
+    if Columns.GetParamAsInt('sortdir', integer(VList.Header.SortDirection)) = integer(sdAscending) then
+      VList.Header.SortDirection := sdAscending
+    else
+      VList.Header.SortDirection := sdAscending
   end;
 
   MainForm.Left := ConfigXML.Root.GetItemValue('Main.LastState.Left', MainForm.Left);
@@ -1924,6 +1874,14 @@ begin
   ProgressStopping := true;
 end;
 
+procedure TMainForm.TagCloudItemClick(Sender: TObject; Tag: TIceTagCloudItem);
+begin
+  eSearch.Text := 'tag: ' + Tag.Caption;
+  LoadProductsFromDB(true);
+  MainTabs.Selected := MainTabs.Tabs[0];
+  VList.SetFocus;
+end;
+
 function TMainForm.UTF8Encode(Name: string): AnsiString;
 begin
   result := CodePages.UTF8Encode(Name);
@@ -2170,6 +2128,7 @@ begin
       Item := TPreProcessItem.Create(Table.FieldAsInteger(0),
         Table.FieldAsInteger(1), UTF8ToString(Table.FieldAsString(2)), UTF8ToString(Table.FieldAsString(3)),
         UTF8ToString(Table.FieldAsString(4)), UTF8ToString(Table.FieldAsString(5)));
+
       Item.CalcDirSize;
       PreparingProducts.Add(Item);
 
@@ -2768,15 +2727,19 @@ begin
   end;
 end;
 
-procedure TMainForm.VListHeaderClick(Sender: TVTHeader;
-  HitInfo: TVTHeaderHitInfo);
+procedure TMainForm.VListHeaderClick(Sender: TVTHeader; Column: TColumnIndex;
+  Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
-
-  if (VList.Header.SortColumn = HitInfo.Column) then
-    VList.Header.SortDirection := TSortDirection(1 - integer(VList.Header.SortDirection))
+  if (VList.Header.SortColumn = Column) then
+  begin
+    if VList.Header.SortDirection = sdAscending then
+      VList.Header.SortDirection := sdDescending
+    else
+      VList.Header.SortDirection := sdAscending;
+  end
   else
   begin
-    VList.Header.SortColumn := HitInfo.Column;
+    VList.Header.SortColumn := Column;
     VList.Header.SortDirection := sdAscending;
   end;
 end;

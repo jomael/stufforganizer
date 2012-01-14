@@ -462,6 +462,7 @@ end;
 procedure TPreProcessForm.FormCreate(Sender: TObject);
 begin
   TranslateComponent(Self, 'default');
+  VList.StateImages := MainForm.stateImages;
 
   SelectionList := TList.Create;
   DragAcceptFiles( Handle, True );
