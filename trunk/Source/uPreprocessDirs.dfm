@@ -202,7 +202,7 @@ object PreProcessForm: TPreProcessForm
         Width = 262
         Height = 21
         Style = csDropDownList
-        ItemHeight = 0
+        ItemHeight = 13
         TabOrder = 0
         OnChange = cbCategoriesChange
       end

@@ -4,7 +4,11 @@
 			<MainSource>playmusic.dpr</MainSource>
 			<Config Condition="'$(Config)'==''">Debug</Config>
 			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
-			<ProjectVersion>12.0</ProjectVersion>
+			<ProjectVersion>12.2</ProjectVersion>
+			<Base>True</Base>
+			<Platform>Win32</Platform>
+			<AppType>Library</AppType>
+			<FrameworkType>None</FrameworkType>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
 			<Base>true</Base>
@@ -20,6 +24,7 @@
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
 			<DCC_ExeOutput>..\..\Bin\Plugins\</DCC_ExeOutput>
 			<DCC_DependencyCheckOutputName>..\..\Bin\Plugins\playmusic.sop</DCC_DependencyCheckOutputName>
 			<GenDll>true</GenDll>
@@ -45,19 +50,20 @@
 				<ResourceType>Icon</ResourceType>
 				<ResourceId>MAIN_32</ResourceId>
 			</RcItem>
-			<BuildConfiguration Include="Base">
-				<Key>Base</Key>
-			</BuildConfiguration>
 			<BuildConfiguration Include="Debug">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
 			</BuildConfiguration>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_1</Key>
 				<CfgParent>Base</CfgParent>
 			</BuildConfiguration>
 		</ItemGroup>
-		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj"/>
 		<ProjectExtensions>
 			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
 			<Borland.ProjectType>VCLApplication</Borland.ProjectType>
@@ -67,9 +73,6 @@
 						<Source Name="MainSource">playmusic.dpr</Source>
 					</Source>
 					<Parameters>
-						<Parameters Name="UseLauncher">False</Parameters>
-						<Parameters Name="LoadAllSymbols">True</Parameters>
-						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
 						<Parameters Name="HostApplication">C:\Work\Project\__D2009Projects__\StuffOrganizer\Bin\StuffOrganizer.exe</Parameters>
 					</Parameters>
 					<VersionInfo>
@@ -105,10 +108,13 @@
 						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxExtEditorsD12.bpl">ExpressExtendedEditors Library 5 by Developer Express Inc.</Excluded_Packages>
 						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dclcxTreeListD12.bpl">ExpressQuantumTreeList 4 by Developer Express Inc.</Excluded_Packages>
 						<Excluded_Packages Name="C:\Documents and Settings\All Users\Dokumentumok\RAD Studio\6.0\Bpl\dcldxNavBarD12.bpl">ExpressNavBar 2 by Developer Express Inc.</Excluded_Packages>
-						<Excluded_Packages Name="$(BDS)\bin\dcloffice2k120.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-						<Excluded_Packages Name="$(BDS)\bin\dclofficexp120.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dcloffice2k120.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+						<Excluded_Packages Name="$(BDSBIN)\dclofficexp120.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
 					</Excluded_Packages>
 				</Delphi.Personality>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
 			</BorlandProject>
 			<ProjectFileVersion>12</ProjectFileVersion>
 		</ProjectExtensions>
@@ -116,7 +122,7 @@
 
 <!-- EurekaLog First Line
 [Exception Log]
-EurekaLog Version=6020
+EurekaLog Version=6025
 Activate=0
 Activate Handle=1
 Save Log File=1
