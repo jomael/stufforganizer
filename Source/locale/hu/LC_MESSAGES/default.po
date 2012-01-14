@@ -27,7 +27,7 @@ msgstr "Új verzió keresése"
 #. AboutForm..Label2....Caption
 #: uAboutForm.dfm:350
 msgid "Stuff Organizer is open source software distributed free of charge under the terms of"
-msgstr "Stuff Szervező egy nyílt forráskódú szoftverek ingyenesen terjeszthető a "
+msgstr "Stuff Organizer egy nyílt forráskódú szoftver, amely ingyenesen terjeszthető a "
 
 #. AboutForm..lGPL..Caption
 #: uAboutForm.dfm:367
@@ -1039,3 +1039,5 @@ msgstr "Bővítménylista letöltése..."
 msgid "Application exit for install new plugin..."
 msgstr "Az alkalmazás újraindul a bővítmény telepítése miatt..."
 
+msgid "Directory doesn't exists! Path: %s"
+msgstr "Könyvtár nem létezik! Útvonal: %s"
