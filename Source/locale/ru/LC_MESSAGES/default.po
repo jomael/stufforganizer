@@ -1,0 +1,1046 @@
+# Stuff Organizer language file
+# Copyright (C) 2011 Ice Apps
+# This file is distributed under the same license as the Stuff Organizer application.
+# Ice Apps <so.iceapps@gmail.com>, 2011.
+# 
+msgid ""
+msgstr "Project-Id-Version: stuff-organizer\n"
+"POT-Creation-Date: 2011-10-24 21:39\n"
+"PO-Revision-Date: 2011-11-20 20:56+0100\n"
+"Last-Translator: Khativari\n"
+"Language: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: crowdin.net\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language-Team: Russian\n"
+
+#: uMain.dfm:4249
+msgid "About"
+msgstr "О"
+
+#: uMain.dfm:4259
+msgid "Check new version"
+msgstr "Проверка новой версии"
+
+#. AboutForm..Label2....Caption
+#: uAboutForm.dfm:350
+msgid "Stuff Organizer is open source software distributed free of charge under the terms of"
+msgstr "Stuff Organizer программа с открытым исходным кодом, распространяющаяся бесплатно в соответствии с условиями"
+
+#. AboutForm..lGPL..Caption
+#: uAboutForm.dfm:367
+msgid "the GNU General Public License"
+msgstr "Общественная Лицензия GNU"
+
+#: uUserSelectForm.dfm:46
+msgid "OK"
+msgstr "ОК"
+
+#: uPreprocessDirs.dfm:147
+msgid "Category"
+msgstr "Категория"
+
+#. CategoriesForm..Label1..Caption
+#: uCategories.dfm:41
+msgid "Category target path"
+msgstr "Путь к каталагу"
+
+#. CategoriesForm..Label2..Caption
+#: uCategories.dfm:49
+msgid "If blank, it's equal with source path"
+msgstr "Если строка пуста, равна исходному пути"
+
+#. CategoriesForm..Label3..Caption
+#: uCategories.dfm:70
+msgid "Color"
+msgstr "Цвет"
+
+#. CategoriesForm..Label4..Caption
+#: uCategories.dfm:77
+msgid "Icon"
+msgstr "Иконка"
+
+#: uUserSelectForm.dfm:57
+msgid "Cancel"
+msgstr "Отмена"
+
+#. CategoriesForm..Panel1..btnOk..Caption
+#: uCategories.dfm:108
+msgid "Ok"
+msgstr "Ok"
+
+#. CategoriesForm..eName..EditLabel.Caption
+#: uCategories.dfm:122
+msgid "Category name"
+msgstr "Имя категории"
+
+#. CategoriesForm..ePath..TitleName
+#: uCategories.dfm:134
+msgid "Please specify a directory"
+msgstr "Пожалуйста, укажите папку"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:726
+msgid "Product name"
+msgstr "Название продукта"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:732
+msgid "Description"
+msgstr "Описание"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:737
+msgid "Added"
+msgstr "Добавлено"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:742
+msgid "Path"
+msgstr "Путь"
+
+#. MainForm..DescrPanel..Panel4..Label1..Caption
+#: uMain.dfm:883
+msgid "Product information:"
+msgstr "Информация о продукте:"
+
+#. MainForm..DescrPanel..Panel4..lProductName..Hint
+#: uMain.dfm:897
+msgid "Click here to change"
+msgstr "Нажмите здесь, чтобы изменить"
+
+#. MainForm..DescrPanel..Panel4..lURL..Hint
+#: uMain.dfm:917
+msgid "Click here to open"
+msgstr "Нажмите здесь, чтобы открыть"
+
+#. MainForm..DescrPanel..Panel4..lGoogleSearch..Hint
+#: uMain.dfm:938
+msgid "Click here to search in Google"
+msgstr "Нажмите здесь для поиска в Google"
+
+#. MainForm..DescrPanel..Panel4..lGoogleSearch..Caption
+#: uMain.dfm:941
+msgid "Google search"
+msgstr "Google поиск"
+
+#. MainForm..DescrPanel..Panel4..eTags..Hint
+#: uMain.dfm:957
+msgid "Product tags"
+msgstr "Тэги продукта"
+
+#. MainForm..DescrPanel..Panel4..eTags..TextHint
+#: uMain.dfm:969
+msgid "Enter tags"
+msgstr "Введите метки"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bShowNFO..Caption
+#: uMain.dfm:1023
+msgid "View NFO file"
+msgstr "Просмотреть NFO файл"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bAddNFO..Caption
+#: uMain.dfm:1041
+msgid "Add NFO file"
+msgstr "Добавить NFO файл"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bChangeURL..Caption
+#: uMain.dfm:1069
+msgid "Change URL"
+msgstr "Изменить URL-адрес"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bChangePicture..Caption
+#: uMain.dfm:1087
+msgid "Change picture"
+msgstr "Изменить изображение"
+
+#. MainForm..DescrPanel..DescrFuncPanel..lChnageDirectoryName..Caption
+#: uMain.dfm:1115
+msgid "Change directory name"
+msgstr "Изменить имя каталога"
+
+#. MainForm..HeaderPanel..Panel1..eSearch..TextHint
+#: uMain.dfm:1464
+msgid "Enter the search text"
+msgstr "Введите текст для поиска"
+
+#. MainForm..pmList..pmiPluginFuncs..Caption
+#: uMain.dfm:3936
+msgid "Plugin functions"
+msgstr "Функции плагина"
+
+#. MainForm..alPopup..aModifyCategory..Caption
+#: uMain.dfm:3953
+msgid "Modify category..."
+msgstr "Изменить категорию..."
+
+#. MainForm..alPopup..aDeleteCategory..Caption
+#: uMain.dfm:3957
+msgid "Delete category..."
+msgstr "Удалить категорию..."
+
+#. MainForm..alPopup..aDeleteItems..Caption
+#: uMain.dfm:3961
+msgid "Delete selected item(s)..."
+msgstr "Удалить выбранный элемент (ы)..."
+
+#. MainForm..alPopup..aOpenDir..Caption
+#: uMain.dfm:3965
+msgid "Open directory"
+msgstr "Открыть директорию"
+
+#. MainForm..alPopup..aNewCategory..Caption
+#: uMain.dfm:3969
+msgid "Add new category..."
+msgstr "Добавить новую категорию..."
+
+#. MainForm..alPopup..aShowMainForm..Caption
+#: uMain.dfm:3973
+msgid "Show"
+msgstr "Показать"
+
+#. MainForm..alPopup..aExit..Caption
+#: uMain.dfm:3977
+msgid "Exit"
+msgstr "Выход"
+
+#. MainForm..alPopup..aViewProcessLog..Caption
+#: uMain.dfm:3981
+msgid "View process log"
+msgstr "Просмотреть журнал процессов"
+
+#. MainForm..alPopup..aReprocess..Caption
+#: uMain.dfm:3985
+msgid "Reprocess"
+msgstr "Обработка"
+
+#. MainForm..alPopup..aDelSource..Caption
+#: uMain.dfm:3990
+msgid "Delete source files..."
+msgstr "Удаление исходных файлов..."
+
+#. MainForm..alPopup..aOpenSourceDir..Caption
+#: uMain.dfm:3994
+msgid "Open source directory"
+msgstr "Открытый исходный каталог"
+
+#. MainForm..alPopup..aTargetToClipBoard..Caption
+#: uMain.dfm:3998
+msgid "Copy target directory to clipboard"
+msgstr "Скопировать каталог в буфер обмена"
+
+#. MainForm..alToolbar..aAddFile..Caption
+#: uMain.dfm:4194
+msgid "Add files(s)..."
+msgstr "Добавить файлы(ы)..."
+
+#. MainForm..alToolbar..aAddDirectory..Caption
+#: uMain.dfm:4199
+msgid "Add directory..."
+msgstr "Добавить каталог..."
+
+#. MainForm..alToolbar..aQueue..Caption
+#: uMain.dfm:4204
+msgid "Queue"
+msgstr "Очередь"
+
+#. MainForm..alToolbar..aConsistenceCheck..Caption
+#: uMain.dfm:4209
+msgid "Consistence check"
+msgstr "Проверка последовательности"
+
+#. MainForm..alToolbar..aAddStuff..Caption
+#: uMain.dfm:4214
+msgid "Add stuff"
+msgstr "Добавить материал"
+
+#. MainForm..alToolbar..aAddToWatch..Caption
+#: uMain.dfm:4219
+msgid "Add directory to watchlist..."
+msgstr "Добавьте каталог в список..."
+
+#. MainForm..alToolbar..aSettings..Caption
+#: uMain.dfm:4224
+msgid "Settings"
+msgstr "Параметры"
+
+#. MainForm..alToolbar..aDBBackup..Caption
+#: uMain.dfm:4229
+msgid "Database backup..."
+msgstr "Резервное копирование базы данных..."
+
+#. MainForm..alToolbar..aDBRestore..Caption
+#: uMain.dfm:4234
+msgid "Database restore..."
+msgstr "Восстановление базы данных..."
+
+#. MainForm..alToolbar..aDBVacuum..Caption
+#: uMain.dfm:4239
+msgid "Database vacuum"
+msgstr "База данных вакуум"
+
+#: uPluginsForm.dfm:5
+msgid "Plugins"
+msgstr "Плагины"
+
+#. MainForm..alToolbar..aHomepage..Caption
+#: uMain.dfm:4254
+msgid "Visit homepage"
+msgstr "Посетить домашнюю страницу"
+
+#. MainForm..PictureDialog....Filter
+#: uMain.dfm:4267
+msgid "Supported images (*.bmp, *.jpg, *.gif, *.png)|*.bmp;*.jpg;*.gif;*.png"
+msgstr "Поддерживаемые изображения (*.bmp, *.jpg, *.gif, *.png) | *.bmp, *.jpg, *.gif, *.png"
+
+#. MainForm..OD..Filter
+#: uMain.dfm:4273
+msgid "All files (*.*)|*.*"
+msgstr "Все файлы (*.*)|*.*"
+
+#. MainForm..NFODialog..Filter
+#: uMain.dfm:6271
+msgid "NFO files (*.nfo)|*.nfo"
+msgstr "NFO файлы (*.nfo) | *.nfo"
+
+#. NFOForm..Caption
+#: uNFOForm.dfm:5
+msgid "NFO Viewer"
+msgstr "Отобразить NFO"
+
+#. OptionsForm..Caption
+#: uOptionsForm.dfm:4
+msgid "Preferences"
+msgstr "Настройки"
+
+#. OptionsForm..Panel1..GroupBox1..Caption
+#: uOptionsForm.dfm:45
+msgid "Process settings"
+msgstr "Процесс настройки"
+
+#. OptionsForm..Panel1..GroupBox1..cbDelToRB..Caption
+#: uOptionsForm.dfm:52
+msgid "Delete to recycle bin"
+msgstr "Удалить в корзину"
+
+#. OptionsForm..Panel1..GroupBox1..cbHideDialogs..Caption
+#: uOptionsForm.dfm:60
+msgid "Hide copy/move/delete dialog"
+msgstr "Скрыть окно копирования/перемещения/удаления"
+
+#. OptionsForm..Panel1..GroupBox1..cbICS..Caption
+#: uOptionsForm.dfm:68
+msgid "Enable ICS (Intelligent category selector)"
+msgstr "Включить ICS (интеллектуальный выбор категорий)"
+
+#. OptionsForm..Panel1..GroupBox2..Caption
+#: uOptionsForm.dfm:77
+msgid "Auto update"
+msgstr "Автоматическое обновление"
+
+#. OptionsForm..Panel1..GroupBox2..bCheckUpdate..Caption
+#: uOptionsForm.dfm:86
+msgid "Check now"
+msgstr "Проверить сейчас"
+
+#. OptionsForm..Panel1..GroupBox2..cbCheckNewVersion..Caption
+#: uOptionsForm.dfm:100
+msgid "Check new version at start"
+msgstr "Проверка новой версии при запуске"
+
+#. OptionsForm..Panel1..GroupBox3..Caption
+#: uOptionsForm.dfm:109
+msgid "Extensions"
+msgstr "Расширения"
+
+#. OptionsForm..Panel1..GroupBox4..Caption
+#: uOptionsForm.dfm:127
+msgid "Languages"
+msgstr "Языки"
+
+#. OptionsForm..Panel1..GroupBox4..lDownloadLangs..Caption
+#: uOptionsForm.dfm:136
+msgid "Download languages..."
+msgstr "Загрузка языков..."
+
+#. OptionsForm..Panel1..GroupBox4..lTranslateTo..Caption
+#: uOptionsForm.dfm:153
+msgid "Translate to your native language"
+msgstr "Перевести на ваш родной язык"
+
+#. PasswordForm..Caption
+#: uPasswordForm.dfm:4
+msgid "Password"
+msgstr "Пароль"
+
+#. PasswordForm..ePass..EditLabel.Caption
+#: uPasswordForm.dfm:26
+msgid "Enter the password"
+msgstr "Введите пароль"
+
+#: uPreprocessDirs.dfm:339
+msgid "Close"
+msgstr "Закрыть"
+
+#: uPluginsForm.dfm:281
+msgid "Installed plugins"
+msgstr "Установленные плагины"
+
+#. PluginsForm..GroupBox1..Panel2..Label1..Caption
+#: uPluginsForm.dfm:107
+msgid "Name:"
+msgstr "Имя:"
+
+#. PluginsForm..GroupBox1..Panel2..Label2..Caption
+#: uPluginsForm.dfm:116
+msgid "Version:"
+msgstr "Версия:"
+
+#. PluginsForm..GroupBox1..Panel2..Label3..Caption
+#: uPluginsForm.dfm:125
+msgid "Author:"
+msgstr "Автор:"
+
+#. PluginsForm..GroupBox1..Panel2..Label4..Caption
+#: uPluginsForm.dfm:134
+msgid "Web:"
+msgstr "Веб-сайт:"
+
+#. PluginsForm..GroupBox1..Panel2..Label5..Caption
+#: uPluginsForm.dfm:143
+msgid "Description:"
+msgstr "Описание:"
+
+#. PluginsForm..GroupBox1..Panel2..bInstall..Caption
+#: uPluginsForm.dfm:225
+msgid "Install"
+msgstr "Установка"
+
+#. PluginsForm..GroupBox1..Panel3..IceTabSet1......Caption
+#: uPluginsForm.dfm:286
+msgid "Downloadable plugins"
+msgstr "Загружаемые плагины"
+
+#. PreProcessForm..Caption
+#: uPreprocessDirs.dfm:5
+msgid "Preprocessing new directories"
+msgstr "Обработка новых каталогов"
+
+#: uPreprocessDirs.dfm:215
+msgid "New directory name"
+msgstr "Новое имя каталога"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:83
+msgid "Old directory"
+msgstr "Старый каталог"
+
+#: uPreprocessDirs.dfm:225
+msgid "Unpack"
+msgstr "Распаковывать"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:95
+msgid "ISO"
+msgstr "ISO"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:102
+msgid "Del source"
+msgstr "Удалить источник"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:109
+msgid "Size"
+msgstr "Размер"
+
+#. PreProcessForm..Panel1..SettingsPanel..lNewPath..Caption
+#: uPreprocessDirs.dfm:156
+msgid "New path:"
+msgstr "Новый путь:"
+
+#. PreProcessForm..Panel1..SettingsPanel..lAddCat..Caption
+#: uPreprocessDirs.dfm:170
+msgid "Add"
+msgstr "Добавить"
+
+#. PreProcessForm..Panel1..SettingsPanel..lSaveDefault..Caption
+#: uPreprocessDirs.dfm:188
+msgid "Save as default"
+msgstr "Сохранить по умолчанию"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbUnPackISO..Caption
+#: uPreprocessDirs.dfm:235
+msgid "Extract ISO"
+msgstr "Извлечение ISO"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelSource..Caption
+#: uPreprocessDirs.dfm:245
+msgid "Delete source path"
+msgstr "Удалить исходный путь"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelNFO..Caption
+#: uPreprocessDirs.dfm:255
+msgid "Delete *.nfo"
+msgstr "Удалить *.NFO"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelDIZ..Caption
+#: uPreprocessDirs.dfm:265
+msgid "Delete *.diz"
+msgstr "Удаление *.DIZ"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelSFV..Caption
+#: uPreprocessDirs.dfm:275
+msgid "Delete *.sfv"
+msgstr "Удалить *.SFV"
+
+#. PreProcessForm..Panel1..SettingsPanel..eTags..EditLabel.Caption
+#: uPreprocessDirs.dfm:287
+msgid "Tags"
+msgstr "Теги"
+
+#. PreProcessForm..Panel2..bOk..Caption
+#: uPreprocessDirs.dfm:328
+msgid "Process"
+msgstr "Процесс"
+
+#. PreProcessForm..PopupMenu1..Deleteselecteditem1..Caption
+#: uPreprocessDirs.dfm:349
+msgid "Delete selected item"
+msgstr "Удалить выбранный элемент"
+
+#. PreProcessForm..PopupMenu1..Checkall1..Caption
+#: uPreprocessDirs.dfm:356
+msgid "Check all"
+msgstr "Отметить всё"
+
+#. PreProcessForm..PopupMenu1..Uncheckall1..Caption
+#: uPreprocessDirs.dfm:360
+msgid "Uncheck all"
+msgstr "Снять все"
+
+#. ThreadProcessForm..Caption
+#: uThreadProcessForm.dfm:5
+msgid "Processing"
+msgstr "Обработка"
+
+#. ThreadProcessForm..Panel1..lMainCaption..Caption
+#: uThreadProcessForm.dfm:54
+msgid "Processing..."
+msgstr "Обработка..."
+
+#. ThreadProcessForm..Panel1..lElapsedTime..Caption
+#: uThreadProcessForm.dfm:61
+msgid "Elapsed time:"
+msgstr "Прошедшее время:"
+
+#. ThreadProcessForm..Panel1..lEstimatedTime..Caption
+#: uThreadProcessForm.dfm:70
+msgid "Estimated time:"
+msgstr "Предполагаемое время:"
+
+#. ThreadProcessForm..Panel2..Label1..Caption
+#: uThreadProcessForm.dfm:113
+msgid "Priority"
+msgstr "Приоритет"
+
+#. ThreadProcessForm..Panel2..btnHide..Caption
+#: uThreadProcessForm.dfm:121
+msgid "Hide"
+msgstr "Скрыть"
+
+#. ThreadProcessForm..Panel2..btnPause..Caption
+#: uThreadProcessForm.dfm:131
+msgid "Pause"
+msgstr "Пауза"
+
+#. ThreadProcessForm..Panel2..btnStop..Caption
+#: uThreadProcessForm.dfm:141
+msgid "Stop"
+msgstr "Остановить"
+
+#: uThreadProcessForm.dfm:160
+msgid "Normal"
+msgstr "Нормальный"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:158
+msgid "Low"
+msgstr "Низкий"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:159
+msgid "Below normal"
+msgstr "Ниже нормы"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:161
+msgid "Above normal"
+msgstr "Выше нормы"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:162
+msgid "High"
+msgstr "Высокий"
+
+#. ThreadProcessForm..GroupBox1..Caption
+#: uThreadProcessForm.dfm:171
+msgid "Process log"
+msgstr "Журнал процесса"
+
+#. ThreadProcessForm..GroupBox1..LogList......WideText
+#: uThreadProcessForm.dfm:200
+msgid "Log"
+msgstr "Журнал"
+
+#. ThreadProcessForm..GroupBox1..LogList......WideText
+#: uThreadProcessForm.dfm:205
+msgid "Progress"
+msgstr "Прогресс"
+
+#: uUpdateForm.dfm:61
+msgid "Update"
+msgstr "Обновление"
+
+#. UpdateForm..GroupBox1..Caption
+#: uUpdateForm.dfm:73
+msgid "Update content"
+msgstr "Обновление содержимого"
+
+#. UpdateForm..GroupBox1..DataList......WideText
+#: uUpdateForm.dfm:105
+msgid "Module"
+msgstr "Модуль"
+
+#. UpdateForm..GroupBox1..DataList......WideText
+#: uUpdateForm.dfm:110
+msgid "Date"
+msgstr "Дата"
+
+#. UpdateForm..GroupBox1..DataList......WideText
+#: uUpdateForm.dfm:115
+msgid "Version"
+msgstr "Версия"
+
+#. UpdateForm..GroupBox1..GroupBox2..Caption
+#: uUpdateForm.dfm:128
+msgid "Changes"
+msgstr "Изменения"
+
+#. UpdateForm..Panel1..lMainCaption..Caption
+#: uUpdateForm.dfm:178
+msgid "New version found!"
+msgstr "Найдена новая версия!"
+
+#. UserSelectForm..Caption
+#: uUserSelectForm.dfm:5
+msgid "Select an item"
+msgstr "Выберите пункт"
+
+#: Pleaseenteraname
+msgid "Please enter a name!"
+msgstr "Пожалуйста, введите имя!"
+
+#: Savingtodatabase
+msgid "Saving to database..."
+msgstr "Сохранение в базу данных..."
+
+#: Findnfoforsave
+msgid "Find *.nfo for save..."
+msgstr "Найти *.NFO для сохранения..."
+
+#: Savesforprocess
+msgid "Save '%s' for product..."
+msgstr "Сохранить '%s'..."
+
+#: Findimageforsave
+msgid "Find image for save..."
+msgstr "Найти изображение для сохранения..."
+
+#: Waitingforpassword
+msgid "Waiting for password..."
+msgstr "Ожидание пароля..."
+
+#: Deletedsourcefiles
+msgid "Deleted source files."
+msgstr "Удаленные исходные файлы."
+
+#: Deletesourcedirectorys
+msgid "Delete source directory '%s'..."
+msgstr "Удалите исходный каталог '%s'..."
+
+#: Movestotargetpath
+msgid "Move '%s' to target path..."
+msgstr "Перемещение '%s' в ..."
+
+#: Filemoveerror
+msgid "File move error: "
+msgstr "Ошибка перемещения файла: "
+
+#: Deletetemporarydirectory2
+msgid "Delete temporary directory #2..."
+msgstr "Удалиние временного каталога #2..."
+
+#: Targetdirectorydoesntexists
+msgid "Target directory doesn't exists!"
+msgstr "Каталога не существует!"
+
+#: Deletetemporarydirectory1
+msgid "Delete temporary directory #1..."
+msgstr "Удаление временной папки #1..."
+
+#: Deletedsourcedirectorys
+msgid "Deleted source directory '%s'."
+msgstr "Удалена исходная папка '%s'."
+
+#: Deletesourcefiles0
+msgid "Delete source file '%s'..."
+msgstr "Удаление исходного файла '%s'..."
+
+#: Deletedsourcefiles0
+msgid "Deleted source file '%s'."
+msgstr "Удаленный исходный файл '%s'."
+
+#: Searcharchives
+msgid "Search archives..."
+msgstr "Поиск архивов..."
+
+#: Unpacks
+msgid "Unpack '%s'..."
+msgstr "Распаковка '%s'..."
+
+#: Unpackerror
+msgid "Unpack error!"
+msgstr "Ошибка распаковки!"
+
+#: Extracts
+msgid "Extract '%s'..."
+msgstr "Экстракт '%s'..."
+
+#: Extracterror
+msgid "Extract error!"
+msgstr "Ошибка извлечения!"
+
+#: Movestotemp
+msgid "Move '%s' to temp..."
+msgstr "Переместить '%s' во временную папку..."
+
+#: Copystotemp
+msgid "Copy '%s' to temp..."
+msgstr "Копировать '%s' во временную папку..."
+
+#: Filecopyerror
+msgid "File copy error: "
+msgstr "Ошибка при копировании файлов: "
+
+#: Pleasewaituntiltheprocessingoperationsarecompleted
+msgid "Please wait until the processing operations are completed!"
+msgstr "Дождитесь завершения обработки операций!"
+
+#: Doyouwanttodeletethe
+msgid "Do you want to delete the '%s' category?"
+msgstr "Вы хотите удалить категорию '%s'?"
+
+#: Areyousuredeletetheselecteddirectories
+msgid "Are you sure delete the selected directories?"
+msgstr "Вы уверены, что хотите удалить выбранные каталоги?"
+
+#: AreyousuredeletethesourcefilesPath
+msgid "Are you sure delete the source files? Path: %s"
+msgstr "Вы уверены, что хотите удалить исходные файлы? Путь: %s."
+
+#: Preparing
+msgid "Preparing..."
+msgstr "Подготовка..."
+
+#: Pleasewait
+msgid "Please wait"
+msgstr "Пожалуйста, подождите"
+
+#: Reprocess
+msgid "Reprocess %s..."
+msgstr "Обработка %s..."
+
+#: Addnewcategory
+msgid "Add new category"
+msgstr "Добавить новую категорию"
+
+#: EnterURL
+msgid "Enter URL"
+msgstr "Введите URL-адрес"
+
+#: DoyouwanttocontinuewithclosingmightcauseDATALOSS
+msgid "Do you want to continue with closing (might cause DATA LOSS)?"
+msgstr "Вы хотите закрыть приложение (приведёт к потере данных)?"
+
+#: SomefoldersarestillbeingprocessedDoyoureallywanttoexit
+msgid "Some folders are still being processed. Do you really want to exit?"
+msgstr "В некоторые папки все еще обрабатываются. Вы действительно хотите выйти?"
+
+#: Errorduringspluginprocesss
+msgid "Error during %s plugin process: %s"
+msgstr "Ошибка выполнения %s плагина в процессе %s"
+
+#: Regeneratetags
+msgid "Regenerate tags..."
+msgstr "Пересоздание тегов..."
+
+#: Generatematrixtointelligentsorter
+msgid "Generate matrix to intelligent sorter..."
+msgstr "Создание образца для умной сортировки..."
+
+#: Calculatingtagsusage
+msgid "Calculating tags usage..."
+msgstr "Расчёт использования тегов..."
+
+#: Allproducts
+msgid "All products"
+msgstr "Все продукты"
+
+#: Addcategory
+msgid "< Add category... >"
+msgstr "< Добавить категорию... >"
+
+#: Queued
+msgid "Queue (%d)"
+msgstr "Очередь (%d)"
+
+#: Enternewdirectoryname
+msgid "Enter new directory name"
+msgstr "Введите новое имя каталога"
+
+#: Wouldyouliketosetdirectorynametoproductname
+msgid "Would you like to set directory name to product name?"
+msgstr "Хотите ввести имя каталога для продукта?"
+
+#: Pleaseaddsometagstoproduct
+msgid "Please add some tags to product!"
+msgstr "Пожалуйста, добавьте несколько тегов для продукта!"
+
+#: Consistencechecking
+msgid "Consistence checking..."
+msgstr "Проверка состояния..."
+
+#: Thesdirectorydoesn
+msgid "The '%s' directory doesn't exists. Do you want to delete from library?"
+msgstr "Каталог '%s' не существует. Вы хотите удалить его из библиотеки?"
+
+#: Consistencecheckfinished
+msgid "Consistence check finished!"
+msgstr "Проверка состояния завершена!"
+
+#: Vacuummaindatabase
+msgid "Vacuum main database..."
+msgstr "Основная вакуумная  база данных..."
+
+#: Vacuuminfodatabase
+msgid "Vacuum info database..."
+msgstr "Вакуумная информация базы данных..."
+
+#: Vacuumfinished
+msgid "Vacuum finished!"
+msgstr "Вакуум закончен!"
+
+#: Stufforganizerbackupfiles
+msgid "Stuff organizer backup files"
+msgstr "Резервное копирование  Stuff organizer-а"
+
+#: Backup
+msgid "Backup..."
+msgstr "Резервное копирование..."
+
+#: Finished
+msgid "Finished!"
+msgstr "Завершено!"
+
+#: Errorduringbackup
+msgid "Error during backup: "
+msgstr "Ошибка во время резервного копирования:"
+
+#: Restore
+msgid "Restore..."
+msgstr "Восстановление..."
+
+#: Errorduringrestore
+msgid "Error during restore: "
+msgstr "Ошибка во время восстановления:"
+
+#: Preparings
+msgid "Preparing '%s'..."
+msgstr "Подготовка '%s'..."
+
+#: ThespecifiedsourcedirectoryshasbeenprocessedDoyouwanttocontinue
+msgid "The specified source directory (%s) has been processed! Do you want to continue?"
+msgstr "Указанный исходный каталог (%s) был обработан! Хотите продолжить?"
+
+#: RunningICSons
+msgid "Running ICS on '%s'..."
+msgstr "Запуск ICS на '%s'..."
+
+#: Wouldyouliketomovedirectoriesaccordingtothenewcategory
+msgid "Would you like to move directories according to the new category?"
+msgstr "Вы хотели бы переместить каталоги в соответствии с новой директорией?"
+
+#: Deleteitems
+msgid "Delete items..."
+msgstr "Удаление объектов..."
+
+#: Delete
+msgid "Delete "
+msgstr "Удалить"
+
+#: Wouldyouliketodeletethesefoldersonharddisk
+msgid "Would you like to delete these folders on hard disk?"
+msgstr "Вы хотите удалить эти папки из жесткого диска?"
+
+#: Modifycategoryproperties
+msgid "Modify category properties"
+msgstr "Изменить свойства категорий"
+
+#: Saveunprocesseditems
+msgid "Save unprocessed items..."
+msgstr "Сохранить необработанные элементы..."
+
+#: Passwordfors
+msgid "Password for %s"
+msgstr "Пароль для %s"
+
+#: Viewlog
+msgid "View log"
+msgstr "Просмотр журнала"
+
+#: Processd
+msgid "Process (%d)"
+msgstr "Процесс (%d)"
+
+#: Newpath
+msgid "New path: "
+msgstr "Новый путь:"
+
+#: Areyousuredeletetheselecteditems
+msgid "Are you sure delete the selected items?"
+msgstr "Вы уверены, что хотите удалить выбранные элементы?"
+
+#: Thesitemcantdelete
+msgid "The '%s' item can't delete!"
+msgstr "Элемент '%s' нельзя удалить!"
+
+#: nocategory
+msgid "<no category>"
+msgstr "< нет категории >"
+
+#: Settingssavedasdefault
+msgid "Settings saved as default."
+msgstr "Настройки сохранены(как по умолчанию)."
+
+#: Finished0
+msgid "Finished."
+msgstr "Завершено."
+
+#: Aborted
+msgid "Aborted."
+msgstr "Прервано."
+
+#: Applicationexitfortoupdate
+msgid "Application exit for to update..."
+msgstr "Приложение закрывается для обновления..."
+
+#: Applicationisuptodate
+msgid "Application is up to date."
+msgstr "Приложение не нуждается в обновлении."
+
+#: Unknowupdatefile
+msgid "Unknow update file!"
+msgstr "Неизвестный файл обновления!"
+
+#: Updateinfonotfound
+msgid "Update info not found!"
+msgstr "Обновление информации не найдено!"
+
+#: Updateerror
+msgid "Update error! "
+msgstr "Ошибка при обновлении!"
+
+#: Resume
+msgid "Resume"
+msgstr "Назад"
+
+#: Areyousurestoptheprocessing
+msgid "Are you sure stop the processing?"
+msgstr "Вы хотите остановить обработку?"
+
+#: Waitingforthreadterminate
+msgid "Waiting for thread terminate..."
+msgstr "Ожидание для прекращения потока..."
+
+#: Processings
+msgid "Processing %s..."
+msgstr "Обработка %s ..."
+
+#: Finished1
+msgid "Finished"
+msgstr "Завершено"
+
+#: Elapsedtimes
+msgid "Elapsed time: %s"
+msgstr "Прошедшее время: %s"
+
+#: Estimatedtimes
+msgid "Estimated time: %s"
+msgstr "Оставшееся время: %s"
+
+#: Downloaderror
+msgid "Download error: "
+msgstr "Ошибка загрузки: "
+
+#: VersiondddBuildd
+msgid "Version %d.%d.%d ( Build %d )"
+msgstr "Версия %d.%d.%d (сборка %d)"
+
+#: Savedtodatabase
+msgid "Saved to database."
+msgstr "Сохранено в базу данных."
+
+#: Mainmodule
+msgid "Main module"
+msgstr "Основной модуль"
+
+#: PAD keywords
+msgid "catalog, stuff, organizer, collection, library, movie, applications, software, music, game, uncompressor, decompressor"
+msgstr "Каталог, разное, сортированное, коллекции, библиотека, кино, приложения, программы, музыку, игры, несжатое, расжатое"
+
+#: PAD description 40
+msgid "Stuff Organizer is a catalog software"
+msgstr "Stuff Organizer – каталог программного обеспечения"
+
+#: PAD description 450
+msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003."
+msgstr "Stuff Organizer бесплатная программа с открытым исходным кодом. Вы можете упорядочивать и сортировать вашу информацию (фильмы, программное обеспечение, игры, музыку, электронные книги или т.д. Если у вас есть много загруженных файлов через интернет или торрент и вы хотели бы упорядочить их, то скачайте эту программу! Она работает в Windows 7 / Vista / XP / 2008 / 2003."
+
+#: PAD description 2000
+msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer is open source software distributed free of charge under the terms of the GNU General Public License. Main features: unpack compressed files (e.g: zip, rar) in two levels after unpack, cleans up the unused files in the directory (e.g: file_id.diz, sfv file) extract iso if you want sort to multi-level categories support drag-n-drop support tags save NFO file content and image to database get product description from the web (e.g: allrovi.com)"
+msgstr ""
+"Stuff Organizer программа с открытым исходным кодом и распространяется бесплатно на условиях GNU General Public License. "
+"Основные возможности: распаковка сжатых файлов (например, ZIP, RAR) в два уровня после распаковки, "
+"очищение неиспользуемых и временных файлов в каталогах (например: file_id.diz, SFV файлы) "
+"извлечение образов ISO, если вы хотите сортировать многоуровневые каталоги, определите теги, сохранените NFO содержание файлов "
+"и изображений в базе данных, найдите описание продукта из сети Интернет (например: allrovi.com)"
+
+#: Pleaserestartthesoftwareforchangestotakeeffect
+msgid "Please restart the software for changes to take effect!"
+msgstr "Пожалуйста, перезапустите программное обеспечение, чтобы изменения вступили в силу!"
+
+#: Downloadingplugind
+msgid "Downloading plugin (%d%%)..."
+msgstr "Загрузка плагина (%d%%)..."
+
+#: Downloadingpluginlist
+msgid "Downloading plugin list..."
+msgstr "Загрузка списка плагинов..."
+
+#: Applicationexitfortoupdate
+msgid "Application exit for install new plugin..."
+msgstr "Выход из приложения для установки нового плагина..."
+
