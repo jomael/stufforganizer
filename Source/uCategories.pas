@@ -52,6 +52,7 @@ type
     procedure cbIconsDrawItem(Control: TWinControl; Index: Integer; Rect: TRect;
       State: TOwnerDrawState);
     procedure btnOkClick(Sender: TObject);
+    procedure ePathKeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -96,6 +97,15 @@ begin
     ePath.Text := JvBrowseForFolderDialog1.Directory;
     if eName.Text = '' then
       eName.Text := ExtractFileName(ePath.Text);
+  end;
+end;
+
+procedure TCategoriesForm.ePathKeyPress(Sender: TObject; var Key: Char);
+begin
+  if Key = #13 then
+  begin
+    Key := #0;
+    btnOk.Click;
   end;
 end;
 

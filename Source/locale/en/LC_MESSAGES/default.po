@@ -1095,3 +1095,12 @@ msgstr "Application exit for install new plugin..."
 
 msgid "Directory doesn't exists! Path: %s"
 msgstr "Directory doesn't exists! Path: %s"
+
+msgid "Would you like to relocate items of category?"
+msgstr "Would you like to relocate items of category?"
+
+msgid "Relocating..."
+msgstr "Relocating..."
+
+msgid "Relocating %s..."
+msgstr "Relocating %s..."

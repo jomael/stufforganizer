@@ -6,9 +6,6 @@
 			<Projects Include="Source\StuffOrganizer.dproj">
 				<Dependencies/>
 			</Projects>
-			<Projects Include="Source\Test\StuffOrganizerTests.dproj">
-				<Dependencies/>
-			</Projects>
 			<Projects Include="Tools\DirLister\DirLister.dproj">
 				<Dependencies/>
 			</Projects>
@@ -57,6 +54,9 @@
 			<Projects Include="Modules\imdb_es\imdb_es.dproj">
 				<Dependencies/>
 			</Projects>
+			<Projects Include="Source\Test\StuffOrganizerTests.dproj">
+				<Dependencies/>
+			</Projects>
 		</ItemGroup>
 		<ProjectExtensions>
 			<Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -69,172 +69,172 @@
 			<MSBuild Projects="Source\StuffOrganizer.dproj"/>
 		</Target>
 		<Target Name="StuffOrganizer:Clean">
-			<MSBuild Targets="Clean" Projects="Source\StuffOrganizer.dproj"/>
+			<MSBuild Projects="Source\StuffOrganizer.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="StuffOrganizer:Make">
-			<MSBuild Targets="Make" Projects="Source\StuffOrganizer.dproj"/>
-		</Target>
-		<Target Name="StuffOrganizerTests">
-			<MSBuild Projects="Source\Test\StuffOrganizerTests.dproj"/>
-		</Target>
-		<Target Name="StuffOrganizerTests:Clean">
-			<MSBuild Targets="Clean" Projects="Source\Test\StuffOrganizerTests.dproj"/>
-		</Target>
-		<Target Name="StuffOrganizerTests:Make">
-			<MSBuild Targets="Make" Projects="Source\Test\StuffOrganizerTests.dproj"/>
+			<MSBuild Projects="Source\StuffOrganizer.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="DirLister">
 			<MSBuild Projects="Tools\DirLister\DirLister.dproj"/>
 		</Target>
 		<Target Name="DirLister:Clean">
-			<MSBuild Targets="Clean" Projects="Tools\DirLister\DirLister.dproj"/>
+			<MSBuild Projects="Tools\DirLister\DirLister.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="DirLister:Make">
-			<MSBuild Targets="Make" Projects="Tools\DirLister\DirLister.dproj"/>
+			<MSBuild Projects="Tools\DirLister\DirLister.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="unpack_7z">
 			<MSBuild Projects="Modules\unpack_7z\unpack_7z.dproj"/>
 		</Target>
 		<Target Name="unpack_7z:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\unpack_7z\unpack_7z.dproj"/>
+			<MSBuild Projects="Modules\unpack_7z\unpack_7z.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="unpack_7z:Make">
-			<MSBuild Targets="Make" Projects="Modules\unpack_7z\unpack_7z.dproj"/>
+			<MSBuild Projects="Modules\unpack_7z\unpack_7z.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="unpack_rar">
 			<MSBuild Projects="Modules\unpack_rar\unpack_rar.dproj"/>
 		</Target>
 		<Target Name="unpack_rar:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\unpack_rar\unpack_rar.dproj"/>
+			<MSBuild Projects="Modules\unpack_rar\unpack_rar.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="unpack_rar:Make">
-			<MSBuild Targets="Make" Projects="Modules\unpack_rar\unpack_rar.dproj"/>
+			<MSBuild Projects="Modules\unpack_rar\unpack_rar.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="unpack_zip">
 			<MSBuild Projects="Modules\unpack_zip\unpack_zip.dproj"/>
 		</Target>
 		<Target Name="unpack_zip:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\unpack_zip\unpack_zip.dproj"/>
+			<MSBuild Projects="Modules\unpack_zip\unpack_zip.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="unpack_zip:Make">
-			<MSBuild Targets="Make" Projects="Modules\unpack_zip\unpack_zip.dproj"/>
+			<MSBuild Projects="Modules\unpack_zip\unpack_zip.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="port_hu">
 			<MSBuild Projects="Modules\port_hu\port_hu.dproj"/>
 		</Target>
 		<Target Name="port_hu:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\port_hu\port_hu.dproj"/>
+			<MSBuild Projects="Modules\port_hu\port_hu.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="port_hu:Make">
-			<MSBuild Targets="Make" Projects="Modules\port_hu\port_hu.dproj"/>
+			<MSBuild Projects="Modules\port_hu\port_hu.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="SOUpdater">
 			<MSBuild Projects="Source\SOUpdater\SOUpdater.dproj"/>
 		</Target>
 		<Target Name="SOUpdater:Clean">
-			<MSBuild Targets="Clean" Projects="Source\SOUpdater\SOUpdater.dproj"/>
+			<MSBuild Projects="Source\SOUpdater\SOUpdater.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="SOUpdater:Make">
-			<MSBuild Targets="Make" Projects="Source\SOUpdater\SOUpdater.dproj"/>
+			<MSBuild Projects="Source\SOUpdater\SOUpdater.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="allrovi">
 			<MSBuild Projects="Modules\allrovi\allrovi.dproj"/>
 		</Target>
 		<Target Name="allrovi:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\allrovi\allrovi.dproj"/>
+			<MSBuild Projects="Modules\allrovi\allrovi.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="allrovi:Make">
-			<MSBuild Targets="Make" Projects="Modules\allrovi\allrovi.dproj"/>
+			<MSBuild Projects="Modules\allrovi\allrovi.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="playmusic">
 			<MSBuild Projects="Modules\playmusic\playmusic.dproj"/>
 		</Target>
 		<Target Name="playmusic:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\playmusic\playmusic.dproj"/>
+			<MSBuild Projects="Modules\playmusic\playmusic.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="playmusic:Make">
-			<MSBuild Targets="Make" Projects="Modules\playmusic\playmusic.dproj"/>
+			<MSBuild Projects="Modules\playmusic\playmusic.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="opensubtitles">
 			<MSBuild Projects="Modules\opensubtitles\opensubtitles.dproj"/>
 		</Target>
 		<Target Name="opensubtitles:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\opensubtitles\opensubtitles.dproj"/>
+			<MSBuild Projects="Modules\opensubtitles\opensubtitles.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="opensubtitles:Make">
-			<MSBuild Targets="Make" Projects="Modules\opensubtitles\opensubtitles.dproj"/>
+			<MSBuild Projects="Modules\opensubtitles\opensubtitles.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="imdb">
 			<MSBuild Projects="Modules\imdb\imdb.dproj"/>
 		</Target>
 		<Target Name="imdb:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\imdb\imdb.dproj"/>
+			<MSBuild Projects="Modules\imdb\imdb.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="imdb:Make">
-			<MSBuild Targets="Make" Projects="Modules\imdb\imdb.dproj"/>
+			<MSBuild Projects="Modules\imdb\imdb.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="RegexpTest">
 			<MSBuild Projects="Tools\RegexpTest\RegexpTest.dproj"/>
 		</Target>
 		<Target Name="RegexpTest:Clean">
-			<MSBuild Targets="Clean" Projects="Tools\RegexpTest\RegexpTest.dproj"/>
+			<MSBuild Projects="Tools\RegexpTest\RegexpTest.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="RegexpTest:Make">
-			<MSBuild Targets="Make" Projects="Tools\RegexpTest\RegexpTest.dproj"/>
+			<MSBuild Projects="Tools\RegexpTest\RegexpTest.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="tmdb">
 			<MSBuild Projects="Modules\tmdb\tmdb.dproj"/>
 		</Target>
 		<Target Name="tmdb:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\tmdb\tmdb.dproj"/>
+			<MSBuild Projects="Modules\tmdb\tmdb.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="tmdb:Make">
-			<MSBuild Targets="Make" Projects="Modules\tmdb\tmdb.dproj"/>
+			<MSBuild Projects="Modules\tmdb\tmdb.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="imdb_fr">
 			<MSBuild Projects="Modules\imdb_fr\imdb_fr.dproj"/>
 		</Target>
 		<Target Name="imdb_fr:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\imdb_fr\imdb_fr.dproj"/>
+			<MSBuild Projects="Modules\imdb_fr\imdb_fr.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="imdb_fr:Make">
-			<MSBuild Targets="Make" Projects="Modules\imdb_fr\imdb_fr.dproj"/>
+			<MSBuild Projects="Modules\imdb_fr\imdb_fr.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="imdb_de">
 			<MSBuild Projects="Modules\imdb_de\imdb_de.dproj"/>
 		</Target>
 		<Target Name="imdb_de:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\imdb_de\imdb_de.dproj"/>
+			<MSBuild Projects="Modules\imdb_de\imdb_de.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="imdb_de:Make">
-			<MSBuild Targets="Make" Projects="Modules\imdb_de\imdb_de.dproj"/>
+			<MSBuild Projects="Modules\imdb_de\imdb_de.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="imdb_it">
 			<MSBuild Projects="Modules\imdb_it\imdb_it.dproj"/>
 		</Target>
 		<Target Name="imdb_it:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\imdb_it\imdb_it.dproj"/>
+			<MSBuild Projects="Modules\imdb_it\imdb_it.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="imdb_it:Make">
-			<MSBuild Targets="Make" Projects="Modules\imdb_it\imdb_it.dproj"/>
+			<MSBuild Projects="Modules\imdb_it\imdb_it.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="imdb_es">
 			<MSBuild Projects="Modules\imdb_es\imdb_es.dproj"/>
 		</Target>
 		<Target Name="imdb_es:Clean">
-			<MSBuild Targets="Clean" Projects="Modules\imdb_es\imdb_es.dproj"/>
+			<MSBuild Projects="Modules\imdb_es\imdb_es.dproj" Targets="Clean"/>
 		</Target>
 		<Target Name="imdb_es:Make">
-			<MSBuild Targets="Make" Projects="Modules\imdb_es\imdb_es.dproj"/>
+			<MSBuild Projects="Modules\imdb_es\imdb_es.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="StuffOrganizerTests">
+			<MSBuild Projects="Source\Test\StuffOrganizerTests.dproj"/>
+		</Target>
+		<Target Name="StuffOrganizerTests:Clean">
+			<MSBuild Projects="Source\Test\StuffOrganizerTests.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="StuffOrganizerTests:Make">
+			<MSBuild Projects="Source\Test\StuffOrganizerTests.dproj" Targets="Make"/>
 		</Target>
 		<Target Name="Build">
-			<CallTarget Targets="StuffOrganizer;StuffOrganizerTests;DirLister;unpack_7z;unpack_rar;unpack_zip;port_hu;SOUpdater;allrovi;playmusic;opensubtitles;imdb;RegexpTest;tmdb;imdb_fr;imdb_de;imdb_it;imdb_es"/>
+			<CallTarget Targets="StuffOrganizer;DirLister;unpack_7z;unpack_rar;unpack_zip;port_hu;SOUpdater;allrovi;playmusic;opensubtitles;imdb;RegexpTest;tmdb;imdb_fr;imdb_de;imdb_it;imdb_es;StuffOrganizerTests"/>
 		</Target>
 		<Target Name="Clean">
-			<CallTarget Targets="StuffOrganizer:Clean;StuffOrganizerTests:Clean;DirLister:Clean;unpack_7z:Clean;unpack_rar:Clean;unpack_zip:Clean;port_hu:Clean;SOUpdater:Clean;allrovi:Clean;playmusic:Clean;opensubtitles:Clean;imdb:Clean;RegexpTest:Clean;tmdb:Clean;imdb_fr:Clean;imdb_de:Clean;imdb_it:Clean;imdb_es:Clean"/>
+			<CallTarget Targets="StuffOrganizer:Clean;DirLister:Clean;unpack_7z:Clean;unpack_rar:Clean;unpack_zip:Clean;port_hu:Clean;SOUpdater:Clean;allrovi:Clean;playmusic:Clean;opensubtitles:Clean;imdb:Clean;RegexpTest:Clean;tmdb:Clean;imdb_fr:Clean;imdb_de:Clean;imdb_it:Clean;imdb_es:Clean;StuffOrganizerTests:Clean"/>
 		</Target>
 		<Target Name="Make">
-			<CallTarget Targets="StuffOrganizer:Make;StuffOrganizerTests:Make;DirLister:Make;unpack_7z:Make;unpack_rar:Make;unpack_zip:Make;port_hu:Make;SOUpdater:Make;allrovi:Make;playmusic:Make;opensubtitles:Make;imdb:Make;RegexpTest:Make;tmdb:Make;imdb_fr:Make;imdb_de:Make;imdb_it:Make;imdb_es:Make"/>
+			<CallTarget Targets="StuffOrganizer:Make;DirLister:Make;unpack_7z:Make;unpack_rar:Make;unpack_zip:Make;port_hu:Make;SOUpdater:Make;allrovi:Make;playmusic:Make;opensubtitles:Make;imdb:Make;RegexpTest:Make;tmdb:Make;imdb_fr:Make;imdb_de:Make;imdb_it:Make;imdb_es:Make;StuffOrganizerTests:Make"/>
 		</Target>
-		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
 	</Project>

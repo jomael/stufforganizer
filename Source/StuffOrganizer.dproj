@@ -134,7 +134,7 @@
 						<VersionInfo Name="MajorVer">0</VersionInfo>
 						<VersionInfo Name="MinorVer">4</VersionInfo>
 						<VersionInfo Name="Release">6</VersionInfo>
-						<VersionInfo Name="Build">61</VersionInfo>
+						<VersionInfo Name="Build">63</VersionInfo>
 						<VersionInfo Name="Debug">False</VersionInfo>
 						<VersionInfo Name="PreRelease">True</VersionInfo>
 						<VersionInfo Name="Special">False</VersionInfo>
@@ -146,7 +146,7 @@
 					<VersionInfoKeys>
 						<VersionInfoKeys Name="CompanyName">Ice Applications</VersionInfoKeys>
 						<VersionInfoKeys Name="FileDescription">Stuff Organizer</VersionInfoKeys>
-						<VersionInfoKeys Name="FileVersion">0.4.6.61</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">0.4.6.63</VersionInfoKeys>
 						<VersionInfoKeys Name="InternalName"/>
 						<VersionInfoKeys Name="LegalCopyright"/>
 						<VersionInfoKeys Name="LegalTrademarks"/>
@@ -168,6 +168,9 @@
 				<Platforms>
 					<Platform value="Win32">True</Platform>
 				</Platforms>
+				<UnitTesting>
+					<TestProjectName>C:\Work\Project\StuffOrganizer\Source\Test\StuffOrganizerTests.dproj</TestProjectName>
+				</UnitTesting>
 			</BorlandProject>
 			<ProjectFileVersion>12</ProjectFileVersion>
 		</ProjectExtensions>

@@ -130,6 +130,7 @@ object CategoriesForm: TCategoriesForm
     Anchors = [akLeft, akTop, akRight]
     AutoSize = False
     TabOrder = 2
+    OnKeyPress = ePathKeyPress
     OnButtonClick = ePathButtonClick
     TitleName = 'Please specify a directory'
   end
@@ -146,7 +147,6 @@ object CategoriesForm: TCategoriesForm
     Width = 49
     Height = 22
     Style = csOwnerDrawFixed
-    ItemHeight = 16
     TabOrder = 4
     OnDrawItem = cbIconsDrawItem
   end

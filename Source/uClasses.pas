@@ -980,9 +980,10 @@ begin
             ForceDirectories(TargetPath);
             DoStatusEvent(STATUS_MOVEFILE, Format(_('Move ''%s'' to target path...'), [ExtractFileName(CurrentFile)]), (J+1) * 100 div TempList.Count);
 
-            if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then
-            //if not RenameFile(PWideChar(CurrentFile), PWideChar(TargetPath + ExtractFileName(CurrentFile))) then
-              raise Exception.Create(_('File move error: ') + CurrentFile);
+            //if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then //sok fájl esetén minden fájlhoz külön thread indul
+            RenameFile(CurrentFile, TargetPath + ExtractFileName(CurrentFile));
+            //if not RenameFile(CurrentFile, TargetPath + ExtractFileName(CurrentFile)) then
+            //  raise Exception.Create(_('File move error: ') + CurrentFile);
           end;
           TempList.Free;
           DoStatusEvent(STATUS_DELETEFILE, Format(_('Delete temporary directory #2...'), []), 0);
@@ -1001,9 +1002,10 @@ begin
           TargetPath := TargetDir + RelPath;
           ForceDirectories(TargetPath);
           DoStatusEvent(STATUS_MOVEFILE, Format(_('Move ''%s'' to target path...'), [ExtractFileName(CurrentFile)]), (J+1) * 100 div TempList.Count);
-          if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then
-          //if not RenameFile(PWideChar(CurrentFile), PWideChar(TargetPath + ExtractFileName(CurrentFile))) then
-            raise Exception.Create(_('File move error: ') + CurrentFile);
+          //if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then //sok fájl esetén minden fájlhoz külön thread indul
+          RenameFile(CurrentFile, TargetPath + ExtractFileName(CurrentFile));
+          //if not RenameFile(CurrentFile, TargetPath + ExtractFileName(CurrentFile)) then
+          //  raise Exception.Create(_('File move error: ') + CurrentFile);
         end;
       end;
 
@@ -1182,8 +1184,10 @@ begin
           // 2. Ha törölni kell a forrást, akkor a megmaradt fájlokat mozgassa
           // 3. Ha nem történt tömörítés és a célhely megegyezik az új hellyel
           DoStatusEvent(STATUS_MOVEFILE, Format(_('Move ''%s'' to temp...'), [ExtractFileName(CurrentFile)]), (I+1) * 100 div AllFiles.Count);
-          if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then
-            raise Exception.Create(_('File move error: ') + CurrentFile);
+          RenameFile(CurrentFile, IncludeTrailingBackslash(TargetPath) + ExtractFileName(CurrentFile));
+          //if not RenameFile(CurrentFile, IncludeTrailingBackslash(TargetPath) + ExtractFileName(CurrentFile)) then
+          //if not IcePack.IceFileOperation(FO_MOVE, CurrentFile, IncludeTrailingBackslash(TargetPath), false, false) then //sok fájl esetén minden fájlhoz külön thread indul
+          //  raise Exception.Create(_('File move error: ') + CurrentFile);
 
         end
         else

@@ -6,9 +6,9 @@
 msgid ""
 msgstr "Project-Id-Version: stuff-organizer\n"
 "POT-Creation-Date: 2011-10-24 21:39\n"
-"PO-Revision-Date: 2011-10-25 21:11+0200\n"
+"PO-Revision-Date: 2012-01-15 17:21+0100\n"
 "Last-Translator: Norbert Mereg <mereg.norbert@gmail.com>\n"
-"Language: Hungarian\n"
+"Language: English\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,7 +27,7 @@ msgstr "Új verzió keresése"
 #. AboutForm..Label2....Caption
 #: uAboutForm.dfm:350
 msgid "Stuff Organizer is open source software distributed free of charge under the terms of"
-msgstr "Stuff Organizer egy nyílt forráskódú szoftver, amely ingyenesen terjeszthető a "
+msgstr "Stuff Szervező egy nyílt forráskódú szoftverek ingyenesen terjeszthető a "
 
 #. AboutForm..lGPL..Caption
 #: uAboutForm.dfm:367
@@ -1041,3 +1041,13 @@ msgstr "Az alkalmazás újraindul a bővítmény telepítése miatt..."
 
 msgid "Directory doesn't exists! Path: %s"
 msgstr "Könyvtár nem létezik! Útvonal: %s"
+
+msgid "Would you like to relocate items of category?"
+msgstr "Szeretné az elemek útvonalát lecserélni?"
+
+msgid "Relocating..."
+msgstr "Áthelyezés..."
+
+msgid "Relocating %s..."
+msgstr "%s áthelyezése..."
+
