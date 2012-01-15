@@ -286,6 +286,7 @@ type
     function FirstLine(S: string): string;
     procedure LoadImageToProduct(FileName: string; Node: PVirtualNode);
     procedure GenerateTagCloud;
+    procedure RelocateCategoryItems(Data: PNodeCategory; newCatPath: string);
     { Private declarations }
   protected
     procedure AcceptFiles( var msg : TMessage ); message WM_DROPFILES;
@@ -349,8 +350,6 @@ uses
   uPluginsForm, CodePages, uProcs, JclAppInst, uAboutForm;
 
 {$R *.dfm}
-
-{$R StuffOrganizer.rec}
 
  {$REGION 'Action methods'}
 procedure TMainForm.aAboutExecute(Sender: TObject);
@@ -582,7 +581,6 @@ begin
   end;
   CloseProgressDialog;
   RefreshQueueItemCount;
-
 end;
 
 procedure TMainForm.aShowMainFormExecute(Sender: TObject);
@@ -722,7 +720,7 @@ begin
   begin
     s := string(PWideChar(cd.lpData));
     SetLength(s, cd.cbData div sizeOf(s[1]));
-    ShowMessage(s);
+//    ShowMessage(s);
 
     ItemList := TStringList.Create;
     ItemList.Text := S;
@@ -783,8 +781,6 @@ begin
     LoadCategoriesFromDB(NewID);
   end;
 end;
-
-
 
 procedure TMainForm.bAddNFOClick(Sender: TObject);
 var
@@ -1321,7 +1317,7 @@ begin
   DB := TSqliteDatabase.Create(MAINDBPATH);
   InfoDB := TSqliteDatabase.Create(INFODBPATH);
 
-//  ShowMessage(IntToStr(DB.UserVersion));
+  //ShowMessage(IntToStr(DB.UserVersion));
 end;
 
 procedure TMainForm.CloseDB;
@@ -2879,7 +2875,7 @@ begin
   CategoriesForm.Caption := _('Modify category properties');
   CategoriesForm.eName.Text := Data.Name;
   CategoriesForm.ePath.Text := Data.Path;
-  CategoriesForm.ePath.Enabled := Data.Count = 0;
+//  CategoriesForm.ePath.Enabled := Data.Count = 0;
   CategoriesForm.cbIcons.ItemIndex := Data.IconIndex;
   if Data.Color <> clNone then
   begin
@@ -2907,7 +2903,45 @@ begin
     finally
       UnLockDB;
     end;
+
+    if (Data.Path <> CategoriesForm.ePath.Text) and (MessageDlg(_('Would you like to relocate items of category?'), mtConfirmation, [mbYes, mbNo], 0) = mrYes) then
+      RelocateCategoryItems(Data, CategoriesForm.ePath.Text);
+
     LoadCategoriesFromDB(Data.ID);
+  end;
+end;
+
+procedure TMainForm.RelocateCategoryItems(Data: PNodeCategory; newCatPath: string);
+var
+  Table: TSQLiteTable;
+  origCatPath: string;
+  origPath, newPath: string;
+
+begin
+  LockDB;
+  try
+    OrigCatPath := Data.Path;
+    ShowProgressDialog(_('Relocating...'), _('Please wait'));
+    DB.AddParamInt(':category', Data.ID);
+    Table := DB.GetTable('select id, targetpath from Products where category = :category');
+    while not Table.EOF do
+    begin
+      origPath := Table.FieldAsString(1);
+      if Pos(origCatPath, origPath) = 1 then
+      begin
+        ChangeProgressCaption(Format(_('Relocating %s...'), [origPath]));
+        newPath := IncludeTrailingBackslash(newCatPath) + ExtractFileName(origPath);
+
+        DB.AddParamText(':newpath', newPath);
+        DB.AddParamInt(':id', Table.FieldAsInteger(0));
+        DB.ExecSQL('update Products set targetpath = :newpath where id = :id');
+      end;
+      Table.Next;
+    end;
+    Table.Free;
+  finally
+    CloseProgressDialog;
+    UnLockDB;
   end;
 end;
 
