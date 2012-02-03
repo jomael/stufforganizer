@@ -1561,7 +1561,7 @@ begin
     if Columns.GetParamAsInt('sortdir', integer(VList.Header.SortDirection)) = integer(sdAscending) then
       VList.Header.SortDirection := sdAscending
     else
-      VList.Header.SortDirection := sdAscending
+      VList.Header.SortDirection := sdDescending
   end;
 
   MainForm.Left := ConfigXML.Root.GetItemValue('Main.LastState.Left', MainForm.Left);
