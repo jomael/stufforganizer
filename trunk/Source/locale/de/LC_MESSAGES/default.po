@@ -79,7 +79,7 @@ msgstr "Kategoriebezeichnung"
 #. CategoriesForm..ePath..TitleName
 #: uCategories.dfm:134
 msgid "Please specify a directory"
-msgstr "bitte wählen Sie ein Verzeichnis"
+msgstr "Bitte wählen Sie ein Verzeichnis"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:726
@@ -199,7 +199,7 @@ msgstr "Neue Kategorie hinzufügen..."
 #. MainForm..alPopup..aShowMainForm..Caption
 #: uMain.dfm:3973
 msgid "Show"
-msgstr "zeige"
+msgstr "Zeige"
 
 #. MainForm..alPopup..aExit..Caption
 #: uMain.dfm:3977
@@ -279,7 +279,7 @@ msgstr "Datenbank wieder herstellen..."
 #. MainForm..alToolbar..aDBVacuum..Caption
 #: uMain.dfm:4239
 msgid "Database vacuum"
-msgstr "Datenbank komprimieren"
+msgstr "Datenbank reorganisieren"
 
 #: uPluginsForm.dfm:5
 msgid "Plugins"
@@ -293,7 +293,7 @@ msgstr "Homepage besuchen"
 #. MainForm..PictureDialog....Filter
 #: uMain.dfm:4267
 msgid "Supported images (*.bmp, *.jpg, *.gif, *.png)|*.bmp;*.jpg;*.gif;*.png"
-msgstr "unterstützte Bildformate (*. bmp, *. jpg, *. gif, *. png)"
+msgstr "unterstützte Bildformate (*.bmp, *.jpg, *.gif, *.png)|*.bmp;*.jpg;*.gif;*.png"
 
 #. MainForm..OD..Filter
 #: uMain.dfm:4273
@@ -303,7 +303,7 @@ msgstr "Alle Dateien (*.*)|*.*"
 #. MainForm..NFODialog..Filter
 #: uMain.dfm:6271
 msgid "NFO files (*.nfo)|*.nfo"
-msgstr "NFO-Dateien (*. nfo)"
+msgstr "NFO-Dateien (*.nfo)|*.nfo"
 
 #. NFOForm..Caption
 #: uNFOForm.dfm:5
@@ -328,7 +328,7 @@ msgstr "in Papierkorb verschieben"
 #. OptionsForm..Panel1..GroupBox1..cbHideDialogs..Caption
 #: uOptionsForm.dfm:60
 msgid "Hide copy/move/delete dialog"
-msgstr "Dialogfeld kopieren/Verschieben/Löschen/ausblenden"
+msgstr "Dialogfeld Kopieren/Verschieben/Löschen/Ausblenden"
 
 #. OptionsForm..Panel1..GroupBox1..cbICS..Caption
 #: uOptionsForm.dfm:68
@@ -484,17 +484,17 @@ msgstr "Quellpfad löschen"
 #. PreProcessForm..Panel1..SettingsPanel..cbDelNFO..Caption
 #: uPreprocessDirs.dfm:255
 msgid "Delete *.nfo"
-msgstr "*. nfo löschen"
+msgstr "*.nfo löschen"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelDIZ..Caption
 #: uPreprocessDirs.dfm:265
 msgid "Delete *.diz"
-msgstr " *. diz löschen"
+msgstr "*.diz löschen"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelSFV..Caption
 #: uPreprocessDirs.dfm:275
 msgid "Delete *.sfv"
-msgstr " *. sfv löschen"
+msgstr "*.sfv löschen"
 
 #. PreProcessForm..Panel1..SettingsPanel..eTags..EditLabel.Caption
 #: uPreprocessDirs.dfm:287
@@ -649,11 +649,11 @@ msgstr "wird in Datenbank gespeichert..."
 
 #: Findnfoforsave
 msgid "Find *.nfo for save..."
-msgstr " *.nfo für Sicherung suchen..."
+msgstr "*.nfo für Sicherung suchen..."
 
 #: Savesforprocess
 msgid "Save '%s' for product..."
-msgstr "Speichern Sie \"% s\" als Produkt..."
+msgstr "Speichern Sie '%s' als Produkt..."
 
 #: Findimageforsave
 msgid "Find image for save..."
@@ -749,7 +749,7 @@ msgstr "Wollen Sie wirklich die gewählten Verzeichnisse löschen?"
 
 #: AreyousuredeletethesourcefilesPath
 msgid "Are you sure delete the source files? Path: %s"
-msgstr "Wollen Sie wirklich die Quelldateien löschen? Pfad:%s"
+msgstr "Wollen Sie wirklich die Quelldateien löschen? Pfad: %s"
 
 #: Preparing
 msgid "Preparing..."
@@ -781,7 +781,7 @@ msgstr "Einige Verzeichnisse werden noch verarbeitet! Wollen Sie wirklich abbrec
 
 #: Errorduringspluginprocesss
 msgid "Error during %s plugin process: %s"
-msgstr "Fehler in %s Plugin-Prozess:%s"
+msgstr "Fehler in %s Plugin-Prozess: %s"
 
 #: Regeneratetags
 msgid "Regenerate tags..."
@@ -825,7 +825,7 @@ msgstr "Konsistenzprüfung..."
 
 #: Thesdirectorydoesn
 msgid "The '%s' directory doesn't exists. Do you want to delete from library?"
-msgstr "Das '% s&#39; Verzeichnis existiert nicht. Wollen Sie aus der Bibliothek löschen?"
+msgstr "Das '%s' Verzeichnis existiert nicht. Wollen Sie aus der Bibliothek löschen?"
 
 #: Consistencecheckfinished
 msgid "Consistence check finished!"
@@ -833,15 +833,15 @@ msgstr "Konsistenzprüfung beendet!"
 
 #: Vacuummaindatabase
 msgid "Vacuum main database..."
-msgstr "leeren der Hauptdatenbank ..."
+msgstr "Reorganisieren der Hauptdatenbank ..."
 
 #: Vacuuminfodatabase
 msgid "Vacuum info database..."
-msgstr "leeren der Info Datenbank ..."
+msgstr "Reorganisieren der Info Datenbank ..."
 
 #: Vacuumfinished
 msgid "Vacuum finished!"
-msgstr "Vacuum beendet!"
+msgstr "Reorganisieren beendet!"
 
 #: Stufforganizerbackupfiles
 msgid "Stuff organizer backup files"
@@ -869,15 +869,15 @@ msgstr "Fehler bei der Wiederherstellung:"
 
 #: Preparings
 msgid "Preparing '%s'..."
-msgstr "'% S' wird vorbereitet..."
+msgstr "'%s' wird vorbereitet..."
 
 #: ThespecifiedsourcedirectoryshasbeenprocessedDoyouwanttocontinue
 msgid "The specified source directory (%s) has been processed! Do you want to continue?"
-msgstr "Das angegebene Quellverzeichnis (% s) wurde verarbeitet! Möchten Sie fortfahren?"
+msgstr "Das angegebene Quellverzeichnis (%s) wurde verarbeitet! Möchten Sie fortfahren?"
 
 #: RunningICSons
 msgid "Running ICS on '%s'..."
-msgstr "ICS wird auf '% s' ausgeführt..."
+msgstr "ICS wird auf '%s' ausgeführt..."
 
 #: Wouldyouliketomovedirectoriesaccordingtothenewcategory
 msgid "Would you like to move directories according to the new category?"
@@ -905,7 +905,7 @@ msgstr "nicht verarbeitete Elemente speichern..."
 
 #: Passwordfors
 msgid "Password for %s"
-msgstr "Passwort für% s"
+msgstr "Passwort für %s"
 
 #: Viewlog
 msgid "View log"
@@ -913,7 +913,7 @@ msgstr "Protokoll anzeigen"
 
 #: Processd
 msgid "Process (%d)"
-msgstr "Prozess (% d)"
+msgstr "Prozess (%d)"
 
 #: Newpath
 msgid "New path: "
@@ -925,7 +925,7 @@ msgstr "Sind Sie sicher, dass Sie die ausgewählten Elemente löschen wollen?"
 
 #: Thesitemcantdelete
 msgid "The '%s' item can't delete!"
-msgstr "% s' kann nicht gelöscht werden!"
+msgstr "'%s' kann nicht gelöscht werden!"
 
 #: nocategory
 msgid "<no category>"
@@ -977,7 +977,7 @@ msgstr "Wartet auf Beendigung des Programmabschnitts ..."
 
 #: Processings
 msgid "Processing %s..."
-msgstr "%S wird verarbeitet..."
+msgstr "%s wird verarbeitet..."
 
 #: Finished1
 msgid "Finished"
@@ -1021,8 +1021,7 @@ msgstr "Stuff Organizer ist eine freie Open-Source Datenbank-Anwendung. Sie kön
 
 #: PAD description 2000
 msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer is open source software distributed free of charge under the terms of the GNU General Public License. Main features: unpack compressed files (e.g: zip, rar) in two levels after unpack, cleans up the unused files in the directory (e.g: file_id.diz, sfv file) extract iso if you want sort to multi-level categories support drag-n-drop support tags save NFO file content and image to database get product description from the web (e.g: allrovi.com)"
-msgstr "Stuff Organizer ist eine freie Open-Source Datenbank-Anwendung. Sie können Ihre Dateien (Filme, Software, Spiele, Musik, e-Bücher oder was auch immer kategorisieren und sortieren. Wenn Sie viele heruntergeladene Dateien aus Torrent-Streams oder dem Web haben und sortieren möchten, brauchen Sie dieses Programm! Es funktioniert unter Windows 7  / Vista / XP / Server 2008 / Server 2003. Stuff Organizer wird als Open Source Software kostenlos verteilt unter den Bedingungen der GNU General Public License."
-"Hauptmerkmale:Stuff Organizer entpackt  komprimierte Dateien (z. B.: zip, rar) in zwei Ebenen, bereinigt die im Verzeichnis nicht mehr benötigten Dateien (zB: file_id.diz, sfv Dateien), extrahiert iso-Dateien wenn Sie in Multi-Level-Kategorien sortieren möchten, unterstützt Drag-n-Drop tags, sichert NFO-Dateiinhalte und Bild-Datenbanken. Sie können auch Produktbeschreibungen aus dem Internet laden ( zB: allrovi.com)"
+msgstr "Stuff Organizer ist eine freie Open-Source Datenbank-Anwendung. Sie können Ihre Dateien (Filme, Software, Spiele, Musik, e-Bücher oder was auch immer kategorisieren und sortieren. Wenn Sie viele heruntergeladene Dateien aus Torrent-Streams oder dem Web haben und sortieren möchten, brauchen Sie dieses Programm! Es funktioniert unter Windows 7  / Vista / XP / Server 2008 / Server 2003. Stuff Organizer wird als Open Source Software kostenlos verteilt unter den Bedingungen der GNU General Public License.Hauptmerkmale:Stuff Organizer entpackt  komprimierte Dateien (z. B.: zip, rar) in zwei Ebenen, bereinigt die im Verzeichnis nicht mehr benötigten Dateien (zB: file_id.diz, sfv Dateien), extrahiert iso-Dateien wenn Sie in Multi-Level-Kategorien sortieren möchten, unterstützt Drag-n-Drop tags, sichert NFO-Dateiinhalte und Bild-Datenbanken. Sie können auch Produktbeschreibungen aus dem Internet laden ( zB: allrovi.com)"
 
 #: Pleaserestartthesoftwareforchangestotakeeffect
 msgid "Please restart the software for changes to take effect!"
@@ -1030,7 +1029,7 @@ msgstr "bitte Stuff Organizer schließen und neu starten, damit die Veränderung
 
 #: Downloadingplugind
 msgid "Downloading plugin (%d%%)..."
-msgstr "Download Plugin (%d %%)..."
+msgstr "Download Plugin (%d%%)..."
 
 #: Downloadingpluginlist
 msgid "Downloading plugin list..."
@@ -1039,4 +1038,16 @@ msgstr "Download Pluginliste..."
 #: Applicationexitfortoupdate
 msgid "Application exit for install new plugin..."
 msgstr "Beende Anwendung um das neue Plugin zu installieren..."
+
+msgid "Directory doesn't exists! Path: %s"
+msgstr "Das Verzeichnis existiert nicht! Pfad: %s"
+
+msgid "Would you like to relocate items of category?"
+msgstr ""
+
+msgid "Relocating..."
+msgstr ""
+
+msgid "Relocating %s..."
+msgstr ""
 
