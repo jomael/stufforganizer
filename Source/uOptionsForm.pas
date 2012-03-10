@@ -88,12 +88,13 @@ end;
 procedure TOptionsForm.LoadLanguages;
 var
   I: Integer;
-  s, curLang: string;
+  cl, s, curLang: string;
 begin
   cbLanguages.Items.Clear;
   Langs.Clear;
   DefaultInstance.GetListOfLanguages('default', Langs);
-  s := GetCurrentLanguage;
+  cl := GetCurrentLanguage;
+  s := cl;
   curLang := CutAt(s, '_');
 
   cbLanguages.Items.Clear;
@@ -103,7 +104,7 @@ begin
     if s = '' then
       s := Langs[I];
     cbLanguages.Items.Add(s);
-    if LowerCase(Langs[I]) = LowerCase(curLang) then
+    if (LowerCase(Langs[I]) = LowerCase(curLang)) or (LowerCase(Langs[I]) = LowerCase(cl))  then
       cbLanguages.ItemIndex := cbLanguages.Items.Count -1;
   end;
 end;
