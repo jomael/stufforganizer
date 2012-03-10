@@ -43,19 +43,19 @@ begin
   if langcode='cy' then Result:='Welsh' else
   if langcode='da' then Result:='Danish' else
   if langcode='de' then Result:='German' else
-  if langcode='de_AT' then Result:='Austrian German' else
-  if langcode='de_CH' then Result:='Swiss German' else
+  if langcode='de_at' then Result:='Austrian German' else
+  if langcode='de_ch' then Result:='Swiss German' else
   if langcode='dv' then Result:='Divehi' else
   if langcode='dz' then Result:='Dzongkha' else
   if langcode='ee' then Result:='Ewe' else
   if langcode='el' then Result:='Greek' else
   if langcode='en' then Result:='English' else
-  if langcode='en_AU' then Result:='Australian English' else
-  if langcode='en_CA' then Result:='Canadian English' else
-  if langcode='en_GB' then Result:='British English' else
-  if langcode='en_US' then Result:='American English' else
+  if langcode='en_au' then Result:='Australian English' else
+  if langcode='en_ca' then Result:='Canadian English' else
+  if langcode='en_gb' then Result:='British English' else
+  if langcode='en_us' then Result:='American English' else
   if langcode='eo' then Result:='Esperanto' else
-  if langcode='es' then Result:='Spanish' else
+  if langcode='es_es' then Result:='Spanish' else
   if langcode='et' then Result:='Estonian' else
   if langcode='eu' then Result:='Basque' else
   if langcode='fa' then Result:='Persian' else
@@ -64,7 +64,7 @@ begin
   if langcode='fj' then Result:='Fijian' else
   if langcode='fo' then Result:='Faroese' else
   if langcode='fr' then Result:='French' else
-  if langcode='fr_BE' then Result:='Walloon' else
+  if langcode='fr_be' then Result:='Walloon' else
   if langcode='fy' then Result:='Frisian' else
   if langcode='ga' then Result:='Irish' else
   if langcode='gd' then Result:='Gaelic' else
@@ -134,7 +134,7 @@ begin
   if langcode='ne' then Result:='Nepali' else
   if langcode='ng' then Result:='Ndonga' else
   if langcode='nl' then Result:='Dutch' else
-  if langcode='nl_BE' then Result:='Flemish' else
+  if langcode='nl_be' then Result:='Flemish' else
   if langcode='nn' then Result:='Norwegian Nynorsk' else
   if langcode='no' then Result:='Norwegian' else
   if langcode='nr' then Result:='Ndebele, South' else
@@ -150,7 +150,7 @@ begin
   if langcode='pl' then Result:='Polish' else
   if langcode='ps' then Result:='Pushto' else
   if langcode='pt' then Result:='Portuguese' else
-  if langcode='pt_BR' then Result:='Brazilian Portuguese' else
+  if langcode='pt_br' then Result:='Brazilian Portuguese' else
   if langcode='qu' then Result:='Quechua' else
   if langcode='rm' then Result:='Raeto-Romance' else
   if langcode='rn' then Result:='Rundi' else
