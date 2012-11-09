@@ -1,0 +1,1053 @@
+# Stuff Organizer language file
+# Copyright (C) 2011 Ice Apps
+# This file is distributed under the same license as the Stuff Organizer application.
+# Ice Apps <so.iceapps@gmail.com>, 2011.
+# 
+msgid ""
+msgstr "Project-Id-Version: stuff-organizer\n"
+"POT-Creation-Date: 2011-10-24 21:39\n"
+"PO-Revision-Date: 2012-03-10 09:39+0100\n"
+"Last-Translator: iceapps <so.iceapps@gmail.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: crowdin.net\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Team: Spanish\n"
+
+#: uMain.dfm:4249
+msgid "About"
+msgstr "Acerca de"
+
+#: uMain.dfm:4259
+msgid "Check new version"
+msgstr "Prueba la nueva versión"
+
+#. AboutForm..Label2....Caption
+#: uAboutForm.dfm:350
+msgid "Stuff Organizer is open source software distributed free of charge under the terms of"
+msgstr "Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de"
+
+#. AboutForm..lGPL..Caption
+#: uAboutForm.dfm:367
+msgid "the GNU General Public License"
+msgstr "la GNU General Public License"
+
+#: uUserSelectForm.dfm:46
+msgid "OK"
+msgstr "Aceptar"
+
+#: uPreprocessDirs.dfm:147
+msgid "Category"
+msgstr "Categoría"
+
+#. CategoriesForm..Label1..Caption
+#: uCategories.dfm:41
+msgid "Category target path"
+msgstr "Ruta de destino de la categoría"
+
+#. CategoriesForm..Label2..Caption
+#: uCategories.dfm:49
+msgid "If blank, it's equal with source path"
+msgstr "Si se deja en blanco será igual a la ruta de origen"
+
+#. CategoriesForm..Label3..Caption
+#: uCategories.dfm:70
+msgid "Color"
+msgstr "Color"
+
+#. CategoriesForm..Label4..Caption
+#: uCategories.dfm:77
+msgid "Icon"
+msgstr "Icono"
+
+#: uUserSelectForm.dfm:57
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. CategoriesForm..Panel1..btnOk..Caption
+#: uCategories.dfm:108
+msgid "Ok"
+msgstr "Aceptar"
+
+#. CategoriesForm..eName..EditLabel.Caption
+#: uCategories.dfm:122
+msgid "Category name"
+msgstr "Nombre de la categoría"
+
+#. CategoriesForm..ePath..TitleName
+#: uCategories.dfm:134
+msgid "Please specify a directory"
+msgstr "Especifique un directorio"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:726
+msgid "Product name"
+msgstr "Nombre del producto"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:732
+msgid "Description"
+msgstr "Descripción"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:737
+msgid "Added"
+msgstr "Añadido"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:742
+msgid "Path"
+msgstr "Ruta"
+
+#. MainForm..DescrPanel..Panel4..Label1..Caption
+#: uMain.dfm:883
+msgid "Product information:"
+msgstr "Información del producto:"
+
+#. MainForm..DescrPanel..Panel4..lProductName..Hint
+#: uMain.dfm:897
+msgid "Click here to change"
+msgstr "Haz clic aquí para cambiar"
+
+#. MainForm..DescrPanel..Panel4..lURL..Hint
+#: uMain.dfm:917
+msgid "Click here to open"
+msgstr "Haz clic aquí para abrir"
+
+#. MainForm..DescrPanel..Panel4..lGoogleSearch..Hint
+#: uMain.dfm:938
+msgid "Click here to search in Google"
+msgstr "Haz clic aquí para buscar en Google"
+
+#. MainForm..DescrPanel..Panel4..lGoogleSearch..Caption
+#: uMain.dfm:941
+msgid "Google search"
+msgstr "Búsqueda en Google"
+
+#. MainForm..DescrPanel..Panel4..eTags..Hint
+#: uMain.dfm:957
+msgid "Product tags"
+msgstr "Etiquetas de producto"
+
+#. MainForm..DescrPanel..Panel4..eTags..TextHint
+#: uMain.dfm:969
+msgid "Enter tags"
+msgstr "Introducir etiquetas"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bShowNFO..Caption
+#: uMain.dfm:1023
+msgid "View NFO file"
+msgstr "Ver el archivo NFO"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bAddNFO..Caption
+#: uMain.dfm:1041
+msgid "Add NFO file"
+msgstr "Agregar archivo NFO"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bChangeURL..Caption
+#: uMain.dfm:1069
+msgid "Change URL"
+msgstr "Cambiar URL"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bChangePicture..Caption
+#: uMain.dfm:1087
+msgid "Change picture"
+msgstr "Cambiar imagen"
+
+#. MainForm..DescrPanel..DescrFuncPanel..lChnageDirectoryName..Caption
+#: uMain.dfm:1115
+msgid "Change directory name"
+msgstr "Cambiar nombre del directorio"
+
+#. MainForm..HeaderPanel..Panel1..eSearch..TextHint
+#: uMain.dfm:1464
+msgid "Enter the search text"
+msgstr "Introduce el texto de búsqueda"
+
+#. MainForm..pmList..pmiPluginFuncs..Caption
+#: uMain.dfm:3936
+msgid "Plugin functions"
+msgstr "Funciones del plugin"
+
+#. MainForm..alPopup..aModifyCategory..Caption
+#: uMain.dfm:3953
+msgid "Modify category..."
+msgstr "Modificar categoría..."
+
+#. MainForm..alPopup..aDeleteCategory..Caption
+#: uMain.dfm:3957
+msgid "Delete category..."
+msgstr "Eliminar categoría..."
+
+#. MainForm..alPopup..aDeleteItems..Caption
+#: uMain.dfm:3961
+msgid "Delete selected item(s)..."
+msgstr "Eliminar artículo(s) seleccionados..."
+
+#. MainForm..alPopup..aOpenDir..Caption
+#: uMain.dfm:3965
+msgid "Open directory"
+msgstr "Abrir directorio"
+
+#. MainForm..alPopup..aNewCategory..Caption
+#: uMain.dfm:3969
+msgid "Add new category..."
+msgstr "Añadir nueva categoría..."
+
+#. MainForm..alPopup..aShowMainForm..Caption
+#: uMain.dfm:3973
+msgid "Show"
+msgstr "Mostrar"
+
+#. MainForm..alPopup..aExit..Caption
+#: uMain.dfm:3977
+msgid "Exit"
+msgstr "Salir"
+
+#. MainForm..alPopup..aViewProcessLog..Caption
+#: uMain.dfm:3981
+msgid "View process log"
+msgstr "Ver registro de proceso"
+
+#. MainForm..alPopup..aReprocess..Caption
+#: uMain.dfm:3985
+msgid "Reprocess"
+msgstr "Volver a procesar"
+
+#. MainForm..alPopup..aDelSource..Caption
+#: uMain.dfm:3990
+msgid "Delete source files..."
+msgstr "Eliminar archivos de código fuente..."
+
+#. MainForm..alPopup..aOpenSourceDir..Caption
+#: uMain.dfm:3994
+msgid "Open source directory"
+msgstr "Abrir directorio fuente"
+
+#. MainForm..alPopup..aTargetToClipBoard..Caption
+#: uMain.dfm:3998
+msgid "Copy target directory to clipboard"
+msgstr "Copiar el directorio de destino en el portapapeles"
+
+#. MainForm..alToolbar..aAddFile..Caption
+#: uMain.dfm:4194
+msgid "Add files(s)..."
+msgstr "Añadir archivos(s)..."
+
+#. MainForm..alToolbar..aAddDirectory..Caption
+#: uMain.dfm:4199
+msgid "Add directory..."
+msgstr "Añadir directorio..."
+
+#. MainForm..alToolbar..aQueue..Caption
+#: uMain.dfm:4204
+msgid "Queue"
+msgstr "Cola"
+
+#. MainForm..alToolbar..aConsistenceCheck..Caption
+#: uMain.dfm:4209
+msgid "Consistence check"
+msgstr "Verificación de consistencia"
+
+#. MainForm..alToolbar..aAddStuff..Caption
+#: uMain.dfm:4214
+msgid "Add stuff"
+msgstr "Añadir cosas"
+
+#. MainForm..alToolbar..aAddToWatch..Caption
+#: uMain.dfm:4219
+msgid "Add directory to watchlist..."
+msgstr "Añadir directorio a lista de seguimiento..."
+
+#. MainForm..alToolbar..aSettings..Caption
+#: uMain.dfm:4224
+msgid "Settings"
+msgstr "Ajustes"
+
+#. MainForm..alToolbar..aDBBackup..Caption
+#: uMain.dfm:4229
+msgid "Database backup..."
+msgstr "Hacer copia de seguridad de la base de datos..."
+
+#. MainForm..alToolbar..aDBRestore..Caption
+#: uMain.dfm:4234
+msgid "Database restore..."
+msgstr "Restaurar base de datos..."
+
+#. MainForm..alToolbar..aDBVacuum..Caption
+#: uMain.dfm:4239
+msgid "Database vacuum"
+msgstr ""
+
+#: uPluginsForm.dfm:5
+msgid "Plugins"
+msgstr "Plugins"
+
+#. MainForm..alToolbar..aHomepage..Caption
+#: uMain.dfm:4254
+msgid "Visit homepage"
+msgstr "Ver la página de inicio"
+
+#. MainForm..PictureDialog....Filter
+#: uMain.dfm:4267
+msgid "Supported images (*.bmp, *.jpg, *.gif, *.png)|*.bmp;*.jpg;*.gif;*.png"
+msgstr "Imágenes compatibles (*.bmp, *.jpg, *.gif, *.png)|*.bmp,*.jpg,*.gif,*.png"
+
+#. MainForm..OD..Filter
+#: uMain.dfm:4273
+msgid "All files (*.*)|*.*"
+msgstr "Todos los archivos (*.*)|*.*"
+
+#. MainForm..NFODialog..Filter
+#: uMain.dfm:6271
+msgid "NFO files (*.nfo)|*.nfo"
+msgstr "NFO archivos (* nfo.) | *.nfo"
+
+#. NFOForm..Caption
+#: uNFOForm.dfm:5
+msgid "NFO Viewer"
+msgstr "Visor NFO"
+
+#. OptionsForm..Caption
+#: uOptionsForm.dfm:4
+msgid "Preferences"
+msgstr "Preferencias"
+
+#. OptionsForm..Panel1..GroupBox1..Caption
+#: uOptionsForm.dfm:45
+msgid "Process settings"
+msgstr "Ajustes de procesos"
+
+#. OptionsForm..Panel1..GroupBox1..cbDelToRB..Caption
+#: uOptionsForm.dfm:52
+msgid "Delete to recycle bin"
+msgstr "Eliminar (a la Papelera de reciclaje)"
+
+#. OptionsForm..Panel1..GroupBox1..cbHideDialogs..Caption
+#: uOptionsForm.dfm:60
+msgid "Hide copy/move/delete dialog"
+msgstr "Ocultar diálogos al copiar/mover/eliminar"
+
+#. OptionsForm..Panel1..GroupBox1..cbICS..Caption
+#: uOptionsForm.dfm:68
+msgid "Enable ICS (Intelligent category selector)"
+msgstr "Habilitar ICS (selector de categorías inteligente)"
+
+#. OptionsForm..Panel1..GroupBox2..Caption
+#: uOptionsForm.dfm:77
+msgid "Auto update"
+msgstr "Actualización automática"
+
+#. OptionsForm..Panel1..GroupBox2..bCheckUpdate..Caption
+#: uOptionsForm.dfm:86
+msgid "Check now"
+msgstr "Comprobar ahora"
+
+#. OptionsForm..Panel1..GroupBox2..cbCheckNewVersion..Caption
+#: uOptionsForm.dfm:100
+msgid "Check new version at start"
+msgstr "Comprobar nuevas versiones al iniciar"
+
+#. OptionsForm..Panel1..GroupBox3..Caption
+#: uOptionsForm.dfm:109
+msgid "Extensions"
+msgstr "Extensiones"
+
+#. OptionsForm..Panel1..GroupBox4..Caption
+#: uOptionsForm.dfm:127
+msgid "Languages"
+msgstr "Idiomas"
+
+#. OptionsForm..Panel1..GroupBox4..lDownloadLangs..Caption
+#: uOptionsForm.dfm:136
+msgid "Download languages..."
+msgstr "Descargar idiomas..."
+
+#. OptionsForm..Panel1..GroupBox4..lTranslateTo..Caption
+#: uOptionsForm.dfm:153
+msgid "Translate to your native language"
+msgstr "Traducir a su idioma nativo"
+
+#. PasswordForm..Caption
+#: uPasswordForm.dfm:4
+msgid "Password"
+msgstr "Contraseña"
+
+#. PasswordForm..ePass..EditLabel.Caption
+#: uPasswordForm.dfm:26
+msgid "Enter the password"
+msgstr "Introduce la contraseña"
+
+#: uPreprocessDirs.dfm:339
+msgid "Close"
+msgstr "Cerrar"
+
+#: uPluginsForm.dfm:281
+msgid "Installed plugins"
+msgstr "Plugins instalados"
+
+#. PluginsForm..GroupBox1..Panel2..Label1..Caption
+#: uPluginsForm.dfm:107
+msgid "Name:"
+msgstr "Nombre:"
+
+#. PluginsForm..GroupBox1..Panel2..Label2..Caption
+#: uPluginsForm.dfm:116
+msgid "Version:"
+msgstr "Versión:"
+
+#. PluginsForm..GroupBox1..Panel2..Label3..Caption
+#: uPluginsForm.dfm:125
+msgid "Author:"
+msgstr "Autor:"
+
+#. PluginsForm..GroupBox1..Panel2..Label4..Caption
+#: uPluginsForm.dfm:134
+msgid "Web:"
+msgstr "Web:"
+
+#. PluginsForm..GroupBox1..Panel2..Label5..Caption
+#: uPluginsForm.dfm:143
+msgid "Description:"
+msgstr "Descripción:"
+
+#. PluginsForm..GroupBox1..Panel2..bInstall..Caption
+#: uPluginsForm.dfm:225
+msgid "Install"
+msgstr "Instalar"
+
+#. PluginsForm..GroupBox1..Panel3..IceTabSet1......Caption
+#: uPluginsForm.dfm:286
+msgid "Downloadable plugins"
+msgstr "Plugins descargables"
+
+#. PreProcessForm..Caption
+#: uPreprocessDirs.dfm:5
+msgid "Preprocessing new directories"
+msgstr "Procesando nuevos directorios"
+
+#: uPreprocessDirs.dfm:215
+msgid "New directory name"
+msgstr "Nuevo nombre del directorio"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:83
+msgid "Old directory"
+msgstr "Directorio antiguo"
+
+#: uPreprocessDirs.dfm:225
+msgid "Unpack"
+msgstr "Descomprimir"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:95
+msgid "ISO"
+msgstr "ISO"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:102
+msgid "Del source"
+msgstr "Eliminar origen"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:109
+msgid "Size"
+msgstr "Tamaño"
+
+#. PreProcessForm..Panel1..SettingsPanel..lNewPath..Caption
+#: uPreprocessDirs.dfm:156
+msgid "New path:"
+msgstr "Nueva ruta:"
+
+#. PreProcessForm..Panel1..SettingsPanel..lAddCat..Caption
+#: uPreprocessDirs.dfm:170
+msgid "Add"
+msgstr "Añadir"
+
+#. PreProcessForm..Panel1..SettingsPanel..lSaveDefault..Caption
+#: uPreprocessDirs.dfm:188
+msgid "Save as default"
+msgstr "Guardar como predeterminado"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbUnPackISO..Caption
+#: uPreprocessDirs.dfm:235
+msgid "Extract ISO"
+msgstr "Extraer ISO"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelSource..Caption
+#: uPreprocessDirs.dfm:245
+msgid "Delete source path"
+msgstr "Eliminar la ruta de origen"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelNFO..Caption
+#: uPreprocessDirs.dfm:255
+msgid "Delete *.nfo"
+msgstr "Eliminar *.nfo"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelDIZ..Caption
+#: uPreprocessDirs.dfm:265
+msgid "Delete *.diz"
+msgstr "Eliminar *.diz"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelSFV..Caption
+#: uPreprocessDirs.dfm:275
+msgid "Delete *.sfv"
+msgstr "Eliminar *.sfv"
+
+#. PreProcessForm..Panel1..SettingsPanel..eTags..EditLabel.Caption
+#: uPreprocessDirs.dfm:287
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. PreProcessForm..Panel2..bOk..Caption
+#: uPreprocessDirs.dfm:328
+msgid "Process"
+msgstr "Proceso"
+
+#. PreProcessForm..PopupMenu1..Deleteselecteditem1..Caption
+#: uPreprocessDirs.dfm:349
+msgid "Delete selected item"
+msgstr "Eliminar el artículo seleccionado"
+
+#. PreProcessForm..PopupMenu1..Checkall1..Caption
+#: uPreprocessDirs.dfm:356
+msgid "Check all"
+msgstr "Marcar todo"
+
+#. PreProcessForm..PopupMenu1..Uncheckall1..Caption
+#: uPreprocessDirs.dfm:360
+msgid "Uncheck all"
+msgstr "Desmarcar todo"
+
+#. ThreadProcessForm..Caption
+#: uThreadProcessForm.dfm:5
+msgid "Processing"
+msgstr "Procesamiento"
+
+#. ThreadProcessForm..Panel1..lMainCaption..Caption
+#: uThreadProcessForm.dfm:54
+msgid "Processing..."
+msgstr "Procesando..."
+
+#. ThreadProcessForm..Panel1..lElapsedTime..Caption
+#: uThreadProcessForm.dfm:61
+msgid "Elapsed time:"
+msgstr "Tiempo transcurrido:"
+
+#. ThreadProcessForm..Panel1..lEstimatedTime..Caption
+#: uThreadProcessForm.dfm:70
+msgid "Estimated time:"
+msgstr "Tiempo estimado:"
+
+#. ThreadProcessForm..Panel2..Label1..Caption
+#: uThreadProcessForm.dfm:113
+msgid "Priority"
+msgstr "Prioridad"
+
+#. ThreadProcessForm..Panel2..btnHide..Caption
+#: uThreadProcessForm.dfm:121
+msgid "Hide"
+msgstr "Ocultar"
+
+#. ThreadProcessForm..Panel2..btnPause..Caption
+#: uThreadProcessForm.dfm:131
+msgid "Pause"
+msgstr "Pausa"
+
+#. ThreadProcessForm..Panel2..btnStop..Caption
+#: uThreadProcessForm.dfm:141
+msgid "Stop"
+msgstr "Detener"
+
+#: uThreadProcessForm.dfm:160
+msgid "Normal"
+msgstr "Normal"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:158
+msgid "Low"
+msgstr "Bajo"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:159
+msgid "Below normal"
+msgstr "Por debajo de lo normal"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:161
+msgid "Above normal"
+msgstr "Por encima de lo normal"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:162
+msgid "High"
+msgstr "Alto"
+
+#. ThreadProcessForm..GroupBox1..Caption
+#: uThreadProcessForm.dfm:171
+msgid "Process log"
+msgstr "Registro de proceso"
+
+#. ThreadProcessForm..GroupBox1..LogList......WideText
+#: uThreadProcessForm.dfm:200
+msgid "Log"
+msgstr "Registro"
+
+#. ThreadProcessForm..GroupBox1..LogList......WideText
+#: uThreadProcessForm.dfm:205
+msgid "Progress"
+msgstr "Progreso"
+
+#: uUpdateForm.dfm:61
+msgid "Update"
+msgstr "Actualizar"
+
+#. UpdateForm..GroupBox1..Caption
+#: uUpdateForm.dfm:73
+msgid "Update content"
+msgstr "Actualizar contenido"
+
+#. UpdateForm..GroupBox1..DataList......WideText
+#: uUpdateForm.dfm:105
+msgid "Module"
+msgstr "Módulo"
+
+#. UpdateForm..GroupBox1..DataList......WideText
+#: uUpdateForm.dfm:110
+msgid "Date"
+msgstr "Fecha"
+
+#. UpdateForm..GroupBox1..DataList......WideText
+#: uUpdateForm.dfm:115
+msgid "Version"
+msgstr "Versión"
+
+#. UpdateForm..GroupBox1..GroupBox2..Caption
+#: uUpdateForm.dfm:128
+msgid "Changes"
+msgstr "Cambios"
+
+#. UpdateForm..Panel1..lMainCaption..Caption
+#: uUpdateForm.dfm:178
+msgid "New version found!"
+msgstr "¡Nueva versión encontrada!"
+
+#. UserSelectForm..Caption
+#: uUserSelectForm.dfm:5
+msgid "Select an item"
+msgstr "Seleciona un artículo"
+
+#: Pleaseenteraname
+msgid "Please enter a name!"
+msgstr "¡Introduce un nombre!"
+
+#: Savingtodatabase
+msgid "Saving to database..."
+msgstr "Guardando en la base de datos..."
+
+#: Findnfoforsave
+msgid "Find *.nfo for save..."
+msgstr "Buscar *.nfo para guardar..."
+
+#: Savesforprocess
+msgid "Save '%s' for product..."
+msgstr "Guardar '%s' para producto..."
+
+#: Findimageforsave
+msgid "Find image for save..."
+msgstr "Buscar imagen para guardar..."
+
+#: Waitingforpassword
+msgid "Waiting for password..."
+msgstr "Esperando la contraseña..."
+
+#: Deletedsourcefiles
+msgid "Deleted source files."
+msgstr "Archivos de código fuente eliminados."
+
+#: Deletesourcedirectorys
+msgid "Delete source directory '%s'..."
+msgstr "Directorio de origen eliminado '%s'..."
+
+#: Movestotargetpath
+msgid "Move '%s' to target path..."
+msgstr "Mover '%s' a la ruta de destino..."
+
+#: Filemoveerror
+msgid "File move error: "
+msgstr "Error al mover el archivo: "
+
+#: Deletetemporarydirectory2
+msgid "Delete temporary directory #2..."
+msgstr "Eliminar temporalmente el directorio #2..."
+
+#: Targetdirectorydoesntexists
+msgid "Target directory doesn't exists!"
+msgstr "¡No existe el directorio de destino!"
+
+#: Deletetemporarydirectory1
+msgid "Delete temporary directory #1..."
+msgstr "Eliminar temporalmente el directorio #1..."
+
+#: Deletedsourcedirectorys
+msgid "Deleted source directory '%s'."
+msgstr "Directorio de origen eliminado '%s'."
+
+#: Deletesourcefiles0
+msgid "Delete source file '%s'..."
+msgstr "Eliminar archivo de origen '%s'..."
+
+#: Deletedsourcefiles0
+msgid "Deleted source file '%s'."
+msgstr "Archivo de origen eliminado '%s'."
+
+#: Searcharchives
+msgid "Search archives..."
+msgstr "Buscar archivos..."
+
+#: Unpacks
+msgid "Unpack '%s'..."
+msgstr "Descomprimir '%s'..."
+
+#: Unpackerror
+msgid "Unpack error!"
+msgstr "¡Error al descomprimir!"
+
+#: Extracts
+msgid "Extract '%s'..."
+msgstr "Extraer '%s'..."
+
+#: Extracterror
+msgid "Extract error!"
+msgstr "¡Error de extracción!"
+
+#: Movestotemp
+msgid "Move '%s' to temp..."
+msgstr ""
+
+#: Copystotemp
+msgid "Copy '%s' to temp..."
+msgstr ""
+
+#: Filecopyerror
+msgid "File copy error: "
+msgstr "Error al copiar archivos: "
+
+#: Pleasewaituntiltheprocessingoperationsarecompleted
+msgid "Please wait until the processing operations are completed!"
+msgstr "¡Espera a que las demás operaciones terminen de procesarse!"
+
+#: Doyouwanttodeletethe
+msgid "Do you want to delete the '%s' category?"
+msgstr "¿Desea eliminar la categoría de '%s'?"
+
+#: Areyousuredeletetheselecteddirectories
+msgid "Are you sure delete the selected directories?"
+msgstr "¿Deseas eliminar los directorios seleccionados?"
+
+#: AreyousuredeletethesourcefilesPath
+msgid "Are you sure delete the source files? Path: %s"
+msgstr "¿Deseas eliminar los archivos de origen? Ruta: %s"
+
+#: Preparing
+msgid "Preparing..."
+msgstr "Preparando..."
+
+#: Pleasewait
+msgid "Please wait"
+msgstr "Espera, por favor"
+
+#: Reprocess
+msgid "Reprocess %s..."
+msgstr "Volver a procesar %s..."
+
+#: Addnewcategory
+msgid "Add new category"
+msgstr "Añadir nueva categoría"
+
+#: EnterURL
+msgid "Enter URL"
+msgstr "Introducir URL"
+
+#: DoyouwanttocontinuewithclosingmightcauseDATALOSS
+msgid "Do you want to continue with closing (might cause DATA LOSS)?"
+msgstr "¿Deseas continuar con el cierre? (Podría causar pérdida de datos)"
+
+#: SomefoldersarestillbeingprocessedDoyoureallywanttoexit
+msgid "Some folders are still being processed. Do you really want to exit?"
+msgstr "Algunas carpetas todavía se están procesando. ¿Deseas salir de todas formas?"
+
+#: Errorduringspluginprocesss
+msgid "Error during %s plugin process: %s"
+msgstr "Error durante el proceso de plugin %s: %s"
+
+#: Regeneratetags
+msgid "Regenerate tags..."
+msgstr "Regenerar etiquetas..."
+
+#: Generatematrixtointelligentsorter
+msgid "Generate matrix to intelligent sorter..."
+msgstr ""
+
+#: Calculatingtagsusage
+msgid "Calculating tags usage..."
+msgstr "Calculando etiquetas usadas..."
+
+#: Allproducts
+msgid "All products"
+msgstr "Todos los productos"
+
+#: Addcategory
+msgid "< Add category... >"
+msgstr "< Añadir categoría... >"
+
+#: Queued
+msgid "Queue (%d)"
+msgstr "Cola (%d)"
+
+#: Enternewdirectoryname
+msgid "Enter new directory name"
+msgstr "Escribir un nuevo nombre de directorio"
+
+#: Wouldyouliketosetdirectorynametoproductname
+msgid "Would you like to set directory name to product name?"
+msgstr "¿Te gustaría ponerle un nombre al directorio del producto?"
+
+#: Pleaseaddsometagstoproduct
+msgid "Please add some tags to product!"
+msgstr "¡Añade alguna etiqueta al producto!"
+
+#: Consistencechecking
+msgid "Consistence checking..."
+msgstr "Comprobando la consistencia..."
+
+#: Thesdirectorydoesn
+msgid "The '%s' directory doesn't exists. Do you want to delete from library?"
+msgstr "El directorio '%s' no existe. ¿Deseas eliminarlo de la biblioteca?"
+
+#: Consistencecheckfinished
+msgid "Consistence check finished!"
+msgstr "¡Verificación de consistencia terminada!"
+
+#: Vacuummaindatabase
+msgid "Vacuum main database..."
+msgstr ""
+
+#: Vacuuminfodatabase
+msgid "Vacuum info database..."
+msgstr ""
+
+#: Vacuumfinished
+msgid "Vacuum finished!"
+msgstr ""
+
+#: Stufforganizerbackupfiles
+msgid "Stuff organizer backup files"
+msgstr "Copia de seguridad del organizador"
+
+#: Backup
+msgid "Backup..."
+msgstr "Hacer copia de seguridad..."
+
+#: Finished
+msgid "Finished!"
+msgstr "¡Terminado!"
+
+#: Errorduringbackup
+msgid "Error during backup: "
+msgstr "Error durante la copia de seguridad: "
+
+#: Restore
+msgid "Restore..."
+msgstr "Restaurar..."
+
+#: Errorduringrestore
+msgid "Error during restore: "
+msgstr "Error durante la restauración: "
+
+#: Preparings
+msgid "Preparing '%s'..."
+msgstr "Preparando '%s'..."
+
+#: ThespecifiedsourcedirectoryshasbeenprocessedDoyouwanttocontinue
+msgid "The specified source directory (%s) has been processed! Do you want to continue?"
+msgstr "¡El directorio de origen especificado (%s) se ha procesado! ¿Deseas continuar?"
+
+#: RunningICSons
+msgid "Running ICS on '%s'..."
+msgstr "Ejecuta ICS en '%s'..."
+
+#: Wouldyouliketomovedirectoriesaccordingtothenewcategory
+msgid "Would you like to move directories according to the new category?"
+msgstr "¿Le gustaría mover directorios de acuerdo a la nueva categoría?"
+
+#: Deleteitems
+msgid "Delete items..."
+msgstr "Eliminar elementos..."
+
+#: Delete
+msgid "Delete "
+msgstr "Eliminar "
+
+#: Wouldyouliketodeletethesefoldersonharddisk
+msgid "Would you like to delete these folders on hard disk?"
+msgstr "¿Le gustaría eliminar estas carpetas en el disco duro?"
+
+#: Modifycategoryproperties
+msgid "Modify category properties"
+msgstr "Modificar propiedades de categoría"
+
+#: Saveunprocesseditems
+msgid "Save unprocessed items..."
+msgstr "Guardar elementos sin procesar..."
+
+#: Passwordfors
+msgid "Password for %s"
+msgstr "Contraseña para %s"
+
+#: Viewlog
+msgid "View log"
+msgstr "Ver registro"
+
+#: Processd
+msgid "Process (%d)"
+msgstr "Proceso (%d)"
+
+#: Newpath
+msgid "New path: "
+msgstr "Nueva ruta:"
+
+#: Areyousuredeletetheselecteditems
+msgid "Are you sure delete the selected items?"
+msgstr "¿Es que seguro eliminar los elementos seleccionados?"
+
+#: Thesitemcantdelete
+msgid "The '%s' item can't delete!"
+msgstr "No se puede eliminar el elemento '%s'!"
+
+#: nocategory
+msgid "<no category>"
+msgstr "<ninguna categoría>"
+
+#: Settingssavedasdefault
+msgid "Settings saved as default."
+msgstr "Configuración guardada por defecto."
+
+#: Finished0
+msgid "Finished."
+msgstr "Terminado."
+
+#: Aborted
+msgid "Aborted."
+msgstr "Anulado."
+
+#: Applicationexitfortoupdate
+msgid "Application exit for to update..."
+msgstr "La aplicación se cerrará para actualizar..."
+
+#: Applicationisuptodate
+msgid "Application is up to date."
+msgstr "Aplicación está actualizada."
+
+#: Unknowupdatefile
+msgid "Unknow update file!"
+msgstr "Desconocido archivo de actualización!"
+
+#: Updateinfonotfound
+msgid "Update info not found!"
+msgstr "Actualizar información no encontrada!"
+
+#: Updateerror
+msgid "Update error! "
+msgstr "Error de actualización! "
+
+#: Resume
+msgid "Resume"
+msgstr "Reanudar"
+
+#: Areyousurestoptheprocessing
+msgid "Are you sure stop the processing?"
+msgstr "¿Estás seguro de detener el procesamiento?"
+
+#: Waitingforthreadterminate
+msgid "Waiting for thread terminate..."
+msgstr "En espera de subproceso terminar..."
+
+#: Processings
+msgid "Processing %s..."
+msgstr "Procesamiento de %s..."
+
+#: Finished1
+msgid "Finished"
+msgstr "Terminado"
+
+#: Elapsedtimes
+msgid "Elapsed time: %s"
+msgstr "Tiempo transcurrido: %s"
+
+#: Estimatedtimes
+msgid "Estimated time: %s"
+msgstr "Tiempo estimado: %s"
+
+#: Downloaderror
+msgid "Download error: "
+msgstr "Error de descarga: "
+
+#: VersiondddBuildd
+msgid "Version %d.%d.%d ( Build %d )"
+msgstr "Versión %d.%d.%d (compilación %d)"
+
+#: Savedtodatabase
+msgid "Saved to database."
+msgstr "Guardado en la base de datos."
+
+#: Mainmodule
+msgid "Main module"
+msgstr "Módulo principal"
+
+#: PAD keywords
+msgid "catalog, stuff, organizer, collection, library, movie, applications, software, music, game, uncompressor, decompressor"
+msgstr "catálogo, cosas, organizador, colección, biblioteca, película, aplicaciones, software, música, juego, descompresor y compresor"
+
+#: PAD description 40
+msgid "Stuff Organizer is a catalog software"
+msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003. Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de la licencia pública General de GNU. Principales características: descomprimir archivos comprimidos (e.g: zip, rar) en dos niveles después de desembalar, limpia los archivos no utilizados en el directorio (por ejemplo: file_id.diz, archivo sfv) extraer iso si desea ordenar categorías multinivel apoyo apoyo de arrastrar-n-colocar etiquetas guardar el contenido del archivo NFO y descripción del producto de base de datos obtener imagen desde la web (por ejemplo: allrovi.com)"
+
+#: PAD description 450
+msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003."
+msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003."
+
+#: PAD description 2000
+msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer is open source software distributed free of charge under the terms of the GNU General Public License. Main features: unpack compressed files (e.g: zip, rar) in two levels after unpack, cleans up the unused files in the directory (e.g: file_id.diz, sfv file) extract iso if you want sort to multi-level categories support drag-n-drop support tags save NFO file content and image to database get product description from the web (e.g: allrovi.com)"
+msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003. Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de la licencia pública General de GNU. Principales características: descomprimir archivos comprimidos (e.g: zip, rar) en dos niveles después de desembalar, limpia los archivos no utilizados en el directorio (por ejemplo: file_id.diz, archivo sfv) extraer iso si desea ordenar categorías multinivel apoyo apoyo de arrastrar-n-colocar etiquetas guardar el contenido del archivo NFO y descripción del producto de base de datos obtener imagen desde la web (por ejemplo: allrovi.com)"
+
+#: Pleaserestartthesoftwareforchangestotakeeffect
+msgid "Please restart the software for changes to take effect!"
+msgstr "Por favor, reinicie el software para que los cambios surtan efecto."
+
+#: Downloadingplugind
+msgid "Downloading plugin (%d%%)..."
+msgstr "Descargando plugin (%d%%)..."
+
+#: Downloadingpluginlist
+msgid "Downloading plugin list..."
+msgstr "Descargando lista de plugin..."
+
+#: Applicationexitfortoupdate
+msgid "Application exit for install new plugin..."
+msgstr "Salir de la aplicación para instalar un nuevo plugin..."
+
+msgid "Directory doesn't exists! Path: %s"
+msgstr "¡No existes el directorio! Ruta: %s"
+
+msgid "Would you like to relocate items of category?"
+msgstr "¿Deseas reubicar los objetos de categoría?"
+
+msgid "Relocating..."
+msgstr "Reubicando..."
+
+msgid "Relocating %s..."
+msgstr "Reubicando %s..."
+
