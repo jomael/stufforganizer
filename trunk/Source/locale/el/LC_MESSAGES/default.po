@@ -1,0 +1,1053 @@
+# Stuff Organizer language file
+# Copyright (C) 2011 Ice Apps
+# This file is distributed under the same license as the Stuff Organizer application.
+# Ice Apps <so.iceapps@gmail.com>, 2011.
+# 
+msgid ""
+msgstr "Project-Id-Version: stuff-organizer\n"
+"POT-Creation-Date: 2011-10-24 21:39\n"
+"PO-Revision-Date: 2012-11-08 14:33+0100\n"
+"Last-Translator: dream-garden\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: crowdin.net\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Team: Greek\n"
+
+#: uMain.dfm:4249
+msgid "About"
+msgstr "Περί"
+
+#: uMain.dfm:4259
+msgid "Check new version"
+msgstr "Έλεγχος για νέα έκδοση"
+
+#. AboutForm..Label2....Caption
+#: uAboutForm.dfm:350
+msgid "Stuff Organizer is open source software distributed free of charge under the terms of"
+msgstr "Το Stuff Organizer είναι ανοικτού κώδικα λογισμικό. Διανέμεται δωρεάν βάσει των όρων της"
+
+#. AboutForm..lGPL..Caption
+#: uAboutForm.dfm:367
+msgid "the GNU General Public License"
+msgstr "GNU General Public License"
+
+#: uUserSelectForm.dfm:46
+msgid "OK"
+msgstr "Εντάξει"
+
+#: uPreprocessDirs.dfm:147
+msgid "Category"
+msgstr "Κατηγορία"
+
+#. CategoriesForm..Label1..Caption
+#: uCategories.dfm:41
+msgid "Category target path"
+msgstr "Κατηγορία διαδρομής προορισμού"
+
+#. CategoriesForm..Label2..Caption
+#: uCategories.dfm:49
+msgid "If blank, it's equal with source path"
+msgstr "Εάν είναι κενή, είναι ίση με τη διαδρομή προέλευσης"
+
+#. CategoriesForm..Label3..Caption
+#: uCategories.dfm:70
+msgid "Color"
+msgstr "Χρώμα"
+
+#. CategoriesForm..Label4..Caption
+#: uCategories.dfm:77
+msgid "Icon"
+msgstr "Εικονίδιο"
+
+#: uUserSelectForm.dfm:57
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#. CategoriesForm..Panel1..btnOk..Caption
+#: uCategories.dfm:108
+msgid "Ok"
+msgstr "Εντάξει"
+
+#. CategoriesForm..eName..EditLabel.Caption
+#: uCategories.dfm:122
+msgid "Category name"
+msgstr "Όνομα κατηγορίας"
+
+#. CategoriesForm..ePath..TitleName
+#: uCategories.dfm:134
+msgid "Please specify a directory"
+msgstr "Παρακαλώ καθορίστε έναν φάκελο"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:726
+msgid "Product name"
+msgstr "Όνομα προϊόντος"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:732
+msgid "Description"
+msgstr "Περιγραφή"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:737
+msgid "Added"
+msgstr "Προστέθηκαν"
+
+#. MainForm..ListPanel..Panel3..VList......WideText
+#: uMain.dfm:742
+msgid "Path"
+msgstr "Διαδρομή"
+
+#. MainForm..DescrPanel..Panel4..Label1..Caption
+#: uMain.dfm:883
+msgid "Product information:"
+msgstr "Πληροφορίες για το προϊόν:"
+
+#. MainForm..DescrPanel..Panel4..lProductName..Hint
+#: uMain.dfm:897
+msgid "Click here to change"
+msgstr "Κλικ εδώ για αλλαγή"
+
+#. MainForm..DescrPanel..Panel4..lURL..Hint
+#: uMain.dfm:917
+msgid "Click here to open"
+msgstr "Κλικ εδώ για άνοιγμα"
+
+#. MainForm..DescrPanel..Panel4..lGoogleSearch..Hint
+#: uMain.dfm:938
+msgid "Click here to search in Google"
+msgstr "Κάντε κλικ εδώ για να κάνετε αναζήτηση στο Google"
+
+#. MainForm..DescrPanel..Panel4..lGoogleSearch..Caption
+#: uMain.dfm:941
+msgid "Google search"
+msgstr "Αναζήτηση Google"
+
+#. MainForm..DescrPanel..Panel4..eTags..Hint
+#: uMain.dfm:957
+msgid "Product tags"
+msgstr "Ετικέτες προϊόντος"
+
+#. MainForm..DescrPanel..Panel4..eTags..TextHint
+#: uMain.dfm:969
+msgid "Enter tags"
+msgstr "Εισαγάγετε ετικέτες"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bShowNFO..Caption
+#: uMain.dfm:1023
+msgid "View NFO file"
+msgstr "Προβολή αρχείου NFO"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bAddNFO..Caption
+#: uMain.dfm:1041
+msgid "Add NFO file"
+msgstr "Προσθήκη αρχείου NFO"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bChangeURL..Caption
+#: uMain.dfm:1069
+msgid "Change URL"
+msgstr "Αλλαγή διεύθυνσης URL"
+
+#. MainForm..DescrPanel..DescrFuncPanel..bChangePicture..Caption
+#: uMain.dfm:1087
+msgid "Change picture"
+msgstr "Αλλαγή εικόνας"
+
+#. MainForm..DescrPanel..DescrFuncPanel..lChnageDirectoryName..Caption
+#: uMain.dfm:1115
+msgid "Change directory name"
+msgstr "Αλλαγή ονόματος καταλόγου"
+
+#. MainForm..HeaderPanel..Panel1..eSearch..TextHint
+#: uMain.dfm:1464
+msgid "Enter the search text"
+msgstr "Εισαγάγετε το κείμενο αναζήτησης"
+
+#. MainForm..pmList..pmiPluginFuncs..Caption
+#: uMain.dfm:3936
+msgid "Plugin functions"
+msgstr "Λειτουργίες Plugin"
+
+#. MainForm..alPopup..aModifyCategory..Caption
+#: uMain.dfm:3953
+msgid "Modify category..."
+msgstr "Τροποποίηση Κατηγορίας..."
+
+#. MainForm..alPopup..aDeleteCategory..Caption
+#: uMain.dfm:3957
+msgid "Delete category..."
+msgstr "Διαγραφή Κατηγορίας..."
+
+#. MainForm..alPopup..aDeleteItems..Caption
+#: uMain.dfm:3961
+msgid "Delete selected item(s)..."
+msgstr "Διαγραφή επιλεγμένου στοιχείου(ων)..."
+
+#. MainForm..alPopup..aOpenDir..Caption
+#: uMain.dfm:3965
+msgid "Open directory"
+msgstr "Ανοιγμα Καταλόγου"
+
+#. MainForm..alPopup..aNewCategory..Caption
+#: uMain.dfm:3969
+msgid "Add new category..."
+msgstr "Προσθήκη νέας κατηγορίας..."
+
+#. MainForm..alPopup..aShowMainForm..Caption
+#: uMain.dfm:3973
+msgid "Show"
+msgstr "Εμφάνιση"
+
+#. MainForm..alPopup..aExit..Caption
+#: uMain.dfm:3977
+msgid "Exit"
+msgstr "Έξοδος"
+
+#. MainForm..alPopup..aViewProcessLog..Caption
+#: uMain.dfm:3981
+msgid "View process log"
+msgstr "Προβολή διαδικασίας καταγραφής"
+
+#. MainForm..alPopup..aReprocess..Caption
+#: uMain.dfm:3985
+msgid "Reprocess"
+msgstr "Επανεπεξεργασία"
+
+#. MainForm..alPopup..aDelSource..Caption
+#: uMain.dfm:3990
+msgid "Delete source files..."
+msgstr "Διαγραφή αρχείων προέλευσης..."
+
+#. MainForm..alPopup..aOpenSourceDir..Caption
+#: uMain.dfm:3994
+msgid "Open source directory"
+msgstr "Ανοιγμα πηγαίου καταλόγου"
+
+#. MainForm..alPopup..aTargetToClipBoard..Caption
+#: uMain.dfm:3998
+msgid "Copy target directory to clipboard"
+msgstr "Αντιγραφή καταλόγου προορισμού στο Πρόχειρο"
+
+#. MainForm..alToolbar..aAddFile..Caption
+#: uMain.dfm:4194
+msgid "Add files(s)..."
+msgstr "Προσθήκη αρχείου(ων)..."
+
+#. MainForm..alToolbar..aAddDirectory..Caption
+#: uMain.dfm:4199
+msgid "Add directory..."
+msgstr "Προσθήκη καταλόγου..."
+
+#. MainForm..alToolbar..aQueue..Caption
+#: uMain.dfm:4204
+msgid "Queue"
+msgstr "Ουρά"
+
+#. MainForm..alToolbar..aConsistenceCheck..Caption
+#: uMain.dfm:4209
+msgid "Consistence check"
+msgstr "Συνοχή ελέγχου"
+
+#. MainForm..alToolbar..aAddStuff..Caption
+#: uMain.dfm:4214
+msgid "Add stuff"
+msgstr "Προσθήκη υλικού"
+
+#. MainForm..alToolbar..aAddToWatch..Caption
+#: uMain.dfm:4219
+msgid "Add directory to watchlist..."
+msgstr "Προσθήκη καταλόγου στη λίστα παρακολούθησης..."
+
+#. MainForm..alToolbar..aSettings..Caption
+#: uMain.dfm:4224
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#. MainForm..alToolbar..aDBBackup..Caption
+#: uMain.dfm:4229
+msgid "Database backup..."
+msgstr "Αντίγραφο ασφαλείας βάσης δεδομένων..."
+
+#. MainForm..alToolbar..aDBRestore..Caption
+#: uMain.dfm:4234
+msgid "Database restore..."
+msgstr "Επαναφορά βάσης δεδομένων..."
+
+#. MainForm..alToolbar..aDBVacuum..Caption
+#: uMain.dfm:4239
+msgid "Database vacuum"
+msgstr "Εκκαθάριση βάσης δεδομένων"
+
+#: uPluginsForm.dfm:5
+msgid "Plugins"
+msgstr "Πρόσθετα"
+
+#. MainForm..alToolbar..aHomepage..Caption
+#: uMain.dfm:4254
+msgid "Visit homepage"
+msgstr "Επισκεφθείτε την αρχική σελίδα"
+
+#. MainForm..PictureDialog....Filter
+#: uMain.dfm:4267
+msgid "Supported images (*.bmp, *.jpg, *.gif, *.png)|*.bmp;*.jpg;*.gif;*.png"
+msgstr "Υποστηρίζονται εικόνες (*.bmp *.jpg *.gif, *.png) |*.bmp;*.jpg;*.gif;*.png"
+
+#. MainForm..OD..Filter
+#: uMain.dfm:4273
+msgid "All files (*.*)|*.*"
+msgstr "Όλα τα αρχεία (*.*)|*.*"
+
+#. MainForm..NFODialog..Filter
+#: uMain.dfm:6271
+msgid "NFO files (*.nfo)|*.nfo"
+msgstr "Αρχεία NFO (*.nfo)|*.nfo"
+
+#. NFOForm..Caption
+#: uNFOForm.dfm:5
+msgid "NFO Viewer"
+msgstr "NFO Viewer"
+
+#. OptionsForm..Caption
+#: uOptionsForm.dfm:4
+msgid "Preferences"
+msgstr "Προτιμήσεις"
+
+#. OptionsForm..Panel1..GroupBox1..Caption
+#: uOptionsForm.dfm:45
+msgid "Process settings"
+msgstr "Ρυθμίσεις διαδικασίας"
+
+#. OptionsForm..Panel1..GroupBox1..cbDelToRB..Caption
+#: uOptionsForm.dfm:52
+msgid "Delete to recycle bin"
+msgstr "Διαγραφή στον Κάδο Ανακύκλωσης"
+
+#. OptionsForm..Panel1..GroupBox1..cbHideDialogs..Caption
+#: uOptionsForm.dfm:60
+msgid "Hide copy/move/delete dialog"
+msgstr "Απόκρυψη παραθύρου διαλόγου αντιγραφής/μετακίνησης/διαγραφής"
+
+#. OptionsForm..Panel1..GroupBox1..cbICS..Caption
+#: uOptionsForm.dfm:68
+msgid "Enable ICS (Intelligent category selector)"
+msgstr "Ενεργοποίηση ICS (Έξυπνη Επιλογή Κατηγορίας)"
+
+#. OptionsForm..Panel1..GroupBox2..Caption
+#: uOptionsForm.dfm:77
+msgid "Auto update"
+msgstr "Αυτόματη ενημέρωση"
+
+#. OptionsForm..Panel1..GroupBox2..bCheckUpdate..Caption
+#: uOptionsForm.dfm:86
+msgid "Check now"
+msgstr "Έλεγχος τώρα"
+
+#. OptionsForm..Panel1..GroupBox2..cbCheckNewVersion..Caption
+#: uOptionsForm.dfm:100
+msgid "Check new version at start"
+msgstr "Ελεγχος νέων εκδόσεων κατά την εκκίνηση"
+
+#. OptionsForm..Panel1..GroupBox3..Caption
+#: uOptionsForm.dfm:109
+msgid "Extensions"
+msgstr "Επεκτάσεις"
+
+#. OptionsForm..Panel1..GroupBox4..Caption
+#: uOptionsForm.dfm:127
+msgid "Languages"
+msgstr "Γλώσσες"
+
+#. OptionsForm..Panel1..GroupBox4..lDownloadLangs..Caption
+#: uOptionsForm.dfm:136
+msgid "Download languages..."
+msgstr "Λήψη γλωσσών..."
+
+#. OptionsForm..Panel1..GroupBox4..lTranslateTo..Caption
+#: uOptionsForm.dfm:153
+msgid "Translate to your native language"
+msgstr "Μετάφραση στη μητρική σας γλώσσα"
+
+#. PasswordForm..Caption
+#: uPasswordForm.dfm:4
+msgid "Password"
+msgstr "Κωδικός"
+
+#. PasswordForm..ePass..EditLabel.Caption
+#: uPasswordForm.dfm:26
+msgid "Enter the password"
+msgstr "Εισάγετε τον κωδικό"
+
+#: uPreprocessDirs.dfm:339
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: uPluginsForm.dfm:281
+msgid "Installed plugins"
+msgstr "Εγκατεστημένα πρόσθετα"
+
+#. PluginsForm..GroupBox1..Panel2..Label1..Caption
+#: uPluginsForm.dfm:107
+msgid "Name:"
+msgstr "Όνομα:"
+
+#. PluginsForm..GroupBox1..Panel2..Label2..Caption
+#: uPluginsForm.dfm:116
+msgid "Version:"
+msgstr "Έκδοση:"
+
+#. PluginsForm..GroupBox1..Panel2..Label3..Caption
+#: uPluginsForm.dfm:125
+msgid "Author:"
+msgstr "Συγγραφέας:"
+
+#. PluginsForm..GroupBox1..Panel2..Label4..Caption
+#: uPluginsForm.dfm:134
+msgid "Web:"
+msgstr "Ιστός:"
+
+#. PluginsForm..GroupBox1..Panel2..Label5..Caption
+#: uPluginsForm.dfm:143
+msgid "Description:"
+msgstr "Περιγραφή:"
+
+#. PluginsForm..GroupBox1..Panel2..bInstall..Caption
+#: uPluginsForm.dfm:225
+msgid "Install"
+msgstr "Εγκατάσταση"
+
+#. PluginsForm..GroupBox1..Panel3..IceTabSet1......Caption
+#: uPluginsForm.dfm:286
+msgid "Downloadable plugins"
+msgstr "Με δυνατότητα λήψης plugins"
+
+#. PreProcessForm..Caption
+#: uPreprocessDirs.dfm:5
+msgid "Preprocessing new directories"
+msgstr "Προ-επεξεργασία νέων φακέλων"
+
+#: uPreprocessDirs.dfm:215
+msgid "New directory name"
+msgstr "Νέο όνομα φακέλου"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:83
+msgid "Old directory"
+msgstr "Παλιός φάκελος"
+
+#: uPreprocessDirs.dfm:225
+msgid "Unpack"
+msgstr "Αποσυσκευασία"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:95
+msgid "ISO"
+msgstr "ISO"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:102
+msgid "Del source"
+msgstr "Διαγρ προέλευσης"
+
+#. PreProcessForm..Panel1..VList......WideText
+#: uPreprocessDirs.dfm:109
+msgid "Size"
+msgstr "Μέγεθος"
+
+#. PreProcessForm..Panel1..SettingsPanel..lNewPath..Caption
+#: uPreprocessDirs.dfm:156
+msgid "New path:"
+msgstr "Νέα διαδρομή:"
+
+#. PreProcessForm..Panel1..SettingsPanel..lAddCat..Caption
+#: uPreprocessDirs.dfm:170
+msgid "Add"
+msgstr "Προσθήκη"
+
+#. PreProcessForm..Panel1..SettingsPanel..lSaveDefault..Caption
+#: uPreprocessDirs.dfm:188
+msgid "Save as default"
+msgstr "Αποθήκευση σαν προεπιλογή"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbUnPackISO..Caption
+#: uPreprocessDirs.dfm:235
+msgid "Extract ISO"
+msgstr "Εξαγωγή ISO"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelSource..Caption
+#: uPreprocessDirs.dfm:245
+msgid "Delete source path"
+msgstr "Διαγραφή διαδρομής προέλευσης"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelNFO..Caption
+#: uPreprocessDirs.dfm:255
+msgid "Delete *.nfo"
+msgstr "Διαγραφή *.nfo"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelDIZ..Caption
+#: uPreprocessDirs.dfm:265
+msgid "Delete *.diz"
+msgstr "Διαγραφή *.diz"
+
+#. PreProcessForm..Panel1..SettingsPanel..cbDelSFV..Caption
+#: uPreprocessDirs.dfm:275
+msgid "Delete *.sfv"
+msgstr "Διαγραφή *.sfv"
+
+#. PreProcessForm..Panel1..SettingsPanel..eTags..EditLabel.Caption
+#: uPreprocessDirs.dfm:287
+msgid "Tags"
+msgstr "Ετικέτες"
+
+#. PreProcessForm..Panel2..bOk..Caption
+#: uPreprocessDirs.dfm:328
+msgid "Process"
+msgstr "Διαδικασία"
+
+#. PreProcessForm..PopupMenu1..Deleteselecteditem1..Caption
+#: uPreprocessDirs.dfm:349
+msgid "Delete selected item"
+msgstr "Διαγραφή επιλεγμένου αντικειμένου"
+
+#. PreProcessForm..PopupMenu1..Checkall1..Caption
+#: uPreprocessDirs.dfm:356
+msgid "Check all"
+msgstr "Επιλογή όλων"
+
+#. PreProcessForm..PopupMenu1..Uncheckall1..Caption
+#: uPreprocessDirs.dfm:360
+msgid "Uncheck all"
+msgstr "Αποεπιλογή όλων"
+
+#. ThreadProcessForm..Caption
+#: uThreadProcessForm.dfm:5
+msgid "Processing"
+msgstr "Επεξεργασία"
+
+#. ThreadProcessForm..Panel1..lMainCaption..Caption
+#: uThreadProcessForm.dfm:54
+msgid "Processing..."
+msgstr "Επεξεργασία..."
+
+#. ThreadProcessForm..Panel1..lElapsedTime..Caption
+#: uThreadProcessForm.dfm:61
+msgid "Elapsed time:"
+msgstr "Χρόνος που διανύθηκε:"
+
+#. ThreadProcessForm..Panel1..lEstimatedTime..Caption
+#: uThreadProcessForm.dfm:70
+msgid "Estimated time:"
+msgstr "Εκτιμώμενος χρόνος:"
+
+#. ThreadProcessForm..Panel2..Label1..Caption
+#: uThreadProcessForm.dfm:113
+msgid "Priority"
+msgstr "Προτεραιότητα"
+
+#. ThreadProcessForm..Panel2..btnHide..Caption
+#: uThreadProcessForm.dfm:121
+msgid "Hide"
+msgstr "Απόκρυψη"
+
+#. ThreadProcessForm..Panel2..btnPause..Caption
+#: uThreadProcessForm.dfm:131
+msgid "Pause"
+msgstr "Παύση"
+
+#. ThreadProcessForm..Panel2..btnStop..Caption
+#: uThreadProcessForm.dfm:141
+msgid "Stop"
+msgstr "Τερματισμός"
+
+#: uThreadProcessForm.dfm:160
+msgid "Normal"
+msgstr "Φυσιολογικό"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:158
+msgid "Low"
+msgstr "Χαμηλό"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:159
+msgid "Below normal"
+msgstr "Κάτω του φυσιολογικού"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:161
+msgid "Above normal"
+msgstr "Πάνω από το φυσιολογικό"
+
+#. ThreadProcessForm..Panel2..cbPriority....Items.Strings
+#: uThreadProcessForm.dfm:162
+msgid "High"
+msgstr "Υψηλό"
+
+#. ThreadProcessForm..GroupBox1..Caption
+#: uThreadProcessForm.dfm:171
+msgid "Process log"
+msgstr "Ημερολόγιο διαδικασιών"
+
+#. ThreadProcessForm..GroupBox1..LogList......WideText
+#: uThreadProcessForm.dfm:200
+msgid "Log"
+msgstr "Ημερολόγιο"
+
+#. ThreadProcessForm..GroupBox1..LogList......WideText
+#: uThreadProcessForm.dfm:205
+msgid "Progress"
+msgstr "Πρόοδος"
+
+#: uUpdateForm.dfm:61
+msgid "Update"
+msgstr "Ενημέρωση"
+
+#. UpdateForm..GroupBox1..Caption
+#: uUpdateForm.dfm:73
+msgid "Update content"
+msgstr "Ενημέρωση περιεχομένου"
+
+#. UpdateForm..GroupBox1..DataList......WideText
+#: uUpdateForm.dfm:105
+msgid "Module"
+msgstr "Λειτουργική μονάδα"
+
+#. UpdateForm..GroupBox1..DataList......WideText
+#: uUpdateForm.dfm:110
+msgid "Date"
+msgstr "Ημερομηνία"
+
+#. UpdateForm..GroupBox1..DataList......WideText
+#: uUpdateForm.dfm:115
+msgid "Version"
+msgstr "Έκδοση"
+
+#. UpdateForm..GroupBox1..GroupBox2..Caption
+#: uUpdateForm.dfm:128
+msgid "Changes"
+msgstr "Αλλαγές"
+
+#. UpdateForm..Panel1..lMainCaption..Caption
+#: uUpdateForm.dfm:178
+msgid "New version found!"
+msgstr "Βρέθηκε νέα έκδοση!"
+
+#. UserSelectForm..Caption
+#: uUserSelectForm.dfm:5
+msgid "Select an item"
+msgstr "Επιλέξτε ένα στοιχείο"
+
+#: Pleaseenteraname
+msgid "Please enter a name!"
+msgstr "Παρακαλώ εισάγετε όνομα!"
+
+#: Savingtodatabase
+msgid "Saving to database..."
+msgstr "Αποθήκευση σε βάση δεδομένων..."
+
+#: Findnfoforsave
+msgid "Find *.nfo for save..."
+msgstr "Εύρεση *.nfo για αποθήκευση..."
+
+#: Savesforprocess
+msgid "Save '%s' for product..."
+msgstr "Αποθήκευση '%s' για προϊόν..."
+
+#: Findimageforsave
+msgid "Find image for save..."
+msgstr "Εύρεση εικόνων για αποθήκευση..."
+
+#: Waitingforpassword
+msgid "Waiting for password..."
+msgstr "Αναμονή για κωδικό πρόσβασης..."
+
+#: Deletedsourcefiles
+msgid "Deleted source files."
+msgstr "Διαγραμμένα αρχεία προέλευσης."
+
+#: Deletesourcedirectorys
+msgid "Delete source directory '%s'..."
+msgstr "Διαγραφή καταλόγου προέλευσης '%s'..."
+
+#: Movestotargetpath
+msgid "Move '%s' to target path..."
+msgstr "Μετακίνηση '%s' σε διαδρομή προορισμού..."
+
+#: Filemoveerror
+msgid "File move error: "
+msgstr "Σφάλμα μετακίνησης αρχείου: "
+
+#: Deletetemporarydirectory2
+msgid "Delete temporary directory #2..."
+msgstr "Διαγραφή προσωρινού καταλόγου #2..."
+
+#: Targetdirectorydoesntexists
+msgid "Target directory doesn't exists!"
+msgstr "Δεν υπάρχει ο κατάλογος προορισμού!"
+
+#: Deletetemporarydirectory1
+msgid "Delete temporary directory #1..."
+msgstr "Διαγραφή προσωρινού καταλόγου #1..."
+
+#: Deletedsourcedirectorys
+msgid "Deleted source directory '%s'."
+msgstr "Διαγραμμένος κατάλογος προέλευσης '%s'."
+
+#: Deletesourcefiles0
+msgid "Delete source file '%s'..."
+msgstr "Διαγραφή αρχείου προέλευσης '%s'..."
+
+#: Deletedsourcefiles0
+msgid "Deleted source file '%s'."
+msgstr "Διαγραμμένο αρχείο προέλευσης '%s'."
+
+#: Searcharchives
+msgid "Search archives..."
+msgstr "Αναζήτηση φακέλων..."
+
+#: Unpacks
+msgid "Unpack '%s'..."
+msgstr "Αποσυσκευασία του '%s'..."
+
+#: Unpackerror
+msgid "Unpack error!"
+msgstr "Σφάλμα αποσυσκευασίας!"
+
+#: Extracts
+msgid "Extract '%s'..."
+msgstr "Αποσυμπίεση '%s'..."
+
+#: Extracterror
+msgid "Extract error!"
+msgstr "Σφάλμα αποσυμπίεσης!"
+
+#: Movestotemp
+msgid "Move '%s' to temp..."
+msgstr "Μετακίνηση '%s' σε προσωρινό..."
+
+#: Copystotemp
+msgid "Copy '%s' to temp..."
+msgstr "Αντιγραφή '%s' σε προσωρινό..."
+
+#: Filecopyerror
+msgid "File copy error: "
+msgstr "Σφάλμα αντιγραφής αρχείων: "
+
+#: Pleasewaituntiltheprocessingoperationsarecompleted
+msgid "Please wait until the processing operations are completed!"
+msgstr "Περιμένετε μέχρι να ολοκληρωθούν οι εργασίες σε εξέλιξη!"
+
+#: Doyouwanttodeletethe
+msgid "Do you want to delete the '%s' category?"
+msgstr "Θέλετε να διαγράψετε την κατηγορία '%s';"
+
+#: Areyousuredeletetheselecteddirectories
+msgid "Are you sure delete the selected directories?"
+msgstr "Είστε σίγουροι οτι θέλετε να διαγράψετε τους επιλεγμένους φακέλους;"
+
+#: AreyousuredeletethesourcefilesPath
+msgid "Are you sure delete the source files? Path: %s"
+msgstr "Είστε σίγουροι οτι θέλετε να διαγράψετε τα αρχεία προέλευσης; Διαδρομή: %s"
+
+#: Preparing
+msgid "Preparing..."
+msgstr "Προετοιμασία..."
+
+#: Pleasewait
+msgid "Please wait"
+msgstr "Παρακαλώ περιμένετε"
+
+#: Reprocess
+msgid "Reprocess %s..."
+msgstr "Επανεπεξεργασία %s..."
+
+#: Addnewcategory
+msgid "Add new category"
+msgstr "Προσθήκη νέας κατηγορίας"
+
+#: EnterURL
+msgid "Enter URL"
+msgstr "Πληκτρολογήστε τη διεύθυνση URL"
+
+#: DoyouwanttocontinuewithclosingmightcauseDATALOSS
+msgid "Do you want to continue with closing (might cause DATA LOSS)?"
+msgstr "Θέλετε να συνεχίσετε με το κλείσιμο (μπορεί να προκαλέσει ΑΠΏΛΕΙΑ ΔΕΔΟΜΈΝΩΝ);"
+
+#: SomefoldersarestillbeingprocessedDoyoureallywanttoexit
+msgid "Some folders are still being processed. Do you really want to exit?"
+msgstr "Ορισμένοι φάκελοι εξακολουθούν να υφίστανται επεξεργασία. Είστε βέβαιοι ότι θέλετε να κλείσετε;"
+
+#: Errorduringspluginprocesss
+msgid "Error during %s plugin process: %s"
+msgstr "Σφάλμα κατά τη διαδικασία %s plugin: %s"
+
+#: Regeneratetags
+msgid "Regenerate tags..."
+msgstr "Αναδημιουργία ετικετών..."
+
+#: Generatematrixtointelligentsorter
+msgid "Generate matrix to intelligent sorter..."
+msgstr "Δημιουργία μήτρας για έξυπνη ταξινόμηση..."
+
+#: Calculatingtagsusage
+msgid "Calculating tags usage..."
+msgstr "Υπολογισμός χρήσης ετικετών..."
+
+#: Allproducts
+msgid "All products"
+msgstr "Όλα τα προϊόντα"
+
+#: Addcategory
+msgid "< Add category... >"
+msgstr "< Προσθήκη κατηγορίας... >"
+
+#: Queued
+msgid "Queue (%d)"
+msgstr "Ουρά (%d)"
+
+#: Enternewdirectoryname
+msgid "Enter new directory name"
+msgstr "Εισαγάγετε νέο όνομα καταλόγου"
+
+#: Wouldyouliketosetdirectorynametoproductname
+msgid "Would you like to set directory name to product name?"
+msgstr "Θα θέλατε να ορίσετε ως όνομα καταλόγου το όνομα προϊόντος;"
+
+#: Pleaseaddsometagstoproduct
+msgid "Please add some tags to product!"
+msgstr "Παρακαλώ προσθέστε ορισμένες ετικέτες στο προϊόν!"
+
+#: Consistencechecking
+msgid "Consistence checking..."
+msgstr "Έλεγχος συνοχής..."
+
+#: Thesdirectorydoesn
+msgid "The '%s' directory doesn't exists. Do you want to delete from library?"
+msgstr "Ο κατάλογος '%s' δεν υπάρχει. Θέλετε να διαγράψετε από τη βιβλιοθήκη;"
+
+#: Consistencecheckfinished
+msgid "Consistence check finished!"
+msgstr "Έλεγχος συνοχής ολοκληρώθηκε!"
+
+#: Vacuummaindatabase
+msgid "Vacuum main database..."
+msgstr "Εκκαθάριση κύριας βάσης δεδομένων..."
+
+#: Vacuuminfodatabase
+msgid "Vacuum info database..."
+msgstr "Εκκαθάριση βάσης δεδομένων πληροφοριών..."
+
+#: Vacuumfinished
+msgid "Vacuum finished!"
+msgstr "Εκκαθάριση ολοκληρώθηκε!"
+
+#: Stufforganizerbackupfiles
+msgid "Stuff organizer backup files"
+msgstr "Αρχεία αντιγράφων ασφαλείας Stuff Organizer"
+
+#: Backup
+msgid "Backup..."
+msgstr "Δημιουργία αντιγράφου ασφαλείας..."
+
+#: Finished
+msgid "Finished!"
+msgstr "Ολοκληρώθηκε!"
+
+#: Errorduringbackup
+msgid "Error during backup: "
+msgstr "Σφάλμα κατά τη δημιουργία αντιγράφων ασφαλείας: "
+
+#: Restore
+msgid "Restore..."
+msgstr "Επαναφορά..."
+
+#: Errorduringrestore
+msgid "Error during restore: "
+msgstr "Σφάλμα κατά την επαναφορά: "
+
+#: Preparings
+msgid "Preparing '%s'..."
+msgstr "Προετοιμασία '%s'..."
+
+#: ThespecifiedsourcedirectoryshasbeenprocessedDoyouwanttocontinue
+msgid "The specified source directory (%s) has been processed! Do you want to continue?"
+msgstr "Η καθορισμένη προέλευση καταλόγου (%s) έχει επεξεργαστεί! Θέλετε να συνεχίσετε;"
+
+#: RunningICSons
+msgid "Running ICS on '%s'..."
+msgstr "Εκτέλεση ICS για '%s'..."
+
+#: Wouldyouliketomovedirectoriesaccordingtothenewcategory
+msgid "Would you like to move directories according to the new category?"
+msgstr "θέλεατε να μετακινήσετε καταλόγους σύμφωνα με τη νέα κατηγορία;"
+
+#: Deleteitems
+msgid "Delete items..."
+msgstr "Διαγραφή στοιχείων..."
+
+#: Delete
+msgid "Delete "
+msgstr "Διαγραφή "
+
+#: Wouldyouliketodeletethesefoldersonharddisk
+msgid "Would you like to delete these folders on hard disk?"
+msgstr "Θέλετε να διαγράψετε αυτούς τους φακέλους από το σκληρό δίσκο;"
+
+#: Modifycategoryproperties
+msgid "Modify category properties"
+msgstr "Τροποποίηση ιδιοτήτων κατηγορίας"
+
+#: Saveunprocesseditems
+msgid "Save unprocessed items..."
+msgstr "Αποθηκεύστε μη επεξεργασμένα αντικείμενα..."
+
+#: Passwordfors
+msgid "Password for %s"
+msgstr "Κωδικός πρόσβασης για το %s"
+
+#: Viewlog
+msgid "View log"
+msgstr "Προβολή αρχείου καταγραφής"
+
+#: Processd
+msgid "Process (%d)"
+msgstr "Διαδικασία (%d)"
+
+#: Newpath
+msgid "New path: "
+msgstr "Νέα διαδρομή: "
+
+#: Areyousuredeletetheselecteditems
+msgid "Are you sure delete the selected items?"
+msgstr "Είστε σίγουροι οτι θέλετε να διαγράψετε τα επιλεγμένα στοιχεία;"
+
+#: Thesitemcantdelete
+msgid "The '%s' item can't delete!"
+msgstr "Το στοιχείο '%s' δεν είναι δυνατό να διαγραφεί!"
+
+#: nocategory
+msgid "<no category>"
+msgstr "< καμία κατηγορία >"
+
+#: Settingssavedasdefault
+msgid "Settings saved as default."
+msgstr "Οι ρυθμίσεις αποθηκεύονται ως προεπιλογή."
+
+#: Finished0
+msgid "Finished."
+msgstr "Ολοκληρώθηκε."
+
+#: Aborted
+msgid "Aborted."
+msgstr "Ματαιώθηκε."
+
+#: Applicationexitfortoupdate
+msgid "Application exit for to update..."
+msgstr "Αίτηση ενημέρωσης κατά την έξοδο..."
+
+#: Applicationisuptodate
+msgid "Application is up to date."
+msgstr "Η εφαρμογή είναι ενημερωμένο."
+
+#: Unknowupdatefile
+msgid "Unknow update file!"
+msgstr "Άγνωστο αρχείο ενημερωμένης έκδοσης!"
+
+#: Updateinfonotfound
+msgid "Update info not found!"
+msgstr "Πληροφορίες ενημέρωσης δεν βρέθηκαν!"
+
+#: Updateerror
+msgid "Update error! "
+msgstr "Σφάλμα ενημέρωσης!"
+
+#: Resume
+msgid "Resume"
+msgstr "Συνέχιση"
+
+#: Areyousurestoptheprocessing
+msgid "Are you sure stop the processing?"
+msgstr "Είστε σίγουροι οτι θέλετε να τερματίσετε τη διαδικασία;"
+
+#: Waitingforthreadterminate
+msgid "Waiting for thread terminate..."
+msgstr "Αναμονή για τερματισμό νηματικού υπολογισμού..."
+
+#: Processings
+msgid "Processing %s..."
+msgstr "Επεξεργασία %s..."
+
+#: Finished1
+msgid "Finished"
+msgstr "Ολοκληρώθηκε"
+
+#: Elapsedtimes
+msgid "Elapsed time: %s"
+msgstr "Χρόνος που πέρασε: %s"
+
+#: Estimatedtimes
+msgid "Estimated time: %s"
+msgstr "Εκτιμώμενος χρόνος: %s"
+
+#: Downloaderror
+msgid "Download error: "
+msgstr "Σφάλμα λήψης: "
+
+#: VersiondddBuildd
+msgid "Version %d.%d.%d ( Build %d )"
+msgstr "Έκδοση %d.%d.%d (Build %d)"
+
+#: Savedtodatabase
+msgid "Saved to database."
+msgstr "Αποθηκεύτηκαν στη βάση δεδομένων."
+
+#: Mainmodule
+msgid "Main module"
+msgstr "Κύρια ενότητα"
+
+#: PAD keywords
+msgid "catalog, stuff, organizer, collection, library, movie, applications, software, music, game, uncompressor, decompressor"
+msgstr "Κατάλογος , stuff, οργανωτής, συλλογή, βιβλιοθήκη, ταινία, εφαρμογές, λογισμικό, μουσική, παιχνίδι,"
+
+#: PAD description 40
+msgid "Stuff Organizer is a catalog software"
+msgstr "Το Stuff Organizer είναι ένα λογισμικό καταλόγου"
+
+#: PAD description 450
+msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003."
+msgstr "Το Stuff Organizer είναι μια δωρεάν εφαρμογή καταλόγων ανοικτού κώδικα (open source). Μπορείτε να οργανώσετε τη συλλογή σας (ταινίες, λογισμικά, παιχνίδια, μουσική, e-books ή οτιδήποτε άλλο). Εάν έχετε κατεβάσει πολλά αρχεία από torrent ή web και θέλετε να τα οργανώσετε, θα χρειαστεί να κάνετε λήψη αυτού του προγράμματος! Δουλεύει σε Windows 7 / Vista / XP / 2008 / 2003."
+
+#: PAD description 2000
+msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer is open source software distributed free of charge under the terms of the GNU General Public License. Main features: unpack compressed files (e.g: zip, rar) in two levels after unpack, cleans up the unused files in the directory (e.g: file_id.diz, sfv file) extract iso if you want sort to multi-level categories support drag-n-drop support tags save NFO file content and image to database get product description from the web (e.g: allrovi.com)"
+msgstr "Το Stuff Organizer είναι μια δωρεάν εφαρμογή καταλόγων ανοικτού κώδικα (open source). Μπορείτε να οργανώσετε τη συλλογή σας (ταινίες, λογισμικά, παιχνίδια, μουσική, e-books ή οτιδήποτε άλλο). Εάν έχετε κατεβάσει πολλά αρχεία από torrent ή web και θέλετε να τα οργανώσετε, θα χρειαστεί να κάνετε λήψη αυτού του προγράμματος! Δουλεύει σε Windows 7 / Vista / XP / 2008 / 2003. Το Stuff Organizer είναι λογισμικό ανοικτού κώδικα και διανέμεται δωρεάν υπό τους όρους της GNU General Public License. Κύρια χαρακτηριστικά: αποσυμπιέστε συμπιεσμένα αρχεία (π.χ.: zip, rar) σε δύο επίπεδα μετά την αποσυσκευασία. Εκκαθαρίζει τα αχρησιμοποίητα αρχεία στον κατάλογο (π.χ.: file_id.diz, αρχείο sfv, απόσπασμα iso). Εάν θέλετε μπορείτε να ταξινομήσετε  σε πολυεπίπεδες κατηγορίες. Υποστήριξη ετικετών. Υποστήριξη drag-n-drop . Αποθήκευση περιεχομένου αρχείου NFO και εικόνας του αντικειμένου της συλλογής στη βάση δεδομένων. Ανακτά την περιγραφή του προϊόντος από το web (π.χ.: allrovi.com)"
+
+#: Pleaserestartthesoftwareforchangestotakeeffect
+msgid "Please restart the software for changes to take effect!"
+msgstr "Παρακαλούμε επανεκκινήστε το λογισμικό για να λειτουργήσουν οι αλλαγές!"
+
+#: Downloadingplugind
+msgid "Downloading plugin (%d%%)..."
+msgstr "Λήψη plugin (%d%%)..."
+
+#: Downloadingpluginlist
+msgid "Downloading plugin list..."
+msgstr "Λήψη λίστας plugin..."
+
+#: Applicationexitfortoupdate
+msgid "Application exit for install new plugin..."
+msgstr "Εξοδος από την εφαρμογή για εγκατάσταση νέων plugin..."
+
+msgid "Directory doesn't exists! Path: %s"
+msgstr "Ο κατάλογος δεν υπάρχει! Διαδρομή: %s"
+
+msgid "Would you like to relocate items of category?"
+msgstr "Θα θέλατε να μεταφέρετε αλλού στοιχεία της κατηγορίας;"
+
+msgid "Relocating..."
+msgstr "Μετατόπιση..."
+
+msgid "Relocating %s..."
+msgstr "Μετατόπιση %s..."
+
