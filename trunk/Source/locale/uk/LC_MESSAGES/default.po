@@ -6,440 +6,440 @@
 msgid ""
 msgstr "Project-Id-Version: stuff-organizer\n"
 "POT-Creation-Date: 2011-10-24 21:39\n"
-"PO-Revision-Date: 2013-03-26 17:54+0100\n"
+"PO-Revision-Date: 2012-03-10 09:39+0100\n"
 "Last-Translator: iceapps <so.iceapps@gmail.com>\n"
-"Language: es_ES\n"
+"Language: English\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: crowdin.net\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language-Team: Spanish\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10< =4 && (n%100<10 or n%100>=20) ? 1 : 2);\n"
+"Language-Team: Ukrainian\n"
 
 #: uMain.dfm:4249
 msgid "About"
-msgstr "Acerca de"
+msgstr "Про"
 
 #: uMain.dfm:4259
 msgid "Check new version"
-msgstr "Prueba la nueva versión"
+msgstr "Перевірити нову версію"
 
 #. AboutForm..Label2....Caption
 #: uAboutForm.dfm:350
 msgid "Stuff Organizer is open source software distributed free of charge under the terms of"
-msgstr "Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de"
+msgstr "Stuff Organizer є програмним забезпеченням з відкритим вихідним кодом, що поширюється безкоштовно згідно таких умов"
 
 #. AboutForm..lGPL..Caption
 #: uAboutForm.dfm:367
 msgid "the GNU General Public License"
-msgstr "la GNU General Public License"
+msgstr "Загальної Публічної Ліцензії (GNU)"
 
 #: uUserSelectForm.dfm:46
 msgid "OK"
-msgstr "Aceptar"
+msgstr "Добре"
 
 #: uPreprocessDirs.dfm:147
 msgid "Category"
-msgstr "Categoría"
+msgstr "Категорія"
 
 #. CategoriesForm..Label1..Caption
 #: uCategories.dfm:41
 msgid "Category target path"
-msgstr "Ruta de destino de la categoría"
+msgstr "Адресний шлях категорії"
 
 #. CategoriesForm..Label2..Caption
 #: uCategories.dfm:49
 msgid "If blank, it's equal with source path"
-msgstr "Si se deja en blanco será igual a la ruta de origen"
+msgstr "Якщо порожнє, тоді рівне шляху джерела"
 
 #. CategoriesForm..Label3..Caption
 #: uCategories.dfm:70
 msgid "Color"
-msgstr "Color"
+msgstr "Колір"
 
 #. CategoriesForm..Label4..Caption
 #: uCategories.dfm:77
 msgid "Icon"
-msgstr "Icono"
+msgstr "Іконка"
 
 #: uUserSelectForm.dfm:57
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Скасувати"
 
 #. CategoriesForm..Panel1..btnOk..Caption
 #: uCategories.dfm:108
 msgid "Ok"
-msgstr "Aceptar"
+msgstr "Добре"
 
 #. CategoriesForm..eName..EditLabel.Caption
 #: uCategories.dfm:122
 msgid "Category name"
-msgstr "Nombre de la categoría"
+msgstr "Ім'я категорії"
 
 #. CategoriesForm..ePath..TitleName
 #: uCategories.dfm:134
 msgid "Please specify a directory"
-msgstr "Especifique un directorio"
+msgstr "Вкажіть директорію"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:726
 msgid "Product name"
-msgstr "Nombre del producto"
+msgstr "Нава продукту"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:732
 msgid "Description"
-msgstr "Descripción"
+msgstr "Опис"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:737
 msgid "Added"
-msgstr "Añadido"
+msgstr "Додано"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:742
 msgid "Path"
-msgstr "Ruta"
+msgstr "Шлях"
 
 #. MainForm..DescrPanel..Panel4..Label1..Caption
 #: uMain.dfm:883
 msgid "Product information:"
-msgstr "Información del producto:"
+msgstr "Інформація про продукт:"
 
 #. MainForm..DescrPanel..Panel4..lProductName..Hint
 #: uMain.dfm:897
 msgid "Click here to change"
-msgstr "Haz clic aquí para cambiar"
+msgstr "Клацніть тут, щоб змінити"
 
 #. MainForm..DescrPanel..Panel4..lURL..Hint
 #: uMain.dfm:917
 msgid "Click here to open"
-msgstr "Haz clic aquí para abrir"
+msgstr "Клацніть тут, щоб відкрити"
 
 #. MainForm..DescrPanel..Panel4..lGoogleSearch..Hint
 #: uMain.dfm:938
 msgid "Click here to search in Google"
-msgstr "Haz clic aquí para buscar en Google"
+msgstr "Клацніть тут, що шукати з Google"
 
 #. MainForm..DescrPanel..Panel4..lGoogleSearch..Caption
 #: uMain.dfm:941
 msgid "Google search"
-msgstr "Búsqueda en Google"
+msgstr "Пошук в Google"
 
 #. MainForm..DescrPanel..Panel4..eTags..Hint
 #: uMain.dfm:957
 msgid "Product tags"
-msgstr "Etiquetas de producto"
+msgstr "Теги продукту"
 
 #. MainForm..DescrPanel..Panel4..eTags..TextHint
 #: uMain.dfm:969
 msgid "Enter tags"
-msgstr "Introducir etiquetas"
+msgstr "Ввести теги"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bShowNFO..Caption
 #: uMain.dfm:1023
 msgid "View NFO file"
-msgstr "Ver el archivo NFO"
+msgstr "Перегляд NFO файлу"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bAddNFO..Caption
 #: uMain.dfm:1041
 msgid "Add NFO file"
-msgstr "Agregar archivo NFO"
+msgstr "Додати NFO файлу"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bChangeURL..Caption
 #: uMain.dfm:1069
 msgid "Change URL"
-msgstr "Cambiar URL"
+msgstr "Змінити  URL"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bChangePicture..Caption
 #: uMain.dfm:1087
 msgid "Change picture"
-msgstr "Cambiar imagen"
+msgstr "Змінити картинку"
 
 #. MainForm..DescrPanel..DescrFuncPanel..lChnageDirectoryName..Caption
 #: uMain.dfm:1115
 msgid "Change directory name"
-msgstr "Cambiar nombre del directorio"
+msgstr "Змінити назву директорії"
 
 #. MainForm..HeaderPanel..Panel1..eSearch..TextHint
 #: uMain.dfm:1464
 msgid "Enter the search text"
-msgstr "Introduce el texto de búsqueda"
+msgstr "Ввести текст пошуку"
 
 #. MainForm..pmList..pmiPluginFuncs..Caption
 #: uMain.dfm:3936
 msgid "Plugin functions"
-msgstr "Funciones del plugin"
+msgstr "Функції додатків"
 
 #. MainForm..alPopup..aModifyCategory..Caption
 #: uMain.dfm:3953
 msgid "Modify category..."
-msgstr "Modificar categoría..."
+msgstr "Змінити категорію"
 
 #. MainForm..alPopup..aDeleteCategory..Caption
 #: uMain.dfm:3957
 msgid "Delete category..."
-msgstr "Eliminar categoría..."
+msgstr "Видалити категорію..."
 
 #. MainForm..alPopup..aDeleteItems..Caption
 #: uMain.dfm:3961
 msgid "Delete selected item(s)..."
-msgstr "Eliminar artículo(s) seleccionados..."
+msgstr "Видалити обраний елемент(-и)..."
 
 #. MainForm..alPopup..aOpenDir..Caption
 #: uMain.dfm:3965
 msgid "Open directory"
-msgstr "Abrir directorio"
+msgstr "Відкритий каталог"
 
 #. MainForm..alPopup..aNewCategory..Caption
 #: uMain.dfm:3969
 msgid "Add new category..."
-msgstr "Añadir nueva categoría..."
+msgstr "Додати нову категорію..."
 
 #. MainForm..alPopup..aShowMainForm..Caption
 #: uMain.dfm:3973
 msgid "Show"
-msgstr "Mostrar"
+msgstr "Показати"
 
 #. MainForm..alPopup..aExit..Caption
 #: uMain.dfm:3977
 msgid "Exit"
-msgstr "Salir"
+msgstr "Вихід"
 
 #. MainForm..alPopup..aViewProcessLog..Caption
 #: uMain.dfm:3981
 msgid "View process log"
-msgstr "Ver registro de proceso"
+msgstr "Переглянути журнал процесу"
 
 #. MainForm..alPopup..aReprocess..Caption
 #: uMain.dfm:3985
 msgid "Reprocess"
-msgstr "Volver a procesar"
+msgstr "Переробити"
 
 #. MainForm..alPopup..aDelSource..Caption
 #: uMain.dfm:3990
 msgid "Delete source files..."
-msgstr "Eliminar archivos de código fuente..."
+msgstr "Видалити файли джерела..."
 
 #. MainForm..alPopup..aOpenSourceDir..Caption
 #: uMain.dfm:3994
 msgid "Open source directory"
-msgstr "Abrir directorio fuente"
+msgstr "Відкрити вихідний каталог"
 
 #. MainForm..alPopup..aTargetToClipBoard..Caption
 #: uMain.dfm:3998
 msgid "Copy target directory to clipboard"
-msgstr "Copiar el directorio de destino en el portapapeles"
+msgstr "Копіювати адресну директорію до буферу обміну"
 
 #. MainForm..alToolbar..aAddFile..Caption
 #: uMain.dfm:4194
 msgid "Add files(s)..."
-msgstr "Añadir archivos(s)..."
+msgstr "Додати файл(-и)..."
 
 #. MainForm..alToolbar..aAddDirectory..Caption
 #: uMain.dfm:4199
 msgid "Add directory..."
-msgstr "Añadir directorio..."
+msgstr "Додати директорію..."
 
 #. MainForm..alToolbar..aQueue..Caption
 #: uMain.dfm:4204
 msgid "Queue"
-msgstr "Cola"
+msgstr "Черга"
 
 #. MainForm..alToolbar..aConsistenceCheck..Caption
 #: uMain.dfm:4209
 msgid "Consistence check"
-msgstr "Verificación de consistencia"
+msgstr "Перевірка відповідності"
 
 #. MainForm..alToolbar..aAddStuff..Caption
 #: uMain.dfm:4214
 msgid "Add stuff"
-msgstr "Añadir cosas"
+msgstr "Додати матеріал"
 
 #. MainForm..alToolbar..aAddToWatch..Caption
 #: uMain.dfm:4219
 msgid "Add directory to watchlist..."
-msgstr "Añadir directorio a lista de seguimiento..."
+msgstr "Додати директорію до списку спостереження..."
 
 #. MainForm..alToolbar..aSettings..Caption
 #: uMain.dfm:4224
 msgid "Settings"
-msgstr "Ajustes"
+msgstr "Параметри"
 
 #. MainForm..alToolbar..aDBBackup..Caption
 #: uMain.dfm:4229
 msgid "Database backup..."
-msgstr "Hacer copia de seguridad de la base de datos..."
+msgstr "Архівація бази даних..."
 
 #. MainForm..alToolbar..aDBRestore..Caption
 #: uMain.dfm:4234
 msgid "Database restore..."
-msgstr "Restaurar base de datos..."
+msgstr "Відновлення бази даних..."
 
 #. MainForm..alToolbar..aDBVacuum..Caption
 #: uMain.dfm:4239
 msgid "Database vacuum"
-msgstr "Vacío de la base de datos"
+msgstr "Очищення бази даних"
 
 #: uPluginsForm.dfm:5
 msgid "Plugins"
-msgstr "Plugins"
+msgstr "Додатки"
 
 #. MainForm..alToolbar..aHomepage..Caption
 #: uMain.dfm:4254
 msgid "Visit homepage"
-msgstr "Ver la página de inicio"
+msgstr "Відвідати домашню сторінку"
 
 #. MainForm..PictureDialog....Filter
 #: uMain.dfm:4267
 msgid "Supported images (*.bmp, *.jpg, *.gif, *.png)|*.bmp;*.jpg;*.gif;*.png"
-msgstr "Imágenes compatibles (*.bmp, *.jpg, *.gif, *.png)|*.bmp,*.jpg,*.gif,*.png"
+msgstr "Підтримувані зображення (*.bmp, *.jpg, *.gif, *.png)|*.bmp;*.jpg;*.gif;*.png"
 
 #. MainForm..OD..Filter
 #: uMain.dfm:4273
 msgid "All files (*.*)|*.*"
-msgstr "Todos los archivos (*.*)|*.*"
+msgstr "Усі файли (*.*)|*.*"
 
 #. MainForm..NFODialog..Filter
 #: uMain.dfm:6271
 msgid "NFO files (*.nfo)|*.nfo"
-msgstr "NFO archivos (* nfo.) | *.nfo"
+msgstr "Файли NFO (*.nfo)|*.nfo"
 
 #. NFOForm..Caption
 #: uNFOForm.dfm:5
 msgid "NFO Viewer"
-msgstr "Visor NFO"
+msgstr "Переглядач NFO"
 
 #. OptionsForm..Caption
 #: uOptionsForm.dfm:4
 msgid "Preferences"
-msgstr "Preferencias"
+msgstr "Параметри"
 
 #. OptionsForm..Panel1..GroupBox1..Caption
 #: uOptionsForm.dfm:45
 msgid "Process settings"
-msgstr "Ajustes de procesos"
+msgstr "Налаштування процесу"
 
 #. OptionsForm..Panel1..GroupBox1..cbDelToRB..Caption
 #: uOptionsForm.dfm:52
 msgid "Delete to recycle bin"
-msgstr "Eliminar (a la Papelera de reciclaje)"
+msgstr "Видалити до кошика"
 
 #. OptionsForm..Panel1..GroupBox1..cbHideDialogs..Caption
 #: uOptionsForm.dfm:60
 msgid "Hide copy/move/delete dialog"
-msgstr "Ocultar diálogos al copiar/mover/eliminar"
+msgstr "Приховати копію/перемістити/видалити діалог"
 
 #. OptionsForm..Panel1..GroupBox1..cbICS..Caption
 #: uOptionsForm.dfm:68
 msgid "Enable ICS (Intelligent category selector)"
-msgstr "Habilitar ICS (selector de categorías inteligente)"
+msgstr "Увімкнути ICS (Інтелектуальний вибір категорії)"
 
 #. OptionsForm..Panel1..GroupBox2..Caption
 #: uOptionsForm.dfm:77
 msgid "Auto update"
-msgstr "Actualización automática"
+msgstr "Автоматичне оновлення"
 
 #. OptionsForm..Panel1..GroupBox2..bCheckUpdate..Caption
 #: uOptionsForm.dfm:86
 msgid "Check now"
-msgstr "Comprobar ahora"
+msgstr "Перевірити зараз"
 
 #. OptionsForm..Panel1..GroupBox2..cbCheckNewVersion..Caption
 #: uOptionsForm.dfm:100
 msgid "Check new version at start"
-msgstr "Comprobar nuevas versiones al iniciar"
+msgstr "Перевірити нову версію при запуску"
 
 #. OptionsForm..Panel1..GroupBox3..Caption
 #: uOptionsForm.dfm:109
 msgid "Extensions"
-msgstr "Extensiones"
+msgstr "Розширення"
 
 #. OptionsForm..Panel1..GroupBox4..Caption
 #: uOptionsForm.dfm:127
 msgid "Languages"
-msgstr "Idiomas"
+msgstr "Мови"
 
 #. OptionsForm..Panel1..GroupBox4..lDownloadLangs..Caption
 #: uOptionsForm.dfm:136
 msgid "Download languages..."
-msgstr "Descargar idiomas..."
+msgstr "Завантажити мови..."
 
 #. OptionsForm..Panel1..GroupBox4..lTranslateTo..Caption
 #: uOptionsForm.dfm:153
 msgid "Translate to your native language"
-msgstr "Traducir a su idioma nativo"
+msgstr "Перекладіть своєю рідною мовою"
 
 #. PasswordForm..Caption
 #: uPasswordForm.dfm:4
 msgid "Password"
-msgstr "Contraseña"
+msgstr "Пароль"
 
 #. PasswordForm..ePass..EditLabel.Caption
 #: uPasswordForm.dfm:26
 msgid "Enter the password"
-msgstr "Introduce la contraseña"
+msgstr "Ввести пароль"
 
 #: uPreprocessDirs.dfm:339
 msgid "Close"
-msgstr "Cerrar"
+msgstr "Закрити"
 
 #: uPluginsForm.dfm:281
 msgid "Installed plugins"
-msgstr "Plugins instalados"
+msgstr "Встановлені додатки"
 
 #. PluginsForm..GroupBox1..Panel2..Label1..Caption
 #: uPluginsForm.dfm:107
 msgid "Name:"
-msgstr "Nombre:"
+msgstr "Назва:"
 
 #. PluginsForm..GroupBox1..Panel2..Label2..Caption
 #: uPluginsForm.dfm:116
 msgid "Version:"
-msgstr "Versión:"
+msgstr "Версія:"
 
 #. PluginsForm..GroupBox1..Panel2..Label3..Caption
 #: uPluginsForm.dfm:125
 msgid "Author:"
-msgstr "Autor:"
+msgstr "Автор:"
 
 #. PluginsForm..GroupBox1..Panel2..Label4..Caption
 #: uPluginsForm.dfm:134
 msgid "Web:"
-msgstr "Web:"
+msgstr "Веб:"
 
 #. PluginsForm..GroupBox1..Panel2..Label5..Caption
 #: uPluginsForm.dfm:143
 msgid "Description:"
-msgstr "Descripción:"
+msgstr "Опис:"
 
 #. PluginsForm..GroupBox1..Panel2..bInstall..Caption
 #: uPluginsForm.dfm:225
 msgid "Install"
-msgstr "Instalar"
+msgstr "Встановити"
 
 #. PluginsForm..GroupBox1..Panel3..IceTabSet1......Caption
 #: uPluginsForm.dfm:286
 msgid "Downloadable plugins"
-msgstr "Plugins descargables"
+msgstr "Завантажувані додатки"
 
 #. PreProcessForm..Caption
 #: uPreprocessDirs.dfm:5
 msgid "Preprocessing new directories"
-msgstr "Procesando nuevos directorios"
+msgstr "Попередня обробка нових директорій"
 
 #: uPreprocessDirs.dfm:215
 msgid "New directory name"
-msgstr "Nuevo nombre del directorio"
+msgstr "Ім'я нової директорії"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:83
 msgid "Old directory"
-msgstr "Directorio antiguo"
+msgstr "Стара директорія"
 
 #: uPreprocessDirs.dfm:225
 msgid "Unpack"
-msgstr "Descomprimir"
+msgstr "Розпакувати"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:95
@@ -449,605 +449,605 @@ msgstr "ISO"
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:102
 msgid "Del source"
-msgstr "Eliminar origen"
+msgstr "Видалити джерело"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:109
 msgid "Size"
-msgstr "Tamaño"
+msgstr "Розмір"
 
 #. PreProcessForm..Panel1..SettingsPanel..lNewPath..Caption
 #: uPreprocessDirs.dfm:156
 msgid "New path:"
-msgstr "Nueva ruta:"
+msgstr "Новий шлях:"
 
 #. PreProcessForm..Panel1..SettingsPanel..lAddCat..Caption
 #: uPreprocessDirs.dfm:170
 msgid "Add"
-msgstr "Añadir"
+msgstr "Додати"
 
 #. PreProcessForm..Panel1..SettingsPanel..lSaveDefault..Caption
 #: uPreprocessDirs.dfm:188
 msgid "Save as default"
-msgstr "Guardar como predeterminado"
+msgstr "Зберегти за замовчуванням"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbUnPackISO..Caption
 #: uPreprocessDirs.dfm:235
 msgid "Extract ISO"
-msgstr "Extraer ISO"
+msgstr "Видобути ISO"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelSource..Caption
 #: uPreprocessDirs.dfm:245
 msgid "Delete source path"
-msgstr "Eliminar la ruta de origen"
+msgstr "Видалити шлях джерела"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelNFO..Caption
 #: uPreprocessDirs.dfm:255
 msgid "Delete *.nfo"
-msgstr "Eliminar *.nfo"
+msgstr "Видалити *.nfo"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelDIZ..Caption
 #: uPreprocessDirs.dfm:265
 msgid "Delete *.diz"
-msgstr "Eliminar *.diz"
+msgstr "Видалити *.diz"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelSFV..Caption
 #: uPreprocessDirs.dfm:275
 msgid "Delete *.sfv"
-msgstr "Eliminar *.sfv"
+msgstr "Видалити *.sfv"
 
 #. PreProcessForm..Panel1..SettingsPanel..eTags..EditLabel.Caption
 #: uPreprocessDirs.dfm:287
 msgid "Tags"
-msgstr "Etiquetas"
+msgstr "Теги"
 
 #. PreProcessForm..Panel2..bOk..Caption
 #: uPreprocessDirs.dfm:328
 msgid "Process"
-msgstr "Proceso"
+msgstr "Процес"
 
 #. PreProcessForm..PopupMenu1..Deleteselecteditem1..Caption
 #: uPreprocessDirs.dfm:349
 msgid "Delete selected item"
-msgstr "Eliminar el artículo seleccionado"
+msgstr "Видалити обраний елемент"
 
 #. PreProcessForm..PopupMenu1..Checkall1..Caption
 #: uPreprocessDirs.dfm:356
 msgid "Check all"
-msgstr "Marcar todo"
+msgstr "Перевірити все"
 
 #. PreProcessForm..PopupMenu1..Uncheckall1..Caption
 #: uPreprocessDirs.dfm:360
 msgid "Uncheck all"
-msgstr "Desmarcar todo"
+msgstr "Зняти всі прапорці"
 
 #. ThreadProcessForm..Caption
 #: uThreadProcessForm.dfm:5
 msgid "Processing"
-msgstr "Procesamiento"
+msgstr "Опрацювання"
 
 #. ThreadProcessForm..Panel1..lMainCaption..Caption
 #: uThreadProcessForm.dfm:54
 msgid "Processing..."
-msgstr "Procesando..."
+msgstr "Опрацювання..."
 
 #. ThreadProcessForm..Panel1..lElapsedTime..Caption
 #: uThreadProcessForm.dfm:61
 msgid "Elapsed time:"
-msgstr "Tiempo transcurrido:"
+msgstr "Пройшло часу:"
 
 #. ThreadProcessForm..Panel1..lEstimatedTime..Caption
 #: uThreadProcessForm.dfm:70
 msgid "Estimated time:"
-msgstr "Tiempo estimado:"
+msgstr "Приблизний час:"
 
 #. ThreadProcessForm..Panel2..Label1..Caption
 #: uThreadProcessForm.dfm:113
 msgid "Priority"
-msgstr "Prioridad"
+msgstr "Пріоритет"
 
 #. ThreadProcessForm..Panel2..btnHide..Caption
 #: uThreadProcessForm.dfm:121
 msgid "Hide"
-msgstr "Ocultar"
+msgstr "Приховати"
 
 #. ThreadProcessForm..Panel2..btnPause..Caption
 #: uThreadProcessForm.dfm:131
 msgid "Pause"
-msgstr "Pausa"
+msgstr "Пауза"
 
 #. ThreadProcessForm..Panel2..btnStop..Caption
 #: uThreadProcessForm.dfm:141
 msgid "Stop"
-msgstr "Detener"
+msgstr "Стоп"
 
 #: uThreadProcessForm.dfm:160
 msgid "Normal"
-msgstr "Normal"
+msgstr "Звичайний"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:158
 msgid "Low"
-msgstr "Bajo"
+msgstr "Низький"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:159
 msgid "Below normal"
-msgstr "Por debajo de lo normal"
+msgstr "Нижче норми"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:161
 msgid "Above normal"
-msgstr "Por encima de lo normal"
+msgstr "Вище норми"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:162
 msgid "High"
-msgstr "Alto"
+msgstr "Високий"
 
 #. ThreadProcessForm..GroupBox1..Caption
 #: uThreadProcessForm.dfm:171
 msgid "Process log"
-msgstr "Registro de proceso"
+msgstr "Журнал процесу"
 
 #. ThreadProcessForm..GroupBox1..LogList......WideText
 #: uThreadProcessForm.dfm:200
 msgid "Log"
-msgstr "Registro"
+msgstr "Журнал"
 
 #. ThreadProcessForm..GroupBox1..LogList......WideText
 #: uThreadProcessForm.dfm:205
 msgid "Progress"
-msgstr "Progreso"
+msgstr "Прогрес"
 
 #: uUpdateForm.dfm:61
 msgid "Update"
-msgstr "Actualizar"
+msgstr "Оновити"
 
 #. UpdateForm..GroupBox1..Caption
 #: uUpdateForm.dfm:73
 msgid "Update content"
-msgstr "Actualizar contenido"
+msgstr "Вміст оновлення"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:105
 msgid "Module"
-msgstr "Módulo"
+msgstr "Модуль"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:110
 msgid "Date"
-msgstr "Fecha"
+msgstr "Дата"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:115
 msgid "Version"
-msgstr "Versión"
+msgstr "Версія"
 
 #. UpdateForm..GroupBox1..GroupBox2..Caption
 #: uUpdateForm.dfm:128
 msgid "Changes"
-msgstr "Cambios"
+msgstr "Зміни"
 
 #. UpdateForm..Panel1..lMainCaption..Caption
 #: uUpdateForm.dfm:178
 msgid "New version found!"
-msgstr "¡Nueva versión encontrada!"
+msgstr "Знайдено нову версію!"
 
 #. UserSelectForm..Caption
 #: uUserSelectForm.dfm:5
 msgid "Select an item"
-msgstr "Seleciona un artículo"
+msgstr "Обрати елемент"
 
 #: Pleaseenteraname
 msgid "Please enter a name!"
-msgstr "¡Introduce un nombre!"
+msgstr "Введіть ім'я!"
 
 #: Savingtodatabase
 msgid "Saving to database..."
-msgstr "Guardando en la base de datos..."
+msgstr "Збереження до бази даних..."
 
 #: Findnfoforsave
 msgid "Find *.nfo for save..."
-msgstr "Buscar *.nfo para guardar..."
+msgstr "Знайти *.nfo для збереження..."
 
 #: Savesforprocess
 msgid "Save '%s' for product..."
-msgstr "Guardar '%s' para producto..."
+msgstr "Зберегти '%s' для збереження..."
 
 #: Findimageforsave
 msgid "Find image for save..."
-msgstr "Buscar imagen para guardar..."
+msgstr "Знайти зображення для збереження..."
 
 #: Waitingforpassword
 msgid "Waiting for password..."
-msgstr "Esperando la contraseña..."
+msgstr "Очікування паролю..."
 
 #: Deletedsourcefiles
 msgid "Deleted source files."
-msgstr "Archivos de código fuente eliminados."
+msgstr "Видалені файли джерела."
 
 #: Deletesourcedirectorys
 msgid "Delete source directory '%s'..."
-msgstr "Directorio de origen eliminado '%s'..."
+msgstr "Видалити вихідний каталог '%s'..."
 
 #: Movestotargetpath
 msgid "Move '%s' to target path..."
-msgstr "Mover '%s' a la ruta de destino..."
+msgstr "Перемістити '%s' до шляху призначення..."
 
 #: Filemoveerror
 msgid "File move error: "
-msgstr "Error al mover el archivo: "
+msgstr "Помилка переміщення файлу:"
 
 #: Deletetemporarydirectory2
 msgid "Delete temporary directory #2..."
-msgstr "Eliminar temporalmente el directorio #2..."
+msgstr "Видалити тимчасову директорію #2..."
 
 #: Targetdirectorydoesntexists
 msgid "Target directory doesn't exists!"
-msgstr "¡No existe el directorio de destino!"
+msgstr "Цільова директорія не існує!"
 
 #: Deletetemporarydirectory1
 msgid "Delete temporary directory #1..."
-msgstr "Eliminar temporalmente el directorio #1..."
+msgstr "Видалити тимчасову директорію #1..."
 
 #: Deletedsourcedirectorys
 msgid "Deleted source directory '%s'."
-msgstr "Directorio de origen eliminado '%s'."
+msgstr "Видалений вихідний каталог '%s'."
 
 #: Deletesourcefiles0
 msgid "Delete source file '%s'..."
-msgstr "Eliminar archivo de origen '%s'..."
+msgstr "Видалити вихідний файл '%s'..."
 
 #: Deletedsourcefiles0
 msgid "Deleted source file '%s'."
-msgstr "Archivo de origen eliminado '%s'."
+msgstr "Видалений вихідний файл '%s'."
 
 #: Searcharchives
 msgid "Search archives..."
-msgstr "Buscar archivos..."
+msgstr "Пошук архівів..."
 
 #: Unpacks
 msgid "Unpack '%s'..."
-msgstr "Descomprimir '%s'..."
+msgstr "Розпакувати '%s'..."
 
 #: Unpackerror
 msgid "Unpack error!"
-msgstr "¡Error al descomprimir!"
+msgstr "Помилка розпакування!"
 
 #: Extracts
 msgid "Extract '%s'..."
-msgstr "Extraer '%s'..."
+msgstr "Видобути '%s'..."
 
 #: Extracterror
 msgid "Extract error!"
-msgstr "¡Error de extracción!"
+msgstr "Помилка видобування!"
 
 #: Movestotemp
 msgid "Move '%s' to temp..."
-msgstr "Mover '%s' a..."
+msgstr "Перемістити '%s' до тимчасових..."
 
 #: Copystotemp
 msgid "Copy '%s' to temp..."
-msgstr "Copiar '%s' a..."
+msgstr "Копіювати '%s' до тимчасових..."
 
 #: Filecopyerror
 msgid "File copy error: "
-msgstr "Error al copiar archivos: "
+msgstr "Помилка копіювання файлу:"
 
 #: Pleasewaituntiltheprocessingoperationsarecompleted
 msgid "Please wait until the processing operations are completed!"
-msgstr "¡Espera a que las demás operaciones terminen de procesarse!"
+msgstr "Дочекайтеся закінчення операцій обробки!"
 
 #: Doyouwanttodeletethe
 msgid "Do you want to delete the '%s' category?"
-msgstr "¿Desea eliminar la categoría de '%s'?"
+msgstr "Бажаєте видалити категорію '%s?"
 
 #: Areyousuredeletetheselecteddirectories
 msgid "Are you sure delete the selected directories?"
-msgstr "¿Deseas eliminar los directorios seleccionados?"
+msgstr "Ви дійсно бажаєте видалити обрані директорії?"
 
 #: AreyousuredeletethesourcefilesPath
 msgid "Are you sure delete the source files? Path: %s"
-msgstr "¿Deseas eliminar los archivos de origen? Ruta: %s"
+msgstr "Ви дійсно бажаєте видалити вихідні файли? Шлях: %s"
 
 #: Preparing
 msgid "Preparing..."
-msgstr "Preparando..."
+msgstr "Підготовка..."
 
 #: Pleasewait
 msgid "Please wait"
-msgstr "Espera, por favor"
+msgstr "Зачекайте, будь-ласка "
 
 #: Reprocess
 msgid "Reprocess %s..."
-msgstr "Volver a procesar %s..."
+msgstr "Повторна обробка %s..."
 
 #: Addnewcategory
 msgid "Add new category"
-msgstr "Añadir nueva categoría"
+msgstr "Додати нову категорію"
 
 #: EnterURL
 msgid "Enter URL"
-msgstr "Introducir URL"
+msgstr "Ввести URL"
 
 #: DoyouwanttocontinuewithclosingmightcauseDATALOSS
 msgid "Do you want to continue with closing (might cause DATA LOSS)?"
-msgstr "¿Deseas continuar con el cierre? (Podría causar pérdida de datos)"
+msgstr "Продовжити закривати (може спричинити втрату даних)?"
 
 #: SomefoldersarestillbeingprocessedDoyoureallywanttoexit
 msgid "Some folders are still being processed. Do you really want to exit?"
-msgstr "Algunas carpetas todavía se están procesando. ¿Deseas salir de todas formas?"
+msgstr "Деякі папки усе ще обробляються. Ви дійсно бажаєте вийти?"
 
 #: Errorduringspluginprocesss
 msgid "Error during %s plugin process: %s"
-msgstr "Error durante el proceso de plugin %s: %s"
+msgstr "Помилка під-час %s процесу додатка: %s"
 
 #: Regeneratetags
 msgid "Regenerate tags..."
-msgstr "Regenerar etiquetas..."
+msgstr "Повторне створення тегів..."
 
 #: Generatematrixtointelligentsorter
 msgid "Generate matrix to intelligent sorter..."
-msgstr "Generar matriz a clasificador inteligente..."
+msgstr "Генерувати матрицю до інтелектуального сортувальника..."
 
 #: Calculatingtagsusage
 msgid "Calculating tags usage..."
-msgstr "Calculando etiquetas usadas..."
+msgstr "Обрахунок використання тегів..."
 
 #: Allproducts
 msgid "All products"
-msgstr "Todos los productos"
+msgstr "Всі продукти"
 
 #: Addcategory
 msgid "< Add category... >"
-msgstr "< Añadir categoría... >"
+msgstr "< Додати категорію... >"
 
 #: Queued
 msgid "Queue (%d)"
-msgstr "Cola (%d)"
+msgstr "Черга (%d)"
 
 #: Enternewdirectoryname
 msgid "Enter new directory name"
-msgstr "Escribir un nuevo nombre de directorio"
+msgstr "Ввести нове ім'я директорії"
 
 #: Wouldyouliketosetdirectorynametoproductname
 msgid "Would you like to set directory name to product name?"
-msgstr "¿Te gustaría ponerle un nombre al directorio del producto?"
+msgstr "Бажаєте присвоїти ім'я директорії для імені продукту?"
 
 #: Pleaseaddsometagstoproduct
 msgid "Please add some tags to product!"
-msgstr "¡Añade alguna etiqueta al producto!"
+msgstr "Додайте теги до продукту!"
 
 #: Consistencechecking
 msgid "Consistence checking..."
-msgstr "Comprobando la consistencia..."
+msgstr "Перевірка узгодженості..."
 
 #: Thesdirectorydoesn
 msgid "The '%s' directory doesn't exists. Do you want to delete from library?"
-msgstr "El directorio '%s' no existe. ¿Deseas eliminarlo de la biblioteca?"
+msgstr "Директорії  '%s'  не існує. Бажаєте видалити її з бібліотеки?"
 
 #: Consistencecheckfinished
 msgid "Consistence check finished!"
-msgstr "¡Verificación de consistencia terminada!"
+msgstr "Перевірку узгодженості закінчено!"
 
 #: Vacuummaindatabase
 msgid "Vacuum main database..."
-msgstr "Vaciando base de datos principal..."
+msgstr "Прибрати головну базу даних..."
 
 #: Vacuuminfodatabase
 msgid "Vacuum info database..."
-msgstr "Vaciando base de datos de info..."
+msgstr "Прибрати інформацію бази даних..."
 
 #: Vacuumfinished
 msgid "Vacuum finished!"
-msgstr "¡Vacío finalizado!"
+msgstr "Прибирання завершено!"
 
 #: Stufforganizerbackupfiles
 msgid "Stuff organizer backup files"
-msgstr "Copia de seguridad del organizador"
+msgstr "Файли архівації Stuff organizer"
 
 #: Backup
 msgid "Backup..."
-msgstr "Hacer copia de seguridad..."
+msgstr "Резервне копіювання..."
 
 #: Finished
 msgid "Finished!"
-msgstr "¡Terminado!"
+msgstr "Закінчено!"
 
 #: Errorduringbackup
 msgid "Error during backup: "
-msgstr "Error durante la copia de seguridad: "
+msgstr "#:Помилка під-час архівування:"
 
 #: Restore
 msgid "Restore..."
-msgstr "Restaurar..."
+msgstr "Відновити..."
 
 #: Errorduringrestore
 msgid "Error during restore: "
-msgstr "Error durante la restauración: "
+msgstr "Помилка під-час відновлення:"
 
 #: Preparings
 msgid "Preparing '%s'..."
-msgstr "Preparando '%s'..."
+msgstr "Приготування '%s'..."
 
 #: ThespecifiedsourcedirectoryshasbeenprocessedDoyouwanttocontinue
 msgid "The specified source directory (%s) has been processed! Do you want to continue?"
-msgstr "¡El directorio de origen especificado (%s) se ha procesado! ¿Deseas continuar?"
+msgstr "Вказаний вихідний каталог (%s) опрацьовано! Бажаєте продовжити?"
 
 #: RunningICSons
 msgid "Running ICS on '%s'..."
-msgstr "Ejecuta ICS en '%s'..."
+msgstr "Виконується ICS на '%s'..."
 
 #: Wouldyouliketomovedirectoriesaccordingtothenewcategory
 msgid "Would you like to move directories according to the new category?"
-msgstr "¿Le gustaría mover directorios de acuerdo a la nueva categoría?"
+msgstr "Бажаєте перемістити директорії відповідно до нової категорії?"
 
 #: Deleteitems
 msgid "Delete items..."
-msgstr "Eliminar elementos..."
+msgstr "Видалити елементи..."
 
 #: Delete
 msgid "Delete "
-msgstr "Eliminar "
+msgstr "Видалити"
 
 #: Wouldyouliketodeletethesefoldersonharddisk
 msgid "Would you like to delete these folders on hard disk?"
-msgstr "¿Le gustaría eliminar estas carpetas en el disco duro?"
+msgstr "Бажаєте видалити ці папки з жорсткого диску?"
 
 #: Modifycategoryproperties
 msgid "Modify category properties"
-msgstr "Modificar propiedades de categoría"
+msgstr "Змінити властивості категорії"
 
 #: Saveunprocesseditems
 msgid "Save unprocessed items..."
-msgstr "Guardar elementos sin procesar..."
+msgstr "Зберегти необроблені файли..."
 
 #: Passwordfors
 msgid "Password for %s"
-msgstr "Contraseña para %s"
+msgstr "Пароль для %s"
 
 #: Viewlog
 msgid "View log"
-msgstr "Ver registro"
+msgstr "Переглянути журнал"
 
 #: Processd
 msgid "Process (%d)"
-msgstr "Proceso (%d)"
+msgstr "Обробка (%d)"
 
 #: Newpath
 msgid "New path: "
-msgstr "Nueva ruta:"
+msgstr "Новий шлях:"
 
 #: Areyousuredeletetheselecteditems
 msgid "Are you sure delete the selected items?"
-msgstr "¿Es que seguro eliminar los elementos seleccionados?"
+msgstr "Бажаєте видалити обрані файли?"
 
 #: Thesitemcantdelete
 msgid "The '%s' item can't delete!"
-msgstr "No se puede eliminar el elemento '%s'!"
+msgstr "Елемент '%s' неможливо видалити!"
 
 #: nocategory
 msgid "<no category>"
-msgstr "<ninguna categoría>"
+msgstr "<без категорії>"
 
 #: Settingssavedasdefault
 msgid "Settings saved as default."
-msgstr "Configuración guardada por defecto."
+msgstr "Налаштування збережено, як  по замовчуванню."
 
 #: Finished0
 msgid "Finished."
-msgstr "Terminado."
+msgstr "Завершено."
 
 #: Aborted
 msgid "Aborted."
-msgstr "Anulado."
+msgstr "Перервано."
 
 #: Applicationexitfortoupdate
 msgid "Application exit for to update..."
-msgstr "La aplicación se cerrará para actualizar..."
+msgstr "Вийти з програми для оновлення..."
 
 #: Applicationisuptodate
 msgid "Application is up to date."
-msgstr "Aplicación está actualizada."
+msgstr "Програма оновлена."
 
 #: Unknowupdatefile
 msgid "Unknow update file!"
-msgstr "Desconocido archivo de actualización!"
+msgstr "Невідомий файл оновлення!"
 
 #: Updateinfonotfound
 msgid "Update info not found!"
-msgstr "Actualizar información no encontrada!"
+msgstr "Не знайдено інформації оновлення!"
 
 #: Updateerror
 msgid "Update error! "
-msgstr "Error de actualización! "
+msgstr "Помилка оновлення!"
 
 #: Resume
 msgid "Resume"
-msgstr "Reanudar"
+msgstr "Відновити"
 
 #: Areyousurestoptheprocessing
 msgid "Are you sure stop the processing?"
-msgstr "¿Estás seguro de detener el procesamiento?"
+msgstr "Ви дійсно бажаєте зупинити обробку?"
 
 #: Waitingforthreadterminate
 msgid "Waiting for thread terminate..."
-msgstr "En espera de subproceso terminar..."
+msgstr "Очікування припинення процесу..."
 
 #: Processings
 msgid "Processing %s..."
-msgstr "Procesamiento de %s..."
+msgstr "Оброблення %s..."
 
 #: Finished1
 msgid "Finished"
-msgstr "Terminado"
+msgstr "Закінчено"
 
 #: Elapsedtimes
 msgid "Elapsed time: %s"
-msgstr "Tiempo transcurrido: %s"
+msgstr "Пройшло часу: %s"
 
 #: Estimatedtimes
 msgid "Estimated time: %s"
-msgstr "Tiempo estimado: %s"
+msgstr "Приблизний час: %s"
 
 #: Downloaderror
 msgid "Download error: "
-msgstr "Error de descarga: "
+msgstr "Помилка завантаження:"
 
 #: VersiondddBuildd
 msgid "Version %d.%d.%d ( Build %d )"
-msgstr "Versión %d.%d.%d (compilación %d)"
+msgstr "Версія %d.%d.%d ( Build %d )"
 
 #: Savedtodatabase
 msgid "Saved to database."
-msgstr "Guardado en la base de datos."
+msgstr "Збережено в базу даних."
 
 #: Mainmodule
 msgid "Main module"
-msgstr "Módulo principal"
+msgstr "Головний модуль"
 
 #: PAD keywords
 msgid "catalog, stuff, organizer, collection, library, movie, applications, software, music, game, uncompressor, decompressor"
-msgstr "catálogo, cosas, organizador, colección, biblioteca, película, aplicaciones, software, música, juego, descompresor y compresor"
+msgstr "каталог, матеріал, організатор, колекція, бібліотека, фільм, програми, програмне забезпечення, музика, гра, декомпресор"
 
 #: PAD description 40
 msgid "Stuff Organizer is a catalog software"
-msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003. Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de la licencia pública General de GNU. Principales características: descomprimir archivos comprimidos (e.g: zip, rar) en dos niveles después de desembalar, limpia los archivos no utilizados en el directorio (por ejemplo: file_id.diz, archivo sfv) extraer iso si desea ordenar categorías multinivel apoyo apoyo de arrastrar-n-colocar etiquetas guardar el contenido del archivo NFO y descripción del producto de base de datos obtener imagen desde la web (por ejemplo: allrovi.com)"
+msgstr "Stuff Organizer  є програмним каталогізатором"
 
 #: PAD description 450
 msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003."
-msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003."
+msgstr "Stuff Organizer - це  безкоштовна програма- каталогізатор з відкритим кодом. Ви можете організувати свої матеріали (фільми, ігри, музику, ел.книжки та інше). Якщо у вас багато завантажених файлів з торентів, або мережі і ви бажаєте організувати їх, необхідно завантажити цю програму! Вона сумісна з Windows 7 / Vista / XP / 2008 / 2003."
 
 #: PAD description 2000
 msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer is open source software distributed free of charge under the terms of the GNU General Public License. Main features: unpack compressed files (e.g: zip, rar) in two levels after unpack, cleans up the unused files in the directory (e.g: file_id.diz, sfv file) extract iso if you want sort to multi-level categories support drag-n-drop support tags save NFO file content and image to database get product description from the web (e.g: allrovi.com)"
-msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003. Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de la licencia pública General de GNU. Principales características: descomprimir archivos comprimidos (e.g: zip, rar) en dos niveles después de desembalar, limpia los archivos no utilizados en el directorio (por ejemplo: file_id.diz, archivo sfv) extraer iso si desea ordenar categorías multinivel apoyo apoyo de arrastrar-n-colocar etiquetas guardar el contenido del archivo NFO y descripción del producto de base de datos obtener imagen desde la web (por ejemplo: allrovi.com)"
+msgstr "Stuff Organizer - це  безкоштовна програма- каталогізатор з відкритим кодом. Ви можете організувати свої матеріали (фільми, ігри, музику, ел.книжки та інше). Якщо у вас багато завантажених файлів з торентів, або мережі і ви бажаєте організувати їх, необхідно завантажити цю програму! Вона сумісна з Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer - це програма з відкритим кодом, що поширюється безкоштовно згідно умов  GNU Загальнодоступної Ліцензії. Головні особливості: розпаковує стиснуті файли (напр.:zip, rar) на двох рівнях після розпакування, очищує від невикористовуваних файлів у видобутих  iso директорій (напр.: file_id.diz, sfv file), якщо ви бажаєте відсортувати у багаторівневі категорії,перетягування і скидування, підтримка тегів, збереження інформації вміту файлів та зображень у базі даних, отримання описів з мережі (напр.: allrovi.com)"
 
 #: Pleaserestartthesoftwareforchangestotakeeffect
 msgid "Please restart the software for changes to take effect!"
-msgstr "Por favor, reinicie el software para que los cambios surtan efecto."
+msgstr "Для вступу змін в дію, необхідно перезавантажити програму!"
 
 #: Downloadingplugind
 msgid "Downloading plugin (%d%%)..."
-msgstr "Descargando plugin (%d%%)..."
+msgstr "Завантаження додатку (%d%%)..."
 
 #: Downloadingpluginlist
 msgid "Downloading plugin list..."
-msgstr "Descargando lista de plugin..."
+msgstr "Завантаження списку додатків..."
 
 #: Applicationexitfortoupdate
 msgid "Application exit for install new plugin..."
-msgstr "Salir de la aplicación para instalar un nuevo plugin..."
+msgstr "Програма вимикається для встановлення додатку ..."
 
 msgid "Directory doesn't exists! Path: %s"
-msgstr "¡No existes el directorio! Ruta: %s"
+msgstr "Директорії не існує! Шлях: %s"
 
 msgid "Would you like to relocate items of category?"
-msgstr "¿Deseas reubicar los objetos de categoría?"
+msgstr "Бажаєте змінити розташування елементів категорії?"
 
 msgid "Relocating..."
-msgstr "Reubicando..."
+msgstr "Зміна розташування..."
 
 msgid "Relocating %s..."
-msgstr "Reubicando %s..."
+msgstr "Зміна розташування %s..."
 
