@@ -7,401 +7,401 @@ msgid ""
 msgstr "Project-Id-Version: stuff-organizer\n"
 "POT-Creation-Date: 2011-10-24 21:39\n"
 "PO-Revision-Date: 2013-03-26 17:54+0100\n"
-"Last-Translator: iceapps <so.iceapps@gmail.com>\n"
-"Language: es_ES\n"
+"Last-Translator: merterkoyuncu\n"
+"Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: crowdin.net\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language-Team: Spanish\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Team: Turkish\n"
 
 #: uMain.dfm:4249
 msgid "About"
-msgstr "Acerca de"
+msgstr "Hakkında"
 
 #: uMain.dfm:4259
 msgid "Check new version"
-msgstr "Prueba la nueva versión"
+msgstr "Yeni sürümü kontrol edin"
 
 #. AboutForm..Label2....Caption
 #: uAboutForm.dfm:350
 msgid "Stuff Organizer is open source software distributed free of charge under the terms of"
-msgstr "Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de"
+msgstr "Stuff Organizer ücretsiz olarak dağıtılan açık kaynaklı bir uygulamadır ve bu şartlar altında"
 
 #. AboutForm..lGPL..Caption
 #: uAboutForm.dfm:367
 msgid "the GNU General Public License"
-msgstr "la GNU General Public License"
+msgstr "GNU Genel Kamu Lisansı"
 
 #: uUserSelectForm.dfm:46
 msgid "OK"
-msgstr "Aceptar"
+msgstr "Tamam"
 
 #: uPreprocessDirs.dfm:147
 msgid "Category"
-msgstr "Categoría"
+msgstr "Kategori"
 
 #. CategoriesForm..Label1..Caption
 #: uCategories.dfm:41
 msgid "Category target path"
-msgstr "Ruta de destino de la categoría"
+msgstr "Kategori hedef yolu"
 
 #. CategoriesForm..Label2..Caption
 #: uCategories.dfm:49
 msgid "If blank, it's equal with source path"
-msgstr "Si se deja en blanco será igual a la ruta de origen"
+msgstr "Boş ise, kaynak yolu ile aynıdır"
 
 #. CategoriesForm..Label3..Caption
 #: uCategories.dfm:70
 msgid "Color"
-msgstr "Color"
+msgstr "Renk"
 
 #. CategoriesForm..Label4..Caption
 #: uCategories.dfm:77
 msgid "Icon"
-msgstr "Icono"
+msgstr "Simge"
 
 #: uUserSelectForm.dfm:57
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "İptal"
 
 #. CategoriesForm..Panel1..btnOk..Caption
 #: uCategories.dfm:108
 msgid "Ok"
-msgstr "Aceptar"
+msgstr "Tamam"
 
 #. CategoriesForm..eName..EditLabel.Caption
 #: uCategories.dfm:122
 msgid "Category name"
-msgstr "Nombre de la categoría"
+msgstr "Kategori adı"
 
 #. CategoriesForm..ePath..TitleName
 #: uCategories.dfm:134
 msgid "Please specify a directory"
-msgstr "Especifique un directorio"
+msgstr "Lütfen bir dizin belirtin"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:726
 msgid "Product name"
-msgstr "Nombre del producto"
+msgstr "Ürün adı"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:732
 msgid "Description"
-msgstr "Descripción"
+msgstr "Açıklama"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:737
 msgid "Added"
-msgstr "Añadido"
+msgstr "Eklendi"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:742
 msgid "Path"
-msgstr "Ruta"
+msgstr "Dosya adresi"
 
 #. MainForm..DescrPanel..Panel4..Label1..Caption
 #: uMain.dfm:883
 msgid "Product information:"
-msgstr "Información del producto:"
+msgstr "Ürün bilgileri:"
 
 #. MainForm..DescrPanel..Panel4..lProductName..Hint
 #: uMain.dfm:897
 msgid "Click here to change"
-msgstr "Haz clic aquí para cambiar"
+msgstr "Düzenlemek için burayı tıklatın"
 
 #. MainForm..DescrPanel..Panel4..lURL..Hint
 #: uMain.dfm:917
 msgid "Click here to open"
-msgstr "Haz clic aquí para abrir"
+msgstr "Açmak için burayı tıklatın"
 
 #. MainForm..DescrPanel..Panel4..lGoogleSearch..Hint
 #: uMain.dfm:938
 msgid "Click here to search in Google"
-msgstr "Haz clic aquí para buscar en Google"
+msgstr "Google'da aramak için buraya tıklayın"
 
 #. MainForm..DescrPanel..Panel4..lGoogleSearch..Caption
 #: uMain.dfm:941
 msgid "Google search"
-msgstr "Búsqueda en Google"
+msgstr "Google arama"
 
 #. MainForm..DescrPanel..Panel4..eTags..Hint
 #: uMain.dfm:957
 msgid "Product tags"
-msgstr "Etiquetas de producto"
+msgstr "Ürün etiketleri"
 
 #. MainForm..DescrPanel..Panel4..eTags..TextHint
 #: uMain.dfm:969
 msgid "Enter tags"
-msgstr "Introducir etiquetas"
+msgstr "Etiketleri girin"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bShowNFO..Caption
 #: uMain.dfm:1023
 msgid "View NFO file"
-msgstr "Ver el archivo NFO"
+msgstr "NFO dosyasını göster"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bAddNFO..Caption
 #: uMain.dfm:1041
 msgid "Add NFO file"
-msgstr "Agregar archivo NFO"
+msgstr "NFO dosyası ekle"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bChangeURL..Caption
 #: uMain.dfm:1069
 msgid "Change URL"
-msgstr "Cambiar URL"
+msgstr "URL'yi değiştir"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bChangePicture..Caption
 #: uMain.dfm:1087
 msgid "Change picture"
-msgstr "Cambiar imagen"
+msgstr "Resmi Değiştir"
 
 #. MainForm..DescrPanel..DescrFuncPanel..lChnageDirectoryName..Caption
 #: uMain.dfm:1115
 msgid "Change directory name"
-msgstr "Cambiar nombre del directorio"
+msgstr "Dizin adını değiştir"
 
 #. MainForm..HeaderPanel..Panel1..eSearch..TextHint
 #: uMain.dfm:1464
 msgid "Enter the search text"
-msgstr "Introduce el texto de búsqueda"
+msgstr "Arama metnini girin"
 
 #. MainForm..pmList..pmiPluginFuncs..Caption
 #: uMain.dfm:3936
 msgid "Plugin functions"
-msgstr "Funciones del plugin"
+msgstr "Eklenti işlevleri"
 
 #. MainForm..alPopup..aModifyCategory..Caption
 #: uMain.dfm:3953
 msgid "Modify category..."
-msgstr "Modificar categoría..."
+msgstr "Kategori düzenle..."
 
 #. MainForm..alPopup..aDeleteCategory..Caption
 #: uMain.dfm:3957
 msgid "Delete category..."
-msgstr "Eliminar categoría..."
+msgstr "Kategori sil..."
 
 #. MainForm..alPopup..aDeleteItems..Caption
 #: uMain.dfm:3961
 msgid "Delete selected item(s)..."
-msgstr "Eliminar artículo(s) seleccionados..."
+msgstr "Seçili öğeleri sil..."
 
 #. MainForm..alPopup..aOpenDir..Caption
 #: uMain.dfm:3965
 msgid "Open directory"
-msgstr "Abrir directorio"
+msgstr "Klasörü aç"
 
 #. MainForm..alPopup..aNewCategory..Caption
 #: uMain.dfm:3969
 msgid "Add new category..."
-msgstr "Añadir nueva categoría..."
+msgstr "Yeni Kategori Ekle..."
 
 #. MainForm..alPopup..aShowMainForm..Caption
 #: uMain.dfm:3973
 msgid "Show"
-msgstr "Mostrar"
+msgstr "Göster"
 
 #. MainForm..alPopup..aExit..Caption
 #: uMain.dfm:3977
 msgid "Exit"
-msgstr "Salir"
+msgstr "Çıkış"
 
 #. MainForm..alPopup..aViewProcessLog..Caption
 #: uMain.dfm:3981
 msgid "View process log"
-msgstr "Ver registro de proceso"
+msgstr "İşlem günlüğünü görüntüle"
 
 #. MainForm..alPopup..aReprocess..Caption
 #: uMain.dfm:3985
 msgid "Reprocess"
-msgstr "Volver a procesar"
+msgstr "Yeniden işleme sok"
 
 #. MainForm..alPopup..aDelSource..Caption
 #: uMain.dfm:3990
 msgid "Delete source files..."
-msgstr "Eliminar archivos de código fuente..."
+msgstr "Kaynak dosyaları sil..."
 
 #. MainForm..alPopup..aOpenSourceDir..Caption
 #: uMain.dfm:3994
 msgid "Open source directory"
-msgstr "Abrir directorio fuente"
+msgstr "Açık kaynak dizini"
 
 #. MainForm..alPopup..aTargetToClipBoard..Caption
 #: uMain.dfm:3998
 msgid "Copy target directory to clipboard"
-msgstr "Copiar el directorio de destino en el portapapeles"
+msgstr "Hedef dizini panoya kopyala"
 
 #. MainForm..alToolbar..aAddFile..Caption
 #: uMain.dfm:4194
 msgid "Add files(s)..."
-msgstr "Añadir archivos(s)..."
+msgstr "Dosya ekle..."
 
 #. MainForm..alToolbar..aAddDirectory..Caption
 #: uMain.dfm:4199
 msgid "Add directory..."
-msgstr "Añadir directorio..."
+msgstr "Klasör ekle..."
 
 #. MainForm..alToolbar..aQueue..Caption
 #: uMain.dfm:4204
 msgid "Queue"
-msgstr "Cola"
+msgstr "Sıra"
 
 #. MainForm..alToolbar..aConsistenceCheck..Caption
 #: uMain.dfm:4209
 msgid "Consistence check"
-msgstr "Verificación de consistencia"
+msgstr "Uyumluluk kontrolü"
 
 #. MainForm..alToolbar..aAddStuff..Caption
 #: uMain.dfm:4214
 msgid "Add stuff"
-msgstr "Añadir cosas"
+msgstr "Dosya ekle"
 
 #. MainForm..alToolbar..aAddToWatch..Caption
 #: uMain.dfm:4219
 msgid "Add directory to watchlist..."
-msgstr "Añadir directorio a lista de seguimiento..."
+msgstr "İzleme listesine klasör ekle..."
 
 #. MainForm..alToolbar..aSettings..Caption
 #: uMain.dfm:4224
 msgid "Settings"
-msgstr "Ajustes"
+msgstr "Ayarlar"
 
 #. MainForm..alToolbar..aDBBackup..Caption
 #: uMain.dfm:4229
 msgid "Database backup..."
-msgstr "Hacer copia de seguridad de la base de datos..."
+msgstr "Veritabanı yedekleme..."
 
 #. MainForm..alToolbar..aDBRestore..Caption
 #: uMain.dfm:4234
 msgid "Database restore..."
-msgstr "Restaurar base de datos..."
+msgstr "Veritabanı geri yükleme..."
 
 #. MainForm..alToolbar..aDBVacuum..Caption
 #: uMain.dfm:4239
 msgid "Database vacuum"
-msgstr "Vacío de la base de datos"
+msgstr "Veritabanı optimizasyon"
 
 #: uPluginsForm.dfm:5
 msgid "Plugins"
-msgstr "Plugins"
+msgstr "Eklentiler"
 
 #. MainForm..alToolbar..aHomepage..Caption
 #: uMain.dfm:4254
 msgid "Visit homepage"
-msgstr "Ver la página de inicio"
+msgstr "Ana sayfasını ziyaret et"
 
 #. MainForm..PictureDialog....Filter
 #: uMain.dfm:4267
 msgid "Supported images (*.bmp, *.jpg, *.gif, *.png)|*.bmp;*.jpg;*.gif;*.png"
-msgstr "Imágenes compatibles (*.bmp, *.jpg, *.gif, *.png)|*.bmp,*.jpg,*.gif,*.png"
+msgstr "Desteklenen dosya türleri (*.bmp, *.jpg, *.gif, *.png)|*.bmp; *.jpg; *.gif, *.png"
 
 #. MainForm..OD..Filter
 #: uMain.dfm:4273
 msgid "All files (*.*)|*.*"
-msgstr "Todos los archivos (*.*)|*.*"
+msgstr "Tüm dosyalar (*.*)|*.*"
 
 #. MainForm..NFODialog..Filter
 #: uMain.dfm:6271
 msgid "NFO files (*.nfo)|*.nfo"
-msgstr "NFO archivos (* nfo.) | *.nfo"
+msgstr "NFO dosyaları (*.nfo)|*.nfo"
 
 #. NFOForm..Caption
 #: uNFOForm.dfm:5
 msgid "NFO Viewer"
-msgstr "Visor NFO"
+msgstr "NFO Görüntüleyici"
 
 #. OptionsForm..Caption
 #: uOptionsForm.dfm:4
 msgid "Preferences"
-msgstr "Preferencias"
+msgstr "Tercihler"
 
 #. OptionsForm..Panel1..GroupBox1..Caption
 #: uOptionsForm.dfm:45
 msgid "Process settings"
-msgstr "Ajustes de procesos"
+msgstr "İşlem ayarları"
 
 #. OptionsForm..Panel1..GroupBox1..cbDelToRB..Caption
 #: uOptionsForm.dfm:52
 msgid "Delete to recycle bin"
-msgstr "Eliminar (a la Papelera de reciclaje)"
+msgstr "Geri dönüşüm kutusuna gönder"
 
 #. OptionsForm..Panel1..GroupBox1..cbHideDialogs..Caption
 #: uOptionsForm.dfm:60
 msgid "Hide copy/move/delete dialog"
-msgstr "Ocultar diálogos al copiar/mover/eliminar"
+msgstr "Kopyala/Taşı/Sil iletişim kutusunu gizle"
 
 #. OptionsForm..Panel1..GroupBox1..cbICS..Caption
 #: uOptionsForm.dfm:68
 msgid "Enable ICS (Intelligent category selector)"
-msgstr "Habilitar ICS (selector de categorías inteligente)"
+msgstr "ICS (akıllı kategori seçici) etkinleştir"
 
 #. OptionsForm..Panel1..GroupBox2..Caption
 #: uOptionsForm.dfm:77
 msgid "Auto update"
-msgstr "Actualización automática"
+msgstr "Otomatik güncelleştirme"
 
 #. OptionsForm..Panel1..GroupBox2..bCheckUpdate..Caption
 #: uOptionsForm.dfm:86
 msgid "Check now"
-msgstr "Comprobar ahora"
+msgstr "Şimdi kontrol et"
 
 #. OptionsForm..Panel1..GroupBox2..cbCheckNewVersion..Caption
 #: uOptionsForm.dfm:100
 msgid "Check new version at start"
-msgstr "Comprobar nuevas versiones al iniciar"
+msgstr "Başlangıçta yeni sürümü kontrol edin"
 
 #. OptionsForm..Panel1..GroupBox3..Caption
 #: uOptionsForm.dfm:109
 msgid "Extensions"
-msgstr "Extensiones"
+msgstr "Uzantılar"
 
 #. OptionsForm..Panel1..GroupBox4..Caption
 #: uOptionsForm.dfm:127
 msgid "Languages"
-msgstr "Idiomas"
+msgstr "Diller"
 
 #. OptionsForm..Panel1..GroupBox4..lDownloadLangs..Caption
 #: uOptionsForm.dfm:136
 msgid "Download languages..."
-msgstr "Descargar idiomas..."
+msgstr "Dil indir..."
 
 #. OptionsForm..Panel1..GroupBox4..lTranslateTo..Caption
 #: uOptionsForm.dfm:153
 msgid "Translate to your native language"
-msgstr "Traducir a su idioma nativo"
+msgstr "Kendi yerel dilinize çevirin"
 
 #. PasswordForm..Caption
 #: uPasswordForm.dfm:4
 msgid "Password"
-msgstr "Contraseña"
+msgstr "Şifre"
 
 #. PasswordForm..ePass..EditLabel.Caption
 #: uPasswordForm.dfm:26
 msgid "Enter the password"
-msgstr "Introduce la contraseña"
+msgstr "Şifrenizi girin"
 
 #: uPreprocessDirs.dfm:339
 msgid "Close"
-msgstr "Cerrar"
+msgstr "Kapat"
 
 #: uPluginsForm.dfm:281
 msgid "Installed plugins"
-msgstr "Plugins instalados"
+msgstr "Yüklü eklentiler"
 
 #. PluginsForm..GroupBox1..Panel2..Label1..Caption
 #: uPluginsForm.dfm:107
 msgid "Name:"
-msgstr "Nombre:"
+msgstr "Adı:"
 
 #. PluginsForm..GroupBox1..Panel2..Label2..Caption
 #: uPluginsForm.dfm:116
 msgid "Version:"
-msgstr "Versión:"
+msgstr "Sürüm:"
 
 #. PluginsForm..GroupBox1..Panel2..Label3..Caption
 #: uPluginsForm.dfm:125
 msgid "Author:"
-msgstr "Autor:"
+msgstr "Yazar:"
 
 #. PluginsForm..GroupBox1..Panel2..Label4..Caption
 #: uPluginsForm.dfm:134
@@ -411,35 +411,35 @@ msgstr "Web:"
 #. PluginsForm..GroupBox1..Panel2..Label5..Caption
 #: uPluginsForm.dfm:143
 msgid "Description:"
-msgstr "Descripción:"
+msgstr "Açıklama:"
 
 #. PluginsForm..GroupBox1..Panel2..bInstall..Caption
 #: uPluginsForm.dfm:225
 msgid "Install"
-msgstr "Instalar"
+msgstr "Yükle"
 
 #. PluginsForm..GroupBox1..Panel3..IceTabSet1......Caption
 #: uPluginsForm.dfm:286
 msgid "Downloadable plugins"
-msgstr "Plugins descargables"
+msgstr "Karşıdan yüklenebilen eklentiler"
 
 #. PreProcessForm..Caption
 #: uPreprocessDirs.dfm:5
 msgid "Preprocessing new directories"
-msgstr "Procesando nuevos directorios"
+msgstr "Yeni dizinler ön işleme"
 
 #: uPreprocessDirs.dfm:215
 msgid "New directory name"
-msgstr "Nuevo nombre del directorio"
+msgstr "Yeni dizin adı"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:83
 msgid "Old directory"
-msgstr "Directorio antiguo"
+msgstr "Eski dizin"
 
 #: uPreprocessDirs.dfm:225
 msgid "Unpack"
-msgstr "Descomprimir"
+msgstr "Genişlet"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:95
@@ -449,117 +449,117 @@ msgstr "ISO"
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:102
 msgid "Del source"
-msgstr "Eliminar origen"
+msgstr "Kaynağı sil"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:109
 msgid "Size"
-msgstr "Tamaño"
+msgstr "Boyut"
 
 #. PreProcessForm..Panel1..SettingsPanel..lNewPath..Caption
 #: uPreprocessDirs.dfm:156
 msgid "New path:"
-msgstr "Nueva ruta:"
+msgstr "Yeni yol:"
 
 #. PreProcessForm..Panel1..SettingsPanel..lAddCat..Caption
 #: uPreprocessDirs.dfm:170
 msgid "Add"
-msgstr "Añadir"
+msgstr "Ekle"
 
 #. PreProcessForm..Panel1..SettingsPanel..lSaveDefault..Caption
 #: uPreprocessDirs.dfm:188
 msgid "Save as default"
-msgstr "Guardar como predeterminado"
+msgstr "Varsayılan olarak kaydet"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbUnPackISO..Caption
 #: uPreprocessDirs.dfm:235
 msgid "Extract ISO"
-msgstr "Extraer ISO"
+msgstr "ISO'yu genişlet"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelSource..Caption
 #: uPreprocessDirs.dfm:245
 msgid "Delete source path"
-msgstr "Eliminar la ruta de origen"
+msgstr "Kaynak yolu sil"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelNFO..Caption
 #: uPreprocessDirs.dfm:255
 msgid "Delete *.nfo"
-msgstr "Eliminar *.nfo"
+msgstr "*.nfo sil"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelDIZ..Caption
 #: uPreprocessDirs.dfm:265
 msgid "Delete *.diz"
-msgstr "Eliminar *.diz"
+msgstr "*.diz sil"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelSFV..Caption
 #: uPreprocessDirs.dfm:275
 msgid "Delete *.sfv"
-msgstr "Eliminar *.sfv"
+msgstr "*.sfv sil"
 
 #. PreProcessForm..Panel1..SettingsPanel..eTags..EditLabel.Caption
 #: uPreprocessDirs.dfm:287
 msgid "Tags"
-msgstr "Etiquetas"
+msgstr "Etiketler"
 
 #. PreProcessForm..Panel2..bOk..Caption
 #: uPreprocessDirs.dfm:328
 msgid "Process"
-msgstr "Proceso"
+msgstr "İşle"
 
 #. PreProcessForm..PopupMenu1..Deleteselecteditem1..Caption
 #: uPreprocessDirs.dfm:349
 msgid "Delete selected item"
-msgstr "Eliminar el artículo seleccionado"
+msgstr "Seçili öğeyi sil"
 
 #. PreProcessForm..PopupMenu1..Checkall1..Caption
 #: uPreprocessDirs.dfm:356
 msgid "Check all"
-msgstr "Marcar todo"
+msgstr "Tümünü seç"
 
 #. PreProcessForm..PopupMenu1..Uncheckall1..Caption
 #: uPreprocessDirs.dfm:360
 msgid "Uncheck all"
-msgstr "Desmarcar todo"
+msgstr "Hiçbirini seçme"
 
 #. ThreadProcessForm..Caption
 #: uThreadProcessForm.dfm:5
 msgid "Processing"
-msgstr "Procesamiento"
+msgstr "İşleniyor"
 
 #. ThreadProcessForm..Panel1..lMainCaption..Caption
 #: uThreadProcessForm.dfm:54
 msgid "Processing..."
-msgstr "Procesando..."
+msgstr "İşleniyor..."
 
 #. ThreadProcessForm..Panel1..lElapsedTime..Caption
 #: uThreadProcessForm.dfm:61
 msgid "Elapsed time:"
-msgstr "Tiempo transcurrido:"
+msgstr "Geçen süre:"
 
 #. ThreadProcessForm..Panel1..lEstimatedTime..Caption
 #: uThreadProcessForm.dfm:70
 msgid "Estimated time:"
-msgstr "Tiempo estimado:"
+msgstr "Tahmini süre:"
 
 #. ThreadProcessForm..Panel2..Label1..Caption
 #: uThreadProcessForm.dfm:113
 msgid "Priority"
-msgstr "Prioridad"
+msgstr "Öncelik"
 
 #. ThreadProcessForm..Panel2..btnHide..Caption
 #: uThreadProcessForm.dfm:121
 msgid "Hide"
-msgstr "Ocultar"
+msgstr "Gizle"
 
 #. ThreadProcessForm..Panel2..btnPause..Caption
 #: uThreadProcessForm.dfm:131
 msgid "Pause"
-msgstr "Pausa"
+msgstr "Duraklat"
 
 #. ThreadProcessForm..Panel2..btnStop..Caption
 #: uThreadProcessForm.dfm:141
 msgid "Stop"
-msgstr "Detener"
+msgstr "Durdur"
 
 #: uThreadProcessForm.dfm:160
 msgid "Normal"
@@ -568,486 +568,486 @@ msgstr "Normal"
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:158
 msgid "Low"
-msgstr "Bajo"
+msgstr "Düşük"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:159
 msgid "Below normal"
-msgstr "Por debajo de lo normal"
+msgstr "Normalin altı"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:161
 msgid "Above normal"
-msgstr "Por encima de lo normal"
+msgstr "Normalin üstü"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:162
 msgid "High"
-msgstr "Alto"
+msgstr "Yüksek"
 
 #. ThreadProcessForm..GroupBox1..Caption
 #: uThreadProcessForm.dfm:171
 msgid "Process log"
-msgstr "Registro de proceso"
+msgstr "İşlem günlüğü"
 
 #. ThreadProcessForm..GroupBox1..LogList......WideText
 #: uThreadProcessForm.dfm:200
 msgid "Log"
-msgstr "Registro"
+msgstr "Günlük"
 
 #. ThreadProcessForm..GroupBox1..LogList......WideText
 #: uThreadProcessForm.dfm:205
 msgid "Progress"
-msgstr "Progreso"
+msgstr "İlerleme"
 
 #: uUpdateForm.dfm:61
 msgid "Update"
-msgstr "Actualizar"
+msgstr "Güncelleştir"
 
 #. UpdateForm..GroupBox1..Caption
 #: uUpdateForm.dfm:73
 msgid "Update content"
-msgstr "Actualizar contenido"
+msgstr "İçeriği güncelle"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:105
 msgid "Module"
-msgstr "Módulo"
+msgstr "Modül"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:110
 msgid "Date"
-msgstr "Fecha"
+msgstr "Tarih"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:115
 msgid "Version"
-msgstr "Versión"
+msgstr "Sürüm"
 
 #. UpdateForm..GroupBox1..GroupBox2..Caption
 #: uUpdateForm.dfm:128
 msgid "Changes"
-msgstr "Cambios"
+msgstr "Değişiklikler"
 
 #. UpdateForm..Panel1..lMainCaption..Caption
 #: uUpdateForm.dfm:178
 msgid "New version found!"
-msgstr "¡Nueva versión encontrada!"
+msgstr "Yeni sürüm çıktı!"
 
 #. UserSelectForm..Caption
 #: uUserSelectForm.dfm:5
 msgid "Select an item"
-msgstr "Seleciona un artículo"
+msgstr "Bir öğe seçin"
 
 #: Pleaseenteraname
 msgid "Please enter a name!"
-msgstr "¡Introduce un nombre!"
+msgstr "Bir isim giriniz!"
 
 #: Savingtodatabase
 msgid "Saving to database..."
-msgstr "Guardando en la base de datos..."
+msgstr "Veritabanına kaydediliyor..."
 
 #: Findnfoforsave
 msgid "Find *.nfo for save..."
-msgstr "Buscar *.nfo para guardar..."
+msgstr "Kayıt için *.NFO dosyalarını bul..."
 
 #: Savesforprocess
 msgid "Save '%s' for product..."
-msgstr "Guardar '%s' para producto..."
+msgstr "'%s' öğesini bu ürün için kaydet..."
 
 #: Findimageforsave
 msgid "Find image for save..."
-msgstr "Buscar imagen para guardar..."
+msgstr "Kayıt için resim ara..."
 
 #: Waitingforpassword
 msgid "Waiting for password..."
-msgstr "Esperando la contraseña..."
+msgstr "Parola için bekleniyor..."
 
 #: Deletedsourcefiles
 msgid "Deleted source files."
-msgstr "Archivos de código fuente eliminados."
+msgstr "Silinen kaynak dosyalar."
 
 #: Deletesourcedirectorys
 msgid "Delete source directory '%s'..."
-msgstr "Directorio de origen eliminado '%s'..."
+msgstr "'%s' kaynak dizinini sil..."
 
 #: Movestotargetpath
 msgid "Move '%s' to target path..."
-msgstr "Mover '%s' a la ruta de destino..."
+msgstr "'%s' öğesini hedef dizine taşı..."
 
 #: Filemoveerror
 msgid "File move error: "
-msgstr "Error al mover el archivo: "
+msgstr "Dosya taşıma hatası: "
 
 #: Deletetemporarydirectory2
 msgid "Delete temporary directory #2..."
-msgstr "Eliminar temporalmente el directorio #2..."
+msgstr "Geçici dizin #2'yi sil..."
 
 #: Targetdirectorydoesntexists
 msgid "Target directory doesn't exists!"
-msgstr "¡No existe el directorio de destino!"
+msgstr "Hedef dizin bulunamadı!"
 
 #: Deletetemporarydirectory1
 msgid "Delete temporary directory #1..."
-msgstr "Eliminar temporalmente el directorio #1..."
+msgstr "Geçici dizin #1 yi sil..."
 
 #: Deletedsourcedirectorys
 msgid "Deleted source directory '%s'."
-msgstr "Directorio de origen eliminado '%s'."
+msgstr "Silinmiş '%s' kaynak dizini."
 
 #: Deletesourcefiles0
 msgid "Delete source file '%s'..."
-msgstr "Eliminar archivo de origen '%s'..."
+msgstr "'%s' kaynak dosyasını sil..."
 
 #: Deletedsourcefiles0
 msgid "Deleted source file '%s'."
-msgstr "Archivo de origen eliminado '%s'."
+msgstr "Silinmiş '%s' kaynak dosyası."
 
 #: Searcharchives
 msgid "Search archives..."
-msgstr "Buscar archivos..."
+msgstr "Arşivlerde ara..."
 
 #: Unpacks
 msgid "Unpack '%s'..."
-msgstr "Descomprimir '%s'..."
+msgstr "Genişletilmiş '%s'..."
 
 #: Unpackerror
 msgid "Unpack error!"
-msgstr "¡Error al descomprimir!"
+msgstr "Genişletme hatası!"
 
 #: Extracts
 msgid "Extract '%s'..."
-msgstr "Extraer '%s'..."
+msgstr "Genişlet '%s'..."
 
 #: Extracterror
 msgid "Extract error!"
-msgstr "¡Error de extracción!"
+msgstr "Genişletme hatası!"
 
 #: Movestotemp
 msgid "Move '%s' to temp..."
-msgstr "Mover '%s' a..."
+msgstr "'%s' öğesini temp dizinine taşı..."
 
 #: Copystotemp
 msgid "Copy '%s' to temp..."
-msgstr "Copiar '%s' a..."
+msgstr "'%s' öğesini temp dizinine kopyala..."
 
 #: Filecopyerror
 msgid "File copy error: "
-msgstr "Error al copiar archivos: "
+msgstr "Dosya kopyalama hatası: "
 
 #: Pleasewaituntiltheprocessingoperationsarecompleted
 msgid "Please wait until the processing operations are completed!"
-msgstr "¡Espera a que las demás operaciones terminen de procesarse!"
+msgstr "Lütfen işlemler tamamlanıncaya kadar bekleyin!"
 
 #: Doyouwanttodeletethe
 msgid "Do you want to delete the '%s' category?"
-msgstr "¿Desea eliminar la categoría de '%s'?"
+msgstr "'%s' kategorisini silmek istiyor musunuz?"
 
 #: Areyousuredeletetheselecteddirectories
 msgid "Are you sure delete the selected directories?"
-msgstr "¿Deseas eliminar los directorios seleccionados?"
+msgstr "Seçilen dizinleri silmek istediğinize emin misiniz?"
 
 #: AreyousuredeletethesourcefilesPath
 msgid "Are you sure delete the source files? Path: %s"
-msgstr "¿Deseas eliminar los archivos de origen? Ruta: %s"
+msgstr "Kaynak dosyaları silmek emin misiniz? Dosya yolu: %s"
 
 #: Preparing
 msgid "Preparing..."
-msgstr "Preparando..."
+msgstr "Hazırlanıyor..."
 
 #: Pleasewait
 msgid "Please wait"
-msgstr "Espera, por favor"
+msgstr "Lütfen bekleyin"
 
 #: Reprocess
 msgid "Reprocess %s..."
-msgstr "Volver a procesar %s..."
+msgstr "Tekrar işleme %s..."
 
 #: Addnewcategory
 msgid "Add new category"
-msgstr "Añadir nueva categoría"
+msgstr "Yeni kategori ekle"
 
 #: EnterURL
 msgid "Enter URL"
-msgstr "Introducir URL"
+msgstr "URL girin"
 
 #: DoyouwanttocontinuewithclosingmightcauseDATALOSS
 msgid "Do you want to continue with closing (might cause DATA LOSS)?"
-msgstr "¿Deseas continuar con el cierre? (Podría causar pérdida de datos)"
+msgstr "Kapatma işlemine devam etmek istiyor musunuz (Veri kaybına neden olabilir) ?"
 
 #: SomefoldersarestillbeingprocessedDoyoureallywanttoexit
 msgid "Some folders are still being processed. Do you really want to exit?"
-msgstr "Algunas carpetas todavía se están procesando. ¿Deseas salir de todas formas?"
+msgstr "Bazı klasörler hala işleniyor. Çıkmak istediğinizden emin misiniz?"
 
 #: Errorduringspluginprocesss
 msgid "Error during %s plugin process: %s"
-msgstr "Error durante el proceso de plugin %s: %s"
+msgstr "%s eklentisinin çalışması sırasında hata oluştu: %s"
 
 #: Regeneratetags
 msgid "Regenerate tags..."
-msgstr "Regenerar etiquetas..."
+msgstr "Etiketleri yeniden oluştur..."
 
 #: Generatematrixtointelligentsorter
 msgid "Generate matrix to intelligent sorter..."
-msgstr "Generar matriz a clasificador inteligente..."
+msgstr "Akıllı sıralayıcısı için matris oluştur..."
 
 #: Calculatingtagsusage
 msgid "Calculating tags usage..."
-msgstr "Calculando etiquetas usadas..."
+msgstr "Etiketlerin kullanımı hesaplanıyor..."
 
 #: Allproducts
 msgid "All products"
-msgstr "Todos los productos"
+msgstr "Tüm ürünler"
 
 #: Addcategory
 msgid "< Add category... >"
-msgstr "< Añadir categoría... >"
+msgstr "< Kategori ekle... >"
 
 #: Queued
 msgid "Queue (%d)"
-msgstr "Cola (%d)"
+msgstr "Sıra (%d)"
 
 #: Enternewdirectoryname
 msgid "Enter new directory name"
-msgstr "Escribir un nuevo nombre de directorio"
+msgstr "Yeni dizin adı girin"
 
 #: Wouldyouliketosetdirectorynametoproductname
 msgid "Would you like to set directory name to product name?"
-msgstr "¿Te gustaría ponerle un nombre al directorio del producto?"
+msgstr "Dizin adının ürün adı olarak ayarlanmasını ister misiniz?"
 
 #: Pleaseaddsometagstoproduct
 msgid "Please add some tags to product!"
-msgstr "¡Añade alguna etiqueta al producto!"
+msgstr "Lütfen ürüne bir kaç etiket ekleyin!"
 
 #: Consistencechecking
 msgid "Consistence checking..."
-msgstr "Comprobando la consistencia..."
+msgstr "Tutarlılık kontrol ediliyor..."
 
 #: Thesdirectorydoesn
 msgid "The '%s' directory doesn't exists. Do you want to delete from library?"
-msgstr "El directorio '%s' no existe. ¿Deseas eliminarlo de la biblioteca?"
+msgstr "'%s' dizini bulunamadı. Kitaplıktan silmek istiyor musunuz?"
 
 #: Consistencecheckfinished
 msgid "Consistence check finished!"
-msgstr "¡Verificación de consistencia terminada!"
+msgstr "Tutarlılık kontrolü tamamlandı!"
 
 #: Vacuummaindatabase
 msgid "Vacuum main database..."
-msgstr "Vaciando base de datos principal..."
+msgstr "Ana veritabanını optimize et..."
 
 #: Vacuuminfodatabase
 msgid "Vacuum info database..."
-msgstr "Vaciando base de datos de info..."
+msgstr "Bilgi veritabanını optimize et..."
 
 #: Vacuumfinished
 msgid "Vacuum finished!"
-msgstr "¡Vacío finalizado!"
+msgstr "Optimizasyon tamamlandı!"
 
 #: Stufforganizerbackupfiles
 msgid "Stuff organizer backup files"
-msgstr "Copia de seguridad del organizador"
+msgstr "Stuff organizer yedekleme dosyaları"
 
 #: Backup
 msgid "Backup..."
-msgstr "Hacer copia de seguridad..."
+msgstr "Yedekleme..."
 
 #: Finished
 msgid "Finished!"
-msgstr "¡Terminado!"
+msgstr "Tamamlandı!"
 
 #: Errorduringbackup
 msgid "Error during backup: "
-msgstr "Error durante la copia de seguridad: "
+msgstr "Yedekleme sırasında hata oluştu: "
 
 #: Restore
 msgid "Restore..."
-msgstr "Restaurar..."
+msgstr "Geri yükle..."
 
 #: Errorduringrestore
 msgid "Error during restore: "
-msgstr "Error durante la restauración: "
+msgstr "Geri yükleme sırasında hata: "
 
 #: Preparings
 msgid "Preparing '%s'..."
-msgstr "Preparando '%s'..."
+msgstr "Hazırlanıyor '%s'..."
 
 #: ThespecifiedsourcedirectoryshasbeenprocessedDoyouwanttocontinue
 msgid "The specified source directory (%s) has been processed! Do you want to continue?"
-msgstr "¡El directorio de origen especificado (%s) se ha procesado! ¿Deseas continuar?"
+msgstr "Belirtilen kaynak dizin (%s) işlendi! Devam etmek istiyor musunuz?"
 
 #: RunningICSons
 msgid "Running ICS on '%s'..."
-msgstr "Ejecuta ICS en '%s'..."
+msgstr "ICS, '%s' üzerinde çalıştırılıyor..."
 
 #: Wouldyouliketomovedirectoriesaccordingtothenewcategory
 msgid "Would you like to move directories according to the new category?"
-msgstr "¿Le gustaría mover directorios de acuerdo a la nueva categoría?"
+msgstr "Yeni kategoriye göre dizinleri taşımak ister misiniz?"
 
 #: Deleteitems
 msgid "Delete items..."
-msgstr "Eliminar elementos..."
+msgstr "Öğeleri sil..."
 
 #: Delete
 msgid "Delete "
-msgstr "Eliminar "
+msgstr "Sil "
 
 #: Wouldyouliketodeletethesefoldersonharddisk
 msgid "Would you like to delete these folders on hard disk?"
-msgstr "¿Le gustaría eliminar estas carpetas en el disco duro?"
+msgstr "Bu klasörleri kalıcı olarak silmek istiyor musunuz?"
 
 #: Modifycategoryproperties
 msgid "Modify category properties"
-msgstr "Modificar propiedades de categoría"
+msgstr "Kategori özellikleri değiştir"
 
 #: Saveunprocesseditems
 msgid "Save unprocessed items..."
-msgstr "Guardar elementos sin procesar..."
+msgstr "İşlenmemiş öğeleri kaydet..."
 
 #: Passwordfors
 msgid "Password for %s"
-msgstr "Contraseña para %s"
+msgstr "%s için parola"
 
 #: Viewlog
 msgid "View log"
-msgstr "Ver registro"
+msgstr "Günlüğü göster"
 
 #: Processd
 msgid "Process (%d)"
-msgstr "Proceso (%d)"
+msgstr "İşlem (%d)"
 
 #: Newpath
 msgid "New path: "
-msgstr "Nueva ruta:"
+msgstr "Yeni yol: "
 
 #: Areyousuredeletetheselecteditems
 msgid "Are you sure delete the selected items?"
-msgstr "¿Es que seguro eliminar los elementos seleccionados?"
+msgstr "Seçili öğeleri silmek istediğinize emin misiniz?"
 
 #: Thesitemcantdelete
 msgid "The '%s' item can't delete!"
-msgstr "No se puede eliminar el elemento '%s'!"
+msgstr "'%s' öğesini silemezsiniz!"
 
 #: nocategory
 msgid "<no category>"
-msgstr "<ninguna categoría>"
+msgstr "< kategori yok >"
 
 #: Settingssavedasdefault
 msgid "Settings saved as default."
-msgstr "Configuración guardada por defecto."
+msgstr "Ayarlar varsayılan olarak kaydedildi."
 
 #: Finished0
 msgid "Finished."
-msgstr "Terminado."
+msgstr "Tamamlandı."
 
 #: Aborted
 msgid "Aborted."
-msgstr "Anulado."
+msgstr "İptal edildi."
 
 #: Applicationexitfortoupdate
 msgid "Application exit for to update..."
-msgstr "La aplicación se cerrará para actualizar..."
+msgstr "Güncelleme için uygulama kapatılacak..."
 
 #: Applicationisuptodate
 msgid "Application is up to date."
-msgstr "Aplicación está actualizada."
+msgstr "Uygulama güncel."
 
 #: Unknowupdatefile
 msgid "Unknow update file!"
-msgstr "Desconocido archivo de actualización!"
+msgstr "Bilinmeyen güncelleştirme dosyası!"
 
 #: Updateinfonotfound
 msgid "Update info not found!"
-msgstr "Actualizar información no encontrada!"
+msgstr "Güncelleştirme bilgisi bulunamadı!"
 
 #: Updateerror
 msgid "Update error! "
-msgstr "Error de actualización! "
+msgstr "Güncelleştirme hatası! "
 
 #: Resume
 msgid "Resume"
-msgstr "Reanudar"
+msgstr "Devam et"
 
 #: Areyousurestoptheprocessing
 msgid "Are you sure stop the processing?"
-msgstr "¿Estás seguro de detener el procesamiento?"
+msgstr "İşlemi durdurmak istediğinize emin misiniz?"
 
 #: Waitingforthreadterminate
 msgid "Waiting for thread terminate..."
-msgstr "En espera de subproceso terminar..."
+msgstr "İşlemin sona ermesi bekleniyor..."
 
 #: Processings
 msgid "Processing %s..."
-msgstr "Procesamiento de %s..."
+msgstr "İşleniyor %s..."
 
 #: Finished1
 msgid "Finished"
-msgstr "Terminado"
+msgstr "Tamamlandı"
 
 #: Elapsedtimes
 msgid "Elapsed time: %s"
-msgstr "Tiempo transcurrido: %s"
+msgstr "Toplam süre: %s"
 
 #: Estimatedtimes
 msgid "Estimated time: %s"
-msgstr "Tiempo estimado: %s"
+msgstr "Tahmini süre: %s"
 
 #: Downloaderror
 msgid "Download error: "
-msgstr "Error de descarga: "
+msgstr "İndirme hatası: "
 
 #: VersiondddBuildd
 msgid "Version %d.%d.%d ( Build %d )"
-msgstr "Versión %d.%d.%d (compilación %d)"
+msgstr "Sürüm %d.%d.%d (Alt sürüm %d)"
 
 #: Savedtodatabase
 msgid "Saved to database."
-msgstr "Guardado en la base de datos."
+msgstr "Veritabanına kaydedildi."
 
 #: Mainmodule
 msgid "Main module"
-msgstr "Módulo principal"
+msgstr "Ana modül"
 
 #: PAD keywords
 msgid "catalog, stuff, organizer, collection, library, movie, applications, software, music, game, uncompressor, decompressor"
-msgstr "catálogo, cosas, organizador, colección, biblioteca, película, aplicaciones, software, música, juego, descompresor y compresor"
+msgstr "Katalog, dosya, düzenleyici, koleksiyon, kütüphane, film, uygulamalar, yazılım, müzik, oyun, genişletici, açıcı"
 
 #: PAD description 40
 msgid "Stuff Organizer is a catalog software"
-msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003. Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de la licencia pública General de GNU. Principales características: descomprimir archivos comprimidos (e.g: zip, rar) en dos niveles después de desembalar, limpia los archivos no utilizados en el directorio (por ejemplo: file_id.diz, archivo sfv) extraer iso si desea ordenar categorías multinivel apoyo apoyo de arrastrar-n-colocar etiquetas guardar el contenido del archivo NFO y descripción del producto de base de datos obtener imagen desde la web (por ejemplo: allrovi.com)"
+msgstr "Stuff Organizer bir kataloglama yazılımıdır"
 
 #: PAD description 450
 msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003."
-msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003."
+msgstr "Stuff Organizer açık kaynaklı bir kataloglama yazılımıdır. Arşivinizi (film, yazılım, oyun, müzik, e-kitap yada her ne olursa. Eğer torrent yoluyla indirdiğiniz bir çok dosyanız varsa ve bunları organize etmek istiyorsanız, bu programı mutlaka indirmelisiniz! Windows 7 / Vista / XP / 2008 / 2003 işletim sistemleri üzerinde çalışabilmektedir."
 
 #: PAD description 2000
 msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer is open source software distributed free of charge under the terms of the GNU General Public License. Main features: unpack compressed files (e.g: zip, rar) in two levels after unpack, cleans up the unused files in the directory (e.g: file_id.diz, sfv file) extract iso if you want sort to multi-level categories support drag-n-drop support tags save NFO file content and image to database get product description from the web (e.g: allrovi.com)"
-msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003. Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de la licencia pública General de GNU. Principales características: descomprimir archivos comprimidos (e.g: zip, rar) en dos niveles después de desembalar, limpia los archivos no utilizados en el directorio (por ejemplo: file_id.diz, archivo sfv) extraer iso si desea ordenar categorías multinivel apoyo apoyo de arrastrar-n-colocar etiquetas guardar el contenido del archivo NFO y descripción del producto de base de datos obtener imagen desde la web (por ejemplo: allrovi.com)"
+msgstr "Stuff Organizer açık kaynaklı bir kataloglama yazılımıdır. Arşivinizi (film, yazılım, oyun, müzik, e-kitap yada her ne olursa. Eğer torrent yoluyla indirdiğiniz bir çok dosyanız varsa ve bunları organize etmek istiyorsanız, bu programı mutlaka indirmelisiniz! Windows 7 / Vista / XP / 2008 / 2003 işletim sistemleri üzerinde çalışabilmektedir. Stuff Organizer GNU Genel Kamu Lisansı altında ücretsiz olarak dağıtılan açık kaynaklı bir yazılımdır. Temel özellikler: Sıkıştırılmış dosyalarını iki alt aşamalı genişletebilme (örn. zip, rar), dizinlerdeki kullanılmayan dosyaları silebilme (örn. file_id.diz, sfv dosyaları), ISO dosyalarını genişletebilme, sürükle-bırak desteği, etiketleme, NFO dosyası içeriğini kaydedebilme, ürün tanımlamalarını ve resimlerini webden bulup (örn. allrovi.com) veritabanına kaydedebilme."
 
 #: Pleaserestartthesoftwareforchangestotakeeffect
 msgid "Please restart the software for changes to take effect!"
-msgstr "Por favor, reinicie el software para que los cambios surtan efecto."
+msgstr "Değişikliklerin etkili olması için yazılımı yeniden başlatın!"
 
 #: Downloadingplugind
 msgid "Downloading plugin (%d%%)..."
-msgstr "Descargando plugin (%d%%)..."
+msgstr "Eklenti indiriliyor (%d%%)..."
 
 #: Downloadingpluginlist
 msgid "Downloading plugin list..."
-msgstr "Descargando lista de plugin..."
+msgstr "Eklenti listesi yükleniyor..."
 
 #: Applicationexitfortoupdate
 msgid "Application exit for install new plugin..."
-msgstr "Salir de la aplicación para instalar un nuevo plugin..."
+msgstr "Yeni eklenti kurulumu için uygulama kapatılacak..."
 
 msgid "Directory doesn't exists! Path: %s"
-msgstr "¡No existes el directorio! Ruta: %s"
+msgstr "Dizin bulunamadı! Yolu: %s"
 
 msgid "Would you like to relocate items of category?"
-msgstr "¿Deseas reubicar los objetos de categoría?"
+msgstr "Kategorideki öğeleri taşımak ister misiniz?"
 
 msgid "Relocating..."
-msgstr "Reubicando..."
+msgstr "Yeniden konumlandırılıyor..."
 
 msgid "Relocating %s..."
-msgstr "Reubicando %s..."
+msgstr "Yeniden konumlandırılıyor %s..."
 

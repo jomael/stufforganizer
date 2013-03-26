@@ -7,396 +7,396 @@ msgid ""
 msgstr "Project-Id-Version: stuff-organizer\n"
 "POT-Creation-Date: 2011-10-24 21:39\n"
 "PO-Revision-Date: 2013-03-26 17:54+0100\n"
-"Last-Translator: iceapps <so.iceapps@gmail.com>\n"
-"Language: es_ES\n"
+"Last-Translator: CristiL\n"
+"Language: ro_RO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: crowdin.net\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language-Team: Spanish\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 or (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"Language-Team: Romanian\n"
 
 #: uMain.dfm:4249
 msgid "About"
-msgstr "Acerca de"
+msgstr "Despre"
 
 #: uMain.dfm:4259
 msgid "Check new version"
-msgstr "Prueba la nueva versión"
+msgstr "Verificaţi existenta unei noi versiuni"
 
 #. AboutForm..Label2....Caption
 #: uAboutForm.dfm:350
 msgid "Stuff Organizer is open source software distributed free of charge under the terms of"
-msgstr "Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de"
+msgstr "Stuff Organizer este un program \"open source\" distribuit gratuit în conformitate cu termenii"
 
 #. AboutForm..lGPL..Caption
 #: uAboutForm.dfm:367
 msgid "the GNU General Public License"
-msgstr "la GNU General Public License"
+msgstr "Licenţa publică generală GNU"
 
 #: uUserSelectForm.dfm:46
 msgid "OK"
-msgstr "Aceptar"
+msgstr "Ok"
 
 #: uPreprocessDirs.dfm:147
 msgid "Category"
-msgstr "Categoría"
+msgstr "Categorie"
 
 #. CategoriesForm..Label1..Caption
 #: uCategories.dfm:41
 msgid "Category target path"
-msgstr "Ruta de destino de la categoría"
+msgstr "Organizare Locaţii destinaţie"
 
 #. CategoriesForm..Label2..Caption
 #: uCategories.dfm:49
 msgid "If blank, it's equal with source path"
-msgstr "Si se deja en blanco será igual a la ruta de origen"
+msgstr "Dacă-i necompletat, este egal cu locatia sursă"
 
 #. CategoriesForm..Label3..Caption
 #: uCategories.dfm:70
 msgid "Color"
-msgstr "Color"
+msgstr "Culoare"
 
 #. CategoriesForm..Label4..Caption
 #: uCategories.dfm:77
 msgid "Icon"
-msgstr "Icono"
+msgstr "Pictograma"
 
 #: uUserSelectForm.dfm:57
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Renunţare"
 
 #. CategoriesForm..Panel1..btnOk..Caption
 #: uCategories.dfm:108
 msgid "Ok"
-msgstr "Aceptar"
+msgstr "Ok"
 
 #. CategoriesForm..eName..EditLabel.Caption
 #: uCategories.dfm:122
 msgid "Category name"
-msgstr "Nombre de la categoría"
+msgstr "Nume categorie"
 
 #. CategoriesForm..ePath..TitleName
 #: uCategories.dfm:134
 msgid "Please specify a directory"
-msgstr "Especifique un directorio"
+msgstr "Vă rugăm să specificaţi un Folder"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:726
 msgid "Product name"
-msgstr "Nombre del producto"
+msgstr "Nume produs"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:732
 msgid "Description"
-msgstr "Descripción"
+msgstr "Descriere"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:737
 msgid "Added"
-msgstr "Añadido"
+msgstr "Adăugat"
 
 #. MainForm..ListPanel..Panel3..VList......WideText
 #: uMain.dfm:742
 msgid "Path"
-msgstr "Ruta"
+msgstr "Locatie"
 
 #. MainForm..DescrPanel..Panel4..Label1..Caption
 #: uMain.dfm:883
 msgid "Product information:"
-msgstr "Información del producto:"
+msgstr "Informaţii despre produs:"
 
 #. MainForm..DescrPanel..Panel4..lProductName..Hint
 #: uMain.dfm:897
 msgid "Click here to change"
-msgstr "Haz clic aquí para cambiar"
+msgstr "Click aici pentru a modifica"
 
 #. MainForm..DescrPanel..Panel4..lURL..Hint
 #: uMain.dfm:917
 msgid "Click here to open"
-msgstr "Haz clic aquí para abrir"
+msgstr "Click aici pentru a deschide"
 
 #. MainForm..DescrPanel..Panel4..lGoogleSearch..Hint
 #: uMain.dfm:938
 msgid "Click here to search in Google"
-msgstr "Haz clic aquí para buscar en Google"
+msgstr "Click aici pentru a căuta în Google"
 
 #. MainForm..DescrPanel..Panel4..lGoogleSearch..Caption
 #: uMain.dfm:941
 msgid "Google search"
-msgstr "Búsqueda en Google"
+msgstr "Căutare Google"
 
 #. MainForm..DescrPanel..Panel4..eTags..Hint
 #: uMain.dfm:957
 msgid "Product tags"
-msgstr "Etiquetas de producto"
+msgstr "Etichete produs"
 
 #. MainForm..DescrPanel..Panel4..eTags..TextHint
 #: uMain.dfm:969
 msgid "Enter tags"
-msgstr "Introducir etiquetas"
+msgstr "Introduceţi etichete"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bShowNFO..Caption
 #: uMain.dfm:1023
 msgid "View NFO file"
-msgstr "Ver el archivo NFO"
+msgstr "Vizualizare fişier NFO"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bAddNFO..Caption
 #: uMain.dfm:1041
 msgid "Add NFO file"
-msgstr "Agregar archivo NFO"
+msgstr "Adaugare fişier NFO"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bChangeURL..Caption
 #: uMain.dfm:1069
 msgid "Change URL"
-msgstr "Cambiar URL"
+msgstr "Schimbare URL"
 
 #. MainForm..DescrPanel..DescrFuncPanel..bChangePicture..Caption
 #: uMain.dfm:1087
 msgid "Change picture"
-msgstr "Cambiar imagen"
+msgstr "Modificare imagine"
 
 #. MainForm..DescrPanel..DescrFuncPanel..lChnageDirectoryName..Caption
 #: uMain.dfm:1115
 msgid "Change directory name"
-msgstr "Cambiar nombre del directorio"
+msgstr "Schimbare Nume Folder"
 
 #. MainForm..HeaderPanel..Panel1..eSearch..TextHint
 #: uMain.dfm:1464
 msgid "Enter the search text"
-msgstr "Introduce el texto de búsqueda"
+msgstr "Introduceţi textul de cautat"
 
 #. MainForm..pmList..pmiPluginFuncs..Caption
 #: uMain.dfm:3936
 msgid "Plugin functions"
-msgstr "Funciones del plugin"
+msgstr "Funcţiile Plug-in-ului"
 
 #. MainForm..alPopup..aModifyCategory..Caption
 #: uMain.dfm:3953
 msgid "Modify category..."
-msgstr "Modificar categoría..."
+msgstr "Modificare categorie..."
 
 #. MainForm..alPopup..aDeleteCategory..Caption
 #: uMain.dfm:3957
 msgid "Delete category..."
-msgstr "Eliminar categoría..."
+msgstr "Ştergeţi categorie..."
 
 #. MainForm..alPopup..aDeleteItems..Caption
 #: uMain.dfm:3961
 msgid "Delete selected item(s)..."
-msgstr "Eliminar artículo(s) seleccionados..."
+msgstr "Ştergeţi elementele selectate..."
 
 #. MainForm..alPopup..aOpenDir..Caption
 #: uMain.dfm:3965
 msgid "Open directory"
-msgstr "Abrir directorio"
+msgstr "Deschideţi Folder"
 
 #. MainForm..alPopup..aNewCategory..Caption
 #: uMain.dfm:3969
 msgid "Add new category..."
-msgstr "Añadir nueva categoría..."
+msgstr "Adăugare categorie nouă..."
 
 #. MainForm..alPopup..aShowMainForm..Caption
 #: uMain.dfm:3973
 msgid "Show"
-msgstr "Mostrar"
+msgstr "Arată"
 
 #. MainForm..alPopup..aExit..Caption
 #: uMain.dfm:3977
 msgid "Exit"
-msgstr "Salir"
+msgstr "Ieşire"
 
 #. MainForm..alPopup..aViewProcessLog..Caption
 #: uMain.dfm:3981
 msgid "View process log"
-msgstr "Ver registro de proceso"
+msgstr "Vizualizare jurnal proces"
 
 #. MainForm..alPopup..aReprocess..Caption
 #: uMain.dfm:3985
 msgid "Reprocess"
-msgstr "Volver a procesar"
+msgstr "Reprocesare"
 
 #. MainForm..alPopup..aDelSource..Caption
 #: uMain.dfm:3990
 msgid "Delete source files..."
-msgstr "Eliminar archivos de código fuente..."
+msgstr "Ştergere fişiere sursă..."
 
 #. MainForm..alPopup..aOpenSourceDir..Caption
 #: uMain.dfm:3994
 msgid "Open source directory"
-msgstr "Abrir directorio fuente"
+msgstr "Deschideţi Folder sursă"
 
 #. MainForm..alPopup..aTargetToClipBoard..Caption
 #: uMain.dfm:3998
 msgid "Copy target directory to clipboard"
-msgstr "Copiar el directorio de destino en el portapapeles"
+msgstr "Copiere Folder destinaţie în clipboard"
 
 #. MainForm..alToolbar..aAddFile..Caption
 #: uMain.dfm:4194
 msgid "Add files(s)..."
-msgstr "Añadir archivos(s)..."
+msgstr "Adăugare fişiere..."
 
 #. MainForm..alToolbar..aAddDirectory..Caption
 #: uMain.dfm:4199
 msgid "Add directory..."
-msgstr "Añadir directorio..."
+msgstr "Adăugare Folder..."
 
 #. MainForm..alToolbar..aQueue..Caption
 #: uMain.dfm:4204
 msgid "Queue"
-msgstr "Cola"
+msgstr "Coadă de aşteptare"
 
 #. MainForm..alToolbar..aConsistenceCheck..Caption
 #: uMain.dfm:4209
 msgid "Consistence check"
-msgstr "Verificación de consistencia"
+msgstr "Verificare consistenţă"
 
 #. MainForm..alToolbar..aAddStuff..Caption
 #: uMain.dfm:4214
 msgid "Add stuff"
-msgstr "Añadir cosas"
+msgstr "Adaugă obiecte"
 
 #. MainForm..alToolbar..aAddToWatch..Caption
 #: uMain.dfm:4219
 msgid "Add directory to watchlist..."
-msgstr "Añadir directorio a lista de seguimiento..."
+msgstr "Adaugă Folder pentru supraveghere..."
 
 #. MainForm..alToolbar..aSettings..Caption
 #: uMain.dfm:4224
 msgid "Settings"
-msgstr "Ajustes"
+msgstr "Setări"
 
 #. MainForm..alToolbar..aDBBackup..Caption
 #: uMain.dfm:4229
 msgid "Database backup..."
-msgstr "Hacer copia de seguridad de la base de datos..."
+msgstr "Copie de rezervă bază de date..."
 
 #. MainForm..alToolbar..aDBRestore..Caption
 #: uMain.dfm:4234
 msgid "Database restore..."
-msgstr "Restaurar base de datos..."
+msgstr "Restaurare bază de date..."
 
 #. MainForm..alToolbar..aDBVacuum..Caption
 #: uMain.dfm:4239
 msgid "Database vacuum"
-msgstr "Vacío de la base de datos"
+msgstr "Gol in baza de date"
 
 #: uPluginsForm.dfm:5
 msgid "Plugins"
-msgstr "Plugins"
+msgstr "Plugin-uri"
 
 #. MainForm..alToolbar..aHomepage..Caption
 #: uMain.dfm:4254
 msgid "Visit homepage"
-msgstr "Ver la página de inicio"
+msgstr "Vizitaţi pagina de pornire"
 
 #. MainForm..PictureDialog....Filter
 #: uMain.dfm:4267
 msgid "Supported images (*.bmp, *.jpg, *.gif, *.png)|*.bmp;*.jpg;*.gif;*.png"
-msgstr "Imágenes compatibles (*.bmp, *.jpg, *.gif, *.png)|*.bmp,*.jpg,*.gif,*.png"
+msgstr "Imagini acceptate (*.bmp, *.jpg, *.gif, *.png) | * .bmp; *.gif; *.jpg; *.png"
 
 #. MainForm..OD..Filter
 #: uMain.dfm:4273
 msgid "All files (*.*)|*.*"
-msgstr "Todos los archivos (*.*)|*.*"
+msgstr "Toate fişierele (*. *) | *. *"
 
 #. MainForm..NFODialog..Filter
 #: uMain.dfm:6271
 msgid "NFO files (*.nfo)|*.nfo"
-msgstr "NFO archivos (* nfo.) | *.nfo"
+msgstr "Fişiere NFO (*.nfo) | *.nfo"
 
 #. NFOForm..Caption
 #: uNFOForm.dfm:5
 msgid "NFO Viewer"
-msgstr "Visor NFO"
+msgstr "Vizualizator NFO"
 
 #. OptionsForm..Caption
 #: uOptionsForm.dfm:4
 msgid "Preferences"
-msgstr "Preferencias"
+msgstr "Preferinţe"
 
 #. OptionsForm..Panel1..GroupBox1..Caption
 #: uOptionsForm.dfm:45
 msgid "Process settings"
-msgstr "Ajustes de procesos"
+msgstr "Setări proces"
 
 #. OptionsForm..Panel1..GroupBox1..cbDelToRB..Caption
 #: uOptionsForm.dfm:52
 msgid "Delete to recycle bin"
-msgstr "Eliminar (a la Papelera de reciclaje)"
+msgstr "Sterge (Transfer in Recycle bin)"
 
 #. OptionsForm..Panel1..GroupBox1..cbHideDialogs..Caption
 #: uOptionsForm.dfm:60
 msgid "Hide copy/move/delete dialog"
-msgstr "Ocultar diálogos al copiar/mover/eliminar"
+msgstr "Ascunde dialogul \"copiere/mutare/şterge\""
 
 #. OptionsForm..Panel1..GroupBox1..cbICS..Caption
 #: uOptionsForm.dfm:68
 msgid "Enable ICS (Intelligent category selector)"
-msgstr "Habilitar ICS (selector de categorías inteligente)"
+msgstr "Activarea ICS (Selector Inteligent de Categorii)"
 
 #. OptionsForm..Panel1..GroupBox2..Caption
 #: uOptionsForm.dfm:77
 msgid "Auto update"
-msgstr "Actualización automática"
+msgstr "Actualizare automată"
 
 #. OptionsForm..Panel1..GroupBox2..bCheckUpdate..Caption
 #: uOptionsForm.dfm:86
 msgid "Check now"
-msgstr "Comprobar ahora"
+msgstr "Verifica acum"
 
 #. OptionsForm..Panel1..GroupBox2..cbCheckNewVersion..Caption
 #: uOptionsForm.dfm:100
 msgid "Check new version at start"
-msgstr "Comprobar nuevas versiones al iniciar"
+msgstr "Verificaţi existenta unei noi versiuni la pornire"
 
 #. OptionsForm..Panel1..GroupBox3..Caption
 #: uOptionsForm.dfm:109
 msgid "Extensions"
-msgstr "Extensiones"
+msgstr "Extensii"
 
 #. OptionsForm..Panel1..GroupBox4..Caption
 #: uOptionsForm.dfm:127
 msgid "Languages"
-msgstr "Idiomas"
+msgstr "Limbaje"
 
 #. OptionsForm..Panel1..GroupBox4..lDownloadLangs..Caption
 #: uOptionsForm.dfm:136
 msgid "Download languages..."
-msgstr "Descargar idiomas..."
+msgstr "Descărcare limbaje..."
 
 #. OptionsForm..Panel1..GroupBox4..lTranslateTo..Caption
 #: uOptionsForm.dfm:153
 msgid "Translate to your native language"
-msgstr "Traducir a su idioma nativo"
+msgstr "Traducerea în limba ta nativă"
 
 #. PasswordForm..Caption
 #: uPasswordForm.dfm:4
 msgid "Password"
-msgstr "Contraseña"
+msgstr "Parola"
 
 #. PasswordForm..ePass..EditLabel.Caption
 #: uPasswordForm.dfm:26
 msgid "Enter the password"
-msgstr "Introduce la contraseña"
+msgstr "Introduceţi parola"
 
 #: uPreprocessDirs.dfm:339
 msgid "Close"
-msgstr "Cerrar"
+msgstr "Închide"
 
 #: uPluginsForm.dfm:281
 msgid "Installed plugins"
-msgstr "Plugins instalados"
+msgstr "Plugin-uri instalate"
 
 #. PluginsForm..GroupBox1..Panel2..Label1..Caption
 #: uPluginsForm.dfm:107
 msgid "Name:"
-msgstr "Nombre:"
+msgstr "Nume:"
 
 #. PluginsForm..GroupBox1..Panel2..Label2..Caption
 #: uPluginsForm.dfm:116
 msgid "Version:"
-msgstr "Versión:"
+msgstr "Versiune:"
 
 #. PluginsForm..GroupBox1..Panel2..Label3..Caption
 #: uPluginsForm.dfm:125
@@ -411,155 +411,155 @@ msgstr "Web:"
 #. PluginsForm..GroupBox1..Panel2..Label5..Caption
 #: uPluginsForm.dfm:143
 msgid "Description:"
-msgstr "Descripción:"
+msgstr "Descriere:"
 
 #. PluginsForm..GroupBox1..Panel2..bInstall..Caption
 #: uPluginsForm.dfm:225
 msgid "Install"
-msgstr "Instalar"
+msgstr "Instalaţi"
 
 #. PluginsForm..GroupBox1..Panel3..IceTabSet1......Caption
 #: uPluginsForm.dfm:286
 msgid "Downloadable plugins"
-msgstr "Plugins descargables"
+msgstr "Plugin-uri descărcabile"
 
 #. PreProcessForm..Caption
 #: uPreprocessDirs.dfm:5
 msgid "Preprocessing new directories"
-msgstr "Procesando nuevos directorios"
+msgstr "Preprocesare Foldere noi"
 
 #: uPreprocessDirs.dfm:215
 msgid "New directory name"
-msgstr "Nuevo nombre del directorio"
+msgstr "Nume nou Folder"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:83
 msgid "Old directory"
-msgstr "Directorio antiguo"
+msgstr "Folder vechi"
 
 #: uPreprocessDirs.dfm:225
 msgid "Unpack"
-msgstr "Descomprimir"
+msgstr "Dezarhivare"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:95
 msgid "ISO"
-msgstr "ISO"
+msgstr "Imagine ISO"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:102
 msgid "Del source"
-msgstr "Eliminar origen"
+msgstr "Sterge sursă"
 
 #. PreProcessForm..Panel1..VList......WideText
 #: uPreprocessDirs.dfm:109
 msgid "Size"
-msgstr "Tamaño"
+msgstr "Marime"
 
 #. PreProcessForm..Panel1..SettingsPanel..lNewPath..Caption
 #: uPreprocessDirs.dfm:156
 msgid "New path:"
-msgstr "Nueva ruta:"
+msgstr "Locaţie nouă:"
 
 #. PreProcessForm..Panel1..SettingsPanel..lAddCat..Caption
 #: uPreprocessDirs.dfm:170
 msgid "Add"
-msgstr "Añadir"
+msgstr "Adaugare"
 
 #. PreProcessForm..Panel1..SettingsPanel..lSaveDefault..Caption
 #: uPreprocessDirs.dfm:188
 msgid "Save as default"
-msgstr "Guardar como predeterminado"
+msgstr "Salvare ca implicit"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbUnPackISO..Caption
 #: uPreprocessDirs.dfm:235
 msgid "Extract ISO"
-msgstr "Extraer ISO"
+msgstr "Extragere ISO"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelSource..Caption
 #: uPreprocessDirs.dfm:245
 msgid "Delete source path"
-msgstr "Eliminar la ruta de origen"
+msgstr "Ștergere locaţie sursă"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelNFO..Caption
 #: uPreprocessDirs.dfm:255
 msgid "Delete *.nfo"
-msgstr "Eliminar *.nfo"
+msgstr "Ștergere *.nfo"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelDIZ..Caption
 #: uPreprocessDirs.dfm:265
 msgid "Delete *.diz"
-msgstr "Eliminar *.diz"
+msgstr "Ștergere *.diz"
 
 #. PreProcessForm..Panel1..SettingsPanel..cbDelSFV..Caption
 #: uPreprocessDirs.dfm:275
 msgid "Delete *.sfv"
-msgstr "Eliminar *.sfv"
+msgstr "Ștergere *.sfv"
 
 #. PreProcessForm..Panel1..SettingsPanel..eTags..EditLabel.Caption
 #: uPreprocessDirs.dfm:287
 msgid "Tags"
-msgstr "Etiquetas"
+msgstr "Etichete"
 
 #. PreProcessForm..Panel2..bOk..Caption
 #: uPreprocessDirs.dfm:328
 msgid "Process"
-msgstr "Proceso"
+msgstr "Procesare"
 
 #. PreProcessForm..PopupMenu1..Deleteselecteditem1..Caption
 #: uPreprocessDirs.dfm:349
 msgid "Delete selected item"
-msgstr "Eliminar el artículo seleccionado"
+msgstr "Ștergeți elementul selectat"
 
 #. PreProcessForm..PopupMenu1..Checkall1..Caption
 #: uPreprocessDirs.dfm:356
 msgid "Check all"
-msgstr "Marcar todo"
+msgstr "Selectare toate"
 
 #. PreProcessForm..PopupMenu1..Uncheckall1..Caption
 #: uPreprocessDirs.dfm:360
 msgid "Uncheck all"
-msgstr "Desmarcar todo"
+msgstr "Deselectare toate"
 
 #. ThreadProcessForm..Caption
 #: uThreadProcessForm.dfm:5
 msgid "Processing"
-msgstr "Procesamiento"
+msgstr "Procesare"
 
 #. ThreadProcessForm..Panel1..lMainCaption..Caption
 #: uThreadProcessForm.dfm:54
 msgid "Processing..."
-msgstr "Procesando..."
+msgstr "Procesare..."
 
 #. ThreadProcessForm..Panel1..lElapsedTime..Caption
 #: uThreadProcessForm.dfm:61
 msgid "Elapsed time:"
-msgstr "Tiempo transcurrido:"
+msgstr "Timp scurs:"
 
 #. ThreadProcessForm..Panel1..lEstimatedTime..Caption
 #: uThreadProcessForm.dfm:70
 msgid "Estimated time:"
-msgstr "Tiempo estimado:"
+msgstr "Timp estimat:"
 
 #. ThreadProcessForm..Panel2..Label1..Caption
 #: uThreadProcessForm.dfm:113
 msgid "Priority"
-msgstr "Prioridad"
+msgstr "Prioritate"
 
 #. ThreadProcessForm..Panel2..btnHide..Caption
 #: uThreadProcessForm.dfm:121
 msgid "Hide"
-msgstr "Ocultar"
+msgstr "Ascunde"
 
 #. ThreadProcessForm..Panel2..btnPause..Caption
 #: uThreadProcessForm.dfm:131
 msgid "Pause"
-msgstr "Pausa"
+msgstr "Pauză"
 
 #. ThreadProcessForm..Panel2..btnStop..Caption
 #: uThreadProcessForm.dfm:141
 msgid "Stop"
-msgstr "Detener"
+msgstr "Oprire"
 
 #: uThreadProcessForm.dfm:160
 msgid "Normal"
@@ -568,486 +568,486 @@ msgstr "Normal"
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:158
 msgid "Low"
-msgstr "Bajo"
+msgstr "Scazută"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:159
 msgid "Below normal"
-msgstr "Por debajo de lo normal"
+msgstr "Sub normal"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:161
 msgid "Above normal"
-msgstr "Por encima de lo normal"
+msgstr "Peste normal"
 
 #. ThreadProcessForm..Panel2..cbPriority....Items.Strings
 #: uThreadProcessForm.dfm:162
 msgid "High"
-msgstr "Alto"
+msgstr "Mare"
 
 #. ThreadProcessForm..GroupBox1..Caption
 #: uThreadProcessForm.dfm:171
 msgid "Process log"
-msgstr "Registro de proceso"
+msgstr "Jurnal proces"
 
 #. ThreadProcessForm..GroupBox1..LogList......WideText
 #: uThreadProcessForm.dfm:200
 msgid "Log"
-msgstr "Registro"
+msgstr "Jurnal"
 
 #. ThreadProcessForm..GroupBox1..LogList......WideText
 #: uThreadProcessForm.dfm:205
 msgid "Progress"
-msgstr "Progreso"
+msgstr "Progres"
 
 #: uUpdateForm.dfm:61
 msgid "Update"
-msgstr "Actualizar"
+msgstr "Actualizare"
 
 #. UpdateForm..GroupBox1..Caption
 #: uUpdateForm.dfm:73
 msgid "Update content"
-msgstr "Actualizar contenido"
+msgstr "Actualizare conținut"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:105
 msgid "Module"
-msgstr "Módulo"
+msgstr "Modul"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:110
 msgid "Date"
-msgstr "Fecha"
+msgstr "Data"
 
 #. UpdateForm..GroupBox1..DataList......WideText
 #: uUpdateForm.dfm:115
 msgid "Version"
-msgstr "Versión"
+msgstr "Versiune"
 
 #. UpdateForm..GroupBox1..GroupBox2..Caption
 #: uUpdateForm.dfm:128
 msgid "Changes"
-msgstr "Cambios"
+msgstr "Modificări"
 
 #. UpdateForm..Panel1..lMainCaption..Caption
 #: uUpdateForm.dfm:178
 msgid "New version found!"
-msgstr "¡Nueva versión encontrada!"
+msgstr "A fost gasită o nouă versiune!"
 
 #. UserSelectForm..Caption
 #: uUserSelectForm.dfm:5
 msgid "Select an item"
-msgstr "Seleciona un artículo"
+msgstr "Selectaţi un element"
 
 #: Pleaseenteraname
 msgid "Please enter a name!"
-msgstr "¡Introduce un nombre!"
+msgstr "Introduceți un nume!"
 
 #: Savingtodatabase
 msgid "Saving to database..."
-msgstr "Guardando en la base de datos..."
+msgstr "Salvare in baza de date..."
 
 #: Findnfoforsave
 msgid "Find *.nfo for save..."
-msgstr "Buscar *.nfo para guardar..."
+msgstr "Căutare *.nfo pentru salvare..."
 
 #: Savesforprocess
 msgid "Save '%s' for product..."
-msgstr "Guardar '%s' para producto..."
+msgstr "Salvaţi '%s' pentru produsul..."
 
 #: Findimageforsave
 msgid "Find image for save..."
-msgstr "Buscar imagen para guardar..."
+msgstr "Căutare imagine pentru salvare..."
 
 #: Waitingforpassword
 msgid "Waiting for password..."
-msgstr "Esperando la contraseña..."
+msgstr "Aşteptare introducere parolă..."
 
 #: Deletedsourcefiles
 msgid "Deleted source files."
-msgstr "Archivos de código fuente eliminados."
+msgstr "Fişiere sursă şterse."
 
 #: Deletesourcedirectorys
 msgid "Delete source directory '%s'..."
-msgstr "Directorio de origen eliminado '%s'..."
+msgstr "Ștergere Folderul sursă '%s'..."
 
 #: Movestotargetpath
 msgid "Move '%s' to target path..."
-msgstr "Mover '%s' a la ruta de destino..."
+msgstr "Mutaţi '%s' in locaţia destinaţie..."
 
 #: Filemoveerror
 msgid "File move error: "
-msgstr "Error al mover el archivo: "
+msgstr "Eroare la mutarea Fişierului: "
 
 #: Deletetemporarydirectory2
 msgid "Delete temporary directory #2..."
-msgstr "Eliminar temporalmente el directorio #2..."
+msgstr "Ștergere Folder temporar #2..."
 
 #: Targetdirectorydoesntexists
 msgid "Target directory doesn't exists!"
-msgstr "¡No existe el directorio de destino!"
+msgstr "Nu există Folder destinaţie!"
 
 #: Deletetemporarydirectory1
 msgid "Delete temporary directory #1..."
-msgstr "Eliminar temporalmente el directorio #1..."
+msgstr "Ștergere Folder temporar #1..."
 
 #: Deletedsourcedirectorys
 msgid "Deleted source directory '%s'."
-msgstr "Directorio de origen eliminado '%s'."
+msgstr "Ștergere Folderul sursă '%s'."
 
 #: Deletesourcefiles0
 msgid "Delete source file '%s'..."
-msgstr "Eliminar archivo de origen '%s'..."
+msgstr "Ştergeţi fişierul sursă '%s'..."
 
 #: Deletedsourcefiles0
 msgid "Deleted source file '%s'."
-msgstr "Archivo de origen eliminado '%s'."
+msgstr "Fişierul sursă şters '%s'."
 
 #: Searcharchives
 msgid "Search archives..."
-msgstr "Buscar archivos..."
+msgstr "Căutare arhive..."
 
 #: Unpacks
 msgid "Unpack '%s'..."
-msgstr "Descomprimir '%s'..."
+msgstr "Dezarhivaţi '%s'..."
 
 #: Unpackerror
 msgid "Unpack error!"
-msgstr "¡Error al descomprimir!"
+msgstr "Eroare dezarhivare!"
 
 #: Extracts
 msgid "Extract '%s'..."
-msgstr "Extraer '%s'..."
+msgstr "Extragere '%s'..."
 
 #: Extracterror
 msgid "Extract error!"
-msgstr "¡Error de extracción!"
+msgstr "Eroare extragere!"
 
 #: Movestotemp
 msgid "Move '%s' to temp..."
-msgstr "Mover '%s' a..."
+msgstr "Mutare '%s' in temporar..."
 
 #: Copystotemp
 msgid "Copy '%s' to temp..."
-msgstr "Copiar '%s' a..."
+msgstr "Copiere '%s' in temporar..."
 
 #: Filecopyerror
 msgid "File copy error: "
-msgstr "Error al copiar archivos: "
+msgstr "Eroare copiere fişier: "
 
 #: Pleasewaituntiltheprocessingoperationsarecompleted
 msgid "Please wait until the processing operations are completed!"
-msgstr "¡Espera a que las demás operaciones terminen de procesarse!"
+msgstr "Vă rugăm să aşteptaţi până la finalizarea operaţiilor!"
 
 #: Doyouwanttodeletethe
 msgid "Do you want to delete the '%s' category?"
-msgstr "¿Desea eliminar la categoría de '%s'?"
+msgstr "Doriţi să ştergeţi categoria '%s'?"
 
 #: Areyousuredeletetheselecteddirectories
 msgid "Are you sure delete the selected directories?"
-msgstr "¿Deseas eliminar los directorios seleccionados?"
+msgstr "Sunteţi sigur că doriţi ştergerea folderelor selectate?"
 
 #: AreyousuredeletethesourcefilesPath
 msgid "Are you sure delete the source files? Path: %s"
-msgstr "¿Deseas eliminar los archivos de origen? Ruta: %s"
+msgstr "Sunteţi sigur că doriţi ştergerea fişierelor sursă? Locaţie: %s"
 
 #: Preparing
 msgid "Preparing..."
-msgstr "Preparando..."
+msgstr "Pregatire..."
 
 #: Pleasewait
 msgid "Please wait"
-msgstr "Espera, por favor"
+msgstr "Vă rugăm aşteptaţi!"
 
 #: Reprocess
 msgid "Reprocess %s..."
-msgstr "Volver a procesar %s..."
+msgstr "Reprocesare %s..."
 
 #: Addnewcategory
 msgid "Add new category"
-msgstr "Añadir nueva categoría"
+msgstr "Adăugare categorie nouă"
 
 #: EnterURL
 msgid "Enter URL"
-msgstr "Introducir URL"
+msgstr "Introduceţi URL"
 
 #: DoyouwanttocontinuewithclosingmightcauseDATALOSS
 msgid "Do you want to continue with closing (might cause DATA LOSS)?"
-msgstr "¿Deseas continuar con el cierre? (Podría causar pérdida de datos)"
+msgstr "Doriţi să continuaţi cu închidere (s-ar putea provoca pierderi de date)?"
 
 #: SomefoldersarestillbeingprocessedDoyoureallywanttoexit
 msgid "Some folders are still being processed. Do you really want to exit?"
-msgstr "Algunas carpetas todavía se están procesando. ¿Deseas salir de todas formas?"
+msgstr "Unele foldere sunt încă în curs de procesare. Doriţi intr-adevăr să ieşiţi?"
 
 #: Errorduringspluginprocesss
 msgid "Error during %s plugin process: %s"
-msgstr "Error durante el proceso de plugin %s: %s"
+msgstr "Eroare în timpul executiei plugin-ului %s: %s"
 
 #: Regeneratetags
 msgid "Regenerate tags..."
-msgstr "Regenerar etiquetas..."
+msgstr "Regenerare Etichete..."
 
 #: Generatematrixtointelligentsorter
 msgid "Generate matrix to intelligent sorter..."
-msgstr "Generar matriz a clasificador inteligente..."
+msgstr "Generare matrice de sortare inteligenta..."
 
 #: Calculatingtagsusage
 msgid "Calculating tags usage..."
-msgstr "Calculando etiquetas usadas..."
+msgstr "Calcularea folosirii etichetelor..."
 
 #: Allproducts
 msgid "All products"
-msgstr "Todos los productos"
+msgstr "Toate produsele"
 
 #: Addcategory
 msgid "< Add category... >"
-msgstr "< Añadir categoría... >"
+msgstr "< Adaugare categorie... >"
 
 #: Queued
 msgid "Queue (%d)"
-msgstr "Cola (%d)"
+msgstr "Coadă de aşteptare (%d)"
 
 #: Enternewdirectoryname
 msgid "Enter new directory name"
-msgstr "Escribir un nuevo nombre de directorio"
+msgstr "Introduceţi noul nume pentru folder"
 
 #: Wouldyouliketosetdirectorynametoproductname
 msgid "Would you like to set directory name to product name?"
-msgstr "¿Te gustaría ponerle un nombre al directorio del producto?"
+msgstr "Doriţi să atribuiţi numele folderului si pentru nume produs?"
 
 #: Pleaseaddsometagstoproduct
 msgid "Please add some tags to product!"
-msgstr "¡Añade alguna etiqueta al producto!"
+msgstr "Vă rugăm să adăugaţi unele etichete produsului!"
 
 #: Consistencechecking
 msgid "Consistence checking..."
-msgstr "Comprobando la consistencia..."
+msgstr "Verificare consistenţă..."
 
 #: Thesdirectorydoesn
 msgid "The '%s' directory doesn't exists. Do you want to delete from library?"
-msgstr "El directorio '%s' no existe. ¿Deseas eliminarlo de la biblioteca?"
+msgstr "Folderul '%s' nu există. Doriţi să-l ştergeţi din bibliotecă?"
 
 #: Consistencecheckfinished
 msgid "Consistence check finished!"
-msgstr "¡Verificación de consistencia terminada!"
+msgstr "Verificare consistenţă finalizată!"
 
 #: Vacuummaindatabase
 msgid "Vacuum main database..."
-msgstr "Vaciando base de datos principal..."
+msgstr "Golire bază de date principală..."
 
 #: Vacuuminfodatabase
 msgid "Vacuum info database..."
-msgstr "Vaciando base de datos de info..."
+msgstr "Golire informaţii bază de date..."
 
 #: Vacuumfinished
 msgid "Vacuum finished!"
-msgstr "¡Vacío finalizado!"
+msgstr "Golire finalizată!"
 
 #: Stufforganizerbackupfiles
 msgid "Stuff organizer backup files"
-msgstr "Copia de seguridad del organizador"
+msgstr "Fisierele backup ale Stuff organizer"
 
 #: Backup
 msgid "Backup..."
-msgstr "Hacer copia de seguridad..."
+msgstr "Copie de rezervă..."
 
 #: Finished
 msgid "Finished!"
-msgstr "¡Terminado!"
+msgstr "Terminat!"
 
 #: Errorduringbackup
 msgid "Error during backup: "
-msgstr "Error durante la copia de seguridad: "
+msgstr "Eroare in timpul copiei de siguranţă: "
 
 #: Restore
 msgid "Restore..."
-msgstr "Restaurar..."
+msgstr "Restaurare..."
 
 #: Errorduringrestore
 msgid "Error during restore: "
-msgstr "Error durante la restauración: "
+msgstr "Eroare in timpul restaurării: "
 
 #: Preparings
 msgid "Preparing '%s'..."
-msgstr "Preparando '%s'..."
+msgstr "Pregătire '%s'..."
 
 #: ThespecifiedsourcedirectoryshasbeenprocessedDoyouwanttocontinue
 msgid "The specified source directory (%s) has been processed! Do you want to continue?"
-msgstr "¡El directorio de origen especificado (%s) se ha procesado! ¿Deseas continuar?"
+msgstr "Folderul sursa specificat (%s) a fost procesat! Doriţi să continuaţi?"
 
 #: RunningICSons
 msgid "Running ICS on '%s'..."
-msgstr "Ejecuta ICS en '%s'..."
+msgstr "Execută ICS pe '%s'..."
 
 #: Wouldyouliketomovedirectoriesaccordingtothenewcategory
 msgid "Would you like to move directories according to the new category?"
-msgstr "¿Le gustaría mover directorios de acuerdo a la nueva categoría?"
+msgstr "Doriţi să mutaţi folderele în conformitate cu noua categorie?"
 
 #: Deleteitems
 msgid "Delete items..."
-msgstr "Eliminar elementos..."
+msgstr "Ştergeţi elementele..."
 
 #: Delete
 msgid "Delete "
-msgstr "Eliminar "
+msgstr "Ştergeţi "
 
 #: Wouldyouliketodeletethesefoldersonharddisk
 msgid "Would you like to delete these folders on hard disk?"
-msgstr "¿Le gustaría eliminar estas carpetas en el disco duro?"
+msgstr "Doriţi să ştergeţi aceste foldere de pe hard disk?"
 
 #: Modifycategoryproperties
 msgid "Modify category properties"
-msgstr "Modificar propiedades de categoría"
+msgstr "Modificare proprietăţi categorie"
 
 #: Saveunprocesseditems
 msgid "Save unprocessed items..."
-msgstr "Guardar elementos sin procesar..."
+msgstr "Salvare elemente neprelucrate..."
 
 #: Passwordfors
 msgid "Password for %s"
-msgstr "Contraseña para %s"
+msgstr "Parola pentru %s"
 
 #: Viewlog
 msgid "View log"
-msgstr "Ver registro"
+msgstr "Vizualizare jurnal"
 
 #: Processd
 msgid "Process (%d)"
-msgstr "Proceso (%d)"
+msgstr "Procesare (%d)"
 
 #: Newpath
 msgid "New path: "
-msgstr "Nueva ruta:"
+msgstr "Noua locaţie: "
 
 #: Areyousuredeletetheselecteditems
 msgid "Are you sure delete the selected items?"
-msgstr "¿Es que seguro eliminar los elementos seleccionados?"
+msgstr "Sigur doriţi ștergerea elementelor selectate?"
 
 #: Thesitemcantdelete
 msgid "The '%s' item can't delete!"
-msgstr "No se puede eliminar el elemento '%s'!"
+msgstr "Elementul '%s' nu se poate şterge!"
 
 #: nocategory
 msgid "<no category>"
-msgstr "<ninguna categoría>"
+msgstr "< fară categorie >"
 
 #: Settingssavedasdefault
 msgid "Settings saved as default."
-msgstr "Configuración guardada por defecto."
+msgstr "Setări salvate în mod implicit."
 
 #: Finished0
 msgid "Finished."
-msgstr "Terminado."
+msgstr "Terminat."
 
 #: Aborted
 msgid "Aborted."
-msgstr "Anulado."
+msgstr "Abandonată."
 
 #: Applicationexitfortoupdate
 msgid "Application exit for to update..."
-msgstr "La aplicación se cerrará para actualizar..."
+msgstr "Aplicaţia inchisă pentru actualizare..."
 
 #: Applicationisuptodate
 msgid "Application is up to date."
-msgstr "Aplicación está actualizada."
+msgstr "Aplicaţia este actualizată."
 
 #: Unknowupdatefile
 msgid "Unknow update file!"
-msgstr "Desconocido archivo de actualización!"
+msgstr "Fişier de actualizare necunoscut!"
 
 #: Updateinfonotfound
 msgid "Update info not found!"
-msgstr "Actualizar información no encontrada!"
+msgstr "Nu au fost gasite informaţii pentru actualizare!"
 
 #: Updateerror
 msgid "Update error! "
-msgstr "Error de actualización! "
+msgstr "Eroare de actualizare! "
 
 #: Resume
 msgid "Resume"
-msgstr "Reanudar"
+msgstr "Reluare"
 
 #: Areyousurestoptheprocessing
 msgid "Are you sure stop the processing?"
-msgstr "¿Estás seguro de detener el procesamiento?"
+msgstr "Sigur doriţi oprirea procesării?"
 
 #: Waitingforthreadterminate
 msgid "Waiting for thread terminate..."
-msgstr "En espera de subproceso terminar..."
+msgstr "Aşteptare pentru finalizarea..."
 
 #: Processings
 msgid "Processing %s..."
-msgstr "Procesamiento de %s..."
+msgstr "Procesare %s..."
 
 #: Finished1
 msgid "Finished"
-msgstr "Terminado"
+msgstr "Terminat"
 
 #: Elapsedtimes
 msgid "Elapsed time: %s"
-msgstr "Tiempo transcurrido: %s"
+msgstr "Timp scurs: %s"
 
 #: Estimatedtimes
 msgid "Estimated time: %s"
-msgstr "Tiempo estimado: %s"
+msgstr "Timp estimat: %s"
 
 #: Downloaderror
 msgid "Download error: "
-msgstr "Error de descarga: "
+msgstr "Eroare de Descărcare: "
 
 #: VersiondddBuildd
 msgid "Version %d.%d.%d ( Build %d )"
-msgstr "Versión %d.%d.%d (compilación %d)"
+msgstr "Versiune %d.%d.%d (Build %d)"
 
 #: Savedtodatabase
 msgid "Saved to database."
-msgstr "Guardado en la base de datos."
+msgstr "Salvat în baza de date."
 
 #: Mainmodule
 msgid "Main module"
-msgstr "Módulo principal"
+msgstr "Modulul principal"
 
 #: PAD keywords
 msgid "catalog, stuff, organizer, collection, library, movie, applications, software, music, game, uncompressor, decompressor"
-msgstr "catálogo, cosas, organizador, colección, biblioteca, película, aplicaciones, software, música, juego, descompresor y compresor"
+msgstr "catalog, obiecte, organizator, colecţie, bibliotecă, film, aplicaţii, programe, muzică, joc,  comprimare, decomprimare"
 
 #: PAD description 40
 msgid "Stuff Organizer is a catalog software"
-msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003. Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de la licencia pública General de GNU. Principales características: descomprimir archivos comprimidos (e.g: zip, rar) en dos niveles después de desembalar, limpia los archivos no utilizados en el directorio (por ejemplo: file_id.diz, archivo sfv) extraer iso si desea ordenar categorías multinivel apoyo apoyo de arrastrar-n-colocar etiquetas guardar el contenido del archivo NFO y descripción del producto de base de datos obtener imagen desde la web (por ejemplo: allrovi.com)"
+msgstr "Stuff Organizer este o aplicaţie de catalogare"
 
 #: PAD description 450
 msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003."
-msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003."
+msgstr "Stuff Organizer este o aplicaţie de catalogare gratuită \"open source\". Vă puteţi organiza obiectele (filme, aplicaţii, jocuri, muzica, cărţile elctronice sau orice fişiere). Dacă aveţi multe fişiere descărcate din torenţi sau web şi doriţi să le organizaţi, puteţi descărca acest program! Funcţionează in Windows 7 / Vista / XP / 2008 / 2003."
 
 #: PAD description 2000
 msgid "Stuff Organizer is a free open source catalog application. You can organize your stuff (movies, softwares, games, musics, e-books or whatever. If you have many downloaded files from torrent or web and would like to organize them, you will have to download this program! It works in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer is open source software distributed free of charge under the terms of the GNU General Public License. Main features: unpack compressed files (e.g: zip, rar) in two levels after unpack, cleans up the unused files in the directory (e.g: file_id.diz, sfv file) extract iso if you want sort to multi-level categories support drag-n-drop support tags save NFO file content and image to database get product description from the web (e.g: allrovi.com)"
-msgstr "Stuff Organizer es una aplicación de catálogo gratuito y de código abierto. Puedes organizar tus cosas (películas, softwares, juegos, músicas, libros electrónicos o lo que sea. Si tienes muchos archivos descargaron de torrent o web y le gustaría organizarlas, tendrá que descargar el programa! Funciona en Windows 7 / Vista / XP / 2008 / 2003. Organizador de cosas es software de código abierto distribuido gratuitamente bajo los términos de la licencia pública General de GNU. Principales características: descomprimir archivos comprimidos (e.g: zip, rar) en dos niveles después de desembalar, limpia los archivos no utilizados en el directorio (por ejemplo: file_id.diz, archivo sfv) extraer iso si desea ordenar categorías multinivel apoyo apoyo de arrastrar-n-colocar etiquetas guardar el contenido del archivo NFO y descripción del producto de base de datos obtener imagen desde la web (por ejemplo: allrovi.com)"
+msgstr "Stuff Organizer este o aplicaţie de catalogare gratuită \"open source\". Vă puteţi organiza obiectele (filme, aplicaţii, jocuri, muzica, cărţile elctronice sau orice fişiere). Dacă aveţi multe fişiere descărcate din torenţi sau web şi doriţi să le organizaţi, puteţi descărca acest program! Funcţionează in Windows 7 / Vista / XP / 2008 / 2003. Stuff Organizer este o aplicaţie \"Open source\" distribuită gratuit sub termenii GNU de Licenţiere Publică Generală. Funcţionalitaţi principale: dezarhivarea fişierelor comprimate (de ex. zip, rar) pană la nivelul 2 de arhivare, curăţarea din foldere a fişierelor nedorite (de ex. file_id.diz, sfv), extragere imagini ISO, suport pentru sortare pe categorii pe nivele multiple, suportă etichetarea prin \"drag-n-drop\", salvare conţinut in fişiere NFO in baza de date, obţinerea descrierilor din Web (de ex. allrovi.com)..."
 
 #: Pleaserestartthesoftwareforchangestotakeeffect
 msgid "Please restart the software for changes to take effect!"
-msgstr "Por favor, reinicie el software para que los cambios surtan efecto."
+msgstr "Vă rugăm reporniţi aplicaţia pentru ca modificările să aibă efect!"
 
 #: Downloadingplugind
 msgid "Downloading plugin (%d%%)..."
-msgstr "Descargando plugin (%d%%)..."
+msgstr "Descărcare plugin (%d%%)..."
 
 #: Downloadingpluginlist
 msgid "Downloading plugin list..."
-msgstr "Descargando lista de plugin..."
+msgstr "Descarcă lista de plugin-uri..."
 
 #: Applicationexitfortoupdate
 msgid "Application exit for install new plugin..."
-msgstr "Salir de la aplicación para instalar un nuevo plugin..."
+msgstr "Ieşire din aplicaţie pentru a instala un nou plugin..."
 
 msgid "Directory doesn't exists! Path: %s"
-msgstr "¡No existes el directorio! Ruta: %s"
+msgstr "Folder inexistent! Locaţie: %s"
 
 msgid "Would you like to relocate items of category?"
-msgstr "¿Deseas reubicar los objetos de categoría?"
+msgstr "Doriţi să relocaţi articolele din categorie?"
 
 msgid "Relocating..."
-msgstr "Reubicando..."
+msgstr "Relocare..."
 
 msgid "Relocating %s..."
-msgstr "Reubicando %s..."
+msgstr "Relocarea %s..."
 
